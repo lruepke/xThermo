@@ -1,0 +1,36 @@
+# coding: utf-8
+from setuptools import setup, find_packages
+
+with open("readme.rst") as f:
+    LONG_DESCRIPTION = "".join(f.readlines())
+CLASSIFIERS = [
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Libraries",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9"
+]
+setup(
+    name='@PYTHON_PROJECT@',
+    version='@xThermal_MAJOR_VERSION@.@xThermal_MINOR_VERSION@.@xThermal_PATCH_VERSION@',
+    author="@AUTHOR@",
+    author_email='@AUTHOR_EMAIL@',
+    maintainer="@AUTHOR@",
+    maintainer_email='@AUTHOR_EMAIL@',
+    url='https://www.xthermo.cn',
+    description=u'Python API of xThermal package which is designed to calculate EOS and thermal dynamic properties of H2O, H2O-NaCl, and some other species in the near future.',
+    long_description=LONG_DESCRIPTION,
+    classifiers=CLASSIFIERS,
+    packages=find_packages(where='.', exclude=('docs_pyH2ONaCl'), include=('*',)), 
+    install_requires=['matplotlib>=3.5','numpy','argparse'],
+    include_package_data=True,
+    entry_points={
+        'console_scripts': []
+    },
+    keywords = "NaCl H2O IAPWS Hydrothermal seawater"
+)

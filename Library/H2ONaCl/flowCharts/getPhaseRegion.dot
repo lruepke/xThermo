@@ -1,0 +1,86 @@
+digraph G {
+    node [fontname = "Arial"];
+    edge [fontname = "Arial",linewidth=3,arrowhead=vee];
+    graph [bgcolor="#FFFFFF", style="rounded", color="#1c1c1c", penwidth="0.5",
+    fontname="Arial", fontcolor=darkgray, fontsize=16, pad="0.1", ranksep="0.", nodesep="0.23",
+    labelloc=t, labeljust=c,
+    compound=true];
+    splines=ortho;
+    // layout=neato;
+
+    // nodes
+    input_PTX [shape=cylinder, label="Input (P,T,X)", color="blue",fillcolor=lightyellow,style="filled,setlinewidth(2)",tooltip="T[K], P[Pa], X[wt.%NaCl]"];
+    CriticalPX [shape=ellipse,color=dodgerblue,fillcolor=none,style=filled,label="Critical P(T), X(T)",tooltip="Calculate critical pressure and composition",href="classH2ONaCl_1_1cH2ONaCl.html#a934dc3bd8b6a41f8968fee3fb539044d"];
+    P_VLH [shape=ellipse,color=dodgerblue,fillcolor=none,style=filled,label="P(T) of V+L+H",tooltip="Calculate pressure of VLH coexistence.",href="classH2ONaCl_1_1cH2ONaCl.html#a9efc782c435a06cd13f52823baa0762a"];
+    CheckP_Pcrit [shape=diamond,label="P > Pcrit ?";style="rounded",color="orange"];
+    SinglePhase_L [shape=rectangle,style="filled,rounded",color=deepskyblue,label =<<table border="0" cellborder="0" cellpadding="4" bgcolor="none"><tr><td bgcolor="lightgray" align="center" colspan="2"><font color="black">X_l=X, X_v=0</font></td></tr><tr><td align="left" port="r0">Single Phase: Liquid</td></tr></table>>];
+    SinglePhase_F [shape=rectangle,style="filled,rounded",color=deepskyblue,label =<<table border="0" cellborder="0" cellpadding="4" bgcolor="none"><tr><td bgcolor="lightgray" align="center" colspan="2"><font color="black">X_f = X</font></td></tr><tr><td align="left" port="r0">Single Phase: Fluid (vapor-like/liquid-like)</td></tr></table>>];
+    CheckTmax_VLH [shape=diamond,label="T > Tmax\n(VLH) ?";style="rounded",color="orange"];
+    TwoPhase_VL [shape=rectangle,style="filled,rounded",label =<<table border="0" cellborder="0" cellpadding="3" bgcolor="none"><tr><td bgcolor="lightgray" align="center" colspan="2"><font color="black">X_l, X_v</font></td></tr><tr><td align="left" port="r0">Two phase: Vapor + Liquid</td></tr></table>>,color="cyan"];
+    // ThreePhase [shape=rectangle,style=rounded,label =<<table border="0" cellborder="0" cellpadding="3" bgcolor="none"><tr><td bgcolor="lightgray" align="center" colspan="2"><font color="black">X_l, X_v</font></td></tr><tr><td align="left" port="r0">Three phase: V+L+H</td></tr></table>>,color="orange"];
+    CheckP_Pvlh [shape=diamond,label="P > P(VLH) ?";style="rounded",color="orange"];
+    T_halite_melting [shape=ellipse,color=dodgerblue,fillcolor=none,style=filled,label="Halite melting T(P)",tooltip="Calculate melting temperature of halite.",href="classNaCl_1_1cNaCl.html#a07d7e50e97b1fd3cb86f32ced92da431"];
+    CheckT_HaliteMelting [shape=diamond,label="T > T(hm)";style="rounded",color="orange"];
+    X_HaliteLiquidus [shape=ellipse,color="red",fillcolor=none,style="filled,setlinewidth(2)",label="Halite liquidus X(T,P)",tooltip="Calculate liquid composition for the halite liquidus.",href="classH2ONaCl_1_1cH2ONaCl.html#a0f7a60cf9d1cc606ba64cd8bf0ec7f44"];
+    CheckX_HaliteLiquidus [shape=diamond,label="X < X(LH)";style="rounded",color="orange"];
+    TwoPhase_LH [shape=rectangle,style="filled,rounded",label =<<table border="0" cellborder="0" cellpadding="3" bgcolor="none"><tr><td bgcolor="lightgray" align="center" colspan="2"><font color="black">X_l=X(LH), X_v=0</font></td></tr><tr><td align="left" port="r0">Two phase: Liquid + Halite</td></tr></table>>,color="lightcoral"];
+    XLXV_VL [shape=ellipse,color="red",fillcolor=none,style="filled,setlinewidth(2)",label="X_l, X_v of V+L",tooltip="Calculate composition of liquid and vapor phase on V+L coexistence.",href="classH2ONaCl_1_1cH2ONaCl.html#a213b37235e6ec0258bf810beb03ea0ba"];
+    CheckXLXV_VL [shape=diamond,label="X in [X_v, X_l] ?";style="rounded",color="orange"];
+    SinglePhase_V [shape=rectangle,style="filled,rounded",label =<<table border="0" cellborder="0" cellpadding="3" bgcolor="none"><tr><td bgcolor="lightgray" align="center" colspan="2"><font color="black">X_l=0, X_v=X</font></td></tr><tr><td align="left" port="r0">Single phase: vapor</td></tr></table>>,color="springgreen"];
+    CheckTcrit_H2O [shape=diamond,label="T <= T_crit(H2O) ?";style="rounded,filled,setlinewidth(2)",color=red,fillcolor=none];
+    X_VH [shape=ellipse,color=dodgerblue,fillcolor=none,style=filled,label="X_v of V+H",tooltip="Calculate composition of vapor phase on V+h coexistence.",href="classH2ONaCl_1_1cH2ONaCl.html#aee78afed3e29f2ed24861a93fb2666a4"];
+    CheckX_VH [shape=diamond,label="X < X(VH) ?";style="rounded",color="orange"];
+    TwoPhase_VH [shape=rectangle,style="filled,rounded",label =<<table border="0" cellborder="0" cellpadding="3" bgcolor="none"><tr><td bgcolor="lightgray" align="center" colspan="2"><font color="black">X_l=0, X_v</font></td></tr><tr><td align="left" port="r0">Two phase: Vapor + Halite</td></tr></table>>,color="violet"];
+    
+    // help nodes
+    node_connect_CheckP_Pvlh_TwoPhase_VL [shape=point,style="filled",color=lightgray];
+    node_connect_CheckX_LH_SinglePhase_L [shape=point,style="filled",color=lightgray];
+    node_connect_CheckXLXV_HaliteLiquidus [shape=point,style="filled",color=lightgray];
+    node_connect_CheckPcrit_CheckTmax_VLH [shape=point,style="filled",color=lightgray];
+    node_connect_CheckX_VH_SinglePhase_V [shape=point,style="filled",color=lightgray];
+
+    // 0. input 
+    input_PTX -> CriticalPX [arrowhead=vee];
+    // 1. check if pressure > Pcrit
+    CriticalPX -> CheckP_Pcrit [arrowhead=vee,label="  check",fontcolor=green];
+    // 1.1 P>Pcrit: single phase liquid
+    { rank=same; CheckP_Pcrit -> T_halite_melting [minlen=1,label="Yes  ",arrowhead=vee]};
+    {rank=same; T_halite_melting -> CheckT_HaliteMelting [label="check   ",fontcolor=green]};
+    { SinglePhase_L:s->CheckT_HaliteMelting [dir=back,label="  Yes", arrowtail=vee,orientation=90];}
+    {rank=same; CheckT_HaliteMelting -> X_HaliteLiquidus [label="No   "]};
+    {rank=same; X_HaliteLiquidus -> CheckX_HaliteLiquidus [label="check  ",fontcolor=green]};
+    {CheckX_HaliteLiquidus -> TwoPhase_LH [label=" No    ",minlen=1]};
+    node_connect_CheckX_LH_SinglePhase_L->CheckX_HaliteLiquidus [dir=back,arrowtail=none,xlabel="Yes "];
+    {rank=same; SinglePhase_L->node_connect_CheckX_LH_SinglePhase_L [dir=back,minlen=9,arrowtail=vee]};
+    // 1.2 P<=Pcrit
+    // check T>Tmax of VLH
+    CheckP_Pcrit->node_connect_CheckPcrit_CheckTmax_VLH [label=" No",arrowhead=none];
+    node_connect_CheckPcrit_CheckTmax_VLH -> CheckTmax_VLH [label="  check",fontcolor=green,arrowhead=vee];
+    { rank=same; CheckTmax_VLH -> XLXV_VL [label="Yes  ",arrowhead=vee]};
+    { rank=same; XLXV_VL -> CheckXLXV_VL [label="check  ",fontcolor=green,arrowhead=vee]};
+    // { rank=same; CheckTmax_VLH -> TwoPhase_VL [minlen=3,label="Yes",arrowhead=vee]};
+    // check P>P_VLH
+    CheckTmax_VLH -> P_VLH [minlen=1,label="  No",arrowhead=vee]
+    P_VLH -> CheckP_Pvlh [label="   check",fontcolor=green;];
+    { rank=same; CheckP_Pvlh -> node_connect_CheckP_Pvlh_TwoPhase_VL [minlen=3,arrowhead=none,label="Yes"]};
+    node_connect_CheckP_Pvlh_TwoPhase_VL->XLXV_VL;
+    // {rank=same; P_VLH;TwoPhase_VL;}
+    TwoPhase_VL->CheckXLXV_VL [label=" Yes",dir=back;arrowtail=vee;];
+    {rank=same; CheckXLXV_VL -> node_connect_CheckXLXV_HaliteLiquidus [minlen=3,label="No: X > X_l",arrowhead=none]};
+    node_connect_CheckXLXV_HaliteLiquidus ->X_HaliteLiquidus;
+    // Single phase: vapor
+    CheckXLXV_VL -> CheckTcrit_H2O [label="  No: X < X_v\n  check",fontcolor=green];
+    {CheckTcrit_H2O->SinglePhase_V [minlen=1,label="  Yes"];}
+    // P=P_VLH
+    // {rank=same; ThreePhase; CheckP_Pvlh; SinglePhase_V};
+    // {rank=same; ThreePhase -> CheckP_Pvlh [dir=back,arrowtail=vee,label="  P=P(VLH) ← No   "]};
+    CheckP_Pvlh -> X_VH [label="  No: P < P_vlh",fontcolor=green;];
+
+    {rank=same; X_VH -> CheckX_VH [minlen=5,label="check",fontcolor=green]; }
+
+    CheckTcrit_H2O:w->CheckX_VH:n [label="Yes",dir=back, arrowtail=vee];
+
+    {rank=same;  CheckX_VH -> TwoPhase_VH [minlen=11,label="No"]}
+
+    {rank=same; CheckTcrit_H2O -> SinglePhase_F [label="No   ",minlen=4]};
+}

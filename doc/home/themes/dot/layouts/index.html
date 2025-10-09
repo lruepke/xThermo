@@ -1,0 +1,163 @@
+{{ define "main" }}
+
+{{ "<!-- badges -->" | safeHTML }}
+<div>
+  <center>
+  {{ if .Site.Params.binderURL }}
+    <a href={{.Site.Params.binderURL}}><image id="binder" src="https://binder.pangeo.io/badge_logo.svg" ></image></a>
+  {{ end }}
+  {{ if .Site.Params.jupyterURL }}
+    <a href={{.Site.Params.jupyterURL}}><image id="binder" src="https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter" ></image></a>
+  {{ end }}
+  {{ if .Site.Params.doi_zenodo }}
+    <a href=https://doi.org/{{.Site.Params.doi_zenodo}}><image id="binder" src="https://zenodo.org/badge/DOI/{{.Site.Params.doi_zenodo}}.svg" ></image></a>
+  {{ end }}
+</center>
+</div>
+
+  {{ "<!-- topics -->" | safeHTML }}
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h2 class="section-title">{{ i18n "apps_title" | safeHTML }}</h2>
+        </div>
+        {{ "<!-- topic-item -->" | safeHTML }}
+        {{ range (where .Site.Pages "Type" "apps") }}
+        <div class="col-lg-3 col-sm-6 mb-4">
+          <a href="{{ .Permalink }}" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            {{ if .Params.logo}}
+                <image class="social_logo" src="{{ .Params.logo | absURL }}" ></i>
+							{{ else }}
+                <i class="{{ .Params.Icon }} icon text-primary d-block mb-4"></i>
+							{{ end }}
+            <h3 class="mb-3 mt-0">{{ .Title }}</h3>
+            <p class="mb-0">{{ .Params.Description }}</p>
+            <script type="text/JavaScript">
+              function updateAppsDownloadCounts(theUrl)
+              {
+                var request = null;
+                request = new XMLHttpRequest();
+                request.open( "GET", theUrl, false );
+                request.setRequestHeader("Authorization", "Basic ODNmMTk0NTBmNzExNTc5ZTlkYjA6Y2NjMGI2ZTkyYjEzYzdiNDZiM2E3MjMxYWY0ZGU0MjExZWYyYmU1Zg==");
+                //request.setRequestHeader('Authorization', 'token '+{{ .Site.Params.githubToken }});
+                request.onreadystatechange = function () {
+                  if (xhr.readyState === 4) {
+                     console.log(xhr.status);
+                     console.log(xhr.responseText);
+                  }};
+                request.send( null );
+                if (request.status == 200) //成功获取
+                {
+                  var json = JSON.parse(request.responseText);
+                  var download_count = 0
+                  var have_this_os = false
+                  for (var i =0;i<json.length;i++) //不同release版本
+                  {
+                    var release = json[i]
+                    var assets=release.assets
+                    for(var j =0; j<assets.length;j++)//不同系统的安装包
+                    {
+                      var asset = assets[j]
+                      var asset_name=asset.name   //安装包的名称
+                      if(asset_name.includes({{ .Title }})) //判断安装包的名称是否与此处html中所表示的系统一致
+                      {
+                        download_count = download_count + asset.download_count
+                        have_this_os = true
+                      }
+                    }
+                  }
+                  // 判断是否有此系统的安装包
+                  if(have_this_os)
+                  {
+                    var color_download="inactive"
+                    if(download_count>5){color_download="informational"}
+                    else if(download_count>50){color_download="critical"}
+                    else if(download_count>100){color_download="important"}
+                    else if(download_count>200){color_download="success"}
+                    else if(download_count>500){color_download="blueviolet"}
+                    else if(download_count>1000){color_download="red"}
+                    return '<image src="https://img.shields.io/badge/Downloads-'+download_count+'-'+color_download+'.svg"></image>'
+                  }
+                  else
+                  {
+                    return ""
+                  }
+                }
+              }
+              </script>
+            <script>document.write(updateAppsDownloadCounts("https://api.github.com/repos/"+{{ .Site.Params.githubRepo }}+"/releases"))</script>
+          </a>
+        </div>
+        {{ end }}
+        <div class="col-12 text-center">
+          <h2 class="section-title">{{ i18n "api_title" | safeHTML }}</h2>
+        </div>
+        {{ "<!-- topic-item -->" | safeHTML }}
+        {{ range (where .Site.Pages "Type" "api") }}
+        <div class="col-lg-3 col-sm-6 mb-4">
+          <a href="{{ .Permalink }}" class="px-2 py-2 bg-white shadow text-center d-block match-height">
+            {{ if .Params.logo}}
+                <image class="social_logo" src="{{ .Params.logo | absURL }}" ></i>
+							{{ else }}
+                <i class="{{ .Params.Icon }} icon text-primary d-block mb-4"></i>
+							{{ end }}
+            <h5 class="mb-3 mt-0">{{ .Title }}</h5>
+            <p class="mb-0">{{ .Params.Description }}</p>
+            {{ if eq .Title "Python" }}
+              <img src="https://pypi.org/static/images/logo-small.6eef541e.svg" height=14px> <img src="https://img.shields.io/pypi/dm/pyswEOS?label=downloads" alt="sciPyFoam">
+              <img src="https://img.shields.io/pypi/pyversions/pysweos"></img>
+            {{ end }}
+            {{ if eq .Title "OpenFOAM" }}
+              <img src="https://img.shields.io/badge/Foundation-Version 7%7cVersion%208-brightgreen.svg" height=18px> 
+            {{ end }}
+          </a>
+        </div>
+        {{ end }}
+        <div class="col-12 text-center">
+          <h2 class="section-title">{{ i18n "docs_title" | safeHTML }}</h2>
+        </div>
+        {{ "<!-- topic-item -->" | safeHTML }}
+        {{ range (where .Site.Pages "Type" "docs") }}
+        <div class="col-lg-6 col-sm-6 mb-4">
+          <a href="{{ .Permalink }}" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            {{ if .Params.logo}}
+                <image class="social_logo" src="{{ .Params.logo | absURL }}" ></i>
+							{{ else }}
+                <i class="{{ .Params.Icon }} icon text-primary d-block mb-4"></i>
+							{{ end }}
+            <h3 class="mb-3 mt-0">{{ .Title }}</h3>
+            <p class="mb-0">{{ .Params.Description }}</p>
+          </a>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ "<!-- /topics -->" | safeHTML }}
+
+  {{ if .Site.Params.cta.enable }}
+  {{ with .Site.Params.cta }}
+  {{ "<!-- call to action -->" | safeHTML }}
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section px-3 bg-white shadow text-center">
+          <h2 class="mb-4">{{ .title | markdownify }}</h2>
+          <p class="mb-4">{{ .content | markdownify }}</p>
+          {{ if .button.enable }}
+          {{ with .button }}
+          <a href="{{ .link | relLangURL }}" class="btn btn-primary">{{ .label }}</a>
+          {{ end }}
+          {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ "<!-- /call to action -->" | safeHTML }}
+  {{ end }}
+  {{ end }}
+
+{{ end }}
