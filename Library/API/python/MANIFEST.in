@@ -1,0 +1,3 @@
+include readme.md
+include @PYTHON_PROJECT@/*.pyd
+include @PYTHON_PROJECT@/*.so

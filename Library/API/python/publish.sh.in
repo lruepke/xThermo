@@ -1,0 +1,16 @@
+# clean old build
+if [ -d dist ]; then 
+    rm -rf dist
+fi
+
+# build
+python setup.py bdist_wheel --plat-name @platTAG@
+whl_file=`ls dist/*.whl`
+
+# rename ABI tag: https://libstructural.readthedocs.io/en/latest/additional_info.html#
+pythonTAG=@pythonTag@
+whl_file_new=`echo $whl_file | sed "s/${pythonTAG}-none-/${pythonTAG}-${pythonTAG}-/g"`
+mv $whl_file $whl_file_new
+
+# upload to PyPi
+twine upload dist/* --verbose

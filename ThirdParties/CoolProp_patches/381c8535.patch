@@ -1,0 +1,176 @@
+From 93f1139ed48a85ff56e89c8a7524ddba4f44cc89 Mon Sep 17 00:00:00 2001
+From: zguo <zguo@geomar.de>
+Date: Wed, 27 Apr 2022 14:11:47 +0200
+Subject: [PATCH] update
+
+---
+ CMakeLists.txt                        | 22 ++++++++++++++++++++++
+ include/AbstractState.h               | 25 +++++++++++++------------
+ include/CoolProp.h                    |  5 ++++-
+ include/DataStructures.h              | 18 ++++++++++++++++++
+ src/Backends/PCSAFT/PCSAFTLibrary.cpp |  2 +-
+ 5 files changed, 58 insertions(+), 14 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index b33e020e..bff41cfd 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -1665,3 +1665,25 @@ endif()
+ #include_directories("${CMAKE_CURRENT_SOURCE_DIR}/CoolProp")
+ #FILE(GLOB coolprop_files "${CMAKE_CURRENT_SOURCE_DIR}/CoolProp/*.cpp")
+ #add_library(coolprop STATIC ${coolprop_files})
++add_definitions("-DHAS_MOVE_SEMANTICS=1")
++if(WIN32)
++  if(COOLPROP_SHARED_LIBRARY)
++    INSTALL(DIRECTORY ${CMAKE_BINARY_DIR}/Release/ DESTINATION ${COOLPROP_INSTALL_PREFIX}/shared )
++    add_compile_definitions("COOLPROP_DLL=1")
++    add_compile_definitions("COOLPROP_DLL_EXPORT=1")
++  else()
++    INSTALL(TARGETS ${LIB_NAME} DESTINATION ${COOLPROP_INSTALL_PREFIX}/static )
++  endif()
++else()
++  INSTALL(TARGETS ${LIB_NAME} DESTINATION ${COOLPROP_INSTALL_PREFIX}/lib )
++  add_compile_options(-fPIC) # this option is important of Linux system.
++  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fpic")
++  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fpic")
++endif(WIN32)
++
++INSTALL(DIRECTORY ${PROJECT_SOURCE_DIR}/include/ DESTINATION ${COOLPROP_INSTALL_PREFIX}/include
++      FILES_MATCHING PATTERN "*.h"
++      )
++INSTALL(DIRECTORY ${PROJECT_SOURCE_DIR}/externals/fmtlib/fmt/ DESTINATION ${COOLPROP_INSTALL_PREFIX}/include/fmt
++      FILES_MATCHING PATTERN "*.*"
++      )
+\ No newline at end of file
+diff --git a/include/AbstractState.h b/include/AbstractState.h
+index 3219e9c4..dc539ffc 100644
+--- a/include/AbstractState.h
++++ b/include/AbstractState.h
+@@ -425,7 +425,8 @@ public:
+      * @param fluid_names Fluid names as a '&' delimited string
+      * @return
+      */
+-    static AbstractState * factory(const std::string &backend, const std::string &fluid_names)
++    COOLPROP_VAR static AbstractState *factory(const std::string &backend,
++                                               const std::string &fluid_names)
+     {
+         return factory(backend, strsplit(fluid_names, '&'));
+     };
+@@ -604,29 +605,29 @@ public:
+     const CoolProp::SimpleState & get_state(const std::string &state){ return calc_state(state); };
+ 
+     /// Get the minimum temperature in K
+-    double Tmin(void);
++    COOLPROP_VAR double Tmin(void);
+     /// Get the maximum temperature in K
+-    double Tmax(void);
++    COOLPROP_VAR double Tmax(void);
+     /// Get the maximum pressure in Pa
+-    double pmax(void);
++    COOLPROP_VAR double pmax(void);
+     /// Get the triple point temperature in K
+-    double Ttriple(void);
++    COOLPROP_VAR double Ttriple(void);
+ 
+     /// Get the phase of the state
+-    phases phase(void){ return calc_phase(); };
++    COOLPROP_VAR phases phase(void) { return calc_phase(); };
+     /// Specify the phase for all further calculations with this state class
+     void specify_phase(phases phase){ calc_specify_phase(phase); };
+     /// Unspecify the phase and go back to calculating it based on the inputs
+     void unspecify_phase(void){ calc_unspecify_phase(); };
+ 
+     /// Return the critical temperature in K
+-    double T_critical(void);
++    COOLPROP_VAR double T_critical(void);
+     /// Return the critical pressure in Pa
+-    double p_critical(void);
++    COOLPROP_VAR double p_critical(void);
+     /// Return the critical molar density in mol/m^3
+-    double rhomolar_critical(void);
++    COOLPROP_VAR double rhomolar_critical(void);
+     /// Return the critical mass density in kg/m^3
+-    double rhomass_critical(void);
++    COOLPROP_VAR double rhomass_critical(void);
+ 
+     /// Return the vector of critical points, including points that are unstable or correspond to negative pressure
+     std::vector<CriticalState> all_critical_points(void){ return calc_all_critical_points(); };
+@@ -711,7 +712,7 @@ public:
+     /// Return the reduced density (\f$\delta = \rho/\rho_c\f$)
+     double delta(void);
+     /// Return the molar mass in kg/mol
+-    double molar_mass(void);
++    COOLPROP_VAR double molar_mass(void);
+     /// Return the acentric factor
+     double acentric_factor(void);
+     /// Return the mole-fraction weighted gas constant in J/mol/K
+@@ -1009,7 +1010,7 @@ public:
+     // Transport properties
+     // ----------------------------------------
+     /// Return the viscosity in Pa-s
+-    double viscosity(void);
++    COOLPROP_VAR double viscosity(void);
+     /// Return the viscosity contributions, each in Pa-s
+     void viscosity_contributions(CoolPropDbl &dilute, CoolPropDbl &initial_density, CoolPropDbl &residual, CoolPropDbl &critical){ calc_viscosity_contributions(dilute, initial_density, residual, critical); };
+     /// Return the thermal conductivity in W/m/K
+diff --git a/include/CoolProp.h b/include/CoolProp.h
+index 565dbd26..e9ad33d1 100644
+--- a/include/CoolProp.h
++++ b/include/CoolProp.h
+@@ -33,7 +33,10 @@ You might want to start by looking at CoolProp.h
+     /// @param Name2 The second state variable name, one of "T","D","H",etc.
+     /// @param Prop2 The second state variable value
+     /// @param FluidName The fluid name
+-    double PropsSI(const std::string &Output, const std::string &Name1, double Prop1, const std::string &Name2, double Prop2, const std::string &FluidName);
++    COOLPROP_VAR double PropsSI(const std::string &Output,
++                                const std::string &Name1, double Prop1,
++                                const std::string &Name2, double Prop2,
++                                const std::string &FluidName);
+ 
+     /**
+      * @brief Get a matrix of outputs for a given input.  Can handle both vector inputs as well as a vector of output strings
+diff --git a/include/DataStructures.h b/include/DataStructures.h
+index 613dcedf..be646f96 100644
+--- a/include/DataStructures.h
++++ b/include/DataStructures.h
+@@ -8,6 +8,24 @@
+ #ifndef DATASTRUCTURES_H_
+ #define DATASTRUCTURES_H_
+ 
++#ifndef COOLPROP_VAR
++
++#ifdef WIN32
++#  ifdef COOLPROP_DLL
++#    ifdef COOLPROP_DLL_EXPORT
++#      define COOLPROP_VAR __declspec(dllexport)
++#    else
++#      define COOLPROP_VAR __declspec(dllimport)
++#    endif
++#  else
++#    define COOLPROP_VAR
++#  endif
++#else
++#  define COOLPROP_VAR
++#endif
++
++#endif
++
+ #include "CPnumerics.h"
+ #include "Exceptions.h"
+ #include <map>
+diff --git a/src/Backends/PCSAFT/PCSAFTLibrary.cpp b/src/Backends/PCSAFT/PCSAFTLibrary.cpp
+index d4dac646..b3362370 100644
+--- a/src/Backends/PCSAFT/PCSAFTLibrary.cpp
++++ b/src/Backends/PCSAFT/PCSAFTLibrary.cpp
+@@ -128,7 +128,7 @@ int PCSAFTLibraryClass::add_many(rapidjson::Value &listing)
+ 
+             if (already_present){
+                 if (!get_config_bool(OVERWRITE_FLUIDS)){
+-                    throw ValueError(format("Cannot load fluid [%s:%s] because it is already in library; consider enabling the config boolean variable OVERWRITE_FLUIDS", fluid.getName().c_str(), fluid.getCAS().c_str()));
++//                    throw ValueError(format("Cannot load fluid [%s:%s] because it is already in library; consider enabling the config boolean variable OVERWRITE_FLUIDS", fluid.getName().c_str(), fluid.getCAS().c_str()));
+                 }
+                 else{
+                     // Remove the one(s) that are already there
+-- 
+2.32.0 (Apple Git-132)
+
