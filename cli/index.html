@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../xThermo/files/">
+        <link rel="prev" href="../python/saturation/">
       
       
-        <link rel="next" href="../legal/">
+        <link rel="next" href="../cpp/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>About & License - xThermo</title>
+        <title>Command-line tool - xThermo</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#about" class="md-skip">
+        <a href="#command-line-tool" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              About & License
+              Command-line tool
             
           </span>
         </div>
@@ -265,9 +265,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../cli/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -324,11 +326,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../about/" class="md-tabs__link">
         
   
   
@@ -662,10 +662,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../cli/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Command-line tool
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -681,6 +708,181 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#units" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Units
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arguments-thermo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arguments (thermo)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arguments (thermo)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Required
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optional
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verification
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#single-point-t-p-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Single point — T-P-X
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#single-point-h-p-x-enthalpy-flash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Single point — H-P-X (enthalpy flash)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-point-from-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-point from file
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-d-sweep" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-D sweep
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-d-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-D grid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-d-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3-D grid
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -975,37 +1177,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    About & License
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
         
   
   
@@ -1021,59 +1196,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#authors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Authors
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#citation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Citation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        License
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1132,10 +1254,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#authors" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Authors
+        Usage
       
     </span>
   </a>
@@ -1143,10 +1265,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#citation" class="md-nav__link">
+  <a href="#units" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Citation
+        Units
       
     </span>
   </a>
@@ -1154,13 +1276,135 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
+  <a href="#arguments-thermo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        License
+        Arguments (thermo)
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Arguments (thermo)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Required
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optional
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verification
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#single-point-t-p-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Single point — T-P-X
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#single-point-h-p-x-enthalpy-flash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Single point — H-P-X (enthalpy flash)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-point-from-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-point from file
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-d-sweep" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-D sweep
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-d-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-D grid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-d-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3-D grid
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1184,44 +1428,226 @@
   
 
 
-<h1 id="about">About</h1>
-<h2 id="authors">Authors</h2>
-<p><strong>Zhikui Guo</strong>
-GEOMAR Helmholtz Centre for Ocean Research Kiel
-Original developer of xThermo — C++ implementation, Python bindings, and equation-of-state framework.</p>
-<p><strong>Lars Rüpke</strong>
-GEOMAR Helmholtz Centre for Ocean Research Kiel
-Project lead, maintenance, and packaging.</p>
-<hr />
-<h2 id="citation">Citation</h2>
-<p>If you use xThermo in published work, please cite the underlying equation-of-state papers:</p>
-<p>Driesner, T. &amp; Heinrich, C.A. (2007). The system H₂O–NaCl. Part I: Correlation formulae for phase relations in temperature–pressure–composition space from 0 to 1000 °C, 0 to 5000 bar, and 0 to 1 X<sub>NaCl</sub>. <em>Geochimica et Cosmochimica Acta</em>, <strong>71</strong>, 4880–4901. <a href="https://doi.org/10.1016/j.gca.2007.05.026">doi:10.1016/j.gca.2007.05.026</a></p>
-<p>Driesner, T. (2007). The system H₂O–NaCl. Part II: Correlations for molar volume, enthalpy, and isobaric heat capacity from 0 to 1000 °C, 1 to 5000 bar, and 0 to 1 X<sub>NaCl</sub>. <em>Geochimica et Cosmochimica Acta</em>, <strong>71</strong>, 4902–4919. <a href="https://doi.org/10.1016/j.gca.2007.05.025">doi:10.1016/j.gca.2007.05.025</a></p>
-<hr />
-<h2 id="license">License</h2>
-<p>xThermo is released under the <a href="https://github.com/lruepke/xThermo/blob/main/LICENSE">MIT License</a>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>MIT License
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Copyright (c) 2024 Zhikui Guo, Lars Rüpke
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>GEOMAR Helmholtz Centre for Ocean Research Kiel
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>Permission is hereby granted, free of charge, to any person obtaining a copy
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>of this software and associated documentation files (the &quot;Software&quot;), to deal
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>in the Software without restriction, including without limitation the rights
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>copies of the Software, and to permit persons to whom the Software is
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>furnished to do so, subject to the following conditions:
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>The above copyright notice and this permission notice shall be included in all
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>copies or substantial portions of the Software.
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>SOFTWARE.
+<h1 id="command-line-tool">Command-line tool</h1>
+<p>After building and installing xThermo, the <code>xThermal</code> binary provides command-line access to the full EOS.</p>
+<h2 id="usage">Usage</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>xThermal<span class="w"> </span><span class="o">[</span>program<span class="o">]</span><span class="w"> </span><span class="o">[</span>arguments<span class="o">]</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>xThermal<span class="w"> </span><span class="o">[</span>program<span class="o">]</span><span class="w"> </span>-h<span class="w">          </span><span class="c1"># help for a specific sub-program</span>
+</code></pre></div>
+<p>Available sub-programs:</p>
+<table>
+<thead>
+<tr>
+<th>Program</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>thermo</code></td>
+<td>Calculate thermodynamic properties from T-P-X or H-P-X input</td>
+</tr>
+<tr>
+<td><code>lutgen</code></td>
+<td>Generate an AMR lookup-table (binary <code>.bin</code>)</td>
+</tr>
+<tr>
+<td><code>lutinfo</code></td>
+<td>Print information about a lookup-table file</td>
+</tr>
+<tr>
+<td><code>lut2vtu</code></td>
+<td>Convert a lookup-table to VTU format for visualisation</td>
+</tr>
+<tr>
+<td><code>lookup</code></td>
+<td>Query an existing lookup-table at given T/H-P-X points</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">No spaces between flag and value</p>
+<p>The argument parser requires the value to follow the flag letter <strong>immediately</strong>, with no space:
+<code>-P300E5</code> ✓ — <code>-P 300E5</code> ✗</p>
+</div>
+<h2 id="units">Units</h2>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Flag</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Temperature</td>
+<td><code>-T</code>, <code>-R</code></td>
+<td>°C</td>
+</tr>
+<tr>
+<td>Pressure</td>
+<td><code>-P</code>, <code>-R</code></td>
+<td>Pa</td>
+</tr>
+<tr>
+<td>Salinity</td>
+<td><code>-X</code>, <code>-R</code></td>
+<td>kg/kg (mass fraction 0–1; seawater = 0.032)</td>
+</tr>
+<tr>
+<td>Enthalpy</td>
+<td><code>-H</code>, <code>-R</code></td>
+<td>J/kg</td>
+</tr>
+</tbody>
+</table>
+<h2 id="arguments-thermo">Arguments (<code>thermo</code>)</h2>
+<h3 id="required">Required</h3>
+<table>
+<thead>
+<tr>
+<th>Flag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-D[0\|1\|2\|3]</code></td>
+<td>Calculation <strong>D</strong>imension: 0 = scatter, 1 = 1-D, 2 = 2-D, 3 = 3-D</td>
+</tr>
+<tr>
+<td><code>-V…</code></td>
+<td>Independent <strong>V</strong>ariables — must match <code>-D</code> (see table below)</td>
+</tr>
+<tr>
+<td><code>-Pval</code> / <code>-Tval</code> / <code>-Xval</code> / <code>-Hval</code></td>
+<td>Fixed value for variables <strong>not</strong> in <code>-V</code></td>
+</tr>
+<tr>
+<td><code>-Rmin/step/max[/…]</code></td>
+<td>Range for each variable in <code>-V</code> order (1-D/2-D/3-D only)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Valid <code>-V</code> options by dimension:</strong></p>
+<table>
+<thead>
+<tr>
+<th><code>-D</code></th>
+<th>Valid <code>-V</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0</code></td>
+<td><code>PTX</code>, <code>PHX</code></td>
+</tr>
+<tr>
+<td><code>1</code></td>
+<td><code>T</code>, <code>P</code>, <code>X</code>, <code>H</code></td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td><code>PT</code>, <code>PX</code>, <code>TX</code>, <code>PH</code>, <code>HX</code></td>
+</tr>
+<tr>
+<td><code>3</code></td>
+<td><code>PTX</code>, <code>PHX</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="optional">Optional</h3>
+<table>
+<thead>
+<tr>
+<th>Flag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-Gfile</code></td>
+<td>Input text file for scatter calculation (columns match <code>-V</code> order)</td>
+</tr>
+<tr>
+<td><code>-Ofile</code></td>
+<td>Output file — format from extension: <code>.csv</code>, <code>.txt</code>, <code>.vtk</code></td>
+</tr>
+<tr>
+<td><code>-tN</code></td>
+<td>Number of OpenMP threads</td>
+</tr>
+<tr>
+<td><code>-n</code></td>
+<td>Normalise VTK output (2-D/3-D)</td>
+</tr>
+<tr>
+<td><code>-BIAPS84</code></td>
+<td>Water backend: <code>IAPS84</code> (default) or <code>IAPWS95</code></td>
+</tr>
+<tr>
+<td><code>-FH2O-NaCl</code></td>
+<td>Fluid: <code>H2O-NaCl</code> (default), <code>H2O</code>, <code>NaCl</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="verification">Verification</h2>
+<p>The CLI and Python API give identical results. For T = 300 °C, P = 300 bar (300×10⁵ Pa), X = 0.1 kg/kg:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>xThermal<span class="w"> </span>thermo<span class="w"> </span>-D0<span class="w"> </span>-VPTX<span class="w"> </span>-P300E5<span class="w"> </span>-T300<span class="w"> </span>-X0.1
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>H2O-NaCl
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>T=300 deg.C = 573.15 K, P=300 bar, X=10 wt% NaCl, H=1.21693e+06 J/kg
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  phase: Liquid
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  Rho=849.034 [kg/m^3]
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>  H=1.21693e+06 [J/kg]
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>  Cp=4407.72 [J/kg/K]
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>  Mu=0.000114076 [Pa S]
+</code></pre></div>
+<p>Equivalent Python:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xThermal</span><span class="w"> </span><span class="kn">import</span> <span class="n">H2ONaCl</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">sw</span> <span class="o">=</span> <span class="n">H2ONaCl</span><span class="o">.</span><span class="n">cH2ONaCl</span><span class="p">(</span><span class="s2">&quot;IAPS84&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">props</span> <span class="o">=</span> <span class="n">sw</span><span class="o">.</span><span class="n">UpdateState_TPX</span><span class="p">(</span><span class="mi">300</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">,</span> <span class="mf">300e5</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">props</span><span class="o">.</span><span class="n">Rho</span><span class="p">)</span>   <span class="c1"># 849.034 kg/m³</span>
+</code></pre></div>
+<h2 id="examples">Examples</h2>
+<h3 id="single-point-t-p-x">Single point — T-P-X</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>xThermal<span class="w"> </span>thermo<span class="w"> </span>-D0<span class="w"> </span>-VPTX<span class="w"> </span>-P300E5<span class="w"> </span>-T300<span class="w"> </span>-X0.1
+</code></pre></div>
+<h3 id="single-point-h-p-x-enthalpy-flash">Single point — H-P-X (enthalpy flash)</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>xThermal<span class="w"> </span>thermo<span class="w"> </span>-D0<span class="w"> </span>-VPHX<span class="w"> </span>-H1500E3<span class="w"> </span>-P316E5<span class="w"> </span>-X0.032
+</code></pre></div>
+<h3 id="multi-point-from-file">Multi-point from file</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># File columns must match -V order (e.g. P  T  X for -VPTX)</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>xThermal<span class="w"> </span>thermo<span class="w"> </span>-D0<span class="w"> </span>-VPTX<span class="w"> </span>-G../test/PTX.txt<span class="w"> </span>-OPTX_result.csv
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>xThermal<span class="w"> </span>thermo<span class="w"> </span>-D0<span class="w"> </span>-VPHX<span class="w"> </span>-G../test/PHX.txt<span class="w"> </span>-OPHX_result.csv
+</code></pre></div>
+<h3 id="1-d-sweep">1-D sweep</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Temperature sweep at fixed P and X</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>xThermal<span class="w"> </span>thermo<span class="w"> </span>-D1<span class="w"> </span>-VT<span class="w"> </span>-P399E5<span class="w"> </span>-X0.032<span class="w"> </span>-R0/1/1000<span class="w"> </span>-OT_1D.csv
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># Enthalpy sweep at fixed P and X</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>xThermal<span class="w"> </span>thermo<span class="w"> </span>-D1<span class="w"> </span>-VH<span class="w"> </span>-P399E5<span class="w"> </span>-X0.032<span class="w"> </span>-R43E3/1E3/3000E3<span class="w"> </span>-OH_1D.csv
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="c1"># Pressure sweep at fixed T and X</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>xThermal<span class="w"> </span>thermo<span class="w"> </span>-D1<span class="w"> </span>-VP<span class="w"> </span>-T100<span class="w"> </span>-X0.032<span class="w"> </span>-R5E5/1E5/1000E5<span class="w"> </span>-OP_1D.csv
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="c1"># Salinity sweep at fixed T and P</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>xThermal<span class="w"> </span>thermo<span class="w"> </span>-D1<span class="w"> </span>-VX<span class="w"> </span>-T100<span class="w"> </span>-P399E5<span class="w"> </span>-R0/0.001/1<span class="w"> </span>-OX_1D.csv
+</code></pre></div>
+<h3 id="2-d-grid">2-D grid</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># P-T grid at fixed X, output as VTK</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>xThermal<span class="w"> </span>thermo<span class="w"> </span>-D2<span class="w"> </span>-VPT<span class="w"> </span>-R1E5/1E5/1000E5/0/1/500<span class="w"> </span>-X0.032<span class="w"> </span>-OPT_2D.vtk
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># P-X grid at fixed T</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>xThermal<span class="w"> </span>thermo<span class="w"> </span>-D2<span class="w"> </span>-VPX<span class="w"> </span>-R100E5/1E5/800E5/0/0.01/1<span class="w"> </span>-T100<span class="w"> </span>-OPX_2D.vtk
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="c1"># T-X grid at fixed P</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>xThermal<span class="w"> </span>thermo<span class="w"> </span>-D2<span class="w"> </span>-VTX<span class="w"> </span>-R0/1/800/0/0.01/1<span class="w"> </span>-P100E5<span class="w"> </span>-OTX_2D.vtk
+</code></pre></div>
+<h3 id="3-d-grid">3-D grid</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># Full P-T-X volume, 8 threads</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>xThermal<span class="w"> </span>thermo<span class="w"> </span>-D3<span class="w"> </span>-VPTX<span class="w"> </span>-R1E5/10E5/500E5/0/10/600/0/0.01/1<span class="w"> </span>-t8
 </code></pre></div>
 
 
