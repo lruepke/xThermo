@@ -1,0 +1,31 @@
+
+# Set PROST libarary, include
+option(USE_PROST_SRC "Use PROST source directly" ON)
+if(USE_PROST_SRC)  #directly use the source code of PROST for debug
+    set(PROST_DIR "${CMAKE_SOURCE_DIR}/ThirdParties/PROST" CACHE FILEPATH "PROST path contains source code  .h .c files")
+    if(EXISTS ${PROST_DIR})
+        FILE(GLOB PROST_SRC_FILES "${PROST_DIR}/*.c" "${PROST_DIR}/*.h")
+        set(PROST_INCLUDE_DIR "${PROST_DIR}" CACHE FILEPATH "include path of PROST")
+        INCLUDE_DIRECTORIES(${PROST_INCLUDE_DIR})
+        message(STATUS "PROST source code path found: " ${PROST_DIR} )
+        # install
+        INSTALL(DIRECTORY ${PROST_DIR} DESTINATION ${CMAKE_INSTALL_PREFIX}/ThirdParties)
+        # info
+    else()
+        message(FATAL_ERROR "PROST_DIR = ${PROST_DIR} doesn't exist. Please use option -DPROST_DIR=xxx set a correct path which contains source code .h .c files")
+    endif()
+else(USE_PROST_SRC)
+    set(PROST_DIR "${CMAKE_SOURCE_DIR}/ThirdParties/install/PROST" CACHE FILEPATH "PROST path contains include, lib")
+    if(EXISTS ${PROST_DIR})
+        set(PROST_INCLUDE_DIR "${PROST_DIR}/include" CACHE FILEPATH "include path of PROST")
+        set(PROST_LIBRARY_DIR "${PROST_DIR}/lib" CACHE FILEPATH "lib path of PROST")
+        INCLUDE_DIRECTORIES(${PROST_INCLUDE_DIR})
+        set(PROST_LIBRARIES_SHARED ${PROST_LIBRARY_DIR}/libPROST${CMAKE_SHARED_LIBRARY_SUFFIX} )
+        set(PROST_LIBRARIES_STATIC ${PROST_LIBRARY_DIR}/libPROST.a)
+        link_directories(${PROST_LIBRARY_DIR})
+        message(STATUS "PROST include path found: " ${PROST_INCLUDE_DIR} )
+        message(STATUS "PROST library path found: " ${PROST_LIBRARY_DIR})
+    else()
+        message(FATAL_ERROR "PROST_DIR = ${PROST_DIR} doesn't exist. Please use option -DPROST_DIR=xxx set a correct path which contains include and lib dir")
+    endif()
+endif(USE_PROST_SRC)

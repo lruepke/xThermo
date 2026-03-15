@@ -1,0 +1,19 @@
+
+#ifndef xThermal_VERSION_H
+#define xThermal_VERSION_H
+
+#define xThermal_MAJOR_VERSION ${xThermal_MAJOR_VERSION}
+#define xThermal_MINOR_VERSION ${xThermal_MINOR_VERSION}
+#define xThermal_PATCH_VERSION ${xThermal_PATCH_VERSION}
+#define xThermal_EXTRA_VERSION       "${xThermal_EXTRA_VERSION}"
+#define xThermal_VERSION             "${xThermal_VERSION}"
+#define xThermal_DATE                "${xThermal_DATE}"
+#define xThermal_HOST                "${xThermal_HOST}"
+#define xThermal_PACKAGER            "${xThermal_PACKAGER}"
+#define xThermal_OS                  "${CMAKE_SYSTEM_NAME}"
+#define xThermal_SHORT_LICENSE       "${xThermal_SHORT_LICENSE}"
+#define xThermal_QT_VERSION          "${xThermal_QT_VERSION}"
+#define xThermal_VTK_VERSION         "${xThermal_VTK_VERSION}"
+#define xThermal_GSL_VERSION         "${xThermal_GSL_VERSION}"
+
+#endif
