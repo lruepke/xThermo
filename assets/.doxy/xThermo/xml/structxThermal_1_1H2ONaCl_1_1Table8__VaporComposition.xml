@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1H2ONaCl_1_1Table8__VaporComposition" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::H2ONaCl::Table8_VaporComposition</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Table8__VaporComposition_1acda7fb982a7e13f111e5ba050e8163b0" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::H2ONaCl::Table8_VaporComposition::k[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>k</name>
+        <qualifiedname>xThermal::H2ONaCl::Table8_VaporComposition::k</qualifiedname>
+        <initializer>= {-0.235694, -0.188838, 0.004, 0.0552466, 0.66918, 396.848, 45, -3.2719<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-07,
+                                  141.699, -0.292631, -0.00139991, 1.95965<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-06, -7.3653<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-10, 0.904411, 0.000769766,
+                                  -1.18658<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-06}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="123" column="26" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="123" bodyend="125"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/H2ONaCl/H2ONaCl.h" line="122" column="9" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="122" bodyend="127"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1H2ONaCl_1_1Table8__VaporComposition_1acda7fb982a7e13f111e5ba050e8163b0" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Table8_VaporComposition</scope><name>k</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

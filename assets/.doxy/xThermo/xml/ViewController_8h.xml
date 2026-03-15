@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="ViewController_8h" kind="file" language="C++">
+    <compoundname>ViewController.h</compoundname>
+    <includes local="no">UIKit/UIKit.h</includes>
+    <includedby refid="ViewController_8m" local="yes">Library/test/cpp_crossplatform/app_ios/ViewController.m</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>Library/test/cpp_crossplatform/app_ios/ViewController.h</label>
+        <link refid="ViewController_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UIKit/UIKit.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interfaceViewController" prot="public">ViewController</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>ViewController.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Your<sp/>main<sp/>view<sp/>controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;UIKit/UIKit.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="interfaceViewController" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interfaceViewController" kindref="compound">ViewController</ref><sp/>:<sp/>UIViewController</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Library/test/cpp_crossplatform/app_ios/ViewController.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1PhaseRegion__Slice" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::PhaseRegion_Slice</compoundname>
+    <includes refid="DataStructures_8h" local="no">DataStructures.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1PhaseRegion__Slice_1aa9a046002d229d2085ef2044675a2064" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::vector&lt; <ref refid="structxThermal_1_1Polygon__slice" kindref="compound">Polygon_slice</ref> &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::vector&lt;Polygon_slice&gt; &gt; xThermal::PhaseRegion_Slice::regions</definition>
+        <argsstring></argsstring>
+        <name>regions</name>
+        <qualifiedname>xThermal::PhaseRegion_Slice::regions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1117" column="18" bodyfile="Library/thermo/DataStructures.h" bodystart="1117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1PhaseRegion__Slice_1a31215004a4e720719c9e726f1fc20695" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::vector&lt; <ref refid="structxThermal_1_1Line__slice" kindref="compound">Line_slice</ref> &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::vector&lt;Line_slice&gt; &gt; xThermal::PhaseRegion_Slice::lines</definition>
+        <argsstring></argsstring>
+        <name>lines</name>
+        <qualifiedname>xThermal::PhaseRegion_Slice::lines</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1118" column="18" bodyfile="Library/thermo/DataStructures.h" bodystart="1118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1PhaseRegion__Slice_1ae810104ef319af68421dfaad6cb5fad9" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::vector&lt; <ref refid="structxThermal_1_1Point__slice" kindref="compound">Point_slice</ref> &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::vector&lt;Point_slice&gt; &gt; xThermal::PhaseRegion_Slice::points</definition>
+        <argsstring></argsstring>
+        <name>points</name>
+        <qualifiedname>xThermal::PhaseRegion_Slice::points</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1119" column="18" bodyfile="Library/thermo/DataStructures.h" bodystart="1119" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="structxThermal_1_1PhaseRegion__Slice_1a7b25d9548755c8ce20d6ae22fc3b4bb6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const PhaseRegion_Slice &amp;slice)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>xThermal::PhaseRegion_Slice::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1PhaseRegion__Slice" kindref="compound">PhaseRegion_Slice</ref> &amp;</type>
+          <declname>slice</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1121" column="16" bodyfile="Library/thermo/DataStructures.h" bodystart="1121" bodyend="1133"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structxThermal_1_1PhaseRegion__Slice_1a35887db7cd4705eb7aa856690ca52e37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string xThermal::PhaseRegion_Slice::info</definition>
+        <argsstring>(const PhaseRegion_Slice &amp;slice)</argsstring>
+        <name>info</name>
+        <qualifiedname>xThermal::PhaseRegion_Slice::info</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1PhaseRegion__Slice" kindref="compound">PhaseRegion_Slice</ref> &amp;</type>
+          <declname>slice</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1135" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1135" bodyend="1140"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Struct of phase region of a slice at constant T, P, H, or X. Contains phase region polygon, and some visualization properties. </para>
+    </detaileddescription>
+    <location file="Library/thermo/DataStructures.h" line="1115" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="1116" bodyend="1141"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1PhaseRegion__Slice_1a35887db7cd4705eb7aa856690ca52e37" prot="public" virt="non-virtual"><scope>xThermal::PhaseRegion_Slice</scope><name>info</name></member>
+      <member refid="structxThermal_1_1PhaseRegion__Slice_1a31215004a4e720719c9e726f1fc20695" prot="public" virt="non-virtual"><scope>xThermal::PhaseRegion_Slice</scope><name>lines</name></member>
+      <member refid="structxThermal_1_1PhaseRegion__Slice_1a7b25d9548755c8ce20d6ae22fc3b4bb6" prot="public" virt="non-virtual"><scope>xThermal::PhaseRegion_Slice</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structxThermal_1_1PhaseRegion__Slice_1ae810104ef319af68421dfaad6cb5fad9" prot="public" virt="non-virtual"><scope>xThermal::PhaseRegion_Slice</scope><name>points</name></member>
+      <member refid="structxThermal_1_1PhaseRegion__Slice_1aa9a046002d229d2085ef2044675a2064" prot="public" virt="non-virtual"><scope>xThermal::PhaseRegion_Slice</scope><name>regions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

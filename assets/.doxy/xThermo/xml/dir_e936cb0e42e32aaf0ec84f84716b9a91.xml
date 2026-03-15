@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_e936cb0e42e32aaf0ec84f84716b9a91" kind="dir">
+    <compoundname>Library/test/cpp_crossplatform/app_ios</compoundname>
+    <innerfile refid="AppDelegate_8h">AppDelegate.h</innerfile>
+    <innerfile refid="AppDelegate_8m">AppDelegate.m</innerfile>
+    <innerfile refid="CppInterface_8h">CppInterface.h</innerfile>
+    <innerfile refid="CppInterface_8mm">CppInterface.mm</innerfile>
+    <innerfile refid="main_8m">main.m</innerfile>
+    <innerfile refid="ViewController_8h">ViewController.h</innerfile>
+    <innerfile refid="ViewController_8m">ViewController.m</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/test/cpp_crossplatform/app_ios/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_6271c49d5f270c0fb3e744706a6d7da9" kind="dir">
+    <compoundname>Library/test/test_swig</compoundname>
+    <innerfile refid="test__swig_2main_8cpp">main.cpp</innerfile>
+    <innerfile refid="test_8cpp">test.cpp</innerfile>
+    <innerfile refid="test_8py">test.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/test/test_swig/"/>
+  </compounddef>
+</doxygen>

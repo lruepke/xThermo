@@ -1,0 +1,585 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structbehavior" kind="struct" language="C++" prot="public">
+    <compoundname>behavior</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbehavior_1a34495ca52e6406ead41e4d37758b03e4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::poly</definition>
+        <argsstring></argsstring>
+        <name>poly</name>
+        <qualifiedname>behavior::poly</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="782" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="782" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a782cbc85135e774ebaea351cab41ed2f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::refine</definition>
+        <argsstring></argsstring>
+        <name>refine</name>
+        <qualifiedname>behavior::refine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="782" column="12" bodyfile="Library/thermo/triangle.cpp" bodystart="782" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1aff272ed01675024380027f9e972d45ce" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::quality</definition>
+        <argsstring></argsstring>
+        <name>quality</name>
+        <qualifiedname>behavior::quality</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="782" column="19" bodyfile="Library/thermo/triangle.cpp" bodystart="782" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1ac52f72b313e292dce59dd7554c040935" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::vararea</definition>
+        <argsstring></argsstring>
+        <name>vararea</name>
+        <qualifiedname>behavior::vararea</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="782" column="27" bodyfile="Library/thermo/triangle.cpp" bodystart="782" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a3517c8cc065b15326ac2784bce0fecf7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::fixedarea</definition>
+        <argsstring></argsstring>
+        <name>fixedarea</name>
+        <qualifiedname>behavior::fixedarea</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="782" column="35" bodyfile="Library/thermo/triangle.cpp" bodystart="782" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1afac6b65f184f98f84724b94e06b49af3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::usertest</definition>
+        <argsstring></argsstring>
+        <name>usertest</name>
+        <qualifiedname>behavior::usertest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="782" column="45" bodyfile="Library/thermo/triangle.cpp" bodystart="782" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a9fc10997a6c91aaa9894d81432d9f4dc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::regionattrib</definition>
+        <argsstring></argsstring>
+        <name>regionattrib</name>
+        <qualifiedname>behavior::regionattrib</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="783" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="783" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a136866fb4c5c376089eec0a5e305e237" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::convex</definition>
+        <argsstring></argsstring>
+        <name>convex</name>
+        <qualifiedname>behavior::convex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="783" column="20" bodyfile="Library/thermo/triangle.cpp" bodystart="783" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a1dc051c2e5ab8cfd9031609da2cb22bf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::weighted</definition>
+        <argsstring></argsstring>
+        <name>weighted</name>
+        <qualifiedname>behavior::weighted</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="783" column="27" bodyfile="Library/thermo/triangle.cpp" bodystart="783" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1addee737ab6a12167f8c4866054f27366" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::jettison</definition>
+        <argsstring></argsstring>
+        <name>jettison</name>
+        <qualifiedname>behavior::jettison</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="783" column="36" bodyfile="Library/thermo/triangle.cpp" bodystart="783" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a5d53d350c5f4d8e36f023c9e459db86e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::firstnumber</definition>
+        <argsstring></argsstring>
+        <name>firstnumber</name>
+        <qualifiedname>behavior::firstnumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="784" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="784" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a7270c2686524c974d7c8446d34d10533" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::edgesout</definition>
+        <argsstring></argsstring>
+        <name>edgesout</name>
+        <qualifiedname>behavior::edgesout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="785" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="785" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1ad71c04d7ca10a99615bccccceb3032c2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::voronoi</definition>
+        <argsstring></argsstring>
+        <name>voronoi</name>
+        <qualifiedname>behavior::voronoi</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="785" column="16" bodyfile="Library/thermo/triangle.cpp" bodystart="785" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a28cc2e00b0bf1ae16dba7ca09a0c6208" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::neighbors</definition>
+        <argsstring></argsstring>
+        <name>neighbors</name>
+        <qualifiedname>behavior::neighbors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="785" column="24" bodyfile="Library/thermo/triangle.cpp" bodystart="785" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a88d7e804a3b636b0a7b29209a7c38dc6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::geomview</definition>
+        <argsstring></argsstring>
+        <name>geomview</name>
+        <qualifiedname>behavior::geomview</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="785" column="34" bodyfile="Library/thermo/triangle.cpp" bodystart="785" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1abd3884ad730ed60cc1ef08b501073dbc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::nobound</definition>
+        <argsstring></argsstring>
+        <name>nobound</name>
+        <qualifiedname>behavior::nobound</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="786" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="786" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a0ab30c20f998a90ba3611e4723e377fc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::nopolywritten</definition>
+        <argsstring></argsstring>
+        <name>nopolywritten</name>
+        <qualifiedname>behavior::nopolywritten</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="786" column="15" bodyfile="Library/thermo/triangle.cpp" bodystart="786" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1ad5a486082c025546894029f57c458191" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::nonodewritten</definition>
+        <argsstring></argsstring>
+        <name>nonodewritten</name>
+        <qualifiedname>behavior::nonodewritten</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="786" column="29" bodyfile="Library/thermo/triangle.cpp" bodystart="786" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a29aae49e218a077887d2bfe8c236f435" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::noelewritten</definition>
+        <argsstring></argsstring>
+        <name>noelewritten</name>
+        <qualifiedname>behavior::noelewritten</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="786" column="43" bodyfile="Library/thermo/triangle.cpp" bodystart="786" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1aa428158f2f29f15924062edd4c0458e6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::noiterationnum</definition>
+        <argsstring></argsstring>
+        <name>noiterationnum</name>
+        <qualifiedname>behavior::noiterationnum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="786" column="56" bodyfile="Library/thermo/triangle.cpp" bodystart="786" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a79bb036bf07432e44e79a2a313a297db" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::noholes</definition>
+        <argsstring></argsstring>
+        <name>noholes</name>
+        <qualifiedname>behavior::noholes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="787" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="787" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a0468a9f24f8c0d573ef24ac894f18dd0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::noexact</definition>
+        <argsstring></argsstring>
+        <name>noexact</name>
+        <qualifiedname>behavior::noexact</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="787" column="15" bodyfile="Library/thermo/triangle.cpp" bodystart="787" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a179bd75edd586403270885f45c2ad8fa" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::conformdel</definition>
+        <argsstring></argsstring>
+        <name>conformdel</name>
+        <qualifiedname>behavior::conformdel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="787" column="23" bodyfile="Library/thermo/triangle.cpp" bodystart="787" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a9631db14f320e8e07e1b2f9c5e885800" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::incremental</definition>
+        <argsstring></argsstring>
+        <name>incremental</name>
+        <qualifiedname>behavior::incremental</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="788" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="788" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a4878978d21e1761ee3af56acc46f6103" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::sweepline</definition>
+        <argsstring></argsstring>
+        <name>sweepline</name>
+        <qualifiedname>behavior::sweepline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="788" column="19" bodyfile="Library/thermo/triangle.cpp" bodystart="788" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a25d2b46e23242bed77ce49c9a3f66355" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::dwyer</definition>
+        <argsstring></argsstring>
+        <name>dwyer</name>
+        <qualifiedname>behavior::dwyer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="788" column="29" bodyfile="Library/thermo/triangle.cpp" bodystart="788" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1ac51ca2ac278cc8cbf9abccbf1653231c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::splitseg</definition>
+        <argsstring></argsstring>
+        <name>splitseg</name>
+        <qualifiedname>behavior::splitseg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="789" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="789" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1adcf4518e093edbe62352b74e65cb2cf2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::docheck</definition>
+        <argsstring></argsstring>
+        <name>docheck</name>
+        <qualifiedname>behavior::docheck</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="790" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="790" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a5c6014035353c8696feb3d2e8ebec7a3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::quiet</definition>
+        <argsstring></argsstring>
+        <name>quiet</name>
+        <qualifiedname>behavior::quiet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="791" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="791" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1ab5ec70b142c9abc43d73b35b72db5039" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::verbose</definition>
+        <argsstring></argsstring>
+        <name>verbose</name>
+        <qualifiedname>behavior::verbose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="791" column="13" bodyfile="Library/thermo/triangle.cpp" bodystart="791" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a455d529c0b389da70a7308fc0b11b518" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::usesegments</definition>
+        <argsstring></argsstring>
+        <name>usesegments</name>
+        <qualifiedname>behavior::usesegments</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="792" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="792" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a318a98561fdb296afbc6aeb9ea80feff" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::order</definition>
+        <argsstring></argsstring>
+        <name>order</name>
+        <qualifiedname>behavior::order</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="793" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="793" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1aaec9c0c9597647bacbea9980ab7b6332" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::nobisect</definition>
+        <argsstring></argsstring>
+        <name>nobisect</name>
+        <qualifiedname>behavior::nobisect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="794" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="794" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a16a49e9ff6eefec8e56016b13d8134b0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int behavior::steiner</definition>
+        <argsstring></argsstring>
+        <name>steiner</name>
+        <qualifiedname>behavior::steiner</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="795" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="795" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1aff8380c776eb2a12950030e8cdd13ad7" prot="public" static="no" mutable="no">
+        <type>REAL</type>
+        <definition>REAL behavior::minangle</definition>
+        <argsstring></argsstring>
+        <name>minangle</name>
+        <qualifiedname>behavior::minangle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="796" column="8" bodyfile="Library/thermo/triangle.cpp" bodystart="796" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a21822712543b0a2389c9ffed4a4079b4" prot="public" static="no" mutable="no">
+        <type>REAL</type>
+        <definition>REAL behavior::goodangle</definition>
+        <argsstring></argsstring>
+        <name>goodangle</name>
+        <qualifiedname>behavior::goodangle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="796" column="17" bodyfile="Library/thermo/triangle.cpp" bodystart="796" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1ad308afbf90d5d317dc8143d54a6b3153" prot="public" static="no" mutable="no">
+        <type>REAL</type>
+        <definition>REAL behavior::offconstant</definition>
+        <argsstring></argsstring>
+        <name>offconstant</name>
+        <qualifiedname>behavior::offconstant</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="796" column="27" bodyfile="Library/thermo/triangle.cpp" bodystart="796" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbehavior_1a0f9baf5398704c2f20b309457f9c8071" prot="public" static="no" mutable="no">
+        <type>REAL</type>
+        <definition>REAL behavior::maxarea</definition>
+        <argsstring></argsstring>
+        <name>maxarea</name>
+        <qualifiedname>behavior::maxarea</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="797" column="8" bodyfile="Library/thermo/triangle.cpp" bodystart="797" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/thermo/triangle.cpp" line="747" column="1" bodyfile="Library/thermo/triangle.cpp" bodystart="747" bodyend="816"/>
+    <listofallmembers>
+      <member refid="structbehavior_1a179bd75edd586403270885f45c2ad8fa" prot="public" virt="non-virtual"><scope>behavior</scope><name>conformdel</name></member>
+      <member refid="structbehavior_1a136866fb4c5c376089eec0a5e305e237" prot="public" virt="non-virtual"><scope>behavior</scope><name>convex</name></member>
+      <member refid="structbehavior_1adcf4518e093edbe62352b74e65cb2cf2" prot="public" virt="non-virtual"><scope>behavior</scope><name>docheck</name></member>
+      <member refid="structbehavior_1a25d2b46e23242bed77ce49c9a3f66355" prot="public" virt="non-virtual"><scope>behavior</scope><name>dwyer</name></member>
+      <member refid="structbehavior_1a7270c2686524c974d7c8446d34d10533" prot="public" virt="non-virtual"><scope>behavior</scope><name>edgesout</name></member>
+      <member refid="structbehavior_1a5d53d350c5f4d8e36f023c9e459db86e" prot="public" virt="non-virtual"><scope>behavior</scope><name>firstnumber</name></member>
+      <member refid="structbehavior_1a3517c8cc065b15326ac2784bce0fecf7" prot="public" virt="non-virtual"><scope>behavior</scope><name>fixedarea</name></member>
+      <member refid="structbehavior_1a88d7e804a3b636b0a7b29209a7c38dc6" prot="public" virt="non-virtual"><scope>behavior</scope><name>geomview</name></member>
+      <member refid="structbehavior_1a21822712543b0a2389c9ffed4a4079b4" prot="public" virt="non-virtual"><scope>behavior</scope><name>goodangle</name></member>
+      <member refid="structbehavior_1a9631db14f320e8e07e1b2f9c5e885800" prot="public" virt="non-virtual"><scope>behavior</scope><name>incremental</name></member>
+      <member refid="structbehavior_1addee737ab6a12167f8c4866054f27366" prot="public" virt="non-virtual"><scope>behavior</scope><name>jettison</name></member>
+      <member refid="structbehavior_1a0f9baf5398704c2f20b309457f9c8071" prot="public" virt="non-virtual"><scope>behavior</scope><name>maxarea</name></member>
+      <member refid="structbehavior_1aff8380c776eb2a12950030e8cdd13ad7" prot="public" virt="non-virtual"><scope>behavior</scope><name>minangle</name></member>
+      <member refid="structbehavior_1a28cc2e00b0bf1ae16dba7ca09a0c6208" prot="public" virt="non-virtual"><scope>behavior</scope><name>neighbors</name></member>
+      <member refid="structbehavior_1aaec9c0c9597647bacbea9980ab7b6332" prot="public" virt="non-virtual"><scope>behavior</scope><name>nobisect</name></member>
+      <member refid="structbehavior_1abd3884ad730ed60cc1ef08b501073dbc" prot="public" virt="non-virtual"><scope>behavior</scope><name>nobound</name></member>
+      <member refid="structbehavior_1a29aae49e218a077887d2bfe8c236f435" prot="public" virt="non-virtual"><scope>behavior</scope><name>noelewritten</name></member>
+      <member refid="structbehavior_1a0468a9f24f8c0d573ef24ac894f18dd0" prot="public" virt="non-virtual"><scope>behavior</scope><name>noexact</name></member>
+      <member refid="structbehavior_1a79bb036bf07432e44e79a2a313a297db" prot="public" virt="non-virtual"><scope>behavior</scope><name>noholes</name></member>
+      <member refid="structbehavior_1aa428158f2f29f15924062edd4c0458e6" prot="public" virt="non-virtual"><scope>behavior</scope><name>noiterationnum</name></member>
+      <member refid="structbehavior_1ad5a486082c025546894029f57c458191" prot="public" virt="non-virtual"><scope>behavior</scope><name>nonodewritten</name></member>
+      <member refid="structbehavior_1a0ab30c20f998a90ba3611e4723e377fc" prot="public" virt="non-virtual"><scope>behavior</scope><name>nopolywritten</name></member>
+      <member refid="structbehavior_1ad308afbf90d5d317dc8143d54a6b3153" prot="public" virt="non-virtual"><scope>behavior</scope><name>offconstant</name></member>
+      <member refid="structbehavior_1a318a98561fdb296afbc6aeb9ea80feff" prot="public" virt="non-virtual"><scope>behavior</scope><name>order</name></member>
+      <member refid="structbehavior_1a34495ca52e6406ead41e4d37758b03e4" prot="public" virt="non-virtual"><scope>behavior</scope><name>poly</name></member>
+      <member refid="structbehavior_1aff272ed01675024380027f9e972d45ce" prot="public" virt="non-virtual"><scope>behavior</scope><name>quality</name></member>
+      <member refid="structbehavior_1a5c6014035353c8696feb3d2e8ebec7a3" prot="public" virt="non-virtual"><scope>behavior</scope><name>quiet</name></member>
+      <member refid="structbehavior_1a782cbc85135e774ebaea351cab41ed2f" prot="public" virt="non-virtual"><scope>behavior</scope><name>refine</name></member>
+      <member refid="structbehavior_1a9fc10997a6c91aaa9894d81432d9f4dc" prot="public" virt="non-virtual"><scope>behavior</scope><name>regionattrib</name></member>
+      <member refid="structbehavior_1ac51ca2ac278cc8cbf9abccbf1653231c" prot="public" virt="non-virtual"><scope>behavior</scope><name>splitseg</name></member>
+      <member refid="structbehavior_1a16a49e9ff6eefec8e56016b13d8134b0" prot="public" virt="non-virtual"><scope>behavior</scope><name>steiner</name></member>
+      <member refid="structbehavior_1a4878978d21e1761ee3af56acc46f6103" prot="public" virt="non-virtual"><scope>behavior</scope><name>sweepline</name></member>
+      <member refid="structbehavior_1afac6b65f184f98f84724b94e06b49af3" prot="public" virt="non-virtual"><scope>behavior</scope><name>usertest</name></member>
+      <member refid="structbehavior_1a455d529c0b389da70a7308fc0b11b518" prot="public" virt="non-virtual"><scope>behavior</scope><name>usesegments</name></member>
+      <member refid="structbehavior_1ac52f72b313e292dce59dd7554c040935" prot="public" virt="non-virtual"><scope>behavior</scope><name>vararea</name></member>
+      <member refid="structbehavior_1ab5ec70b142c9abc43d73b35b72db5039" prot="public" virt="non-virtual"><scope>behavior</scope><name>verbose</name></member>
+      <member refid="structbehavior_1ad71c04d7ca10a99615bccccceb3032c2" prot="public" virt="non-virtual"><scope>behavior</scope><name>voronoi</name></member>
+      <member refid="structbehavior_1a1dc051c2e5ab8cfd9031609da2cb22bf" prot="public" virt="non-virtual"><scope>behavior</scope><name>weighted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

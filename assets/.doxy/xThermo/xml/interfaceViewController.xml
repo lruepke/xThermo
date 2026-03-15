@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="interfaceViewController" kind="class" language="Objective-C" prot="public">
+    <compoundname>ViewController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UIViewController</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>UIViewController</label>
+      </node>
+      <node id="1">
+        <label>ViewController</label>
+        <link refid="interfaceViewController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>UIViewController</label>
+      </node>
+      <node id="1">
+        <label>ViewController</label>
+        <link refid="interfaceViewController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Library/test/cpp_crossplatform/app_ios/ViewController.h" line="6" column="12" bodyfile="Library/test/cpp_crossplatform/app_ios/ViewController.h" bodystart="7" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

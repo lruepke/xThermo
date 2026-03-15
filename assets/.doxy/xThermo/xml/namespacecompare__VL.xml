@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacecompare__VL" kind="namespace" language="Python">
+    <compoundname>compare_VL</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="compare__VL_8py_1ab87fabb766c1a85d15805fd3ea148081" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>compare_VL.category</definition>
+        <argsstring></argsstring>
+        <name>category</name>
+        <qualifiedname>compare_VL.category</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.py" line="14" column="1" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__VL_8py_1a9a6a6635b0cc0dd0abd8cd50832cb80f" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list compare_VL.fmt_figs</definition>
+        <argsstring></argsstring>
+        <name>fmt_figs</name>
+        <qualifiedname>compare_VL.fmt_figs</qualifiedname>
+        <initializer>=  [&apos;pdf&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.py" line="19" column="1" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__VL_8py_1af7d402f9feddd7ee4c2ff7ee6c1af455" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str compare_VL.figpath</definition>
+        <argsstring></argsstring>
+        <name>figpath</name>
+        <qualifiedname>compare_VL.figpath</qualifiedname>
+        <initializer>=  &apos;.&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.py" line="20" column="1" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__VL_8py_1a5c6f656b54198fcfe81a565f25e63df7" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str compare_VL.phaseBoundary</definition>
+        <argsstring></argsstring>
+        <name>phaseBoundary</name>
+        <qualifiedname>compare_VL.phaseBoundary</qualifiedname>
+        <initializer>= &apos;VL&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.py" line="21" column="1" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__VL_8py_1a61ecab7032f233cedce63214a77f1a4c" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str compare_VL.result_path</definition>
+        <argsstring></argsstring>
+        <name>result_path</name>
+        <qualifiedname>compare_VL.result_path</qualifiedname>
+        <initializer>= &apos;VL&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.py" line="22" column="1" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__VL_8py_1abe4dd17152e680823b4d7648e7db7724" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float compare_VL.compare</definition>
+        <argsstring></argsstring>
+        <name>compare</name>
+        <qualifiedname>compare_VL.compare</qualifiedname>
+        <initializer>=  lambda a,b (str(&apos;%.6e&apos;%(a)))-float(str(&apos;%.6e&apos;%(b)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.py" line="28" column="1" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__VL_8py_1af448ae084251b1ad1b028aca6e55a5fa" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>compare_VL.sw_84</definition>
+        <argsstring></argsstring>
+        <name>sw_84</name>
+        <qualifiedname>compare_VL.sw_84</qualifiedname>
+        <initializer>=  H2ONaCl.cH2ONaCl(&quot;IAPS84&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.py" line="33" column="1" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__VL_8py_1af992db03e1313390a0248eb374aa6a70" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>compare_VL.sw_95</definition>
+        <argsstring></argsstring>
+        <name>sw_95</name>
+        <qualifiedname>compare_VL.sw_95</qualifiedname>
+        <initializer>=  H2ONaCl.cH2ONaCl(&quot;IAPWS95&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.py" line="34" column="1" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="compare__VL_8py_1a02af46bf48433a7511eaa9ee662c25de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>compare_VL.savefig</definition>
+        <argsstring>(figname)</argsstring>
+        <name>savefig</name>
+        <qualifiedname>compare_VL.savefig</qualifiedname>
+        <param>
+          <type>figname</type>
+          <defname>figname</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.py" line="23" column="1" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.py" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8py_1ae5247c558d9597bb8e0a811689b1ca68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>compare_VL.plot_3d_matlab</definition>
+        <argsstring>()</argsstring>
+        <name>plot_3d_matlab</name>
+        <qualifiedname>compare_VL.plot_3d_matlab</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.py" line="36" column="1" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.py" bodystart="36" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8py_1a2b2c987477b4866954f049670ca522bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>compare_VL.contourf_phase</definition>
+        <argsstring>(ax, TT, pp, phase, phase_name, ax_cb=None)</argsstring>
+        <name>contourf_phase</name>
+        <qualifiedname>compare_VL.contourf_phase</qualifiedname>
+        <param>
+          <type>ax</type>
+          <defname>ax</defname>
+        </param>
+        <param>
+          <type>TT</type>
+          <defname>TT</defname>
+        </param>
+        <param>
+          <type>pp</type>
+          <defname>pp</defname>
+        </param>
+        <param>
+          <type>phase</type>
+          <defname>phase</defname>
+        </param>
+        <param>
+          <type>phase_name</type>
+          <defname>phase_name</defname>
+        </param>
+        <param>
+          <type>ax_cb</type>
+          <defname>ax_cb</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.py" line="48" column="1" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.py" bodystart="48" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8py_1a42f17b41d899ef211fb88c36dc24cc75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>compare_VL.plot_props_VLH</definition>
+        <argsstring>(sw, water, mmc5=&apos;../Driesner2007a/1-s2.0-S0016703707002943-mmc5.txt&apos;, mmc3=&apos;../Driesner2007b/1-s2.0-S0016703707002955-mmc3.txt&apos;)</argsstring>
+        <name>plot_props_VLH</name>
+        <qualifiedname>compare_VL.plot_props_VLH</qualifiedname>
+        <param>
+          <type>sw</type>
+          <defname>sw</defname>
+        </param>
+        <param>
+          <type>water</type>
+          <defname>water</defname>
+        </param>
+        <param>
+          <type>mmc5</type>
+          <defname>mmc5</defname>
+          <defval>&apos;../Driesner2007a/1-s2.0-S0016703707002943-mmc5.txt&apos;</defval>
+        </param>
+        <param>
+          <type>mmc3</type>
+          <defname>mmc3</defname>
+          <defval>&apos;../Driesner2007b/1-s2.0-S0016703707002955-mmc3.txt&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.py" line="59" column="1" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.py" bodystart="59" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8py_1af74793ccb49ae69a41e295f8750b7f5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>compare_VL.plot_err</definition>
+        <argsstring>(ax, x, y, data, label=&apos;&apos;, cmap=&apos;rainbow&apos;, scale_data=&apos;log&apos;, vmin=1E-6, vmax=1, s=1)</argsstring>
+        <name>plot_err</name>
+        <qualifiedname>compare_VL.plot_err</qualifiedname>
+        <param>
+          <type>ax</type>
+          <defname>ax</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <param>
+          <type>label</type>
+          <defname>label</defname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <param>
+          <type>cmap</type>
+          <defname>cmap</defname>
+          <defval>&apos;rainbow&apos;</defval>
+        </param>
+        <param>
+          <type>scale_data</type>
+          <defname>scale_data</defname>
+          <defval>&apos;log&apos;</defval>
+        </param>
+        <param>
+          <type>vmin</type>
+          <defname>vmin</defname>
+          <defval>1E-6</defval>
+        </param>
+        <param>
+          <type>vmax</type>
+          <defname>vmax</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>s</type>
+          <defname>s</defname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.py" line="181" column="1" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.py" bodystart="181" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8py_1a648d4b88f862073f973dcccf6d6ca83c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>compare_VL.benchmark_VL</definition>
+        <argsstring>(sw, mmc4=&apos;../Driesner2007b/1-s2.0-S0016703707002955-mmc4.txt&apos;)</argsstring>
+        <name>benchmark_VL</name>
+        <qualifiedname>compare_VL.benchmark_VL</qualifiedname>
+        <param>
+          <type>sw</type>
+          <defname>sw</defname>
+        </param>
+        <param>
+          <type>mmc4</type>
+          <defname>mmc4</defname>
+          <defval>&apos;../Driesner2007b/1-s2.0-S0016703707002955-mmc4.txt&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.py" line="192" column="1" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.py" bodystart="192" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8py_1a6a1f78234b04a881618d6e533a54a117" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>compare_VL.calculate</definition>
+        <argsstring>(sw=sw_84)</argsstring>
+        <name>calculate</name>
+        <qualifiedname>compare_VL.calculate</qualifiedname>
+        <param>
+          <type>sw</type>
+          <defname>sw</defname>
+          <defval>sw_84</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.py" line="260" column="1" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.py" bodystart="260" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8py_1ad934b8d27486ef818dc516c6d81ca6c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>compare_VL.plot_diff</definition>
+        <argsstring>()</argsstring>
+        <name>plot_diff</name>
+        <qualifiedname>compare_VL.plot_diff</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.py" line="282" column="1" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.py" bodystart="282" bodyend="318"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/benchmark_test/compare_matlabcode/compare_VL.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

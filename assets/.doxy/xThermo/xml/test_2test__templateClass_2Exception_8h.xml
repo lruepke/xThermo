@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="test_2test__templateClass_2Exception_8h" kind="file" language="C++">
+    <compoundname>Exception.h</compoundname>
+    <includes local="no">exception</includes>
+    <includes local="no">iostream</includes>
+    <includes refid="test_2test__templateClass_2stdfunc_8h" local="yes">stdfunc.h</includes>
+    <includedby refid="abstract_8h" local="yes">Library/test/test_templateClass/abstract.h</includedby>
+    <includedby refid="implement__AB_8h" local="yes">Library/test/test_templateClass/implement_AB.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>Library/test/test_templateClass/Exception.h</label>
+        <link refid="test_2test__templateClass_2Exception_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdfunc.h</label>
+        <link refid="test_2test__templateClass_2stdfunc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>cassert</label>
+      </node>
+      <node id="8">
+        <label>cstring</label>
+      </node>
+      <node id="2">
+        <label>exception</label>
+      </node>
+      <node id="10">
+        <label>iomanip</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="6">
+        <label>map</label>
+      </node>
+      <node id="9">
+        <label>sstream</label>
+      </node>
+      <node id="5">
+        <label>stdio.h</label>
+      </node>
+      <node id="7">
+        <label>sys/stat.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>Library/test/test_templateClass/Exception.h</label>
+        <link refid="test_2test__templateClass_2Exception_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Library/test/test_templateClass/abstract.h</label>
+        <link refid="abstract_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Library/test/test_templateClass/implement_A.h</label>
+        <link refid="implement__A_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Library/test/test_templateClass/implement_AB.h</label>
+        <link refid="implement__AB_8h_source"/>
+      </node>
+      <node id="5">
+        <label>Library/test/test_templateClass/implement_B.h</label>
+        <link refid="implement__B_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classxThermal_1_1xThermalBaseError" prot="public">xThermal::xThermalBaseError</innerclass>
+    <innerclass refid="classxThermal_1_1xThermalError" prot="public">xThermal::xThermalError</innerclass>
+    <innerclass refid="classxThermal_1_1ValueErrorSpec" prot="public">xThermal::ValueErrorSpec</innerclass>
+    <innernamespace refid="namespacexThermal">xThermal</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CPEXCEPTIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CPEXCEPTIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;exception&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stdfunc.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacexThermal" kindref="compound">xThermal</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classxThermal_1_1xThermalBaseError" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxThermal_1_1xThermalBaseError" kindref="compound">xThermalBaseError</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>std::exception</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>ErrCode<sp/>{<sp/>eNotImplemented,<sp/>eSolution,<sp/>eAttribute,<sp/>eOutOfRange,<sp/>eValue,<sp/>eWrongFluid,<sp/>eComposition,<sp/>eInput,<sp/>eNotAvailable,<sp/>eHandle,<sp/>eKey,<sp/>eUnableToLoad,eDirectorySize};</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalBaseError" kindref="compound">xThermalBaseError</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classxThermal_1_1xThermalError" kindref="compound">err</ref>,<sp/>ErrCode<sp/>code)<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal">()<sp/>:<sp/>m_code(code),<sp/>m_err(COLOR_RED<sp/>+<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">err</ref><sp/>+<sp/>COLOR_DEFAULT)<sp/>{}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalBaseError" kindref="compound">~xThermalBaseError</ref>()<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal">()<sp/>{};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>what()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal">()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_err.c_str();<sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>ErrCode<sp/>code()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_code;<sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>ErrCode<sp/>m_code;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>m_err;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;xThermalBaseError::ErrCode<sp/>errcode&gt;</highlight></codeline>
+<codeline lineno="26" refid="classxThermal_1_1xThermalError" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxThermal_1_1xThermalError" kindref="compound">xThermalError</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalBaseError" kindref="compound">xThermalBaseError</ref><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">xThermalError</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classxThermal_1_1xThermalError" kindref="compound">err</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>ErrCode<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">ecode</ref><sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">errcode</ref>)<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal">()<sp/>:<sp/><ref refid="classxThermal_1_1xThermalBaseError" kindref="compound">xThermalBaseError</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">err</ref>,<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">ecode</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">xThermalError&lt;xThermalBaseError::eNotImplemented&gt;</ref><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">NotImplementedError</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">xThermalError&lt;xThermalBaseError::eSolution&gt;</ref><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">SolutionError</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">xThermalError&lt;xThermalBaseError::eAttribute&gt;</ref><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">AttributeError</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">xThermalError&lt;xThermalBaseError::eOutOfRange&gt;</ref><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">OutOfRangeError</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">xThermalError&lt;xThermalBaseError::eValue&gt;</ref><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">ValueError</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">xThermalError&lt;xThermalBaseError::eKey&gt;</ref><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">KeyError</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">xThermalError&lt;xThermalBaseError::eHandle&gt;</ref><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">HandleError</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">xThermalError&lt;xThermalBaseError::eUnableToLoad&gt;</ref><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">UnableToLoadError</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">xThermalError&lt;xThermalBaseError::eDirectorySize&gt;</ref><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">DirectorySizeError</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ValueError<sp/>specializations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;xThermalBaseError::ErrCode<sp/>errcode&gt;</highlight></codeline>
+<codeline lineno="43" refid="classxThermal_1_1ValueErrorSpec" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxThermal_1_1ValueErrorSpec" kindref="compound">ValueErrorSpec</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">ValueError</ref><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1ValueErrorSpec" kindref="compound">ValueErrorSpec</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<ref refid="classxThermal_1_1xThermalError" kindref="compound">err</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>ErrCode<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">ecode</ref><sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">errcode</ref>)<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal">()<sp/>:<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">ValueError</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">err</ref>,<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">ecode</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">ValueErrorSpec&lt;xThermalBaseError::eWrongFluid&gt;</ref><sp/><ref refid="classxThermal_1_1ValueErrorSpec" kindref="compound">WrongFluidError</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">ValueErrorSpec&lt;xThermalBaseError::eComposition&gt;</ref><sp/><ref refid="classxThermal_1_1ValueErrorSpec" kindref="compound">CompositionError</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">ValueErrorSpec&lt;xThermalBaseError::eInput&gt;</ref><sp/><ref refid="classxThermal_1_1ValueErrorSpec" kindref="compound">InputError</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">ValueErrorSpec&lt;xThermalBaseError::eNotAvailable&gt;</ref><sp/><ref refid="classxThermal_1_1ValueErrorSpec" kindref="compound">NotAvailableError</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">};<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>xThermal<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Library/test/test_templateClass/Exception.h"/>
+  </compounddef>
+</doxygen>

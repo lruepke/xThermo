@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structPROPS" kind="struct" language="C++" prot="public">
+    <compoundname>PROPS</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structPROPS_1a5bbf67cc00961897f88104772ed8b7bc" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref> *</type>
+        <definition>mxArray* PROPS::T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <qualifiedname>PROPS::T</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/prop_VL.cpp" line="12" column="13" bodyfile="Library/H2ONaCl/Matlab/prop_VL.cpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPROPS_1a5e6d62e9b3a78875aab2c909d51d7dad" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref> *</type>
+        <definition>mxArray* PROPS::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <qualifiedname>PROPS::P</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/prop_VL.cpp" line="13" column="13" bodyfile="Library/H2ONaCl/Matlab/prop_VL.cpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPROPS_1a37c9d977eb3614d490ed52e898ca7999" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref> *</type>
+        <definition>mxArray* PROPS::X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <qualifiedname>PROPS::X</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/prop_VL.cpp" line="14" column="13" bodyfile="Library/H2ONaCl/Matlab/prop_VL.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPROPS_1af8cf8efe0b943702f7952ca6bddc2bec" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref> *</type>
+        <definition>mxArray* PROPS::H</definition>
+        <argsstring></argsstring>
+        <name>H</name>
+        <qualifiedname>PROPS::H</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/prop_VL.cpp" line="15" column="13" bodyfile="Library/H2ONaCl/Matlab/prop_VL.cpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPROPS_1a59bac85b854e98226d82674ccec8a03a" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref> *</type>
+        <definition>mxArray* PROPS::S_l</definition>
+        <argsstring></argsstring>
+        <name>S_l</name>
+        <qualifiedname>PROPS::S_l</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/prop_VL.cpp" line="16" column="13" bodyfile="Library/H2ONaCl/Matlab/prop_VL.cpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPROPS_1a8800148edea3a39dea19c8e21d77ae46" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref> *</type>
+        <definition>mxArray* PROPS::S_v</definition>
+        <argsstring></argsstring>
+        <name>S_v</name>
+        <qualifiedname>PROPS::S_v</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/prop_VL.cpp" line="17" column="13" bodyfile="Library/H2ONaCl/Matlab/prop_VL.cpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPROPS_1a56cde4dec6becbca925da7547deb8e37" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref> *</type>
+        <definition>mxArray* PROPS::S_h</definition>
+        <argsstring></argsstring>
+        <name>S_h</name>
+        <qualifiedname>PROPS::S_h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/prop_VL.cpp" line="18" column="13" bodyfile="Library/H2ONaCl/Matlab/prop_VL.cpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPROPS_1aa9160aecad48b9001d398fcad224ff7d" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref> *</type>
+        <definition>mxArray* PROPS::X_l</definition>
+        <argsstring></argsstring>
+        <name>X_l</name>
+        <qualifiedname>PROPS::X_l</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/prop_VL.cpp" line="19" column="13" bodyfile="Library/H2ONaCl/Matlab/prop_VL.cpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPROPS_1a96eb20c612d9a6670487b658b32cb0d1" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref> *</type>
+        <definition>mxArray* PROPS::X_v</definition>
+        <argsstring></argsstring>
+        <name>X_v</name>
+        <qualifiedname>PROPS::X_v</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/prop_VL.cpp" line="20" column="13" bodyfile="Library/H2ONaCl/Matlab/prop_VL.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPROPS_1af25c4afe40122151f11e3cc895f62a2e" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref> *</type>
+        <definition>mxArray* PROPS::Rho_l</definition>
+        <argsstring></argsstring>
+        <name>Rho_l</name>
+        <qualifiedname>PROPS::Rho_l</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/prop_VL.cpp" line="21" column="13" bodyfile="Library/H2ONaCl/Matlab/prop_VL.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPROPS_1a9638c0aafa3d2c238e5e320729e06737" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref> *</type>
+        <definition>mxArray* PROPS::Rho_v</definition>
+        <argsstring></argsstring>
+        <name>Rho_v</name>
+        <qualifiedname>PROPS::Rho_v</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/prop_VL.cpp" line="22" column="13" bodyfile="Library/H2ONaCl/Matlab/prop_VL.cpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPROPS_1a57edbadb8e9d98031c0ebbb9c203c5a9" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref> *</type>
+        <definition>mxArray* PROPS::Rho_h</definition>
+        <argsstring></argsstring>
+        <name>Rho_h</name>
+        <qualifiedname>PROPS::Rho_h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/prop_VL.cpp" line="23" column="13" bodyfile="Library/H2ONaCl/Matlab/prop_VL.cpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPROPS_1ae58d37275842827213f1651693a54329" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref> *</type>
+        <definition>mxArray* PROPS::H_l</definition>
+        <argsstring></argsstring>
+        <name>H_l</name>
+        <qualifiedname>PROPS::H_l</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/prop_VL.cpp" line="24" column="13" bodyfile="Library/H2ONaCl/Matlab/prop_VL.cpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPROPS_1a1ca3eac34627807c57ad2c785cd4e9b8" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref> *</type>
+        <definition>mxArray* PROPS::H_v</definition>
+        <argsstring></argsstring>
+        <name>H_v</name>
+        <qualifiedname>PROPS::H_v</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/prop_VL.cpp" line="25" column="13" bodyfile="Library/H2ONaCl/Matlab/prop_VL.cpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPROPS_1a14f50a7c88d19b20ca03229769ecfae7" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref> *</type>
+        <definition>mxArray* PROPS::H_h</definition>
+        <argsstring></argsstring>
+        <name>H_h</name>
+        <qualifiedname>PROPS::H_h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/prop_VL.cpp" line="26" column="13" bodyfile="Library/H2ONaCl/Matlab/prop_VL.cpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPROPS_1a7aa3afe0be12d65f45004c16769df2a3" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref> *</type>
+        <definition>mxArray* PROPS::Rho</definition>
+        <argsstring></argsstring>
+        <name>Rho</name>
+        <qualifiedname>PROPS::Rho</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/prop_VL.cpp" line="27" column="13" bodyfile="Library/H2ONaCl/Matlab/prop_VL.cpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPROPS_1a579df7567e93ee0a2e85ebae9579d2ee" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref> *</type>
+        <definition>mxArray* PROPS::phase</definition>
+        <argsstring></argsstring>
+        <name>phase</name>
+        <qualifiedname>PROPS::phase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/prop_VL.cpp" line="28" column="13" bodyfile="Library/H2ONaCl/Matlab/prop_VL.cpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/H2ONaCl/Matlab/prop_VL.cpp" line="10" column="1" bodyfile="Library/H2ONaCl/Matlab/prop_VL.cpp" bodystart="11" bodyend="29"/>
+    <listofallmembers>
+      <member refid="structPROPS_1af8cf8efe0b943702f7952ca6bddc2bec" prot="public" virt="non-virtual"><scope>PROPS</scope><name>H</name></member>
+      <member refid="structPROPS_1a14f50a7c88d19b20ca03229769ecfae7" prot="public" virt="non-virtual"><scope>PROPS</scope><name>H_h</name></member>
+      <member refid="structPROPS_1ae58d37275842827213f1651693a54329" prot="public" virt="non-virtual"><scope>PROPS</scope><name>H_l</name></member>
+      <member refid="structPROPS_1a1ca3eac34627807c57ad2c785cd4e9b8" prot="public" virt="non-virtual"><scope>PROPS</scope><name>H_v</name></member>
+      <member refid="structPROPS_1a5e6d62e9b3a78875aab2c909d51d7dad" prot="public" virt="non-virtual"><scope>PROPS</scope><name>P</name></member>
+      <member refid="structPROPS_1a579df7567e93ee0a2e85ebae9579d2ee" prot="public" virt="non-virtual"><scope>PROPS</scope><name>phase</name></member>
+      <member refid="structPROPS_1a7aa3afe0be12d65f45004c16769df2a3" prot="public" virt="non-virtual"><scope>PROPS</scope><name>Rho</name></member>
+      <member refid="structPROPS_1a57edbadb8e9d98031c0ebbb9c203c5a9" prot="public" virt="non-virtual"><scope>PROPS</scope><name>Rho_h</name></member>
+      <member refid="structPROPS_1af25c4afe40122151f11e3cc895f62a2e" prot="public" virt="non-virtual"><scope>PROPS</scope><name>Rho_l</name></member>
+      <member refid="structPROPS_1a9638c0aafa3d2c238e5e320729e06737" prot="public" virt="non-virtual"><scope>PROPS</scope><name>Rho_v</name></member>
+      <member refid="structPROPS_1a56cde4dec6becbca925da7547deb8e37" prot="public" virt="non-virtual"><scope>PROPS</scope><name>S_h</name></member>
+      <member refid="structPROPS_1a59bac85b854e98226d82674ccec8a03a" prot="public" virt="non-virtual"><scope>PROPS</scope><name>S_l</name></member>
+      <member refid="structPROPS_1a8800148edea3a39dea19c8e21d77ae46" prot="public" virt="non-virtual"><scope>PROPS</scope><name>S_v</name></member>
+      <member refid="structPROPS_1a5bbf67cc00961897f88104772ed8b7bc" prot="public" virt="non-virtual"><scope>PROPS</scope><name>T</name></member>
+      <member refid="structPROPS_1a37c9d977eb3614d490ed52e898ca7999" prot="public" virt="non-virtual"><scope>PROPS</scope><name>X</name></member>
+      <member refid="structPROPS_1aa9160aecad48b9001d398fcad224ff7d" prot="public" virt="non-virtual"><scope>PROPS</scope><name>X_l</name></member>
+      <member refid="structPROPS_1a96eb20c612d9a6670487b658b32cb0d1" prot="public" virt="non-virtual"><scope>PROPS</scope><name>X_v</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

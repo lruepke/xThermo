@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__CONSTANTS__NACL" kind="group">
+    <compoundname>CONSTANTS_NACL</compoundname>
+    <title>Constants of pure NaCl.</title>
+    <innerclass refid="structxThermal_1_1NaCl_1_1H__halite__ref" prot="public">xThermal::NaCl::H_halite_ref</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="group__CONSTANTS__NACL_1ga594734cb4396d00b20dfd9396dd30dd4" prot="public" static="no" mutable="no">
+        <type>double const</type>
+        <definition>double const xThermal::NaCl::M</definition>
+        <argsstring></argsstring>
+        <name>M</name>
+        <qualifiedname>xThermal::NaCl::M</qualifiedname>
+        <initializer>= 0.058443</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>molar mass [kg/mol] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="30" column="22" bodyfile="Library/NaCl/NaCl.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__CONSTANTS__NACL_1gae5fa9537dda226d5bed112833fd82c06" prot="public" static="no" mutable="no">
+        <type>double const</type>
+        <definition>double const xThermal::NaCl::T_Triple_C</definition>
+        <argsstring></argsstring>
+        <name>T_Triple_C</name>
+        <qualifiedname>xThermal::NaCl::T_Triple_C</qualifiedname>
+        <initializer>= 800.7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Temperature at triple point of NaCl [ <formula id="76">$ ^{\circ} C$</formula>] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="32" column="22" bodyfile="Library/NaCl/NaCl.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__CONSTANTS__NACL_1ga9def8aa756db28729db5bcc381fa40a6" prot="public" static="no" mutable="no">
+        <type>double const</type>
+        <definition>double const xThermal::NaCl::T_Triple</definition>
+        <argsstring></argsstring>
+        <name>T_Triple</name>
+        <qualifiedname>xThermal::NaCl::T_Triple</qualifiedname>
+        <initializer>= T_Triple_C + 273.15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Temperature at triple point of NaCl, [K] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="34" column="22" bodyfile="Library/NaCl/NaCl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__CONSTANTS__NACL_1gadf2b6f27d28e1bbe8b94b2bc9851e96c" prot="public" static="no" mutable="no">
+        <type>double const</type>
+        <definition>double const xThermal::NaCl::P_Triple</definition>
+        <argsstring></argsstring>
+        <name>P_Triple</name>
+        <qualifiedname>xThermal::NaCl::P_Triple</qualifiedname>
+        <initializer>= 50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pressure at triple point of NaCl, [Pa] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="36" column="22" bodyfile="Library/NaCl/NaCl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__CONSTANTS__NACL_1ga762756a95d44ca849a9f4c8f067a2721" prot="public" static="no" mutable="no">
+        <type>double const</type>
+        <definition>double const xThermal::NaCl::log10_P_Triple</definition>
+        <argsstring></argsstring>
+        <name>log10_P_Triple</name>
+        <qualifiedname>xThermal::NaCl::log10_P_Triple</qualifiedname>
+        <initializer>= log10(P_Triple)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>log_{10}^{P_{Triple}} </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="38" column="22" bodyfile="Library/NaCl/NaCl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__CONSTANTS__NACL_1ga2e9aa2e52c1333eff48c460ee58998e8" prot="public" static="no" mutable="no">
+        <type>double const</type>
+        <definition>double const xThermal::NaCl::inv_T_Triple</definition>
+        <argsstring></argsstring>
+        <name>inv_T_Triple</name>
+        <qualifiedname>xThermal::NaCl::inv_T_Triple</qualifiedname>
+        <initializer>= 1.0/T_Triple</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="249">$ \frac{1}{T_{Triple}} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="40" column="22" bodyfile="Library/NaCl/NaCl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__CONSTANTS__NACL_1gaffc54375ab9dc40dc0fcf56bdef2af9f" prot="public" static="no" mutable="no">
+        <type>double const</type>
+        <definition>double const xThermal::NaCl::T_Triple_sqr</definition>
+        <argsstring></argsstring>
+        <name>T_Triple_sqr</name>
+        <qualifiedname>xThermal::NaCl::T_Triple_sqr</qualifiedname>
+        <initializer>= T_Triple*T_Triple</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="41" column="22" bodyfile="Library/NaCl/NaCl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__CONSTANTS__NACL_1ga594deeecc64e442aee890678a54f3568" prot="public" static="no" mutable="no">
+        <type>double const</type>
+        <definition>double const xThermal::NaCl::T_Triple_sqr_C</definition>
+        <argsstring></argsstring>
+        <name>T_Triple_sqr_C</name>
+        <qualifiedname>xThermal::NaCl::T_Triple_sqr_C</qualifiedname>
+        <initializer>= T_Triple_C*T_Triple_C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="42" column="22" bodyfile="Library/NaCl/NaCl.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__CONSTANTS__NACL_1ga6c5e63110817e3938dee4f47ecda2ec9" prot="public" static="no" mutable="no">
+        <type>double const</type>
+        <definition>double const xThermal::NaCl::slope_Clapeyron</definition>
+        <argsstring></argsstring>
+        <name>slope_Clapeyron</name>
+        <qualifiedname>xThermal::NaCl::slope_Clapeyron</qualifiedname>
+        <initializer>= 1.0/2.4726e-7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clapeyron slope <formula id="250">$ \frac{dP}{dT} = \frac{1}{a} ~ Pa/K $</formula> of the NaCl melting curve (see Tab. 3 of Driesner2007Part1), which is used in <formula id="213">$ \Delta H_{fus} $</formula> calculation (Eq. 28 of Driesner2007Part2) <simplesect kind="note"><para>Notice the unit! </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="44" column="22" bodyfile="Library/NaCl/NaCl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>see last pargraph of section 3.2 in Driesner2007Part1. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

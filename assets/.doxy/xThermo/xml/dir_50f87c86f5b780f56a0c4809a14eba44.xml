@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_50f87c86f5b780f56a0c4809a14eba44" kind="dir">
+    <compoundname>Library/test/cpp_crossplatform/cpp_framework</compoundname>
+    <innerfile refid="example_8cpp">example.cpp</innerfile>
+    <innerfile refid="example_8h">example.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/test/cpp_crossplatform/cpp_framework/"/>
+  </compounddef>
+</doxygen>

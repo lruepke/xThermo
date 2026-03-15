@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structtriangulateio" kind="struct" language="C++" prot="public">
+    <compoundname>triangulateio</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtriangulateio_1a896f5bd7f2215e07131fd9bc706bcd91" prot="public" static="no" mutable="no">
+        <type>REAL *</type>
+        <definition>REAL* triangulateio::pointlist</definition>
+        <argsstring></argsstring>
+        <name>pointlist</name>
+        <qualifiedname>triangulateio::pointlist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="260" column="8" bodyfile="Library/thermo/triangle.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtriangulateio_1a021a4a5e40fb34039fb7be0f86958254" prot="public" static="no" mutable="no">
+        <type>REAL *</type>
+        <definition>REAL* triangulateio::pointattributelist</definition>
+        <argsstring></argsstring>
+        <name>pointattributelist</name>
+        <qualifiedname>triangulateio::pointattributelist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="261" column="8" bodyfile="Library/thermo/triangle.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtriangulateio_1acb2a9792412a2c3051fb869e88cfa602" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* triangulateio::pointmarkerlist</definition>
+        <argsstring></argsstring>
+        <name>pointmarkerlist</name>
+        <qualifiedname>triangulateio::pointmarkerlist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="262" column="7" bodyfile="Library/thermo/triangle.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtriangulateio_1a29be46ad3fc4f8c84235e420f7e606ec" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int triangulateio::numberofpoints</definition>
+        <argsstring></argsstring>
+        <name>numberofpoints</name>
+        <qualifiedname>triangulateio::numberofpoints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="263" column="7" bodyfile="Library/thermo/triangle.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtriangulateio_1aaac6a34f7d7bf1d1476ce7672f15d976" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int triangulateio::numberofpointattributes</definition>
+        <argsstring></argsstring>
+        <name>numberofpointattributes</name>
+        <qualifiedname>triangulateio::numberofpointattributes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="264" column="7" bodyfile="Library/thermo/triangle.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtriangulateio_1a7d0f1c11cd6dc624ae61dbbbcc68b8cb" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* triangulateio::trianglelist</definition>
+        <argsstring></argsstring>
+        <name>trianglelist</name>
+        <qualifiedname>triangulateio::trianglelist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="266" column="7" bodyfile="Library/thermo/triangle.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtriangulateio_1ad850240fe096d32c922c1ae4694ae259" prot="public" static="no" mutable="no">
+        <type>REAL *</type>
+        <definition>REAL* triangulateio::triangleattributelist</definition>
+        <argsstring></argsstring>
+        <name>triangleattributelist</name>
+        <qualifiedname>triangulateio::triangleattributelist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="267" column="8" bodyfile="Library/thermo/triangle.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtriangulateio_1a6656e96fa38a24bb7c781be4b1d0e19b" prot="public" static="no" mutable="no">
+        <type>REAL *</type>
+        <definition>REAL* triangulateio::trianglearealist</definition>
+        <argsstring></argsstring>
+        <name>trianglearealist</name>
+        <qualifiedname>triangulateio::trianglearealist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="268" column="8" bodyfile="Library/thermo/triangle.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtriangulateio_1a266c62c74f443a4a50c986ccf97e74c7" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* triangulateio::neighborlist</definition>
+        <argsstring></argsstring>
+        <name>neighborlist</name>
+        <qualifiedname>triangulateio::neighborlist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="269" column="7" bodyfile="Library/thermo/triangle.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtriangulateio_1a6455c22dba63bdb0584d44fdf35a321f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int triangulateio::numberoftriangles</definition>
+        <argsstring></argsstring>
+        <name>numberoftriangles</name>
+        <qualifiedname>triangulateio::numberoftriangles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="270" column="7" bodyfile="Library/thermo/triangle.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtriangulateio_1aaeeda011ca1f51696fcc5a460b81c18d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int triangulateio::numberofcorners</definition>
+        <argsstring></argsstring>
+        <name>numberofcorners</name>
+        <qualifiedname>triangulateio::numberofcorners</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="271" column="7" bodyfile="Library/thermo/triangle.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtriangulateio_1a272ba3b8730997b1bd6c367328b1abf8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int triangulateio::numberoftriangleattributes</definition>
+        <argsstring></argsstring>
+        <name>numberoftriangleattributes</name>
+        <qualifiedname>triangulateio::numberoftriangleattributes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="272" column="7" bodyfile="Library/thermo/triangle.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtriangulateio_1ad45fec0a70058760450e09b949a3d1c0" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* triangulateio::segmentlist</definition>
+        <argsstring></argsstring>
+        <name>segmentlist</name>
+        <qualifiedname>triangulateio::segmentlist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="274" column="7" bodyfile="Library/thermo/triangle.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtriangulateio_1a8d88affa03ad1156b1d087448166bf04" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* triangulateio::segmentmarkerlist</definition>
+        <argsstring></argsstring>
+        <name>segmentmarkerlist</name>
+        <qualifiedname>triangulateio::segmentmarkerlist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="275" column="7" bodyfile="Library/thermo/triangle.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtriangulateio_1a417da9cc4711390560c6af7750d13d95" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int triangulateio::numberofsegments</definition>
+        <argsstring></argsstring>
+        <name>numberofsegments</name>
+        <qualifiedname>triangulateio::numberofsegments</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="276" column="7" bodyfile="Library/thermo/triangle.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtriangulateio_1add7f801876142b9dd595d2200101a36e" prot="public" static="no" mutable="no">
+        <type>REAL *</type>
+        <definition>REAL* triangulateio::holelist</definition>
+        <argsstring></argsstring>
+        <name>holelist</name>
+        <qualifiedname>triangulateio::holelist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="278" column="8" bodyfile="Library/thermo/triangle.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtriangulateio_1a91deb1af3dd2ef937f1b6b7e38261e99" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int triangulateio::numberofholes</definition>
+        <argsstring></argsstring>
+        <name>numberofholes</name>
+        <qualifiedname>triangulateio::numberofholes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="279" column="7" bodyfile="Library/thermo/triangle.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtriangulateio_1a9973779edbe12a9773cb4169a62b6d6f" prot="public" static="no" mutable="no">
+        <type>REAL *</type>
+        <definition>REAL* triangulateio::regionlist</definition>
+        <argsstring></argsstring>
+        <name>regionlist</name>
+        <qualifiedname>triangulateio::regionlist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="281" column="8" bodyfile="Library/thermo/triangle.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtriangulateio_1ac1082ccae35526598ba0977068da9278" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int triangulateio::numberofregions</definition>
+        <argsstring></argsstring>
+        <name>numberofregions</name>
+        <qualifiedname>triangulateio::numberofregions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="282" column="7" bodyfile="Library/thermo/triangle.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtriangulateio_1af8374f90431a318b694bb5424814f111" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* triangulateio::edgelist</definition>
+        <argsstring></argsstring>
+        <name>edgelist</name>
+        <qualifiedname>triangulateio::edgelist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="284" column="7" bodyfile="Library/thermo/triangle.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtriangulateio_1a3f9be953734099d409f54736c3cd72af" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* triangulateio::edgemarkerlist</definition>
+        <argsstring></argsstring>
+        <name>edgemarkerlist</name>
+        <qualifiedname>triangulateio::edgemarkerlist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="285" column="7" bodyfile="Library/thermo/triangle.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtriangulateio_1a4ab8acf52940830bbf613981bc83ff57" prot="public" static="no" mutable="no">
+        <type>REAL *</type>
+        <definition>REAL* triangulateio::normlist</definition>
+        <argsstring></argsstring>
+        <name>normlist</name>
+        <qualifiedname>triangulateio::normlist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="286" column="8" bodyfile="Library/thermo/triangle.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtriangulateio_1ac8c1b394861ed4a5c021a2d08a36a2a9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int triangulateio::numberofedges</definition>
+        <argsstring></argsstring>
+        <name>numberofedges</name>
+        <qualifiedname>triangulateio::numberofedges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.h" line="287" column="7" bodyfile="Library/thermo/triangle.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/thermo/triangle.h" line="259" column="1" bodyfile="Library/thermo/triangle.h" bodystart="259" bodyend="288"/>
+    <listofallmembers>
+      <member refid="structtriangulateio_1af8374f90431a318b694bb5424814f111" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>edgelist</name></member>
+      <member refid="structtriangulateio_1a3f9be953734099d409f54736c3cd72af" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>edgemarkerlist</name></member>
+      <member refid="structtriangulateio_1add7f801876142b9dd595d2200101a36e" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>holelist</name></member>
+      <member refid="structtriangulateio_1a266c62c74f443a4a50c986ccf97e74c7" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>neighborlist</name></member>
+      <member refid="structtriangulateio_1a4ab8acf52940830bbf613981bc83ff57" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>normlist</name></member>
+      <member refid="structtriangulateio_1aaeeda011ca1f51696fcc5a460b81c18d" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>numberofcorners</name></member>
+      <member refid="structtriangulateio_1ac8c1b394861ed4a5c021a2d08a36a2a9" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>numberofedges</name></member>
+      <member refid="structtriangulateio_1a91deb1af3dd2ef937f1b6b7e38261e99" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>numberofholes</name></member>
+      <member refid="structtriangulateio_1aaac6a34f7d7bf1d1476ce7672f15d976" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>numberofpointattributes</name></member>
+      <member refid="structtriangulateio_1a29be46ad3fc4f8c84235e420f7e606ec" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>numberofpoints</name></member>
+      <member refid="structtriangulateio_1ac1082ccae35526598ba0977068da9278" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>numberofregions</name></member>
+      <member refid="structtriangulateio_1a417da9cc4711390560c6af7750d13d95" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>numberofsegments</name></member>
+      <member refid="structtriangulateio_1a272ba3b8730997b1bd6c367328b1abf8" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>numberoftriangleattributes</name></member>
+      <member refid="structtriangulateio_1a6455c22dba63bdb0584d44fdf35a321f" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>numberoftriangles</name></member>
+      <member refid="structtriangulateio_1a021a4a5e40fb34039fb7be0f86958254" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>pointattributelist</name></member>
+      <member refid="structtriangulateio_1a896f5bd7f2215e07131fd9bc706bcd91" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>pointlist</name></member>
+      <member refid="structtriangulateio_1acb2a9792412a2c3051fb869e88cfa602" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>pointmarkerlist</name></member>
+      <member refid="structtriangulateio_1a9973779edbe12a9773cb4169a62b6d6f" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>regionlist</name></member>
+      <member refid="structtriangulateio_1ad45fec0a70058760450e09b949a3d1c0" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>segmentlist</name></member>
+      <member refid="structtriangulateio_1a8d88affa03ad1156b1d087448166bf04" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>segmentmarkerlist</name></member>
+      <member refid="structtriangulateio_1a6656e96fa38a24bb7c781be4b1d0e19b" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>trianglearealist</name></member>
+      <member refid="structtriangulateio_1ad850240fe096d32c922c1ae4694ae259" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>triangleattributelist</name></member>
+      <member refid="structtriangulateio_1a7d0f1c11cd6dc624ae61dbbbcc68b8cb" prot="public" virt="non-virtual"><scope>triangulateio</scope><name>trianglelist</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

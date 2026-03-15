@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="test__H2ONaCl_8py" kind="file" language="Python">
+    <compoundname>test_H2ONaCl.py</compoundname>
+    <innernamespace refid="namespacetest__H2ONaCl">test_H2ONaCl</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>np</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>xThermal<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>H2O</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>xThermal<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>NaCl</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>xThermal<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>H2ONaCl</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">sw_84<sp/>=<sp/>H2ONaCl.cH2ONaCl(</highlight><highlight class="stringliteral">&quot;IAPS84&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">sw<sp/>=<sp/>sw_84</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">T_list<sp/>=<sp/>[373,<sp/>500,<sp/>650]</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">p_list<sp/>=<sp/>[300e5,<sp/>300e5,<sp/>300e5]</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">X_list<sp/>=<sp/>[0.2,<sp/>0.2,<sp/>0.2]</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>T,<sp/>p,<sp/>X<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>zip(T_list,<sp/>p_list,<sp/>X_list):</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>props<sp/>=<sp/>sw.UpdateState_TPX(T,<sp/>p,<sp/>X)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>print(f</highlight><highlight class="stringliteral">&quot;T={T}<sp/>K<sp/><sp/>p={p/1e5:.0f}<sp/>bar<sp/><sp/>X={X}<sp/><sp/>Rho={props.Rho:.2f}<sp/>kg/m3<sp/><sp/>H={props.H/1e3:.2f}<sp/>kJ/kg<sp/><sp/>phase={props.phase}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+    </programlisting>
+    <location file="Library/H2ONaCl/test_H2ONaCl.py"/>
+  </compounddef>
+</doxygen>

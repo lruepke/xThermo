@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespaceTEST__SWIG" kind="namespace" language="C++">
+    <compoundname>TEST_SWIG</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="test_8cpp_1a1b272953e62efbc0325c12a44ef9989e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TEST_SWIG::test_print</definition>
+        <argsstring>()</argsstring>
+        <name>test_print</name>
+        <qualifiedname>TEST_SWIG::test_print</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_swig/test.cpp" line="6" column="10" bodyfile="Library/test/test_swig/test.cpp" bodystart="6" bodyend="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/test/test_swig/test.cpp" line="2" column="1"/>
+  </compounddef>
+</doxygen>

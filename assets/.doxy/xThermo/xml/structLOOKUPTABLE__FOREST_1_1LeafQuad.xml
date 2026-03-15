@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structLOOKUPTABLE__FOREST_1_1LeafQuad" kind="struct" language="C++" prot="public">
+    <compoundname>LOOKUPTABLE_FOREST::LeafQuad</compoundname>
+    <templateparamlist>
+      <param>
+        <type>int</type>
+        <declname>dim</declname>
+        <defname>dim</defname>
+      </param>
+      <param>
+        <type>typename USER_DATA</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLOOKUPTABLE__FOREST_1_1LeafQuad_1aa53852a2bf30f91a13738d92e046e6cd" prot="public" static="no" mutable="no">
+        <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">Quadrant</ref>&lt; dim, USER_DATA &gt; *</type>
+        <definition>Quadrant&lt;dim, USER_DATA&gt;* LOOKUPTABLE_FOREST::LeafQuad&lt; dim, USER_DATA &gt;::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LeafQuad::parent</qualifiedname>
+        <initializer>=NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="87" column="18" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLOOKUPTABLE__FOREST_1_1LeafQuad_1a96d300f9bf469ba00815160cae974c42" prot="public" static="no" mutable="no">
+        <type>USER_DATA *</type>
+        <definition>USER_DATA* LOOKUPTABLE_FOREST::LeafQuad&lt; dim, USER_DATA &gt;::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LeafQuad::user_data</qualifiedname>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="88" column="29" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLOOKUPTABLE__FOREST_1_1LeafQuad_1adc342ac45373797e216bacd29130b1c0" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int LOOKUPTABLE_FOREST::LeafQuad&lt; dim, USER_DATA &gt;::index_props[1&lt;&lt; dim]</definition>
+        <argsstring>[1&lt;&lt; dim]</argsstring>
+        <name>index_props</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LeafQuad::index_props</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="89" column="22" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/AMR_LUT/LookUpTableForest.h" line="85" column="5" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="86" bodyend="90"/>
+    <listofallmembers>
+      <member refid="structLOOKUPTABLE__FOREST_1_1LeafQuad_1adc342ac45373797e216bacd29130b1c0" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LeafQuad</scope><name>index_props</name></member>
+      <member refid="structLOOKUPTABLE__FOREST_1_1LeafQuad_1aa53852a2bf30f91a13738d92e046e6cd" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LeafQuad</scope><name>parent</name></member>
+      <member refid="structLOOKUPTABLE__FOREST_1_1LeafQuad_1a96d300f9bf469ba00815160cae974c42" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LeafQuad</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

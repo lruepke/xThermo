@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="P__X__Critical_8m" kind="file" language="Objective-C">
+    <compoundname>P_X_Critical.m</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="P__X__Critical_8m_1a4355105fb0a26c6934db7bc947bab752" prot="public" static="no" mutable="no">
+        <type>*</type>
+        <definition>* Input</definition>
+        <argsstring></argsstring>
+        <name>Input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/P_X_Critical.m" line="5" column="5" bodyfile="Library/H2ONaCl/Matlab/P_X_Critical.m" bodystart="6" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="P__X__Critical_8m_1a5edf16303b00d5d8867138bbcaf14b18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>P_X_Critical m Help file for P_X_Critical MEX file Calculate critical pressure and composition for given temperature</type>
+        <definition>P_X_Critical m Help file for P_X_Critical MEX file Calculate critical pressure and composition for given temperature P_X_Critical</definition>
+        <argsstring>(T, backend_name=&apos;IAPS84&apos;)</argsstring>
+        <name>P_X_Critical</name>
+        <param>
+          <type>T</type>
+        </param>
+        <param>
+          <type>backend_name</type>
+          <defval>&apos;IAPS84&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/P_X_Critical.m" line="4" column="4" declfile="Library/H2ONaCl/Matlab/P_X_Critical.m" declline="4" declcolumn="4"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">%<sp/>P_X_Critical.m<sp/>Help<sp/>file<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>P_X_Critical.<sp/>MEX<sp/>file</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">%</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">%<sp/>Calculate<sp/>critical<sp/>pressure<sp/>and<sp/>composition<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>given<sp/>temperature.</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">%<sp/><sp/><sp/>P_X_Critical(T,<sp/>backend_name=</highlight><highlight class="stringliteral">&apos;IAPS84&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">%<sp/><sp/><sp/>*<sp/>Input:<sp/>T<sp/>[K]</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">%<sp/><sp/><sp/>*<sp/>Output:<sp/>P[Pa],<sp/>X[kg/kg]</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">%</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">%<sp/><sp/><sp/>MEX<sp/>File<sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">.</highlight></codeline>
+    </programlisting>
+    <location file="Library/H2ONaCl/Matlab/P_X_Critical.m"/>
+  </compounddef>
+</doxygen>

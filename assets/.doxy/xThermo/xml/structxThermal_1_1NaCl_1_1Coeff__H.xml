@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1NaCl_1_1Coeff__H" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::NaCl::Coeff_H</compoundname>
+    <includes refid="NaCl_8h" local="no">NaCl.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1NaCl_1_1Coeff__H_1af036393d02e3060a9d5ff20fddc59b1e" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::NaCl::Coeff_H::r[5]</definition>
+        <argsstring>[5]</argsstring>
+        <name>r</name>
+        <qualifiedname>xThermal::NaCl::Coeff_H::r</qualifiedname>
+        <initializer>= {1148.81, 0.275774, 8.8103<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-05, 
+                            0,
+                            5.29063<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-18 - 9.63084<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-21 + 6.50745<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-23}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="83" column="20" bodyfile="Library/NaCl/NaCl.h" bodystart="83" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1NaCl_1_1Coeff__H_1aa552f4c813f3371623511ae9c8d5ba1a" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::NaCl::Coeff_H::r3[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>r3</name>
+        <qualifiedname>xThermal::NaCl::Coeff_H::r3</qualifiedname>
+        <initializer>= {-0.0017099<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-5, - 3.82734<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-11, - 8.65455<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-14}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="86" column="26" bodyfile="Library/NaCl/NaCl.h" bodystart="86" bodyend="86"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Parameters for enthalpies. See table 5 of Driesner2007Part2. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>r[3] is a function of T, need to updated inside function <ref refid="" kindref="compound">Cp</ref>.</para>
+</simplesect>
+<simplesect kind="note"><para>Again, in order to make input P with unit [Pa], multiply 1E-5 and 1E-10 to <formula id="253">$ r_3, r_4 $</formula>, respectively, see equation 30 of Driesner2007Part2.</para>
+</simplesect>
+<simplesect kind="warning"><para>Why the r4 is written as summation of some tiny values in the Tab. 5 ?</para>
+</simplesect>
+<xrefsect id="todo_1_todo000006"><xreftitle>Todo</xreftitle><xrefdescription><para>Need to confirm r4 in Tab.5 is correct</para>
+</xrefdescription></xrefsect></para>
+    </detaileddescription>
+    <location file="Library/NaCl/NaCl.h" line="81" column="9" bodyfile="Library/NaCl/NaCl.h" bodystart="82" bodyend="87"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1NaCl_1_1Coeff__H_1af036393d02e3060a9d5ff20fddc59b1e" prot="public" virt="non-virtual"><scope>xThermal::NaCl::Coeff_H</scope><name>r</name></member>
+      <member refid="structxThermal_1_1NaCl_1_1Coeff__H_1aa552f4c813f3371623511ae9c8d5ba1a" prot="public" virt="non-virtual"><scope>xThermal::NaCl::Coeff_H</scope><name>r3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

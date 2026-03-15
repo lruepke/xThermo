@@ -1,0 +1,858 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmesh" kind="struct" language="C++" prot="public">
+    <compoundname>mesh</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmesh_1a69079626a8de35998ff5ee644aeb5b5a" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structmemorypool" kindref="compound">memorypool</ref></type>
+        <definition>struct memorypool mesh::triangles</definition>
+        <argsstring></argsstring>
+        <name>triangles</name>
+        <qualifiedname>mesh::triangles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="666" column="19" bodyfile="Library/thermo/triangle.cpp" bodystart="666" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a3c29f7e745ae22b5bb4cf08d49b77895" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structmemorypool" kindref="compound">memorypool</ref></type>
+        <definition>struct memorypool mesh::subsegs</definition>
+        <argsstring></argsstring>
+        <name>subsegs</name>
+        <qualifiedname>mesh::subsegs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="667" column="19" bodyfile="Library/thermo/triangle.cpp" bodystart="667" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a9812ee57bbbb5b168d4a85403e5acbad" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structmemorypool" kindref="compound">memorypool</ref></type>
+        <definition>struct memorypool mesh::vertices</definition>
+        <argsstring></argsstring>
+        <name>vertices</name>
+        <qualifiedname>mesh::vertices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="668" column="19" bodyfile="Library/thermo/triangle.cpp" bodystart="668" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a3cb8300dd2e6dc4e11795ac178bf02b5" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structmemorypool" kindref="compound">memorypool</ref></type>
+        <definition>struct memorypool mesh::viri</definition>
+        <argsstring></argsstring>
+        <name>viri</name>
+        <qualifiedname>mesh::viri</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="669" column="19" bodyfile="Library/thermo/triangle.cpp" bodystart="669" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1aeb8da45b7822882ee7db7d1a1249a0b7" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structmemorypool" kindref="compound">memorypool</ref></type>
+        <definition>struct memorypool mesh::badsubsegs</definition>
+        <argsstring></argsstring>
+        <name>badsubsegs</name>
+        <qualifiedname>mesh::badsubsegs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="670" column="19" bodyfile="Library/thermo/triangle.cpp" bodystart="670" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a05cf8b5d0015464c86521cd8a1ddd768" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structmemorypool" kindref="compound">memorypool</ref></type>
+        <definition>struct memorypool mesh::badtriangles</definition>
+        <argsstring></argsstring>
+        <name>badtriangles</name>
+        <qualifiedname>mesh::badtriangles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="671" column="19" bodyfile="Library/thermo/triangle.cpp" bodystart="671" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a21056ea10e510d8aaa99e93d35ef5fe2" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structmemorypool" kindref="compound">memorypool</ref></type>
+        <definition>struct memorypool mesh::flipstackers</definition>
+        <argsstring></argsstring>
+        <name>flipstackers</name>
+        <qualifiedname>mesh::flipstackers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="672" column="19" bodyfile="Library/thermo/triangle.cpp" bodystart="672" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a86186d96a9bac08ba51665bce57a4009" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structmemorypool" kindref="compound">memorypool</ref></type>
+        <definition>struct memorypool mesh::splaynodes</definition>
+        <argsstring></argsstring>
+        <name>splaynodes</name>
+        <qualifiedname>mesh::splaynodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="673" column="19" bodyfile="Library/thermo/triangle.cpp" bodystart="673" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a9fb6633c391887f9ece4f47c6251d806" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structbadtriang" kindref="compound">badtriang</ref> *</type>
+        <definition>struct badtriang* mesh::queuefront[4096]</definition>
+        <argsstring>[4096]</argsstring>
+        <name>queuefront</name>
+        <qualifiedname>mesh::queuefront</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="678" column="18" bodyfile="Library/thermo/triangle.cpp" bodystart="678" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a194e9c6cc034fe96c3eb3d6660e0d5d7" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structbadtriang" kindref="compound">badtriang</ref> *</type>
+        <definition>struct badtriang* mesh::queuetail[4096]</definition>
+        <argsstring>[4096]</argsstring>
+        <name>queuetail</name>
+        <qualifiedname>mesh::queuetail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="679" column="18" bodyfile="Library/thermo/triangle.cpp" bodystart="679" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a67dae9c18940347bff87ac492258acb5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mesh::nextnonemptyq[4096]</definition>
+        <argsstring>[4096]</argsstring>
+        <name>nextnonemptyq</name>
+        <qualifiedname>mesh::nextnonemptyq</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="680" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="680" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a420eac8320d421bf6ba4d68daef14107" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mesh::firstnonemptyq</definition>
+        <argsstring></argsstring>
+        <name>firstnonemptyq</name>
+        <qualifiedname>mesh::firstnonemptyq</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="681" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="681" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a8a82d7821fd526fb8f406be1ece5b591" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structflipstacker" kindref="compound">flipstacker</ref> *</type>
+        <definition>struct flipstacker* mesh::lastflip</definition>
+        <argsstring></argsstring>
+        <name>lastflip</name>
+        <qualifiedname>mesh::lastflip</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="685" column="20" bodyfile="Library/thermo/triangle.cpp" bodystart="685" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a805cad6865dfc81be5634dccd5513fa5" prot="public" static="no" mutable="no">
+        <type>REAL</type>
+        <definition>REAL mesh::xmin</definition>
+        <argsstring></argsstring>
+        <name>xmin</name>
+        <qualifiedname>mesh::xmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="689" column="8" bodyfile="Library/thermo/triangle.cpp" bodystart="689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a68fa6a62067796785ff83dc0ff0bdaa2" prot="public" static="no" mutable="no">
+        <type>REAL</type>
+        <definition>REAL mesh::xmax</definition>
+        <argsstring></argsstring>
+        <name>xmax</name>
+        <qualifiedname>mesh::xmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="689" column="13" bodyfile="Library/thermo/triangle.cpp" bodystart="689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a3671c7a4baa496dc26c5cbdb875f61ee" prot="public" static="no" mutable="no">
+        <type>REAL</type>
+        <definition>REAL mesh::ymin</definition>
+        <argsstring></argsstring>
+        <name>ymin</name>
+        <qualifiedname>mesh::ymin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="689" column="18" bodyfile="Library/thermo/triangle.cpp" bodystart="689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a59d562fb5e038cc0bc905c0aa73ed78e" prot="public" static="no" mutable="no">
+        <type>REAL</type>
+        <definition>REAL mesh::ymax</definition>
+        <argsstring></argsstring>
+        <name>ymax</name>
+        <qualifiedname>mesh::ymax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="689" column="23" bodyfile="Library/thermo/triangle.cpp" bodystart="689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1adc9b1151486e31b769163b7f9e4eb811" prot="public" static="no" mutable="no">
+        <type>REAL</type>
+        <definition>REAL mesh::xminextreme</definition>
+        <argsstring></argsstring>
+        <name>xminextreme</name>
+        <qualifiedname>mesh::xminextreme</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="690" column="8" bodyfile="Library/thermo/triangle.cpp" bodystart="690" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a35525eea6ffd1d5614056308a7530666" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mesh::invertices</definition>
+        <argsstring></argsstring>
+        <name>invertices</name>
+        <qualifiedname>mesh::invertices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="691" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="691" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a28f2e051b63158101968800794eab4e0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mesh::inelements</definition>
+        <argsstring></argsstring>
+        <name>inelements</name>
+        <qualifiedname>mesh::inelements</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="692" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="692" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a73c5f197d430325bb6ac23eed403c980" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mesh::insegments</definition>
+        <argsstring></argsstring>
+        <name>insegments</name>
+        <qualifiedname>mesh::insegments</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="693" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="693" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a79d60900211b0af5134c7fe42dd63f2e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mesh::holes</definition>
+        <argsstring></argsstring>
+        <name>holes</name>
+        <qualifiedname>mesh::holes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="694" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="694" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a32aa80933edcdeb91d9e4a5cb829d152" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mesh::regions</definition>
+        <argsstring></argsstring>
+        <name>regions</name>
+        <qualifiedname>mesh::regions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="695" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="695" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1abb122e5a5df3c10331505101836a1911" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mesh::undeads</definition>
+        <argsstring></argsstring>
+        <name>undeads</name>
+        <qualifiedname>mesh::undeads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="696" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="696" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a0cb925bd98331ef675e9d2d54451287b" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long mesh::edges</definition>
+        <argsstring></argsstring>
+        <name>edges</name>
+        <qualifiedname>mesh::edges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="697" column="8" bodyfile="Library/thermo/triangle.cpp" bodystart="697" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a041f090b1359b3f5400e2de065189dda" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mesh::mesh_dim</definition>
+        <argsstring></argsstring>
+        <name>mesh_dim</name>
+        <qualifiedname>mesh::mesh_dim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="698" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="698" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a9b7c4e029d2c5fb35f85a50e72cc7360" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mesh::nextras</definition>
+        <argsstring></argsstring>
+        <name>nextras</name>
+        <qualifiedname>mesh::nextras</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="699" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="699" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a169bb551d251dd98d70dc5fe56752ae7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mesh::eextras</definition>
+        <argsstring></argsstring>
+        <name>eextras</name>
+        <qualifiedname>mesh::eextras</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="700" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="700" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a42f62619f16224b639fc19e576760f12" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long mesh::hullsize</definition>
+        <argsstring></argsstring>
+        <name>hullsize</name>
+        <qualifiedname>mesh::hullsize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="701" column="8" bodyfile="Library/thermo/triangle.cpp" bodystart="701" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a733d949838b84a6f3bb3db1249629d4d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mesh::steinerleft</definition>
+        <argsstring></argsstring>
+        <name>steinerleft</name>
+        <qualifiedname>mesh::steinerleft</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="702" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="702" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1ad26295d23d2acf33464c939537c0e992" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mesh::vertexmarkindex</definition>
+        <argsstring></argsstring>
+        <name>vertexmarkindex</name>
+        <qualifiedname>mesh::vertexmarkindex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="703" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="703" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a5518ad2f754ab5f06311a0f92b6a39e4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mesh::vertex2triindex</definition>
+        <argsstring></argsstring>
+        <name>vertex2triindex</name>
+        <qualifiedname>mesh::vertex2triindex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="704" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="704" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1ab371a73d1a9dfe5e026bca7293c8e27f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mesh::highorderindex</definition>
+        <argsstring></argsstring>
+        <name>highorderindex</name>
+        <qualifiedname>mesh::highorderindex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="705" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="705" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1adf87a63b4bf9e70afb435d1394c3b31b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mesh::elemattribindex</definition>
+        <argsstring></argsstring>
+        <name>elemattribindex</name>
+        <qualifiedname>mesh::elemattribindex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="706" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="706" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1ae8a2397a2bba31f9a3a5208aa4c4fff0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mesh::areaboundindex</definition>
+        <argsstring></argsstring>
+        <name>areaboundindex</name>
+        <qualifiedname>mesh::areaboundindex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="707" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="707" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a8d2a76d3e90fac9e7839a99668f1669c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mesh::checksegments</definition>
+        <argsstring></argsstring>
+        <name>checksegments</name>
+        <qualifiedname>mesh::checksegments</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="708" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="708" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1acf6f25ff46f70f52500dd0b3dc3336ea" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mesh::checkquality</definition>
+        <argsstring></argsstring>
+        <name>checkquality</name>
+        <qualifiedname>mesh::checkquality</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="709" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="709" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1ab980847b749a285572fac285cb94c843" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mesh::readnodefile</definition>
+        <argsstring></argsstring>
+        <name>readnodefile</name>
+        <qualifiedname>mesh::readnodefile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="710" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="710" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a2db40a26df07dfcb14c6bb5597b97e5b" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long mesh::samples</definition>
+        <argsstring></argsstring>
+        <name>samples</name>
+        <qualifiedname>mesh::samples</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="711" column="8" bodyfile="Library/thermo/triangle.cpp" bodystart="711" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a449675e549ebc9919410b310e568082e" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long mesh::incirclecount</definition>
+        <argsstring></argsstring>
+        <name>incirclecount</name>
+        <qualifiedname>mesh::incirclecount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="713" column="8" bodyfile="Library/thermo/triangle.cpp" bodystart="713" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a8d57c7f3b17990b5e3fc4ebc781e55f0" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long mesh::counterclockcount</definition>
+        <argsstring></argsstring>
+        <name>counterclockcount</name>
+        <qualifiedname>mesh::counterclockcount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="714" column="8" bodyfile="Library/thermo/triangle.cpp" bodystart="714" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a07b2f99af7c405fe94a18c264a86a2d5" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long mesh::orient3dcount</definition>
+        <argsstring></argsstring>
+        <name>orient3dcount</name>
+        <qualifiedname>mesh::orient3dcount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="715" column="8" bodyfile="Library/thermo/triangle.cpp" bodystart="715" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1ad846f50f4787288eef12a09a9c02cd54" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long mesh::hyperbolacount</definition>
+        <argsstring></argsstring>
+        <name>hyperbolacount</name>
+        <qualifiedname>mesh::hyperbolacount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="716" column="8" bodyfile="Library/thermo/triangle.cpp" bodystart="716" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a1ba65d762f34347b9f2dcb6f172636bd" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long mesh::circumcentercount</definition>
+        <argsstring></argsstring>
+        <name>circumcentercount</name>
+        <qualifiedname>mesh::circumcentercount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="717" column="8" bodyfile="Library/thermo/triangle.cpp" bodystart="717" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a9b54a570701c2bf248cf03438a1affc9" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long mesh::circletopcount</definition>
+        <argsstring></argsstring>
+        <name>circletopcount</name>
+        <qualifiedname>mesh::circletopcount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="718" column="8" bodyfile="Library/thermo/triangle.cpp" bodystart="718" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1ac2d8384391395619b4dbda40b6bbddfd" prot="public" static="no" mutable="no">
+        <type>vertex</type>
+        <definition>vertex mesh::infvertex1</definition>
+        <argsstring></argsstring>
+        <name>infvertex1</name>
+        <qualifiedname>mesh::infvertex1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="722" column="10" bodyfile="Library/thermo/triangle.cpp" bodystart="722" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1af1d3d858c7cbd4122b978143c0b08c4b" prot="public" static="no" mutable="no">
+        <type>vertex</type>
+        <definition>vertex mesh::infvertex2</definition>
+        <argsstring></argsstring>
+        <name>infvertex2</name>
+        <qualifiedname>mesh::infvertex2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="722" column="21" bodyfile="Library/thermo/triangle.cpp" bodystart="722" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a530fa3d54ca3b95b34fbc233926ac185" prot="public" static="no" mutable="no">
+        <type>vertex</type>
+        <definition>vertex mesh::infvertex3</definition>
+        <argsstring></argsstring>
+        <name>infvertex3</name>
+        <qualifiedname>mesh::infvertex3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="722" column="32" bodyfile="Library/thermo/triangle.cpp" bodystart="722" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1aeb2991e8af23a60d34462e28cd3881fb" prot="public" static="no" mutable="no">
+        <type>triangle *</type>
+        <definition>triangle* mesh::dummytri</definition>
+        <argsstring></argsstring>
+        <name>dummytri</name>
+        <qualifiedname>mesh::dummytri</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="726" column="12" bodyfile="Library/thermo/triangle.cpp" bodystart="726" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a93c385f82ea2bf1c0d0b794824bef716" prot="public" static="no" mutable="no">
+        <type>triangle *</type>
+        <definition>triangle* mesh::dummytribase</definition>
+        <argsstring></argsstring>
+        <name>dummytribase</name>
+        <qualifiedname>mesh::dummytribase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="727" column="12" bodyfile="Library/thermo/triangle.cpp" bodystart="727" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1ac3956fb994a62f704af23ceb16680ff8" prot="public" static="no" mutable="no">
+        <type>subseg *</type>
+        <definition>subseg* mesh::dummysub</definition>
+        <argsstring></argsstring>
+        <name>dummysub</name>
+        <qualifiedname>mesh::dummysub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="733" column="10" bodyfile="Library/thermo/triangle.cpp" bodystart="733" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a5c152aa62e1ee91832c176920164c2a7" prot="public" static="no" mutable="no">
+        <type>subseg *</type>
+        <definition>subseg* mesh::dummysubbase</definition>
+        <argsstring></argsstring>
+        <name>dummysubbase</name>
+        <qualifiedname>mesh::dummysubbase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="734" column="10" bodyfile="Library/thermo/triangle.cpp" bodystart="734" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmesh_1a3fe1c34473c1475118c2253d7cafb17c" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structotri" kindref="compound">otri</ref></type>
+        <definition>struct otri mesh::recenttri</definition>
+        <argsstring></argsstring>
+        <name>recenttri</name>
+        <qualifiedname>mesh::recenttri</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="739" column="13" bodyfile="Library/thermo/triangle.cpp" bodystart="739" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>badtriang</label>
+        <link refid="structbadtriang"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>nexttriang</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>flipstacker</label>
+        <link refid="structflipstacker"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>prevflip</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>memorypool</label>
+        <link refid="structmemorypool"/>
+      </node>
+      <node id="1">
+        <label>mesh</label>
+        <link refid="structmesh"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>badsubsegs</edgelabel>
+          <edgelabel>badtriangles</edgelabel>
+          <edgelabel>flipstackers</edgelabel>
+          <edgelabel>splaynodes</edgelabel>
+          <edgelabel>subsegs</edgelabel>
+          <edgelabel>triangles</edgelabel>
+          <edgelabel>vertices</edgelabel>
+          <edgelabel>viri</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>queuefront</edgelabel>
+          <edgelabel>queuetail</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>lastflip</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>recenttri</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>otri</label>
+        <link refid="structotri"/>
+      </node>
+    </collaborationgraph>
+    <location file="Library/thermo/triangle.cpp" line="660" column="1" bodyfile="Library/thermo/triangle.cpp" bodystart="660" bodyend="741"/>
+    <listofallmembers>
+      <member refid="structmesh_1ae8a2397a2bba31f9a3a5208aa4c4fff0" prot="public" virt="non-virtual"><scope>mesh</scope><name>areaboundindex</name></member>
+      <member refid="structmesh_1aeb8da45b7822882ee7db7d1a1249a0b7" prot="public" virt="non-virtual"><scope>mesh</scope><name>badsubsegs</name></member>
+      <member refid="structmesh_1a05cf8b5d0015464c86521cd8a1ddd768" prot="public" virt="non-virtual"><scope>mesh</scope><name>badtriangles</name></member>
+      <member refid="structmesh_1acf6f25ff46f70f52500dd0b3dc3336ea" prot="public" virt="non-virtual"><scope>mesh</scope><name>checkquality</name></member>
+      <member refid="structmesh_1a8d2a76d3e90fac9e7839a99668f1669c" prot="public" virt="non-virtual"><scope>mesh</scope><name>checksegments</name></member>
+      <member refid="structmesh_1a9b54a570701c2bf248cf03438a1affc9" prot="public" virt="non-virtual"><scope>mesh</scope><name>circletopcount</name></member>
+      <member refid="structmesh_1a1ba65d762f34347b9f2dcb6f172636bd" prot="public" virt="non-virtual"><scope>mesh</scope><name>circumcentercount</name></member>
+      <member refid="structmesh_1a8d57c7f3b17990b5e3fc4ebc781e55f0" prot="public" virt="non-virtual"><scope>mesh</scope><name>counterclockcount</name></member>
+      <member refid="structmesh_1ac3956fb994a62f704af23ceb16680ff8" prot="public" virt="non-virtual"><scope>mesh</scope><name>dummysub</name></member>
+      <member refid="structmesh_1a5c152aa62e1ee91832c176920164c2a7" prot="public" virt="non-virtual"><scope>mesh</scope><name>dummysubbase</name></member>
+      <member refid="structmesh_1aeb2991e8af23a60d34462e28cd3881fb" prot="public" virt="non-virtual"><scope>mesh</scope><name>dummytri</name></member>
+      <member refid="structmesh_1a93c385f82ea2bf1c0d0b794824bef716" prot="public" virt="non-virtual"><scope>mesh</scope><name>dummytribase</name></member>
+      <member refid="structmesh_1a0cb925bd98331ef675e9d2d54451287b" prot="public" virt="non-virtual"><scope>mesh</scope><name>edges</name></member>
+      <member refid="structmesh_1a169bb551d251dd98d70dc5fe56752ae7" prot="public" virt="non-virtual"><scope>mesh</scope><name>eextras</name></member>
+      <member refid="structmesh_1adf87a63b4bf9e70afb435d1394c3b31b" prot="public" virt="non-virtual"><scope>mesh</scope><name>elemattribindex</name></member>
+      <member refid="structmesh_1a420eac8320d421bf6ba4d68daef14107" prot="public" virt="non-virtual"><scope>mesh</scope><name>firstnonemptyq</name></member>
+      <member refid="structmesh_1a21056ea10e510d8aaa99e93d35ef5fe2" prot="public" virt="non-virtual"><scope>mesh</scope><name>flipstackers</name></member>
+      <member refid="structmesh_1ab371a73d1a9dfe5e026bca7293c8e27f" prot="public" virt="non-virtual"><scope>mesh</scope><name>highorderindex</name></member>
+      <member refid="structmesh_1a79d60900211b0af5134c7fe42dd63f2e" prot="public" virt="non-virtual"><scope>mesh</scope><name>holes</name></member>
+      <member refid="structmesh_1a42f62619f16224b639fc19e576760f12" prot="public" virt="non-virtual"><scope>mesh</scope><name>hullsize</name></member>
+      <member refid="structmesh_1ad846f50f4787288eef12a09a9c02cd54" prot="public" virt="non-virtual"><scope>mesh</scope><name>hyperbolacount</name></member>
+      <member refid="structmesh_1a449675e549ebc9919410b310e568082e" prot="public" virt="non-virtual"><scope>mesh</scope><name>incirclecount</name></member>
+      <member refid="structmesh_1a28f2e051b63158101968800794eab4e0" prot="public" virt="non-virtual"><scope>mesh</scope><name>inelements</name></member>
+      <member refid="structmesh_1ac2d8384391395619b4dbda40b6bbddfd" prot="public" virt="non-virtual"><scope>mesh</scope><name>infvertex1</name></member>
+      <member refid="structmesh_1af1d3d858c7cbd4122b978143c0b08c4b" prot="public" virt="non-virtual"><scope>mesh</scope><name>infvertex2</name></member>
+      <member refid="structmesh_1a530fa3d54ca3b95b34fbc233926ac185" prot="public" virt="non-virtual"><scope>mesh</scope><name>infvertex3</name></member>
+      <member refid="structmesh_1a73c5f197d430325bb6ac23eed403c980" prot="public" virt="non-virtual"><scope>mesh</scope><name>insegments</name></member>
+      <member refid="structmesh_1a35525eea6ffd1d5614056308a7530666" prot="public" virt="non-virtual"><scope>mesh</scope><name>invertices</name></member>
+      <member refid="structmesh_1a8a82d7821fd526fb8f406be1ece5b591" prot="public" virt="non-virtual"><scope>mesh</scope><name>lastflip</name></member>
+      <member refid="structmesh_1a041f090b1359b3f5400e2de065189dda" prot="public" virt="non-virtual"><scope>mesh</scope><name>mesh_dim</name></member>
+      <member refid="structmesh_1a67dae9c18940347bff87ac492258acb5" prot="public" virt="non-virtual"><scope>mesh</scope><name>nextnonemptyq</name></member>
+      <member refid="structmesh_1a9b7c4e029d2c5fb35f85a50e72cc7360" prot="public" virt="non-virtual"><scope>mesh</scope><name>nextras</name></member>
+      <member refid="structmesh_1a07b2f99af7c405fe94a18c264a86a2d5" prot="public" virt="non-virtual"><scope>mesh</scope><name>orient3dcount</name></member>
+      <member refid="structmesh_1a9fb6633c391887f9ece4f47c6251d806" prot="public" virt="non-virtual"><scope>mesh</scope><name>queuefront</name></member>
+      <member refid="structmesh_1a194e9c6cc034fe96c3eb3d6660e0d5d7" prot="public" virt="non-virtual"><scope>mesh</scope><name>queuetail</name></member>
+      <member refid="structmesh_1ab980847b749a285572fac285cb94c843" prot="public" virt="non-virtual"><scope>mesh</scope><name>readnodefile</name></member>
+      <member refid="structmesh_1a3fe1c34473c1475118c2253d7cafb17c" prot="public" virt="non-virtual"><scope>mesh</scope><name>recenttri</name></member>
+      <member refid="structmesh_1a32aa80933edcdeb91d9e4a5cb829d152" prot="public" virt="non-virtual"><scope>mesh</scope><name>regions</name></member>
+      <member refid="structmesh_1a2db40a26df07dfcb14c6bb5597b97e5b" prot="public" virt="non-virtual"><scope>mesh</scope><name>samples</name></member>
+      <member refid="structmesh_1a86186d96a9bac08ba51665bce57a4009" prot="public" virt="non-virtual"><scope>mesh</scope><name>splaynodes</name></member>
+      <member refid="structmesh_1a733d949838b84a6f3bb3db1249629d4d" prot="public" virt="non-virtual"><scope>mesh</scope><name>steinerleft</name></member>
+      <member refid="structmesh_1a3c29f7e745ae22b5bb4cf08d49b77895" prot="public" virt="non-virtual"><scope>mesh</scope><name>subsegs</name></member>
+      <member refid="structmesh_1a69079626a8de35998ff5ee644aeb5b5a" prot="public" virt="non-virtual"><scope>mesh</scope><name>triangles</name></member>
+      <member refid="structmesh_1abb122e5a5df3c10331505101836a1911" prot="public" virt="non-virtual"><scope>mesh</scope><name>undeads</name></member>
+      <member refid="structmesh_1a5518ad2f754ab5f06311a0f92b6a39e4" prot="public" virt="non-virtual"><scope>mesh</scope><name>vertex2triindex</name></member>
+      <member refid="structmesh_1ad26295d23d2acf33464c939537c0e992" prot="public" virt="non-virtual"><scope>mesh</scope><name>vertexmarkindex</name></member>
+      <member refid="structmesh_1a9812ee57bbbb5b168d4a85403e5acbad" prot="public" virt="non-virtual"><scope>mesh</scope><name>vertices</name></member>
+      <member refid="structmesh_1a3cb8300dd2e6dc4e11795ac178bf02b5" prot="public" virt="non-virtual"><scope>mesh</scope><name>viri</name></member>
+      <member refid="structmesh_1a68fa6a62067796785ff83dc0ff0bdaa2" prot="public" virt="non-virtual"><scope>mesh</scope><name>xmax</name></member>
+      <member refid="structmesh_1a805cad6865dfc81be5634dccd5513fa5" prot="public" virt="non-virtual"><scope>mesh</scope><name>xmin</name></member>
+      <member refid="structmesh_1adc9b1151486e31b769163b7f9e4eb811" prot="public" virt="non-virtual"><scope>mesh</scope><name>xminextreme</name></member>
+      <member refid="structmesh_1a59d562fb5e038cc0bc905c0aa73ed78e" prot="public" virt="non-virtual"><scope>mesh</scope><name>ymax</name></member>
+      <member refid="structmesh_1a3671c7a4baa496dc26c5cbdb875f61ee" prot="public" virt="non-virtual"><scope>mesh</scope><name>ymin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

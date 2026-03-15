@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1NaCl_1_1H__halite__ref" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::NaCl::H_halite_ref</compoundname>
+    <includes refid="NaCl_8h" local="no">NaCl.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1NaCl_1_1H__halite__ref_1a7a46bdbf2a8f2aacd9314edaadced63f" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::NaCl::H_halite_ref::H</definition>
+        <argsstring></argsstring>
+        <name>H</name>
+        <qualifiedname>xThermal::NaCl::H_halite_ref::H</qualifiedname>
+        <initializer>= 9.415867359<ref refid="classxThermal_1_1xThermalError" kindref="compound">e4</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enthalpy of halite at reference point (T0, P0). <xrefsect id="todo_1_todo000007"><xreftitle>Todo</xreftitle><xrefdescription><para>need to confirm the reference point of halite enthalpy. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="48" column="26" bodyfile="Library/NaCl/NaCl.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1NaCl_1_1H__halite__ref_1a59d83adb047630a2b881476953cf22ed" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::NaCl::H_halite_ref::T_C</definition>
+        <argsstring></argsstring>
+        <name>T_C</name>
+        <qualifiedname>xThermal::NaCl::H_halite_ref::T_C</qualifiedname>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Temperature [deg.C] at reference point </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="49" column="26" bodyfile="Library/NaCl/NaCl.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1NaCl_1_1H__halite__ref_1ada9089625fbffc1fd36989a40acef3e6" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::NaCl::H_halite_ref::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <qualifiedname>xThermal::NaCl::H_halite_ref::P</qualifiedname>
+        <initializer>= 100E5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pressure [Pa] at reference point </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="50" column="26" bodyfile="Library/NaCl/NaCl.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1NaCl_1_1H__halite__ref_1a7408cb220e603b01af9abf33dab9643d" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::NaCl::H_halite_ref::R0</definition>
+        <argsstring></argsstring>
+        <name>R0</name>
+        <qualifiedname>xThermal::NaCl::H_halite_ref::R0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>H1 = R0 + R1*T + R2*T^2 + R3*T^3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="51" column="20" bodyfile="Library/NaCl/NaCl.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1NaCl_1_1H__halite__ref_1af9e3e84340b51efc4973a16a14436b1c" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::NaCl::H_halite_ref::R1</definition>
+        <argsstring></argsstring>
+        <name>R1</name>
+        <qualifiedname>xThermal::NaCl::H_halite_ref::R1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Coefficient R1 as function of P in equation of H1: R1 = R1[0] + R1[1]*P0 + R1[2]*P0^2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="52" column="20" bodyfile="Library/NaCl/NaCl.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1NaCl_1_1H__halite__ref_1a93b1705ed190252c0d155ce1003f7b54" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::NaCl::H_halite_ref::R2</definition>
+        <argsstring></argsstring>
+        <name>R2</name>
+        <qualifiedname>xThermal::NaCl::H_halite_ref::R2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Coefficient R2 as function of P in equation of H1: R2 = R2[0] + R2[1]*P0 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="53" column="20" bodyfile="Library/NaCl/NaCl.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1NaCl_1_1H__halite__ref_1abdbcb9b661bcada6c2b1055890b1d2c7" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::NaCl::H_halite_ref::R3</definition>
+        <argsstring></argsstring>
+        <name>R3</name>
+        <qualifiedname>xThermal::NaCl::H_halite_ref::R3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Coefficient R2 as function of P in equation of H1: R2 = R1[0] + R2[1]*P0 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="54" column="20" bodyfile="Library/NaCl/NaCl.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Reference point and enthalpy of halite. The JANAF table can be found at <ulink url="https://janaf.nist.gov">https://janaf.nist.gov</ulink>. While this reference point data comes from Falko Vehling(personal communication: he said this table comes from an attached table to a paper) </para>
+    </detaileddescription>
+    <location file="Library/NaCl/NaCl.h" line="46" column="9" bodyfile="Library/NaCl/NaCl.h" bodystart="47" bodyend="55"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1NaCl_1_1H__halite__ref_1a7a46bdbf2a8f2aacd9314edaadced63f" prot="public" virt="non-virtual"><scope>xThermal::NaCl::H_halite_ref</scope><name>H</name></member>
+      <member refid="structxThermal_1_1NaCl_1_1H__halite__ref_1ada9089625fbffc1fd36989a40acef3e6" prot="public" virt="non-virtual"><scope>xThermal::NaCl::H_halite_ref</scope><name>P</name></member>
+      <member refid="structxThermal_1_1NaCl_1_1H__halite__ref_1a7408cb220e603b01af9abf33dab9643d" prot="public" virt="non-virtual"><scope>xThermal::NaCl::H_halite_ref</scope><name>R0</name></member>
+      <member refid="structxThermal_1_1NaCl_1_1H__halite__ref_1af9e3e84340b51efc4973a16a14436b1c" prot="public" virt="non-virtual"><scope>xThermal::NaCl::H_halite_ref</scope><name>R1</name></member>
+      <member refid="structxThermal_1_1NaCl_1_1H__halite__ref_1a93b1705ed190252c0d155ce1003f7b54" prot="public" virt="non-virtual"><scope>xThermal::NaCl::H_halite_ref</scope><name>R2</name></member>
+      <member refid="structxThermal_1_1NaCl_1_1H__halite__ref_1abdbcb9b661bcada6c2b1055890b1d2c7" prot="public" virt="non-virtual"><scope>xThermal::NaCl::H_halite_ref</scope><name>R3</name></member>
+      <member refid="structxThermal_1_1NaCl_1_1H__halite__ref_1a59d83adb047630a2b881476953cf22ed" prot="public" virt="non-virtual"><scope>xThermal::NaCl::H_halite_ref</scope><name>T_C</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless__TwoPhase" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::IAPWS95::HelmholtzEnergy_dimensionless_TwoPhase</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless__TwoPhase_1a38eeedac9506ef3db4ff75aaf1a7304a" prot="public" static="no" mutable="no">
+        <type><ref refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless" kindref="compound">HelmholtzEnergy_dimensionless</ref></type>
+        <definition>HelmholtzEnergy_dimensionless xThermal::IAPWS95::HelmholtzEnergy_dimensionless_TwoPhase::phio_l</definition>
+        <argsstring></argsstring>
+        <name>phio_l</name>
+        <qualifiedname>xThermal::IAPWS95::HelmholtzEnergy_dimensionless_TwoPhase::phio_l</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="193" column="43" bodyfile="Library/H2O/IAPWS95.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless__TwoPhase_1af483cb59ee23a1c00a5c691d93cd9407" prot="public" static="no" mutable="no">
+        <type><ref refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless" kindref="compound">HelmholtzEnergy_dimensionless</ref></type>
+        <definition>HelmholtzEnergy_dimensionless xThermal::IAPWS95::HelmholtzEnergy_dimensionless_TwoPhase::phir_l</definition>
+        <argsstring></argsstring>
+        <name>phir_l</name>
+        <qualifiedname>xThermal::IAPWS95::HelmholtzEnergy_dimensionless_TwoPhase::phir_l</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="193" column="50" bodyfile="Library/H2O/IAPWS95.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless__TwoPhase_1a825fe72ed4b06d305036e41804f6b603" prot="public" static="no" mutable="no">
+        <type><ref refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless" kindref="compound">HelmholtzEnergy_dimensionless</ref></type>
+        <definition>HelmholtzEnergy_dimensionless xThermal::IAPWS95::HelmholtzEnergy_dimensionless_TwoPhase::phio_v</definition>
+        <argsstring></argsstring>
+        <name>phio_v</name>
+        <qualifiedname>xThermal::IAPWS95::HelmholtzEnergy_dimensionless_TwoPhase::phio_v</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="193" column="57" bodyfile="Library/H2O/IAPWS95.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless__TwoPhase_1a5d38e2e8976ed74232cf4a79e95dcc01" prot="public" static="no" mutable="no">
+        <type><ref refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless" kindref="compound">HelmholtzEnergy_dimensionless</ref></type>
+        <definition>HelmholtzEnergy_dimensionless xThermal::IAPWS95::HelmholtzEnergy_dimensionless_TwoPhase::phir_v</definition>
+        <argsstring></argsstring>
+        <name>phir_v</name>
+        <qualifiedname>xThermal::IAPWS95::HelmholtzEnergy_dimensionless_TwoPhase::phir_v</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="193" column="64" bodyfile="Library/H2O/IAPWS95.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>xThermal::IAPWS95::HelmholtzEnergy_dimensionless</label>
+        <link refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless"/>
+      </node>
+      <node id="1">
+        <label>xThermal::IAPWS95::HelmholtzEnergy_dimensionless_TwoPhase</label>
+        <link refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless__TwoPhase"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>phio_l</edgelabel>
+          <edgelabel>phio_v</edgelabel>
+          <edgelabel>phir_l</edgelabel>
+          <edgelabel>phir_v</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Library/H2O/IAPWS95.h" line="191" column="9" bodyfile="Library/H2O/IAPWS95.h" bodystart="192" bodyend="194"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless__TwoPhase_1a38eeedac9506ef3db4ff75aaf1a7304a" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::HelmholtzEnergy_dimensionless_TwoPhase</scope><name>phio_l</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless__TwoPhase_1a825fe72ed4b06d305036e41804f6b603" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::HelmholtzEnergy_dimensionless_TwoPhase</scope><name>phio_v</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless__TwoPhase_1af483cb59ee23a1c00a5c691d93cd9407" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::HelmholtzEnergy_dimensionless_TwoPhase</scope><name>phir_l</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless__TwoPhase_1a5d38e2e8976ed74232cf4a79e95dcc01" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::HelmholtzEnergy_dimensionless_TwoPhase</scope><name>phir_v</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

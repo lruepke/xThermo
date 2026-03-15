@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structrparams" kind="struct" language="C++" prot="public">
+    <compoundname>rparams</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrparams_1a5e3d895bf512e693c4397c0721e68633" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double rparams::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <qualifiedname>rparams::a</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="27" column="12" bodyfile="Library/test/test_gsl.cpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrparams_1a2a81aacd8129d756075f51542e2ecd5a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double rparams::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>rparams::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="28" column="12" bodyfile="Library/test/test_gsl.cpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/test/test_gsl.cpp" line="25" column="1" bodyfile="Library/test/test_gsl.cpp" bodystart="26" bodyend="29"/>
+    <listofallmembers>
+      <member refid="structrparams_1a5e3d895bf512e693c4397c0721e68633" prot="public" virt="non-virtual"><scope>rparams</scope><name>a</name></member>
+      <member refid="structrparams_1a2a81aacd8129d756075f51542e2ecd5a" prot="public" virt="non-virtual"><scope>rparams</scope><name>b</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

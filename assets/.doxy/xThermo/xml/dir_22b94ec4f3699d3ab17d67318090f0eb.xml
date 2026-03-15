@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_22b94ec4f3699d3ab17d67318090f0eb" kind="dir">
+    <compoundname>Library/H2O</compoundname>
+    <innerfile refid="H2O_8cxx">H2O.cxx</innerfile>
+    <innerfile refid="IAPS84_8cpp">IAPS84.cpp</innerfile>
+    <innerfile refid="IAPS84_8h">IAPS84.h</innerfile>
+    <innerfile refid="IAPWS-IF97_8cpp">IAPWS-IF97.cpp</innerfile>
+    <innerfile refid="IAPWS-IF97_8h">IAPWS-IF97.h</innerfile>
+    <innerfile refid="IAPWS95_8cpp">IAPWS95.cpp</innerfile>
+    <innerfile refid="IAPWS95_8h">IAPWS95.h</innerfile>
+    <innerfile refid="IAPWS95__CoolProp_8cpp">IAPWS95_CoolProp.cpp</innerfile>
+    <innerfile refid="IAPWS95__CoolProp_8h">IAPWS95_CoolProp.h</innerfile>
+    <innerfile refid="H2O_2test_8cxx">test.cxx</innerfile>
+    <innerfile refid="test__H2O_8py">test_H2O.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/H2O/"/>
+  </compounddef>
+</doxygen>

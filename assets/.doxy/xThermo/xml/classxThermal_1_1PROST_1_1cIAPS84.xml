@@ -1,0 +1,797 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classxThermal_1_1PROST_1_1cIAPS84" kind="class" language="C++" prot="public">
+    <compoundname>xThermal::PROST::cIAPS84</compoundname>
+    <basecompoundref refid="classxThermal_1_1cxThermal" prot="public" virt="non-virtual">xThermal::cxThermal</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxThermal_1_1PROST_1_1cIAPS84_1a3f16eee8d583274e2b4c6d1c303ff572" prot="private" static="no" mutable="no">
+        <type><ref refid="structxThermal_1_1CONSTENTS__Thermo" kindref="compound">CONSTENTS_Thermo</ref></type>
+        <definition>CONSTENTS_Thermo xThermal::PROST::cIAPS84::m_constants</definition>
+        <argsstring></argsstring>
+        <name>m_constants</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::m_constants</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="26" column="30" bodyfile="Library/H2O/IAPS84.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1aa4489059adde4737ac41931927eace1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xThermal::PROST::cIAPS84::cIAPS84</definition>
+        <argsstring>()</argsstring>
+        <name>cIAPS84</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::cIAPS84</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="28" column="13" bodyfile="Library/H2O/IAPS84.cpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1aa8e291c24fddcf8975e40cfdbffdc717" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xThermal::PROST::cIAPS84::cIAPS84</definition>
+        <argsstring>(const cIAPS84 &amp;water)</argsstring>
+        <name>cIAPS84</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::cIAPS84</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1PROST_1_1cIAPS84" kindref="compound">cIAPS84</ref> &amp;</type>
+          <declname>water</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="29" column="13" bodyfile="Library/H2O/IAPS84.cpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a0037a196dac6dbd06202d65b45e250cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xThermal::PROST::cIAPS84::~cIAPS84</definition>
+        <argsstring>()</argsstring>
+        <name>~cIAPS84</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::~cIAPS84</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="30" column="13" bodyfile="Library/H2O/IAPS84.cpp" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a7de03e3e6c82688e8397d2c3f100b782" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string xThermal::PROST::cIAPS84::name</definition>
+        <argsstring>()</argsstring>
+        <name>name</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::name</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a41d03988aa51b30d08db19df1fca0dbd">name</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of the model </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="35" column="25" bodyfile="Library/H2O/IAPS84.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a982d52e05cb22939233dd16416a70dfd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PROST::cIAPS84::Tmin</definition>
+        <argsstring>()</argsstring>
+        <name>Tmin</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::Tmin</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1aaae6d6ea6a66f48860daa4d0b6eef79a">Tmin</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the minimum temperature in K </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="37" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1abc22849a2f74c8a8fcc65081c2e1eaca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PROST::cIAPS84::Tmax</definition>
+        <argsstring>()</argsstring>
+        <name>Tmax</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::Tmax</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a04cebc45b1be27386dc767c7eee56ab5">Tmax</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the minimum temperature in K </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="38" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a9e7bc9900d2e38711a5138b777bf5015" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PROST::cIAPS84::pmin</definition>
+        <argsstring>()</argsstring>
+        <name>pmin</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::pmin</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a5800a85e519e23ccfd04c11f3bbab89b">pmin</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the maximum temperature in K </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="39" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1ad0f56406061e260c4c6c208855cb12fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PROST::cIAPS84::pmax</definition>
+        <argsstring>()</argsstring>
+        <name>pmax</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::pmax</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a7cc7e8214f233b89f3952a4c6ff70a92">pmax</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the minimum pressure in Pa </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="40" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1ac05ee3450794da93ffe147e070283f8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PROST::cIAPS84::Ttriple</definition>
+        <argsstring>()</argsstring>
+        <name>Ttriple</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::Ttriple</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a13a75da8301c717105f456c9c7a19896">Ttriple</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the maximum pressure in Pa </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="41" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a04c49973d63b665c2401a1dccf56cde4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PROST::cIAPS84::T_critical</definition>
+        <argsstring>()</argsstring>
+        <name>T_critical</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::T_critical</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1ab4b38c96c6ea4f9b6a79532a3d0edabb">T_critical</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the triple point temperature in K </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="42" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a9cdcb6c459af4cba718e958f828240c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PROST::cIAPS84::p_critical</definition>
+        <argsstring>()</argsstring>
+        <name>p_critical</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::p_critical</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a454a4e29dac7a62800c8a42ddaf98b73">p_critical</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the critical temperature in K </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="43" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a05c36584081484da7053cea652c310ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PROST::cIAPS84::rhomass_critical</definition>
+        <argsstring>()</argsstring>
+        <name>rhomass_critical</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::rhomass_critical</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a5a3ef49d78de8a82b7333b2bfc382e97">rhomass_critical</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the critical pressure in Pa </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="44" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a83462f992a5eea79e59b2c2ea14e17b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PROST::cIAPS84::molar_mass</definition>
+        <argsstring>()</argsstring>
+        <name>molar_mass</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::molar_mass</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1ac63458e41ee8729b7fff59cb23e91353">molar_mass</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the critical mass density in <formula id="3">$ kg/m^3 $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="45" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1ae590eb6841e7d929ff02aba16b0bcfe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50" kindref="member">PhaseRegion</ref></type>
+        <definition>PhaseRegion xThermal::PROST::cIAPS84::findPhaseRegion_TPX</definition>
+        <argsstring>(const double &amp;T, const double &amp;p, const double &amp;X=0)</argsstring>
+        <name>findPhaseRegion_TPX</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::findPhaseRegion_TPX</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a056253dca6d9635e19acc2380f7f682e">findPhaseRegion_TPX</reimplements>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>X</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the molar mass in kg/mol </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="48" column="25" bodyfile="Library/H2O/IAPS84.cpp" bodystart="363" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a8150e13aee5226b71f8bc057132e0428" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::PROST::cIAPS84::UpdateState_TPX</definition>
+        <argsstring>(ThermodynamicProperties &amp;props, const double &amp;T, const double &amp;p, const double &amp;X=0)</argsstring>
+        <name>UpdateState_TPX</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::UpdateState_TPX</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a3d7c1b12767a6348b6d291e708ec0a5e">UpdateState_TPX</reimplements>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> &amp;</type>
+          <declname>props</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+          <defname>P</defname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>X</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate water properties based on IAPS84 and implementation of PROST.</para>
+<para><simplesect kind="warning"><para>The viscosity will be zero when T&gt;900 deg.C, see line 332 of iaps.c in PROST.</para>
+</simplesect>
+<simplesect kind="warning"><para>The T,p validation in the matlab code (see <ref refid="structxThermal_1_1Line" kindref="compound">Line</ref> 39-43 of water_tp_IAPS84.m) is not complete, see also PROST code (<ref refid="structxThermal_1_1Line" kindref="compound">Line</ref> 1235 of iaps.c), so for e.g. T = -11 deg.C(T_star of viscosity correction for T=1 deg.C and X=0.7 kg/kg) p=100E5 Pa, the matlab code still give output, but it is in an invalid region.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>props</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[K] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[Pa] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>X</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[default 0 for H2O] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="49" column="18" bodyfile="Library/H2O/IAPS84.cpp" bodystart="63" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1af2f80c5cedc6f5d61bb7c7f1d9d90ffa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::PROST::cIAPS84::UpdateState_HPX</definition>
+        <argsstring>(ThermodynamicProperties &amp;props, const double &amp;H, const double &amp;p, const double &amp;X=0)</argsstring>
+        <name>UpdateState_HPX</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::UpdateState_HPX</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1ac1094a81aa03a8856a5299b1f588f547">UpdateState_HPX</reimplements>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> &amp;</type>
+          <declname>props</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>X</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="50" column="18" bodyfile="Library/H2O/IAPS84.cpp" bodystart="142" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a34c030b29267a1e708ddbfe98239cdaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
+        <definition>ThermodynamicProperties xThermal::PROST::cIAPS84::UpdateState_TPX</definition>
+        <argsstring>(const double &amp;T, const double &amp;p, const double &amp;X=0)</argsstring>
+        <name>UpdateState_TPX</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::UpdateState_TPX</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>X</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Calculate water properties for given T, p. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stateArray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>N</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="52" column="37" bodyfile="Library/H2O/IAPS84.cpp" bodystart="398" bodyend="402"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a3dd7ae80bcd9225743f9f4c369c7ced0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PROST::cIAPS84::Boiling_p</definition>
+        <argsstring>(const double &amp;T)</argsstring>
+        <name>Boiling_p</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::Boiling_p</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a872af1d919899a42bb3ce8d973c117b7">Boiling_p</reimplements>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate boiling pressure [Pa] of water for a given T [K] <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="53" column="20" bodyfile="Library/H2O/IAPS84.cpp" bodystart="227" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a24331d561462a46ddcacf60f30412ba6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PROST::cIAPS84::Boiling_T</definition>
+        <argsstring>(const double &amp;p)</argsstring>
+        <name>Boiling_T</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::Boiling_T</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a1dc4226ef05683a6596d59833ab65d44">Boiling_T</reimplements>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate boiling temperature [K] of water for a given p [Pa] <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="54" column="20" bodyfile="Library/H2O/IAPS84.cpp" bodystart="239" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1aa516db1c3479558c0e7820e1b28237e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PROST::cIAPS84::Boiling_p</definition>
+        <argsstring>(const double &amp;T, double &amp;rho_l, double &amp;rho_v)</argsstring>
+        <name>Boiling_p</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::Boiling_p</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a85bd89ebf43267eadc91d8bcbb3ca7e0">Boiling_p</reimplements>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>rho_l</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>rho_v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate both boiling temperature and density of liquid and vapor phase. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[K] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rho_l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[kg/m3] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rho_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[kg/m3] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="55" column="20" bodyfile="Library/H2O/IAPS84.cpp" bodystart="265" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a25152e5d790881c545d7bf55a2b6378f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PROST::cIAPS84::Boiling_T</definition>
+        <argsstring>(const double &amp;p, double &amp;rho_l, double &amp;rho_v)</argsstring>
+        <name>Boiling_T</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::Boiling_T</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a50d71178278a67ccad67316f8d9d99d3">Boiling_T</reimplements>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>rho_l</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>rho_v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate both boiling temperature and density of liquid and vapor phase. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[Pa] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rho_l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[kg/m3] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rho_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[kg/m3] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="56" column="20" bodyfile="Library/H2O/IAPS84.cpp" bodystart="252" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a7750a52e70977c85ebf2794da5eea7b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PROST::cIAPS84::Boiling_p</definition>
+        <argsstring>(const double &amp;T, ThermodynamicProperties &amp;props)</argsstring>
+        <name>Boiling_p</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::Boiling_p</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a426c0796ffc4b4810ccb309067433e55">Boiling_p</reimplements>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> &amp;</type>
+          <declname>props</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="57" column="20" bodyfile="Library/H2O/IAPS84.cpp" bodystart="323" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a50380fa2d4de4f34adebf78e31ac3773" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PROST::cIAPS84::Boiling_T</definition>
+        <argsstring>(const double &amp;p, ThermodynamicProperties &amp;props)</argsstring>
+        <name>Boiling_T</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::Boiling_T</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a5e60254d3b64b561693f0d01aa2e272f">Boiling_T</reimplements>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> &amp;</type>
+          <declname>props</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="58" column="20" bodyfile="Library/H2O/IAPS84.cpp" bodystart="343" bodyend="361"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a2929797ab83170f862c2beb5c09ed660" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::PROST::cIAPS84::initialize_data</definition>
+        <argsstring>()</argsstring>
+        <name>initialize_data</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::initialize_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="32" column="18" bodyfile="Library/H2O/IAPS84.cpp" bodystart="27" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a796a6ec610ee7e3788c615da5ce8c7c0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50" kindref="member">xThermal::PhaseRegion</ref></type>
+        <definition>xThermal::PhaseRegion xThermal::PROST::cIAPS84::phase_PROST2xThermal</definition>
+        <argsstring>(const double &amp;T, const double &amp;p, const void *prop)</argsstring>
+        <name>phase_PROST2xThermal</name>
+        <qualifiedname>xThermal::PROST::cIAPS84::phase_PROST2xThermal</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref> *</type>
+          <declname>prop</declname>
+        </param>
+        <briefdescription>
+<para>Get phase Because the phase index in PROST only has option of ONE and TWO. So the detailed phase region is implemented below. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50" kindref="member">xThermal::PhaseRegion</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="33" column="35" bodyfile="Library/H2O/IAPS84.cpp" bodystart="283" bodyend="321"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>xThermal::PROST::cIAPS84</label>
+        <link refid="classxThermal_1_1PROST_1_1cIAPS84"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>xThermal::cxThermal</label>
+        <link refid="classxThermal_1_1cxThermal"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>xThermal::PROST::cIAPS84</label>
+        <link refid="classxThermal_1_1PROST_1_1cIAPS84"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>xThermal::cxThermal</label>
+        <link refid="classxThermal_1_1cxThermal"/>
+      </node>
+    </collaborationgraph>
+    <location file="Library/H2O/IAPS84.h" line="23" column="9" bodyfile="Library/H2O/IAPS84.h" bodystart="24" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a3dd7ae80bcd9225743f9f4c369c7ced0" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>Boiling_p</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1aa516db1c3479558c0e7820e1b28237e4" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>Boiling_p</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a7750a52e70977c85ebf2794da5eea7b8" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>Boiling_p</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a49daf6499acf6dc965fbe396a4ce4897" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>Boiling_p_props</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a24331d561462a46ddcacf60f30412ba6" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>Boiling_T</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a25152e5d790881c545d7bf55a2b6378f" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>Boiling_T</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a50380fa2d4de4f34adebf78e31ac3773" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>Boiling_T</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ac824ca28cf0c5e4884bf692f8e313e1f" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>Boiling_T_props</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1aa4489059adde4737ac41931927eace1f" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>cIAPS84</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1aa8e291c24fddcf8975e40cfdbffdc717" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>cIAPS84</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ad4bb785d01a6aac083e1e3c481b1e485" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>createLUT_2D</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a26dd1d5506a4a837b03137fc8084dd7c" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>createLUT_2D</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ad2d8ab7263231e60593e889815b0c46f" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>createLUT_3D</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a35bccaf5cb9424b49117a7c288d5c510" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>createLUT_3D</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a2314586579c4061048c886be74236db7" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>cxThermal</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1ae590eb6841e7d929ff02aba16b0bcfe2" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>findPhaseRegion_TPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a1fadd87926ebe880d3273ea3b2a930f6" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>get_dim_lut</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a5004c02f781d224121fed323d2e7fdb6" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>get_dim_lut_lookup</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a7517c9dee29f395abb315bfc75d2ec05" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>get_num_threads</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ab10e4e206240690a92ce59c44bcb74f2" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>get_pLUT</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ae562806cfcaff5aa82512d2858144564" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>get_pLUT_lookup</name></member>
+      <member refid="classxThermal_1_1cxThermal_1aab0b032c6538401c6f9cfbe4c467d4b8" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>get_UpdateWhichProps</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a4be2a8d169afbe20f14b5ca6c06ab9cc" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>getLutInfo</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a2929797ab83170f862c2beb5c09ed660" prot="private" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>initialize_data</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ac5f99481c6cd9da1089920870f5884f9" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>linspace</name></member>
+      <member refid="classxThermal_1_1cxThermal_1aaedbcb53b296a96b1e65a1247e859c94" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>linspace</name></member>
+      <member refid="classxThermal_1_1cxThermal_1abea9131853ebea3cf40745470e9893d5" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>loadLUT</name></member>
+      <member refid="classxThermal_1_1cxThermal_1aa8d2dbcb90e5c336e3c92554659759ac" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>lookup</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a17f4d34888919db43c7f5cfde5800f79" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>lookup</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a26f3394bb36fd9462882e8783b87496c" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>lookup</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a6577db0fac8ac9d1c55933d4d7d270f8" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>lookup</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a6bb528c3c3dfd646e0fb762edbf88fd1" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>lookup_only</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a415cc702ea606481ebbf8d33ad982709" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>lookup_only</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a3f16eee8d583274e2b4c6d1c303ff572" prot="private" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>m_constants</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ac9e985e8dc2959d6c8537229a60696ee" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>m_isShowProgressBar</name></member>
+      <member refid="classxThermal_1_1cxThermal_1adb79d590bd8c3a980a215c1a9762cbac" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>max_vector</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a9e116b0051d1d7171a41fc116f6c43ff" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>mean_vector</name></member>
+      <member refid="classxThermal_1_1cxThermal_1af3b3b4ad31b34288c94903d19c540c7b" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>meshgrid</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ab445f14e450a7bab32910860f48697d1" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>min_vector</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a83462f992a5eea79e59b2c2ea14e17b7" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>molar_mass</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a7de03e3e6c82688e8397d2c3f100b782" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>name</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a100ba0ae27d311a3726e53cf4671aee1" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>normalizePhaseBoundaries</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a9cdcb6c459af4cba718e958f828240c3" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>p_critical</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ad2a2c4793c91176e05bd41705fe9afd3" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>phase_name</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a796a6ec610ee7e3788c615da5ce8c7c0" prot="private" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>phase_PROST2xThermal</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1ad0f56406061e260c4c6c208855cb12fe" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>pmax</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a9e7bc9900d2e38711a5138b777bf5015" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>pmin</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a1a54bed7b543424948282e9c8d53d8e9" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>Rho_lookup</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a05c36584081484da7053cea652c310ce" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>rhomass_critical</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a3aaf46ee7758d1fd49ca0201cefdf4b2" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>rhomolar_critical</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a20ff092e4c13c13abb16b58a05b6c73d" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>save_lut_to_binary</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a76b25e7264dfa903b2c77f7ac1cca6d4" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>save_lut_to_vtk</name></member>
+      <member refid="classxThermal_1_1cxThermal_1acd77431d0c19b2367db797381c2378ff" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>set_num_threads</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ad65432e862bd77c4fd116598f8ed74f4" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>showProgressBar</name></member>
+      <member refid="classxThermal_1_1cxThermal_1afef0be88b200e99935b46e535c5754ae" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>sum_vector</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a04c49973d63b665c2401a1dccf56cde4" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>T_critical</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1abc22849a2f74c8a8fcc65081c2e1eaca" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>Tmax</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a982d52e05cb22939233dd16416a70dfd" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>Tmin</name></member>
+      <member refid="classxThermal_1_1cxThermal_1add580814bcf501ea557a03b7eac042bd" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>Triangulation</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1ac05ee3450794da93ffe147e070283f8e" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>Ttriple</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1af2f80c5cedc6f5d61bb7c7f1d9d90ffa" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a5c0e0ff376db670fffd97808b39eb1a0" prot="public" virt="virtual" ambiguityscope="xThermal::cxThermal::"><scope>xThermal::PROST::cIAPS84</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a7a9db3f1c95f91044b59478cef3c5a14" prot="public" virt="virtual" ambiguityscope="xThermal::cxThermal::"><scope>xThermal::PROST::cIAPS84</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a889b6fb0deadb20dacd44338a1c4a144" prot="public" virt="non-virtual" ambiguityscope="xThermal::cxThermal::"><scope>xThermal::PROST::cIAPS84</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a8150e13aee5226b71f8bc057132e0428" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a34c030b29267a1e708ddbfe98239cdaf" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1afe86ef340ece855c4aa01ed160aa5e2c" prot="public" virt="virtual" ambiguityscope="xThermal::cxThermal::"><scope>xThermal::PROST::cIAPS84</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a929aa6a64ac637437b0a409ffa379aab" prot="public" virt="virtual" ambiguityscope="xThermal::cxThermal::"><scope>xThermal::PROST::cIAPS84</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a8349d4a9fd155cc40963b1cac6dcc003" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>validateFluid</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a2da135b28df9f19644be7d405bbe9509" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>writeLine2VTU</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ab803d85ba54f23bd952f2b0dddaf4771" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>writeMeshGrid2VTK</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a8b93eee1a5d36c6cedaa33dd3f8e93a6" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>writePhaseBoundaries2VTU</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a7d21c71bc4fee7d64d08a907a2922fe2" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>writeTriMesh2Txt</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a774e75ede316e2cf1151998b7e716094" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>writeXXYYZZ2VTU</name></member>
+      <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a0037a196dac6dbd06202d65b45e250cb" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>~cIAPS84</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ac7feaf94672b8ee16a914b76cedb1ff9" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>~cxThermal</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

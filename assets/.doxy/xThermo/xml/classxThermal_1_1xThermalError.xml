@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classxThermal_1_1xThermalError" kind="class" language="C++" prot="public">
+    <compoundname>xThermal::xThermalError</compoundname>
+    <basecompoundref refid="classxThermal_1_1xThermalBaseError" prot="public" virt="non-virtual">xThermal::xThermalBaseError</basecompoundref>
+    <basecompoundref refid="classxThermal_1_1xThermalBaseError" prot="public" virt="non-virtual">xThermal::xThermalBaseError</basecompoundref>
+    <derivedcompoundref refid="classxThermal_1_1ValueErrorSpec" prot="public" virt="non-virtual">xThermal::ValueErrorSpec&lt; errcode &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classxThermal_1_1ValueErrorSpec" prot="public" virt="non-virtual">xThermal::ValueErrorSpec&lt; errcode &gt;</derivedcompoundref>
+    <templateparamlist>
+      <param>
+        <type>xThermalBaseError::ErrCode</type>
+        <declname>errcode</declname>
+        <defname>errcode</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxThermal_1_1xThermalError_1a5eef8b6148da7bbb2fc4f5209f96af34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xThermal::xThermalError&lt; errcode &gt;::xThermalError</definition>
+        <argsstring>(const std::string &amp;err=&quot;&quot;, ErrCode ecode=errcode)</argsstring>
+        <name>xThermalError</name>
+        <qualifiedname>xThermal::xThermalError::xThermalError</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::string &amp;</type>
+          <declname>err</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>ErrCode</type>
+          <declname>ecode</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">errcode</ref></defval>
+        </param>
+        <exceptions> <ref refid="classxThermal_1_1xThermalError" kindref="compound">throw</ref> ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/Exception.h" line="28" column="5" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1xThermalError_1a5eef8b6148da7bbb2fc4f5209f96af34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xThermal::xThermalError&lt; errcode &gt;::xThermalError</definition>
+        <argsstring>(const std::string &amp;err=&quot;&quot;, ErrCode ecode=errcode)</argsstring>
+        <name>xThermalError</name>
+        <qualifiedname>xThermal::xThermalError::xThermalError</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::string &amp;</type>
+          <declname>err</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>ErrCode</type>
+          <declname>ecode</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">errcode</ref></defval>
+        </param>
+        <exceptions> <ref refid="classxThermal_1_1xThermalError" kindref="compound">throw</ref> ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/Exception.h" line="28" column="5" bodyfile="Library/thermo/Exception.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>std::exception</label>
+      </node>
+      <node id="4">
+        <label>xThermal::ValueErrorSpec&lt; errcode &gt;</label>
+        <link refid="classxThermal_1_1ValueErrorSpec"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>xThermal::xThermalBaseError</label>
+        <link refid="classxThermal_1_1xThermalBaseError"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>xThermal::xThermalError&lt; errcode &gt;</label>
+        <link refid="classxThermal_1_1xThermalError"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>std::exception</label>
+      </node>
+      <node id="2">
+        <label>xThermal::xThermalBaseError</label>
+        <link refid="classxThermal_1_1xThermalBaseError"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>xThermal::xThermalError&lt; errcode &gt;</label>
+        <link refid="classxThermal_1_1xThermalError"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Library/test/test_templateClass/Exception.h" line="26" column="1" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="26" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classxThermal_1_1xThermalBaseError_1af141fbaddd530708ed1fb2e256f50b6b" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>code</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1af141fbaddd530708ed1fb2e256f50b6b" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>code</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a7f4bcebfd533fe07b2cfdd3b9c2ae0ea" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>eAttribute</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a8c6213c04a3bc370e5fd5d1a38176be7" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>eComposition</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153aed28b213de5c642f9479e9e10fd8f2e6" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>eDirectorySize</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153ab80e9356038a5890d627202c127fb667" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>eHandle</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153ab7e7b084c802727f35a41747ec6f7589" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>eInput</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a6c4556742f12d6c47feab984561f6643" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>eKey</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a9bc16f4ffb4e95f89ea081fb53d44256" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>eNotAvailable</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a51330bea6b245fd064be88719a3ac679" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>eNotImplemented</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a0094b4cc3602597e01c5dda046cf6e15" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>eOutOfRange</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>ErrCode</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>ErrCode</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a693cfb84310ccad3954f2cdceda08267" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>eSolution</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153aba3607ac177c2e58e0ad376f10f8002b" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>eUnableToLoad</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a268d7c5edfb918620fb38ef74d0d0014" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>eValue</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a5587072478d0a62dcdd3de822993ee2e" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>eWrongFluid</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a81994a5080e39b59835b93067ff714e8" prot="public" virt="virtual"><scope>xThermal::xThermalError</scope><name>what</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a81994a5080e39b59835b93067ff714e8" prot="public" virt="virtual"><scope>xThermal::xThermalError</scope><name>what</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1aaa934332c42daa025227c061058572e4" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>xThermalBaseError</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1aaa934332c42daa025227c061058572e4" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>xThermalBaseError</name></member>
+      <member refid="classxThermal_1_1xThermalError_1a5eef8b6148da7bbb2fc4f5209f96af34" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>xThermalError</name></member>
+      <member refid="classxThermal_1_1xThermalError_1a5eef8b6148da7bbb2fc4f5209f96af34" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>xThermalError</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1aee3d71c4c52ba1a81d417c48171cca2a" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>~xThermalBaseError</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1aee3d71c4c52ba1a81d417c48171cca2a" prot="public" virt="non-virtual"><scope>xThermal::xThermalError</scope><name>~xThermalBaseError</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

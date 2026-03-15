@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__DIMENSION__COMMONLYUSED" kind="group">
+    <compoundname>DIMENSION_COMMONLYUSED</compoundname>
+    <title>Predefined commonly used physical dimension.</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__DIMENSION__COMMONLYUSED_1ga9da3fe558228d60974c5d901db58bacb" prot="public" static="no">
+        <name>dimension_SI_None</name>
+        <initializer>{0,  0,  0,  0,  0,  0,  0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>dimensionless </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="216" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DIMENSION__COMMONLYUSED_1gade49689808501aeacd5d3609a8453e8d" prot="public" static="no">
+        <name>dimension_SI_P</name>
+        <initializer>{1, -1, -2,  0,  0,  0,  0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SI unit of pressure [Pa] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="218" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DIMENSION__COMMONLYUSED_1ga91c3a8a6a3167612c3b90b1109c54c7b" prot="public" static="no">
+        <name>dimension_SI_T</name>
+        <initializer>{0,  0,  0,  1,  0,  0,  0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SI unit of temperature [K] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="220" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DIMENSION__COMMONLYUSED_1gabfd8913e996ca56d229b45659de2f005" prot="public" static="no">
+        <name>dimension_SI_H</name>
+        <initializer>{0,  2, -2,  0,  0,  0,  0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SI unit of specific enthalpy [J/kg] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="222" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DIMENSION__COMMONLYUSED_1gaec94af833754f2d51cc454f1b10bf760" prot="public" static="no">
+        <name>dimension_SI_Rho</name>
+        <initializer>{1, -3,  0,  0,  0,  0,  0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SI unit of density [kg/m^3] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="224" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DIMENSION__COMMONLYUSED_1ga247936ece63a310173da5ac3f35b2bce" prot="public" static="no">
+        <name>dimension_SI_mass</name>
+        <initializer>{1,  0,  0,  0,  0,  0,  0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SI unit of mass [kg] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="226" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DIMENSION__COMMONLYUSED_1gaedcc0b8e30bdcaa875e4e649fcc2d20b" prot="public" static="no">
+        <name>dimension_SI_length</name>
+        <initializer>{0,  1,  0,  0,  0,  0,  0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SI unit of length [m] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="228" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DIMENSION__COMMONLYUSED_1ga5258cace263fa6d4490b312e347dbbac" prot="public" static="no">
+        <name>dimension_SI_time</name>
+        <initializer>{0,  0,  1,  0,  0,  0,  0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SI unit of time [s] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="230" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

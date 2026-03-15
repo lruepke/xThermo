@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespaceLOOKUPTABLE__FOREST" kind="namespace" language="C++">
+    <compoundname>LOOKUPTABLE_FOREST</compoundname>
+    <innerclass refid="structLOOKUPTABLE__FOREST_1_1FIELD__DATA" prot="public">LOOKUPTABLE_FOREST::FIELD_DATA</innerclass>
+    <innerclass refid="structLOOKUPTABLE__FOREST_1_1LeafQuad" prot="public">LOOKUPTABLE_FOREST::LeafQuad</innerclass>
+    <innerclass refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest" prot="public">LOOKUPTABLE_FOREST::LookUpTableForest</innerclass>
+    <innerclass refid="structLOOKUPTABLE__FOREST_1_1NonLeafQuad" prot="public">LOOKUPTABLE_FOREST::NonLeafQuad</innerclass>
+    <innerclass refid="structLOOKUPTABLE__FOREST_1_1PropsData" prot="public">LOOKUPTABLE_FOREST::PropsData</innerclass>
+    <innerclass refid="unionLOOKUPTABLE__FOREST_1_1Quad__data" prot="public">LOOKUPTABLE_FOREST::Quad_data</innerclass>
+    <innerclass refid="structLOOKUPTABLE__FOREST_1_1Quad__index" prot="public">LOOKUPTABLE_FOREST::Quad_index</innerclass>
+    <innerclass refid="structLOOKUPTABLE__FOREST_1_1Quadrant" prot="public">LOOKUPTABLE_FOREST::Quadrant</innerclass>
+    <innerclass refid="structLOOKUPTABLE__FOREST_1_1RMSD__RefineCriterion" prot="public">LOOKUPTABLE_FOREST::RMSD_RefineCriterion</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="LookUpTableForest_8h_1a74ee868d74d91e9b6ba5498bf3a5b995" prot="public" static="no" strong="no">
+        <type></type>
+        <name>CONST_WHICH_VAR</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::CONST_WHICH_VAR</qualifiedname>
+        <enumvalue id="LookUpTableForest_8h_1a74ee868d74d91e9b6ba5498bf3a5b995ab670d906f697df1c9606c23781c7f9b7" prot="public">
+          <name>CONST_NO_VAR_TorHPX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No constant variable, 3D case. The x, y, z represents T/H, P, and X, respectively. T or H is specified by EOS_SPACE </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="LookUpTableForest_8h_1a74ee868d74d91e9b6ba5498bf3a5b995a3ca7194dee212825a2aa38a8ca4ee04b" prot="public">
+          <name>CONST_TorH_VAR_XP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Constant temperature T or specific enthalpy H, x represents salinity X and y represents pressure P. T or H is specified by EOS_SPACE </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="LookUpTableForest_8h_1a74ee868d74d91e9b6ba5498bf3a5b995acd18ae5a88c2169d884e5da1b7247676" prot="public">
+          <name>CONST_P_VAR_XTorH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Constant pressure P, x represents salinity X and y represents temperature T or specific enthalpy H. T or H is specified by EOS_SPACE </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="LookUpTableForest_8h_1a74ee868d74d91e9b6ba5498bf3a5b995a150001fda4fa9888ea0ed8ab162951d4" prot="public">
+          <name>CONST_X_VAR_TorHP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Constant salinity X, x represents temperature T or specific enthalpy H, and y represents pressure P. T or H is specified by EOS_SPACE </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>For 2D case, define which variable is constant and the variable order of xy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="96" column="5" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="97" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="enum" id="LookUpTableForest_8h_1ae71246eb8ca8973b7bb5012e8c5ddaf1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>NeedRefine</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::NeedRefine</qualifiedname>
+        <enumvalue id="LookUpTableForest_8h_1ae71246eb8ca8973b7bb5012e8c5ddaf1af1a387776ce134f42f0ab6aaddcd25a8" prot="public">
+          <name>NeedRefine_NoNeed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="LookUpTableForest_8h_1ae71246eb8ca8973b7bb5012e8c5ddaf1a91f983736eeac6746aacbbf2ba8e50d2" prot="public">
+          <name>NeedRefine_PhaseBoundary</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="LookUpTableForest_8h_1ae71246eb8ca8973b7bb5012e8c5ddaf1ace919a43d5bbcfd0e19cdcef794aa623" prot="public">
+          <name>NeedRefine_Rho</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="LookUpTableForest_8h_1ae71246eb8ca8973b7bb5012e8c5ddaf1a98710d39b088b576a8cc6967f6ba1d89" prot="public">
+          <name>NeedRefine_H</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="LookUpTableForest_8h_1ae71246eb8ca8973b7bb5012e8c5ddaf1a99fa5c321e991c4f5c77945d4749b710" prot="public">
+          <name>NeedRefine_Mu</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="104" column="5" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="enum" id="LookUpTableForest_8h_1adc88e4fd9fe2d240d45c5b2a0e088b8f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>EOS_ENERGY</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::EOS_ENERGY</qualifiedname>
+        <enumvalue id="LookUpTableForest_8h_1adc88e4fd9fe2d240d45c5b2a0e088b8fa4e717d1d6ab31d6f8ca90a94d54b6b86" prot="public">
+          <name>EOS_ENERGY_T</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TPX space </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="LookUpTableForest_8h_1adc88e4fd9fe2d240d45c5b2a0e088b8fa835df55dc72bce5399f7b8cda84a00ab" prot="public">
+          <name>EOS_ENERGY_H</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>HPX space </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Use which variable to express energy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="122" column="5" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="122" bodyend="125"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="LookUpTableForest_8h_1ae96e8092ccf3cb0d5516f41f1ec381f0" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int LOOKUPTABLE_FOREST::int_pointIndex</definition>
+        <argsstring></argsstring>
+        <name>int_pointIndex</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::int_pointIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="28" column="26" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="LookUpTableForest_8h_1ad575db7d1805457db9d0bbd33c7c56dd" prot="public" static="no">
+        <type><ref refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest" kindref="compound">LookUpTableForest</ref>&lt; 2, <ref refid="structLOOKUPTABLE__FOREST_1_1FIELD__DATA" kindref="compound">FIELD_DATA</ref>&lt; 2 &gt; &gt;</type>
+        <definition>typedef LookUpTableForest&lt;2, FIELD_DATA&lt;2&gt; &gt; LOOKUPTABLE_FOREST::LookUpTableForest_2D</definition>
+        <argsstring></argsstring>
+        <name>LookUpTableForest_2D</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest_2D</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="242" column="31" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="LookUpTableForest_8h_1a1f8576f634888925946c4f95c216b316" prot="public" static="no">
+        <type><ref refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest" kindref="compound">LookUpTableForest</ref>&lt; 3, <ref refid="structLOOKUPTABLE__FOREST_1_1FIELD__DATA" kindref="compound">FIELD_DATA</ref>&lt; 3 &gt; &gt;</type>
+        <definition>typedef LookUpTableForest&lt;3, FIELD_DATA&lt;3&gt; &gt; LOOKUPTABLE_FOREST::LookUpTableForest_3D</definition>
+        <argsstring></argsstring>
+        <name>LookUpTableForest_3D</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest_3D</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="243" column="31" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="LookUpTableForest_8h_1a3739b914c39807cbd3d42865e529a4ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int LOOKUPTABLE_FOREST::get_dim_from_binary</definition>
+        <argsstring>(std::string filename)</argsstring>
+        <name>get_dim_from_binary</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::get_dim_from_binary</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="136" column="16" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="136" bodyend="145"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/AMR_LUT/LookUpTableForest.h" line="16" column="1"/>
+  </compounddef>
+</doxygen>

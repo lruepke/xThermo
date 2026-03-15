@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structLOOKUPTABLE__FOREST_1_1FIELD__DATA" kind="struct" language="C++" prot="public">
+    <compoundname>LOOKUPTABLE_FOREST::FIELD_DATA</compoundname>
+    <templateparamlist>
+      <param>
+        <type>int</type>
+        <declname>dim</declname>
+        <defname>dim</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLOOKUPTABLE__FOREST_1_1FIELD__DATA_1ae97db7ae8ca847653367fb3acffacabc" prot="public" static="no" mutable="no">
+        <type>NeedRefine</type>
+        <definition>NeedRefine LOOKUPTABLE_FOREST::FIELD_DATA&lt; dim &gt;::need_refine</definition>
+        <argsstring></argsstring>
+        <name>need_refine</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::FIELD_DATA::need_refine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="132" column="20" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLOOKUPTABLE__FOREST_1_1FIELD__DATA_1ac33a8041bdf48790b5fba7663734912c" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50" kindref="member">xThermal::PhaseRegion</ref></type>
+        <definition>xThermal::PhaseRegion LOOKUPTABLE_FOREST::FIELD_DATA&lt; dim &gt;::phaseRegion_cell</definition>
+        <argsstring></argsstring>
+        <name>phaseRegion_cell</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::FIELD_DATA::phaseRegion_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="133" column="31" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/AMR_LUT/LookUpTableForest.h" line="127" column="5" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="128" bodyend="134"/>
+    <listofallmembers>
+      <member refid="structLOOKUPTABLE__FOREST_1_1FIELD__DATA_1ae97db7ae8ca847653367fb3acffacabc" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::FIELD_DATA</scope><name>need_refine</name></member>
+      <member refid="structLOOKUPTABLE__FOREST_1_1FIELD__DATA_1ac33a8041bdf48790b5fba7663734912c" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::FIELD_DATA</scope><name>phaseRegion_cell</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

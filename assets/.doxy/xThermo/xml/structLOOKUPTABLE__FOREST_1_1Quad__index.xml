@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structLOOKUPTABLE__FOREST_1_1Quad__index" kind="struct" language="C++" prot="public">
+    <compoundname>LOOKUPTABLE_FOREST::Quad_index</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLOOKUPTABLE__FOREST_1_1Quad__index_1ad1d5cfb92a29051b1d4e06a2c38d8790" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LOOKUPTABLE_FOREST::Quad_index::i</definition>
+        <argsstring></argsstring>
+        <name>i</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::Quad_index::i</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="22" column="13" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLOOKUPTABLE__FOREST_1_1Quad__index_1ac28853ca530d9a837bd631d1abf51ae3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LOOKUPTABLE_FOREST::Quad_index::j</definition>
+        <argsstring></argsstring>
+        <name>j</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::Quad_index::j</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="22" column="16" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLOOKUPTABLE__FOREST_1_1Quad__index_1a57d001ab0ff995db1eaaa2b40b8db307" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LOOKUPTABLE_FOREST::Quad_index::k</definition>
+        <argsstring></argsstring>
+        <name>k</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::Quad_index::k</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="22" column="19" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structLOOKUPTABLE__FOREST_1_1Quad__index_1acbcc6ae80d0061903dfcd8d207a30e9a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool LOOKUPTABLE_FOREST::Quad_index::operator&lt;</definition>
+        <argsstring>(const Quad_index &amp;ijk) const</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::Quad_index::operator&lt;</qualifiedname>
+        <param>
+          <type>const <ref refid="structLOOKUPTABLE__FOREST_1_1Quad__index" kindref="compound">Quad_index</ref> &amp;</type>
+          <declname>ijk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="23" column="9" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="23" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/AMR_LUT/LookUpTableForest.h" line="20" column="1" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="21" bodyend="27"/>
+    <listofallmembers>
+      <member refid="structLOOKUPTABLE__FOREST_1_1Quad__index_1ad1d5cfb92a29051b1d4e06a2c38d8790" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::Quad_index</scope><name>i</name></member>
+      <member refid="structLOOKUPTABLE__FOREST_1_1Quad__index_1ac28853ca530d9a837bd631d1abf51ae3" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::Quad_index</scope><name>j</name></member>
+      <member refid="structLOOKUPTABLE__FOREST_1_1Quad__index_1a57d001ab0ff995db1eaaa2b40b8db307" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::Quad_index</scope><name>k</name></member>
+      <member refid="structLOOKUPTABLE__FOREST_1_1Quad__index_1acbcc6ae80d0061903dfcd8d207a30e9a" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::Quad_index</scope><name>operator&lt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,637 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__BitMaskRequestProp" kind="group">
+    <compoundname>BitMaskRequestProp</compoundname>
+    <title>Bit mask of requesting partial derivatives of thermodynamic properties. See\cite PartialDer for definition.</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__BitMaskRequestProp_1gab3417297da6845394b6979b7a76759d4" prot="public" static="no">
+        <name>Request_None</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>do not request any properties </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="38" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga5264857d91130e9bdfd9bbb528a09a41" prot="public" static="no">
+        <name>Request_dpdrho_T</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="256">$2^{0}$</formula>: <formula id="257">$ \left( \frac{\partial p}{\partial \rho} \right)_T $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="40" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga6568abfa05ece8ef3240577dd13fb9ac" prot="public" static="no">
+        <name>Request_dpdT_rho</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="258">$2^{1}$</formula>: <formula id="259">$ \left( \frac{\partial p}{\partial T} \right)_{\rho} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="42" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1gaf6e9244cd61465ce2bdc6e29e5fdd3c5" prot="public" static="no">
+        <name>Request_dsdrho_T</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="260">$2^{2}$</formula>: <formula id="261">$ \left( \frac{\partial s}{\partial \rho} \right)_T $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="44" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga93109b630bb4ceca19ae7c796e796fda" prot="public" static="no">
+        <name>Request_dsdT_rho</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="262">$2^{3}$</formula>: <formula id="263">$ \left( \frac{\partial s}{\partial T} \right)_{\rho} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="46" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga2b3d0751dc56f593d88c69e4df9eb6e7" prot="public" static="no">
+        <name>Request_dudrho_T</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="264">$2^{4}$</formula>: <formula id="265">$ \left( \frac{\partial u}{\partial \rho} \right)_T $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="48" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga4bdd2cf65f3a463af9670441476d1f3a" prot="public" static="no">
+        <name>Request_dudT_rho</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="266">$2^{5}$</formula>: <formula id="267">$ \left( \frac{\partial u}{\partial T} \right)_{\rho} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="50" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga764189d0ad0aa0d8d9be4b98827080b8" prot="public" static="no">
+        <name>Request_dhdrho_T</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="268">$2^{6}$</formula>: <formula id="269">$ \left( \frac{\partial h}{\partial \rho} \right)_T $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="52" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga83058e2d048e52cd067f32a5c9648fe0" prot="public" static="no">
+        <name>Request_dhdT_rho</name>
+        <initializer>128</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="270">$2^{7}$</formula>: <formula id="271">$ \left( \frac{\partial h}{\partial T} \right)_{\rho} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="54" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga6b7140f7d7d638ac8517035caae8d140" prot="public" static="no">
+        <name>Request_dgdrho_T</name>
+        <initializer>256</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="272">$2^{8}$</formula>: <formula id="273">$ \left( \frac{\partial g}{\partial \rho} \right)_T $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="56" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1gaa98b06716342a34c68789ad6b26e9f7c" prot="public" static="no">
+        <name>Request_dgdT_rho</name>
+        <initializer>512</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="274">$2^{9}$</formula>: <formula id="275">$ \left( \frac{\partial g}{\partial T} \right)_{\rho} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="58" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga74f540f1b4685c23308b435feee03d6c" prot="public" static="no">
+        <name>Request_ddpddrho_T</name>
+        <initializer>1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="276">$2^{10}$</formula>: <formula id="277">$ \left( \frac{\partial^2 p}{\partial \rho^2} \right)_{T} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="60" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga6ade9ac573136a157962e1efad888016" prot="public" static="no">
+        <name>Request_ddpddT_rho</name>
+        <initializer>2048</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="278">$2^{11}$</formula>: <formula id="279">$ \left( \frac{\partial^2 p}{\partial T^2} \right)_{\rho} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="62" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga6ffa683535f09bfb6516ecb5ddcd0105" prot="public" static="no">
+        <name>Request_ddpdrhodT</name>
+        <initializer>4096</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="280">$2^{12}$</formula>: <formula id="281">$ \left( \frac{\partial^2 p}{\partial \rho \partial T} \right) $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="64" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga711350b846dc0a7468762fa0119296a3" prot="public" static="no">
+        <name>Request_ddsddrho_T</name>
+        <initializer>8192</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="282">$2^{13}$</formula>: <formula id="283">$ \left( \frac{\partial^2 s}{\partial \rho^2} \right)_{T} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="66" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1gaa093f0e2081f7dabd82ce5e1918b7019" prot="public" static="no">
+        <name>Request_ddsddT_rho</name>
+        <initializer>16384</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="284">$2^{14}$</formula>: <formula id="285">$ \left( \frac{\partial^2 s}{\partial T^2} \right)_{\rho} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="68" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1gae557b08da8a9362d41630853cc95ef2a" prot="public" static="no">
+        <name>Request_ddsdrhodT</name>
+        <initializer>32768</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="286">$2^{15}$</formula>: <formula id="287">$ \left( \frac{\partial^2 s}{\partial \rho \partial T} \right) $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="70" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1gaa410510ae885e3de5e98eb3bc831e9c5" prot="public" static="no">
+        <name>Request_dduddrho_T</name>
+        <initializer>65536</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="288">$2^{16}$</formula>: <formula id="289">$ \left( \frac{\partial^2 u}{\partial \rho^2} \right)_{T} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="72" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga3fc981601aac0b44e7f44d57cb6db6ae" prot="public" static="no">
+        <name>Request_dduddT_rho</name>
+        <initializer>131072</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="290">$2^{17}$</formula>: <formula id="291">$ \left( \frac{\partial^2 u}{\partial T^2} \right)_{\rho} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="74" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga6087cc0ded1b050dffbd7bb14d7836ab" prot="public" static="no">
+        <name>Request_ddudrhodT</name>
+        <initializer>262144</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="292">$2^{18}$</formula>: <formula id="293">$ \left( \frac{\partial^2 u}{\partial \rho \partial T} \right) $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="76" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga940c2abc701aa85a4b0054e6cedb23c3" prot="public" static="no">
+        <name>Request_ddhddrho_T</name>
+        <initializer>524288</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="294">$2^{19}$</formula>: <formula id="295">$ \left( \frac{\partial^2 h}{\partial \rho^2} \right)_{T} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="78" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1gac3b14a7182720cbb76555a379bce574e" prot="public" static="no">
+        <name>Request_ddhddT_rho</name>
+        <initializer>1048576</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="296">$2^{20}$</formula>: <formula id="297">$ \left( \frac{\partial^2 h}{\partial T^2} \right)_{\rho} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="80" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1gabf4acef4ea7ad16a9988987e5f40deef" prot="public" static="no">
+        <name>Request_ddhdrhodT</name>
+        <initializer>2097152</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="298">$2^{21}$</formula>: <formula id="299">$ \left( \frac{\partial^2 h}{\partial \rho \partial T} \right) $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="82" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga9aff3447fe0027192348fa8d9b1e6e33" prot="public" static="no">
+        <name>Request_ddgddrho_T</name>
+        <initializer>4194304</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="300">$2^{22}$</formula>: <formula id="301">$ \left( \frac{\partial^2 g}{\partial \rho^2} \right)_{T} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="84" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1gabe13d4d1801b13fd51b1b30b2e583ecd" prot="public" static="no">
+        <name>Request_ddgddT_rho</name>
+        <initializer>8388608</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="302">$2^{23}$</formula>: <formula id="303">$ \left( \frac{\partial^2 g}{\partial T^2} \right)_{\rho} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="86" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1gaea3b5269869cba46fb0a617ae064ea10" prot="public" static="no">
+        <name>Request_ddgdrhodT</name>
+        <initializer>16777216</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="304">$2^{24}$</formula>: <formula id="305">$ \left( \frac{\partial^2 g}{\partial \rho \partial T} \right) $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="88" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga04e48ab61f9659be29ef22b123ec13a0" prot="public" static="no">
+        <name>Request_drhodp_T</name>
+        <initializer>33554432</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="306">$2^{25}$</formula>: <formula id="307">$ \left( \frac{\partial \rho}{\partial p} \right)_{T} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="91" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1gad09b8ec39f951ea323c24e26b6b2168e" prot="public" static="no">
+        <name>Request_dhdp_T</name>
+        <initializer>67108864</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="308">$2^{26}$</formula>: <formula id="309">$ \left( \frac{\partial h}{\partial p} \right)_{T} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="93" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga56e2fa7500504870eb10fdb8cc63997e" prot="public" static="no">
+        <name>Request_drhodT_p</name>
+        <initializer>134217728</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="310">$2^{27}$</formula>: <formula id="311">$ \left( \frac{\partial \rho}{\partial T} \right)_{p} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="95" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga60819818b7f475907c4924a99d535ebb" prot="public" static="no">
+        <name>Request_dhdT_p</name>
+        <initializer>268435456</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="312">$2^{28}$</formula>: <formula id="313">$ \left( \frac{\partial h}{\partial T} \right)_{p} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="97" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga936b695cff93b87353ffe21ecabd1225" prot="public" static="no">
+        <name>Request_dpdrho_s</name>
+        <initializer>536870912</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="314">$2^{29}$</formula>: <formula id="315">$ \left( \frac{\partial p}{\partial \rho} \right)_{s} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="99" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga729453b872698c9260ac00f97a3d2b3e" prot="public" static="no">
+        <name>Request_dTdp_h</name>
+        <initializer>1073741824</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="316">$2^{30}$</formula>: <formula id="317">$ \left( \frac{\partial T}{\partial p} \right)_{h} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="101" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1gaf2f8ac9e73b11fe118ea959c60936962" prot="public" static="no">
+        <name>Request_drhodp_h</name>
+        <initializer>2147483648</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="318">$2^{31}$</formula>: <formula id="319">$ \left( \frac{\partial \rho}{\partial p} \right)_{h} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="103" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1gabbe86fa70aa4c9b5479adcb0539d5eb3" prot="public" static="no">
+        <name>Request_drhodh_p</name>
+        <initializer>4294967296</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="320">$2^{32}$</formula>: <formula id="321">$ \left( \frac{\partial \rho}{\partial h} \right)_{p} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="105" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga3aef124d94b511df73ee28b662d1b0c5" prot="public" static="no">
+        <name>Request_ddTddp_rho</name>
+        <initializer>8589934592</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="322">$2^{33}$</formula>: <formula id="323">$ \left( \frac{\partial^2 T}{\partial p^2} \right)_{\rho} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="108" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga8d889ca61a08948de7d90484347cb33e" prot="public" static="no">
+        <name>Request_ddTddrho_p</name>
+        <initializer>17179869184</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="324">$2^{34}$</formula>: <formula id="325">$ \left( \frac{\partial^2 T}{\partial \rho^2} \right)_{p} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="110" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1gada2f9e57e03adfbb48feac330dd6a1f7" prot="public" static="no">
+        <name>Request_ddTdpdrho</name>
+        <initializer>34359738368</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="326">$2^{35}$</formula>: <formula id="327">$ \left( \frac{\partial^2 T}{\partial p \partial \rho} \right) $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="112" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1gaaaf898efa6f0c20e9b6e04b3135e2157" prot="public" static="no">
+        <name>Request_ddrhoddp_T</name>
+        <initializer>68719476736</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="328">$2^{36}$</formula>: <formula id="329">$ \left( \frac{\partial^2 \rho}{\partial p^2} \right)_{T} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="114" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1gaeabd096dbe11959f82b95c87d2201a0d" prot="public" static="no">
+        <name>Request_ddrhoddT_p</name>
+        <initializer>137438953472</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="330">$2^{37}$</formula>: <formula id="331">$ \left( \frac{\partial^2 \rho}{\partial T^2} \right)_{p} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="116" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1gabb0fbc0c71d67271211d7a61c96c61df" prot="public" static="no">
+        <name>Request_ddrhodTdp</name>
+        <initializer>274877906944</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="332">$2^{38}$</formula>: <formula id="333">$ \left( \frac{\partial^2 \rho}{\partial T \partial p} \right) $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="118" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1gab58aa80bf6a08c3d64e94162a87fb74e" prot="public" static="no">
+        <name>Request_dcpdT_rho</name>
+        <initializer>549755813888</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="334">$2^{39}$</formula>: <formula id="335">$ \left( \frac{\partial c_p}{\partial T} \right)_{\rho} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="120" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga457354d4f82964de092e02dedb34e91b" prot="public" static="no">
+        <name>Request_dcpdrho_T</name>
+        <initializer>1099511627776</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="336">$2^{40}$</formula>: <formula id="337">$ \left( \frac{\partial c_p}{\partial \rho} \right)_{T} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="122" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga1910382c6ee7ebbcdecb7e7334e9431a" prot="public" static="no">
+        <name>Request_dcpdp_h</name>
+        <initializer>2199023255552</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="338">$2^{41}$</formula>: <formula id="339">$ \left( \frac{\partial c_p}{\partial p} \right)_{h} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="124" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga5ab147c39af967d33137caf80d81e398" prot="public" static="no">
+        <name>Request_u</name>
+        <initializer>4398046511104</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="340">$2^{42}$</formula>: Internal energy <formula id="341">$ u $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="128" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1gaf45971b0f88f8be3b2b0dc315618749c" prot="public" static="no">
+        <name>Request_s</name>
+        <initializer>8796093022208</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="342">$2^{43}$</formula>: Specific Entropy <formula id="343">$ s $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="130" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga7df82b6774a232c7b76042f8c09e8f3c" prot="public" static="no">
+        <name>Request_h</name>
+        <initializer>17592186044416</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="344">$2^{44}$</formula>: Specific Enthalpy <formula id="345">$ h $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="132" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga813a330f5f3a07475cbb0745b387ed9e" prot="public" static="no">
+        <name>Request_cv</name>
+        <initializer>35184372088832</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="346">$2^{45}$</formula>: Isochoric heat capacity <formula id="347">$ c_v $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="134" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1gaea18e968ccb2d29e8a4efd3b371f355c" prot="public" static="no">
+        <name>Request_cp</name>
+        <initializer>70368744177664</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="348">$2^{46}$</formula>: Isobaric heat capacity <formula id="38">$ c_p $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="136" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1gaff8584214b824b4aac629382dfa238b6" prot="public" static="no">
+        <name>Request_w</name>
+        <initializer>140737488355328</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="349">$2^{47}$</formula>: Speed of sound <formula id="350">$ w $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="138" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga93e58209b6335f76afd3eae127972c35" prot="public" static="no">
+        <name>Request_g</name>
+        <initializer>281474976710656</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="351">$2^{48}$</formula>: Specific Gibbs-energy <formula id="352">$g $</formula>. See Table of PartialDer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="140" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1ga42d39de3173315802eda68c5e7a378b8" prot="public" static="no">
+        <name>Request_rho</name>
+        <initializer>562949953421312</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="353">$2^{49}$</formula>: Density <formula id="37">$ \rho $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="142" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BitMaskRequestProp_1gaa9ba864e1a3353563283aa17b57abd88" prot="public" static="no">
+        <name>Request_T</name>
+        <initializer>1125899906842624</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="354">$2^{50}$</formula>: Temperature <formula id="355">$ T $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="144" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

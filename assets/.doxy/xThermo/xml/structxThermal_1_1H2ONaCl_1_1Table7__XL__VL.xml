@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1H2ONaCl_1_1Table7__XL__VL" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::H2ONaCl::Table7_XL_VL</compoundname>
+    <includes refid="H2ONaCl_8h" local="no">H2ONaCl.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Table7__XL__VL_1aabf0cedd4ae3d8303c991349bcab701e" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::H2ONaCl::Table7_XL_VL::h[11]</definition>
+        <argsstring>[11]</argsstring>
+        <name>h</name>
+        <qualifiedname>xThermal::H2ONaCl::Table7_XL_VL::h</qualifiedname>
+        <initializer>= {1.68486<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-8, 2.19379<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-9, 438.58, 18.4508, -5.6765<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-15,6.73704<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-16, 1.44951<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-17, 384.904, 7.07477, 6.06896<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-15, 0.00762859}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="119" column="26" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="119" bodyend="119"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Parameters for liquid composition, <formula id="184">$ X_{NaCl}^{VL,liq} $</formula>, on V+L coexistence surface. V+L liquid branch. See Table 7 of Driesner2007Part1. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>Change coefficients <formula id="185">$ h_1, h_2, h_5 $</formula> ( <formula id="186">$ \times 10^{-5} $</formula>) and <formula id="187">$ h_6, h_7, h_10 $</formula> ( <formula id="188">$ \times 10^{-10} $</formula>) to make pressure with unit [Pa]. Because <formula id="189">$ g_1 $</formula> is the coefficient of <formula id="190">$ (P_{crit} - P) $</formula>, and <formula id="191">$ g_2 $</formula> is the coefficient of <formula id="192">$ (P_{crit}, P)^2 $</formula> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="Library/H2ONaCl/H2ONaCl.h" line="115" column="9" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="116" bodyend="120"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1H2ONaCl_1_1Table7__XL__VL_1aabf0cedd4ae3d8303c991349bcab701e" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Table7_XL_VL</scope><name>h</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

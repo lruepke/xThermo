@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="NaCl_2test_8cxx" kind="file" language="C++">
+    <compoundname>test.cxx</compoundname>
+    <includes refid="NaCl_8h" local="yes">NaCl.h</includes>
+    <incdepgraph>
+      <node id="17">
+        <label>LookUpTableForest.h</label>
+        <link refid="LookUpTableForest_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IAPS84.h</label>
+        <link refid="IAPS84_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>IAPWS-IF97.h</label>
+        <link refid="IAPWS-IF97_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>IAPWS95.h</label>
+        <link refid="IAPWS95_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>IAPWS95_CoolProp.h</label>
+        <link refid="IAPWS95__CoolProp_8h"/>
+      </node>
+      <node id="2">
+        <label>NaCl.h</label>
+        <link refid="NaCl_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Library/NaCl/test.cxx</label>
+        <link refid="NaCl_2test_8cxx"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>DataStructures.h</label>
+        <link refid="DataStructures_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Exception.h</label>
+        <link refid="thermo_2Exception_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>MultiProgressBar.h</label>
+        <link refid="MultiProgressBar_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>thermo.h</label>
+        <link refid="thermo_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>triangle.h</label>
+        <link refid="triangle_8h_source"/>
+      </node>
+      <node id="12">
+        <label>algorithm</label>
+      </node>
+      <node id="15">
+        <label>cmath</label>
+      </node>
+      <node id="14">
+        <label>exception</label>
+      </node>
+      <node id="7">
+        <label>fstream</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="18">
+        <label>map</label>
+      </node>
+      <node id="9">
+        <label>sstream</label>
+      </node>
+      <node id="5">
+        <label>stdfunc.h</label>
+      </node>
+      <node id="19">
+        <label>string</label>
+      </node>
+      <node id="21">
+        <label>sys/ioctl.h</label>
+      </node>
+      <node id="10">
+        <label>utility</label>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="NaCl_2test_8cxx_1aa30110e8aa35c94c29880271788ca704" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void test_constants</definition>
+        <argsstring>(xThermal::cxThermal *thermo)</argsstring>
+        <name>test_constants</name>
+        <param>
+          <type><ref refid="classxThermal_1_1cxThermal" kindref="compound">xThermal::cxThermal</ref> *</type>
+          <declname>thermo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/test.cxx" line="49" column="6" bodyfile="Library/NaCl/test.cxx" bodystart="49" bodyend="57" declfile="Library/NaCl/test.cxx" declline="16" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="NaCl_2test_8cxx_1ae3ab530d3b92c9adf4b6e8d8f26ace63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void test_prop_TP</definition>
+        <argsstring>(xThermal::cxThermal *thermo, double T, double P)</argsstring>
+        <name>test_prop_TP</name>
+        <param>
+          <type><ref refid="classxThermal_1_1cxThermal" kindref="compound">xThermal::cxThermal</ref> *</type>
+          <declname>thermo</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/test.cxx" line="38" column="6" bodyfile="Library/NaCl/test.cxx" bodystart="38" bodyend="47" declfile="Library/NaCl/test.cxx" declline="17" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="NaCl_2test_8cxx_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/test.cxx" line="19" column="5" bodyfile="Library/NaCl/test.cxx" bodystart="19" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="NaCl_8h" kindref="compound">NaCl.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacexThermal" kindref="compound">xThermal</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_constants(<sp/><ref refid="classxThermal_1_1cxThermal" kindref="compound">xThermal::cxThermal</ref>*<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">thermo</ref>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_prop_TP(<ref refid="classxThermal_1_1cxThermal" kindref="compound">xThermal::cxThermal</ref>*<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">thermo</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>P);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T0<sp/>=<sp/>900+273.15,<sp/>P0=30<ref refid="classxThermal_1_1xThermalError" kindref="compound">E5</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>STATUS(</highlight><highlight class="stringliteral">&quot;Test<sp/>NaCl:<sp/>IAPS84&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1NaCl_1_1cNaCl" kindref="compound">NaCl::cNaCl</ref><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">nacl</ref>(</highlight><highlight class="stringliteral">&quot;IAPS84&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_constants(&amp;nacl);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">Hs</ref><sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">nacl</ref>.H_Solid(594.60+273.15,<sp/>388.14744434E5);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">exit</ref>(0);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>test_prop_TP(&amp;<ref refid="classxThermal_1_1xThermalError" kindref="compound">nacl</ref>,<sp/>T0,<sp/>P0);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>STATUS(</highlight><highlight class="stringliteral">&quot;Test<sp/>NaCl:<sp/>IAPWS95&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1NaCl_1_1cNaCl" kindref="compound">NaCl::cNaCl</ref><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">nacl2</ref>(</highlight><highlight class="stringliteral">&quot;IAPWS95&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_constants(&amp;nacl2);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>test_prop_TP(&amp;<ref refid="classxThermal_1_1xThermalError" kindref="compound">nacl2</ref>,<sp/>T0,<sp/>P0);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_prop_TP(<ref refid="classxThermal_1_1cxThermal" kindref="compound">xThermal::cxThermal</ref>*<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">thermo</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>P)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref><sp/>props;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">thermo</ref>-&gt;UpdateState_TPX(props,<sp/>T,<sp/>P);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">cout</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;Input<sp/>T=&quot;</highlight><highlight class="normal">&lt;&lt;T&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>[K],<sp/>p=&quot;</highlight><highlight class="normal">&lt;&lt;P&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>[Pa]&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="classxThermal_1_1xThermalError" kindref="compound">endl</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">cout</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;Phase:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="classxThermal_1_1xThermalError" kindref="compound">thermo</ref>-&gt;phase_name(props.phase)&lt;&lt;<ref refid="classxThermal_1_1xThermalError" kindref="compound">endl</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">cout</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;rho<sp/>[kg/m^3]:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;props.Rho&lt;&lt;<ref refid="classxThermal_1_1xThermalError" kindref="compound">endl</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">cout</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;h<sp/>[J/kg]:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;props.H&lt;&lt;<ref refid="classxThermal_1_1xThermalError" kindref="compound">endl</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">cout</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;cp<sp/>[J/kg/K]:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;props.Cp&lt;&lt;<ref refid="classxThermal_1_1xThermalError" kindref="compound">endl</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_constants(<sp/><ref refid="classxThermal_1_1cxThermal" kindref="compound">xThermal::cxThermal</ref>*<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">thermo</ref>)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">cout</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;Tmin<sp/>[K]:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="classxThermal_1_1xThermalError" kindref="compound">thermo</ref>-&gt;Tmin()&lt;&lt;<ref refid="classxThermal_1_1xThermalError" kindref="compound">endl</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">cout</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;Tmax<sp/>[K]:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="classxThermal_1_1xThermalError" kindref="compound">thermo</ref>-&gt;Tmax()&lt;&lt;<ref refid="classxThermal_1_1xThermalError" kindref="compound">endl</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">cout</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;pmin<sp/>[Pa]:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="classxThermal_1_1xThermalError" kindref="compound">thermo</ref>-&gt;pmin()&lt;&lt;<ref refid="classxThermal_1_1xThermalError" kindref="compound">endl</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">cout</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;pmax<sp/>[Pa]:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="classxThermal_1_1xThermalError" kindref="compound">thermo</ref>-&gt;pmax()&lt;&lt;<ref refid="classxThermal_1_1xThermalError" kindref="compound">endl</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">cout</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;T_triple<sp/>[K]:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="classxThermal_1_1xThermalError" kindref="compound">thermo</ref>-&gt;Ttriple()&lt;&lt;<ref refid="classxThermal_1_1xThermalError" kindref="compound">endl</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">cout</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;Molar<sp/>mass<sp/>[kg/mol]:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="classxThermal_1_1xThermalError" kindref="compound">thermo</ref>-&gt;molar_mass()&lt;&lt;<ref refid="classxThermal_1_1xThermalError" kindref="compound">endl</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Library/NaCl/test.cxx"/>
+  </compounddef>
+</doxygen>

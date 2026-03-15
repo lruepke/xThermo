@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_c0af4561eefcccb3b947513fd062ac1d" kind="dir">
+    <compoundname>Library/benchmark_test/compare_matlabcode</compoundname>
+    <innerfile refid="compare__HPX_8m">compare_HPX.m</innerfile>
+    <innerfile refid="compare__VL_8m">compare_VL.m</innerfile>
+    <innerfile refid="compare__VL_8py">compare_VL.py</innerfile>
+    <innerfile refid="helpfunc_8py">helpfunc.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/benchmark_test/compare_matlabcode/"/>
+  </compounddef>
+</doxygen>

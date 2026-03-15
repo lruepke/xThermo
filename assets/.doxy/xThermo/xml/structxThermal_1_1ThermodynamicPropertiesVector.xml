@@ -1,0 +1,744 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1ThermodynamicPropertiesVector" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::ThermodynamicPropertiesVector</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a8ec1239f9f44a3b8712d6709dac3bb7a" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::T</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="521" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="521" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a1418d077a07aa368743fd72f08ed2f38" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::p</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="521" column="23" bodyfile="Library/thermo/DataStructures.h" bodystart="521" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a44d4e803bdae7faf648089b0f206d281" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::X</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="521" column="25" bodyfile="Library/thermo/DataStructures.h" bodystart="521" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1ab1ff1b2674ea3eddf86eac56030e0e6f" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::H</definition>
+        <argsstring></argsstring>
+        <name>H</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::H</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="521" column="27" bodyfile="Library/thermo/DataStructures.h" bodystart="521" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a6c5029d65cbf0ea1e61f88a803e3179c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref> &gt;</type>
+        <definition>std::vector&lt;int&gt; xThermal::ThermodynamicPropertiesVector::phase</definition>
+        <argsstring></argsstring>
+        <name>phase</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::phase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="522" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="522" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a9a82fbec2b719161ebe6dfbfc92af119" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::S_l</definition>
+        <argsstring></argsstring>
+        <name>S_l</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::S_l</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="523" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a6d1a6db5fef160af1fa80f8a9379a3fb" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::S_v</definition>
+        <argsstring></argsstring>
+        <name>S_v</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::S_v</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="523" column="25" bodyfile="Library/thermo/DataStructures.h" bodystart="523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1aa5b677468cdae79e542e985f2a0ef518" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::S_h</definition>
+        <argsstring></argsstring>
+        <name>S_h</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::S_h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="523" column="29" bodyfile="Library/thermo/DataStructures.h" bodystart="523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a5a835126baa933e9aaab5d12cc61c7fc" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::X_l</definition>
+        <argsstring></argsstring>
+        <name>X_l</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::X_l</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="524" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="524" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a5190e8a2ca70dbbe2b4d3dc345b1e217" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::X_v</definition>
+        <argsstring></argsstring>
+        <name>X_v</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::X_v</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="524" column="25" bodyfile="Library/thermo/DataStructures.h" bodystart="524" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a9f360fe4ddcec2bed359f738d3dddf60" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::Rho_l</definition>
+        <argsstring></argsstring>
+        <name>Rho_l</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::Rho_l</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="525" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="525" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1acf9456c7719819387a38807a9d8f912a" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::Rho_v</definition>
+        <argsstring></argsstring>
+        <name>Rho_v</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::Rho_v</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="525" column="27" bodyfile="Library/thermo/DataStructures.h" bodystart="525" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a57b6c7231e414b6e8c3848c6dbb01f3c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::Rho_h</definition>
+        <argsstring></argsstring>
+        <name>Rho_h</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::Rho_h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="525" column="33" bodyfile="Library/thermo/DataStructures.h" bodystart="525" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a4bc6fb462339aacbf03183c4bf322a65" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::H_l</definition>
+        <argsstring></argsstring>
+        <name>H_l</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::H_l</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="526" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="526" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a9c73027b19251591ed6bff558e904d77" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::H_v</definition>
+        <argsstring></argsstring>
+        <name>H_v</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::H_v</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="526" column="25" bodyfile="Library/thermo/DataStructures.h" bodystart="526" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a6f4329e32494f5f115055104b62a3d63" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::H_h</definition>
+        <argsstring></argsstring>
+        <name>H_h</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::H_h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="526" column="29" bodyfile="Library/thermo/DataStructures.h" bodystart="526" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a1741c9be3cc44b47a34a34c775e61556" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::Cp_l</definition>
+        <argsstring></argsstring>
+        <name>Cp_l</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::Cp_l</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="527" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="527" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1ab97ec33aa338bef694246cd42f1c0bfd" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::Cp_v</definition>
+        <argsstring></argsstring>
+        <name>Cp_v</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::Cp_v</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="527" column="26" bodyfile="Library/thermo/DataStructures.h" bodystart="527" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1ac6e55e5ff15e10324f21dacd3eb205e5" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::Cp_h</definition>
+        <argsstring></argsstring>
+        <name>Cp_h</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::Cp_h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="527" column="31" bodyfile="Library/thermo/DataStructures.h" bodystart="527" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1af9b28af811f593c78fb7ee1cecbb8c04" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::Mu_l</definition>
+        <argsstring></argsstring>
+        <name>Mu_l</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::Mu_l</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="528" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="528" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1af65f58f0a9b3080df47132453a006b54" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::Mu_v</definition>
+        <argsstring></argsstring>
+        <name>Mu_v</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::Mu_v</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="528" column="26" bodyfile="Library/thermo/DataStructures.h" bodystart="528" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1ad522c18e584e3c9fa5be9903dc7d0027" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::Rho</definition>
+        <argsstring></argsstring>
+        <name>Rho</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::Rho</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="529" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="529" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a85bbce1cfb450a37b3815cf4a1c15a79" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::Cp</definition>
+        <argsstring></argsstring>
+        <name>Cp</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::Cp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="529" column="25" bodyfile="Library/thermo/DataStructures.h" bodystart="529" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1ac1bb77df1e6cb4e208818bdb7f24102b" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::Mu</definition>
+        <argsstring></argsstring>
+        <name>Mu</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::Mu</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="529" column="28" bodyfile="Library/thermo/DataStructures.h" bodystart="529" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a640977fe8973b12efe0cf91eead3e822" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::dRhodP</definition>
+        <argsstring></argsstring>
+        <name>dRhodP</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::dRhodP</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="531" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="531" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1ac253922305ff64e7332582e97907429f" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::dRhodP_l</definition>
+        <argsstring></argsstring>
+        <name>dRhodP_l</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::dRhodP_l</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="531" column="28" bodyfile="Library/thermo/DataStructures.h" bodystart="531" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a1baaf4eccb6b76f22d24f55125c39fc3" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::dRhodP_v</definition>
+        <argsstring></argsstring>
+        <name>dRhodP_v</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::dRhodP_v</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="531" column="37" bodyfile="Library/thermo/DataStructures.h" bodystart="531" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a444d4426488f38d39e414d6a0637da26" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::dRhodT</definition>
+        <argsstring></argsstring>
+        <name>dRhodT</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::dRhodT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="532" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="532" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a74e7e3f80ac09396b1e63b6d2eee1d54" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::dRhodT_l</definition>
+        <argsstring></argsstring>
+        <name>dRhodT_l</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::dRhodT_l</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="532" column="28" bodyfile="Library/thermo/DataStructures.h" bodystart="532" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1aefcd1aa8e405b70d5de4c1bfb9b9b35e" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::dRhodT_v</definition>
+        <argsstring></argsstring>
+        <name>dRhodT_v</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::dRhodT_v</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="532" column="37" bodyfile="Library/thermo/DataStructures.h" bodystart="532" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a4bac07e04344128ad7e2d26bcf78cca4" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::IsothermalCompressibility</definition>
+        <argsstring></argsstring>
+        <name>IsothermalCompressibility</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::IsothermalCompressibility</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="534" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="534" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1afbce0f654efec13b2983e233163d06ee" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::IsothermalCompressibility_l</definition>
+        <argsstring></argsstring>
+        <name>IsothermalCompressibility_l</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::IsothermalCompressibility_l</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="534" column="47" bodyfile="Library/thermo/DataStructures.h" bodystart="534" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1ada47cf5ad8a896b440d5b8a315473a45" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::IsothermalCompressibility_v</definition>
+        <argsstring></argsstring>
+        <name>IsothermalCompressibility_v</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::IsothermalCompressibility_v</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="534" column="75" bodyfile="Library/thermo/DataStructures.h" bodystart="534" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a9f3904eb6e30ec9837481bd049d15ef1" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::IsobaricExpansivity</definition>
+        <argsstring></argsstring>
+        <name>IsobaricExpansivity</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::IsobaricExpansivity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="535" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="535" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1abeb7e86cf7dcd2332b40c042b51006ce" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::IsobaricExpansivity_l</definition>
+        <argsstring></argsstring>
+        <name>IsobaricExpansivity_l</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::IsobaricExpansivity_l</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="535" column="41" bodyfile="Library/thermo/DataStructures.h" bodystart="535" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a8d734a86c57daa556c592ea80796e19b" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::ThermodynamicPropertiesVector::IsobaricExpansivity_v</definition>
+        <argsstring></argsstring>
+        <name>IsobaricExpansivity_v</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::IsobaricExpansivity_v</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="535" column="63" bodyfile="Library/thermo/DataStructures.h" bodystart="535" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1ade1801996a1a3b6ab55ba7cc9f685b23" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string xThermal::ThermodynamicPropertiesVector::fluidName</definition>
+        <argsstring></argsstring>
+        <name>fluidName</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::fluidName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="536" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="536" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="structxThermal_1_1ThermodynamicPropertiesVector_1a77134798cb1f9a29a7188fa76a736117" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const ThermodynamicPropertiesVector &amp;self)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1ThermodynamicPropertiesVector" kindref="compound">ThermodynamicPropertiesVector</ref> &amp;</type>
+          <declname>self</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="538" column="16" bodyfile="Library/thermo/DataStructures.h" bodystart="538" bodyend="552"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structxThermal_1_1ThermodynamicPropertiesVector_1a81970e858102a5b93fa65575cdd54b57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::ThermodynamicPropertiesVector::write</definition>
+        <argsstring>(std::string filename)</argsstring>
+        <name>write</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::write</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="553" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="553" bodyend="564"/>
+      </memberdef>
+      <memberdef kind="function" id="structxThermal_1_1ThermodynamicPropertiesVector_1a865b62e967cf76758897c862c231a616" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::ThermodynamicPropertiesVector::write_vtk</definition>
+        <argsstring>(const std::string &amp;filename, const std::vector&lt; double &gt; &amp;x, const std::vector&lt; double &gt; &amp;y, const std::vector&lt; double &gt; &amp;z, const std::string &amp;xTitle, const std::string &amp;yTitle, const std::string &amp;zTitle, bool isNormalize=false)</argsstring>
+        <name>write_vtk</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::write_vtk</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::string &amp;</type>
+          <declname>xTitle</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::string &amp;</type>
+          <declname>yTitle</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::string &amp;</type>
+          <declname>zTitle</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+          <declname>isNormalize</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">false</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="565" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="565" bodyend="711"/>
+      </memberdef>
+      <memberdef kind="function" id="structxThermal_1_1ThermodynamicPropertiesVector_1ad1891219c7991ddc48d1a30bdaa95bb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::ThermodynamicPropertiesVector::write_csv</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>write_csv</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::write_csv</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="712" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="712" bodyend="750"/>
+      </memberdef>
+      <memberdef kind="function" id="structxThermal_1_1ThermodynamicPropertiesVector_1a509170c140e91bf5a8af910ee966cd4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::ThermodynamicPropertiesVector::fill</definition>
+        <argsstring>(const ThermodynamicProperties &amp;props, const size_t &amp;i)</argsstring>
+        <name>fill</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::fill</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> &amp;</type>
+          <declname>props</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">size_t</ref> &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="751" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="751" bodyend="790"/>
+      </memberdef>
+      <memberdef kind="function" id="structxThermal_1_1ThermodynamicPropertiesVector_1a723ed9bb2947974a952ec2149f4bf150" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::ThermodynamicPropertiesVector::resize</definition>
+        <argsstring>(size_t N)</argsstring>
+        <name>resize</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::resize</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">size_t</ref></type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="791" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="791" bodyend="830"/>
+      </memberdef>
+      <memberdef kind="function" id="structxThermal_1_1ThermodynamicPropertiesVector_1a39780c78fbe191605233356fc650b175" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string xThermal::ThermodynamicPropertiesVector::info</definition>
+        <argsstring>(const ThermodynamicPropertiesVector &amp;self)</argsstring>
+        <name>info</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::info</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1ThermodynamicPropertiesVector" kindref="compound">ThermodynamicPropertiesVector</ref> &amp;</type>
+          <declname>self</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="832" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="832" bodyend="837"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/thermo/DataStructures.h" line="519" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="520" bodyend="838"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a85bbce1cfb450a37b3815cf4a1c15a79" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>Cp</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1ac6e55e5ff15e10324f21dacd3eb205e5" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>Cp_h</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a1741c9be3cc44b47a34a34c775e61556" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>Cp_l</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1ab97ec33aa338bef694246cd42f1c0bfd" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>Cp_v</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a640977fe8973b12efe0cf91eead3e822" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>dRhodP</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1ac253922305ff64e7332582e97907429f" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>dRhodP_l</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a1baaf4eccb6b76f22d24f55125c39fc3" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>dRhodP_v</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a444d4426488f38d39e414d6a0637da26" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>dRhodT</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a74e7e3f80ac09396b1e63b6d2eee1d54" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>dRhodT_l</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1aefcd1aa8e405b70d5de4c1bfb9b9b35e" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>dRhodT_v</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a509170c140e91bf5a8af910ee966cd4a" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>fill</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1ade1801996a1a3b6ab55ba7cc9f685b23" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>fluidName</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1ab1ff1b2674ea3eddf86eac56030e0e6f" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>H</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a6f4329e32494f5f115055104b62a3d63" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>H_h</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a4bc6fb462339aacbf03183c4bf322a65" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>H_l</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a9c73027b19251591ed6bff558e904d77" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>H_v</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a39780c78fbe191605233356fc650b175" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>info</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a9f3904eb6e30ec9837481bd049d15ef1" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>IsobaricExpansivity</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1abeb7e86cf7dcd2332b40c042b51006ce" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>IsobaricExpansivity_l</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a8d734a86c57daa556c592ea80796e19b" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>IsobaricExpansivity_v</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a4bac07e04344128ad7e2d26bcf78cca4" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>IsothermalCompressibility</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1afbce0f654efec13b2983e233163d06ee" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>IsothermalCompressibility_l</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1ada47cf5ad8a896b440d5b8a315473a45" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>IsothermalCompressibility_v</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1ac1bb77df1e6cb4e208818bdb7f24102b" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>Mu</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1af9b28af811f593c78fb7ee1cecbb8c04" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>Mu_l</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1af65f58f0a9b3080df47132453a006b54" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>Mu_v</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a77134798cb1f9a29a7188fa76a736117" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a1418d077a07aa368743fd72f08ed2f38" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>p</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a6c5029d65cbf0ea1e61f88a803e3179c" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>phase</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a723ed9bb2947974a952ec2149f4bf150" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>resize</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1ad522c18e584e3c9fa5be9903dc7d0027" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>Rho</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a57b6c7231e414b6e8c3848c6dbb01f3c" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>Rho_h</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a9f360fe4ddcec2bed359f738d3dddf60" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>Rho_l</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1acf9456c7719819387a38807a9d8f912a" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>Rho_v</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1aa5b677468cdae79e542e985f2a0ef518" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>S_h</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a9a82fbec2b719161ebe6dfbfc92af119" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>S_l</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a6d1a6db5fef160af1fa80f8a9379a3fb" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>S_v</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a8ec1239f9f44a3b8712d6709dac3bb7a" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>T</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a81970e858102a5b93fa65575cdd54b57" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>write</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1ad1891219c7991ddc48d1a30bdaa95bb0" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>write_csv</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a865b62e967cf76758897c862c231a616" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>write_vtk</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a44d4e803bdae7faf648089b0f206d281" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>X</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a5a835126baa933e9aaab5d12cc61c7fc" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>X_l</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a5190e8a2ca70dbbe2b4d3dc345b1e217" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>X_v</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

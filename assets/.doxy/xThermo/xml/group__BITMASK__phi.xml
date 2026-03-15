@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__BITMASK__phi" kind="group">
+    <compoundname>BITMASK_phi</compoundname>
+    <title>Bit mask for updating of derivatives of phi</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__BITMASK__phi_1gac7198199221c01d6975f198bababf63a" prot="public" static="no">
+        <name>Update_phi_d</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="43">$ 2^1 $</formula>: <formula id="44">$ \left(\frac{\partial \phi}{\partial \delta} \right)_{\tau} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="29" column="17" bodyfile="Library/H2O/IAPWS95.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BITMASK__phi_1ga92998be0fc29950418d55ac37e9e123d" prot="public" static="no">
+        <name>Update_phi_dd</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="45">$2^2$</formula>: <formula id="46">$ \left(\frac{\partial^2 \phi}{\partial \delta^2} \right)_{\tau} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="31" column="17" bodyfile="Library/H2O/IAPWS95.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BITMASK__phi_1ga25b6e1459ec3a9d849d199924045cd99" prot="public" static="no">
+        <name>Update_phi_t</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="47">$2^3$</formula>: <formula id="48">$ \left(\frac{\partial \phi}{\partial \tau} \right)_{\delta} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="33" column="17" bodyfile="Library/H2O/IAPWS95.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BITMASK__phi_1ga2e89d0d07f5efb58edad25b5fb954746" prot="public" static="no">
+        <name>Update_phi_tt</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="49">$2^4$</formula>: <formula id="50">$ \left(\frac{\partial^2 \phi}{\partial \tau^2} \right)_{\delta} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="35" column="17" bodyfile="Library/H2O/IAPWS95.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BITMASK__phi_1ga92cbf4c498fed58dd5defe754b3453b0" prot="public" static="no">
+        <name>Update_phi_dt</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="51">$2^5$</formula>: <formula id="52">$ \left(\frac{\partial^2 \phi}{\partial \delta \partial \tau} \right) $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="37" column="17" bodyfile="Library/H2O/IAPWS95.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BITMASK__phi_1ga6e72e1082694169d8c2c8313cd855038" prot="public" static="no">
+        <name>Update_phi_all</name>
+        <initializer><ref refid="group__BITMASK__phi_1gac7198199221c01d6975f198bababf63a" kindref="member">Update_phi_d</ref>|<ref refid="group__BITMASK__phi_1ga92998be0fc29950418d55ac37e9e123d" kindref="member">Update_phi_dd</ref>|<ref refid="group__BITMASK__phi_1ga25b6e1459ec3a9d849d199924045cd99" kindref="member">Update_phi_t</ref>|<ref refid="group__BITMASK__phi_1ga2e89d0d07f5efb58edad25b5fb954746" kindref="member">Update_phi_tt</ref>|<ref refid="group__BITMASK__phi_1ga92cbf4c498fed58dd5defe754b3453b0" kindref="member">Update_phi_dt</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update all </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="39" column="17" bodyfile="Library/H2O/IAPWS95.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

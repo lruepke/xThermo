@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_954facde36cda98a0027ddce7db85b3d" kind="dir">
+    <compoundname>Library/test/test_templateClass</compoundname>
+    <innerfile refid="abstract_8h">abstract.h</innerfile>
+    <innerfile refid="test_2test__templateClass_2Exception_8h">Exception.h</innerfile>
+    <innerfile refid="implement__A_8h">implement_A.h</innerfile>
+    <innerfile refid="implement__AB_8h">implement_AB.h</innerfile>
+    <innerfile refid="implement__B_8h">implement_B.h</innerfile>
+    <innerfile refid="test__templateClass_2main_8cpp">main.cpp</innerfile>
+    <innerfile refid="test_2test__templateClass_2stdfunc_8h">stdfunc.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/test/test_templateClass/"/>
+  </compounddef>
+</doxygen>

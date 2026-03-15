@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classABSTRACT_1_1abstract" kind="class" language="C++" prot="public">
+    <compoundname>ABSTRACT::abstract</compoundname>
+    <derivedcompoundref refid="classIMPLEMENT__A_1_1implement__A" prot="public" virt="non-virtual">IMPLEMENT_A::implement_A</derivedcompoundref>
+    <derivedcompoundref refid="classIMPLEMENT__AB_1_1implement__AB" prot="public" virt="non-virtual">IMPLEMENT_AB::implement_AB</derivedcompoundref>
+    <derivedcompoundref refid="classIMPLEMENT__B_1_1implement__B" prot="public" virt="non-virtual">IMPLEMENT_B::implement_B</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classABSTRACT_1_1abstract_1ad7daece1776ddc278bda7c537f4f7f31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ABSTRACT::abstract::abstract</definition>
+        <argsstring>()</argsstring>
+        <name>abstract</name>
+        <qualifiedname>ABSTRACT::abstract::abstract</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/abstract.h" line="26" column="9" bodyfile="Library/test/test_templateClass/abstract.h" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classABSTRACT_1_1abstract_1a40b74d4263b246bf75b8190d44524880" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ABSTRACT::abstract::~abstract</definition>
+        <argsstring>()</argsstring>
+        <name>~abstract</name>
+        <qualifiedname>ABSTRACT::abstract::~abstract</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/abstract.h" line="27" column="9" bodyfile="Library/test/test_templateClass/abstract.h" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classABSTRACT_1_1abstract_1a88c7106e850e8ba6383d8a422835cad7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>virtual double ABSTRACT::abstract::calc_Tmax</definition>
+        <argsstring>()</argsstring>
+        <name>calc_Tmax</name>
+        <qualifiedname>ABSTRACT::abstract::calc_Tmax</qualifiedname>
+        <reimplementedby refid="classIMPLEMENT__A_1_1implement__A_1a6639581c8d7767a3a935b8756140af5e">calc_Tmax</reimplementedby>
+        <reimplementedby refid="classIMPLEMENT__AB_1_1implement__AB_1a6502bdb3406e02bdb446c2a6296b633a">calc_Tmax</reimplementedby>
+        <reimplementedby refid="classIMPLEMENT__B_1_1implement__B_1a4ed6fa87e571326edab308344f602963">calc_Tmax</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/abstract.h" line="29" column="24" bodyfile="Library/test/test_templateClass/abstract.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ABSTRACT::abstract</label>
+        <link refid="classABSTRACT_1_1abstract"/>
+      </node>
+      <node id="2">
+        <label>IMPLEMENT_A::implement_A</label>
+        <link refid="classIMPLEMENT__A_1_1implement__A"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMPLEMENT_AB::implement_AB</label>
+        <link refid="classIMPLEMENT__AB_1_1implement__AB"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IMPLEMENT_B::implement_B</label>
+        <link refid="classIMPLEMENT__B_1_1implement__B"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Library/test/test_templateClass/abstract.h" line="21" column="5" bodyfile="Library/test/test_templateClass/abstract.h" bodystart="22" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classABSTRACT_1_1abstract_1ad7daece1776ddc278bda7c537f4f7f31" prot="public" virt="non-virtual"><scope>ABSTRACT::abstract</scope><name>abstract</name></member>
+      <member refid="classABSTRACT_1_1abstract_1a88c7106e850e8ba6383d8a422835cad7" prot="public" virt="virtual"><scope>ABSTRACT::abstract</scope><name>calc_Tmax</name></member>
+      <member refid="classABSTRACT_1_1abstract_1a40b74d4263b246bf75b8190d44524880" prot="public" virt="non-virtual"><scope>ABSTRACT::abstract</scope><name>~abstract</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

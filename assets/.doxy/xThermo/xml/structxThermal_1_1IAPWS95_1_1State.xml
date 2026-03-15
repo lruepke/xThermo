@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1IAPWS95_1_1State" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::IAPWS95::State</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1State_1a3adf72e8c073cc2dd6df1fa69b7e54e3" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50" kindref="member">PhaseRegion</ref></type>
+        <definition>PhaseRegion xThermal::IAPWS95::State::phase</definition>
+        <argsstring></argsstring>
+        <name>phase</name>
+        <qualifiedname>xThermal::IAPWS95::State::phase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="201" column="25" bodyfile="Library/H2O/IAPWS95.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1State_1a28f1ab52dd175be8483b1608ef2082d1" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS95::State::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>xThermal::IAPWS95::State::x</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>vapor mass fraction </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="202" column="20" bodyfile="Library/H2O/IAPWS95.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1State_1ad7ec32f4898a0776109725f37344aaf2" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS95::State::tau</definition>
+        <argsstring></argsstring>
+        <name>tau</name>
+        <qualifiedname>xThermal::IAPWS95::State::tau</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="203" column="20" bodyfile="Library/H2O/IAPWS95.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1State_1a9fedca0887627dd157aa40cc5c3a4759" prot="public" static="no" mutable="no">
+        <type><ref refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless__SinglePhase" kindref="compound">HelmholtzEnergy_dimensionless_SinglePhase</ref></type>
+        <definition>HelmholtzEnergy_dimensionless_SinglePhase xThermal::IAPWS95::State::singlePhase</definition>
+        <argsstring></argsstring>
+        <name>singlePhase</name>
+        <qualifiedname>xThermal::IAPWS95::State::singlePhase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="206" column="61" bodyfile="Library/H2O/IAPWS95.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1State_1a2132c30fbef46bda4b084f01e52a339e" prot="public" static="no" mutable="no">
+        <type><ref refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless__TwoPhase" kindref="compound">HelmholtzEnergy_dimensionless_TwoPhase</ref></type>
+        <definition>HelmholtzEnergy_dimensionless_TwoPhase xThermal::IAPWS95::State::twoPhase</definition>
+        <argsstring></argsstring>
+        <name>twoPhase</name>
+        <qualifiedname>xThermal::IAPWS95::State::twoPhase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="207" column="61" bodyfile="Library/H2O/IAPWS95.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1State_1a0fca4a820a116ec3857e25f6938ce507" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">union</ref> <ref refid="structxThermal_1_1IAPWS95_1_1State" kindref="compound">xThermal::IAPWS95::State</ref></type>
+        <definition>union xThermal::IAPWS95::State xThermal::IAPWS95::State::phi</definition>
+        <argsstring></argsstring>
+        <name>phi</name>
+        <qualifiedname>xThermal::IAPWS95::State::phi</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="208" column="16"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1State_1a7237345adecdabbca79f6e48093a067a" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS95::State::singlePhase</definition>
+        <argsstring></argsstring>
+        <name>singlePhase</name>
+        <qualifiedname>xThermal::IAPWS95::State::singlePhase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="211" column="27" bodyfile="Library/H2O/IAPWS95.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1State_1ad65240d0836e2dc96786be8f29b66af8" prot="public" static="no" mutable="no">
+        <type><ref refid="structxThermal_1_1IAPWS95_1_1STRUCT__delta__TwoPhase" kindref="compound">STRUCT_delta_TwoPhase</ref></type>
+        <definition>STRUCT_delta_TwoPhase xThermal::IAPWS95::State::twoPhase</definition>
+        <argsstring></argsstring>
+        <name>twoPhase</name>
+        <qualifiedname>xThermal::IAPWS95::State::twoPhase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="212" column="45" bodyfile="Library/H2O/IAPWS95.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1State_1a6147af16f410805196d5de6f27bdc683" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">union</ref> <ref refid="structxThermal_1_1IAPWS95_1_1State" kindref="compound">xThermal::IAPWS95::State</ref></type>
+        <definition>union xThermal::IAPWS95::State xThermal::IAPWS95::State::delta</definition>
+        <argsstring></argsstring>
+        <name>delta</name>
+        <qualifiedname>xThermal::IAPWS95::State::delta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="213" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>xThermal::IAPWS95::HelmholtzEnergy_dimensionless</label>
+        <link refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless"/>
+      </node>
+      <node id="2">
+        <label>xThermal::IAPWS95::HelmholtzEnergy_dimensionless_SinglePhase</label>
+        <link refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless__SinglePhase"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>phio</edgelabel>
+          <edgelabel>phir</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>xThermal::IAPWS95::HelmholtzEnergy_dimensionless_TwoPhase</label>
+        <link refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless__TwoPhase"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>phio_l</edgelabel>
+          <edgelabel>phio_v</edgelabel>
+          <edgelabel>phir_l</edgelabel>
+          <edgelabel>phir_v</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>xThermal::IAPWS95::STRUCT_delta_TwoPhase</label>
+        <link refid="structxThermal_1_1IAPWS95_1_1STRUCT__delta__TwoPhase"/>
+      </node>
+      <node id="1">
+        <label>xThermal::IAPWS95::State</label>
+        <link refid="structxThermal_1_1IAPWS95_1_1State"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>singlePhase</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>twoPhase</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>twoPhase</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Library/H2O/IAPWS95.h" line="199" column="9" bodyfile="Library/H2O/IAPWS95.h" bodystart="200" bodyend="214"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1IAPWS95_1_1State_1a6147af16f410805196d5de6f27bdc683" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::State</scope><name>delta</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1State_1a3adf72e8c073cc2dd6df1fa69b7e54e3" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::State</scope><name>phase</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1State_1a0fca4a820a116ec3857e25f6938ce507" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::State</scope><name>phi</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1State_1a9fedca0887627dd157aa40cc5c3a4759" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::State</scope><name>singlePhase</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1State_1a7237345adecdabbca79f6e48093a067a" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::State</scope><name>singlePhase</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1State_1ad7ec32f4898a0776109725f37344aaf2" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::State</scope><name>tau</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1State_1a2132c30fbef46bda4b084f01e52a339e" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::State</scope><name>twoPhase</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1State_1ad65240d0836e2dc96786be8f29b66af8" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::State</scope><name>twoPhase</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1State_1a28f1ab52dd175be8483b1608ef2082d1" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::State</scope><name>x</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

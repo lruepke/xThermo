@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1propInfo" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::propInfo</compoundname>
+    <includes refid="DataStructures_8h" local="no">DataStructures.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1propInfo_1ad88fadfaf20ef13e8e012cef829e8afe" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">char</ref></type>
+        <definition>char xThermal::propInfo::shortName[STR_LENGTH_PROPINFO]</definition>
+        <argsstring>[STR_LENGTH_PROPINFO]</argsstring>
+        <name>shortName</name>
+        <qualifiedname>xThermal::propInfo::shortName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="931" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="931" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1propInfo_1ac5d0b5e4a5331307cbf1e5d3a6ab0b7d" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">char</ref></type>
+        <definition>char xThermal::propInfo::longName[STR_LENGTH_PROPINFO]</definition>
+        <argsstring>[STR_LENGTH_PROPINFO]</argsstring>
+        <name>longName</name>
+        <qualifiedname>xThermal::propInfo::longName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="931" column="24" bodyfile="Library/thermo/DataStructures.h" bodystart="931" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1propInfo_1a047f8eebfde5143faa4f3ca5cbd213fc" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">char</ref></type>
+        <definition>char xThermal::propInfo::unit[STR_LENGTH_PROPINFO]</definition>
+        <argsstring>[STR_LENGTH_PROPINFO]</argsstring>
+        <name>unit</name>
+        <qualifiedname>xThermal::propInfo::unit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="931" column="33" bodyfile="Library/thermo/DataStructures.h" bodystart="931" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Information of a thermodynamic property. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/thermo/DataStructures.h" line="927" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="928" bodyend="932"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1propInfo_1ac5d0b5e4a5331307cbf1e5d3a6ab0b7d" prot="public" virt="non-virtual"><scope>xThermal::propInfo</scope><name>longName</name></member>
+      <member refid="structxThermal_1_1propInfo_1ad88fadfaf20ef13e8e012cef829e8afe" prot="public" virt="non-virtual"><scope>xThermal::propInfo</scope><name>shortName</name></member>
+      <member refid="structxThermal_1_1propInfo_1a047f8eebfde5143faa4f3ca5cbd213fc" prot="public" virt="non-virtual"><scope>xThermal::propInfo</scope><name>unit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="IAPS84_8h" kind="file" language="C++">
+    <compoundname>IAPS84.h</compoundname>
+    <includes refid="thermo_8h" local="yes">thermo.h</includes>
+    <includedby refid="IAPS84_8cpp" local="yes">Library/H2O/IAPS84.cpp</includedby>
+    <includedby refid="H2O_2test_8cxx" local="yes">Library/H2O/test.cxx</includedby>
+    <includedby refid="H2ONaCl_8h" local="yes">Library/H2ONaCl/H2ONaCl.h</includedby>
+    <includedby refid="lookup_8cpp" local="yes">Library/H2ONaCl/Matlab/lookup.cpp</includedby>
+    <includedby refid="prop__water__TP_8cpp" local="yes">Library/H2ONaCl/Matlab/prop_water_TP.cpp</includedby>
+    <includedby refid="NaCl_8h" local="yes">Library/NaCl/NaCl.h</includedby>
+    <incdepgraph>
+      <node id="15">
+        <label>LookUpTableForest.h</label>
+        <link refid="LookUpTableForest_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Library/H2O/IAPS84.h</label>
+        <link refid="IAPS84_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>DataStructures.h</label>
+        <link refid="DataStructures_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Exception.h</label>
+        <link refid="thermo_2Exception_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>MultiProgressBar.h</label>
+        <link refid="MultiProgressBar_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>thermo.h</label>
+        <link refid="thermo_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>triangle.h</label>
+        <link refid="triangle_8h_source"/>
+      </node>
+      <node id="10">
+        <label>algorithm</label>
+      </node>
+      <node id="13">
+        <label>cmath</label>
+      </node>
+      <node id="12">
+        <label>exception</label>
+      </node>
+      <node id="5">
+        <label>fstream</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="16">
+        <label>map</label>
+      </node>
+      <node id="7">
+        <label>sstream</label>
+      </node>
+      <node id="3">
+        <label>stdfunc.h</label>
+      </node>
+      <node id="17">
+        <label>string</label>
+      </node>
+      <node id="19">
+        <label>sys/ioctl.h</label>
+      </node>
+      <node id="8">
+        <label>utility</label>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>Library/H2O/IAPS84.cpp</label>
+        <link refid="IAPS84_8cpp"/>
+      </node>
+      <node id="1">
+        <label>Library/H2O/IAPS84.h</label>
+        <link refid="IAPS84_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Library/H2ONaCl/H2ONaCl.cpp</label>
+        <link refid="H2ONaCl_8cpp"/>
+      </node>
+      <node id="3">
+        <label>Library/H2ONaCl/H2ONaCl.h</label>
+        <link refid="H2ONaCl_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Library/H2ONaCl/test.cxx</label>
+        <link refid="H2ONaCl_2test_8cxx"/>
+      </node>
+      <node id="7">
+        <label>Library/NaCl/NaCl.cpp</label>
+        <link refid="NaCl_8cpp"/>
+      </node>
+      <node id="6">
+        <label>Library/NaCl/NaCl.h</label>
+        <link refid="NaCl_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classxThermal_1_1PROST_1_1cIAPS84" prot="public">xThermal::PROST::cIAPS84</innerclass>
+    <innernamespace refid="namespacexThermal">xThermal</innernamespace>
+    <innernamespace refid="namespacexThermal_1_1PROST">xThermal::PROST</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="IAPS84_8h_1a28372a1a0b8cd904a0d961ede88f2e42" prot="public" static="no">
+        <name>Name_Backend_IAPS84</name>
+        <initializer>&quot;IAPS84&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPS84.h" line="19" column="13" bodyfile="Library/H2O/IAPS84.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>EOS of H2O in formula of IAPS84 which is based on prost. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Zhikui Guo (<ulink url="mailto:zguo@geomar.de">zguo@geomar.de</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2022-03-27</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2022 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IAPS84_xThermal_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IAPS84_xThermal_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="thermo_8h" kindref="compound">thermo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacexThermal" kindref="compound">xThermal</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>Name_Backend_IAPS84<sp/>&quot;IAPS84&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">PROST</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23" refid="classxThermal_1_1PROST_1_1cIAPS84" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">xTHERMO_VAR<sp/><ref refid="classxThermal_1_1PROST_1_1cIAPS84" kindref="compound">cIAPS84</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal" kindref="compound">cxThermal</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structxThermal_1_1CONSTENTS__Thermo" kindref="compound">CONSTENTS_Thermo</ref><sp/>m_constants;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1PROST_1_1cIAPS84" kindref="compound">cIAPS84</ref>(</highlight><highlight class="comment">/*<sp/>args<sp/>*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1PROST_1_1cIAPS84" kindref="compound">cIAPS84</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1PROST_1_1cIAPS84" kindref="compound">cIAPS84</ref>&amp;<sp/>water);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1PROST_1_1cIAPS84" kindref="compound">~cIAPS84</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initialize_data();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50" kindref="member">xThermal::PhaseRegion</ref><sp/>phase_PROST2xThermal(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>T,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">prop</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35" refid="classxThermal_1_1PROST_1_1cIAPS84_1a7de03e3e6c82688e8397d2c3f100b782" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classxThermal_1_1PROST_1_1cIAPS84_1a7de03e3e6c82688e8397d2c3f100b782" kindref="member">name</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Name_Backend_IAPS84;};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>thermodynamic<sp/>constants<sp/>of<sp/>the<sp/>model</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classxThermal_1_1PROST_1_1cIAPS84_1a982d52e05cb22939233dd16416a70dfd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1PROST_1_1cIAPS84_1a982d52e05cb22939233dd16416a70dfd" kindref="member">Tmin</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_constants.Tmin;<sp/>};<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38" refid="classxThermal_1_1PROST_1_1cIAPS84_1abc22849a2f74c8a8fcc65081c2e1eaca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1PROST_1_1cIAPS84_1abc22849a2f74c8a8fcc65081c2e1eaca" kindref="member">Tmax</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_constants.Tmax;};<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39" refid="classxThermal_1_1PROST_1_1cIAPS84_1a9e7bc9900d2e38711a5138b777bf5015" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1PROST_1_1cIAPS84_1a9e7bc9900d2e38711a5138b777bf5015" kindref="member">pmin</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_constants.pmin;<sp/>};<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40" refid="classxThermal_1_1PROST_1_1cIAPS84_1ad0f56406061e260c4c6c208855cb12fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1PROST_1_1cIAPS84_1ad0f56406061e260c4c6c208855cb12fe" kindref="member">pmax</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_constants.pmax;};<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41" refid="classxThermal_1_1PROST_1_1cIAPS84_1ac05ee3450794da93ffe147e070283f8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1PROST_1_1cIAPS84_1ac05ee3450794da93ffe147e070283f8e" kindref="member">Ttriple</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_constants.Ttriple;};<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42" refid="classxThermal_1_1PROST_1_1cIAPS84_1a04c49973d63b665c2401a1dccf56cde4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1PROST_1_1cIAPS84_1a04c49973d63b665c2401a1dccf56cde4" kindref="member">T_critical</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_constants.T_critical;};<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43" refid="classxThermal_1_1PROST_1_1cIAPS84_1a9cdcb6c459af4cba718e958f828240c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1PROST_1_1cIAPS84_1a9cdcb6c459af4cba718e958f828240c3" kindref="member">p_critical</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_constants.p_critical;};<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44" refid="classxThermal_1_1PROST_1_1cIAPS84_1a05c36584081484da7053cea652c310ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1PROST_1_1cIAPS84_1a05c36584081484da7053cea652c310ce" kindref="member">rhomass_critical</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_constants.rhomass_critical;};<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45" refid="classxThermal_1_1PROST_1_1cIAPS84_1a83462f992a5eea79e59b2c2ea14e17b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1PROST_1_1cIAPS84_1a83462f992a5eea79e59b2c2ea14e17b7" kindref="member">molar_mass</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_constants.molar_mass;};<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>update<sp/>thermodynamic<sp/>state<sp/>and<sp/>properties<sp/>for<sp/>given<sp/>[T,p],<sp/>or<sp/>[T,p,X],<sp/>X<sp/>is<sp/>the<sp/>salinity<sp/>of<sp/>H2ONaCl.<sp/>For<sp/>pure<sp/>fluid,<sp/>X=0<sp/>as<sp/>a<sp/>default.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50" kindref="member">PhaseRegion</ref><sp/>findPhaseRegion_TPX(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>T,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>X=0);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateState_TPX(<ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref>&amp;<sp/>props,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>T,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>X=0);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateState_HPX(<ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref>&amp;<sp/>props,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>H,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>X=0);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>void<sp/>UpdateState_TPX(ThermodynamicPropertiesArray&amp;<sp/>stateArray,<sp/>const<sp/>size_t&amp;<sp/>N,<sp/>const<sp/>double*<sp/>T,<sp/>const<sp/>double*<sp/>p,<sp/>const<sp/>double*<sp/>X=NULL);<sp/>//for<sp/>Matlab<sp/>API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref><sp/>UpdateState_TPX(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;T,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;X=0);<sp/></highlight><highlight class="comment">//for<sp/>Python<sp/>API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Boiling_p(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>T);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Boiling_T(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>p);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Boiling_p(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>T,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">rho_l</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">rho_v</ref>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Boiling_T(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">rho_l</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">rho_v</ref>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Boiling_p(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>T,<sp/><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref>&amp;<sp/>props);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Boiling_T(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>p,<sp/><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref>&amp;<sp/>props);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Library/H2O/IAPS84.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="bug" kind="page">
+    <compoundname>bug</compoundname>
+    <title>Bug List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Member <ref refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a22ee9fc78651ee18e73ed6870a50418c" kindref="member">xThermal::H2ONaCl::cH2ONaCl::Rho_phase</ref>  (const double &amp;T, const double &amp;P, const double &amp;X, double &amp;rho, double &amp;dRhodP, double &amp;dRhodT, PhaseType phase)</term></varlistentry>
+<listitem><para><anchor id="bug_1_bug000001"/>T=273.16, P=20E5, X=0.1, Tstar = n1 + n2*T_C + D will be negative.</para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+    <location file="bug"/>
+  </compounddef>
+</doxygen>

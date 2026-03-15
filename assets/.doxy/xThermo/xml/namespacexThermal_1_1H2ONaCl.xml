@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacexThermal_1_1H2ONaCl" kind="namespace" language="C++">
+    <compoundname>xThermal::H2ONaCl</compoundname>
+    <innerclass refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl" prot="public">xThermal::H2ONaCl::cH2ONaCl</innerclass>
+    <innerclass refid="structxThermal_1_1H2ONaCl_1_1Coeffs__Estimate__CriticalT" prot="public">xThermal::H2ONaCl::Coeffs_Estimate_CriticalT</innerclass>
+    <innerclass refid="structxThermal_1_1H2ONaCl_1_1Coeffs__Viscosity" prot="public">xThermal::H2ONaCl::Coeffs_Viscosity</innerclass>
+    <innerclass refid="structxThermal_1_1H2ONaCl_1_1Params__Inversion__PTX" prot="public">xThermal::H2ONaCl::Params_Inversion_PTX</innerclass>
+    <innerclass refid="structxThermal_1_1H2ONaCl_1_1Params__P2CriticalT" prot="public">xThermal::H2ONaCl::Params_P2CriticalT</innerclass>
+    <innerclass refid="structxThermal_1_1H2ONaCl_1_1Params__PX2T__VL" prot="public">xThermal::H2ONaCl::Params_PX2T_VL</innerclass>
+    <innerclass refid="structxThermal_1_1H2ONaCl_1_1Table4__Driesner2007a__CriticalCurve" prot="public">xThermal::H2ONaCl::Table4_Driesner2007a_CriticalCurve</innerclass>
+    <innerclass refid="structxThermal_1_1H2ONaCl_1_1Table6__Pressure__VLH" prot="public">xThermal::H2ONaCl::Table6_Pressure_VLH</innerclass>
+    <innerclass refid="structxThermal_1_1H2ONaCl_1_1Table7__XL__VL" prot="public">xThermal::H2ONaCl::Table7_XL_VL</innerclass>
+    <innerclass refid="structxThermal_1_1H2ONaCl_1_1Table8__VaporComposition" prot="public">xThermal::H2ONaCl::Table8_VaporComposition</innerclass>
+    <sectiondef kind="var">
+      <member refid="group__PhysicalConstants__H2ONaCl_1ga3f60bf26b7fbe6d843933c6013e0af17" kind="variable"><name>T_MIN</name></member>
+      <member refid="group__PhysicalConstants__H2ONaCl_1ga8231d0db1350bb215c640d65d9b2c01e" kind="variable"><name>P_MIN</name></member>
+      <member refid="group__PhysicalConstants__H2ONaCl_1ga75dd7bc90fb8221616322427f8d16854" kind="variable"><name>P_MAX</name></member>
+      <member refid="group__PhysicalConstants__H2ONaCl_1gafc902a29b69c72fb7a181becf4a38707" kind="variable"><name>T_MAX</name></member>
+      <member refid="group__PhysicalConstants__H2ONaCl_1ga43fcdfada7d9df263ffae5b90077df53" kind="variable"><name>X_MIN</name></member>
+      <member refid="group__PhysicalConstants__H2ONaCl_1gabcdf9fee5f9581ebdab11a1120096a63" kind="variable"><name>X_MAX</name></member>
+      <member refid="group__PhysicalConstants__H2ONaCl_1ga12d7ab3521648c9e6a8c43f5c1e0e402" kind="variable"><name>T_MAX_VLH</name></member>
+      <member refid="group__PhysicalConstants__H2ONaCl_1gae0dd80244c31c9f9aacf2615d779fc15" kind="variable"><name>T_MIN_VLH</name></member>
+      <member refid="group__PhysicalConstants__H2ONaCl_1ga9f170fe2af16cfe31f09a1a1533f8790" kind="variable"><name>T_Peak_VLH</name></member>
+      <member refid="group__PhysicalConstants__H2ONaCl_1gaa939ae8d1b447bbdcc2528fee46d25f0" kind="variable"><name>P_Peak_VLH</name></member>
+      <member refid="group__PhysicalConstants__H2ONaCl_1ga866343363b17c6ebf9e178cf72985d7d" kind="variable"><name>T_Peak_VLH_C</name></member>
+      <member refid="group__PhysicalConstants__H2ONaCl_1ga0c98a9d0943da08d24e0a7f1877baa55" kind="variable"><name>P_Peak_VLH_bar</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="H2ONaCl_8cpp_1a48b874ce8fe5a151e3ea31324c1d1359" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::H2ONaCl::func_P2CriticalT</definition>
+        <argsstring>(double T, void *params)</argsstring>
+        <name>func_P2CriticalT</name>
+        <qualifiedname>xThermal::H2ONaCl::func_P2CriticalT</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>Construct function of <formula id="78">$ P_{critical} = f(T) $</formula>, see Eq. 5a-c of Driesner2007Part1. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Temperature [K] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pressure [Pa] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.cpp" line="312" column="16" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="312" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="H2ONaCl_8cpp_1af3759998ae8a6c1dd4cae8c97e618762" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::H2ONaCl::func_TL_VL</definition>
+        <argsstring>(double T, void *params)</argsstring>
+        <name>func_TL_VL</name>
+        <qualifiedname>xThermal::H2ONaCl::func_TL_VL</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.cpp" line="371" column="16" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="371" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="H2ONaCl_8cpp_1afb984117d6830165a6588339da25a7af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::H2ONaCl::func_T_VLH</definition>
+        <argsstring>(double T, void *params)</argsstring>
+        <name>func_T_VLH</name>
+        <qualifiedname>xThermal::H2ONaCl::func_T_VLH</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.cpp" line="620" column="16" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="620" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="H2ONaCl_8cpp_1aa8ff093435ba8f6f67e3bb52c989f4ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::H2ONaCl::func_T_VL_L</definition>
+        <argsstring>(double T, void *params)</argsstring>
+        <name>func_T_VL_L</name>
+        <qualifiedname>xThermal::H2ONaCl::func_T_VL_L</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.cpp" line="1003" column="16" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1003" bodyend="1012"/>
+      </memberdef>
+      <memberdef kind="function" id="H2ONaCl_8cpp_1a078fc86157c615888771c2ba339e39be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::H2ONaCl::func_T_VL_V</definition>
+        <argsstring>(double T, void *params)</argsstring>
+        <name>func_T_VL_V</name>
+        <qualifiedname>xThermal::H2ONaCl::func_T_VL_V</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.cpp" line="1101" column="16" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1101" bodyend="1110"/>
+      </memberdef>
+      <memberdef kind="function" id="H2ONaCl_8cpp_1a88318574172162ce252b2292ecdd6654" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::H2ONaCl::func_T_HPX</definition>
+        <argsstring>(double T, void *params)</argsstring>
+        <name>func_T_HPX</name>
+        <qualifiedname>xThermal::H2ONaCl::func_T_HPX</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.cpp" line="3483" column="16" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3483" bodyend="3494"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/H2ONaCl/H2ONaCl.cpp" line="21" column="5"/>
+  </compounddef>
+</doxygen>

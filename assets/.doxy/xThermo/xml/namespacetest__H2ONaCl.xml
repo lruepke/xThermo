@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacetest__H2ONaCl" kind="namespace" language="Python">
+    <compoundname>test_H2ONaCl</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="test__H2ONaCl_8py_1ad7ad5a8f6b7685694403847673b091f3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test_H2ONaCl.sw_84</definition>
+        <argsstring></argsstring>
+        <name>sw_84</name>
+        <qualifiedname>test_H2ONaCl.sw_84</qualifiedname>
+        <initializer>=  H2ONaCl.cH2ONaCl(&quot;IAPS84&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/test_H2ONaCl.py" line="5" column="1" bodyfile="Library/H2ONaCl/test_H2ONaCl.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__H2ONaCl_8py_1ace391321ebd0a9526a839c7222a7d0c2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test_H2ONaCl.sw</definition>
+        <argsstring></argsstring>
+        <name>sw</name>
+        <qualifiedname>test_H2ONaCl.sw</qualifiedname>
+        <initializer>=  sw_84</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/test_H2ONaCl.py" line="7" column="1" bodyfile="Library/H2ONaCl/test_H2ONaCl.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__H2ONaCl_8py_1a9f2a6d28bf4b98f7753e210d72dd31b8" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list test_H2ONaCl.T_list</definition>
+        <argsstring></argsstring>
+        <name>T_list</name>
+        <qualifiedname>test_H2ONaCl.T_list</qualifiedname>
+        <initializer>=  [373, 500, 650]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/test_H2ONaCl.py" line="8" column="1" bodyfile="Library/H2ONaCl/test_H2ONaCl.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__H2ONaCl_8py_1a762d8b72f44e6d00be35b1fe5b3081e6" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list test_H2ONaCl.p_list</definition>
+        <argsstring></argsstring>
+        <name>p_list</name>
+        <qualifiedname>test_H2ONaCl.p_list</qualifiedname>
+        <initializer>=  [300e5, 300e5, 300e5]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/test_H2ONaCl.py" line="9" column="1" bodyfile="Library/H2ONaCl/test_H2ONaCl.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__H2ONaCl_8py_1aa1f38f243747f3e5f444d0d8aec93b11" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list test_H2ONaCl.X_list</definition>
+        <argsstring></argsstring>
+        <name>X_list</name>
+        <qualifiedname>test_H2ONaCl.X_list</qualifiedname>
+        <initializer>=  [0.2, 0.2, 0.2]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/test_H2ONaCl.py" line="10" column="1" bodyfile="Library/H2ONaCl/test_H2ONaCl.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__H2ONaCl_8py_1a9bc1868628b3cbd44116ad151792ae61" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test_H2ONaCl.props</definition>
+        <argsstring></argsstring>
+        <name>props</name>
+        <qualifiedname>test_H2ONaCl.props</qualifiedname>
+        <initializer>=  sw.UpdateState_TPX(T, p, X)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/test_H2ONaCl.py" line="12" column="1" bodyfile="Library/H2ONaCl/test_H2ONaCl.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/H2ONaCl/test_H2ONaCl.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

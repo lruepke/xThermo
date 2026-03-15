@@ -1,0 +1,2697 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="H₂O–NaCl equation of state — C++ library with Python bindings">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+    
+    
+      
+        <title>Class xThermal::IAPWS95::cIAPWS95 - xThermo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-xthermaliapws95ciapws95" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="xThermo" class="md-header__button md-logo" aria-label="xThermo" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            xThermo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Class xThermal::IAPWS95::cIAPWS95
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/lruepke/xThermo" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    lruepke/xThermo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../installation/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Installation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../python/" class="md-tabs__link">
+          
+  
+  
+  Python API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../cpp/" class="md-tabs__link">
+          
+  
+  
+  C++ API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../api/cpp/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  C++ Reference
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="xThermo" class="md-nav__button md-logo" aria-label="xThermo" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    xThermo
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/lruepke/xThermo" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    lruepke/xThermo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python API
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python API
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/tpx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T-p-X calculation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/hpx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    H-p-X flash
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/phase_boundaries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase boundaries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/saturation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Saturation (H₂O)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C++ API
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C++ API
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cpp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cpp/tpx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T-p-X calculation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cpp/phase_region/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase region
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cpp/phase_boundaries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase boundaries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/cpp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C++ Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#public-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Attributes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-attributes-inherited-from-xthermalcxthermal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Attributes inherited from xThermal::cxThermal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Functions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-functions-inherited-from-xthermalcxthermal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Functions inherited from xThermal::cxThermal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-static-functions-inherited-from-xthermalcxthermal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Static Functions inherited from xThermal::cxThermal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-attributes-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Attributes Documentation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Public Attributes Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variable-m_constants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        variable m_constants
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-functions-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Functions Documentation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Public Functions Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#function-boiling_t-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function Boiling_T [1/4]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-boiling_t-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function Boiling_T [2/4]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-boiling_t-34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function Boiling_T [3/4]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-boiling_t-44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function Boiling_T [4/4]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-boiling_p-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function Boiling_p [1/4]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-boiling_p-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function Boiling_p [2/4]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-boiling_p-34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function Boiling_p [3/4]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-boiling_p-44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function Boiling_p [4/4]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-mu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function Mu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-p_sat_estimate-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function P_Sat_estimate [1/2]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-p_sat_estimate-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function P_Sat_estimate [2/2]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-p_delta_tau" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function P_delta_tau
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-rho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function Rho
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-rho_liquid_sat_estimate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function Rho_Liquid_Sat_estimate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-rho_vapor_sat_estimate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function Rho_Vapor_Sat_estimate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-t_sat_estimate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function T_Sat_estimate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-t_critical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function T_critical
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-tmax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function Tmax
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-tmin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function Tmin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-ttriple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function Ttriple
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-updatestate_hpx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function UpdateState_HPX
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-updatestate_tpx-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function UpdateState_TPX [1/2]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-updatestate_tpx-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function UpdateState_TPX [2/2]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-verification_mu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function Verification_Mu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-_enthalpy-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function _enthalpy [1/2]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-ciapws95" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function cIAPWS95
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-findphaseregion_hpx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function findPhaseRegion_HPX
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-findphaseregion_tpx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function findPhaseRegion_TPX
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-molar_mass" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function molar_mass
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-p_critical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function p_critical
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-phi_o" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function phi_o
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-phi_r-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function phi_r [1/3]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-phi_r-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function phi_r [2/3]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-phi_r-33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function phi_r [3/3]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-phi_r_d-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function phi_r_d [1/2]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-phi_r_d-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function phi_r_d [2/2]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-phi_r_dd-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function phi_r_dd [1/2]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-phi_r_dd-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function phi_r_dd [2/2]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-phi_r_dt-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function phi_r_dt [1/2]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-phi_r_dt-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function phi_r_dt [2/2]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-phi_r_t-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function phi_r_t [1/2]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-phi_r_t-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function phi_r_t [2/2]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-phi_r_tt-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function phi_r_tt [1/2]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-phi_r_tt-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function phi_r_tt [2/2]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-pmax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function pmax
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-pmin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function pmin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-rhomass_critical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function rhomass_critical
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-ciapws95_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function ~cIAPWS95
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="class-xthermaliapws95ciapws95">Class xThermal::IAPWS95::cIAPWS95</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacexThermal/"><strong>xThermal</strong></a> <strong>&gt;</strong> <a href="../namespacexThermal_1_1IAPWS95/"><strong>IAPWS95</strong></a> <strong>&gt;</strong> <a href="./"><strong>cIAPWS95</strong></a></p>
+<p><em>Class of IAPWS-95 formula of H2O, which inherits from</em> <a href="../classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97/"><em><strong>IAPWS_IF97::cIAPWS_IF97</strong></em></a> <em>.</em></p>
+<ul>
+<li><code>#include &lt;IAPWS95.h&gt;</code></li>
+</ul>
+<p>Inherits the following classes: <a href="../classxThermal_1_1cxThermal/">xThermal::cxThermal</a></p>
+<h2 id="public-attributes">Public Attributes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><a href="../structxThermal_1_1CONSTENTS__Thermo/"><strong>CONSTENTS_Thermo</strong></a></td>
+<td style="text-align: left;"><a href="#variable-m_constants"><strong>m_constants</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-attributes-inherited-from-xthermalcxthermal">Public Attributes inherited from xThermal::cxThermal</h2>
+<p>See <a href="../classxThermal_1_1cxThermal/">xThermal::cxThermal</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>bool</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#variable-m_isshowprogressbar"><strong>m_isShowProgressBar</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-boiling_t-14"><strong>Boiling_T</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; P, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T_K, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; rho_l, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; rho_v) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-boiling_t-24"><strong>Boiling_T</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; p) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-boiling_t-34"><strong>Boiling_T</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; p, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; rho_l, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; rho_v) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-boiling_t-44"><strong>Boiling_T</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; p, <a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a> &amp; props) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-boiling_p-14"><strong>Boiling_p</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T_K, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; P, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; rho_l, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; rho_v) <br><em>Solve saturated pressure, liquid density and vapor density on phase boundary of boiling curve by given temperature. Using</em> <a href="./#function-p_sat_estimate-12"><em><strong>P_Sat_estimate</strong></em></a> <em>,</em><a href="./#function-rho_liquid_sat_estimate"><em><strong>Rho_Liquid_Sat_estimate</strong></em></a> <em>and</em><a href="./#function-rho_vapor_sat_estimate"><em><strong>Rho_Vapor_Sat_estimate</strong></em></a> <em>calculate initial values of</em>(p_{\sigma}, \rho^{\prime}, \rho^{\prime\prime}) <em>, respectively; then use GSL solve three nonlinear quations with three unknowns (</em>(p_{\sigma}, \rho^{\prime}, \rho^{\prime\prime}) <em>) according to the phase-equilibrium condition (See Table 3, pp. 11 in IAPWS-95).</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-boiling_p-24"><strong>Boiling_p</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-boiling_p-34"><strong>Boiling_p</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; rho_l, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; rho_v) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-boiling_p-44"><strong>Boiling_p</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T, <a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a> &amp; props) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-mu"><strong>Mu</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; P) <br><em>Calculate dynamic viscosity for give T,p.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-p_sat_estimate-12"><strong>P_Sat_estimate</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T_K) <br><em>Vapor-pressure equation. See Eq. 2.5 (pp. 399) in IAPWS-95-art.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-p_sat_estimate-22"><strong>P_Sat_estimate</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T_K, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; p, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; dpdT) <br><em>Vapor-pressure and its derivative equation. See Eq. 2.5, 2.5a (pp. 399) in IAPWS-95-art.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-p_delta_tau"><strong>P_delta_tau</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; delta, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; tau) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-rho"><strong>Rho</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T_K, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; P, std::string method="bisection") <br><em>Calculate density</em> (\rho) <em>by given temperature and pressure.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-rho_liquid_sat_estimate"><strong>Rho_Liquid_Sat_estimate</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T) <br><em>Saturated liquid density. See Eq. 2.6 (pp. 399) in IAPWS-95-art.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-rho_vapor_sat_estimate"><strong>Rho_Vapor_Sat_estimate</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T) <br><em>Saturated vapor density. See Eq. 2.7 (pp. 399) in IAPWS-95-art.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-t_sat_estimate"><strong>T_Sat_estimate</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; P) <br><em>Solve nonlinear equation of</em> <a href="./#function-p_sat_estimate-12"><em><strong>P_Sat_estimate</strong></em></a> <em>.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-t_critical"><strong>T_critical</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-tmax"><strong>Tmax</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-tmin"><strong>Tmin</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-ttriple"><strong>Ttriple</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-updatestate_hpx"><strong>UpdateState_HPX</strong></a> (<a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a> &amp; props, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; H, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; p, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; X=0) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-updatestate_tpx-12"><strong>UpdateState_TPX</strong></a> (<a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a> &amp; props, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; p, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; X=0) <br><em>Update state using T, p as independent variables.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a></td>
+<td style="text-align: left;"><a href="#function-updatestate_tpx-22"><strong>UpdateState_TPX</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; p, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; X=0) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-verification_mu"><strong>Verification_Mu</strong></a> () <br><em>Computer-program verification given by mu2008.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-_enthalpy-12"><strong>_enthalpy</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T_K, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; P, std::string method="bisection") <br><em>Calculate specific enthalpy by given temperature and pressure.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-ciapws95"><strong>cIAPWS95</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../namespacexThermal/#enum-phaseregion"><strong>PhaseRegion</strong></a></td>
+<td style="text-align: left;"><a href="#function-findphaseregion_hpx"><strong>findPhaseRegion_HPX</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; H, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; p, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; X=0) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../namespacexThermal/#enum-phaseregion"><strong>PhaseRegion</strong></a></td>
+<td style="text-align: left;"><a href="#function-findphaseregion_tpx"><strong>findPhaseRegion_TPX</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; p, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; X=0) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-molar_mass"><strong>molar_mass</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual std::string</td>
+<td style="text-align: left;"><a href="#function-name"><strong>name</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-p_critical"><strong>p_critical</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-phi_o"><strong>phi_o</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; delta, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; tau, <a href="../structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless/"><strong>HelmholtzEnergy_dimensionless</strong></a> &amp; phio, <a href="../classxThermal_1_1xThermalError/"><strong>unsigned</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>int</strong></a> update_derivatives=<a href="../group__BITMASK__phi/#define-update_phi_all"><strong>Update_phi_all</strong></a>) <br><em>The ideal-gas part</em> (\phi^o) <em>of the dimensionless Helmholtz free energy and its derivatives. See Table 4 in IAPWS-95.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-phi_r-13"><strong>phi_r</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; delta, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; tau) <br><em>Implementation of residual part</em> (\phi^r) <em>of the dimensionless Helmholtz free energy: Eq. 6 in IAPWS-95 and its derivatives, see Table 5 in IAPWS-95.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-phi_r-23"><strong>phi_r</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; delta, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; tau, <a href="../structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless/"><strong>HelmholtzEnergy_dimensionless</strong></a> &amp; phir) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-phi_r-33"><strong>phi_r</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; delta, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; tau, std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; res) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-phi_r_d-12"><strong>phi_r_d</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; delta, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; tau) <br><em>Calculate partial derivative of residual part</em> (\left[ \frac{\partial \phi^r}{\partial \delta} \right]<em>{\tau}) </em>._</td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-phi_r_d-22"><strong>phi_r_d</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; delta, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; tau, std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; res) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-phi_r_dd-12"><strong>phi_r_dd</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; delta, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; tau) <br><em>Calculate partial derivative of residual part</em> (\left[ \frac{\partial^2 \phi^r}{\partial \delta^2} \right]<em>{\tau}) </em>._</td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-phi_r_dd-22"><strong>phi_r_dd</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; delta, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; tau, std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; res) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-phi_r_dt-12"><strong>phi_r_dt</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; delta, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; tau) <br><em>Calculate partial derivative of residual part</em> (\frac{\partial^2 \phi^r}{\partial \delta \partial \tau}) <em>.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-phi_r_dt-22"><strong>phi_r_dt</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; delta, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; tau, std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; res) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-phi_r_t-12"><strong>phi_r_t</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; delta, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; tau) <br><em>Calculate partial derivative of residual part</em> (\left[ \frac{\partial \phi^r}{\partial \tau} \right]<em>{\delta}) </em>._</td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-phi_r_t-22"><strong>phi_r_t</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; delta, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; tau, std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; res) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-phi_r_tt-12"><strong>phi_r_tt</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; delta, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; tau) <br><em>Calculate partial derivative of residual part</em> (\left[ \frac{\partial^2 \phi^r}{\partial \tau^2} \right]<em>{\delta}) </em>._</td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-phi_r_tt-22"><strong>phi_r_tt</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; delta, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; tau, std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; res) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-pmax"><strong>pmax</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-pmin"><strong>pmin</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="#function-rhomass_critical"><strong>rhomass_critical</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-ciapws95"><strong>~cIAPWS95</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-xthermalcxthermal">Public Functions inherited from xThermal::cxThermal</h2>
+<p>See <a href="../classxThermal_1_1cxThermal/">xThermal::cxThermal</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-boiling_t-13"><strong>Boiling_T</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; p) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-boiling_t-23"><strong>Boiling_T</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; p, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; rho_l, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; rho_v) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-boiling_t-33"><strong>Boiling_T</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; p, <a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a> &amp; props) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-boiling_t_props"><strong>Boiling_T_props</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; p) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-boiling_p-13"><strong>Boiling_p</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-boiling_p-23"><strong>Boiling_p</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; rho_l, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; rho_v) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-boiling_p-33"><strong>Boiling_p</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T, <a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a> &amp; props) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-boiling_p_props"><strong>Boiling_p_props</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../namespacexThermal/#enum-phaseregion"><strong>PhaseRegion</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-rho_lookup"><strong>Rho_lookup</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; Rho_estimate, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; Rho_min, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; Rho_max, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; P) <br><em>Only lookup density for given T,P,X from loaded LUT. This information can be a good guess of Rho for IAPWS95 solution of Rho.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-t_critical"><strong>T_critical</strong></a> () = 0<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-tmax"><strong>Tmax</strong></a> () = 0<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-tmin"><strong>Tmin</strong></a> () = 0<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-triangulation"><strong>Triangulation</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; x_poly, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; y_poly, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> pointInMesh, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> dxdy, <a href="../structxThermal_1_1TriMesh/"><strong>TriMesh</strong></a> &amp; trimesh, <a href="../classxThermal_1_1xThermalError/"><strong>bool</strong></a> normalize=<a href="../classxThermal_1_1xThermalError/"><strong>true</strong></a>) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-ttriple"><strong>Ttriple</strong></a> () = 0<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-updatestate_hpx-14"><strong>UpdateState_HPX</strong></a> (<a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a> &amp; props, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; H, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; p, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; X=0) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structxThermal_1_1ThermodynamicPropertiesVector/"><strong>ThermodynamicPropertiesVector</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-updatestate_hpx-24"><strong>UpdateState_HPX</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; H, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; p, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; X, <a href="../classxThermal_1_1xThermalError/"><strong>bool</strong></a> isMeshGrid=<a href="../classxThermal_1_1xThermalError/"><strong>false</strong></a>) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-updatestate_hpx-34"><strong>UpdateState_HPX</strong></a> (<a href="../structxThermal_1_1ThermodynamicPropertiesArray/"><strong>ThermodynamicPropertiesArray</strong></a> &amp; stateArray, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>size_t</strong></a> &amp; N, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> * H, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> * p, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> * X=<a href="../classxThermal_1_1xThermalError/"><strong>NULL</strong></a>) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-updatestate_hpx-44"><strong>UpdateState_HPX</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; H, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; p, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; X=0) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-updatestate_tpx-14"><strong>UpdateState_TPX</strong></a> (<a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a> &amp; props, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; p, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; X=0) <br><em>Update state using T, p as independent variables.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structxThermal_1_1ThermodynamicPropertiesVector/"><strong>ThermodynamicPropertiesVector</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-updatestate_tpx-24"><strong>UpdateState_TPX</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; T, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; p, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; X, <a href="../classxThermal_1_1xThermalError/"><strong>bool</strong></a> isMeshGrid=<a href="../classxThermal_1_1xThermalError/"><strong>false</strong></a>) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-updatestate_tpx-34"><strong>UpdateState_TPX</strong></a> (<a href="../structxThermal_1_1ThermodynamicPropertiesArray/"><strong>ThermodynamicPropertiesArray</strong></a> &amp; stateArray, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>size_t</strong></a> &amp; N, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> * T, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> * p, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> * X=<a href="../classxThermal_1_1xThermalError/"><strong>NULL</strong></a>) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-updatestate_tpx-44"><strong>UpdateState_TPX</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; p, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; X=0) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-createlut_2d-12"><strong>createLUT_2D</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> xy_min, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> xy_max, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> constZ, LOOKUPTABLE_FOREST::CONST_WHICH_VAR const_which_var, LOOKUPTABLE_FOREST::EOS_ENERGY TorH, <a href="../classxThermal_1_1xThermalError/"><strong>int</strong></a> min_level=4, <a href="../classxThermal_1_1xThermalError/"><strong>int</strong></a> max_level=6, <a href="../classxThermal_1_1xThermalError/"><strong>int</strong></a> update_which_props=0) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-createlut_2d-22"><strong>createLUT_2D</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> xmin, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> xmax, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> ymin, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> ymax, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> constZ, LOOKUPTABLE_FOREST::CONST_WHICH_VAR const_which_var, LOOKUPTABLE_FOREST::EOS_ENERGY TorH, <a href="../classxThermal_1_1xThermalError/"><strong>int</strong></a> min_level=4, <a href="../classxThermal_1_1xThermalError/"><strong>int</strong></a> max_level=6, <a href="../classxThermal_1_1xThermalError/"><strong>int</strong></a> update_which_props=0) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-createlut_3d-12"><strong>createLUT_3D</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> xyz_min, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> xyz_max, LOOKUPTABLE_FOREST::EOS_ENERGY TorH, <a href="../classxThermal_1_1xThermalError/"><strong>int</strong></a> min_level=4, <a href="../classxThermal_1_1xThermalError/"><strong>int</strong></a> max_level=6, <a href="../classxThermal_1_1xThermalError/"><strong>int</strong></a> update_which_props=0) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-createlut_3d-22"><strong>createLUT_3D</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> xmin, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> xmax, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> ymin, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> ymax, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> zmin, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> zmax, LOOKUPTABLE_FOREST::EOS_ENERGY TorH, <a href="../classxThermal_1_1xThermalError/"><strong>int</strong></a> min_level=4, <a href="../classxThermal_1_1xThermalError/"><strong>int</strong></a> max_level=6, <a href="../classxThermal_1_1xThermalError/"><strong>int</strong></a> update_which_props=0) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-cxthermal"><strong>cxThermal</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../namespacexThermal/#enum-phaseregion"><strong>PhaseRegion</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-findphaseregion_tpx"><strong>findPhaseRegion_TPX</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; p, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; X=0) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structxThermal_1_1Head__AMR__LUT/"><strong>Head_AMR_LUT</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-getlutinfo"><strong>getLutInfo</strong></a> (std::string file_lut, <a href="../classxThermal_1_1xThermalError/"><strong>bool</strong></a> printSummary=<a href="../classxThermal_1_1xThermalError/"><strong>true</strong></a>) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::map&lt; <a href="../classxThermal_1_1xThermalError/"><strong>int</strong></a>, <a href="../structxThermal_1_1propInfo/"><strong>propInfo</strong></a> &gt; &amp;</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-get_updatewhichprops"><strong>get_UpdateWhichProps</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>int</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-get_dim_lut"><strong>get_dim_lut</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>int</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-get_dim_lut_lookup"><strong>get_dim_lut_lookup</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>int</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-get_num_threads"><strong>get_num_threads</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a> *</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-get_plut"><strong>get_pLUT</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a> *</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-get_plut_lookup"><strong>get_pLUT_lookup</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">std::vector&lt; T &gt;</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-linspace-12"><strong>linspace</strong></a> (T xmin, T xmax, std::size_t n, <a href="../classxThermal_1_1xThermalError/"><strong>bool</strong></a> isLogScale=<a href="../classxThermal_1_1xThermalError/"><strong>false</strong></a>) <br><em>Make a linearly spaced vector of points.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">std::vector&lt; T &gt;</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-linspace-22"><strong>linspace</strong></a> (T xmindxxmax) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-loadlut"><strong>loadLUT</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::string &amp; filename, <a href="../classxThermal_1_1xThermalError/"><strong>bool</strong></a> printStatus=<a href="../classxThermal_1_1xThermalError/"><strong>true</strong></a>) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structLOOKUPTABLE__FOREST_1_1Quadrant/"><strong>LOOKUPTABLE_FOREST::Quadrant</strong></a>&lt; 2, <a href="../structLOOKUPTABLE__FOREST_1_1FIELD__DATA/"><strong>LOOKUPTABLE_FOREST::FIELD_DATA</strong></a>&lt; 2 &gt; &gt; *</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-lookup-14"><strong>lookup</strong></a> (<a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a> &amp; prop, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> x, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> y) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structLOOKUPTABLE__FOREST_1_1Quadrant/"><strong>LOOKUPTABLE_FOREST::Quadrant</strong></a>&lt; 2, <a href="../structLOOKUPTABLE__FOREST_1_1FIELD__DATA/"><strong>LOOKUPTABLE_FOREST::FIELD_DATA</strong></a>&lt; 2 &gt; &gt; *</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-lookup-24"><strong>lookup</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> * props, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> * xyz_min_target, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> x, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> y, <a href="../classxThermal_1_1xThermalError/"><strong>bool</strong></a> is_cal=<a href="../classxThermal_1_1xThermalError/"><strong>true</strong></a>) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structLOOKUPTABLE__FOREST_1_1Quadrant/"><strong>LOOKUPTABLE_FOREST::Quadrant</strong></a>&lt; 3, <a href="../structLOOKUPTABLE__FOREST_1_1FIELD__DATA/"><strong>LOOKUPTABLE_FOREST::FIELD_DATA</strong></a>&lt; 3 &gt; &gt; *</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-lookup-34"><strong>lookup</strong></a> (<a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a> &amp; prop, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> x, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> y, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> z) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structLOOKUPTABLE__FOREST_1_1Quadrant/"><strong>LOOKUPTABLE_FOREST::Quadrant</strong></a>&lt; 3, <a href="../structLOOKUPTABLE__FOREST_1_1FIELD__DATA/"><strong>LOOKUPTABLE_FOREST::FIELD_DATA</strong></a>&lt; 3 &gt; &gt; *</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-lookup-44"><strong>lookup</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> * props, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> * xyz_min_target, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> x, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> y, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> z, <a href="../classxThermal_1_1xThermalError/"><strong>bool</strong></a> is_cal=<a href="../classxThermal_1_1xThermalError/"><strong>true</strong></a>) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structLOOKUPTABLE__FOREST_1_1Quadrant/"><strong>LOOKUPTABLE_FOREST::Quadrant</strong></a>&lt; 2, <a href="../structLOOKUPTABLE__FOREST_1_1FIELD__DATA/"><strong>LOOKUPTABLE_FOREST::FIELD_DATA</strong></a>&lt; 2 &gt; &gt; *</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-lookup_only-12"><strong>lookup_only</strong></a> (<a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a> &amp; prop, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> x, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> y) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structLOOKUPTABLE__FOREST_1_1Quadrant/"><strong>LOOKUPTABLE_FOREST::Quadrant</strong></a>&lt; 3, <a href="../structLOOKUPTABLE__FOREST_1_1FIELD__DATA/"><strong>LOOKUPTABLE_FOREST::FIELD_DATA</strong></a>&lt; 3 &gt; &gt; *</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-lookup_only-22"><strong>lookup_only</strong></a> (<a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a> &amp; prop, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> x, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> y, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> z) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-max_vector"><strong>max_vector</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; T &gt; &amp; x) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-mean_vector"><strong>mean_vector</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; T &gt; &amp; x) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>size_t</strong></a> &gt;</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-meshgrid"><strong>meshgrid</strong></a> (T xmindxxmax, T ymindyymax, std::vector&lt; T &gt; &amp; XX, std::vector&lt; T &gt; &amp; YY) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-min_vector"><strong>min_vector</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; T &gt; &amp; x) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-molar_mass"><strong>molar_mass</strong></a> () = 0<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual std::string</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-name"><strong>name</strong></a> () = 0<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-normalizephaseboundaries"><strong>normalizePhaseBoundaries</strong></a> (<a href="../structxThermal_1_1PhaseBoundaries/"><strong>PhaseBoundaries</strong></a> &amp; phaseBoundaries) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-p_critical"><strong>p_critical</strong></a> () = 0<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual std::string</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-phase_name"><strong>phase_name</strong></a> (<a href="../namespacexThermal/#enum-phaseregion"><strong>PhaseRegion</strong></a> phase_index) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-pmax"><strong>pmax</strong></a> () = 0<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-pmin"><strong>pmin</strong></a> () = 0<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-rhomass_critical"><strong>rhomass_critical</strong></a> () = 0<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-rhomolar_critical"><strong>rhomolar_critical</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-save_lut_to_binary"><strong>save_lut_to_binary</strong></a> (std::string filename) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-save_lut_to_vtk"><strong>save_lut_to_vtk</strong></a> (std::string filename, <a href="../classxThermal_1_1xThermalError/"><strong>bool</strong></a> isNormalizeXYZ=<a href="../classxThermal_1_1xThermalError/"><strong>true</strong></a>) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-set_num_threads"><strong>set_num_threads</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>int</strong></a> num_threads) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-showprogressbar"><strong>showProgressBar</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>bool</strong></a> isShow) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-sum_vector"><strong>sum_vector</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; T &gt; &amp; x) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-writeline2vtu"><strong>writeLine2VTU</strong></a> (std::string vtuFile, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; X, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; Y, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; Z, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> scale_x=1.0, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> scale_y=1.0, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> scale_z=1.0) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-writemeshgrid2vtk"><strong>writeMeshGrid2VTK</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::string &amp; vtkFile, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; x, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::string &amp; xTitle, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; y, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::string &amp; yTitle, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; z, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::string &amp; zTitle, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &gt; &amp; props, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../structxThermal_1_1propInfo/"><strong>propInfo</strong></a> &gt; &amp; propsInfo, <a href="../classxThermal_1_1xThermalError/"><strong>bool</strong></a> isNormalize=<a href="../classxThermal_1_1xThermalError/"><strong>false</strong></a>) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-writephaseboundaries2vtu"><strong>writePhaseBoundaries2VTU</strong></a> (std::string outputPath, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../structxThermal_1_1PhaseBoundaries/"><strong>PhaseBoundaries</strong></a> &amp; phaseBoundaries, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> scale_T=1, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> scale_p=1, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> scale_X=1) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-writetrimesh2txt"><strong>writeTriMesh2Txt</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../structxThermal_1_1TriMesh/"><strong>TriMesh</strong></a> &amp; mesh, std::string path_out=".") <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-writexxyyzz2vtu"><strong>writeXXYYZZ2VTU</strong></a> (std::string vtuFile, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &gt; &amp; XX, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &gt; &amp; YY, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &gt; &amp; ZZ, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> scale_x=1.0, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> scale_y=1.0, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> scale_z=1.0) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-cxthermal"><strong>~cxThermal</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-static-functions-inherited-from-xthermalcxthermal">Public Static Functions inherited from xThermal::cxThermal</h2>
+<p>See <a href="../classxThermal_1_1cxThermal/">xThermal::cxThermal</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">INDEX_FLUID</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-validatefluid"><strong>validateFluid</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::string &amp; fluidName) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
+<h3 id="variable-m_constants">variable m_constants</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">CONSTENTS_Thermo</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">m_constants</span><span class="p">;</span>
+</code></pre></div>
+<hr>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-boiling_t-14">function Boiling_T [1/4]</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">Boiling_T</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">P</span><span class="p">,</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">T_K</span><span class="p">,</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">rho_l</span><span class="p">,</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">rho_v</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-boiling_t-24">function Boiling_T [2/4]</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">virtual</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">Boiling_T</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p>Calculate boiling temperature [K] of water for a given p [Pa] </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>p</code> </li>
+</ul>
+<p><strong>Returns:</strong></p>
+<p>Implements <a href="../classxThermal_1_1cxThermal/#function-boiling_t-13"><em>xThermal::cxThermal::Boiling_T</em></a></p>
+<hr>
+
+<h3 id="function-boiling_t-34">function Boiling_T [3/4]</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">virtual</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">Boiling_T</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p</span><span class="p">,</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">rho_l</span><span class="p">,</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">rho_v</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p>Calculate both boiling temperature and density of liquid and vapor phase. </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>p</code> [Pa] </li>
+<li><code>rho_l</code> [kg/m3] </li>
+<li><code>rho_v</code> [kg/m3] </li>
+</ul>
+<p><strong>Returns:</strong></p>
+<p>Implements <a href="../classxThermal_1_1cxThermal/#function-boiling_t-23"><em>xThermal::cxThermal::Boiling_T</em></a></p>
+<hr>
+
+<h3 id="function-boiling_t-44">function Boiling_T [4/4]</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">virtual</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">Boiling_T</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p</span><span class="p">,</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="n">ThermodynamicProperties</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">props</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p>Implements <a href="../classxThermal_1_1cxThermal/#function-boiling_t-33"><em>xThermal::cxThermal::Boiling_T</em></a></p>
+<hr>
+
+<h3 id="function-boiling_p-14">function Boiling_p [1/4]</h3>
+<p><em>Solve saturated pressure, liquid density and vapor density on phase boundary of boiling curve by given temperature. Using</em> <a href="./#function-p_sat_estimate-12"><em><strong>P_Sat_estimate</strong></em></a> <em>,</em><a href="./#function-rho_liquid_sat_estimate"><em><strong>Rho_Liquid_Sat_estimate</strong></em></a> <em>and</em><a href="./#function-rho_vapor_sat_estimate"><em><strong>Rho_Vapor_Sat_estimate</strong></em></a> <em>calculate initial values of</em>(p_{\sigma}, \rho^{\prime}, \rho^{\prime\prime}) <em>, respectively; then use GSL solve three nonlinear quations with three unknowns (</em>(p_{\sigma}, \rho^{\prime}, \rho^{\prime\prime}) <em>) according to the phase-equilibrium condition (See Table 3, pp. 11 in IAPWS-95).</em>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">Boiling_p</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">T_K</span><span class="p">,</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">P</span><span class="p">,</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">rho_l</span><span class="p">,</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">rho_v</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<p><strong>Note:</strong></p>
+<p>The pressure unit in the phase-equilibrium condition(Maxwell criterion) is Pa only if <a href="../namespacexThermal/#variable-r"><strong>xThermal::R</strong></a> unit is J/kg/K !!! see Table 3 (pp.11) IAPWS-95. I set <a href="../namespacexThermal/#variable-r"><strong>xThermal::R</strong></a> in unit of J/kg/K. </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>T_K</code> </li>
+<li><code>P</code> </li>
+<li><code>rho_l</code> </li>
+<li><code>rho_v</code> </li>
+</ul>
+<hr>
+
+<h3 id="function-boiling_p-24">function Boiling_p [2/4]</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">virtual</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">Boiling_p</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">T</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p>Calculate boiling pressure [Pa] of water for a given T [K] </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>T</code> </li>
+</ul>
+<p><strong>Returns:</strong></p>
+<p>Implements <a href="../classxThermal_1_1cxThermal/#function-boiling_p-13"><em>xThermal::cxThermal::Boiling_p</em></a></p>
+<hr>
+
+<h3 id="function-boiling_p-34">function Boiling_p [3/4]</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">virtual</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">Boiling_p</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">T</span><span class="p">,</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">rho_l</span><span class="p">,</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">rho_v</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p>Calculate both boiling temperature and density of liquid and vapor phase. </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>T</code> [K] </li>
+<li><code>rho_l</code> [kg/m3] </li>
+<li><code>rho_v</code> [kg/m3] </li>
+</ul>
+<p><strong>Returns:</strong></p>
+<p>Implements <a href="../classxThermal_1_1cxThermal/#function-boiling_p-23"><em>xThermal::cxThermal::Boiling_p</em></a></p>
+<hr>
+
+<h3 id="function-boiling_p-44">function Boiling_p [4/4]</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">virtual</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">Boiling_p</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">T</span><span class="p">,</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="n">ThermodynamicProperties</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">props</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p>Implements <a href="../classxThermal_1_1cxThermal/#function-boiling_p-33"><em>xThermal::cxThermal::Boiling_p</em></a></p>
+<hr>
+
+<h3 id="function-mu">function Mu</h3>
+<p><em>Calculate dynamic viscosity for give T,p.</em> 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">Mu</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">T</span><span class="p">,</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">P</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>T</code> [K] </li>
+<li><code>P</code> [Pa] </li>
+</ul>
+<p><strong>Returns:</strong></p>
+<p>[Pa s] </p>
+<hr>
+
+<h3 id="function-p_sat_estimate-12">function P_Sat_estimate [1/2]</h3>
+<p><em>Vapor-pressure equation. See Eq. 2.5 (pp. 399) in IAPWS-95-art.</em> 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">P_Sat_estimate</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">T_K</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<p><strong>Note:</strong></p>
+<p>This equation is only auxiliary equation for calculating properties along the vapor–liquid phase boundary. Although the differences be- tween the results from these equations and the corresponding results from the IAPWS-95 formulation, Eq. 6.4, are extremely small, these equations are not thermodynamically consistent with IAPWS-95. Nevertheless, the application of these auxiliary equations might be useful for simple calculations of these saturation properties or for the determination of starting values when iteratively calculating the saturation properties from IAPWS-95 according to the phase-equilibrium condition. IAPWS-95-art. </p>
+<p><strong>Warning:</strong></p>
+<p>The unit of this function depends on unit of H2O::P_c, I set critical pressure H2O::P_c to Pa, so this function return pressure in Pa. </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>T_K</code> [K] </li>
+</ul>
+<p><strong>Returns:</strong></p>
+<p>double [Pa] </p>
+<hr>
+
+<h3 id="function-p_sat_estimate-22">function P_Sat_estimate [2/2]</h3>
+<p><em>Vapor-pressure and its derivative equation. See Eq. 2.5, 2.5a (pp. 399) in IAPWS-95-art.</em> 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">P_Sat_estimate</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">T_K</span><span class="p">,</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p</span><span class="p">,</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">dpdT</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>T_K</code> </li>
+<li><code>p</code> </li>
+<li><code>dpdT</code> </li>
+</ul>
+<p><strong>Returns:</strong></p>
+<p>double </p>
+<hr>
+
+<h3 id="function-p_delta_tau">function P_delta_tau</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">P_delta_tau</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">delta</span><span class="p">,</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">tau</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-rho">function Rho</h3>
+<p><em>Calculate density</em> (\rho) <em>by given temperature and pressure.</em>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">Rho</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">T_K</span><span class="p">,</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">P</span><span class="p">,</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">method</span><span class="o">=</span><span class="s">&quot;bisection&quot;</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<p><img alt="Image" src="comparOtherCodes/TP/Rho.svg" /></p>
+<p><strong>Note:</strong></p>
+<p>The python package <strong>pyIAPWS95</strong> and <strong>pyIAPWS97</strong> can be found at <a href="https://github.com/jjgomera/iapws">https://github.com/jjgomera/iapws</a>, which implements both IAPWS95 and IAPWS-IF97 formula. <strong>freesteam</strong>(<a href="http://freesteam.sourceforge.net">http://freesteam.sourceforge.net</a>) and <strong>PROST</strong> (<a href="http://fluidos.etsii.upm.es/faculty/Jaime_Carpio/Fumatas_negas">http://fluidos.etsii.upm.es/faculty/Jaime_Carpio/Fumatas_negas</a>) implement IAPWS-IF97 and IAPWS84, respectively. </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>T_K</code> [K] </li>
+<li><code>P</code> [Pa] </li>
+<li><code>method</code> </li>
+</ul>
+<p><strong>Returns:</strong></p>
+<p>double </p>
+<hr>
+
+<h3 id="function-rho_liquid_sat_estimate">function Rho_Liquid_Sat_estimate</h3>
+<p><em>Saturated liquid density. See Eq. 2.6 (pp. 399) in IAPWS-95-art.</em> 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">Rho_Liquid_Sat_estimate</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">T</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<p><strong>Note:</strong></p>
+<p>This equation is only auxiliary equation for calculating properties along the vapor–liquid phase boundary. Although the differences be- tween the results from these equations and the corresponding results from the IAPWS-95 formulation, Eq. 6.4, are extremely small, these equations are not thermodynamically consistent with IAPWS-95. Nevertheless, the application of these auxiliary equations might be useful for simple calculations of these saturation properties or for the determination of starting values when iteratively calculating the saturation properties from IAPWS-95 according to the phase-equilibrium condition. IAPWS-95-art. </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>T_K</code> [K] </li>
+</ul>
+<p><strong>Returns:</strong></p>
+<p>double [kg/m3] </p>
+<hr>
+
+<h3 id="function-rho_vapor_sat_estimate">function Rho_Vapor_Sat_estimate</h3>
+<p><em>Saturated vapor density. See Eq. 2.7 (pp. 399) in IAPWS-95-art.</em> 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">Rho_Vapor_Sat_estimate</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">T</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<p><strong>Note:</strong></p>
+<p>This equation is only auxiliary equation for calculating properties along the vapor–liquid phase boundary. Although the differences be- tween the results from these equations and the corresponding results from the IAPWS-95 formulation, Eq. 6.4, are extremely small, these equations are not thermodynamically consistent with IAPWS-95. Nevertheless, the application of these auxiliary equations might be useful for simple calculations of these saturation properties or for the determination of starting values when iteratively calculating the saturation properties from IAPWS-95 according to the phase-equilibrium condition. IAPWS-95-art. </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>T_K</code> [K] </li>
+</ul>
+<p><strong>Returns:</strong></p>
+<p>double [kg/m3] </p>
+<hr>
+
+<h3 id="function-t_sat_estimate">function T_Sat_estimate</h3>
+<p><em>Solve nonlinear equation of</em> <a href="./#function-p_sat_estimate-12"><em><strong>P_Sat_estimate</strong></em></a> <em>.</em>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">T_Sat_estimate</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">P</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>P</code> </li>
+</ul>
+<p><strong>Returns:</strong></p>
+<p>double </p>
+<hr>
+
+<h3 id="function-t_critical">function T_critical</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kr">inline</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">T_critical</span><span class="w"> </span><span class="p">()</span><span class="w"> </span>
+</code></pre></div>
+<p>Get the triple point temperature in K </p>
+<p>Implements <a href="../classxThermal_1_1cxThermal/#function-t_critical"><em>xThermal::cxThermal::T_critical</em></a></p>
+<hr>
+
+<h3 id="function-tmax">function Tmax</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="kr">inline</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">Tmax</span><span class="w"> </span><span class="p">()</span><span class="w"> </span>
+</code></pre></div>
+<p>Get the minimum temperature in K </p>
+<p>Implements <a href="../classxThermal_1_1cxThermal/#function-tmax"><em>xThermal::cxThermal::Tmax</em></a></p>
+<hr>
+
+<h3 id="function-tmin">function Tmin</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="kr">inline</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">Tmin</span><span class="w"> </span><span class="p">()</span><span class="w"> </span>
+</code></pre></div>
+<p>Get the minimum temperature in K </p>
+<p>Implements <a href="../classxThermal_1_1cxThermal/#function-tmin"><em>xThermal::cxThermal::Tmin</em></a></p>
+<hr>
+
+<h3 id="function-ttriple">function Ttriple</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="kr">inline</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">Ttriple</span><span class="w"> </span><span class="p">()</span><span class="w"> </span>
+</code></pre></div>
+<p>Get the maximum pressure in Pa </p>
+<p>Implements <a href="../classxThermal_1_1cxThermal/#function-ttriple"><em>xThermal::cxThermal::Ttriple</em></a></p>
+<hr>
+
+<h3 id="function-updatestate_hpx">function UpdateState_HPX</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">UpdateState_HPX</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="w">    </span><span class="n">ThermodynamicProperties</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">props</span><span class="p">,</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">H</span><span class="p">,</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p</span><span class="p">,</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">X</span><span class="o">=</span><span class="mi">0</span>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p>Implements <a href="../classxThermal_1_1cxThermal/#function-updatestate_hpx-14"><em>xThermal::cxThermal::UpdateState_HPX</em></a></p>
+<hr>
+
+<h3 id="function-updatestate_tpx-12">function UpdateState_TPX [1/2]</h3>
+<p><em>Update state using T, p as independent variables.</em> 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">UpdateState_TPX</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="w">    </span><span class="n">ThermodynamicProperties</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">props</span><span class="p">,</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">T</span><span class="p">,</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p</span><span class="p">,</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">X</span><span class="o">=</span><span class="mi">0</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<p>Calculate the critical molar density in (mol/m^3) </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>T</code> [K] </li>
+<li><code>p</code> [Pa] </li>
+</ul>
+<p>Implements <a href="../classxThermal_1_1cxThermal/#function-updatestate_tpx-14"><em>xThermal::cxThermal::UpdateState_TPX</em></a></p>
+<hr>
+
+<h3 id="function-updatestate_tpx-22">function UpdateState_TPX [2/2]</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">ThermodynamicProperties</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">UpdateState_TPX</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">T</span><span class="p">,</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p</span><span class="p">,</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">X</span><span class="o">=</span><span class="mi">0</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-verification_mu">function Verification_Mu</h3>
+<p><em>Computer-program verification given by mu2008.</em> 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">Verification_Mu</span><span class="w"> </span><span class="p">()</span><span class="w"> </span>
+</code></pre></div></p>
+<p><strong>Returns:</strong></p>
+<hr>
+
+<h3 id="function-_enthalpy-12">function _enthalpy [1/2]</h3>
+<p><em>Calculate specific enthalpy by given temperature and pressure.</em> 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">_enthalpy</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">T_K</span><span class="p">,</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">P</span><span class="p">,</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">method</span><span class="o">=</span><span class="s">&quot;bisection&quot;</span>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<p><img alt="Image" src="comparOtherCodes/TP/H.svg" /></p>
+<p><strong>Note:</strong></p>
+<p>The python package <strong>pyIAPWS95</strong> and <strong>pyIAPWS97</strong> can be found at <a href="https://github.com/jjgomera/iapws">https://github.com/jjgomera/iapws</a>, which implements both IAPWS95 and IAPWS-IF97 formula. <strong>freesteam</strong>(<a href="http://freesteam.sourceforge.net">http://freesteam.sourceforge.net</a>) and <strong>PROST</strong> (<a href="http://fluidos.etsii.upm.es/faculty/Jaime_Carpio/Fumatas_negas">http://fluidos.etsii.upm.es/faculty/Jaime_Carpio/Fumatas_negas</a>) implement IAPWS-IF97 and IAPWS84, respectively. </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>T_K</code> </li>
+<li><code>P</code> </li>
+<li><code>method</code> </li>
+</ul>
+<p><strong>Returns:</strong></p>
+<p>double </p>
+<hr>
+
+<h3 id="function-ciapws95">function cIAPWS95</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="w"> </span><span class="p">()</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-findphaseregion_hpx">function findPhaseRegion_HPX</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="n">PhaseRegion</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">findPhaseRegion_HPX</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">H</span><span class="p">,</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p</span><span class="p">,</span>
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">X</span><span class="o">=</span><span class="mi">0</span>
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-findphaseregion_tpx">function findPhaseRegion_TPX</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="k">virtual</span><span class="w"> </span><span class="n">PhaseRegion</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">findPhaseRegion_TPX</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">T</span><span class="p">,</span>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p</span><span class="p">,</span>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">X</span><span class="o">=</span><span class="mi">0</span>
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p>Return the molar mass in kg/mol </p>
+<p>Implements <a href="../classxThermal_1_1cxThermal/#function-findphaseregion_tpx"><em>xThermal::cxThermal::findPhaseRegion_TPX</em></a></p>
+<hr>
+
+<h3 id="function-molar_mass">function molar_mass</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="kr">inline</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">molar_mass</span><span class="w"> </span><span class="p">()</span><span class="w"> </span>
+</code></pre></div>
+<p>Return the critical mass density in (kg/m^3) </p>
+<p>Implements <a href="../classxThermal_1_1cxThermal/#function-molar_mass"><em>xThermal::cxThermal::molar_mass</em></a></p>
+<hr>
+
+<h3 id="function-name">function name</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="kr">inline</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">name</span><span class="w"> </span><span class="p">()</span><span class="w"> </span>
+</code></pre></div>
+<p>Name of the model </p>
+<p>Implements <a href="../classxThermal_1_1cxThermal/#function-name"><em>xThermal::cxThermal::name</em></a></p>
+<hr>
+
+<h3 id="function-p_critical">function p_critical</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="kr">inline</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">p_critical</span><span class="w"> </span><span class="p">()</span><span class="w"> </span>
+</code></pre></div>
+<p>Return the critical temperature in K </p>
+<p>Implements <a href="../classxThermal_1_1cxThermal/#function-p_critical"><em>xThermal::cxThermal::p_critical</em></a></p>
+<hr>
+
+<h3 id="function-phi_o">function phi_o</h3>
+<p><em>The ideal-gas part</em> (\phi^o) <em>of the dimensionless Helmholtz free energy and its derivatives. See Table 4 in IAPWS-95.</em>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">phi_o</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">delta</span><span class="p">,</span>
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">tau</span><span class="p">,</span>
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="w">    </span><span class="n">HelmholtzEnergy_dimensionless</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">phio</span><span class="p">,</span>
+<a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a><span class="w">    </span><span class="kt">unsigned</span><span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">update_derivatives</span><span class="o">=</span><span class="n">Update_phi_all</span>
+<a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>delta</code> (\delta = \rho / \rho_{critical}) is the reduced density. </li>
+<li><code>tau</code> (\tau = T_{critical}/T) is the inverse reduced temperature. </li>
+</ul>
+<p><strong>Note:</strong></p>
+<p>The unit of temperature is (K). The unit of density if (kg/m^3) </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>phio</code> (\phi^o) </li>
+<li><code>update_derivatives</code> Combination of the bitmask value: <a href="../group__BITMASK__phi/#define-update_phi_d"><strong>Update_phi_d</strong></a>, <a href="../group__BITMASK__phi/#define-update_phi_dd"><strong>Update_phi_dd</strong></a>, <a href="../group__BITMASK__phi/#define-update_phi_t"><strong>Update_phi_t</strong></a>, <a href="../group__BITMASK__phi/#define-update_phi_tt"><strong>Update_phi_tt</strong></a>, <a href="../group__BITMASK__phi/#define-update_phi_dt"><strong>Update_phi_dt</strong></a>, <a href="../group__BITMASK__phi/#define-update_phi_all"><strong>Update_phi_all</strong></a> </li>
+</ul>
+<hr>
+
+<h3 id="function-phi_r-13">function phi_r [1/3]</h3>
+<p><em>Implementation of residual part</em> (\phi^r) <em>of the dimensionless Helmholtz free energy: Eq. 6 in IAPWS-95 and its derivatives, see Table 5 in IAPWS-95.</em>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">phi_r</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">delta</span><span class="p">,</span>
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">tau</span>
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<p>[\begin{matrix}
+    \phi^r &amp; = &amp; \sum\limits_{i=1}^{7} n_i \delta^{d_i}\tau^{t_i} + \sum\limits_{i=8}^{51} n_i \delta^{d_i} e^{-\delta^{c_i}}  \tau^{t_i} + \sum\limits_{i=52}^{54} n_i \delta^{d_i} \tau^{t_i - 1} e^{-\alpha_i (\delta -\epsilon_i)^2 - \beta_i(\tau - \gamma_i)^2} + \sum\limits_{i=55}^{56} n_i \delta \Delta^{b_i}\psi
+    , \left(
+    \Delta  =  \theta^2 + B_i [\color{red}{(\delta -1)^2}]^{a_i} ,
+    \theta  =  (1-\tau) + A_i [\color{red}{(\delta -1)^2}]^{1/2\beta_i} ,
+    \psi  =  e^{-C_i (\delta -1)^2 - D_i (\tau - 1)^2}
+    \right)
+    \end{matrix}]</p>
+<p><img alt="Image" src="IAPWS96_phi/phir_der_T300K.svg" /></p>
+<p><strong>Note:</strong></p>
+<p>The red dashed line is calculated from a python package of IAPWS pyIAPWS. </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>delta</code> (\delta = \rho / \rho_{critical}) is the reduced density. </li>
+<li><code>tau</code> (\tau = T_{critical}/T) is the inverse reduced temperature. </li>
+</ul>
+<p><strong>Note:</strong></p>
+<p>The unit of temperature is (K). The unit of density if (kg/m^3) </p>
+<p><strong>Returns:</strong></p>
+<p>double </p>
+<hr>
+
+<h3 id="function-phi_r-23">function phi_r [2/3]</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">phi_r</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">delta</span><span class="p">,</span>
+<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">tau</span><span class="p">,</span>
+<a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="w">    </span><span class="n">HelmholtzEnergy_dimensionless</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">phir</span>
+<a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-phi_r-33">function phi_r [3/3]</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">phi_r</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">delta</span><span class="p">,</span>
+<a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">tau</span><span class="p">,</span>
+<a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">res</span>
+<a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-phi_r_d-12">function phi_r_d [1/2]</h3>
+<p><em>Calculate partial derivative of residual part</em> (\left[ \frac{\partial \phi^r}{\partial \delta} \right]<em>{\tau}) </em>._
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">phi_r_d</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">delta</span><span class="p">,</span>
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">tau</span>
+<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>delta</code> (\delta = \rho / \rho_{critical}) is the reduced density. </li>
+<li><code>tau</code> (\tau = T_{critical}/T) is the inverse reduced temperature. </li>
+</ul>
+<p><strong>Note:</strong></p>
+<p>The unit of temperature is (K). The unit of density if (kg/m^3) </p>
+<p><strong>Returns:</strong></p>
+<p>double </p>
+<hr>
+
+<h3 id="function-phi_r_d-22">function phi_r_d [2/2]</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">phi_r_d</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">delta</span><span class="p">,</span>
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">tau</span><span class="p">,</span>
+<a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">res</span>
+<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-phi_r_dd-12">function phi_r_dd [1/2]</h3>
+<p><em>Calculate partial derivative of residual part</em> (\left[ \frac{\partial^2 \phi^r}{\partial \delta^2} \right]<em>{\tau}) </em>._
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">phi_r_dd</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">delta</span><span class="p">,</span>
+<a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">tau</span>
+<a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>delta</code> (\delta = \rho / \rho_{critical}) is the reduced density. </li>
+<li><code>tau</code> (\tau = T_{critical}/T) is the inverse reduced temperature. </li>
+</ul>
+<p><strong>Note:</strong></p>
+<p>The unit of temperature is (K). The unit of density if (kg/m^3) </p>
+<p><strong>Returns:</strong></p>
+<p>double </p>
+<hr>
+
+<h3 id="function-phi_r_dd-22">function phi_r_dd [2/2]</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">phi_r_dd</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">delta</span><span class="p">,</span>
+<a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">tau</span><span class="p">,</span>
+<a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">res</span>
+<a id="__codelineno-39-5" name="__codelineno-39-5" href="#__codelineno-39-5"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-phi_r_dt-12">function phi_r_dt [1/2]</h3>
+<p><em>Calculate partial derivative of residual part</em> (\frac{\partial^2 \phi^r}{\partial \delta \partial \tau}) <em>.</em>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">phi_r_dt</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">delta</span><span class="p">,</span>
+<a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">tau</span>
+<a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>delta</code> (\delta = \rho / \rho_{critical}) is the reduced density. </li>
+<li><code>tau</code> (\tau = T_{critical}/T) is the inverse reduced temperature. </li>
+</ul>
+<p><strong>Note:</strong></p>
+<p>The unit of temperature is (K). The unit of density if (kg/m^3) </p>
+<p><strong>Returns:</strong></p>
+<p>double </p>
+<hr>
+
+<h3 id="function-phi_r_dt-22">function phi_r_dt [2/2]</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">phi_r_dt</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">delta</span><span class="p">,</span>
+<a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">tau</span><span class="p">,</span>
+<a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">res</span>
+<a id="__codelineno-41-5" name="__codelineno-41-5" href="#__codelineno-41-5"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-phi_r_t-12">function phi_r_t [1/2]</h3>
+<p><em>Calculate partial derivative of residual part</em> (\left[ \frac{\partial \phi^r}{\partial \tau} \right]<em>{\delta}) </em>._
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">phi_r_t</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">delta</span><span class="p">,</span>
+<a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">tau</span>
+<a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>delta</code> (\delta = \rho / \rho_{critical}) is the reduced density. </li>
+<li><code>tau</code> (\tau = T_{critical}/T) is the inverse reduced temperature. </li>
+</ul>
+<p><strong>Note:</strong></p>
+<p>The unit of temperature is (K). The unit of density if (kg/m^3) </p>
+<p><strong>Returns:</strong></p>
+<p>double </p>
+<hr>
+
+<h3 id="function-phi_r_t-22">function phi_r_t [2/2]</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">phi_r_t</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">delta</span><span class="p">,</span>
+<a id="__codelineno-43-3" name="__codelineno-43-3" href="#__codelineno-43-3"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">tau</span><span class="p">,</span>
+<a id="__codelineno-43-4" name="__codelineno-43-4" href="#__codelineno-43-4"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">res</span>
+<a id="__codelineno-43-5" name="__codelineno-43-5" href="#__codelineno-43-5"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-phi_r_tt-12">function phi_r_tt [1/2]</h3>
+<p><em>Calculate partial derivative of residual part</em> (\left[ \frac{\partial^2 \phi^r}{\partial \tau^2} \right]<em>{\delta}) </em>._
+<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">phi_r_tt</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">delta</span><span class="p">,</span>
+<a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">tau</span>
+<a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>delta</code> (\delta = \rho / \rho_{critical}) is the reduced density. </li>
+<li><code>tau</code> (\tau = T_{critical}/T) is the inverse reduced temperature. </li>
+</ul>
+<p><strong>Note:</strong></p>
+<p>The unit of temperature is (K). The unit of density if (kg/m^3) </p>
+<p><strong>Returns:</strong></p>
+<p>double </p>
+<hr>
+
+<h3 id="function-phi_r_tt-22">function phi_r_tt [2/2]</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">phi_r_tt</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">delta</span><span class="p">,</span>
+<a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">tau</span><span class="p">,</span>
+<a id="__codelineno-45-4" name="__codelineno-45-4" href="#__codelineno-45-4"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">res</span>
+<a id="__codelineno-45-5" name="__codelineno-45-5" href="#__codelineno-45-5"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-pmax">function pmax</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="kr">inline</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">pmax</span><span class="w"> </span><span class="p">()</span><span class="w"> </span>
+</code></pre></div>
+<p>Get the minimum pressure in Pa </p>
+<p>Implements <a href="../classxThermal_1_1cxThermal/#function-pmax"><em>xThermal::cxThermal::pmax</em></a></p>
+<hr>
+
+<h3 id="function-pmin">function pmin</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="kr">inline</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">pmin</span><span class="w"> </span><span class="p">()</span><span class="w"> </span>
+</code></pre></div>
+<p>Get the maximum temperature in K </p>
+<p>Implements <a href="../classxThermal_1_1cxThermal/#function-pmin"><em>xThermal::cxThermal::pmin</em></a></p>
+<hr>
+
+<h3 id="function-rhomass_critical">function rhomass_critical</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a><span class="kr">inline</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::</span><span class="n">rhomass_critical</span><span class="w"> </span><span class="p">()</span><span class="w"> </span>
+</code></pre></div>
+<p>Return the critical pressure in Pa </p>
+<p>Implements <a href="../classxThermal_1_1cxThermal/#function-rhomass_critical"><em>xThermal::cxThermal::rhomass_critical</em></a></p>
+<hr>
+
+<h3 id="function-ciapws95_1">function ~cIAPWS95</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a><span class="n">xThermal</span><span class="o">::</span><span class="n">IAPWS95</span><span class="o">::</span><span class="n">cIAPWS95</span><span class="o">::~</span><span class="n">cIAPWS95</span><span class="w"> </span><span class="p">()</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>Library/H2O/IAPWS95.h</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

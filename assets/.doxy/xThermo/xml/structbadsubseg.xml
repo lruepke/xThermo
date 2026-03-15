@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structbadsubseg" kind="struct" language="C++" prot="public">
+    <compoundname>badsubseg</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbadsubseg_1ad48ae5d8b70757545ba8f6fe33143b64" prot="public" static="no" mutable="no">
+        <type>subseg</type>
+        <definition>subseg badsubseg::encsubseg</definition>
+        <argsstring></argsstring>
+        <name>encsubseg</name>
+        <qualifiedname>badsubseg::encsubseg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="547" column="10" bodyfile="Library/thermo/triangle.cpp" bodystart="547" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbadsubseg_1ac06bcfaa89508ea06c7f4c003c74d463" prot="public" static="no" mutable="no">
+        <type>vertex</type>
+        <definition>vertex badsubseg::subsegorg</definition>
+        <argsstring></argsstring>
+        <name>subsegorg</name>
+        <qualifiedname>badsubseg::subsegorg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="548" column="10" bodyfile="Library/thermo/triangle.cpp" bodystart="548" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbadsubseg_1a8ca4f27968ded45a43c39be9b7e40770" prot="public" static="no" mutable="no">
+        <type>vertex</type>
+        <definition>vertex badsubseg::subsegdest</definition>
+        <argsstring></argsstring>
+        <name>subsegdest</name>
+        <qualifiedname>badsubseg::subsegdest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="548" column="20" bodyfile="Library/thermo/triangle.cpp" bodystart="548" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/thermo/triangle.cpp" line="546" column="1" bodyfile="Library/thermo/triangle.cpp" bodystart="546" bodyend="549"/>
+    <listofallmembers>
+      <member refid="structbadsubseg_1ad48ae5d8b70757545ba8f6fe33143b64" prot="public" virt="non-virtual"><scope>badsubseg</scope><name>encsubseg</name></member>
+      <member refid="structbadsubseg_1a8ca4f27968ded45a43c39be9b7e40770" prot="public" virt="non-virtual"><scope>badsubseg</scope><name>subsegdest</name></member>
+      <member refid="structbadsubseg_1ac06bcfaa89508ea06c7f4c003c74d463" prot="public" virt="non-virtual"><scope>badsubseg</scope><name>subsegorg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

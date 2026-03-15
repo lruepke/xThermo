@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1H2ONaCl_1_1Table4__Driesner2007a__CriticalCurve" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::H2ONaCl::Table4_Driesner2007a_CriticalCurve</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Table4__Driesner2007a__CriticalCurve_1aeb87d8ecae020f2f889fcb55d093728d" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::H2ONaCl::Table4_Driesner2007a_CriticalCurve::c[14]</definition>
+        <argsstring>[14]</argsstring>
+        <name>c</name>
+        <qualifiedname>xThermal::H2ONaCl::Table4_Driesner2007a_CriticalCurve::c</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="82" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Table4__Driesner2007a__CriticalCurve_1a20a3d7986302ab2f43e4355cd662c950" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::H2ONaCl::Table4_Driesner2007a_CriticalCurve::cA[11]</definition>
+        <argsstring>[11]</argsstring>
+        <name>cA</name>
+        <qualifiedname>xThermal::H2ONaCl::Table4_Driesner2007a_CriticalCurve::cA</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="82" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Table4__Driesner2007a__CriticalCurve_1a8f00306ff27dd720da92224d37962fc8" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::H2ONaCl::Table4_Driesner2007a_CriticalCurve::d[11]</definition>
+        <argsstring>[11]</argsstring>
+        <name>d</name>
+        <qualifiedname>xThermal::H2ONaCl::Table4_Driesner2007a_CriticalCurve::d</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="82" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/H2ONaCl/H2ONaCl.h" line="80" column="9" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="81" bodyend="83"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1H2ONaCl_1_1Table4__Driesner2007a__CriticalCurve_1aeb87d8ecae020f2f889fcb55d093728d" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Table4_Driesner2007a_CriticalCurve</scope><name>c</name></member>
+      <member refid="structxThermal_1_1H2ONaCl_1_1Table4__Driesner2007a__CriticalCurve_1a20a3d7986302ab2f43e4355cd662c950" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Table4_Driesner2007a_CriticalCurve</scope><name>cA</name></member>
+      <member refid="structxThermal_1_1H2ONaCl_1_1Table4__Driesner2007a__CriticalCurve_1a8f00306ff27dd720da92224d37962fc8" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Table4_Driesner2007a_CriticalCurve</scope><name>d</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

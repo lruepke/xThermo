@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Boundary3ab" kind="struct" language="C++" prot="private">
+    <compoundname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Boundary3ab</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Boundary3ab_1af2708a9566a770fad1efecf1f8cf8461" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Boundary3ab::num</definition>
+        <argsstring></argsstring>
+        <name>num</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Boundary3ab::num</qualifiedname>
+        <initializer>=14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="220" column="24" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Boundary3ab_1ab1145f63a29d54c9ba8feade8befc51e" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Boundary3ab::I[14]</definition>
+        <argsstring>[14]</argsstring>
+        <name>I</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Boundary3ab::I</qualifiedname>
+        <initializer>= {0, 1, 1, 1, 1, 5, 7, 8, 14, 20, 22, 24, 28, 36}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="221" column="24" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="221" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Boundary3ab_1a8e923baebff4264465cd0966b399631e" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Boundary3ab::J[14]</definition>
+        <argsstring>[14]</argsstring>
+        <name>J</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Boundary3ab::J</qualifiedname>
+        <initializer>= {0, 1, 3, 4, 36, 3, 0, 24, 16, 16, 3, 18, 8, 24}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="222" column="24" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="222" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Boundary3ab_1a348a471653a13bbd64075814acb85774" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Boundary3ab::n[14]</definition>
+        <argsstring>[14]</argsstring>
+        <name>n</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Boundary3ab::n</qualifiedname>
+        <initializer>= {0.600073641753024, -0.936203654849857<ref refid="classxThermal_1_1xThermalError" kindref="compound">e1</ref>, 0.246590798594147<ref refid="classxThermal_1_1xThermalError" kindref="compound">e2</ref>,
+                                -0.107014222858224<ref refid="classxThermal_1_1xThermalError" kindref="compound">e3</ref>, -0.915821315805768<ref refid="classxThermal_1_1xThermalError" kindref="compound">e14</ref>, -0.862332011700662<ref refid="classxThermal_1_1xThermalError" kindref="compound">e4</ref>,
+                                -0.235837344740032<ref refid="classxThermal_1_1xThermalError" kindref="compound">e2</ref>, 0.252304969384128<ref refid="classxThermal_1_1xThermalError" kindref="compound">e18</ref>, -0.389718771997719<ref refid="classxThermal_1_1xThermalError" kindref="compound">e19</ref>,
+                                -0.333775713645296<ref refid="classxThermal_1_1xThermalError" kindref="compound">e23</ref>, 0.356499469636328<ref refid="classxThermal_1_1xThermalError" kindref="compound">e11</ref>, -0.148547544720641<ref refid="classxThermal_1_1xThermalError" kindref="compound">e27</ref>,
+                                0.330611514838798<ref refid="classxThermal_1_1xThermalError" kindref="compound">e19</ref>, 0.813641294467829<ref refid="classxThermal_1_1xThermalError" kindref="compound">e38</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="223" column="24" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="223" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Boundary3ab_1a605b5d6e8e238adb7cd40b3ebb4c70f0" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Boundary3ab::pStar</definition>
+        <argsstring></argsstring>
+        <name>pStar</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Boundary3ab::pStar</qualifiedname>
+        <initializer>= 22<ref refid="classxThermal_1_1xThermalError" kindref="compound">E6</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="19">$ p^*  $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="228" column="24" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Boundary3ab_1acd300b31b98b035d0965bfb157919147" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Boundary3ab::hStar</definition>
+        <argsstring></argsstring>
+        <name>hStar</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Boundary3ab::hStar</qualifiedname>
+        <initializer>= 2600E3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="21">$ h^*  $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="229" column="24" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/H2O/IAPWS-IF97.h" line="218" column="13" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="219" bodyend="230"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Boundary3ab_1acd300b31b98b035d0965bfb157919147" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Boundary3ab</scope><name>hStar</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Boundary3ab_1ab1145f63a29d54c9ba8feade8befc51e" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Boundary3ab</scope><name>I</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Boundary3ab_1a8e923baebff4264465cd0966b399631e" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Boundary3ab</scope><name>J</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Boundary3ab_1a348a471653a13bbd64075814acb85774" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Boundary3ab</scope><name>n</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Boundary3ab_1af2708a9566a770fad1efecf1f8cf8461" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Boundary3ab</scope><name>num</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Boundary3ab_1a605b5d6e8e238adb7cd40b3ebb4c70f0" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Boundary3ab</scope><name>pStar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

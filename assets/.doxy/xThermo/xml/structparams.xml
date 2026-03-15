@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structparams" kind="struct" language="C++" prot="public">
+    <compoundname>params</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structparams_1aa146c2aa436a2bd29d2dc2317a6ed75f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double params::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <qualifiedname>params::a</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="150" column="12" bodyfile="Library/test/test_gsl.cpp" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparams_1ae03d5c441fe7581e924a9e6615f67d31" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double params::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>params::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="150" column="14" bodyfile="Library/test/test_gsl.cpp" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparams_1a1b1b2ba1e39cd2db20aab45ea305eea1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double params::c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <qualifiedname>params::c</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="150" column="16" bodyfile="Library/test/test_gsl.cpp" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparams_1a3378a4831d47dbc618c652212c085fcd" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double params::d</definition>
+        <argsstring></argsstring>
+        <name>d</name>
+        <qualifiedname>params::d</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="150" column="18" bodyfile="Library/test/test_gsl.cpp" bodystart="150" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>See <ulink url="https://nlopt.readthedocs.io/en/latest/NLopt_Tutorial/">https://nlopt.readthedocs.io/en/latest/NLopt_Tutorial/</ulink> <formula id="255">$ f=(2x + 0)^3 - (-x + 1)^3 = 0 $</formula>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/test/test_gsl.cpp" line="148" column="1" bodyfile="Library/test/test_gsl.cpp" bodystart="149" bodyend="151"/>
+    <listofallmembers>
+      <member refid="structparams_1aa146c2aa436a2bd29d2dc2317a6ed75f" prot="public" virt="non-virtual"><scope>params</scope><name>a</name></member>
+      <member refid="structparams_1ae03d5c441fe7581e924a9e6615f67d31" prot="public" virt="non-virtual"><scope>params</scope><name>b</name></member>
+      <member refid="structparams_1a1b1b2ba1e39cd2db20aab45ea305eea1" prot="public" virt="non-virtual"><scope>params</scope><name>c</name></member>
+      <member refid="structparams_1a3378a4831d47dbc618c652212c085fcd" prot="public" virt="non-virtual"><scope>params</scope><name>d</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

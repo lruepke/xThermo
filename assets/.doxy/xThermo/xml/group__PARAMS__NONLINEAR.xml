@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__PARAMS__NONLINEAR" kind="group">
+    <compoundname>PARAMS_NONLINEAR</compoundname>
+    <title>Parameters definition for nonlinear equation solving</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__PARAMS__NONLINEAR_1gaed0d460cf7d0561bb17466c2ce245cab" prot="public" static="no">
+        <name>ITERATION_MAX</name>
+        <initializer>1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum iteration step </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="48" column="17" bodyfile="Library/H2O/IAPWS95.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__PARAMS__NONLINEAR_1gac75e7ff13fcaae820c388923c368b113" prot="public" static="no">
+        <name>TOL_Pressure</name>
+        <initializer>1E-4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tolerance for pressure with unit Pa </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="50" column="17" bodyfile="Library/H2O/IAPWS95.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__PARAMS__NONLINEAR_1ga2d04b0cd0bdd02c212c3213035fcf459" prot="public" static="no">
+        <name>TOL_PTRro</name>
+        <initializer>1E-10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tolerance for solving saturated <formula id="53">$ T, P, \rho_l, \rho_v $</formula> at phase boundary, or for solving <formula id="54">$\rho$</formula> by given [T,P], or solving T by given [P, H] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="52" column="17" bodyfile="Library/H2O/IAPWS95.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__PARAMS__NONLINEAR_1gaed0d460cf7d0561bb17466c2ce245cab" prot="public" static="no">
+        <name>ITERATION_MAX</name>
+        <initializer>1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum iteration step </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="40" column="17" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__PARAMS__NONLINEAR_1gac75e7ff13fcaae820c388923c368b113" prot="public" static="no">
+        <name>TOL_Pressure</name>
+        <initializer>1E-4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tolerance for pressure with unit Pa </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="42" column="17" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__PARAMS__NONLINEAR_1ga2d04b0cd0bdd02c212c3213035fcf459" prot="public" static="no">
+        <name>TOL_PTRro</name>
+        <initializer>1E-10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tolerance for solving saturated <formula id="53">$ T, P, \rho_l, \rho_v $</formula> at phase boundary, or for solving <formula id="54">$\rho$</formula> by given [T,P], or solving T by given [P, H] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="44" column="17" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

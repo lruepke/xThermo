@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1PhysicalDimension" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::PhysicalDimension</compoundname>
+    <includes refid="DataStructures_8h" local="no">DataStructures.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1PhysicalDimension_1ab844016d69bff203d7c26afe8e91e2a7" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">short</ref></type>
+        <definition>short xThermal::PhysicalDimension::value[nDimensions]</definition>
+        <argsstring>[nDimensions]</argsstring>
+        <name>value</name>
+        <qualifiedname>xThermal::PhysicalDimension::value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="180" column="15" bodyfile="Library/thermo/DataStructures.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Physical dimension of a quantity can be expressed in terms of 7 basic SI unit, e.g. dimension of density is <formula id="3">$ kg/m^3 $</formula>, can be expressed in vector of [1, -3, 0, 0, 0, 0, 0]. This idea comes from OpenFOAM. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/thermo/DataStructures.h" line="178" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="179" bodyend="209"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1PhysicalDimension_1ab844016d69bff203d7c26afe8e91e2a7" prot="public" virt="non-virtual"><scope>xThermal::PhysicalDimension</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

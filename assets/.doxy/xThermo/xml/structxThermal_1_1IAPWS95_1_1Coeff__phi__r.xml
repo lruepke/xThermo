@@ -1,0 +1,455 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::IAPWS95::Coeff_phi_r</compoundname>
+    <includes refid="IAPWS95_8h" local="no">IAPWS95.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a44d8f7e66efa0e76e99d412f1dbf5c1c" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>const int xThermal::IAPWS95::Coeff_phi_r::n1</definition>
+        <argsstring></argsstring>
+        <name>n1</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::n1</qualifiedname>
+        <initializer>= 7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="101" column="23" bodyfile="Library/H2O/IAPWS95.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a5dcda1909bf25ad449b69f85d7eb3a73" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>const int xThermal::IAPWS95::Coeff_phi_r::n2</definition>
+        <argsstring></argsstring>
+        <name>n2</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::n2</qualifiedname>
+        <initializer>= 44</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="101" column="27" bodyfile="Library/H2O/IAPWS95.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a97650f31e6ffc58debfd0054b5f952ae" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>const int xThermal::IAPWS95::Coeff_phi_r::n3</definition>
+        <argsstring></argsstring>
+        <name>n3</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::n3</qualifiedname>
+        <initializer>=3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="101" column="31" bodyfile="Library/H2O/IAPWS95.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a3e81ec940f76de533809c7a854fb798c" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>const int xThermal::IAPWS95::Coeff_phi_r::n4</definition>
+        <argsstring></argsstring>
+        <name>n4</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::n4</qualifiedname>
+        <initializer>=2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="101" column="34" bodyfile="Library/H2O/IAPWS95.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1aead81581fc617cacc6961f6a26aa5e16" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::IAPWS95::Coeff_phi_r::ni_term1[7]</definition>
+        <argsstring>[7]</argsstring>
+        <name>ni_term1</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::ni_term1</qualifiedname>
+        <initializer>={0.12533547935523<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-1, 0.78957634722828<ref refid="classxThermal_1_1xThermalError" kindref="compound">e1</ref>,-0.87803203303561<ref refid="classxThermal_1_1xThermalError" kindref="compound">e1</ref>,
+                                         0.31802509345418,   -0.26145533859358,  -0.78199751687981<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-2,
+                                         0.88089493102134<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-2}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="102" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="102" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1ac6422c20615942bb67cf30802a159f56" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::IAPWS95::Coeff_phi_r::di_term1[7]</definition>
+        <argsstring>[7]</argsstring>
+        <name>di_term1</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::di_term1</qualifiedname>
+        <initializer>={1, 1, 1, 2, 2, 3, 4}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="105" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a71d76fdef243115aea47f869969fb30a" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::IAPWS95::Coeff_phi_r::ti_term1[7]</definition>
+        <argsstring>[7]</argsstring>
+        <name>ti_term1</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::ti_term1</qualifiedname>
+        <initializer>={-0.5, 0.875, 1, 0.5, 0.75, 0.375, 1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="106" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="106" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a67a9e669fe8f09066e779d3833417c10" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::IAPWS95::Coeff_phi_r::ni_term2[44]</definition>
+        <argsstring>[44]</argsstring>
+        <name>ni_term2</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::ni_term2</qualifiedname>
+        <initializer>= {-0.66856572307965,    0.20433810950965,       -0.66212605039687<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-4,
+                                          -0.19232721156002,   -0.25709043003438,        0.16074868486251,
+                                          -0.40092828925807<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-1, 0.39343422603254<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-6,    -0.75941377088144<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-5,
+                                          0.56250979351888<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-3,-0.15608652257135<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-4,     0.11537996422951<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-8,
+                                          0.36582165144204<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-6,-0.13251180074668<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-11,   -0.62639586912454<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-9,
+                                          -0.10793600908932,    0.17611491008752<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-1,     0.22132295167546,
+                                          -0.40247669763528,    0.58083399985759,        0.49969146990806<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-2,
+                                          -0.31358700712549<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-1,-0.74315929710341,        0.47807329915480,
+                                          0.20527940895948<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-1,-0.13636435110343,        0.14180634400617<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-1,
+                                          0.83326504880713<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-2,-0.29052336009585<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-1,     0.38615085574206<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-1,
+                                          -0.20393486513704<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-1,-0.16554050063734<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-2,     0.19955571979541<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-2,
+                                          0.15870308324157<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-3,-0.16388568342530e-4,     0.43613615723811<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-1,
+                                          0.34994005463765<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-1,-0.76788197844621<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-1,     0.22446277332006<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-1,
+                                          -0.62689710414685<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-4,-0.55711118565645<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-9,    -0.19905718354408,
+                                          0.31777497330738,   -0.11841182425981}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="107" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="107" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a8821262b47256f5b695821cb2ea7c40e" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::IAPWS95::Coeff_phi_r::ci_term2[44]</definition>
+        <argsstring>[44]</argsstring>
+        <name>ci_term2</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::ci_term2</qualifiedname>
+        <initializer>= {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2,
+                                          2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 6, 6,
+                                          6, 6}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="122" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="122" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a8258f93002ffb18f1306f12b17076415" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::IAPWS95::Coeff_phi_r::di_term2[44]</definition>
+        <argsstring>[44]</argsstring>
+        <name>di_term2</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::di_term2</qualifiedname>
+        <initializer>= {1, 1, 1, 2, 2, 3, 4, 4, 5, 7, 9, 10, 11, 13, 15, 1, 2, 2, 2, 3,
+                                          4, 4, 4, 5, 6, 6, 7, 9, 9, 9, 9, 9, 10, 10, 12, 3, 4, 4, 5, 14,
+                                          3, 6, 6, 6}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="125" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="125" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a179f3ef2311bbdb6cbe91434e36d76e9" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::IAPWS95::Coeff_phi_r::ti_term2[44]</definition>
+        <argsstring>[44]</argsstring>
+        <name>ti_term2</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::ti_term2</qualifiedname>
+        <initializer>= {4, 6, 12, 1, 5, 4, 2, 13, 9, 3, 4, 11, 4, 13, 1, 7, 1, 9, 10,
+                                          10, 3, 7, 10, 10, 6, 10, 10, 1, 2, 3, 4, 8, 6, 9, 8, 16, 22, 23,
+                                          23, 10, 50, 44, 46, 50}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="128" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="128" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1aa481d4f527c5d2878f5c84cfc40e6332" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::IAPWS95::Coeff_phi_r::ni_term3[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>ni_term3</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::ni_term3</qualifiedname>
+        <initializer>= {-0.31306260323435<ref refid="classxThermal_1_1xThermalError" kindref="compound">e2</ref>, 0.31546140237781<ref refid="classxThermal_1_1xThermalError" kindref="compound">e2</ref>, -0.25213154341695<ref refid="classxThermal_1_1xThermalError" kindref="compound">e4</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="131" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="131" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a6e46677a57609285c91e04a6ab54b714" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::IAPWS95::Coeff_phi_r::d_term3</definition>
+        <argsstring></argsstring>
+        <name>d_term3</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::d_term3</qualifiedname>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="132" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a0eba030dd06e7a58e2ae3e4ffa25acf5" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::IAPWS95::Coeff_phi_r::ti_term3[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>ti_term3</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::ti_term3</qualifiedname>
+        <initializer>= {0, 1, 4}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="133" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="133" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a4ea42cd1f31788bfeabdefe2b24f6fdb" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::IAPWS95::Coeff_phi_r::alpha_term3</definition>
+        <argsstring></argsstring>
+        <name>alpha_term3</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::alpha_term3</qualifiedname>
+        <initializer>= 20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="134" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a843cd294c51b09a1cd9ca67d78a69734" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::IAPWS95::Coeff_phi_r::betai_term3[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>betai_term3</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::betai_term3</qualifiedname>
+        <initializer>= {150, 150, 250}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="135" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="135" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1abe100b0d91303748df333934d214ec06" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::IAPWS95::Coeff_phi_r::gammai_term3[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>gammai_term3</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::gammai_term3</qualifiedname>
+        <initializer>= {1.21, 1.21, 1.25}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="136" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="136" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a793a5163f5c9c849039cfe58b370a106" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::IAPWS95::Coeff_phi_r::epsilon_term3</definition>
+        <argsstring></argsstring>
+        <name>epsilon_term3</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::epsilon_term3</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="137" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1ad538edd123dd85b618dc9b3b889b3d69" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::IAPWS95::Coeff_phi_r::ni_term4[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>ni_term4</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::ni_term4</qualifiedname>
+        <initializer>= {-0.14874640856724, 0.31806110878444}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="138" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="138" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a49ea3b01367d09a5b49a492e0c2a08d3" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::IAPWS95::Coeff_phi_r::a_term4</definition>
+        <argsstring></argsstring>
+        <name>a_term4</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::a_term4</qualifiedname>
+        <initializer>= 3.5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="139" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a6879b572823e4010cc53d729d3ac0387" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::IAPWS95::Coeff_phi_r::bi_term4[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>bi_term4</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::bi_term4</qualifiedname>
+        <initializer>= {0.85, 0.95}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="140" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="140" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1ae950847ad286ec808da103fd8fc0375e" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::IAPWS95::Coeff_phi_r::B_term4</definition>
+        <argsstring></argsstring>
+        <name>B_term4</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::B_term4</qualifiedname>
+        <initializer>= 0.2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="141" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1af16669798bd081b3ba3b8dedd5681893" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::IAPWS95::Coeff_phi_r::Ci_term4[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>Ci_term4</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::Ci_term4</qualifiedname>
+        <initializer>= {28, 32}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="142" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="142" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a7f61f6b99151f8d011caa4929573b7a9" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::IAPWS95::Coeff_phi_r::Di_term4[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>Di_term4</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::Di_term4</qualifiedname>
+        <initializer>= {700, 800}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="143" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="143" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a205d2d81e859744bbdd9542701b7a06f" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::IAPWS95::Coeff_phi_r::A_term4</definition>
+        <argsstring></argsstring>
+        <name>A_term4</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::A_term4</qualifiedname>
+        <initializer>= 0.32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="144" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1ab3c88b0241c14102429379a30470eba3" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::IAPWS95::Coeff_phi_r::beta_term4</definition>
+        <argsstring></argsstring>
+        <name>beta_term4</name>
+        <qualifiedname>xThermal::IAPWS95::Coeff_phi_r::beta_term4</qualifiedname>
+        <initializer>= 0.3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="145" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Numerical values of the coefficients and parameters of the residual part of the dimensionless Helmholtz free energy. Eq.6 in IAPWS-95 <ref refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a51e31d1bdca92ef9e42011783035f9c1" kindref="member">cIAPWS95::phi_r</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/H2O/IAPWS95.h" line="99" column="9" bodyfile="Library/H2O/IAPWS95.h" bodystart="100" bodyend="146"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a205d2d81e859744bbdd9542701b7a06f" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>A_term4</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a49ea3b01367d09a5b49a492e0c2a08d3" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>a_term4</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a4ea42cd1f31788bfeabdefe2b24f6fdb" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>alpha_term3</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1ae950847ad286ec808da103fd8fc0375e" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>B_term4</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1ab3c88b0241c14102429379a30470eba3" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>beta_term4</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a843cd294c51b09a1cd9ca67d78a69734" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>betai_term3</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a6879b572823e4010cc53d729d3ac0387" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>bi_term4</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a8821262b47256f5b695821cb2ea7c40e" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>ci_term2</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1af16669798bd081b3ba3b8dedd5681893" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>Ci_term4</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a6e46677a57609285c91e04a6ab54b714" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>d_term3</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1ac6422c20615942bb67cf30802a159f56" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>di_term1</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a8258f93002ffb18f1306f12b17076415" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>di_term2</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a7f61f6b99151f8d011caa4929573b7a9" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>Di_term4</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a793a5163f5c9c849039cfe58b370a106" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>epsilon_term3</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1abe100b0d91303748df333934d214ec06" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>gammai_term3</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a44d8f7e66efa0e76e99d412f1dbf5c1c" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>n1</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a5dcda1909bf25ad449b69f85d7eb3a73" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>n2</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a97650f31e6ffc58debfd0054b5f952ae" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>n3</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a3e81ec940f76de533809c7a854fb798c" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>n4</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1aead81581fc617cacc6961f6a26aa5e16" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>ni_term1</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a67a9e669fe8f09066e779d3833417c10" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>ni_term2</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1aa481d4f527c5d2878f5c84cfc40e6332" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>ni_term3</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1ad538edd123dd85b618dc9b3b889b3d69" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>ni_term4</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a71d76fdef243115aea47f869969fb30a" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>ti_term1</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a179f3ef2311bbdb6cbe91434e36d76e9" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>ti_term2</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r_1a0eba030dd06e7a58e2ae3e4ffa25acf5" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Coeff_phi_r</scope><name>ti_term3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,381 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="prop__water__TP_8cpp" kind="file" language="C++">
+    <compoundname>prop_water_TP.cpp</compoundname>
+    <includes local="yes">mex.h</includes>
+    <includes local="no">matrix.h</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">vector</includes>
+    <includes refid="thermo_8h" local="yes">thermo.h</includes>
+    <includes refid="IAPS84_8h" local="yes">IAPS84.h</includes>
+    <includes refid="IAPWS95_8h" local="yes">IAPWS95.h</includes>
+    <incdepgraph>
+      <node id="19">
+        <label>LookUpTableForest.h</label>
+        <link refid="LookUpTableForest_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>IAPS84.h</label>
+        <link refid="IAPS84_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>IAPWS-IF97.h</label>
+        <link refid="IAPWS-IF97_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>IAPWS95.h</label>
+        <link refid="IAPWS95_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Library/H2ONaCl/Matlab/prop_water_TP.cpp</label>
+        <link refid="prop__water__TP_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>DataStructures.h</label>
+        <link refid="DataStructures_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Exception.h</label>
+        <link refid="thermo_2Exception_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>MultiProgressBar.h</label>
+        <link refid="MultiProgressBar_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>thermo.h</label>
+        <link refid="thermo_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>triangle.h</label>
+        <link refid="triangle_8h_source"/>
+      </node>
+      <node id="14">
+        <label>algorithm</label>
+      </node>
+      <node id="17">
+        <label>cmath</label>
+      </node>
+      <node id="16">
+        <label>exception</label>
+      </node>
+      <node id="10">
+        <label>fstream</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="20">
+        <label>map</label>
+      </node>
+      <node id="4">
+        <label>math.h</label>
+      </node>
+      <node id="3">
+        <label>matrix.h</label>
+      </node>
+      <node id="2">
+        <label>mex.h</label>
+      </node>
+      <node id="12">
+        <label>sstream</label>
+      </node>
+      <node id="9">
+        <label>stdfunc.h</label>
+      </node>
+      <node id="21">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>string.h</label>
+      </node>
+      <node id="23">
+        <label>sys/ioctl.h</label>
+      </node>
+      <node id="13">
+        <label>utility</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="prop__water__TP_8cpp_1a66a802b3bcb0bbe92100be4165985fec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void mGetMatrix</definition>
+        <argsstring>(const mxArray *prhs, double **out, const char *varname, mwSize *out_m, mwSize *out_n)</argsstring>
+        <name>mGetMatrix</name>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref> *</type>
+          <declname>prhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> **</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">char</ref> *</type>
+          <declname>varname</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">mwSize</ref> *</type>
+          <declname>out_m</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">mwSize</ref> *</type>
+          <declname>out_n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/prop_water_TP.cpp" line="13" column="6" bodyfile="Library/H2ONaCl/Matlab/prop_water_TP.cpp" bodystart="13" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="prop__water__TP_8cpp_1a6a215cbfde54f82a3ce599228fc3fce5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void mexFunction</definition>
+        <argsstring>(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])</argsstring>
+        <name>mexFunction</name>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+          <declname>nlhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref> *</type>
+          <declname>plhs</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+          <declname>nrhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref> *</type>
+          <declname>prhs</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/prop_water_TP.cpp" line="33" column="6" bodyfile="Library/H2ONaCl/Matlab/prop_water_TP.cpp" bodystart="33" bodyend="109"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;mex.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;matrix.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="thermo_8h" kindref="compound">thermo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="IAPS84_8h" kindref="compound">IAPS84.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="IAPWS95_8h" kindref="compound">IAPWS95.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacexThermal" kindref="compound">xThermal</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mGetMatrix(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref><sp/>*<ref refid="classxThermal_1_1xThermalError" kindref="compound">prhs</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>**<ref refid="classxThermal_1_1xThermalError" kindref="compound">out</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classxThermal_1_1xThermalError" kindref="compound">varname</ref>,<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">mwSize</ref><sp/>*<ref refid="classxThermal_1_1xThermalError" kindref="compound">out_m</ref>,<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">mwSize</ref><sp/>*<ref refid="classxThermal_1_1xThermalError" kindref="compound">out_n</ref>)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">mwSize</ref><sp/>m,<sp/>n;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<ref refid="classxThermal_1_1xThermalError" kindref="compound">temp</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>m<sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxGetM</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">prhs</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>n<sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxGetN</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">prhs</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classxThermal_1_1xThermalError" kindref="compound">mxIsDouble</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">prhs</ref>)){</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">buff</ref>[256];</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">sprintf</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">buff</ref>,<sp/></highlight><highlight class="stringliteral">&quot;&apos;%s&apos;<sp/>must<sp/>be<sp/>of<sp/>type<sp/>&apos;double&apos;.\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">varname</ref>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">mexErrMsgTxt</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">buff</ref>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">temp</ref><sp/><sp/><sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*)<ref refid="classxThermal_1_1xThermalError" kindref="compound">mxGetData</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">prhs</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="classxThermal_1_1xThermalError" kindref="compound">out</ref><sp/><sp/><sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">temp</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="classxThermal_1_1xThermalError" kindref="compound">out_m</ref><sp/>=<sp/>m;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="classxThermal_1_1xThermalError" kindref="compound">out_n</ref><sp/>=<sp/>n;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mexFunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">nlhs</ref>,<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref><sp/>*<ref refid="classxThermal_1_1xThermalError" kindref="compound">plhs</ref>[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">nrhs</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArray</ref><sp/>*<ref refid="classxThermal_1_1xThermalError" kindref="compound">prhs</ref>[])</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">backend_name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;IAPS84&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>check<sp/>arguments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classxThermal_1_1xThermalError" kindref="compound">nrhs</ref>!=2<sp/>&amp;&amp;<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">nrhs</ref>!=3){</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">mexErrMsgTxt</ref>(</highlight><highlight class="stringliteral">&quot;Usage:<sp/>[props]<sp/>=<sp/>prop_water_TP(T,<sp/>P)\n[props]<sp/>=<sp/>prop_water_TP(T,<sp/>P,<sp/>backend_name);&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!<ref refid="classxThermal_1_1xThermalError" kindref="compound">mxIsDouble</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">prhs</ref>[0])<sp/>||<sp/>!<ref refid="classxThermal_1_1xThermalError" kindref="compound">mxIsDouble</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">prhs</ref>[1])<sp/>)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">mexErrMsgTxt</ref>(</highlight><highlight class="stringliteral">&quot;The<sp/>input<sp/>T,P<sp/>must<sp/>be<sp/>of<sp/>type<sp/>&apos;double&apos;.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classxThermal_1_1xThermalError" kindref="compound">nrhs</ref>==3)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">ind_backendName</ref><sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">nrhs</ref>-1;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classxThermal_1_1xThermalError" kindref="compound">mxIsChar</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">prhs</ref>[<ref refid="classxThermal_1_1xThermalError" kindref="compound">ind_backendName</ref>]))</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">mexErrMsgTxt</ref>(</highlight><highlight class="stringliteral">&quot;The<sp/>second<sp/>argument<sp/>is<sp/>used<sp/>to<sp/>specify<sp/>which<sp/>backend<sp/>of<sp/>H2O<sp/>EOS<sp/>will<sp/>be<sp/>used,<sp/>it<sp/>must<sp/>be<sp/>char,<sp/>e.g.<sp/>&apos;IAPS84&apos;,<sp/>&apos;IAPWS95&apos;.<sp/>The<sp/>default<sp/>name<sp/>is<sp/>&apos;IAPS84&apos;.<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">backend_name</ref><sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxArrayToString</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">prhs</ref>[<ref refid="classxThermal_1_1xThermalError" kindref="compound">ind_backendName</ref>]);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((<ref refid="classxThermal_1_1xThermalError" kindref="compound">backend_name</ref>!=</highlight><highlight class="stringliteral">&quot;IAPS84&quot;</highlight><highlight class="normal">)<sp/>&amp;&amp;<sp/>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">backend_name</ref><sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;IAPWS95&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>info<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>input<sp/>EOS<sp/>name<sp/>is<sp/>not<sp/>identified:<sp/>&quot;</highlight><highlight class="normal">+<ref refid="classxThermal_1_1xThermalError" kindref="compound">backend_name</ref>+</highlight><highlight class="stringliteral">&quot;.<sp/>The<sp/>supported<sp/>EOS<sp/>name<sp/>is<sp/>one<sp/>of<sp/><sp/>&apos;IAPS84&apos;,<sp/>&apos;IAPWS95&apos;.<sp/>Reset<sp/>it<sp/>to<sp/>&apos;IAPS84&apos;.<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">mexWarnMsgTxt</ref>(info.c_str());</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">backend_name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;IAPS84&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>mwSize<sp/>nT<sp/>=<sp/>mxGetNumberOfElements(prhs[0]);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<ref refid="classxThermal_1_1xThermalError" kindref="compound">TMat</ref>,<sp/>*<ref refid="classxThermal_1_1xThermalError" kindref="compound">PMat</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">mwSize</ref><sp/>m,n;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>mGetMatrix(<ref refid="classxThermal_1_1xThermalError" kindref="compound">prhs</ref>[0],<sp/>&amp;<ref refid="classxThermal_1_1xThermalError" kindref="compound">TMat</ref>,<sp/></highlight><highlight class="stringliteral">&quot;T&quot;</highlight><highlight class="normal">,<sp/>&amp;m,<sp/>&amp;n);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>mGetMatrix(<ref refid="classxThermal_1_1xThermalError" kindref="compound">prhs</ref>[1],<sp/>&amp;<ref refid="classxThermal_1_1xThermalError" kindref="compound">PMat</ref>,<sp/></highlight><highlight class="stringliteral">&quot;P&quot;</highlight><highlight class="normal">,<sp/>&amp;m,<sp/>&amp;n);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//calculate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1cxThermal" kindref="compound">xThermal::cxThermal</ref>*<sp/>water;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1PROST_1_1cIAPS84" kindref="compound">PROST::cIAPS84</ref><sp/>iaps84;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1IAPWS95_1_1cIAPWS95" kindref="compound">IAPWS95::cIAPWS95</ref><sp/>iapws95;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">backend_name</ref>==</highlight><highlight class="stringliteral">&quot;IAPS84&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>water<sp/>=<sp/>&amp;iaps84;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classxThermal_1_1xThermalError" kindref="compound">backend_name</ref>==</highlight><highlight class="stringliteral">&quot;IAPWS95&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>water<sp/>=<sp/>&amp;iapws95;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>info<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>input<sp/>EOS<sp/>name<sp/>is<sp/>not<sp/>identified:<sp/>&quot;</highlight><highlight class="normal">+<ref refid="classxThermal_1_1xThermalError" kindref="compound">backend_name</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">mexErrMsgTxt</ref>(info.c_str());</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>add<sp/>new<sp/>property,<sp/>please<sp/>add<sp/>names<sp/>to<sp/>field_names_vector<sp/>and<sp/>update<sp/>the<sp/>following<sp/>stateArray</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">field_names_vector</ref>={</highlight><highlight class="stringliteral">&quot;T&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;P&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;H&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Rho&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Mu&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Cp&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;phase&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">n_fields</ref><sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">field_names_vector</ref>.size();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">field_names</ref>[<ref refid="classxThermal_1_1xThermalError" kindref="compound">n_fields</ref>];</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;mxArray*&gt;<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">Fields_value</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">n_fields</ref>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">n_fields</ref>;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">field_names</ref>[i]<sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">field_names_vector</ref>[i].c_str();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">Fields_value</ref>[i]<sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxCreateDoubleMatrix</ref>(m,<sp/>n,<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxREAL</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">mwSize</ref><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">dims</ref>[2]<sp/>=<sp/>{1,<sp/>1};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">plhs</ref>[0]<sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxCreateStructArray</ref>(2,<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">dims</ref>,<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">n_fields</ref>,<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">field_names</ref>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>call<sp/>array<sp/>version<sp/>of<sp/>the<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>N<sp/>=<sp/>m*n;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>!!!!<sp/>The<sp/>following<sp/>names<sp/>MUST<sp/>be<sp/>the<sp/>same<sp/>as<sp/>field_names_vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structxThermal_1_1ThermodynamicPropertiesArray" kindref="compound">xThermal::ThermodynamicPropertiesArray</ref><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">stateArray</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">stateArray</ref>.T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*)<ref refid="classxThermal_1_1xThermalError" kindref="compound">mxGetData</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">Fields_value</ref>[<ref refid="classxThermal_1_1xThermalError" kindref="compound">mxGetFieldNumber</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">plhs</ref>[0],<sp/></highlight><highlight class="stringliteral">&quot;T&quot;</highlight><highlight class="normal">)]);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">stateArray</ref>.p<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*)<ref refid="classxThermal_1_1xThermalError" kindref="compound">mxGetData</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">Fields_value</ref>[<ref refid="classxThermal_1_1xThermalError" kindref="compound">mxGetFieldNumber</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">plhs</ref>[0],<sp/></highlight><highlight class="stringliteral">&quot;P&quot;</highlight><highlight class="normal">)]);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">stateArray</ref>.H<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*)<ref refid="classxThermal_1_1xThermalError" kindref="compound">mxGetData</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">Fields_value</ref>[<ref refid="classxThermal_1_1xThermalError" kindref="compound">mxGetFieldNumber</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">plhs</ref>[0],<sp/></highlight><highlight class="stringliteral">&quot;H&quot;</highlight><highlight class="normal">)]);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">stateArray</ref>.Rho<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*)<ref refid="classxThermal_1_1xThermalError" kindref="compound">mxGetData</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">Fields_value</ref>[<ref refid="classxThermal_1_1xThermalError" kindref="compound">mxGetFieldNumber</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">plhs</ref>[0],<sp/></highlight><highlight class="stringliteral">&quot;Rho&quot;</highlight><highlight class="normal">)]);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">stateArray</ref>.Mu<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*)<ref refid="classxThermal_1_1xThermalError" kindref="compound">mxGetData</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">Fields_value</ref>[<ref refid="classxThermal_1_1xThermalError" kindref="compound">mxGetFieldNumber</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">plhs</ref>[0],<sp/></highlight><highlight class="stringliteral">&quot;Mu&quot;</highlight><highlight class="normal">)]);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">stateArray</ref>.Cp<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*)<ref refid="classxThermal_1_1xThermalError" kindref="compound">mxGetData</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">Fields_value</ref>[<ref refid="classxThermal_1_1xThermalError" kindref="compound">mxGetFieldNumber</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">plhs</ref>[0],<sp/></highlight><highlight class="stringliteral">&quot;Cp&quot;</highlight><highlight class="normal">)]);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">stateArray</ref>.phase<sp/><sp/><sp/><sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*)<ref refid="classxThermal_1_1xThermalError" kindref="compound">mxGetData</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">Fields_value</ref>[<ref refid="classxThermal_1_1xThermalError" kindref="compound">mxGetFieldNumber</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">plhs</ref>[0],<sp/></highlight><highlight class="stringliteral">&quot;phase&quot;</highlight><highlight class="normal">)]);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>water-&gt;UpdateState_TPX(<ref refid="classxThermal_1_1xThermalError" kindref="compound">stateArray</ref>,<sp/>N,<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">TMat</ref>,<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">PMat</ref>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">n_fields</ref>;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxSetFieldByNumber</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">plhs</ref>[0],<sp/>0,<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">mxGetFieldNumber</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">plhs</ref>[0],<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">field_names_vector</ref>[i].<ref refid="classxThermal_1_1xThermalError" kindref="compound">c_str</ref>()),<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">Fields_value</ref>[i]);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Library/H2ONaCl/Matlab/prop_water_TP.cpp"/>
+  </compounddef>
+</doxygen>

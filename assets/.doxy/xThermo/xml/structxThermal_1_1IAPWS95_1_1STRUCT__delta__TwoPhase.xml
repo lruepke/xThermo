@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1IAPWS95_1_1STRUCT__delta__TwoPhase" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::IAPWS95::STRUCT_delta_TwoPhase</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1STRUCT__delta__TwoPhase_1a0d9a88d82c20029ce07f5918f213ab83" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS95::STRUCT_delta_TwoPhase::delta_l</definition>
+        <argsstring></argsstring>
+        <name>delta_l</name>
+        <qualifiedname>xThermal::IAPWS95::STRUCT_delta_TwoPhase::delta_l</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="197" column="20" bodyfile="Library/H2O/IAPWS95.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1STRUCT__delta__TwoPhase_1a837055513cfcc19eef2c33e077528596" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS95::STRUCT_delta_TwoPhase::delta_v</definition>
+        <argsstring></argsstring>
+        <name>delta_v</name>
+        <qualifiedname>xThermal::IAPWS95::STRUCT_delta_TwoPhase::delta_v</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="197" column="28" bodyfile="Library/H2O/IAPWS95.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/H2O/IAPWS95.h" line="195" column="9" bodyfile="Library/H2O/IAPWS95.h" bodystart="196" bodyend="198"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1IAPWS95_1_1STRUCT__delta__TwoPhase_1a0d9a88d82c20029ce07f5918f213ab83" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::STRUCT_delta_TwoPhase</scope><name>delta_l</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1STRUCT__delta__TwoPhase_1a837055513cfcc19eef2c33e077528596" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::STRUCT_delta_TwoPhase</scope><name>delta_v</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structosub" kind="struct" language="C++" prot="public">
+    <compoundname>osub</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structosub_1ac8cba05ff0ad570decd4376b4916d150" prot="public" static="no" mutable="no">
+        <type>subseg *</type>
+        <definition>subseg* osub::ss</definition>
+        <argsstring></argsstring>
+        <name>ss</name>
+        <qualifiedname>osub::ss</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="532" column="10" bodyfile="Library/thermo/triangle.cpp" bodystart="532" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structosub_1aa9aac96631bf818c077048456dcf11ee" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int osub::ssorient</definition>
+        <argsstring></argsstring>
+        <name>ssorient</name>
+        <qualifiedname>osub::ssorient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="533" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="533" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/thermo/triangle.cpp" line="531" column="1" bodyfile="Library/thermo/triangle.cpp" bodystart="531" bodyend="534"/>
+    <listofallmembers>
+      <member refid="structosub_1ac8cba05ff0ad570decd4376b4916d150" prot="public" virt="non-virtual"><scope>osub</scope><name>ss</name></member>
+      <member refid="structosub_1aa9aac96631bf818c077048456dcf11ee" prot="public" virt="non-virtual"><scope>osub</scope><name>ssorient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

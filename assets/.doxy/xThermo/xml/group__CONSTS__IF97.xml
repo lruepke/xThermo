@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__CONSTS__IF97" kind="group">
+    <compoundname>CONSTS_IF97</compoundname>
+    <title>Constants of IAPWS-IF97.</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__CONSTS__IF97_1ga7c7c058b87b7e89566a0d157bc8e024c" prot="public" static="no">
+        <name>CONST_IF97_P_Region2a2b</name>
+        <initializer>4E6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The boundary between the subregions 2a and 2b is the isobar <formula id="9">$ p = 4 MPa $</formula>, see IF97 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="52" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONSTS__IF97_1ga47e4265b95dd5c5436e0e09b19452e42" prot="public" static="no">
+        <name>CONST_IF97_Pmin_Region2c</name>
+        <initializer>6.54670E6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Equations (20) and (21) give the boundary line between subregions 2b and 2c from the saturation state at T=554.485 K and <formula id="10">$ p_s $</formula> =6.54670 MPa to T=1019.32 K and p=100 MPa. See IF97 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="54" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONSTS__IF97_1gab39933e4949f5f42eb51687f6b2df175" prot="public" static="no">
+        <name>CONST_IF97_S_Region2b2c</name>
+        <initializer>5.85E3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the boundary between the subregions 2b and 2c corresponds to the entropy line s = 5.85 kJ/kg/K. See section 6.3 of IF97 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="56" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONSTS__IF97_1gaa7f51dbc6b83278e23c124c1016cd9fd" prot="public" static="no">
+        <name>CONST_IF97_Pmin_Region3</name>
+        <initializer>16.5292E6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minimum pressure of the region 3. See pp.6 of IF97 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="58" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONSTS__IF97_1gae82658931e477c03ad512e7e39d2b288" prot="public" static="no">
+        <name>CONST_IF97_Tmin_Region3</name>
+        <initializer>623.15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum temperature of the region 3. See pp.6 of IF97. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="60" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONSTS__IF97_1ga18f5f11bd266b66c7e05e17adc2cdfe6" prot="public" static="no">
+        <name>CONST_IF97_Hl_Tmin_Region3</name>
+        <initializer>1.670858218E6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Saturated liquid enthalpy at <ref refid="group__CONSTS__IF97_1gae82658931e477c03ad512e7e39d2b288" kindref="member">CONST_IF97_Tmin_Region3</ref> , see section 4.3, pp.17 of IF97-Region3. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="62" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONSTS__IF97_1gabc16d6a7b95b59e3e7c3e8434ca23e7f" prot="public" static="no">
+        <name>CONST_IF97_Hv_Tmin_Region3</name>
+        <initializer>2.563592004E6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Saturated vapor enthalpy at <ref refid="group__CONSTS__IF97_1gae82658931e477c03ad512e7e39d2b288" kindref="member">CONST_IF97_Tmin_Region3</ref> , see section 4.3, pp.17 of IF97-Region3. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="64" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONSTS__IF97_1gaf1bcbc90af1c25d83ec2bfe29d94dcbf" prot="public" static="no">
+        <name>CONST_IF97_Pmax_Region1</name>
+        <initializer>100E6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum pressure [MPa] of the region 1, 2, 3, 4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="66" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONSTS__IF97_1ga5393d8de4092c3a43b515cd866fad6b6" prot="public" static="no">
+        <name>CONST_IF97_Tmax_Region2</name>
+        <initializer>1073.15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum temperature [K] of the retion 2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="68" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONSTS__IF97_1ga15b3149e229368b2b491938c9f57df1e" prot="public" static="no">
+        <name>CONST_IF97_Pmax_Region5</name>
+        <initializer>50E6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum pressure [MPa] of the region 5 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="70" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONSTS__IF97_1ga2644a6084289728948436fb9cf867573" prot="public" static="no">
+        <name>CONST_IF97_Tmax_Region5</name>
+        <initializer>2273.15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum temperature [K] of the retion 5 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="72" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__CONSTS__IF97_1gaa7e8b5d1b6350bc2cd92166a0adb2df0" prot="public" static="no">
+        <name>CONST_IF97_H_c</name>
+        <initializer>2.08754684511650027707E+06</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specific enthalpy of critical point, calculate from <ref refid="" kindref="compound">IAPWS_IF97::cIAPWS_IF97::Boundary_region3ab_P2H</ref> (H2O::P_c) <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="74" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

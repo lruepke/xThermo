@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1TriMesh" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::TriMesh</compoundname>
+    <includes refid="DataStructures_8h" local="no">DataStructures.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1TriMesh_1a0d245ff2707c3545258d8007d58f58c8" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::TriMesh::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>xThermal::TriMesh::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="852" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="852" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1TriMesh_1a686655de8147a75a5e4100b03de9574c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::TriMesh::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>xThermal::TriMesh::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="852" column="22" bodyfile="Library/thermo/DataStructures.h" bodystart="852" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1TriMesh_1a4d611d36f1deb25a93e020fa39951474" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::TriMesh::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <qualifiedname>xThermal::TriMesh::z</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="852" column="23" bodyfile="Library/thermo/DataStructures.h" bodystart="852" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1TriMesh_1a13dc33e7affc38cbf794ecd695b83bfe" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int&gt; &gt; xThermal::TriMesh::connection</definition>
+        <argsstring></argsstring>
+        <name>connection</name>
+        <qualifiedname>xThermal::TriMesh::connection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="853" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="853" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1TriMesh_1a2c2ee9dcec4876426ff98620d8743ddc" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; xThermal::TriMesh::names</definition>
+        <argsstring></argsstring>
+        <name>names</name>
+        <qualifiedname>xThermal::TriMesh::names</qualifiedname>
+        <initializer>={&quot;x&quot;,&quot;y&quot;,&quot;z&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="854" column="20" bodyfile="Library/thermo/DataStructures.h" bodystart="854" bodyend="854"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structxThermal_1_1TriMesh_1add2017bdb9ed68c968ccbb48b1007f7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::TriMesh::append</definition>
+        <argsstring>(const TriMesh &amp;trimesh)</argsstring>
+        <name>append</name>
+        <qualifiedname>xThermal::TriMesh::append</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1TriMesh" kindref="compound">TriMesh</ref> &amp;</type>
+          <declname>trimesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="855" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="855" bodyend="868"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>2D triangle mesh structure. Relate to matplotlib ax.tri_plot() in 2D or ax.plot_trisurf() in 3D </para>
+    </detaileddescription>
+    <location file="Library/thermo/DataStructures.h" line="850" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="851" bodyend="869"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1TriMesh_1add2017bdb9ed68c968ccbb48b1007f7e" prot="public" virt="non-virtual"><scope>xThermal::TriMesh</scope><name>append</name></member>
+      <member refid="structxThermal_1_1TriMesh_1a13dc33e7affc38cbf794ecd695b83bfe" prot="public" virt="non-virtual"><scope>xThermal::TriMesh</scope><name>connection</name></member>
+      <member refid="structxThermal_1_1TriMesh_1a2c2ee9dcec4876426ff98620d8743ddc" prot="public" virt="non-virtual"><scope>xThermal::TriMesh</scope><name>names</name></member>
+      <member refid="structxThermal_1_1TriMesh_1a0d245ff2707c3545258d8007d58f58c8" prot="public" virt="non-virtual"><scope>xThermal::TriMesh</scope><name>x</name></member>
+      <member refid="structxThermal_1_1TriMesh_1a686655de8147a75a5e4100b03de9574c" prot="public" virt="non-virtual"><scope>xThermal::TriMesh</scope><name>y</name></member>
+      <member refid="structxThermal_1_1TriMesh_1a4d611d36f1deb25a93e020fa39951474" prot="public" virt="non-virtual"><scope>xThermal::TriMesh</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

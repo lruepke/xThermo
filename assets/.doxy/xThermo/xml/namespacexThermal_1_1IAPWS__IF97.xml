@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacexThermal_1_1IAPWS__IF97" kind="namespace" language="C++">
+    <compoundname>xThermal::IAPWS_IF97</compoundname>
+    <innerclass refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97" prot="public">xThermal::IAPWS_IF97::cIAPWS_IF97</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless" prot="public">xThermal::IAPWS_IF97::GibbsEnergy_dimensionless</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS__IF97_1_1State__Region1" prot="public">xThermal::IAPWS_IF97::State_Region1</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS__IF97_1_1State__Region2" prot="public">xThermal::IAPWS_IF97::State_Region2</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS__IF97_1_1State__Region5" prot="public">xThermal::IAPWS_IF97::State_Region5</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="IAPWS-IF97_8h_1a2b5843e1593f247f8e0eca40a1ab71ec" prot="public" static="no" strong="no">
+        <type></type>
+        <name>BasicThermodynamicProperties</name>
+        <qualifiedname>xThermal::IAPWS_IF97::BasicThermodynamicProperties</qualifiedname>
+        <enumvalue id="IAPWS-IF97_8h_1a2b5843e1593f247f8e0eca40a1ab71eca5e709cb504406bc68c29573cd963feb0" prot="public">
+          <name>Prop_v</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="IAPWS-IF97_8h_1a2b5843e1593f247f8e0eca40a1ab71eca8d349e971d0f6e75e7846bbf331797d7" prot="public">
+          <name>Prop_u</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="IAPWS-IF97_8h_1a2b5843e1593f247f8e0eca40a1ab71eca3f8f3fc606bbd714dccbe134ba8a346a" prot="public">
+          <name>Prop_s</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="IAPWS-IF97_8h_1a2b5843e1593f247f8e0eca40a1ab71eca5fdc6e70c598f947a1c6c94af619322c" prot="public">
+          <name>Prop_h</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="IAPWS-IF97_8h_1a2b5843e1593f247f8e0eca40a1ab71eca8cb741106b9554e6e9fdb2863b5ec4d3" prot="public">
+          <name>Prop_cp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="IAPWS-IF97_8h_1a2b5843e1593f247f8e0eca40a1ab71ecae0d08b5b6cdc9cb0b3ddcf88d00899a4" prot="public">
+          <name>Prop_cv</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="IAPWS-IF97_8h_1a2b5843e1593f247f8e0eca40a1ab71eca62306cdc7c4d3ad5a24a4c0733a64c33" prot="public">
+          <name>Prop_w</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="IAPWS-IF97_8h_1a2b5843e1593f247f8e0eca40a1ab71ecacf00d6bba403700de8abf827459af484" prot="public">
+          <name>Prop_rho</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="109" column="9" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="110" bodyend="112"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/H2O/IAPWS-IF97.cpp" line="16" column="5"/>
+  </compounddef>
+</doxygen>

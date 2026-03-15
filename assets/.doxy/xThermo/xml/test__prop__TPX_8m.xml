@@ -1,0 +1,2003 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="test__prop__TPX_8m" kind="file" language="Objective-C">
+    <compoundname>test_prop_TPX.m</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="test__prop__TPX_8m_1a2645cf81d99881520325ae5463475c69" prot="public" static="no" mutable="no">
+        <type>if use shared compiled mex</type>
+        <definition>end function[Rho, H, Mu, props]</definition>
+        <argsstring></argsstring>
+        <name>function</name>
+        <initializer>= SinglePointTest_water(T,P,name_EOS)
+    % T: deg.C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="4" column="29" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1ac54f6b986d526f273883a24d897ab9d8" prot="public" static="no" mutable="no">
+        <type>if use shared compiled mex please add libxThermal</type>
+        <definition>if use shared compiled mex please add libxThermal libgsl dylib</definition>
+        <argsstring></argsstring>
+        <name>dylib</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="4" column="60" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1a41b369665dd166c06fe5126ddaefb01b" prot="public" static="no" mutable="no">
+        <type>if use shared compiled mex please add libxThermal libgsl libCoolProp dylib to the dynalic library search</type>
+        <definition>if use shared compiled mex please add libxThermal libgsl libCoolProp dylib to the dynalic library search path[PROP, props]</definition>
+        <argsstring>[PROP, props]</argsstring>
+        <name>path</name>
+        <initializer>= SinglePointTest(1, 100E5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="5" column="61" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1a0734f5941c98f8382ca5c2320ec786a8" prot="public" static="no" mutable="no">
+        <type>P</type>
+        <definition>P __pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="18" column="2" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1ac51b57a703ba1c5869228690c93e1701" prot="public" static="no" mutable="no">
+        <type>P</type>
+        <definition>X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <initializer>= 10.^linspace(-10,0,100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="18" column="4" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1a8da83ab71c7552559e83cf2ef61cbf60" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>rho0</definition>
+        <argsstring></argsstring>
+        <name>rho0</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="20" column="5" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1aff40c4433d4ebe5e439432a192635fe6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>xThermal[props]</definition>
+        <argsstring>[props]</argsstring>
+        <name>xThermal</name>
+        <initializer>= prop_water_TP(T+273.15, P, name_EOS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="23" column="6" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1a4baee84af7a92177c9064ddc2fc010ce" prot="public" static="no" mutable="no">
+        <type>end</type>
+        <definition>P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <initializer>= linspace(800,1000,100)*1E5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="28" column="2" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1a9d1ec934f8e79ce27d917b16f0404a5d" prot="public" static="no" mutable="no">
+        <type>xThermal</type>
+        <definition>props</definition>
+        <argsstring></argsstring>
+        <name>props</name>
+        <initializer>= prop_TPX(T + 273.15, P, X)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="33" column="5" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1adf1f3edb9115acb0a1e04209b7a9937b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <initializer>= linspace(550,650,200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="40" column="5" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1aad347226dcc1d205f58e693925c28783" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>XX</definition>
+        <argsstring></argsstring>
+        <name>XX</name>
+        <initializer>=TT*0 + X0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="43" column="5" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1a6a53958fc554364ce31baf7217aa9737" prot="public" static="no" mutable="no">
+        <type>tic</type>
+        <definition>tic calculate[PROP]</definition>
+        <argsstring>[PROP]</argsstring>
+        <name>calculate</name>
+        <initializer>= fluidprop_NaCl_PTX( P,T, Xw, visc_on )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="46" column="6" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1a74742cb5c8e2ac354a60cb73383d8176" prot="public" static="no" mutable="no">
+        <type>toc plot</type>
+        <definition>rows</definition>
+        <argsstring></argsstring>
+        <name>rows</name>
+        <initializer>=3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="52" column="5" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1aaed057ed424ced7429016ec18c2edbb6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cols</definition>
+        <argsstring></argsstring>
+        <name>cols</name>
+        <initializer>=5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="53" column="5" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1aec70d633e7619583eb3a08a7afd638b4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clf</definition>
+        <argsstring></argsstring>
+        <name>clf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="54" column="11" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1a75055c100cc86bbb92990a48f766bd91" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>colorbar</definition>
+        <argsstring></argsstring>
+        <name>colorbar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="56" column="21" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1a8195df40074ad977b54103159835e575" prot="public" static="no" mutable="no">
+        <type>use xThermal</type>
+        <definition>use xThermal API[P, X]</definition>
+        <argsstring>[P, X]</argsstring>
+        <name>API</name>
+        <initializer>= P_X_Critical(linspace(0,800,10)+273.15)
+    % [P,X] = P_X_Critical(T+273.15)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="64" column="19" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1a835accca41274fb237599d9b3c117fcf" prot="public" static="no" mutable="no">
+        <type>hold</type>
+        <definition>hold off</definition>
+        <argsstring></argsstring>
+        <name>off</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="87" column="10" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1ae5a4601548b3e753eb6a6a484af87c03" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>PP</definition>
+        <argsstring></argsstring>
+        <name>PP</name>
+        <initializer>=TT*0 + P0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="98" column="5" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1a65b6858d4a4db1f8a5f1feaf7d18dc02" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Rho</definition>
+        <argsstring></argsstring>
+        <name>Rho</name>
+        <initializer>= reshape(Rho, size(TT))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="151" column="5" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1afaafc315b95987fc2b071bcd8f698b81" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>H</definition>
+        <argsstring></argsstring>
+        <name>H</name>
+        <initializer>= reshape(H, size(TT))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="152" column="5" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1ac286ddc3afc124a01cb184ca713781d1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Mu</definition>
+        <argsstring></argsstring>
+        <name>Mu</name>
+        <initializer>= reshape(Mu, size(TT))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="153" column="5" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1aef9a5d38c420ef4dad824f1de82bb2da" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>nan_Mu</definition>
+        <argsstring></argsstring>
+        <name>nan_Mu</name>
+        <initializer>= Mu(isnan(Mu))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="163" column="5" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__prop__TPX_8m_1a1831bc7a850b43e256508b5f6606839b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>nan_Mu_PROST</definition>
+        <argsstring></argsstring>
+        <name>nan_Mu_PROST</name>
+        <initializer>= props.Mu(isnan(props.Mu))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="170" column="5" bodyfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" bodystart="170" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="test__prop__TPX_8m_1aaaebc84e9ceaafaf6f3bb1c7abf17373" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>add xThermal path</type>
+        <definition>add xThermal path addpath</definition>
+        <argsstring>(&apos;/Users/zguo/MyData/Research/3_CodeProject/Hydrothermal-OpenFOAM/xThermal/Library/API/Matlab&apos;)</argsstring>
+        <name>addpath</name>
+        <param>
+          <type>&apos;/Users/zguo/MyData/Research/3_CodeProject/Hydrothermal-OpenFOAM/xThermal/Library/API/Matlab&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="2" column="1" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="2" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a10a938acaccdb2cb625df65ad0b5a97f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>addpath</definition>
+        <argsstring>(&apos;/Users/zguo/MyData/Research/3_CodeProject/Hydrothermal-OpenFOAM/H2O_NaCl_EOS_Driesner_2007&apos;)</argsstring>
+        <name>addpath</name>
+        <param>
+          <type>&apos;/Users/zguo/MyData/Research/3_CodeProject/Hydrothermal-OpenFOAM/H2O_NaCl_EOS_Driesner_2007&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="3" column="1" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="3" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1ad3734517c119dfb793258a16fdd6e8e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test_constP_H2ONaCl</definition>
+        <argsstring>(100E5, &apos;IAPWS95&apos;)</argsstring>
+        <name>test_constP_H2ONaCl</name>
+        <param>
+          <type>100E5</type>
+        </param>
+        <param>
+          <type>&apos;IAPWS95&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="11" column="2" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="11" declcolumn="2"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1af75b459e1fe3cd439e726028c02cdeaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test_constX_H2ONaCl</definition>
+        <argsstring>(0.1, &apos;IAPS84&apos;)</argsstring>
+        <name>test_constX_H2ONaCl</name>
+        <param>
+          <type>0.</type>
+          <declname>1</declname>
+        </param>
+        <param>
+          <type>&apos;IAPS84&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="12" column="1" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="12" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a088fdb40e411d36de62c7e29f528ba7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>end function</type>
+        <definition>end function test_constX_H2ONaCl</definition>
+        <argsstring>(X0, backendName) % calculate properties in pTX space visc_on</argsstring>
+        <name>test_constX_H2ONaCl</name>
+        <param>
+          <type>X0</type>
+        </param>
+        <param>
+          <type>backendName</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="36" column="10" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="36" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1aab8f4cea4feb366962e99f5d9dd9de33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>figure</definition>
+        <argsstring>(200)</argsstring>
+        <name>figure</name>
+        <param>
+          <type>200</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="54" column="5" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="54" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a3031db9c1e7b3ccf451146165ff83b20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>subplot</definition>
+        <argsstring>(rows, cols, 1)</argsstring>
+        <name>subplot</name>
+        <param>
+          <type>rows</type>
+        </param>
+        <param>
+          <type>cols</type>
+        </param>
+        <param>
+          <type>1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="56" column="5" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="56" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1adeecfd750e6b81cec800d4e393aca025" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>(TT, PP, reshape(PROP.Reg, size(TT)))</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>PP</type>
+        </param>
+        <param>
+          <type>reshape(PROP.Reg, size(TT))</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="56" column="13" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="56" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a211dc2e698161f0f295834a2ee637f80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>title</definition>
+        <argsstring>(&apos;phase region:matlab&apos;)</argsstring>
+        <name>title</name>
+        <param>
+          <type>&apos;phase region:matlab&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="56" column="30" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="56" declcolumn="30"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a408425e227339468345c0fac7bca8304" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>subplot</definition>
+        <argsstring>(rows, cols, 2)</argsstring>
+        <name>subplot</name>
+        <param>
+          <type>rows</type>
+        </param>
+        <param>
+          <type>cols</type>
+        </param>
+        <param>
+          <type>2</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="57" column="5" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="57" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1ac258c37fbc03fe4a52ab4eabd8ec2720" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>(TT, PP, reshape(PROP.Rho, size(TT)))</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>PP</type>
+        </param>
+        <param>
+          <type>reshape(PROP.Rho, size(TT))</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="57" column="13" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="57" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a0d17812d2ad43daebde87281a235ee5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>title</definition>
+        <argsstring>(&apos;Rho:matlab&apos;)</argsstring>
+        <name>title</name>
+        <param>
+          <type>&apos;Rho:matlab&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="57" column="30" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="57" declcolumn="30"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a9e74de8b4d27d43aaa91465da311565d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>subplot</definition>
+        <argsstring>(rows, cols, 3)</argsstring>
+        <name>subplot</name>
+        <param>
+          <type>rows</type>
+        </param>
+        <param>
+          <type>cols</type>
+        </param>
+        <param>
+          <type>3</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="58" column="5" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="58" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a20b7f5aee9b13b9e52bffebc9bcb69e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>(TT, PP, reshape(PROP.h, size(TT)))</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>PP</type>
+        </param>
+        <param>
+          <type>reshape(PROP.h, size(TT))</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="58" column="13" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="58" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a0ee2d8ad4f5d02e9f3b2febac61fc269" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>title</definition>
+        <argsstring>(&apos;H:matlab&apos;)</argsstring>
+        <name>title</name>
+        <param>
+          <type>&apos;H:matlab&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="58" column="30" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="58" declcolumn="30"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1af0577b0bb527b6f588897cae6f134c64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>subplot</definition>
+        <argsstring>(rows, cols, 4)</argsstring>
+        <name>subplot</name>
+        <param>
+          <type>rows</type>
+        </param>
+        <param>
+          <type>cols</type>
+        </param>
+        <param>
+          <type>4</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="59" column="5" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="59" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a5e861593d873fecde63476d6f9aa01b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>(TT, PP, reshape(PROP.mu_l, size(TT)))</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>PP</type>
+        </param>
+        <param>
+          <type>reshape(PROP.mu_l, size(TT))</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="59" column="13" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="59" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a11cb3234b527e3c558eea1c3d1a85e20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>title</definition>
+        <argsstring>(&apos;Mu_l:matlab&apos;)</argsstring>
+        <name>title</name>
+        <param>
+          <type>&apos;Mu_l:matlab&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="59" column="30" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="59" declcolumn="30"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1ae164bb31c449d5be7f9aeaa997d77724" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>subplot</definition>
+        <argsstring>(rows, cols, 5)</argsstring>
+        <name>subplot</name>
+        <param>
+          <type>rows</type>
+        </param>
+        <param>
+          <type>cols</type>
+        </param>
+        <param>
+          <type>5</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="60" column="5" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="60" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a8adebd35395cff4bc76870744d787eb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>(TT, PP, reshape(PROP.mu_v, size(TT)))</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>PP</type>
+        </param>
+        <param>
+          <type>reshape(PROP.mu_v, size(TT))</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="60" column="13" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="60" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a3aedb9b0cd7a0685096d6dc7550bee58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>title</definition>
+        <argsstring>(&apos;Mu_v:matlab&apos;)</argsstring>
+        <name>title</name>
+        <param>
+          <type>&apos;Mu_v:matlab&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="60" column="30" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="60" declcolumn="30"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a76a6913145099b6a32e890b26ff04517" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>plot</definition>
+        <argsstring>(T, props.Rho, &apos;r&apos;, &apos;LineWidth&apos;, 6)</argsstring>
+        <name>plot</name>
+        <param>
+          <type>T</type>
+        </param>
+        <param>
+          <type>props.</type>
+          <declname>Rho</declname>
+        </param>
+        <param>
+          <type>&apos;r&apos;</type>
+        </param>
+        <param>
+          <type>&apos;LineWidth&apos;</type>
+        </param>
+        <param>
+          <type>6</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="61" column="6" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="61" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a59d2e6525eff0d5f6f3d63b9c47956cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>plot</definition>
+        <argsstring>(T, PROP.Rho, &apos;b-&apos;, &apos;LineWidth&apos;, 3)</argsstring>
+        <name>plot</name>
+        <param>
+          <type>T</type>
+        </param>
+        <param>
+          <type>PROP.</type>
+          <declname>Rho</declname>
+        </param>
+        <param>
+          <type>&apos;b-&apos;</type>
+        </param>
+        <param>
+          <type>&apos;LineWidth&apos;</type>
+        </param>
+        <param>
+          <type>3</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="62" column="6" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="62" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a6c20e393a6b84a943c10191f72e6470e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>toc</type>
+        <definition>toc subplot</definition>
+        <argsstring>(rows, cols, 6)</argsstring>
+        <name>subplot</name>
+        <param>
+          <type>rows</type>
+        </param>
+        <param>
+          <type>cols</type>
+        </param>
+        <param>
+          <type>6</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="74" column="5" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="74" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a38705b11fd09bd55e390260ee5e62569" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>(TT, PP, props.phase)</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>PP</type>
+        </param>
+        <param>
+          <type>props.</type>
+          <declname>phase</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="74" column="13" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="74" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a6ab1d0da3055418166110e4c9566a640" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>title</definition>
+        <argsstring>(&apos;phase region:xThermal:PROST&apos;)</argsstring>
+        <name>title</name>
+        <param>
+          <type>&apos;phase region:xThermal:PROST&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="74" column="30" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="74" declcolumn="30"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a25f5386cffc3227a6df21f549f6ff6df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>subplot</definition>
+        <argsstring>(rows, cols, 7)</argsstring>
+        <name>subplot</name>
+        <param>
+          <type>rows</type>
+        </param>
+        <param>
+          <type>cols</type>
+        </param>
+        <param>
+          <type>7</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="75" column="5" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="75" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1ab0d7554820f3eeb3e466a2920fc83669" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>title</definition>
+        <argsstring>(&apos;Rho:xThermal:PROST&apos;)</argsstring>
+        <name>title</name>
+        <param>
+          <type>&apos;Rho:xThermal:PROST&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="75" column="30" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="75" declcolumn="30"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a11252d1a871ed6d28c0d3a545438b43b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>subplot</definition>
+        <argsstring>(rows, cols, 8)</argsstring>
+        <name>subplot</name>
+        <param>
+          <type>rows</type>
+        </param>
+        <param>
+          <type>cols</type>
+        </param>
+        <param>
+          <type>8</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="76" column="5" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="76" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1acfcd2e9c52a3d4c523c1978ce8d510ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>title</definition>
+        <argsstring>(&apos;H:xThermal:PROST&apos;)</argsstring>
+        <name>title</name>
+        <param>
+          <type>&apos;H:xThermal:PROST&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="76" column="30" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="76" declcolumn="30"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a71982b3b79fe105dceee5b51338ada7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>subplot</definition>
+        <argsstring>(rows, cols, 9)</argsstring>
+        <name>subplot</name>
+        <param>
+          <type>rows</type>
+        </param>
+        <param>
+          <type>cols</type>
+        </param>
+        <param>
+          <type>9</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="77" column="5" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="77" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a4e048f513ce494ff0ecc6aa368553c20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>title</definition>
+        <argsstring>(&apos;Mu_l:xThermal:PROST&apos;)</argsstring>
+        <name>title</name>
+        <param>
+          <type>&apos;Mu_l:xThermal:PROST&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="77" column="30" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="77" declcolumn="30"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a0f0a25c82b7d82f85c512a2d44965a2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>subplot</definition>
+        <argsstring>(rows, cols, 10)</argsstring>
+        <name>subplot</name>
+        <param>
+          <type>rows</type>
+        </param>
+        <param>
+          <type>cols</type>
+        </param>
+        <param>
+          <type>10</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="78" column="5" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="78" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a3ddc4911b6c8868625e4dbdc77ccaf04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>title</definition>
+        <argsstring>(&apos;Mu_v:xThermal:PROST&apos;)</argsstring>
+        <name>title</name>
+        <param>
+          <type>&apos;Mu_v:xThermal:PROST&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="78" column="30" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="78" declcolumn="30"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a22b0a7a94a11ef93901782ae447ae173" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>diff</type>
+        <definition>diff subplot</definition>
+        <argsstring>(rows, cols, 11)</argsstring>
+        <name>subplot</name>
+        <param>
+          <type>rows</type>
+        </param>
+        <param>
+          <type>cols</type>
+        </param>
+        <param>
+          <type>11</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="81" column="5" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="81" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a02fac25ad643a991d065a033a7518211" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>(TT, PP,(reshape(PROP.Reg, size(TT)) - props.phase))</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>PP</type>
+        </param>
+        <param>
+          <type>(reshape(PROP.Reg, size(TT)) - props.phase)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="81" column="13" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="81" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1aa8d618d22237d32722f8dcb9ed704167" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>title</definition>
+        <argsstring>(&apos;matlab - xThermal&apos;)</argsstring>
+        <name>title</name>
+        <param>
+          <type>&apos;matlab - xThermal&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="81" column="30" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="81" declcolumn="30"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a325214614cb7c208f65a5439bb2f3306" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>subplot</definition>
+        <argsstring>(rows, cols, 12)</argsstring>
+        <name>subplot</name>
+        <param>
+          <type>rows</type>
+        </param>
+        <param>
+          <type>cols</type>
+        </param>
+        <param>
+          <type>12</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="82" column="5" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="82" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a39c08e47cbe49f8285fc95ccd88033a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>(TT, PP,(reshape(PROP.Rho, size(TT)) - props.Rho))</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>PP</type>
+        </param>
+        <param>
+          <type>(reshape(PROP.Rho, size(TT)) - props.Rho)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="82" column="13" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="82" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a1e1cf47a9bb2ef56e0fa33137d44adf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>subplot</definition>
+        <argsstring>(rows, cols, 13)</argsstring>
+        <name>subplot</name>
+        <param>
+          <type>rows</type>
+        </param>
+        <param>
+          <type>cols</type>
+        </param>
+        <param>
+          <type>13</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="83" column="5" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="83" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a9f926980522179faf78a44d8e6ecbf0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>(TT, PP,(reshape(PROP.h, size(TT)) - props.H))</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>PP</type>
+        </param>
+        <param>
+          <type>(reshape(PROP.h, size(TT)) - props.H)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="83" column="13" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="83" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1aaa0df2cd0f40740d5d967550953f4627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>subplot</definition>
+        <argsstring>(rows, cols, 14)</argsstring>
+        <name>subplot</name>
+        <param>
+          <type>rows</type>
+        </param>
+        <param>
+          <type>cols</type>
+        </param>
+        <param>
+          <type>14</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="84" column="5" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="84" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a4e1243eae2faa5afd0633eab615a7f10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>(TT, PP,(reshape(PROP.mu_l, size(TT)) - props.Mu_l))</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>PP</type>
+        </param>
+        <param>
+          <type>(reshape(PROP.mu_l, size(TT)) - props.Mu_l)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="84" column="13" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="84" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1ad00e81b4f224ad231db52d7796005115" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>subplot</definition>
+        <argsstring>(rows, cols, 15)</argsstring>
+        <name>subplot</name>
+        <param>
+          <type>rows</type>
+        </param>
+        <param>
+          <type>cols</type>
+        </param>
+        <param>
+          <type>15</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="85" column="5" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="85" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1af243234ca49453c67f87cc853ee220dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>(TT, PP,(reshape(PROP.mu_v, size(TT)) - props.Mu_v))</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>PP</type>
+        </param>
+        <param>
+          <type>(reshape(PROP.mu_v, size(TT)) - props.Mu_v)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="85" column="13" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="85" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1aaa422b1f8eee9f372bde9cac1a3c3324" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>end function</type>
+        <definition>end function test_constP_H2ONaCl</definition>
+        <argsstring>(P0, backendName) % calculate properties in pTX space visc_on</argsstring>
+        <name>test_constP_H2ONaCl</name>
+        <param>
+          <type>P0</type>
+        </param>
+        <param>
+          <type>backendName</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="90" column="10" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="90" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1ac16696384ef8c4d630be6972dfd52afc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>((XX), TT, reshape(PROP.Reg, size(TT)))</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>(XX)</type>
+        </param>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>reshape(PROP.Reg, size(TT))</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="111" column="13" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="111" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1afcc661cc37a891d09941bc1e86904dfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>((XX), TT, reshape(PROP.Rho, size(TT)))</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>(XX)</type>
+        </param>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>reshape(PROP.Rho, size(TT))</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="112" column="13" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="112" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1ab09038eee753034e27994afab9c1ff50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>((XX), TT, reshape(PROP.h, size(TT)))</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>(XX)</type>
+        </param>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>reshape(PROP.h, size(TT))</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="113" column="13" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="113" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a09cc5c1f6ab5a6d5c3aad44e346da7c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>((XX), TT, reshape(PROP.mu_l, size(TT)))</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>(XX)</type>
+        </param>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>reshape(PROP.mu_l, size(TT))</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="114" column="13" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="114" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a3a2a298406f359f19213a8441d694d9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>((XX), TT, reshape(PROP.mu_v, size(TT)))</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>(XX)</type>
+        </param>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>reshape(PROP.mu_v, size(TT))</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="115" column="13" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="115" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1acac5c9c7197437f081a3f2eecd3d8196" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>((XX), TT, props.phase)</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>(XX)</type>
+        </param>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>props.</type>
+          <declname>phase</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="129" column="13" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="129" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a44edf8c73dd7f06542b285812c6a0229" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>((XX), TT,(reshape(PROP.Reg, size(TT)) - props.phase))</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>(XX)</type>
+        </param>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>(reshape(PROP.Reg, size(TT)) - props.phase)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="136" column="13" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="136" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1aca389b1d4ceb4ef76479c56bf0921ca7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>((XX), TT,(reshape(PROP.Rho, size(TT)) - props.Rho))</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>(XX)</type>
+        </param>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>(reshape(PROP.Rho, size(TT)) - props.Rho)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="137" column="13" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="137" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a07b317b3c5d75996d5826f42203c09b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>((XX), TT,(reshape(PROP.h, size(TT)) - props.H))</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>(XX)</type>
+        </param>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>(reshape(PROP.h, size(TT)) - props.H)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="138" column="13" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="138" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a4c7cdc645560475bbbbe5ee7e5dcef8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>((XX), TT,(reshape(PROP.mu_l, size(TT)) - props.Mu_l))</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>(XX)</type>
+        </param>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>(reshape(PROP.mu_l, size(TT)) - props.Mu_l)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="139" column="13" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="139" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a4e5ff368e678b9c8a712ebebf4310f47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>((XX), TT,(reshape(PROP.mu_v, size(TT)) - props.Mu_v))</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>(XX)</type>
+        </param>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>(reshape(PROP.mu_v, size(TT)) - props.Mu_v)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="140" column="13" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="140" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a59f804b2ae4dacddeb523369b99ef26d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>figure</definition>
+        <argsstring>(100)</argsstring>
+        <name>figure</name>
+        <param>
+          <type>100</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="155" column="5" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="155" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a0fa71e519b9f47435967c4abb3b971fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>(TT, PP/1E5, Rho)</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>PP/</type>
+          <declname>1E5</declname>
+        </param>
+        <param>
+          <type>Rho</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="159" column="15" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="159" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a725cad39e1d329e6b972a09aa20f3d38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>(TT, PP/1E5, H)</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>PP/</type>
+          <declname>1E5</declname>
+        </param>
+        <param>
+          <type>H</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="160" column="15" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="160" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1ad78f1b7ea888951be59dc5b78c4ae970" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>(TT, PP/1E5, log10(Mu))</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>PP/</type>
+          <declname>1E5</declname>
+        </param>
+        <param>
+          <type>log10(Mu)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="161" column="15" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="161" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1ab809e24da4f1058e8b72154cab263394" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>title</definition>
+        <argsstring>(&apos;Mu:matlab&apos;)</argsstring>
+        <name>title</name>
+        <param>
+          <type>&apos;Mu:matlab&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="161" column="32" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="161" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a51cec7fe934e8685382f7892dd9615fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fprintf</definition>
+        <argsstring>(1,&quot;Mu_min = %.3E, Mu_max = %.3E\n&quot;, min(min(Mu)), max(max(Mu)))</argsstring>
+        <name>fprintf</name>
+        <param>
+          <type>1</type>
+        </param>
+        <param>
+          <type>&quot;</type>
+          <declname>Mu_min</declname>
+          <defval>%.3E</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="162" column="5" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="162" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a3d2702872affa4bafaafe75247e2b867" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>(TT, PP/1E5, props.Rho)</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>PP/</type>
+          <declname>1E5</declname>
+        </param>
+        <param>
+          <type>props.</type>
+          <declname>Rho</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="166" column="15" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="166" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1ad1139280d4c9fd7fe6529aa4e078f43f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>title</definition>
+        <argsstring>([&apos;Rho:xThermal:&apos;, name_EOS_xThermal])</argsstring>
+        <name>title</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="166" column="32" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="166" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a29bb456fb2e50e3ca8c1b735f2bd5602" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>(TT, PP/1E5, log10(props.Mu))</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>PP/</type>
+          <declname>1E5</declname>
+        </param>
+        <param>
+          <type>log10(props.Mu)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="168" column="15" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="168" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1ac8625c131752fd48583aa6d9b269a220" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>(TT, PP/1E5,(Rho - props.Rho)./Rho)</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>PP/</type>
+          <declname>1E5</declname>
+        </param>
+        <param>
+          <type>(Rho - props.Rho)./</type>
+          <declname>Rho</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="173" column="15" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="173" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a91067818c1abbc13a0f1f08dc1c8bfda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>title</definition>
+        <argsstring>(&apos;Rho:matlab - xThermal&apos;)</argsstring>
+        <name>title</name>
+        <param>
+          <type>&apos;Rho:matlab - xThermal&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="173" column="32" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="173" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a11549fa3dd314f323e1b80e3ee623f7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>(TT, PP/1E5,(H - props.H)./H)</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>PP/</type>
+          <declname>1E5</declname>
+        </param>
+        <param>
+          <type>(H - props.H)./</type>
+          <declname>H</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="174" column="15" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="174" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1aaed9ff87cf76eb906887c9f1be101e05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>title</definition>
+        <argsstring>(&apos;H:matlab - xThermal&apos;)</argsstring>
+        <name>title</name>
+        <param>
+          <type>&apos;H:matlab - xThermal&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="174" column="32" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="174" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a0c8baea24c30a88af12fbb4eeada9f5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>contourf</definition>
+        <argsstring>(TT, PP/1E5,(Mu - props.Mu)./Mu)</argsstring>
+        <name>contourf</name>
+        <param>
+          <type>TT</type>
+        </param>
+        <param>
+          <type>PP/</type>
+          <declname>1E5</declname>
+        </param>
+        <param>
+          <type>(Mu - props.Mu)./</type>
+          <declname>Mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="175" column="15" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="175" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="test__prop__TPX_8m_1a346d899b0f8e9398e93ac6f4316d49b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>title</definition>
+        <argsstring>(&apos;Mu:matlab - xThermal&apos;)</argsstring>
+        <name>title</name>
+        <param>
+          <type>&apos;Mu:matlab - xThermal&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m" line="175" column="32" declfile="Library/H2ONaCl/Matlab/test_prop_TPX.m" declline="175" declcolumn="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">%<sp/>add<sp/><ref refid="namespacexThermal" kindref="compound">xThermal</ref><sp/>path</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">addpath(</highlight><highlight class="stringliteral">&apos;/Users/zguo/MyData/Research/3_CodeProject/Hydrothermal-OpenFOAM/xThermal/Library/API/Matlab&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">addpath(</highlight><highlight class="stringliteral">&apos;/Users/zguo/MyData/Research/3_CodeProject/Hydrothermal-OpenFOAM/H2O_NaCl_EOS_Driesner_2007&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">%<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>use<sp/>shared<sp/>compiled<sp/>mex<sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">,<sp/>please<sp/>add<sp/>libxThermal.dylib,</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">%<sp/>libgsl.dylib,<sp/>libCoolProp.dylib<sp/>to<sp/>the<sp/>dynalic<sp/>library<sp/>search<sp/>path.</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">%<sp/>[PROP,props]<sp/>=<sp/>SinglePointTest(1,<sp/>100E5);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">%<sp/>[Rho,<sp/>H,<sp/>Mu,<sp/>props]<sp/>=<sp/>SinglePointTest_water(1000,100E5,</highlight><highlight class="stringliteral">&apos;IAPWS95&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">%<sp/>test_constP_H2ONaCl(100E5,<sp/></highlight><highlight class="stringliteral">&apos;IAPWS95&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">test_constX_H2ONaCl(0.1,<sp/></highlight><highlight class="stringliteral">&apos;IAPS84&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">%<sp/>[Rho,<sp/>H,<sp/>Mu,<sp/>props]<sp/>=<sp/>test_prop_Water(</highlight><highlight class="stringliteral">&apos;IAPWS95&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/>[Rho,<sp/>H,<sp/>Mu,<sp/>props]<sp/>=<sp/>SinglePointTest_water(T,P,name_EOS)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>T:<sp/>deg.C,<sp/>P:<sp/>Pa,<sp/>X:<sp/>kg/kg</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>visc_on=<sp/>1;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>rho0<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>[<sp/>Rho,<sp/>dRhodP,<sp/>H,<sp/>Mu<sp/>]<sp/>=<sp/>water_tp_IAPS84(P,T,<sp/>rho0,<sp/>1e-9,<sp/>1<sp/>);<sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/><ref refid="namespacexThermal" kindref="compound">xThermal</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>[props]<sp/>=<sp/>prop_water_TP(T+273.15,<sp/>P,<sp/>name_EOS);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/>[PROP,<sp/>props]<sp/>=<sp/>SinglePointTest(T,P,X)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>T:<sp/>deg.C,<sp/>P:<sp/>Pa,<sp/>X:<sp/>kg/kg</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>visc_on=<sp/>1;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>[<sp/>PROP<sp/>]<sp/>=<sp/>fluidprop_NaCl_PTX(P,T,X,visc_on);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/><ref refid="namespacexThermal" kindref="compound">xThermal</ref></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>props<sp/>=<sp/>prop_TPX(T<sp/>+<sp/>273.15,<sp/>P,<sp/>X);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/>test_constX_H2ONaCl(X0,<sp/>backendName)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>calculate<sp/>properties<sp/>in<sp/>pTX<sp/>space</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>visc_on<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>=<sp/>linspace(550,650,200);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>P<sp/>=<sp/>linspace(800,1000,100)*1E5;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>[TT,PP]<sp/>=<sp/>meshgrid(T,P);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>XX=TT*0<sp/>+<sp/>X0;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>tic</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>calculate</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>[<sp/>PROP<sp/>]<sp/>=<sp/>fluidprop_NaCl_PTX(<sp/>P,T,<sp/>Xw,<sp/>visc_on<sp/>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>[<sp/>PROP<sp/>]<sp/>=<sp/>fluidprop_NaCl_PTX(reshape(PP,[],1)<sp/>,<sp/>reshape(TT,[],1),<sp/>reshape(XX,[],1),visc_on);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>toc</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>plot</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>rows=3;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>cols=5;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>figure(200);clf;<sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,1);<sp/>contourf(TT,PP,reshape(PROP.Reg,size(TT)));colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;phase<sp/>region:<sp/>matlab&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,2);<sp/>contourf(TT,PP,reshape(PROP.Rho,size(TT)));colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;Rho:<sp/>matlab&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,3);<sp/>contourf(TT,PP,reshape(PROP.h,size(TT)));colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;H:<sp/>matlab&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,4);<sp/>contourf(TT,PP,reshape(PROP.mu_l,size(TT)));colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;Mu_l:<sp/>matlab&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,5);<sp/>contourf(TT,PP,reshape(PROP.mu_v,size(TT)));colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;Mu_v:<sp/>matlab&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>plot(T,<sp/>props.Rho,</highlight><highlight class="charliteral">&apos;r&apos;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&apos;LineWidth&apos;</highlight><highlight class="normal">,6);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>plot(T,<sp/>PROP.Rho,</highlight><highlight class="stringliteral">&apos;b-&apos;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&apos;LineWidth&apos;</highlight><highlight class="normal">,3);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>use<sp/><ref refid="namespacexThermal" kindref="compound">xThermal</ref><sp/>API</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>[P,X]<sp/>=<sp/>P_X_Critical(linspace(0,800,10)+273.15)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>[P,X]<sp/>=<sp/>P_X_Critical(T+273.15);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>[X_L,<sp/>X_V]<sp/>=<sp/>X_VL(T+273.15,<sp/>P,backend_name);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>[Rho_L,<sp/>Rho_V]<sp/>=<sp/>Rho_VL(T+273.15,<sp/>P,<sp/>X_L,<sp/>X_V,backend_name);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>tic</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>props<sp/>=<sp/>prop_TPX(T<sp/>+<sp/>273.15,<sp/>P,<sp/>Xw);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>props<sp/>=<sp/>prop_TPX(TT<sp/>+<sp/>273.15,<sp/>PP,<sp/>XX,<sp/>backendName);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>toc</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,6);<sp/>contourf(TT,PP,props.phase);colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;phase<sp/>region:<sp/>xThermal:PROST&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,7);<sp/>contourf(TT,PP,props.Rho);colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;Rho:<sp/>xThermal:PROST&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,8);<sp/>contourf(TT,PP,props.H);colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;H:<sp/>xThermal:PROST&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,9);<sp/>contourf(TT,PP,props.Mu_l);colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;Mu_l:<sp/>xThermal:PROST&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,10);<sp/>contourf(TT,PP,props.Mu_v);colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;Mu_v:<sp/>xThermal:PROST&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>diff</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,11);<sp/>contourf(TT,PP,(reshape(PROP.Reg,size(TT))<sp/>-<sp/>props.phase));colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;matlab<sp/>-<sp/>xThermal&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,12);<sp/>contourf(TT,PP,(reshape(PROP.Rho,size(TT))<sp/>-<sp/>props.Rho));colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;matlab<sp/>-<sp/>xThermal&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,13);<sp/>contourf(TT,PP,(reshape(PROP.h,size(TT))<sp/>-<sp/>props.H));colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;matlab<sp/>-<sp/>xThermal&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,14);<sp/>contourf(TT,PP,(reshape(PROP.mu_l,size(TT))<sp/>-<sp/>props.Mu_l));colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;matlab<sp/>-<sp/>xThermal&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,15);<sp/>contourf(TT,PP,(reshape(PROP.mu_v,size(TT))<sp/>-<sp/>props.Mu_v));colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;matlab<sp/>-<sp/>xThermal&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>hold<sp/>off;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/>test_constP_H2ONaCl(P0,<sp/>backendName)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>calculate<sp/>properties<sp/>in<sp/>pTX<sp/>space</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>visc_on<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>=<sp/>linspace(0.1,900,100);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>X<sp/>=<sp/>10.^linspace(-10,0,100);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>X<sp/>=<sp/>linspace(0.001,1,100);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>[TT,XX]<sp/>=<sp/>meshgrid(T,X);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>PP=TT*0<sp/>+<sp/>P0;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>tic</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>calculate</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>[<sp/>PROP<sp/>]<sp/>=<sp/>fluidprop_NaCl_PTX(<sp/>P,T,<sp/>Xw,<sp/>visc_on<sp/>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>[<sp/>PROP<sp/>]<sp/>=<sp/>fluidprop_NaCl_PTX(reshape(PP,[],1)<sp/>,<sp/>reshape(TT,[],1),<sp/>reshape(XX,[],1),visc_on);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>toc</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>plot</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>rows=3;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>cols=5;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>figure(200);clf;<sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,1);<sp/>contourf((XX),TT,reshape(PROP.Reg,size(TT)));colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;phase<sp/>region:<sp/>matlab&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,2);<sp/>contourf((XX),TT,reshape(PROP.Rho,size(TT)));colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;Rho:<sp/>matlab&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,3);<sp/>contourf((XX),TT,reshape(PROP.h,size(TT)));colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;H:<sp/>matlab&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,4);<sp/>contourf((XX),TT,reshape(PROP.mu_l,size(TT)));colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;Mu_l:<sp/>matlab&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,5);<sp/>contourf((XX),TT,reshape(PROP.mu_v,size(TT)));colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;Mu_v:<sp/>matlab&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>plot(T,<sp/>props.Rho,</highlight><highlight class="charliteral">&apos;r&apos;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&apos;LineWidth&apos;</highlight><highlight class="normal">,6);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>plot(T,<sp/>PROP.Rho,</highlight><highlight class="stringliteral">&apos;b-&apos;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&apos;LineWidth&apos;</highlight><highlight class="normal">,3);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>use<sp/><ref refid="namespacexThermal" kindref="compound">xThermal</ref><sp/>API</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>[P,X]<sp/>=<sp/>P_X_Critical(linspace(0,800,10)+273.15)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>[P,X]<sp/>=<sp/>P_X_Critical(T+273.15);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>[X_L,<sp/>X_V]<sp/>=<sp/>X_VL(T+273.15,<sp/>P,backend_name);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>[Rho_L,<sp/>Rho_V]<sp/>=<sp/>Rho_VL(T+273.15,<sp/>P,<sp/>X_L,<sp/>X_V,backend_name);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>tic</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>props<sp/>=<sp/>prop_TPX(T<sp/>+<sp/>273.15,<sp/>P,<sp/>Xw);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>props<sp/>=<sp/>prop_TPX(TT<sp/>+<sp/>273.15,<sp/>PP,<sp/>XX,<sp/>backendName);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>toc</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,6);<sp/>contourf((XX),TT,props.phase);colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;phase<sp/>region:<sp/>xThermal:PROST&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,7);<sp/>contourf((XX),TT,props.Rho);colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;Rho:<sp/>xThermal:PROST&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,8);<sp/>contourf((XX),TT,props.H);colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;H:<sp/>xThermal:PROST&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,9);<sp/>contourf((XX),TT,props.Mu_l);colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;Mu_l:<sp/>xThermal:PROST&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,10);<sp/>contourf((XX),TT,props.Mu_v);colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;Mu_v:<sp/>xThermal:PROST&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>diff</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,11);<sp/>contourf((XX),TT,(reshape(PROP.Reg,size(TT))<sp/>-<sp/>props.phase));colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;matlab<sp/>-<sp/>xThermal&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,12);<sp/>contourf((XX),TT,(reshape(PROP.Rho,size(TT))<sp/>-<sp/>props.Rho));colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;matlab<sp/>-<sp/>xThermal&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,13);<sp/>contourf((XX),TT,(reshape(PROP.h,size(TT))<sp/>-<sp/>props.H));colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;matlab<sp/>-<sp/>xThermal&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,14);<sp/>contourf((XX),TT,(reshape(PROP.mu_l,size(TT))<sp/>-<sp/>props.Mu_l));colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;matlab<sp/>-<sp/>xThermal&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,cols,15);<sp/>contourf((XX),TT,(reshape(PROP.mu_v,size(TT))<sp/>-<sp/>props.Mu_v));colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;matlab<sp/>-<sp/>xThermal&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>hold<sp/>off;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/>[Rho,<sp/>H,<sp/>Mu,<sp/>props]<sp/>=<sp/>test_prop_Water(name_EOS_xThermal)</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>=<sp/>linspace(0.1,1000,100);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>P<sp/>=<sp/>linspace(1,500,100)*1E5;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>[TT,PP]<sp/>=<sp/>meshgrid(T,P);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>rho0<sp/>=<sp/>TT*0<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>[<sp/>Rho,<sp/>dRhodP,<sp/>H,<sp/>Mu<sp/>]<sp/>=<sp/>water_tp_IAPS84(reshape(PP,[],1),<sp/>reshape(TT,[],1),<sp/>reshape(rho0,<sp/>[],1),<sp/>1e-9,<sp/>1<sp/>);<sp/></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>Rho<sp/>=<sp/>reshape(Rho,<sp/>size(TT));</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>H<sp/>=<sp/>reshape(H,<sp/>size(TT));</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>Mu<sp/>=<sp/>reshape(Mu,<sp/>size(TT));</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>figure(100);clf;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>rows=3;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>cols=3;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>%plot</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,<sp/>cols,<sp/>1);<sp/>contourf(TT,PP/1E5,Rho);colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;Rho:<sp/>matlab&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,<sp/>cols,<sp/>2);<sp/>contourf(TT,PP/1E5,H);colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;H:<sp/>matlab&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,<sp/>cols,<sp/>3);<sp/>contourf(TT,PP/1E5,log10(Mu));colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;Mu:<sp/>matlab&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(1,</highlight><highlight class="stringliteral">&quot;Mu_min<sp/>=<sp/>%.3E,<sp/>Mu_max<sp/>=<sp/>%.3E\n&quot;</highlight><highlight class="normal">,<sp/>min(min(Mu)),max(max(Mu)));</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>nan_Mu<sp/>=<sp/>Mu(isnan(Mu));</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>%<ref refid="namespacexThermal" kindref="compound">xThermal</ref></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>[props]<sp/>=<sp/>prop_water_TP(TT+273.15,<sp/>PP,<sp/>name_EOS_xThermal);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,<sp/>cols,<sp/>4);<sp/>contourf(TT,PP/1E5,props.Rho);colorbar;<sp/>title([</highlight><highlight class="stringliteral">&apos;Rho:<sp/>xThermal:&apos;</highlight><highlight class="normal">,name_EOS_xThermal]);<sp/></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,<sp/>cols,<sp/>5);<sp/>contourf(TT,PP/1E5,props.H);colorbar;<sp/>title([</highlight><highlight class="stringliteral">&apos;H:<sp/>xThermal:&apos;</highlight><highlight class="normal">,name_EOS_xThermal]);<sp/></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,<sp/>cols,<sp/>6);<sp/>contourf(TT,PP/1E5,log10(props.Mu));colorbar;<sp/>title([</highlight><highlight class="stringliteral">&apos;Mu:<sp/>xThermal:&apos;</highlight><highlight class="normal">,name_EOS_xThermal]);<sp/></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(1,</highlight><highlight class="stringliteral">&quot;Mu_min<sp/>=<sp/>%.3E,<sp/>Mu_max<sp/>=<sp/>%.3E\n&quot;</highlight><highlight class="normal">,<sp/>min(min(props.Mu)),max(max(props.Mu)));</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>nan_Mu_PROST<sp/>=<sp/>props.Mu(isnan(props.Mu));</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>diff</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,<sp/>cols,<sp/>7);<sp/>contourf(TT,PP/1E5,(Rho<sp/>-<sp/>props.Rho)./Rho);colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;Rho:<sp/>matlab<sp/>-<sp/>xThermal&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,<sp/>cols,<sp/>8);<sp/>contourf(TT,PP/1E5,(H<sp/>-<sp/>props.H)./H);colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;H:<sp/>matlab<sp/>-<sp/>xThermal&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>subplot(rows,<sp/>cols,<sp/>9);<sp/>contourf(TT,PP/1E5,(Mu<sp/>-<sp/>props.Mu)./Mu);colorbar;<sp/>title(</highlight><highlight class="stringliteral">&apos;Mu:<sp/>matlab<sp/>-<sp/>xThermal&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="176"><highlight class="normal">end</highlight></codeline>
+    </programlisting>
+    <location file="Library/H2ONaCl/Matlab/test_prop_TPX.m"/>
+  </compounddef>
+</doxygen>

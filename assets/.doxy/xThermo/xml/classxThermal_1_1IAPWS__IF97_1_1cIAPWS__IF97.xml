@@ -1,0 +1,1719 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97" kind="class" language="C++" prot="public">
+    <compoundname>xThermal::IAPWS_IF97::cIAPWS_IF97</compoundname>
+    <basecompoundref refid="classxThermal_1_1cxThermal" prot="public" virt="non-virtual">xThermal::cxThermal</basecompoundref>
+    <innerclass refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region1" prot="private">xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region1</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region2a" prot="private">xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2a</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region2b" prot="private">xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2b</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region2c" prot="private">xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2c</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region3a" prot="private">xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region3a</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region3b" prot="private">xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region3b</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Boundary3ab" prot="private">xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Boundary3ab</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region1" prot="private">xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region1</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region2" prot="private">xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region2</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5" prot="private">xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Table34" prot="private">xThermal::IAPWS_IF97::cIAPWS_IF97::Table34</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a69aa4c5ca6dcd7f8969cb0882dbe7a67" prot="private" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">struct</ref> xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region1</type>
+        <definition>struct xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region1 xThermal::IAPWS_IF97::cIAPWS_IF97::coeff_region1</definition>
+        <argsstring></argsstring>
+        <name>coeff_region1</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::coeff_region1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="158" column="26"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a4b2c68701371999e71ece7ff9adc5e0b" prot="private" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">struct</ref> xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region2</type>
+        <definition>struct xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region2 xThermal::IAPWS_IF97::cIAPWS_IF97::coeff_region2</definition>
+        <argsstring></argsstring>
+        <name>coeff_region2</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::coeff_region2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="198" column="26"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ad80ea2b58572dca77a4a3f123aea1813" prot="private" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">struct</ref> xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5</type>
+        <definition>struct xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5 xThermal::IAPWS_IF97::cIAPWS_IF97::coeff_region5</definition>
+        <argsstring></argsstring>
+        <name>coeff_region5</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::coeff_region5</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="217" column="26"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a1854cbe0bc02021f3648755f2220ee1f" prot="private" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">struct</ref> xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Boundary3ab</type>
+        <definition>struct xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Boundary3ab xThermal::IAPWS_IF97::cIAPWS_IF97::coeff_boundary3ab</definition>
+        <argsstring></argsstring>
+        <name>coeff_boundary3ab</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::coeff_boundary3ab</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="230" column="30"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a4ff2d1f9037f9b576e71317009af9c6c" prot="private" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">struct</ref> xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2a</type>
+        <definition>struct xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2a xThermal::IAPWS_IF97::cIAPWS_IF97::coeff_backward_T_PH_region2a</definition>
+        <argsstring></argsstring>
+        <name>coeff_backward_T_PH_region2a</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::coeff_backward_T_PH_region2a</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="258" column="41"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ab41a17d857be26d8631d61426dfd9414" prot="private" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">struct</ref> xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2b</type>
+        <definition>struct xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2b xThermal::IAPWS_IF97::cIAPWS_IF97::coeff_backward_T_PH_region2b</definition>
+        <argsstring></argsstring>
+        <name>coeff_backward_T_PH_region2b</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::coeff_backward_T_PH_region2b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="287" column="41"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a0225864f949ee31c412cb3cfb8377b29" prot="private" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">struct</ref> xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2c</type>
+        <definition>struct xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2c xThermal::IAPWS_IF97::cIAPWS_IF97::coeff_backward_T_PH_region2c</definition>
+        <argsstring></argsstring>
+        <name>coeff_backward_T_PH_region2c</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::coeff_backward_T_PH_region2c</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="308" column="41"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a1f9bb3066fb6bc94bd39965703d4175b" prot="private" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">struct</ref> xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region1</type>
+        <definition>struct xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region1 xThermal::IAPWS_IF97::cIAPWS_IF97::coeff_backward_T_PH_region1</definition>
+        <argsstring></argsstring>
+        <name>coeff_backward_T_PH_region1</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::coeff_backward_T_PH_region1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="324" column="40"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1abd3097306dc5da858d5dc5d9b55a7cf6" prot="private" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">struct</ref> xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region3a</type>
+        <definition>struct xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region3a xThermal::IAPWS_IF97::cIAPWS_IF97::coeff_backward_T_PH_region3a</definition>
+        <argsstring></argsstring>
+        <name>coeff_backward_T_PH_region3a</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::coeff_backward_T_PH_region3a</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="350" column="41"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a69f01a15374d74bf7ff3efee711f41f7" prot="private" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">struct</ref> xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region3b</type>
+        <definition>struct xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region3b xThermal::IAPWS_IF97::cIAPWS_IF97::coeff_backward_T_PH_region3b</definition>
+        <argsstring></argsstring>
+        <name>coeff_backward_T_PH_region3b</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::coeff_backward_T_PH_region3b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="376" column="41"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1af819ae3df2a29e5d5d061069b827dd69" prot="private" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">struct</ref> xThermal::IAPWS_IF97::cIAPWS_IF97::Table34</type>
+        <definition>struct xThermal::IAPWS_IF97::cIAPWS_IF97::Table34 xThermal::IAPWS_IF97::cIAPWS_IF97::table34</definition>
+        <argsstring></argsstring>
+        <name>table34</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::table34</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="388" column="20"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a3f22d5efcdde1784d76e78d7c58479b2" prot="private" static="no" mutable="no">
+        <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
+        <definition>ThermodynamicProperties xThermal::IAPWS_IF97::cIAPWS_IF97::m_prop_l</definition>
+        <argsstring></argsstring>
+        <name>m_prop_l</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::m_prop_l</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="389" column="37" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1abead8a107d6ba6e262cc6333e645da05" prot="private" static="no" mutable="no">
+        <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
+        <definition>ThermodynamicProperties xThermal::IAPWS_IF97::cIAPWS_IF97::m_prop_v</definition>
+        <argsstring></argsstring>
+        <name>m_prop_v</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::m_prop_v</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="389" column="46" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ac6b7af25d2f936e1996921f784e9c25d" prot="private" static="no" mutable="no">
+        <type><ref refid="structxThermal_1_1CONSTENTS__Thermo" kindref="compound">CONSTENTS_Thermo</ref></type>
+        <definition>CONSTENTS_Thermo xThermal::IAPWS_IF97::cIAPWS_IF97::m_constants</definition>
+        <argsstring></argsstring>
+        <name>m_constants</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::m_constants</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="390" column="30" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a9e76518d9f14ee01a2eab26e5b34ecf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xThermal::IAPWS_IF97::cIAPWS_IF97::cIAPWS_IF97</definition>
+        <argsstring>()</argsstring>
+        <name>cIAPWS_IF97</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::cIAPWS_IF97</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="392" column="13" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a21b2aab5876c74fcfe495d89f7f851eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xThermal::IAPWS_IF97::cIAPWS_IF97::~cIAPWS_IF97</definition>
+        <argsstring>()</argsstring>
+        <name>~cIAPWS_IF97</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::~cIAPWS_IF97</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="393" column="13" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a0f3f82d5f22199795eae4bd09f01ab30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Boundary_region23_P2T</definition>
+        <argsstring>(double P)</argsstring>
+        <name>Boundary_region23_P2T</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Boundary_region23_P2T</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+<para>The boundary between regions 2 and 3 (see Fig. 1) is defined by the following simple quadratic pressure-temperature relation, the B23-equation. See equation 5 of IF97. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[Pa] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="398" column="20" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a555c44d7aa217db15b6709b063fe979d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Boundary_region2b2c_P2H</definition>
+        <argsstring>(double P)</argsstring>
+        <name>Boundary_region2b2c_P2H</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Boundary_region2b2c_P2H</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+<para>Boundary between region 2b and 2c. In order to know whether the T(p,h) equation for subregion 2b or for subregion 2c has to be used for given values of p and h, a special correlation equation for the boundary between subregions 2b and 2c (which approximates s = 5.85 kJ/kg/K <ref refid="group__CONSTS__IF97_1gab39933e4949f5f42eb51687f6b2df175" kindref="member">CONST_IF97_S_Region2b2c</ref>) is needed; see Fig. 2. This boundary equation, called the B2bc-equation, is a simple quadratic pressure-enthalpy relation which reads Equation 20 of IF97. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[Pa] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double [J/kg] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="399" column="20" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="58" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a7264df04c58fcdb9d069b0af455ba21e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Boundary_region2b2c_H2P</definition>
+        <argsstring>(double H)</argsstring>
+        <name>Boundary_region2b2c_H2P</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Boundary_region2b2c_H2P</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>H</declname>
+        </param>
+        <briefdescription>
+<para>Boundary between region 2b and 2c. See also <ref refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a555c44d7aa217db15b6709b063fe979d" kindref="member">Boundary_region2b2c_P2H</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>H</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[J/kg] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double [Pa] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="400" column="20" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="69" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1aa28baed0653846d8f90160a21affd2db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Boundary_region3ab_P2H</definition>
+        <argsstring>(double P)</argsstring>
+        <name>Boundary_region3ab_P2H</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Boundary_region3ab_P2H</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+<para>Boundary between region3a and 3b. See Equation 1 and Table 2 of IF97-Region3. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This equation is only valid in P range of [#m_constants.p_critical, <ref refid="group__CONSTS__IF97_1gaf1bcbc90af1c25d83ec2bfe29d94dcbf" kindref="member">CONST_IF97_Pmax_Region1</ref>]. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[Pa] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="401" column="20" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="81" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a23eb7b407aab7aef397facda6d239b0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Boundary_region3ab_H2P</definition>
+        <argsstring>(double H)</argsstring>
+        <name>Boundary_region3ab_H2P</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Boundary_region3ab_H2P</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>H</declname>
+        </param>
+        <briefdescription>
+<para>Boundary between region3a and 3b. See Equation 10 and Table 17 of IF97-Region3. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The valid H range is <formula id="4">$ [h^{\prime}(#CONST_IF97_Tmin_Region3), h^{\prime\prime}(#CONST_IF97_Tmin_Region3)] $</formula>. See also pp.17 of IF97-Region3 . </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>H</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[J/kg] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double [Pa] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="402" column="20" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="92" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1af2502ca3ad4f78b26f314fb8b2b5f3d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::IAPWS_IF97::cIAPWS_IF97::getState_Region1</definition>
+        <argsstring>(double P, double T, State_Region1 &amp;state)</argsstring>
+        <name>getState_Region1</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::getState_Region1</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="structxThermal_1_1IAPWS__IF97_1_1State__Region1" kindref="compound">State_Region1</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Calculate Gibbs free energy and its derivatives by given pressure and temperature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[Pa] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[K] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="403" column="18" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="521" bodyend="537"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a3edc20ccaa3043bf9e79d53c4ca8bda8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Prop_Region1</definition>
+        <argsstring>(const State_Region1 &amp;state, BasicThermodynamicProperties which)</argsstring>
+        <name>Prop_Region1</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Prop_Region1</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1IAPWS__IF97_1_1State__Region1" kindref="compound">State_Region1</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>BasicThermodynamicProperties</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+<para>Calculate thermodynamic properties by given dimensionless Gibbs free energy and its derivatives for the region 1. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gamma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>which</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="404" column="20" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="617" bodyend="643"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1acd8f1a44759a7d4cb74b1ce2739c5e4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::IAPWS_IF97::cIAPWS_IF97::getState_Region2</definition>
+        <argsstring>(double P, double T, State_Region2 &amp;state)</argsstring>
+        <name>getState_Region2</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::getState_Region2</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="structxThermal_1_1IAPWS__IF97_1_1State__Region2" kindref="compound">State_Region2</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Calculate dimensionless Gibbs free energy in the region 2. ideal-gas part <formula id="7">$ \gamma^o $</formula> and the residual part <formula id="8">$ \gamma^r $</formula>. See equation 15-17 of IF97. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gammao</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gammar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="405" column="18" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="546" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1af85b602930e05368403f7b74da2fbdc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Prop_Region2</definition>
+        <argsstring>(State_Region2 state, BasicThermodynamicProperties which)</argsstring>
+        <name>Prop_Region2</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Prop_Region2</qualifiedname>
+        <param>
+          <type><ref refid="structxThermal_1_1IAPWS__IF97_1_1State__Region2" kindref="compound">State_Region2</ref></type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>BasicThermodynamicProperties</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="406" column="20" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="644" bodyend="670"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a72cf890f1651f2d0e071eba99883533b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::IAPWS_IF97::cIAPWS_IF97::getState_Region5</definition>
+        <argsstring>(double P, double T, State_Region5 &amp;state)</argsstring>
+        <name>getState_Region5</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::getState_Region5</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="structxThermal_1_1IAPWS__IF97_1_1State__Region5" kindref="compound">State_Region5</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Calculate dimensionless Gibbs free energy in the region 5. ideal-gas part <formula id="7">$ \gamma^o $</formula> and the residual part <formula id="8">$ \gamma^r $</formula>. See equation 32-34 of IF97. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="407" column="18" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="581" bodyend="609"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a6a821f29d486111d525a9a1b5b27810b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Prop_Region5</definition>
+        <argsstring>(double P, double T, State_Region5 state, BasicThermodynamicProperties which)</argsstring>
+        <name>Prop_Region5</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Prop_Region5</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="structxThermal_1_1IAPWS__IF97_1_1State__Region5" kindref="compound">State_Region5</ref></type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>BasicThermodynamicProperties</type>
+          <declname>which</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="408" column="20" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="671" bodyend="697"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ae1985598eadfdbbf50bac2bc84501324" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>int xThermal::IAPWS_IF97::cIAPWS_IF97::GetRegion_PH</definition>
+        <argsstring>(double P, double H)</argsstring>
+        <name>GetRegion_PH</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::GetRegion_PH</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>H</declname>
+        </param>
+        <briefdescription>
+<para>Calculate region index by given pressure and specific enthalpy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[Pa] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>H</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[J/kg] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="409" column="20" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="216" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1aa664758ac5103654ccfbf6636e3e66c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>int xThermal::IAPWS_IF97::cIAPWS_IF97::GetRegion_PT</definition>
+        <argsstring>(double P, double T)</argsstring>
+        <name>GetRegion_PT</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::GetRegion_PT</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>T</declname>
+        </param>
+        <briefdescription>
+<para>Calculate region index by given pressure and temperature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>In P-T space, there is no need to introduce subregions, e.g. 2a, 2b, 2c and 3a, 3b. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[Pa] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[K] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="410" column="20" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="447" bodyend="513"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a4314a8b189987ea236a3095f09a1e0a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Backward_T_PH_region1</definition>
+        <argsstring>(double P, double H)</argsstring>
+        <name>Backward_T_PH_region1</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Backward_T_PH_region1</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>H</declname>
+        </param>
+        <briefdescription>
+<para>Calculate temperature in region 1 by given P and H. See equation 11 of IF97. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[Pa] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>H</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[J/kg] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="411" column="20" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="196" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1af448d66496ad60b031a02a5cfc3fc135" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Backward_T_PH_region2a</definition>
+        <argsstring>(double P, double H)</argsstring>
+        <name>Backward_T_PH_region2a</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Backward_T_PH_region2a</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>H</declname>
+        </param>
+        <briefdescription>
+<para>Calculate saturated temperature by given pressure. Valid pressure rante if [H2O::m_constants.pmin, H2O::m_constants.p_critical] See Equation 31 and Table 34 of IF97. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[Pa] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double [K]</para>
+</simplesect>
+Calculate temperature in region 2a by given P and H</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[Pa] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>H</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[J/kg] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="412" column="20" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="116" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ab34530f52710fab39b2f0a5668c235d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Backward_T_PH_region2b</definition>
+        <argsstring>(double P, double H)</argsstring>
+        <name>Backward_T_PH_region2b</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Backward_T_PH_region2b</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>H</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="413" column="20" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="128" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a6f6f85339ba09635c56f781ec33db2ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Backward_T_PH_region2c</definition>
+        <argsstring>(double P, double H)</argsstring>
+        <name>Backward_T_PH_region2c</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Backward_T_PH_region2c</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>H</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="414" column="20" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="139" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ac6872679720c62ca2e4ad70a21e1ca12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Backward_T_PH_region3a</definition>
+        <argsstring>(double P, double H)</argsstring>
+        <name>Backward_T_PH_region3a</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Backward_T_PH_region3a</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>H</declname>
+        </param>
+        <briefdescription>
+<para>The backward equation <formula id="5">$ T_{3a}(p,h) $</formula> for subregion 3a. See equation 2 of IF97-Region3. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>H</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="415" column="20" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="158" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a585a3c768f8c0b85996ed3c96341f93a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Backward_T_PH_region3b</definition>
+        <argsstring>(double P, double H)</argsstring>
+        <name>Backward_T_PH_region3b</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Backward_T_PH_region3b</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>H</declname>
+        </param>
+        <briefdescription>
+<para>The backward equation <formula id="6">$ T_{3b}(p,h) $</formula> for subregion 3a. See equation 3 of IF97-Region3. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>H</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="416" column="20" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="177" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ad98a043dc37daf54c97fe5ff5668bde1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::T_sat_P</definition>
+        <argsstring>(const double &amp;P)</argsstring>
+        <name>T_sat_P</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::T_sat_P</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+<para>Calculate saturated temperature by given pressure. Valid pressure rante if [H2O::P_MIN, H2O::P_c] See Equation 31 and Table 34 of IF97. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[Pa] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double [K] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="418" column="20" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="704" bodyend="714"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ac64a68f3500b2a0897ff63efd0f04eb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::IAPWS_IF97::cIAPWS_IF97::H_sat_P</definition>
+        <argsstring>(const double &amp;P, double &amp;H_l, double &amp;H_v)</argsstring>
+        <name>H_sat_P</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::H_sat_P</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>H_l</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>H_v</declname>
+        </param>
+        <briefdescription>
+<para>Calculate saturated liquid enthalpy and saturated vapor enthalpy for a given P. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function is only valid in P range [#P_MIN, <ref refid="group__CONSTS__IF97_1gaa7f51dbc6b83278e23c124c1016cd9fd" kindref="member">CONST_IF97_Pmin_Region3</ref>]. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>H_l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>H_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="419" column="18" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="722" bodyend="738"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1acf5a33e4609b09abee2102ebed3f8f96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::P_sat_T</definition>
+        <argsstring>(const double &amp;T)</argsstring>
+        <name>P_sat_T</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::P_sat_T</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <briefdescription>
+<para>Calculate saturated temperature by given pressure. Valid pressure rante if [H2O::T_MIN, H2O::T_c] See Equation 30 and Table 34 of IF97. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[K] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double [Pa] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="420" column="20" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="745" bodyend="754"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a5e66fb7a1900a72a82f65dbdc244fa35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::T_PH</definition>
+        <argsstring>(const double &amp;P, const double &amp;H)</argsstring>
+        <name>T_PH</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::T_PH</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>H</declname>
+        </param>
+        <briefdescription>
+<para>Calculate temperature T by given pressure and specific enthalpy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>H</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="421" column="20" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="762" bodyend="787"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a57d9d7e21908550225de1631412f7295" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::IAPWS_IF97::cIAPWS_IF97::GetRegion_PT</definition>
+        <argsstring>(const std::vector&lt; double &gt; P, const std::vector&lt; double &gt; T, std::vector&lt; int &gt; &amp;res)</argsstring>
+        <name>GetRegion_PT</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::GetRegion_PT</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref> &gt; &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="424" column="18" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="789" bodyend="794"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ab26013b0296d39efa6fb4fa70e0ffb39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::IAPWS_IF97::cIAPWS_IF97::GetRegion_PH</definition>
+        <argsstring>(const std::vector&lt; double &gt; P, const std::vector&lt; double &gt; H, std::vector&lt; int &gt; &amp;res)</argsstring>
+        <name>GetRegion_PH</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::GetRegion_PH</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref> &gt; &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="425" column="18" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="795" bodyend="800"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ab36d191c921fb4ebc03dc0b3742330fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::IAPWS_IF97::cIAPWS_IF97::P_sat_T</definition>
+        <argsstring>(const std::vector&lt; double &gt; T, std::vector&lt; double &gt; &amp;res)</argsstring>
+        <name>P_sat_T</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::P_sat_T</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="426" column="18" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="801" bodyend="806"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a16723b33fe1b078ea1fa8fc15d5f0567" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::IAPWS_IF97::cIAPWS_IF97::T_sat_P</definition>
+        <argsstring>(const std::vector&lt; double &gt; P, std::vector&lt; double &gt; &amp;res)</argsstring>
+        <name>T_sat_P</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::T_sat_P</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="427" column="18" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="807" bodyend="812"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1aeefc127577c2962b3389264835c2b83e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::IAPWS_IF97::cIAPWS_IF97::H_sat_P</definition>
+        <argsstring>(const std::vector&lt; double &gt; P, std::vector&lt; double &gt; &amp;H_l, std::vector&lt; double &gt; &amp;H_v)</argsstring>
+        <name>H_sat_P</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::H_sat_P</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>H_l</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>H_v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="428" column="18" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="813" bodyend="819"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a8fdcae8f287ac2607e2a796794163cba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::IAPWS_IF97::cIAPWS_IF97::T_PH</definition>
+        <argsstring>(const std::vector&lt; double &gt; P, const std::vector&lt; double &gt; H, std::vector&lt; double &gt; &amp;res)</argsstring>
+        <name>T_PH</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::T_PH</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="429" column="18" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="820" bodyend="825"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a2aecf4cfee5fe043eaccf556c49841b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::IAPWS_IF97::cIAPWS_IF97::Boundary_region3ab_H2P</definition>
+        <argsstring>(const std::vector&lt; double &gt; H, std::vector&lt; double &gt; &amp;res)</argsstring>
+        <name>Boundary_region3ab_H2P</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Boundary_region3ab_H2P</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="430" column="18" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="826" bodyend="831"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ad94187c4f756765499e6a80c38acb9ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::IAPWS_IF97::cIAPWS_IF97::Boundary_region3ab_P2H</definition>
+        <argsstring>(const std::vector&lt; double &gt; P, std::vector&lt; double &gt; &amp;res)</argsstring>
+        <name>Boundary_region3ab_P2H</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Boundary_region3ab_P2H</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="431" column="18" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="832" bodyend="837"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a4d3de92fb6c14a070b24013fc6eeba5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string xThermal::IAPWS_IF97::cIAPWS_IF97::name</definition>
+        <argsstring>()</argsstring>
+        <name>name</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::name</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a41d03988aa51b30d08db19df1fca0dbd">name</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of the model </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="433" column="25" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="433" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1abfabafa793a0b828e4e5175e10cfec20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Tmin</definition>
+        <argsstring>()</argsstring>
+        <name>Tmin</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Tmin</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1aaae6d6ea6a66f48860daa4d0b6eef79a">Tmin</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the minimum temperature in K </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="434" column="20" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="434" bodyend="434"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ab7c9dcd202b4e98032beb7aa1d50547b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Tmax</definition>
+        <argsstring>()</argsstring>
+        <name>Tmax</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Tmax</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a04cebc45b1be27386dc767c7eee56ab5">Tmax</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the minimum temperature in K </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="435" column="20" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="435" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a4bd0ce575b99e9396b1bfe2bad6ad1f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::pmin</definition>
+        <argsstring>()</argsstring>
+        <name>pmin</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::pmin</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a5800a85e519e23ccfd04c11f3bbab89b">pmin</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the maximum temperature in K </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="436" column="20" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="436" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1aefdbc2d77780d635cd4e298888dd3595" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::pmax</definition>
+        <argsstring>()</argsstring>
+        <name>pmax</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::pmax</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a7cc7e8214f233b89f3952a4c6ff70a92">pmax</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the minimum pressure in Pa </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="437" column="20" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="437" bodyend="437"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a39ed22586a3055657a384587aa12d5fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Ttriple</definition>
+        <argsstring>()</argsstring>
+        <name>Ttriple</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Ttriple</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a13a75da8301c717105f456c9c7a19896">Ttriple</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the maximum pressure in Pa </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="438" column="20" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="438" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a73a3bff40919befa2ddca7ba313b7de6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::T_critical</definition>
+        <argsstring>()</argsstring>
+        <name>T_critical</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::T_critical</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1ab4b38c96c6ea4f9b6a79532a3d0edabb">T_critical</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the triple point temperature in K </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="439" column="20" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="439" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1accc73fbe300306b3424731b0ee1d2494" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::p_critical</definition>
+        <argsstring>()</argsstring>
+        <name>p_critical</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::p_critical</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a454a4e29dac7a62800c8a42ddaf98b73">p_critical</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the critical temperature in K </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="440" column="20" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="440" bodyend="440"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a6e24988d15cfeccdb5c04d91fa12eda2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::rhomass_critical</definition>
+        <argsstring>()</argsstring>
+        <name>rhomass_critical</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::rhomass_critical</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a5a3ef49d78de8a82b7333b2bfc382e97">rhomass_critical</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the critical pressure in Pa </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="441" column="20" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="441" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a113ef536e50cc1cc58c1a81bd79fa558" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::molar_mass</definition>
+        <argsstring>()</argsstring>
+        <name>molar_mass</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::molar_mass</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1ac63458e41ee8729b7fff59cb23e91353">molar_mass</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the critical mass density in <formula id="3">$ kg/m^3 $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="442" column="20" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="442" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a84fd9d62d4fb40cec329414dc54d6bcb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::IAPWS_IF97::cIAPWS_IF97::UpdateState_TP</definition>
+        <argsstring>(ThermodynamicProperties &amp;props, const double &amp;T, const double &amp;p)</argsstring>
+        <name>UpdateState_TP</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::UpdateState_TP</qualifiedname>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> &amp;</type>
+          <declname>props</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the molar mass in kg/mol </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="444" column="18" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="444" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a7c50e7cf051ef4fa8fb545b586b0d039" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Boiling_p</definition>
+        <argsstring>(const double &amp;T)</argsstring>
+        <name>Boiling_p</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Boiling_p</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a872af1d919899a42bb3ce8d973c117b7">Boiling_p</reimplements>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate boiling pressure [Pa] of water for a given T [K] <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="445" column="20" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="445" bodyend="445"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1adc02b0a4f315a96e940e5ca0e864ee28" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::IAPWS_IF97::cIAPWS_IF97::initialize_data</definition>
+        <argsstring>()</argsstring>
+        <name>initialize_data</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::initialize_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="395" column="18" bodyfile="Library/H2O/IAPWS-IF97.cpp" bodystart="18" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>xThermal::IAPWS_IF97::cIAPWS_IF97</label>
+        <link refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>xThermal::cxThermal</label>
+        <link refid="classxThermal_1_1cxThermal"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>xThermal::IAPWS_IF97::cIAPWS_IF97</label>
+        <link refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>xThermal::cxThermal</label>
+        <link refid="classxThermal_1_1cxThermal"/>
+      </node>
+    </collaborationgraph>
+    <location file="Library/H2O/IAPWS-IF97.h" line="130" column="9" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="131" bodyend="446"/>
+    <listofallmembers>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a4314a8b189987ea236a3095f09a1e0a0" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Backward_T_PH_region1</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1af448d66496ad60b031a02a5cfc3fc135" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Backward_T_PH_region2a</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ab34530f52710fab39b2f0a5668c235d0" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Backward_T_PH_region2b</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a6f6f85339ba09635c56f781ec33db2ef" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Backward_T_PH_region2c</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ac6872679720c62ca2e4ad70a21e1ca12" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Backward_T_PH_region3a</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a585a3c768f8c0b85996ed3c96341f93a" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Backward_T_PH_region3b</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a7c50e7cf051ef4fa8fb545b586b0d039" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Boiling_p</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a85bd89ebf43267eadc91d8bcbb3ca7e0" prot="public" virt="virtual" ambiguityscope="xThermal::cxThermal::"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Boiling_p</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a426c0796ffc4b4810ccb309067433e55" prot="public" virt="virtual" ambiguityscope="xThermal::cxThermal::"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Boiling_p</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a49daf6499acf6dc965fbe396a4ce4897" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Boiling_p_props</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a1dc4226ef05683a6596d59833ab65d44" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Boiling_T</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a50d71178278a67ccad67316f8d9d99d3" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Boiling_T</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a5e60254d3b64b561693f0d01aa2e272f" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Boiling_T</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ac824ca28cf0c5e4884bf692f8e313e1f" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Boiling_T_props</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a0f3f82d5f22199795eae4bd09f01ab30" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Boundary_region23_P2T</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a7264df04c58fcdb9d069b0af455ba21e" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Boundary_region2b2c_H2P</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a555c44d7aa217db15b6709b063fe979d" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Boundary_region2b2c_P2H</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a23eb7b407aab7aef397facda6d239b0d" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Boundary_region3ab_H2P</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a2aecf4cfee5fe043eaccf556c49841b9" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Boundary_region3ab_H2P</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1aa28baed0653846d8f90160a21affd2db" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Boundary_region3ab_P2H</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ad94187c4f756765499e6a80c38acb9ef" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Boundary_region3ab_P2H</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a9e76518d9f14ee01a2eab26e5b34ecf9" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>cIAPWS_IF97</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a1f9bb3066fb6bc94bd39965703d4175b" prot="private" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>coeff_backward_T_PH_region1</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a4ff2d1f9037f9b576e71317009af9c6c" prot="private" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>coeff_backward_T_PH_region2a</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ab41a17d857be26d8631d61426dfd9414" prot="private" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>coeff_backward_T_PH_region2b</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a0225864f949ee31c412cb3cfb8377b29" prot="private" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>coeff_backward_T_PH_region2c</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1abd3097306dc5da858d5dc5d9b55a7cf6" prot="private" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>coeff_backward_T_PH_region3a</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a69f01a15374d74bf7ff3efee711f41f7" prot="private" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>coeff_backward_T_PH_region3b</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a1854cbe0bc02021f3648755f2220ee1f" prot="private" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>coeff_boundary3ab</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a69aa4c5ca6dcd7f8969cb0882dbe7a67" prot="private" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>coeff_region1</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a4b2c68701371999e71ece7ff9adc5e0b" prot="private" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>coeff_region2</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ad80ea2b58572dca77a4a3f123aea1813" prot="private" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>coeff_region5</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ad4bb785d01a6aac083e1e3c481b1e485" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>createLUT_2D</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a26dd1d5506a4a837b03137fc8084dd7c" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>createLUT_2D</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ad2d8ab7263231e60593e889815b0c46f" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>createLUT_3D</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a35bccaf5cb9424b49117a7c288d5c510" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>createLUT_3D</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a2314586579c4061048c886be74236db7" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>cxThermal</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a056253dca6d9635e19acc2380f7f682e" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>findPhaseRegion_TPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a1fadd87926ebe880d3273ea3b2a930f6" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>get_dim_lut</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a5004c02f781d224121fed323d2e7fdb6" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>get_dim_lut_lookup</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a7517c9dee29f395abb315bfc75d2ec05" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>get_num_threads</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ab10e4e206240690a92ce59c44bcb74f2" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>get_pLUT</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ae562806cfcaff5aa82512d2858144564" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>get_pLUT_lookup</name></member>
+      <member refid="classxThermal_1_1cxThermal_1aab0b032c6538401c6f9cfbe4c467d4b8" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>get_UpdateWhichProps</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a4be2a8d169afbe20f14b5ca6c06ab9cc" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>getLutInfo</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ae1985598eadfdbbf50bac2bc84501324" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>GetRegion_PH</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ab26013b0296d39efa6fb4fa70e0ffb39" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>GetRegion_PH</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1aa664758ac5103654ccfbf6636e3e66c3" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>GetRegion_PT</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a57d9d7e21908550225de1631412f7295" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>GetRegion_PT</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1af2502ca3ad4f78b26f314fb8b2b5f3d0" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>getState_Region1</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1acd8f1a44759a7d4cb74b1ce2739c5e4d" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>getState_Region2</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a72cf890f1651f2d0e071eba99883533b" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>getState_Region5</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ac64a68f3500b2a0897ff63efd0f04eb9" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>H_sat_P</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1aeefc127577c2962b3389264835c2b83e" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>H_sat_P</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1adc02b0a4f315a96e940e5ca0e864ee28" prot="private" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>initialize_data</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ac5f99481c6cd9da1089920870f5884f9" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>linspace</name></member>
+      <member refid="classxThermal_1_1cxThermal_1aaedbcb53b296a96b1e65a1247e859c94" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>linspace</name></member>
+      <member refid="classxThermal_1_1cxThermal_1abea9131853ebea3cf40745470e9893d5" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>loadLUT</name></member>
+      <member refid="classxThermal_1_1cxThermal_1aa8d2dbcb90e5c336e3c92554659759ac" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>lookup</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a17f4d34888919db43c7f5cfde5800f79" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>lookup</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a26f3394bb36fd9462882e8783b87496c" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>lookup</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a6577db0fac8ac9d1c55933d4d7d270f8" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>lookup</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a6bb528c3c3dfd646e0fb762edbf88fd1" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>lookup_only</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a415cc702ea606481ebbf8d33ad982709" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>lookup_only</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ac6b7af25d2f936e1996921f784e9c25d" prot="private" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>m_constants</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ac9e985e8dc2959d6c8537229a60696ee" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>m_isShowProgressBar</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a3f22d5efcdde1784d76e78d7c58479b2" prot="private" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>m_prop_l</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1abead8a107d6ba6e262cc6333e645da05" prot="private" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>m_prop_v</name></member>
+      <member refid="classxThermal_1_1cxThermal_1adb79d590bd8c3a980a215c1a9762cbac" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>max_vector</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a9e116b0051d1d7171a41fc116f6c43ff" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>mean_vector</name></member>
+      <member refid="classxThermal_1_1cxThermal_1af3b3b4ad31b34288c94903d19c540c7b" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>meshgrid</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ab445f14e450a7bab32910860f48697d1" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>min_vector</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a113ef536e50cc1cc58c1a81bd79fa558" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>molar_mass</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a4d3de92fb6c14a070b24013fc6eeba5c" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>name</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a100ba0ae27d311a3726e53cf4671aee1" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>normalizePhaseBoundaries</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1accc73fbe300306b3424731b0ee1d2494" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>p_critical</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1acf5a33e4609b09abee2102ebed3f8f96" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>P_sat_T</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ab36d191c921fb4ebc03dc0b3742330fb" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>P_sat_T</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ad2a2c4793c91176e05bd41705fe9afd3" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>phase_name</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1aefdbc2d77780d635cd4e298888dd3595" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>pmax</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a4bd0ce575b99e9396b1bfe2bad6ad1f1" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>pmin</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a3edc20ccaa3043bf9e79d53c4ca8bda8" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Prop_Region1</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1af85b602930e05368403f7b74da2fbdc1" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Prop_Region2</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a6a821f29d486111d525a9a1b5b27810b" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Prop_Region5</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a1a54bed7b543424948282e9c8d53d8e9" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Rho_lookup</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a6e24988d15cfeccdb5c04d91fa12eda2" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>rhomass_critical</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a3aaf46ee7758d1fd49ca0201cefdf4b2" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>rhomolar_critical</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a20ff092e4c13c13abb16b58a05b6c73d" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>save_lut_to_binary</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a76b25e7264dfa903b2c77f7ac1cca6d4" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>save_lut_to_vtk</name></member>
+      <member refid="classxThermal_1_1cxThermal_1acd77431d0c19b2367db797381c2378ff" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>set_num_threads</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ad65432e862bd77c4fd116598f8ed74f4" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>showProgressBar</name></member>
+      <member refid="classxThermal_1_1cxThermal_1afef0be88b200e99935b46e535c5754ae" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>sum_vector</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a73a3bff40919befa2ddca7ba313b7de6" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>T_critical</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a5e66fb7a1900a72a82f65dbdc244fa35" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>T_PH</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a8fdcae8f287ac2607e2a796794163cba" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>T_PH</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ad98a043dc37daf54c97fe5ff5668bde1" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>T_sat_P</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a16723b33fe1b078ea1fa8fc15d5f0567" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>T_sat_P</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1af819ae3df2a29e5d5d061069b827dd69" prot="private" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>table34</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ab7c9dcd202b4e98032beb7aa1d50547b" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Tmax</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1abfabafa793a0b828e4e5175e10cfec20" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Tmin</name></member>
+      <member refid="classxThermal_1_1cxThermal_1add580814bcf501ea557a03b7eac042bd" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Triangulation</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a39ed22586a3055657a384587aa12d5fb" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Ttriple</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ac1094a81aa03a8856a5299b1f588f547" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a5c0e0ff376db670fffd97808b39eb1a0" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a7a9db3f1c95f91044b59478cef3c5a14" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a889b6fb0deadb20dacd44338a1c4a144" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a84fd9d62d4fb40cec329414dc54d6bcb" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>UpdateState_TP</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a3d7c1b12767a6348b6d291e708ec0a5e" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1afe86ef340ece855c4aa01ed160aa5e2c" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a929aa6a64ac637437b0a409ffa379aab" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a89ce494a32e38aafb64abd36fdf67229" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a8349d4a9fd155cc40963b1cac6dcc003" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>validateFluid</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a2da135b28df9f19644be7d405bbe9509" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>writeLine2VTU</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ab803d85ba54f23bd952f2b0dddaf4771" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>writeMeshGrid2VTK</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a8b93eee1a5d36c6cedaa33dd3f8e93a6" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>writePhaseBoundaries2VTU</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a7d21c71bc4fee7d64d08a907a2922fe2" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>writeTriMesh2Txt</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a774e75ede316e2cf1151998b7e716094" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>writeXXYYZZ2VTU</name></member>
+      <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a21b2aab5876c74fcfe495d89f7f851eb" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>~cIAPWS_IF97</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ac7feaf94672b8ee16a914b76cedb1ff9" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>~cxThermal</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

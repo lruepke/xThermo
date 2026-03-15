@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__GENERAL__CONSTS" kind="group">
+    <compoundname>GENERAL_CONSTS</compoundname>
+    <title>Some general constants definition.</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__GENERAL__CONSTS_1ga366c57afacdbc6e90ea5a37fb276c8a1" prot="public" static="no">
+        <name>LENGTH_CHAR_NAME</name>
+        <initializer>100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Char array length of a name, e.g. density </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="29" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

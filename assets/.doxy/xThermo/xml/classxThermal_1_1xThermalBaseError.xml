@@ -1,0 +1,640 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classxThermal_1_1xThermalBaseError" kind="class" language="C++" prot="public">
+    <compoundname>xThermal::xThermalBaseError</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::exception</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">std::exception</basecompoundref>
+    <derivedcompoundref refid="classxThermal_1_1xThermalError" prot="public" virt="non-virtual">xThermal::xThermalError&lt; errcode &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classxThermal_1_1xThermalError" prot="public" virt="non-virtual">xThermal::xThermalError&lt; errcode &gt;</derivedcompoundref>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ErrCode</name>
+        <qualifiedname>xThermal::xThermalBaseError::ErrCode</qualifiedname>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a51330bea6b245fd064be88719a3ac679" prot="public">
+          <name>eNotImplemented</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a693cfb84310ccad3954f2cdceda08267" prot="public">
+          <name>eSolution</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a7f4bcebfd533fe07b2cfdd3b9c2ae0ea" prot="public">
+          <name>eAttribute</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a0094b4cc3602597e01c5dda046cf6e15" prot="public">
+          <name>eOutOfRange</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a268d7c5edfb918620fb38ef74d0d0014" prot="public">
+          <name>eValue</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a5587072478d0a62dcdd3de822993ee2e" prot="public">
+          <name>eWrongFluid</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a8c6213c04a3bc370e5fd5d1a38176be7" prot="public">
+          <name>eComposition</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153ab7e7b084c802727f35a41747ec6f7589" prot="public">
+          <name>eInput</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a9bc16f4ffb4e95f89ea081fb53d44256" prot="public">
+          <name>eNotAvailable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153ab80e9356038a5890d627202c127fb667" prot="public">
+          <name>eHandle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a6c4556742f12d6c47feab984561f6643" prot="public">
+          <name>eKey</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153aba3607ac177c2e58e0ad376f10f8002b" prot="public">
+          <name>eUnableToLoad</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153aed28b213de5c642f9479e9e10fd8f2e6" prot="public">
+          <name>eDirectorySize</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a51330bea6b245fd064be88719a3ac679" prot="public">
+          <name>eNotImplemented</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a693cfb84310ccad3954f2cdceda08267" prot="public">
+          <name>eSolution</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a7f4bcebfd533fe07b2cfdd3b9c2ae0ea" prot="public">
+          <name>eAttribute</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a0094b4cc3602597e01c5dda046cf6e15" prot="public">
+          <name>eOutOfRange</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a268d7c5edfb918620fb38ef74d0d0014" prot="public">
+          <name>eValue</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a5587072478d0a62dcdd3de822993ee2e" prot="public">
+          <name>eWrongFluid</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a8c6213c04a3bc370e5fd5d1a38176be7" prot="public">
+          <name>eComposition</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153ab7e7b084c802727f35a41747ec6f7589" prot="public">
+          <name>eInput</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a9bc16f4ffb4e95f89ea081fb53d44256" prot="public">
+          <name>eNotAvailable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153ab80e9356038a5890d627202c127fb667" prot="public">
+          <name>eHandle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a6c4556742f12d6c47feab984561f6643" prot="public">
+          <name>eKey</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153aba3607ac177c2e58e0ad376f10f8002b" prot="public">
+          <name>eUnableToLoad</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153aed28b213de5c642f9479e9e10fd8f2e6" prot="public">
+          <name>eDirectorySize</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/Exception.h" line="15" column="5" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="enum" id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ErrCode</name>
+        <qualifiedname>xThermal::xThermalBaseError::ErrCode</qualifiedname>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a51330bea6b245fd064be88719a3ac679" prot="public">
+          <name>eNotImplemented</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a693cfb84310ccad3954f2cdceda08267" prot="public">
+          <name>eSolution</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a7f4bcebfd533fe07b2cfdd3b9c2ae0ea" prot="public">
+          <name>eAttribute</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a0094b4cc3602597e01c5dda046cf6e15" prot="public">
+          <name>eOutOfRange</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a268d7c5edfb918620fb38ef74d0d0014" prot="public">
+          <name>eValue</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a5587072478d0a62dcdd3de822993ee2e" prot="public">
+          <name>eWrongFluid</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a8c6213c04a3bc370e5fd5d1a38176be7" prot="public">
+          <name>eComposition</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153ab7e7b084c802727f35a41747ec6f7589" prot="public">
+          <name>eInput</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a9bc16f4ffb4e95f89ea081fb53d44256" prot="public">
+          <name>eNotAvailable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153ab80e9356038a5890d627202c127fb667" prot="public">
+          <name>eHandle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a6c4556742f12d6c47feab984561f6643" prot="public">
+          <name>eKey</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153aba3607ac177c2e58e0ad376f10f8002b" prot="public">
+          <name>eUnableToLoad</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153aed28b213de5c642f9479e9e10fd8f2e6" prot="public">
+          <name>eDirectorySize</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a51330bea6b245fd064be88719a3ac679" prot="public">
+          <name>eNotImplemented</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a693cfb84310ccad3954f2cdceda08267" prot="public">
+          <name>eSolution</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a7f4bcebfd533fe07b2cfdd3b9c2ae0ea" prot="public">
+          <name>eAttribute</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a0094b4cc3602597e01c5dda046cf6e15" prot="public">
+          <name>eOutOfRange</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a268d7c5edfb918620fb38ef74d0d0014" prot="public">
+          <name>eValue</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a5587072478d0a62dcdd3de822993ee2e" prot="public">
+          <name>eWrongFluid</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a8c6213c04a3bc370e5fd5d1a38176be7" prot="public">
+          <name>eComposition</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153ab7e7b084c802727f35a41747ec6f7589" prot="public">
+          <name>eInput</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a9bc16f4ffb4e95f89ea081fb53d44256" prot="public">
+          <name>eNotAvailable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153ab80e9356038a5890d627202c127fb667" prot="public">
+          <name>eHandle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a6c4556742f12d6c47feab984561f6643" prot="public">
+          <name>eKey</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153aba3607ac177c2e58e0ad376f10f8002b" prot="public">
+          <name>eUnableToLoad</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153aed28b213de5c642f9479e9e10fd8f2e6" prot="public">
+          <name>eDirectorySize</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/Exception.h" line="15" column="5" bodyfile="Library/thermo/Exception.h" bodystart="15" bodyend="15"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxThermal_1_1xThermalBaseError_1a16b318192105d61b54382329891ea88e" prot="private" static="no" mutable="no">
+        <type>ErrCode</type>
+        <definition>ErrCode xThermal::xThermalBaseError::m_code</definition>
+        <argsstring></argsstring>
+        <name>m_code</name>
+        <qualifiedname>xThermal::xThermalBaseError::m_code</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/Exception.h" line="21" column="13" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1xThermalBaseError_1a3a623e4ff9936a4246e36dc26023a23c" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string xThermal::xThermalBaseError::m_err</definition>
+        <argsstring></argsstring>
+        <name>m_err</name>
+        <qualifiedname>xThermal::xThermalBaseError::m_err</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/Exception.h" line="22" column="17" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxThermal_1_1xThermalBaseError_1aaa934332c42daa025227c061058572e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xThermal::xThermalBaseError::xThermalBaseError</definition>
+        <argsstring>(const std::string &amp;err, ErrCode code)</argsstring>
+        <name>xThermalBaseError</name>
+        <qualifiedname>xThermal::xThermalBaseError::xThermalBaseError</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::string &amp;</type>
+          <declname>err</declname>
+        </param>
+        <param>
+          <type>ErrCode</type>
+          <declname>code</declname>
+        </param>
+        <exceptions> <ref refid="classxThermal_1_1xThermalError" kindref="compound">throw</ref> ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/Exception.h" line="16" column="5" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1xThermalBaseError_1aee3d71c4c52ba1a81d417c48171cca2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xThermal::xThermalBaseError::~xThermalBaseError</definition>
+        <argsstring>()</argsstring>
+        <name>~xThermalBaseError</name>
+        <qualifiedname>xThermal::xThermalBaseError::~xThermalBaseError</qualifiedname>
+        <exceptions> <ref refid="classxThermal_1_1xThermalError" kindref="compound">throw</ref> ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/Exception.h" line="17" column="5" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1xThermalBaseError_1a81994a5080e39b59835b93067ff714e8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">char</ref> *</type>
+        <definition>virtual const char * xThermal::xThermalBaseError::what</definition>
+        <argsstring>() const</argsstring>
+        <name>what</name>
+        <qualifiedname>xThermal::xThermalBaseError::what</qualifiedname>
+        <exceptions> <ref refid="classxThermal_1_1xThermalError" kindref="compound">throw</ref> ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/Exception.h" line="18" column="24" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1xThermalBaseError_1af141fbaddd530708ed1fb2e256f50b6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ErrCode</type>
+        <definition>ErrCode xThermal::xThermalBaseError::code</definition>
+        <argsstring>()</argsstring>
+        <name>code</name>
+        <qualifiedname>xThermal::xThermalBaseError::code</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/Exception.h" line="19" column="13" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1xThermalBaseError_1aaa934332c42daa025227c061058572e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xThermal::xThermalBaseError::xThermalBaseError</definition>
+        <argsstring>(const std::string &amp;err, ErrCode code)</argsstring>
+        <name>xThermalBaseError</name>
+        <qualifiedname>xThermal::xThermalBaseError::xThermalBaseError</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::string &amp;</type>
+          <declname>err</declname>
+        </param>
+        <param>
+          <type>ErrCode</type>
+          <declname>code</declname>
+        </param>
+        <exceptions> <ref refid="classxThermal_1_1xThermalError" kindref="compound">throw</ref> ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/Exception.h" line="16" column="5" bodyfile="Library/thermo/Exception.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1xThermalBaseError_1aee3d71c4c52ba1a81d417c48171cca2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xThermal::xThermalBaseError::~xThermalBaseError</definition>
+        <argsstring>()</argsstring>
+        <name>~xThermalBaseError</name>
+        <qualifiedname>xThermal::xThermalBaseError::~xThermalBaseError</qualifiedname>
+        <exceptions> <ref refid="classxThermal_1_1xThermalError" kindref="compound">throw</ref> ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/Exception.h" line="17" column="5" bodyfile="Library/thermo/Exception.h" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1xThermalBaseError_1a81994a5080e39b59835b93067ff714e8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">char</ref> *</type>
+        <definition>virtual const char * xThermal::xThermalBaseError::what</definition>
+        <argsstring>() const</argsstring>
+        <name>what</name>
+        <qualifiedname>xThermal::xThermalBaseError::what</qualifiedname>
+        <exceptions> <ref refid="classxThermal_1_1xThermalError" kindref="compound">throw</ref> ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/Exception.h" line="18" column="24" bodyfile="Library/thermo/Exception.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1xThermalBaseError_1af141fbaddd530708ed1fb2e256f50b6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ErrCode</type>
+        <definition>ErrCode xThermal::xThermalBaseError::code</definition>
+        <argsstring>()</argsstring>
+        <name>code</name>
+        <qualifiedname>xThermal::xThermalBaseError::code</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/Exception.h" line="19" column="13" bodyfile="Library/thermo/Exception.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>std::exception</label>
+      </node>
+      <node id="4">
+        <label>xThermal::ValueErrorSpec&lt; errcode &gt;</label>
+        <link refid="classxThermal_1_1ValueErrorSpec"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>xThermal::xThermalBaseError</label>
+        <link refid="classxThermal_1_1xThermalBaseError"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>xThermal::xThermalError&lt; errcode &gt;</label>
+        <link refid="classxThermal_1_1xThermalError"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>std::exception</label>
+      </node>
+      <node id="1">
+        <label>xThermal::xThermalBaseError</label>
+        <link refid="classxThermal_1_1xThermalBaseError"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Library/test/test_templateClass/Exception.h" line="12" column="1" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="13" bodyend="23"/>
+    <listofallmembers>
+      <member refid="classxThermal_1_1xThermalBaseError_1af141fbaddd530708ed1fb2e256f50b6b" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>code</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1af141fbaddd530708ed1fb2e256f50b6b" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>code</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a7f4bcebfd533fe07b2cfdd3b9c2ae0ea" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>eAttribute</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a8c6213c04a3bc370e5fd5d1a38176be7" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>eComposition</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153aed28b213de5c642f9479e9e10fd8f2e6" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>eDirectorySize</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153ab80e9356038a5890d627202c127fb667" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>eHandle</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153ab7e7b084c802727f35a41747ec6f7589" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>eInput</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a6c4556742f12d6c47feab984561f6643" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>eKey</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a9bc16f4ffb4e95f89ea081fb53d44256" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>eNotAvailable</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a51330bea6b245fd064be88719a3ac679" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>eNotImplemented</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a0094b4cc3602597e01c5dda046cf6e15" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>eOutOfRange</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>ErrCode</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>ErrCode</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a693cfb84310ccad3954f2cdceda08267" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>eSolution</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153aba3607ac177c2e58e0ad376f10f8002b" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>eUnableToLoad</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a268d7c5edfb918620fb38ef74d0d0014" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>eValue</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a5587072478d0a62dcdd3de822993ee2e" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>eWrongFluid</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a16b318192105d61b54382329891ea88e" prot="private" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>m_code</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a3a623e4ff9936a4246e36dc26023a23c" prot="private" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>m_err</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a81994a5080e39b59835b93067ff714e8" prot="public" virt="virtual"><scope>xThermal::xThermalBaseError</scope><name>what</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a81994a5080e39b59835b93067ff714e8" prot="public" virt="virtual"><scope>xThermal::xThermalBaseError</scope><name>what</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1aaa934332c42daa025227c061058572e4" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>xThermalBaseError</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1aaa934332c42daa025227c061058572e4" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>xThermalBaseError</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1aee3d71c4c52ba1a81d417c48171cca2a" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>~xThermalBaseError</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1aee3d71c4c52ba1a81d417c48171cca2a" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>~xThermalBaseError</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

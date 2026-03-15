@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_d760ccf1b5c74bc66b0c51c2e0ac61aa" kind="dir">
+    <compoundname>Library/thermo</compoundname>
+    <innerfile refid="DataStructures_8h">DataStructures.h</innerfile>
+    <innerfile refid="thermo_2Exception_8h">Exception.h</innerfile>
+    <innerfile refid="MultiProgressBar_8cpp">MultiProgressBar.cpp</innerfile>
+    <innerfile refid="MultiProgressBar_8h">MultiProgressBar.h</innerfile>
+    <innerfile refid="stdfunc_8cpp">stdfunc.cpp</innerfile>
+    <innerfile refid="thermo_8cpp">thermo.cpp</innerfile>
+    <innerfile refid="thermo_8h">thermo.h</innerfile>
+    <innerfile refid="triangle_8cpp">triangle.cpp</innerfile>
+    <innerfile refid="triangle_8h">triangle.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/thermo/"/>
+  </compounddef>
+</doxygen>

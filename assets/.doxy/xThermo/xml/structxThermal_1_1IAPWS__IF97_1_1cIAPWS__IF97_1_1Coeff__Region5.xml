@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5" kind="struct" language="C++" prot="private">
+    <compoundname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5_1a5a57fe3317e52d535177939247f1257a" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>const int xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5::numr</definition>
+        <argsstring></argsstring>
+        <name>numr</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5::numr</qualifiedname>
+        <initializer>= 6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="205" column="27" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5_1a108ae66c325c44d9aaec5a70bcc3cb27" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>const int xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5::numo</definition>
+        <argsstring></argsstring>
+        <name>numo</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5::numo</qualifiedname>
+        <initializer>= 6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="205" column="33" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5_1a20ceee4374dd302281e2fa9c3aa7ed42" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5::Jo[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>Jo</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5::Jo</qualifiedname>
+        <initializer>= {0, 1, -3, -2, -1, 2}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="207" column="24" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="207" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5_1a7c02a6470f3edf829a95ff20a8f965e6" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5::no[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>no</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5::no</qualifiedname>
+        <initializer>= {-0.13179983674201<ref refid="classxThermal_1_1xThermalError" kindref="compound">e2</ref>, 0.68540841634434<ref refid="classxThermal_1_1xThermalError" kindref="compound">e1</ref>, -0.24805148933466<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-1,
+                                0.36901534980333, -0.31161318213925<ref refid="classxThermal_1_1xThermalError" kindref="compound">e1</ref>, -0.32961626538917}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="208" column="24" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="208" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5_1add380ce4ef51a34864ba415e9359aee8" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5::Ir[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>Ir</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5::Ir</qualifiedname>
+        <initializer>= {1, 1, 1, 2, 2, 3}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="211" column="24" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="211" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5_1a644b6b049f810c6f1c988c78c964b93b" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5::Jr[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>Jr</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5::Jr</qualifiedname>
+        <initializer>= {1, 2, 3, 3, 9, 7}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="212" column="24" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="212" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5_1a7e2c93d47ee87cbaa783a507c653f6f5" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5::nr[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>nr</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5::nr</qualifiedname>
+        <initializer>= {0.15736404855259<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-2, 0.90153761673944<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-3, -0.50270077677648<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-2,
+                                0.22440037409485<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-5, -0.41163275453471<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-5, 0.37919454822955<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-7}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="213" column="24" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="213" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5_1a05bb3ce2e9a4261bf2f3cbde4c49d798" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5::TStar</definition>
+        <argsstring></argsstring>
+        <name>TStar</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5::TStar</qualifiedname>
+        <initializer>= 1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="215" column="24" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5_1a6feb9097dde380cd90be8c15e1d3826f" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5::pStar</definition>
+        <argsstring></argsstring>
+        <name>pStar</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5::pStar</qualifiedname>
+        <initializer>= 1<ref refid="classxThermal_1_1xThermalError" kindref="compound">E6</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="216" column="24" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Numerical values of the coefficients and exponents of the residual part  r of the dimensionless Gibbs free energy for region 5. See Table 37, 38 in IF97. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/H2O/IAPWS-IF97.h" line="203" column="13" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="204" bodyend="217"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5_1add380ce4ef51a34864ba415e9359aee8" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5</scope><name>Ir</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5_1a20ceee4374dd302281e2fa9c3aa7ed42" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5</scope><name>Jo</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5_1a644b6b049f810c6f1c988c78c964b93b" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5</scope><name>Jr</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5_1a7c02a6470f3edf829a95ff20a8f965e6" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5</scope><name>no</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5_1a7e2c93d47ee87cbaa783a507c653f6f5" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5</scope><name>nr</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5_1a108ae66c325c44d9aaec5a70bcc3cb27" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5</scope><name>numo</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5_1a5a57fe3317e52d535177939247f1257a" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5</scope><name>numr</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5_1a6feb9097dde380cd90be8c15e1d3826f" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5</scope><name>pStar</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5_1a05bb3ce2e9a4261bf2f3cbde4c49d798" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Region5</scope><name>TStar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

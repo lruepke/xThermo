@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacexThermal_1_1NaCl" kind="namespace" language="C++">
+    <compoundname>xThermal::NaCl</compoundname>
+    <innerclass refid="classxThermal_1_1NaCl_1_1cNaCl" prot="public">xThermal::NaCl::cNaCl</innerclass>
+    <innerclass refid="structxThermal_1_1NaCl_1_1Coeff__H" prot="public">xThermal::NaCl::Coeff_H</innerclass>
+    <innerclass refid="structxThermal_1_1NaCl_1_1Coeff__Rho" prot="public">xThermal::NaCl::Coeff_Rho</innerclass>
+    <innerclass refid="structxThermal_1_1NaCl_1_1H__halite__ref" prot="public">xThermal::NaCl::H_halite_ref</innerclass>
+    <sectiondef kind="var">
+      <member refid="group__CONSTANTS__NACL_1ga594734cb4396d00b20dfd9396dd30dd4" kind="variable"><name>M</name></member>
+      <member refid="group__CONSTANTS__NACL_1gae5fa9537dda226d5bed112833fd82c06" kind="variable"><name>T_Triple_C</name></member>
+      <member refid="group__CONSTANTS__NACL_1ga9def8aa756db28729db5bcc381fa40a6" kind="variable"><name>T_Triple</name></member>
+      <member refid="group__CONSTANTS__NACL_1gadf2b6f27d28e1bbe8b94b2bc9851e96c" kind="variable"><name>P_Triple</name></member>
+      <member refid="group__CONSTANTS__NACL_1ga762756a95d44ca849a9f4c8f067a2721" kind="variable"><name>log10_P_Triple</name></member>
+      <member refid="group__CONSTANTS__NACL_1ga2e9aa2e52c1333eff48c460ee58998e8" kind="variable"><name>inv_T_Triple</name></member>
+      <member refid="group__CONSTANTS__NACL_1gaffc54375ab9dc40dc0fcf56bdef2af9f" kind="variable"><name>T_Triple_sqr</name></member>
+      <member refid="group__CONSTANTS__NACL_1ga594deeecc64e442aee890678a54f3568" kind="variable"><name>T_Triple_sqr_C</name></member>
+      <member refid="group__CONSTANTS__NACL_1ga6c5e63110817e3938dee4f47ecda2ec9" kind="variable"><name>slope_Clapeyron</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/NaCl/NaCl.cpp" line="21" column="5"/>
+  </compounddef>
+</doxygen>

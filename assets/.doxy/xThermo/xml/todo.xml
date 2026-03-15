@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="todo" kind="page">
+    <compoundname>todo</compoundname>
+    <title>Todo List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Module <ref refid="group__PhysicalConstants__H2ONaCl" kindref="compound">PhysicalConstants_H2ONaCl</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000004"/>Need to discuss how to deal with the discrepancy between the critical point of H2O in the original paper (Driesner2007Part1) and that in IAPWS95_CoolProp release. </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a22ee9fc78651ee18e73ed6870a50418c" kindref="member">xThermal::H2ONaCl::cH2ONaCl::Rho_phase</ref>  (const double &amp;T, const double &amp;P, const double &amp;X, double &amp;rho, double &amp;dRhodP, double &amp;dRhodT, PhaseType phase)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000001"/>Estimate density difference range based on the density difference between IAPWS95_CoolProp and IAPS84.</para>
+<para><anchor id="todo_1_todo000002"/>How to deal with properties at high-T low-P region, e.g. sw.Rho_phase(1.700000e+02+273.15,7.914706e+00*1E5,0,Rhol, H2ONaCl::Liquid); see mmc4 of Driesner(2007b).</para>
+<para><anchor id="todo_1_todo000003"/>Merge Rho_phase of liquid and vapor together to calculate them simultaneously, because property of saturated vapor and liquid always needed simultaneous, it could save computing time in this way. </para>
+<para></para>
+</listitem>
+<varlistentry><term>Member <ref refid="classxThermal_1_1NaCl_1_1cNaCl_1a3406ba7c0e5e2a368744f17abb7ad08b" kindref="member">xThermal::NaCl::cNaCl::H_Solid</ref>  (const double &amp;T, const double &amp;P)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000005"/>Confirm that <formula id="245">$ \Delta H_{fus} (T_{melting}, P) = H_l(T_{melting}, P) - H_s(T_{melting}, P) $</formula> ? </para>
+</listitem>
+<varlistentry><term>Struct <ref refid="structxThermal_1_1NaCl_1_1Coeff__H" kindref="compound">xThermal::NaCl::Coeff_H</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000006"/>Need to confirm r4 in Tab.5 is correct </para>
+</listitem>
+<varlistentry><term>Member <ref refid="structxThermal_1_1NaCl_1_1H__halite__ref_1a7a46bdbf2a8f2aacd9314edaadced63f" kindref="member">xThermal::NaCl::H_halite_ref::H</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000007"/>need to confirm the reference point of halite enthalpy. </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+    <location file="todo"/>
+  </compounddef>
+</doxygen>

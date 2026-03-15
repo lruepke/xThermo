@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__Initialization__CommonlyUsedProps" kind="group">
+    <compoundname>Initialization_CommonlyUsedProps</compoundname>
+    <title>Predefined initialization of commonly used thermodynamic properties.</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__Initialization__CommonlyUsedProps_1ga14074b1ed45bc36a00d22289fa7191bf" prot="public" static="no">
+        <name>thermodynamicProperty_P</name>
+        <initializer>{0, &quot;Pressure&quot;,             &quot;$p$&quot;,      &quot;Pa&quot;,    <ref refid="group__DIMENSION__COMMONLYUSED_1gade49689808501aeacd5d3609a8453e8d" kindref="member">dimension_SI_P</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialization of property pressure </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="239" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Initialization__CommonlyUsedProps_1ga8840c1988bc55b35a6e311eddf32a749" prot="public" static="no">
+        <name>thermodynamicProperty_T</name>
+        <initializer>{0, &quot;Temperature&quot;,          &quot;$T$&quot;,      &quot;K&quot;,     <ref refid="group__DIMENSION__COMMONLYUSED_1ga91c3a8a6a3167612c3b90b1109c54c7b" kindref="member">dimension_SI_T</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialization of property temperature </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="241" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Initialization__CommonlyUsedProps_1ga828ba78b2d168e82c84d858ac026472b" prot="public" static="no">
+        <name>thermodynamicProperty_H</name>
+        <initializer>{0, &quot;Specific enthalpy&quot;,    &quot;$H$&quot;,      &quot;J/kg&quot;,  <ref refid="group__DIMENSION__COMMONLYUSED_1gabfd8913e996ca56d229b45659de2f005" kindref="member">dimension_SI_H</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialization of property specific enthalpy </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="243" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Initialization__CommonlyUsedProps_1gaef4de38a1fa4ba86ca7201aa2a0514bb" prot="public" static="no">
+        <name>thermodynamicProperty_Rho</name>
+        <initializer>{0, &quot;Density&quot;,              &quot;$\rho$&quot;,   &quot;kg/m3&quot;, <ref refid="group__DIMENSION__COMMONLYUSED_1gaec94af833754f2d51cc454f1b10bf760" kindref="member">dimension_SI_Rho</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialization of property density </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="245" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Initialization__CommonlyUsedProps_1ga75c168899f8c160c5a8439e4bc23742d" prot="public" static="no">
+        <name>thermodynamicProperty_X</name>
+        <initializer>{0, &quot;Vapor mass fraction&quot;,  &quot;$x$&quot;,      &quot;1&quot;,     <ref refid="group__DIMENSION__COMMONLYUSED_1ga9da3fe558228d60974c5d901db58bacb" kindref="member">dimension_SI_None</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>initialization of property vapor mass fraction: <formula id="356">$ x=\frac{m^{\prime\prime}}{m^{\prime} + m^{\prime}} = \frac{h - h^{\prime}}{h^{\prime\prime} - h^{\prime}} =\frac{v - v^{\prime}}{v^{\prime\prime} - v^{\prime}} = \frac{1/\rho - 1/\rho^{\prime}}{1/\rho^{\prime\prime} - 1/\rho^{\prime}} $</formula>, where the superscript <formula id="357">$\prime, \prime\prime$</formula> denote liquid and vapor, respectively. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="247" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__Initialization__CommonlyUsedProps_1ga3758997d612c9f521a349d7b6eaf1537" prot="public" static="no">
+        <name>thermodynamicProperty_Undefined</name>
+        <initializer>{0, &quot;Undefined&quot;,  &quot;Undefined&quot;,      &quot;Undefined&quot;,     <ref refid="group__DIMENSION__COMMONLYUSED_1ga9da3fe558228d60974c5d901db58bacb" kindref="member">dimension_SI_None</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Undefined property </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="249" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="categoryCppInterface_07_08" kind="category" language="Objective-C" prot="public">
+    <compoundname>CppInterface()</compoundname>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="categoryCppInterface_07_08_1a6c0743f60b64eece7d7842fa1fe1aaac" prot="protected" static="no" mutable="no">
+        <type><ref refid="classcExample" kindref="compound">cExample</ref> *</type>
+        <definition>cExample* CppInterface()::example</definition>
+        <argsstring></argsstring>
+        <name>example</name>
+        <qualifiedname>CppInterface()::example</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/cpp_crossplatform/app_ios/CppInterface.mm" line="7" column="14" bodyfile="Library/test/cpp_crossplatform/app_ios/CppInterface.mm" bodystart="7" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>CppInterface()</label>
+        <link refid="categoryCppInterface_07_08"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>example</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cExample</label>
+        <link refid="classcExample"/>
+      </node>
+    </collaborationgraph>
+    <location file="Library/test/cpp_crossplatform/app_ios/CppInterface.mm" line="5" column="12" bodyfile="Library/test/cpp_crossplatform/app_ios/CppInterface.mm" bodystart="6" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="categoryCppInterface_07_08_1a6c0743f60b64eece7d7842fa1fe1aaac" prot="protected" virt="non-virtual"><scope>CppInterface()</scope><name>example</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

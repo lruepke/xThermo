@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless__SinglePhase" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::IAPWS95::HelmholtzEnergy_dimensionless_SinglePhase</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless__SinglePhase_1ac9fca94072ad743d5bb94637a889e5d7" prot="public" static="no" mutable="no">
+        <type><ref refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless" kindref="compound">HelmholtzEnergy_dimensionless</ref></type>
+        <definition>HelmholtzEnergy_dimensionless xThermal::IAPWS95::HelmholtzEnergy_dimensionless_SinglePhase::phio</definition>
+        <argsstring></argsstring>
+        <name>phio</name>
+        <qualifiedname>xThermal::IAPWS95::HelmholtzEnergy_dimensionless_SinglePhase::phio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="189" column="43" bodyfile="Library/H2O/IAPWS95.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless__SinglePhase_1a6ced4a3df9e3efd41899fbe6e6203094" prot="public" static="no" mutable="no">
+        <type><ref refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless" kindref="compound">HelmholtzEnergy_dimensionless</ref></type>
+        <definition>HelmholtzEnergy_dimensionless xThermal::IAPWS95::HelmholtzEnergy_dimensionless_SinglePhase::phir</definition>
+        <argsstring></argsstring>
+        <name>phir</name>
+        <qualifiedname>xThermal::IAPWS95::HelmholtzEnergy_dimensionless_SinglePhase::phir</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="189" column="48" bodyfile="Library/H2O/IAPWS95.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>xThermal::IAPWS95::HelmholtzEnergy_dimensionless</label>
+        <link refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless"/>
+      </node>
+      <node id="1">
+        <label>xThermal::IAPWS95::HelmholtzEnergy_dimensionless_SinglePhase</label>
+        <link refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless__SinglePhase"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>phio</edgelabel>
+          <edgelabel>phir</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Library/H2O/IAPWS95.h" line="187" column="9" bodyfile="Library/H2O/IAPWS95.h" bodystart="188" bodyend="190"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless__SinglePhase_1ac9fca94072ad743d5bb94637a889e5d7" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::HelmholtzEnergy_dimensionless_SinglePhase</scope><name>phio</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless__SinglePhase_1a6ced4a3df9e3efd41899fbe6e6203094" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::HelmholtzEnergy_dimensionless_SinglePhase</scope><name>phir</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

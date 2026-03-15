@@ -1,0 +1,506 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="compare__VL_8m" kind="file" language="Objective-C">
+    <compoundname>compare_VL.m</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="compare__VL_8m_1aa7255c4bc0e9fa663f62fbafe1026daa" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>T1</definition>
+        <argsstring></argsstring>
+        <name>T1</name>
+        <initializer>= linspace(0.1,Tcrit_h2o,200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="7" column="5" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__VL_8m_1a5a30d530a77bc992810b0c24a3e8f550" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>T2</definition>
+        <argsstring></argsstring>
+        <name>T2</name>
+        <initializer>= linspace(Tcrit_h2o, 1000, 200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="8" column="5" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__VL_8m_1a43b13b4bbb5829adef01b2490c26f624" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>end matrix lookup T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <initializer>= cat(2, T1, T2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="9" column="5" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__VL_8m_1a6f6ccfcf58b31cb6412107d9d5281426" prot="public" static="no" mutable="no">
+        <type>for</type>
+        <definition>for i</definition>
+        <argsstring></argsstring>
+        <name>i</name>
+        <initializer>=1:length(T)
+        P_crit(i) = p_crit_H2ONaCl(T(i))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="10" column="9" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__VL_8m_1aa5a2239e3a5846b8d081452081f9b82e" prot="public" static="no" mutable="no">
+        <type>end</type>
+        <definition>end fpout_T</definition>
+        <argsstring></argsstring>
+        <name>fpout_T</name>
+        <initializer>=fopen(&apos;TT_VL.txt&apos;,&apos;w&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="20" column="5" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__VL_8m_1a1336d176ce9286fbf184c87be0af5b5e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>fpout_p</definition>
+        <argsstring></argsstring>
+        <name>fpout_p</name>
+        <initializer>=fopen(&apos;PP_VL.txt&apos;,&apos;w&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="21" column="5" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__VL_8m_1a4f29c7a0e32ae5c2220d888e85748818" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>fpout_Xl</definition>
+        <argsstring></argsstring>
+        <name>fpout_Xl</name>
+        <initializer>=fopen(&apos;Xl_VL.txt&apos;,&apos;w&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="22" column="5" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__VL_8m_1ae192debe25389e15ff19e32541d4bc7f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>fpout_Xv</definition>
+        <argsstring></argsstring>
+        <name>fpout_Xv</name>
+        <initializer>=fopen(&apos;Xv_VL.txt&apos;,&apos;w&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="23" column="5" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__VL_8m_1aad040c05bb2c9dd37c9e04447aae8b6d" prot="public" static="no" mutable="no">
+        <type>for</type>
+        <definition>for iT</definition>
+        <argsstring></argsstring>
+        <name>iT</name>
+        <initializer>= 1:length(T)
+        P = linspace(P_vlh(iT),P_crit(iT),200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="24" column="9" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__VL_8m_1adfea6df1493b992a6239b21abb40e230" prot="public" static="no" mutable="no">
+        <type>for</type>
+        <definition>for ip</definition>
+        <argsstring></argsstring>
+        <name>ip</name>
+        <initializer>= 1:length(P)
+            [  Xw_l, Xw_v ] = calc_boundary_prop( P(ip), T(iT), 1 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="26" column="13" bodyfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="compare__VL_8m_1ac7aee5bdfa24d2acc75f58f5fc885e13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>function</type>
+        <definition>function PhaseBoundary_VL</definition>
+        <argsstring>() Tcrit_h2o</argsstring>
+        <name>PhaseBoundary_VL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="5" column="10" declfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" declline="5" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8m_1a8199a55cdeb2f19c2a24337e9b2c2856" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>P_vlh</definition>
+        <argsstring>(i)</argsstring>
+        <name>P_vlh</name>
+        <param>
+          <type>i</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="12" column="9" declfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" declline="12" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8m_1a9fabfc56c6ddeb627b9c0c6aefd8ecd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>if</definition>
+        <argsstring>(T(i)&lt; Tcrit_h2o) P_h2o</argsstring>
+        <name>if</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="13" column="9" declfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" declline="13" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8m_1a2d6e8b8f60512f273e768c29243a0573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>fluidprop_crit_T return pressure in MPa</type>
+        <definition>fluidprop_crit_T return pressure in MPa P_crit</definition>
+        <argsstring>(i)</argsstring>
+        <name>P_crit</name>
+        <param>
+          <type>i</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="15" column="13" declfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" declline="15" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8m_1a8fc2447a7de6baa58bbe3e21cdc06210" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>end</type>
+        <definition>end P_vlh</definition>
+        <argsstring>(P_vlh&lt;=0)=0.1E5</argsstring>
+        <name>P_vlh</name>
+        <param>
+          <type>P_vlh&lt;=</type>
+          <declname>0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="17" column="9" declfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" declline="17" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8m_1a1cb44106a16fcf0b9a01bd4fc1155fde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fprintf</definition>
+        <argsstring>(fpout_T,&apos;%.8E &apos;, T(iT)+273.15)</argsstring>
+        <name>fprintf</name>
+        <param>
+          <type>fpout_T</type>
+        </param>
+        <param>
+          <type>&apos;%.8E &apos;</type>
+        </param>
+        <param>
+          <type>T(iT)+273.</type>
+          <declname>15</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="28" column="13" declfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" declline="28" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8m_1ae568cb447f9cba87cbe33de97fc16c3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fprintf</definition>
+        <argsstring>(fpout_p,&apos;%.8E &apos;, P(ip))</argsstring>
+        <name>fprintf</name>
+        <param>
+          <type>fpout_p</type>
+        </param>
+        <param>
+          <type>&apos;%.8E &apos;</type>
+        </param>
+        <param>
+          <type>P(ip)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="29" column="13" declfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" declline="29" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8m_1a21f84f9b1d71d42f8bde3d311b07a58b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fprintf</definition>
+        <argsstring>(fpout_Xl,&apos;%.8E &apos;, Xw_l)</argsstring>
+        <name>fprintf</name>
+        <param>
+          <type>fpout_Xl</type>
+        </param>
+        <param>
+          <type>&apos;%.8E &apos;</type>
+        </param>
+        <param>
+          <type>Xw_l</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="30" column="13" declfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" declline="30" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8m_1ab8c45fca3ddce74ab54ff2e0c141ba64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fprintf</definition>
+        <argsstring>(fpout_Xv,&apos;%.8E &apos;, Xw_v)</argsstring>
+        <name>fprintf</name>
+        <param>
+          <type>fpout_Xv</type>
+        </param>
+        <param>
+          <type>&apos;%.8E &apos;</type>
+        </param>
+        <param>
+          <type>Xw_v</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="31" column="13" declfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" declline="31" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8m_1aedc7216f15ce8a8d2863df1c265ed9ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>end</type>
+        <definition>end fprintf</definition>
+        <argsstring>(fpout_T,&apos;\n&apos;)</argsstring>
+        <name>fprintf</name>
+        <param>
+          <type>fpout_T</type>
+        </param>
+        <param>
+          <type>&apos;\n&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="33" column="9" declfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" declline="33" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8m_1aa00f02e29a8247ce7d7b906d7f21c5ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fprintf</definition>
+        <argsstring>(fpout_p,&apos;\n&apos;)</argsstring>
+        <name>fprintf</name>
+        <param>
+          <type>fpout_p</type>
+        </param>
+        <param>
+          <type>&apos;\n&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="34" column="9" declfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" declline="34" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8m_1a89e7422c7e5c1f99dabac1fc5f223239" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fprintf</definition>
+        <argsstring>(fpout_Xl,&apos;\n&apos;)</argsstring>
+        <name>fprintf</name>
+        <param>
+          <type>fpout_Xl</type>
+        </param>
+        <param>
+          <type>&apos;\n&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="35" column="9" declfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" declline="35" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8m_1ad2bf8ea50f6bbd807c8255d4505dc781" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fprintf</definition>
+        <argsstring>(fpout_Xv,&apos;\n&apos;)</argsstring>
+        <name>fprintf</name>
+        <param>
+          <type>fpout_Xv</type>
+        </param>
+        <param>
+          <type>&apos;\n&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="36" column="9" declfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" declline="36" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8m_1a99fd86cda2b9f6505407f9a2e67bd5f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>end</type>
+        <definition>end fclose</definition>
+        <argsstring>(fpout_T)</argsstring>
+        <name>fclose</name>
+        <param>
+          <type>fpout_T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="38" column="5" declfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" declline="38" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8m_1a57c3d85d15f2a3655ce7740f273098df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fclose</definition>
+        <argsstring>(fpout_p)</argsstring>
+        <name>fclose</name>
+        <param>
+          <type>fpout_p</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="39" column="5" declfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" declline="39" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8m_1a79a870fa38b31649058e98bcbf2c3eee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fclose</definition>
+        <argsstring>(fpout_Xl)</argsstring>
+        <name>fclose</name>
+        <param>
+          <type>fpout_Xl</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="40" column="5" declfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" declline="40" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__VL_8m_1ac20921095d4247defe623f0377cd2443" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fclose</definition>
+        <argsstring>(fpout_Xv)</argsstring>
+        <name>fclose</name>
+        <param>
+          <type>fpout_Xv</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m" line="41" column="5" declfile="Library/benchmark_test/compare_matlabcode/compare_VL.m" declline="41" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">%<sp/>calculate<sp/>phase<sp/>boundary<sp/>of<sp/>VL<sp/>and<sp/>related<sp/>density<sp/>&amp;<sp/>enthalpy<sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">function<sp/>calc_boundary_prop.m<sp/>of<sp/>the<sp/>matlab<sp/>code<sp/>:<sp/>https:</highlight><highlight class="comment">//github.com/lruepke/H2O_NaCl_EOS_Driesner_2007</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">PhaseBoundary_VL();</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/>PhaseBoundary_VL()</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>Tcrit_h2o<sp/>=<sp/>373.976;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>T1<sp/>=<sp/>linspace(0.1,Tcrit_h2o,200);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>T2<sp/>=<sp/>linspace(Tcrit_h2o,<sp/>1000,<sp/>200);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>=<sp/>cat(2,<sp/>T1,<sp/>T2);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>for<sp/>i=1:length(T)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P_crit(i)<sp/>=<sp/>p_crit_H2ONaCl(T(i));</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P_vlh(i)<sp/>=<sp/>calc_P_vlh(T(i));</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(T(i)&lt;Tcrit_h2o)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P_h2o<sp/>=<sp/>fluidprop_crit_T(<sp/>T(i),<sp/>1e-8)<sp/>*<sp/>1E6;<sp/>%fluidprop_crit_T<sp/>return<sp/>pressure<sp/>in<sp/>MPa</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P_crit(i)<sp/>=<sp/>P_h2o;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P_vlh(P_vlh&lt;=0)=0.1E5;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>fpout_T=fopen(&apos;TT_VL.txt&apos;,&apos;w&apos;);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>fpout_p=fopen(&apos;PP_VL.txt&apos;,&apos;w&apos;);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>fpout_Xl=fopen(&apos;Xl_VL.txt&apos;,&apos;w&apos;);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>fpout_Xv=fopen(&apos;Xv_VL.txt&apos;,&apos;w&apos;);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>for<sp/>iT<sp/>=<sp/>1:length(T)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P<sp/>=<sp/>linspace(P_vlh(iT),P_crit(iT),200);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>ip<sp/>=<sp/>1:length(P)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[<sp/><sp/>Xw_l,<sp/>Xw_v<sp/>]<sp/>=<sp/>calc_boundary_prop(<sp/>P(ip),<sp/>T(iT),<sp/>1<sp/>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fpout_T,&apos;%.8E<sp/>&apos;,<sp/>T(iT)+273.15);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fpout_p,&apos;%.8E<sp/>&apos;,<sp/>P(ip));</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fpout_Xl,&apos;%.8E<sp/>&apos;,<sp/>Xw_l);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fpout_Xv,&apos;%.8E<sp/>&apos;,<sp/>Xw_v);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fpout_T,&apos;\n&apos;);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fpout_p,&apos;\n&apos;);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fpout_Xl,&apos;\n&apos;);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fpout_Xv,&apos;\n&apos;);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose(fpout_T);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose(fpout_p);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose(fpout_Xl);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose(fpout_Xv);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">end</highlight></codeline>
+    </programlisting>
+    <location file="Library/benchmark_test/compare_matlabcode/compare_VL.m"/>
+  </compounddef>
+</doxygen>

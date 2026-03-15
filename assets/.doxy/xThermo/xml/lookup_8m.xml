@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="lookup_8m" kind="file" language="Objective-C">
+    <compoundname>lookup.m</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="lookup_8m_1acd5583e2e4d642b701738a8680e600e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>Adaptive <ref refid="structmesh" kindref="compound">mesh</ref> refined lookup table</type>
+        <definition>Adaptive mesh refined lookup table Example:</definition>
+        <argsstring>(filename_AMR_LUT, &apos;H2O-NaCl&apos;, T, P, X, backend_name=&apos;IAPS84&apos; LOOKUP)</argsstring>
+        <name>Example:</name>
+        <param>
+          <type>filename_AMR_LUT</type>
+          <defname>LOOKUP</defname>
+        </param>
+        <param>
+          <type>&apos;H2O-NaCl&apos;</type>
+        </param>
+        <param>
+          <type>T</type>
+        </param>
+        <param>
+          <type>P</type>
+        </param>
+        <param>
+          <type>X</type>
+        </param>
+        <param>
+          <type>backend_name</type>
+          <defval>&apos;IAPS84&apos; LOOKUP</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/lookup.m" line="1" column="52" declfile="Library/H2ONaCl/Matlab/lookup.m" declline="1" declcolumn="52"/>
+      </memberdef>
+      <memberdef kind="function" id="lookup_8m_1aa56186079de196b1884d5488286f0f10" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id Input:Output:Example:</definition>
+        <argsstring>(string:optional, default is &apos;IAPS84&apos;.[IAPS84, IAPWS95, IAPWS95_CoolProp] backend_name,[Output] id struct,[Example] filename_AMR_LUT, &apos;H2O-NaCl&apos;, H, P, X, backend_name=&apos;IAPS84&apos; LOOKUP)</argsstring>
+        <name>Input:Output:Example:</name>
+        <param>
+          <type>string:optional</type>
+          <defname>backend_name</defname>
+        </param>
+        <param>
+          <type>default is &apos;IAPS84&apos;.</type>
+          <declname>backend_name</declname>
+          <defname>struct</defname>
+          <array>[IAPS84, IAPWS95, IAPWS95_CoolProp]</array>
+        </param>
+        <param>
+          <attributes>[Output]</attributes>
+          <type>id</type>
+          <declname>struct</declname>
+          <defname>LOOKUP</defname>
+        </param>
+        <param>
+          <attributes>[Example]</attributes>
+          <type>filename_AMR_LUT</type>
+        </param>
+        <param>
+          <type>&apos;H2O-NaCl&apos;</type>
+        </param>
+        <param>
+          <type>H</type>
+        </param>
+        <param>
+          <type>P</type>
+        </param>
+        <param>
+          <type>X</type>
+        </param>
+        <param>
+          <type>backend_name</type>
+          <defval>&apos;IAPS84&apos; LOOKUP</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/lookup.m" line="1" column="52" declfile="Library/H2ONaCl/Matlab/lookup.m" declline="1" declcolumn="52"/>
+      </memberdef>
+      <memberdef kind="function" id="lookup_8m_1a3a01beb12ce0eb1650480890a5502cae" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id Input:Output:Example:</definition>
+        <argsstring>(string:optional, default is &apos;IAPS84&apos;.[IAPS84, IAPWS95, IAPWS95_CoolProp] backend_name,[Output] id struct,[Example] filename_AMR_LUT, &apos;H2O&apos;, T, P, backend_name=&apos;IAPS84&apos; LOOKUP)</argsstring>
+        <name>Input:Output:Example:</name>
+        <param>
+          <type>string:optional</type>
+          <defname>backend_name</defname>
+        </param>
+        <param>
+          <type>default is &apos;IAPS84&apos;.</type>
+          <declname>backend_name</declname>
+          <defname>struct</defname>
+          <array>[IAPS84, IAPWS95, IAPWS95_CoolProp]</array>
+        </param>
+        <param>
+          <attributes>[Output]</attributes>
+          <type>id</type>
+          <declname>struct</declname>
+          <defname>LOOKUP</defname>
+        </param>
+        <param>
+          <attributes>[Example]</attributes>
+          <type>filename_AMR_LUT</type>
+        </param>
+        <param>
+          <type>&apos;H2O&apos;</type>
+        </param>
+        <param>
+          <type>T</type>
+        </param>
+        <param>
+          <type>P</type>
+        </param>
+        <param>
+          <type>backend_name</type>
+          <defval>&apos;IAPS84&apos; LOOKUP</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/lookup.m" line="1" column="52" declfile="Library/H2ONaCl/Matlab/lookup.m" declline="1" declcolumn="52"/>
+      </memberdef>
+      <memberdef kind="function" id="lookup_8m_1a4118a6653a07c1fbebde08b15a455aff" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id Input:Output:Example:</definition>
+        <argsstring>(string:optional, default is &apos;IAPS84&apos;.[IAPS84, IAPWS95, IAPWS95_CoolProp] backend_name,[Output] id struct,[Example] filename_AMR_LUT, &apos;H2O&apos;, H, P, backend_name=&apos;IAPS84&apos; LOOKUP)</argsstring>
+        <name>Input:Output:Example:</name>
+        <param>
+          <type>string:optional</type>
+          <defname>backend_name</defname>
+        </param>
+        <param>
+          <type>default is &apos;IAPS84&apos;.</type>
+          <declname>backend_name</declname>
+          <defname>struct</defname>
+          <array>[IAPS84, IAPWS95, IAPWS95_CoolProp]</array>
+        </param>
+        <param>
+          <attributes>[Output]</attributes>
+          <type>id</type>
+          <declname>struct</declname>
+          <defname>LOOKUP</defname>
+        </param>
+        <param>
+          <attributes>[Example]</attributes>
+          <type>filename_AMR_LUT</type>
+        </param>
+        <param>
+          <type>&apos;H2O&apos;</type>
+        </param>
+        <param>
+          <type>H</type>
+        </param>
+        <param>
+          <type>P</type>
+        </param>
+        <param>
+          <type>backend_name</type>
+          <defval>&apos;IAPS84&apos; LOOKUP</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/lookup.m" line="1" column="52" declfile="Library/H2ONaCl/Matlab/lookup.m" declline="1" declcolumn="52"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">%LOOKUP<sp/>Get<sp/>thermodynamic<sp/>properties<sp/>from<sp/>the<sp/>input<sp/>AMR-LUT(Adaptive<sp/><ref refid="structmesh" kindref="compound">mesh</ref><sp/>refined<sp/>lookup<sp/>table)<sp/>for<sp/>given<sp/>T|H,<sp/>P,<sp/>X.</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">%</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">%<sp/><sp/><sp/>%<sp/>Example:<sp/>lookup<sp/>properties<sp/>of<sp/>H2O-NaCl<sp/>in<sp/>T-P-X<sp/>space</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">%<sp/><sp/><sp/>LOOKUP(filename_AMR_LUT,<sp/>&apos;H2O-NaCl&apos;,<sp/>T,<sp/>P,<sp/>X,<sp/>backend_name=&apos;IAPS84&apos;);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">%<sp/><sp/><sp/>-<sp/>Input:<sp/>filename_AMR_LUT<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">),<sp/>fluid_name<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">),<sp/>T<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)<sp/>[K],<sp/>P<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)<sp/>[Pa],<sp/>X<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)<sp/>[kg/kg],<sp/>backend_name<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">:<sp/>optional,<sp/>default<sp/>is<sp/>&apos;IAPS84&apos;.<sp/>[IAPS84,<sp/>IAPWS95,<sp/>IAPWS95_CoolProp])</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">%<sp/><sp/><sp/>-<sp/>Output:<sp/>Properties<sp/>struct.<sp/>Properties<sp/>are<sp/>stored<sp/>in<sp/>each<sp/>field<sp/>of<sp/>the<sp/>struct.</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">%</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">%<sp/><sp/><sp/>%<sp/>Example:<sp/>lookup<sp/>properties<sp/>of<sp/>H2O-NaCl<sp/>in<sp/>H-P-X<sp/>space</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">%<sp/><sp/><sp/>LOOKUP(filename_AMR_LUT,<sp/>&apos;H2O-NaCl&apos;,<sp/>H,<sp/>P,<sp/>X,<sp/>backend_name=&apos;IAPS84&apos;);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">%<sp/><sp/><sp/>-<sp/>Input:<sp/>filename_AMR_LUT<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">),<sp/>fluid_name<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">),<sp/>H<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)<sp/>[J/kg],<sp/>P<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)<sp/>[Pa],<sp/>X<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)<sp/>[kg/kg],<sp/>backend_name<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">:<sp/>optional,<sp/>default<sp/>is<sp/>&apos;IAPS84&apos;.<sp/>[IAPS84,<sp/>IAPWS95,<sp/>IAPWS95_CoolProp])</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">%<sp/><sp/><sp/>-<sp/>Output:<sp/>Properties<sp/>struct.<sp/>Properties<sp/>are<sp/>stored<sp/>in<sp/>each<sp/>field<sp/>of<sp/>the<sp/>struct.</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">%</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">%<sp/><sp/><sp/>%<sp/>Example:<sp/>lookup<sp/>properties<sp/>of<sp/>H2O<sp/>in<sp/>T-P<sp/>space</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">%<sp/><sp/><sp/>LOOKUP(filename_AMR_LUT,<sp/>&apos;H2O&apos;,<sp/>T,<sp/>P,<sp/>backend_name=&apos;IAPS84&apos;);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">%<sp/><sp/><sp/>-<sp/>Input:<sp/>filename_AMR_LUT<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">),<sp/>fluid_name<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">),<sp/>T<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)<sp/>[K],<sp/>P<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)<sp/>[Pa],<sp/>backend_name<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">:<sp/>optional,<sp/>default<sp/>is<sp/>&apos;IAPS84&apos;.<sp/>[IAPS84,<sp/>IAPWS95,<sp/>IAPWS95_CoolProp])</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">%<sp/><sp/><sp/>-<sp/>Output:<sp/>Properties<sp/>struct.<sp/>Properties<sp/>are<sp/>stored<sp/>in<sp/>each<sp/>field<sp/>of<sp/>the<sp/>struct.</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">%</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">%<sp/><sp/><sp/>%<sp/>Example:<sp/>lookup<sp/>properties<sp/>of<sp/>H2O<sp/>in<sp/>H-P<sp/>space</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">%<sp/><sp/><sp/>LOOKUP(filename_AMR_LUT,<sp/>&apos;H2O&apos;,<sp/>H,<sp/>P,<sp/>backend_name=&apos;IAPS84&apos;);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">%<sp/><sp/><sp/>-<sp/>Input:<sp/>filename_AMR_LUT<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">),<sp/>fluid_name<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">),<sp/>H<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)<sp/>[J/kg],<sp/>P<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)<sp/>[Pa],<sp/>backend_name<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">:<sp/>optional,<sp/>default<sp/>is<sp/>&apos;IAPS84&apos;.<sp/>[IAPS84,<sp/>IAPWS95,<sp/>IAPWS95_CoolProp])</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">%<sp/><sp/><sp/>-<sp/>Output:<sp/>Properties<sp/>struct.<sp/>Properties<sp/>are<sp/>stored<sp/>in<sp/>each<sp/>field<sp/>of<sp/>the<sp/>struct.</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">%</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">%<sp/><sp/><sp/>See<sp/>also<sp/>prop_HPX,<sp/>prop_TPX.</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">%</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">%<sp/>See<sp/>&lt;a<sp/>href=&quot;lookup.html&quot;&gt;online<sp/>documentation<sp/>for<sp/>more<sp/>information&lt;/a&gt;.</highlight></codeline>
+    </programlisting>
+    <location file="Library/H2ONaCl/Matlab/lookup.m"/>
+  </compounddef>
+</doxygen>

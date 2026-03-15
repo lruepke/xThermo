@@ -1,0 +1,2030 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="H₂O–NaCl equation of state — C++ library with Python bindings">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+    
+    
+      
+        <title>Group BitMaskRequestProp - xThermo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#group-bitmaskrequestprop" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="xThermo" class="md-header__button md-logo" aria-label="xThermo" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            xThermo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Group BitMaskRequestProp
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/lruepke/xThermo" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    lruepke/xThermo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../installation/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Installation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../python/" class="md-tabs__link">
+          
+  
+  
+  Python API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../cpp/" class="md-tabs__link">
+          
+  
+  
+  C++ API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../api/cpp/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  C++ Reference
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="xThermo" class="md-nav__button md-logo" aria-label="xThermo" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    xThermo
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/lruepke/xThermo" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    lruepke/xThermo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python API
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python API
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/tpx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T-p-X calculation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/hpx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    H-p-X flash
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/phase_boundaries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase boundaries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/saturation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Saturation (H₂O)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C++ API
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C++ API
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cpp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cpp/tpx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T-p-X calculation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cpp/phase_region/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase region
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cpp/phase_boundaries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase boundaries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/cpp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C++ Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#macros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Macros
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macro-definition-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Macro Definition Documentation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Macro Definition Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#define-request_none" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_None
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_T
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_cp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_cp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_cv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_cv
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_dtdp_h" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_dTdp_h
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_dcpdt_rho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_dcpdT_rho
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_dcpdp_h" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_dcpdp_h
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_dcpdrho_t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_dcpdrho_T
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_ddtddp_rho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_ddTddp_rho
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_ddtddrho_p" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_ddTddrho_p
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_ddtdpdrho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_ddTdpdrho
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_ddgddt_rho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_ddgddT_rho
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_ddgddrho_t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_ddgddrho_T
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_ddgdrhodt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_ddgdrhodT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_ddhddt_rho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_ddhddT_rho
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_ddhddrho_t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_ddhddrho_T
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_ddhdrhodt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_ddhdrhodT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_ddpddt_rho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_ddpddT_rho
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_ddpddrho_t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_ddpddrho_T
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_ddpdrhodt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_ddpdrhodT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_ddrhodtdp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_ddrhodTdp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_ddrhoddt_p" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_ddrhoddT_p
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_ddrhoddp_t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_ddrhoddp_T
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_ddsddt_rho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_ddsddT_rho
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_ddsddrho_t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_ddsddrho_T
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_ddsdrhodt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_ddsdrhodT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_dduddt_rho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_dduddT_rho
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_dduddrho_t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_dduddrho_T
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_ddudrhodt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_ddudrhodT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_dgdt_rho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_dgdT_rho
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_dgdrho_t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_dgdrho_T
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_dhdt_p" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_dhdT_p
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_dhdt_rho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_dhdT_rho
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_dhdp_t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_dhdp_T
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_dhdrho_t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_dhdrho_T
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_dpdt_rho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_dpdT_rho
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_dpdrho_t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_dpdrho_T
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_dpdrho_s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_dpdrho_s
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_drhodt_p" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_drhodT_p
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_drhodh_p" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_drhodh_p
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_drhodp_t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_drhodp_T
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_drhodp_h" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_drhodp_h
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_dsdt_rho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_dsdT_rho
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_dsdrho_t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_dsdrho_T
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_dudt_rho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_dudT_rho
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_dudrho_t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_dudrho_T
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_g" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_g
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_h" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_h
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_rho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_rho
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_s
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_u" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_u
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-request_w" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        define Request_w
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="group-bitmaskrequestprop">Group BitMaskRequestProp</h1>
+<p><a href="../modules/"><strong>Modules</strong></a> <strong>&gt;</strong> <a href="./"><strong>BitMaskRequestProp</strong></a></p>
+<h2 id="macros">Macros</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_none"><strong>Request_None</strong></a>  <code>0</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_t"><strong>Request_T</strong></a>  <code>1125899906842624</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_cp"><strong>Request_cp</strong></a>  <code>70368744177664</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_cv"><strong>Request_cv</strong></a>  <code>35184372088832</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_dtdp_h"><strong>Request_dTdp_h</strong></a>  <code>1073741824</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_dcpdt_rho"><strong>Request_dcpdT_rho</strong></a>  <code>549755813888</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_dcpdp_h"><strong>Request_dcpdp_h</strong></a>  <code>2199023255552</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_dcpdrho_t"><strong>Request_dcpdrho_T</strong></a>  <code>1099511627776</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_ddtddp_rho"><strong>Request_ddTddp_rho</strong></a>  <code>8589934592</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_ddtddrho_p"><strong>Request_ddTddrho_p</strong></a>  <code>17179869184</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_ddtdpdrho"><strong>Request_ddTdpdrho</strong></a>  <code>34359738368</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_ddgddt_rho"><strong>Request_ddgddT_rho</strong></a>  <code>8388608</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_ddgddrho_t"><strong>Request_ddgddrho_T</strong></a>  <code>4194304</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_ddgdrhodt"><strong>Request_ddgdrhodT</strong></a>  <code>16777216</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_ddhddt_rho"><strong>Request_ddhddT_rho</strong></a>  <code>1048576</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_ddhddrho_t"><strong>Request_ddhddrho_T</strong></a>  <code>524288</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_ddhdrhodt"><strong>Request_ddhdrhodT</strong></a>  <code>2097152</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_ddpddt_rho"><strong>Request_ddpddT_rho</strong></a>  <code>2048</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_ddpddrho_t"><strong>Request_ddpddrho_T</strong></a>  <code>1024</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_ddpdrhodt"><strong>Request_ddpdrhodT</strong></a>  <code>4096</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_ddrhodtdp"><strong>Request_ddrhodTdp</strong></a>  <code>274877906944</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_ddrhoddt_p"><strong>Request_ddrhoddT_p</strong></a>  <code>137438953472</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_ddrhoddp_t"><strong>Request_ddrhoddp_T</strong></a>  <code>68719476736</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_ddsddt_rho"><strong>Request_ddsddT_rho</strong></a>  <code>16384</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_ddsddrho_t"><strong>Request_ddsddrho_T</strong></a>  <code>8192</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_ddsdrhodt"><strong>Request_ddsdrhodT</strong></a>  <code>32768</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_dduddt_rho"><strong>Request_dduddT_rho</strong></a>  <code>131072</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_dduddrho_t"><strong>Request_dduddrho_T</strong></a>  <code>65536</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_ddudrhodt"><strong>Request_ddudrhodT</strong></a>  <code>262144</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_dgdt_rho"><strong>Request_dgdT_rho</strong></a>  <code>512</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_dgdrho_t"><strong>Request_dgdrho_T</strong></a>  <code>256</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_dhdt_p"><strong>Request_dhdT_p</strong></a>  <code>268435456</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_dhdt_rho"><strong>Request_dhdT_rho</strong></a>  <code>128</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_dhdp_t"><strong>Request_dhdp_T</strong></a>  <code>67108864</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_dhdrho_t"><strong>Request_dhdrho_T</strong></a>  <code>64</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_dpdt_rho"><strong>Request_dpdT_rho</strong></a>  <code>2</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_dpdrho_t"><strong>Request_dpdrho_T</strong></a>  <code>1</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_dpdrho_s"><strong>Request_dpdrho_s</strong></a>  <code>536870912</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_drhodt_p"><strong>Request_drhodT_p</strong></a>  <code>134217728</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_drhodh_p"><strong>Request_drhodh_p</strong></a>  <code>4294967296</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_drhodp_t"><strong>Request_drhodp_T</strong></a>  <code>33554432</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_drhodp_h"><strong>Request_drhodp_h</strong></a>  <code>2147483648</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_dsdt_rho"><strong>Request_dsdT_rho</strong></a>  <code>8</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_dsdrho_t"><strong>Request_dsdrho_T</strong></a>  <code>4</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_dudt_rho"><strong>Request_dudT_rho</strong></a>  <code>32</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_dudrho_t"><strong>Request_dudrho_T</strong></a>  <code>16</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_g"><strong>Request_g</strong></a>  <code>281474976710656</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_h"><strong>Request_h</strong></a>  <code>17592186044416</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_rho"><strong>Request_rho</strong></a>  <code>562949953421312</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_s"><strong>Request_s</strong></a>  <code>8796093022208</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_u"><strong>Request_u</strong></a>  <code>4398046511104</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">define</td>
+<td style="text-align: left;"><a href="./#define-request_w"><strong>Request_w</strong></a>  <code>140737488355328</code><br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="macro-definition-documentation">Macro Definition Documentation</h2>
+<h3 id="define-request_none">define Request_None</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>#define Request_None `0`
+</code></pre></div>
+<p>do not request any properties </p>
+<hr>
+
+<h3 id="define-request_t">define Request_T</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>#define Request_T `1125899906842624`
+</code></pre></div>
+<p>(2^{50}): Temperature (T) </p>
+<hr>
+
+<h3 id="define-request_cp">define Request_cp</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>#define Request_cp `70368744177664`
+</code></pre></div>
+<p>(2^{46}): Isobaric heat capacity (c_p) </p>
+<hr>
+
+<h3 id="define-request_cv">define Request_cv</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>#define Request_cv `35184372088832`
+</code></pre></div>
+<p>(2^{45}): Isochoric heat capacity (c_v) </p>
+<hr>
+
+<h3 id="define-request_dtdp_h">define Request_dTdp_h</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>#define Request_dTdp_h `1073741824`
+</code></pre></div>
+<p>(2^{30}): (\left( \frac{\partial T}{\partial p} \right)_{h}) </p>
+<hr>
+
+<h3 id="define-request_dcpdt_rho">define Request_dcpdT_rho</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>#define Request_dcpdT_rho `549755813888`
+</code></pre></div>
+<p>(2^{39}): (\left( \frac{\partial c_p}{\partial T} \right)_{\rho}) </p>
+<hr>
+
+<h3 id="define-request_dcpdp_h">define Request_dcpdp_h</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>#define Request_dcpdp_h `2199023255552`
+</code></pre></div>
+<p>(2^{41}): (\left( \frac{\partial c_p}{\partial p} \right)_{h}) </p>
+<hr>
+
+<h3 id="define-request_dcpdrho_t">define Request_dcpdrho_T</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>#define Request_dcpdrho_T `1099511627776`
+</code></pre></div>
+<p>(2^{40}): (\left( \frac{\partial c_p}{\partial \rho} \right)_{T}) </p>
+<hr>
+
+<h3 id="define-request_ddtddp_rho">define Request_ddTddp_rho</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>#define Request_ddTddp_rho `8589934592`
+</code></pre></div>
+<p>(2^{33}): (\left( \frac{\partial^2 T}{\partial p^2} \right)_{\rho}) </p>
+<hr>
+
+<h3 id="define-request_ddtddrho_p">define Request_ddTddrho_p</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>#define Request_ddTddrho_p `17179869184`
+</code></pre></div>
+<p>(2^{34}): (\left( \frac{\partial^2 T}{\partial \rho^2} \right)_{p}) </p>
+<hr>
+
+<h3 id="define-request_ddtdpdrho">define Request_ddTdpdrho</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>#define Request_ddTdpdrho `34359738368`
+</code></pre></div>
+<p>(2^{35}): (\left( \frac{\partial^2 T}{\partial p \partial \rho} \right)) </p>
+<hr>
+
+<h3 id="define-request_ddgddt_rho">define Request_ddgddT_rho</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>#define Request_ddgddT_rho `8388608`
+</code></pre></div>
+<p>(2^{23}): (\left( \frac{\partial^2 g}{\partial T^2} \right)_{\rho}) </p>
+<hr>
+
+<h3 id="define-request_ddgddrho_t">define Request_ddgddrho_T</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>#define Request_ddgddrho_T `4194304`
+</code></pre></div>
+<p>(2^{22}): (\left( \frac{\partial^2 g}{\partial \rho^2} \right)_{T}) </p>
+<hr>
+
+<h3 id="define-request_ddgdrhodt">define Request_ddgdrhodT</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>#define Request_ddgdrhodT `16777216`
+</code></pre></div>
+<p>(2^{24}): (\left( \frac{\partial^2 g}{\partial \rho \partial T} \right)) </p>
+<hr>
+
+<h3 id="define-request_ddhddt_rho">define Request_ddhddT_rho</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>#define Request_ddhddT_rho `1048576`
+</code></pre></div>
+<p>(2^{20}): (\left( \frac{\partial^2 h}{\partial T^2} \right)_{\rho}) </p>
+<hr>
+
+<h3 id="define-request_ddhddrho_t">define Request_ddhddrho_T</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>#define Request_ddhddrho_T `524288`
+</code></pre></div>
+<p>(2^{19}): (\left( \frac{\partial^2 h}{\partial \rho^2} \right)_{T}) </p>
+<hr>
+
+<h3 id="define-request_ddhdrhodt">define Request_ddhdrhodT</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>#define Request_ddhdrhodT `2097152`
+</code></pre></div>
+<p>(2^{21}): (\left( \frac{\partial^2 h}{\partial \rho \partial T} \right)) </p>
+<hr>
+
+<h3 id="define-request_ddpddt_rho">define Request_ddpddT_rho</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>#define Request_ddpddT_rho `2048`
+</code></pre></div>
+<p>(2^{11}): (\left( \frac{\partial^2 p}{\partial T^2} \right)_{\rho}) </p>
+<hr>
+
+<h3 id="define-request_ddpddrho_t">define Request_ddpddrho_T</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>#define Request_ddpddrho_T `1024`
+</code></pre></div>
+<p>(2^{10}): (\left( \frac{\partial^2 p}{\partial \rho^2} \right)_{T}) </p>
+<hr>
+
+<h3 id="define-request_ddpdrhodt">define Request_ddpdrhodT</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>#define Request_ddpdrhodT `4096`
+</code></pre></div>
+<p>(2^{12}): (\left( \frac{\partial^2 p}{\partial \rho \partial T} \right)) </p>
+<hr>
+
+<h3 id="define-request_ddrhodtdp">define Request_ddrhodTdp</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>#define Request_ddrhodTdp `274877906944`
+</code></pre></div>
+<p>(2^{38}): (\left( \frac{\partial^2 \rho}{\partial T \partial p} \right)) </p>
+<hr>
+
+<h3 id="define-request_ddrhoddt_p">define Request_ddrhoddT_p</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>#define Request_ddrhoddT_p `137438953472`
+</code></pre></div>
+<p>(2^{37}): (\left( \frac{\partial^2 \rho}{\partial T^2} \right)_{p}) </p>
+<hr>
+
+<h3 id="define-request_ddrhoddp_t">define Request_ddrhoddp_T</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>#define Request_ddrhoddp_T `68719476736`
+</code></pre></div>
+<p>(2^{36}): (\left( \frac{\partial^2 \rho}{\partial p^2} \right)_{T}) </p>
+<hr>
+
+<h3 id="define-request_ddsddt_rho">define Request_ddsddT_rho</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>#define Request_ddsddT_rho `16384`
+</code></pre></div>
+<p>(2^{14}): (\left( \frac{\partial^2 s}{\partial T^2} \right)_{\rho}) </p>
+<hr>
+
+<h3 id="define-request_ddsddrho_t">define Request_ddsddrho_T</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>#define Request_ddsddrho_T `8192`
+</code></pre></div>
+<p>(2^{13}): (\left( \frac{\partial^2 s}{\partial \rho^2} \right)_{T}) </p>
+<hr>
+
+<h3 id="define-request_ddsdrhodt">define Request_ddsdrhodT</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>#define Request_ddsdrhodT `32768`
+</code></pre></div>
+<p>(2^{15}): (\left( \frac{\partial^2 s}{\partial \rho \partial T} \right)) </p>
+<hr>
+
+<h3 id="define-request_dduddt_rho">define Request_dduddT_rho</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>#define Request_dduddT_rho `131072`
+</code></pre></div>
+<p>(2^{17}): (\left( \frac{\partial^2 u}{\partial T^2} \right)_{\rho}) </p>
+<hr>
+
+<h3 id="define-request_dduddrho_t">define Request_dduddrho_T</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>#define Request_dduddrho_T `65536`
+</code></pre></div>
+<p>(2^{16}): (\left( \frac{\partial^2 u}{\partial \rho^2} \right)_{T}) </p>
+<hr>
+
+<h3 id="define-request_ddudrhodt">define Request_ddudrhodT</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>#define Request_ddudrhodT `262144`
+</code></pre></div>
+<p>(2^{18}): (\left( \frac{\partial^2 u}{\partial \rho \partial T} \right)) </p>
+<hr>
+
+<h3 id="define-request_dgdt_rho">define Request_dgdT_rho</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>#define Request_dgdT_rho `512`
+</code></pre></div>
+<p>(2^{9}): (\left( \frac{\partial g}{\partial T} \right)_{\rho}) </p>
+<hr>
+
+<h3 id="define-request_dgdrho_t">define Request_dgdrho_T</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>#define Request_dgdrho_T `256`
+</code></pre></div>
+<p>(2^{8}): (\left( \frac{\partial g}{\partial \rho} \right)_T) </p>
+<hr>
+
+<h3 id="define-request_dhdt_p">define Request_dhdT_p</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>#define Request_dhdT_p `268435456`
+</code></pre></div>
+<p>(2^{28}): (\left( \frac{\partial h}{\partial T} \right)_{p}) </p>
+<hr>
+
+<h3 id="define-request_dhdt_rho">define Request_dhdT_rho</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>#define Request_dhdT_rho `128`
+</code></pre></div>
+<p>(2^{7}): (\left( \frac{\partial h}{\partial T} \right)_{\rho}) </p>
+<hr>
+
+<h3 id="define-request_dhdp_t">define Request_dhdp_T</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>#define Request_dhdp_T `67108864`
+</code></pre></div>
+<p>(2^{26}): (\left( \frac{\partial h}{\partial p} \right)_{T}) </p>
+<hr>
+
+<h3 id="define-request_dhdrho_t">define Request_dhdrho_T</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>#define Request_dhdrho_T `64`
+</code></pre></div>
+<p>(2^{6}): (\left( \frac{\partial h}{\partial \rho} \right)_T) </p>
+<hr>
+
+<h3 id="define-request_dpdt_rho">define Request_dpdT_rho</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>#define Request_dpdT_rho `2`
+</code></pre></div>
+<p>(2^{1}): (\left( \frac{\partial p}{\partial T} \right)_{\rho}) </p>
+<hr>
+
+<h3 id="define-request_dpdrho_t">define Request_dpdrho_T</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>#define Request_dpdrho_T `1`
+</code></pre></div>
+<p>(2^{0}): (\left( \frac{\partial p}{\partial \rho} \right)_T) </p>
+<hr>
+
+<h3 id="define-request_dpdrho_s">define Request_dpdrho_s</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>#define Request_dpdrho_s `536870912`
+</code></pre></div>
+<p>(2^{29}): (\left( \frac{\partial p}{\partial \rho} \right)_{s}) </p>
+<hr>
+
+<h3 id="define-request_drhodt_p">define Request_drhodT_p</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>#define Request_drhodT_p `134217728`
+</code></pre></div>
+<p>(2^{27}): (\left( \frac{\partial \rho}{\partial T} \right)_{p}) </p>
+<hr>
+
+<h3 id="define-request_drhodh_p">define Request_drhodh_p</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>#define Request_drhodh_p `4294967296`
+</code></pre></div>
+<p>(2^{32}): (\left( \frac{\partial \rho}{\partial h} \right)_{p}) </p>
+<hr>
+
+<h3 id="define-request_drhodp_t">define Request_drhodp_T</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>#define Request_drhodp_T `33554432`
+</code></pre></div>
+<p>(2^{25}): (\left( \frac{\partial \rho}{\partial p} \right)_{T}) </p>
+<hr>
+
+<h3 id="define-request_drhodp_h">define Request_drhodp_h</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>#define Request_drhodp_h `2147483648`
+</code></pre></div>
+<p>(2^{31}): (\left( \frac{\partial \rho}{\partial p} \right)_{h}) </p>
+<hr>
+
+<h3 id="define-request_dsdt_rho">define Request_dsdT_rho</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>#define Request_dsdT_rho `8`
+</code></pre></div>
+<p>(2^{3}): (\left( \frac{\partial s}{\partial T} \right)_{\rho}) </p>
+<hr>
+
+<h3 id="define-request_dsdrho_t">define Request_dsdrho_T</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>#define Request_dsdrho_T `4`
+</code></pre></div>
+<p>(2^{2}): (\left( \frac{\partial s}{\partial \rho} \right)_T) </p>
+<hr>
+
+<h3 id="define-request_dudt_rho">define Request_dudT_rho</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>#define Request_dudT_rho `32`
+</code></pre></div>
+<p>(2^{5}): (\left( \frac{\partial u}{\partial T} \right)_{\rho}) </p>
+<hr>
+
+<h3 id="define-request_dudrho_t">define Request_dudrho_T</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>#define Request_dudrho_T `16`
+</code></pre></div>
+<p>(2^{4}): (\left( \frac{\partial u}{\partial \rho} \right)_T) </p>
+<hr>
+
+<h3 id="define-request_g">define Request_g</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>#define Request_g `281474976710656`
+</code></pre></div>
+<p>(2^{48}): Specific Gibbs-energy (g). See Table of PartialDer </p>
+<hr>
+
+<h3 id="define-request_h">define Request_h</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>#define Request_h `17592186044416`
+</code></pre></div>
+<p>(2^{44}): Specific Enthalpy (h) </p>
+<hr>
+
+<h3 id="define-request_rho">define Request_rho</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>#define Request_rho `562949953421312`
+</code></pre></div>
+<p>(2^{49}): Density (\rho) </p>
+<hr>
+
+<h3 id="define-request_s">define Request_s</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>#define Request_s `8796093022208`
+</code></pre></div>
+<p>(2^{43}): Specific Entropy (s) </p>
+<hr>
+
+<h3 id="define-request_u">define Request_u</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>#define Request_u `4398046511104`
+</code></pre></div>
+<p>(2^{42}): Internal energy (u) </p>
+<hr>
+
+<h3 id="define-request_w">define Request_w</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>#define Request_w `140737488355328`
+</code></pre></div>
+<p>(2^{47}): Speed of sound (w) </p>
+<hr>
+
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

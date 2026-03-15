@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1H2ONaCl_1_1Params__PX2T__VL" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::H2ONaCl::Params_PX2T_VL</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Params__PX2T__VL_1a486703cb9ffdc981b1770be4938a05a2" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl" kindref="compound">cH2ONaCl</ref> *</type>
+        <definition>cH2ONaCl* xThermal::H2ONaCl::Params_PX2T_VL::sw</definition>
+        <argsstring></argsstring>
+        <name>sw</name>
+        <qualifiedname>xThermal::H2ONaCl::Params_PX2T_VL::sw</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer of <ref refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl" kindref="compound">cH2ONaCl</ref> class </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="334" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Params__PX2T__VL_1add6fa54f108174145cf9fa1c2ac9cd85" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::H2ONaCl::Params_PX2T_VL::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <qualifiedname>xThermal::H2ONaCl::Params_PX2T_VL::P</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Input pressure [Pa] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="335" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Params__PX2T__VL_1afbbd2b9b47947809f62490296714f531" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::H2ONaCl::Params_PX2T_VL::X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <qualifiedname>xThermal::H2ONaCl::Params_PX2T_VL::X</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Input salinity [kg/kg] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="336" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Params__PX2T__VL_1ac49ebd957230e62f647f4e65c86f5a58" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacexThermal_1a02981dc49f0ba850ff112b9d0faab94e" kindref="member">PhaseType</ref></type>
+        <definition>PhaseType xThermal::H2ONaCl::Params_PX2T_VL::phase</definition>
+        <argsstring></argsstring>
+        <name>phase</name>
+        <qualifiedname>xThermal::H2ONaCl::Params_PX2T_VL::phase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Liquid, Vapor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="337" column="23" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>xThermal::H2ONaCl::Params_PX2T_VL</label>
+        <link refid="structxThermal_1_1H2ONaCl_1_1Params__PX2T__VL"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>sw</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>xThermal::H2ONaCl::cH2ONaCl</label>
+        <link refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>xThermal::cxThermal</label>
+        <link refid="classxThermal_1_1cxThermal"/>
+      </node>
+    </collaborationgraph>
+    <location file="Library/H2ONaCl/H2ONaCl.h" line="332" column="9" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="333" bodyend="338"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1H2ONaCl_1_1Params__PX2T__VL_1add6fa54f108174145cf9fa1c2ac9cd85" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Params_PX2T_VL</scope><name>P</name></member>
+      <member refid="structxThermal_1_1H2ONaCl_1_1Params__PX2T__VL_1ac49ebd957230e62f647f4e65c86f5a58" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Params_PX2T_VL</scope><name>phase</name></member>
+      <member refid="structxThermal_1_1H2ONaCl_1_1Params__PX2T__VL_1a486703cb9ffdc981b1770be4938a05a2" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Params_PX2T_VL</scope><name>sw</name></member>
+      <member refid="structxThermal_1_1H2ONaCl_1_1Params__PX2T__VL_1afbbd2b9b47947809f62490296714f531" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Params_PX2T_VL</scope><name>X</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

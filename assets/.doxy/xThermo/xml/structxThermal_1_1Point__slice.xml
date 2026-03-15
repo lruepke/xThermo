@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1Point__slice" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::Point_slice</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1Point__slice_1a7885bdbd1b9c004389995ada18db2425" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::Point_slice::T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <qualifiedname>xThermal::Point_slice::T</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1077" column="16" bodyfile="Library/thermo/DataStructures.h" bodystart="1077" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Point__slice_1a4de44775c35405c92a80d527af46b152" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::Point_slice::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <qualifiedname>xThermal::Point_slice::P</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1077" column="17" bodyfile="Library/thermo/DataStructures.h" bodystart="1077" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Point__slice_1a54f38b1cbf3daa7e3d2d0da7cb19895d" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::Point_slice::X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <qualifiedname>xThermal::Point_slice::X</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1077" column="18" bodyfile="Library/thermo/DataStructures.h" bodystart="1077" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Point__slice_1aa3ceb7c25cd7be461b5aa90201b687ff" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::Point_slice::H</definition>
+        <argsstring></argsstring>
+        <name>H</name>
+        <qualifiedname>xThermal::Point_slice::H</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1077" column="19" bodyfile="Library/thermo/DataStructures.h" bodystart="1077" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Point__slice_1aee2516fed6339f0498e73d4de14bc405" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string xThermal::Point_slice::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>xThermal::Point_slice::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1078" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1078" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Point__slice_1ac65c597b376bffb516bf56efb5d9cfae" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string xThermal::Point_slice::marker</definition>
+        <argsstring></argsstring>
+        <name>marker</name>
+        <qualifiedname>xThermal::Point_slice::marker</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1079" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1079" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Point__slice_1a9459cea5c4b37df1a9d62ef7a4b293a1" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::Point_slice::mfc</definition>
+        <argsstring></argsstring>
+        <name>mfc</name>
+        <qualifiedname>xThermal::Point_slice::mfc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1080" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1080" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Point__slice_1a1d0840e41a56f39f4055de7867771fc5" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::Point_slice::mec</definition>
+        <argsstring></argsstring>
+        <name>mec</name>
+        <qualifiedname>xThermal::Point_slice::mec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1081" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1081" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structxThermal_1_1Point__slice_1aef557d2e657daf4b87fb1c4affefae1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xThermal::Point_slice::Point_slice</definition>
+        <argsstring>()</argsstring>
+        <name>Point_slice</name>
+        <qualifiedname>xThermal::Point_slice::Point_slice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1083" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="1083" bodyend="1083"/>
+      </memberdef>
+      <memberdef kind="function" id="structxThermal_1_1Point__slice_1a7a43f9960ab729fa6ce834c2be8c1bb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xThermal::Point_slice::Point_slice</definition>
+        <argsstring>(double T, double P, double X, double H, std::string name, std::string marker, COLOR mfc0, COLOR mec0)</argsstring>
+        <name>Point_slice</name>
+        <qualifiedname>xThermal::Point_slice::Point_slice</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>marker</declname>
+        </param>
+        <param>
+          <type><ref refid="structxThermal_1_1COLOR" kindref="compound">COLOR</ref></type>
+          <declname>mfc0</declname>
+        </param>
+        <param>
+          <type><ref refid="structxThermal_1_1COLOR" kindref="compound">COLOR</ref></type>
+          <declname>mec0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1084" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="1084" bodyend="1087"/>
+      </memberdef>
+      <memberdef kind="function" id="structxThermal_1_1Point__slice_1a66eea2f7637371586cff56bd3568f23d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+        <definition>bool xThermal::Point_slice::operator&lt;</definition>
+        <argsstring>(const Point_slice &amp;other) const</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>xThermal::Point_slice::operator&lt;</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1Point__slice" kindref="compound">Point_slice</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1088" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="1088" bodyend="1088"/>
+      </memberdef>
+      <memberdef kind="function" id="structxThermal_1_1Point__slice_1a22725cf4c73b03d36ee7d63379195494" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+        <definition>bool xThermal::Point_slice::operator==</definition>
+        <argsstring>(const Point_slice &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>xThermal::Point_slice::operator==</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1Point__slice" kindref="compound">Point_slice</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1089" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="1089" bodyend="1089"/>
+      </memberdef>
+      <memberdef kind="function" id="structxThermal_1_1Point__slice_1af95a2345fa3493a43833ff7cb3f49fd0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string xThermal::Point_slice::info</definition>
+        <argsstring>(const Point_slice &amp;self)</argsstring>
+        <name>info</name>
+        <qualifiedname>xThermal::Point_slice::info</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1Point__slice" kindref="compound">Point_slice</ref> &amp;</type>
+          <declname>self</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1105" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1105" bodyend="1110"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="structxThermal_1_1Point__slice_1ac9fc870a31c8556a01e4ab688adb6211" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Point_slice &amp;self)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>xThermal::Point_slice::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1Point__slice" kindref="compound">Point_slice</ref> &amp;</type>
+          <declname>self</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1091" column="16" bodyfile="Library/thermo/DataStructures.h" bodystart="1091" bodyend="1103"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/thermo/DataStructures.h" line="1075" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="1076" bodyend="1111"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1Point__slice_1aa3ceb7c25cd7be461b5aa90201b687ff" prot="public" virt="non-virtual"><scope>xThermal::Point_slice</scope><name>H</name></member>
+      <member refid="structxThermal_1_1Point__slice_1af95a2345fa3493a43833ff7cb3f49fd0" prot="public" virt="non-virtual"><scope>xThermal::Point_slice</scope><name>info</name></member>
+      <member refid="structxThermal_1_1Point__slice_1ac65c597b376bffb516bf56efb5d9cfae" prot="public" virt="non-virtual"><scope>xThermal::Point_slice</scope><name>marker</name></member>
+      <member refid="structxThermal_1_1Point__slice_1a1d0840e41a56f39f4055de7867771fc5" prot="public" virt="non-virtual"><scope>xThermal::Point_slice</scope><name>mec</name></member>
+      <member refid="structxThermal_1_1Point__slice_1a9459cea5c4b37df1a9d62ef7a4b293a1" prot="public" virt="non-virtual"><scope>xThermal::Point_slice</scope><name>mfc</name></member>
+      <member refid="structxThermal_1_1Point__slice_1aee2516fed6339f0498e73d4de14bc405" prot="public" virt="non-virtual"><scope>xThermal::Point_slice</scope><name>name</name></member>
+      <member refid="structxThermal_1_1Point__slice_1a66eea2f7637371586cff56bd3568f23d" prot="public" virt="non-virtual"><scope>xThermal::Point_slice</scope><name>operator&lt;</name></member>
+      <member refid="structxThermal_1_1Point__slice_1ac9fc870a31c8556a01e4ab688adb6211" prot="public" virt="non-virtual"><scope>xThermal::Point_slice</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structxThermal_1_1Point__slice_1a22725cf4c73b03d36ee7d63379195494" prot="public" virt="non-virtual"><scope>xThermal::Point_slice</scope><name>operator==</name></member>
+      <member refid="structxThermal_1_1Point__slice_1a4de44775c35405c92a80d527af46b152" prot="public" virt="non-virtual"><scope>xThermal::Point_slice</scope><name>P</name></member>
+      <member refid="structxThermal_1_1Point__slice_1aef557d2e657daf4b87fb1c4affefae1f" prot="public" virt="non-virtual"><scope>xThermal::Point_slice</scope><name>Point_slice</name></member>
+      <member refid="structxThermal_1_1Point__slice_1a7a43f9960ab729fa6ce834c2be8c1bb3" prot="public" virt="non-virtual"><scope>xThermal::Point_slice</scope><name>Point_slice</name></member>
+      <member refid="structxThermal_1_1Point__slice_1a7885bdbd1b9c004389995ada18db2425" prot="public" virt="non-virtual"><scope>xThermal::Point_slice</scope><name>T</name></member>
+      <member refid="structxThermal_1_1Point__slice_1a54f38b1cbf3daa7e3d2d0da7cb19895d" prot="public" virt="non-virtual"><scope>xThermal::Point_slice</scope><name>X</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

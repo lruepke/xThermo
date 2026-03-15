@@ -1,0 +1,1452 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest" kind="class" language="C++" prot="public">
+    <compoundname>LOOKUPTABLE_FOREST::LookUpTableForest</compoundname>
+    <includes refid="LookUpTableForest_8h" local="no">LookUpTableForest.h</includes>
+    <templateparamlist>
+      <param>
+        <type>int</type>
+        <declname>dim</declname>
+        <defname>dim</defname>
+      </param>
+      <param>
+        <type>typename USER_DATA</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a02cd4bdce45c5bbf3c1af0b74020b92d" prot="private" static="no" mutable="no">
+        <type>long int</type>
+        <definition>long int LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::m_num_quads</definition>
+        <argsstring></argsstring>
+        <name>m_num_quads</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::m_num_quads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="156" column="18" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a1efa08edbbd36c8e540567693e9151e5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::m_num_leaves</definition>
+        <argsstring></argsstring>
+        <name>m_num_leaves</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::m_num_leaves</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="157" column="13" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1aa378a6ed934ed8800b0d5294a2c678fc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::m_num_need_refine</definition>
+        <argsstring></argsstring>
+        <name>m_num_need_refine</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::m_num_need_refine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="158" column="13" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a4ecfb0f135c29ca5f75b980e9c8421ba" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::m_data_size</definition>
+        <argsstring></argsstring>
+        <name>m_data_size</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::m_data_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="159" column="17" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a9706b45cce9903e2d9222e2f651d2a39" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::m_length_scale[dim]</definition>
+        <argsstring>[dim]</argsstring>
+        <name>m_length_scale</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::m_length_scale</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The reference space is a square or a cube with length=2^{MAX_FOREST_LEVEL}, so the length scale in x,y,z axis is calculated as, e.g. length_scale[0] = (m_xyz_max[0] - m_xyz_min[0])/length, so the length of a quadrant is len_quad = 2^{MAX_FOREST_LEVEL - level}, so its real length in x-axis is len_quad*length_scale[0] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="160" column="16" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a2f3687814a5b1355bcf3fbf18618db79" prot="private" static="no" mutable="no">
+        <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">Quadrant</ref>&lt; dim, USER_DATA &gt;</type>
+        <definition>Quadrant&lt;dim,USER_DATA&gt; LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::m_root</definition>
+        <argsstring></argsstring>
+        <name>m_root</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::m_root</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="161" column="18" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a86e45c60a4aa16b4422f191a95a39eee" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::m_eosPointer</definition>
+        <argsstring></argsstring>
+        <name>m_eosPointer</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::m_eosPointer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="178" column="17" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1ab808e3996c75ee69088cc876870d5613" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::m_constZ</definition>
+        <argsstring></argsstring>
+        <name>m_constZ</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::m_constZ</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="179" column="17" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1af01ee3d85069bba717a4e9f7afae047a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::m_min_level</definition>
+        <argsstring></argsstring>
+        <name>m_min_level</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::m_min_level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="180" column="17" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a04456c26d0aba8ad0ba04d908cf3e732" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::m_max_level</definition>
+        <argsstring></argsstring>
+        <name>m_max_level</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::m_max_level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="181" column="17" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1af82fe3d8e7e05fc2454e2b0a91dae37c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::m_xyz_min[dim]</definition>
+        <argsstring>[dim]</argsstring>
+        <name>m_xyz_min</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::m_xyz_min</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="182" column="16" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a428fcc1d6aacf9b9897dbb6ba164583e" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::m_xyz_max[dim]</definition>
+        <argsstring>[dim]</argsstring>
+        <name>m_xyz_max</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::m_xyz_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="183" column="16" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a625af769e25437a48fe0159de694fe37" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::m_num_children</definition>
+        <argsstring></argsstring>
+        <name>m_num_children</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::m_num_children</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="184" column="17" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a9746ef981c7e6f8670ef000f2a5890e2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::m_num_node_per_quad</definition>
+        <argsstring></argsstring>
+        <name>m_num_node_per_quad</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::m_num_node_per_quad</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="185" column="17" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a996494e9ad4050a86e1fde1bb056f971" prot="public" static="no" mutable="no">
+        <type>std::map&lt; int, <ref refid="structxThermal_1_1propInfo" kindref="compound">xThermal::propInfo</ref> &gt;</type>
+        <definition>std::map&lt;int, xThermal::propInfo&gt; LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::m_map_props</definition>
+        <argsstring></argsstring>
+        <name>m_map_props</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::m_map_props</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="186" column="18" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1ae1951c66faebd6058d161dbca8c4e2de" prot="public" static="no" mutable="no">
+        <type>std::map&lt; int, int &gt;</type>
+        <definition>std::map&lt;int, int&gt; LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::m_map_prop2index</definition>
+        <argsstring></argsstring>
+        <name>m_map_prop2index</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::m_map_prop2index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="187" column="18" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a31d86a4794cac1a3a9e97b1af9d48912" prot="public" static="no" mutable="no">
+        <type><ref refid="structLOOKUPTABLE__FOREST_1_1PropsData" kindref="compound">PropsData</ref></type>
+        <definition>PropsData LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::m_props_unique_points_leaves</definition>
+        <argsstring></argsstring>
+        <name>m_props_unique_points_leaves</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::m_props_unique_points_leaves</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="188" column="19" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a79ad307423cb3dba8b32ab4a95c50984" prot="public" static="no" mutable="no">
+        <type>CONST_WHICH_VAR</type>
+        <definition>CONST_WHICH_VAR LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::m_const_which_var</definition>
+        <argsstring></argsstring>
+        <name>m_const_which_var</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::m_const_which_var</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="189" column="25" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a8fa3763fbda3a18ee587024c206be5e7" prot="public" static="no" mutable="no">
+        <type>EOS_ENERGY</type>
+        <definition>EOS_ENERGY LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::m_TorH</definition>
+        <argsstring></argsstring>
+        <name>m_TorH</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::m_TorH</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="190" column="20" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a3eeba0bc879a599eaee531840f7f876b" prot="public" static="no" mutable="no">
+        <type><ref refid="structLOOKUPTABLE__FOREST_1_1RMSD__RefineCriterion" kindref="compound">RMSD_RefineCriterion</ref></type>
+        <definition>RMSD_RefineCriterion LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::m_RMSD_RefineCriterion</definition>
+        <argsstring></argsstring>
+        <name>m_RMSD_RefineCriterion</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::m_RMSD_RefineCriterion</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="192" column="30" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a24164fa574003f8ef0e4dd6c9bcc222d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::init_Root</definition>
+        <argsstring>(Quadrant&lt; dim, USER_DATA &gt; &amp;quad)</argsstring>
+        <name>init_Root</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::init_Root</qualifiedname>
+        <param>
+          <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">Quadrant</ref>&lt; dim, USER_DATA &gt; &amp;</type>
+          <declname>quad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="162" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a497c223ab0dbdd43afb3695898925a22" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::release_quadrant_data</definition>
+        <argsstring>(Quadrant&lt; dim, USER_DATA &gt; *quad)</argsstring>
+        <name>release_quadrant_data</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::release_quadrant_data</qualifiedname>
+        <param>
+          <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">Quadrant</ref>&lt; dim, USER_DATA &gt; *</type>
+          <declname>quad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="163" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a0e5078bb32dfb86cb019bffaf10fa31c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::release_leaves</definition>
+        <argsstring>(Quadrant&lt; dim, USER_DATA &gt; *quad)</argsstring>
+        <name>release_leaves</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::release_leaves</qualifiedname>
+        <param>
+          <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">Quadrant</ref>&lt; dim, USER_DATA &gt; *</type>
+          <declname>quad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="164" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1ae178fb959ee7455c56dd093ac1a3f869" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::getLeaves</definition>
+        <argsstring>(std::vector&lt; Quadrant&lt; dim, USER_DATA &gt; * &gt; &amp;leaves, long int &amp;quad_counts, Quadrant&lt; dim, USER_DATA &gt; *quad)</argsstring>
+        <name>getLeaves</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::getLeaves</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">Quadrant</ref>&lt; dim, USER_DATA &gt; * &gt; &amp;</type>
+          <declname>leaves</declname>
+        </param>
+        <param>
+          <type>long int &amp;</type>
+          <declname>quad_counts</declname>
+        </param>
+        <param>
+          <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">Quadrant</ref>&lt; dim, USER_DATA &gt; *</type>
+          <declname>quad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="165" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1ad9e3561a6c647f86abb0036be947feca" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::refine</definition>
+        <argsstring>(Quadrant&lt; dim, USER_DATA &gt; *quad, double xmin_quad, double ymin_quad, double zmin_quad, bool(*is_refine)(LookUpTableForest&lt; dim, USER_DATA &gt; *forest, Quadrant&lt; dim, USER_DATA &gt; *quad, double xmin_quad, double ymin_quad, double zmin_quad, int max_level))</argsstring>
+        <name>refine</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::refine</qualifiedname>
+        <param>
+          <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">Quadrant</ref>&lt; dim, USER_DATA &gt; *</type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>xmin_quad</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>ymin_quad</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>zmin_quad</declname>
+        </param>
+        <param>
+          <type>bool(*)(<ref refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest" kindref="compound">LookUpTableForest</ref>&lt; dim, USER_DATA &gt; *forest, <ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">Quadrant</ref>&lt; dim, USER_DATA &gt; *quad, double xmin_quad, double ymin_quad, double zmin_quad, int max_level)</type>
+          <declname>is_refine</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="166" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1ac2af9dd17e568bca3937aedbedded681" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::write_vtk_cellData</definition>
+        <argsstring>(std::ofstream *fout, std::string type, std::string name, std::string format)</argsstring>
+        <name>write_vtk_cellData</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::write_vtk_cellData</qualifiedname>
+        <param>
+          <type>std::ofstream *</type>
+          <declname>fout</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="167" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a2c19fff34d3d595886c1ec06ad5d2bd9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::searchQuadrant</definition>
+        <argsstring>(Quadrant&lt; dim, USER_DATA &gt; *quad_source, Quadrant&lt; dim, USER_DATA &gt; *&amp;quad_target, double *xyz_min_target, double x_ref, double y_ref, double z_ref)</argsstring>
+        <name>searchQuadrant</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::searchQuadrant</qualifiedname>
+        <param>
+          <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">Quadrant</ref>&lt; dim, USER_DATA &gt; *</type>
+          <declname>quad_source</declname>
+        </param>
+        <param>
+          <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">Quadrant</ref>&lt; dim, USER_DATA &gt; *&amp;</type>
+          <declname>quad_target</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>xyz_min_target</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x_ref</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y_ref</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z_ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="168" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a3ff5128a2dd4920d4d3d2eca231e96cd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::init</definition>
+        <argsstring>(double xyz_min[dim], double xyz_max[dim], int max_level, size_t data_size, void *eosPointer)</argsstring>
+        <name>init</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::init</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>xyz_min</declname>
+          <array>[dim]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>xyz_max</declname>
+          <array>[dim]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_level</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>data_size</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>eosPointer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="169" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1ac03d22ada9ccc86e7477c60bd14df1b0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::write_forest</definition>
+        <argsstring>(FILE *fpout, FILE *fpout_point_index, Quadrant&lt; dim, USER_DATA &gt; *quad, int order_child, bool is_write_data)</argsstring>
+        <name>write_forest</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::write_forest</qualifiedname>
+        <param>
+          <type>FILE *</type>
+          <declname>fpout</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>fpout_point_index</declname>
+        </param>
+        <param>
+          <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">Quadrant</ref>&lt; dim, USER_DATA &gt; *</type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>order_child</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_write_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="170" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a41675a3bb50d96dbc75d7805c30c576f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::read_forest</definition>
+        <argsstring>(FILE *fpin_forest, FILE *fpin_point_index, Quadrant&lt; dim, USER_DATA &gt; *quad, int order_child)</argsstring>
+        <name>read_forest</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::read_forest</qualifiedname>
+        <param>
+          <type>FILE *</type>
+          <declname>fpin_forest</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>fpin_point_index</declname>
+        </param>
+        <param>
+          <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">Quadrant</ref>&lt; dim, USER_DATA &gt; *</type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>order_child</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="171" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a4fed3de8fc8e5deaf42f468d9f43229b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::construct_map2dat</definition>
+        <argsstring>()</argsstring>
+        <name>construct_map2dat</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::construct_map2dat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="172" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a68264227b0f56205d7b542be0e936b55" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::get_unique_points_leaves</definition>
+        <argsstring>(std::map&lt; Quad_index, int_pointIndex &gt; &amp;map_unique_points, int &amp;num_leaves, long int &amp;num_quads, int &amp;num_need_refine, Quadrant&lt; dim, USER_DATA &gt; *quad, Quad_index ijk_quad, unsigned int length_quad)</argsstring>
+        <name>get_unique_points_leaves</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::get_unique_points_leaves</qualifiedname>
+        <param>
+          <type>std::map&lt; <ref refid="structLOOKUPTABLE__FOREST_1_1Quad__index" kindref="compound">Quad_index</ref>, int_pointIndex &gt; &amp;</type>
+          <declname>map_unique_points</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>num_leaves</declname>
+        </param>
+        <param>
+          <type>long int &amp;</type>
+          <declname>num_quads</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>num_need_refine</declname>
+        </param>
+        <param>
+          <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">Quadrant</ref>&lt; dim, USER_DATA &gt; *</type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quad__index" kindref="compound">Quad_index</ref></type>
+          <declname>ijk_quad</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>length_quad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="173" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a513e649834efb6559d17e7ea3251996a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::pass_props_pointer_leaves</definition>
+        <argsstring>(std::map&lt; Quad_index, int_pointIndex &gt; &amp;map_unique_points, Quadrant&lt; dim, USER_DATA &gt; *quad, Quad_index ijk_quad, unsigned int length_quad)</argsstring>
+        <name>pass_props_pointer_leaves</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::pass_props_pointer_leaves</qualifiedname>
+        <param>
+          <type>std::map&lt; <ref refid="structLOOKUPTABLE__FOREST_1_1Quad__index" kindref="compound">Quad_index</ref>, int_pointIndex &gt; &amp;</type>
+          <declname>map_unique_points</declname>
+        </param>
+        <param>
+          <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">Quadrant</ref>&lt; dim, USER_DATA &gt; *</type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quad__index" kindref="compound">Quad_index</ref></type>
+          <declname>ijk_quad</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>length_quad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="174" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1ac529ecf69477206c70e95e656336f67f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::read_props_from_binary</definition>
+        <argsstring>(const std::string &amp;filename_forest, bool printStatus=true)</argsstring>
+        <name>read_props_from_binary</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::read_props_from_binary</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename_forest</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>printStatus</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="175" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a7435228195791dbe3df57aa3901e7d62" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::read_forest_from_binary</definition>
+        <argsstring>(const std::string &amp;filename, bool read_only_header=false, bool printStatus=true)</argsstring>
+        <name>read_forest_from_binary</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::read_forest_from_binary</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>read_only_header</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>printStatus</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="176" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a40021eb4a8cea0ab2771af9d1ba7dcb6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::set_min_level</definition>
+        <argsstring>(int min_level)</argsstring>
+        <name>set_min_level</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::set_min_level</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>min_level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="193" column="21" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="193" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a906af3d82422f3ffc90b414ada019d7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">Quadrant</ref>&lt; dim, USER_DATA &gt; *</type>
+        <definition>Quadrant&lt; dim, USER_DATA &gt; * LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::get_root</definition>
+        <argsstring>()</argsstring>
+        <name>get_root</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::get_root</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="194" column="18" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="194" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a398e88407013801ec224de52e7c2a982" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::searchQuadrant</definition>
+        <argsstring>(Quadrant&lt; dim, USER_DATA &gt; *&amp;targetLeaf, double *xyz_min_target, double x, double y, double z)</argsstring>
+        <name>searchQuadrant</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::searchQuadrant</qualifiedname>
+        <param>
+          <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">Quadrant</ref>&lt; dim, USER_DATA &gt; *&amp;</type>
+          <declname>targetLeaf</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>xyz_min_target</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="196" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a1a9ca0f5326234b0b8b1f46b8a9c2097" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::get_quadrant_physical_length</definition>
+        <argsstring>(int level, double physical_length[dim])</argsstring>
+        <name>get_quadrant_physical_length</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::get_quadrant_physical_length</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>physical_length</declname>
+          <array>[dim]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="197" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a521f6b822b3c0cfecf2f0aab415853ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::refine</definition>
+        <argsstring>(bool(*is_refine)(LookUpTableForest&lt; dim, USER_DATA &gt; *forest, Quadrant&lt; dim, USER_DATA &gt; *quad, double xmin_quad, double ymin_quad, double zmin_quad, int max_level))</argsstring>
+        <name>refine</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::refine</qualifiedname>
+        <param>
+          <type>bool(*)(<ref refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest" kindref="compound">LookUpTableForest</ref>&lt; dim, USER_DATA &gt; *forest, <ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">Quadrant</ref>&lt; dim, USER_DATA &gt; *quad, double xmin_quad, double ymin_quad, double zmin_quad, int max_level)</type>
+          <declname>is_refine</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="198" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1ad5c2c2420cd948492dbf0b8087f357f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::get_ijk_nodes_quadrant</definition>
+        <argsstring>(Quadrant&lt; dim, USER_DATA &gt; *quad, const Quad_index *ijk_quad, int num_nodes_per_quad, Quad_index *ijk)</argsstring>
+        <name>get_ijk_nodes_quadrant</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::get_ijk_nodes_quadrant</qualifiedname>
+        <param>
+          <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">Quadrant</ref>&lt; dim, USER_DATA &gt; *</type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structLOOKUPTABLE__FOREST_1_1Quad__index" kindref="compound">Quad_index</ref> *</type>
+          <declname>ijk_quad</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_nodes_per_quad</declname>
+        </param>
+        <param>
+          <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quad__index" kindref="compound">Quad_index</ref> *</type>
+          <declname>ijk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="199" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a9bcd222294e9a23a16c8814f580f53b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::assemble_data</definition>
+        <argsstring>(void(*cal_prop)(LookUpTableForest&lt; dim, USER_DATA &gt; *forest, std::map&lt; Quad_index, double * &gt; &amp;map_ijk2data))</argsstring>
+        <name>assemble_data</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::assemble_data</qualifiedname>
+        <param>
+          <type>void(*)(<ref refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest" kindref="compound">LookUpTableForest</ref>&lt; dim, USER_DATA &gt; *forest, std::map&lt; <ref refid="structLOOKUPTABLE__FOREST_1_1Quad__index" kindref="compound">Quad_index</ref>, double * &gt; &amp;map_ijk2data)</type>
+          <declname>cal_prop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="200" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1ab5ae73ee4016c5797c1286bd3bbecb8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::construct_props_leaves</definition>
+        <argsstring>(void(*cal_prop)(LookUpTableForest&lt; dim, USER_DATA &gt; *forest, std::map&lt; Quad_index, unsigned int &gt; &amp;map_ijk2data, double **data))</argsstring>
+        <name>construct_props_leaves</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::construct_props_leaves</qualifiedname>
+        <param>
+          <type>void(*)(<ref refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest" kindref="compound">LookUpTableForest</ref>&lt; dim, USER_DATA &gt; *forest, std::map&lt; <ref refid="structLOOKUPTABLE__FOREST_1_1Quad__index" kindref="compound">Quad_index</ref>, unsigned int &gt; &amp;map_ijk2data, double **data)</type>
+          <declname>cal_prop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="201" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1aab0511fdc1985294435d62d82f4de043" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::ijk2xyz</definition>
+        <argsstring>(const Quad_index *ijk, double &amp;x, double &amp;y, double &amp;z)</argsstring>
+        <name>ijk2xyz</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::ijk2xyz</qualifiedname>
+        <param>
+          <type>const <ref refid="structLOOKUPTABLE__FOREST_1_1Quad__index" kindref="compound">Quad_index</ref> *</type>
+          <declname>ijk</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="202" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a3381c6f345360c5d852ce2191fdb967a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::union_ijk2xyz</definition>
+        <argsstring>(Quadrant&lt; dim, USER_DATA &gt; *quad, Quad_index &amp;ijk_backup)</argsstring>
+        <name>union_ijk2xyz</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::union_ijk2xyz</qualifiedname>
+        <param>
+          <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">Quadrant</ref>&lt; dim, USER_DATA &gt; *</type>
+          <declname>quad</declname>
+        </param>
+        <param>
+          <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quad__index" kindref="compound">Quad_index</ref> &amp;</type>
+          <declname>ijk_backup</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="203" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1ad90b3a270e440415a52666e8448f7606" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::write_to_vtk</definition>
+        <argsstring>(std::string filename, bool write_data=true, bool isNormalizeXYZ=true)</argsstring>
+        <name>write_to_vtk</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::write_to_vtk</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>write_data</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isNormalizeXYZ</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="204" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a7fd89639e98d0bcbc49365847e72e583" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::write_to_binary</definition>
+        <argsstring>(std::string filename, bool is_write_data=true)</argsstring>
+        <name>write_to_binary</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::write_to_binary</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_write_data</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="205" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a3f0120e907b536725f40f86dd9158539" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::write_point_index</definition>
+        <argsstring>(std::string filename_forest)</argsstring>
+        <name>write_point_index</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::write_point_index</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>filename_forest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="206" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a176d7cb054ca4fa06cd2a9572fc38819" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::write_point_index</definition>
+        <argsstring>(FILE *fpout_point_index, Quadrant&lt; dim, USER_DATA &gt; *quad)</argsstring>
+        <name>write_point_index</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::write_point_index</qualifiedname>
+        <param>
+          <type>FILE *</type>
+          <declname>fpout_point_index</declname>
+        </param>
+        <param>
+          <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">Quadrant</ref>&lt; dim, USER_DATA &gt; *</type>
+          <declname>quad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="207" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1aff905746e1617a1888c62dbf5ecf6210" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::print_summary</definition>
+        <argsstring>()</argsstring>
+        <name>print_summary</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::print_summary</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="208" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1acc926d3fcd40ad20234f4b43d6e8ad63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::get_num_leaves</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_leaves</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::get_num_leaves</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="209" column="13" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="209" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a7cf5661cec8323f199401b9738a11f81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::get_num_quads</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_quads</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::get_num_quads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="210" column="13" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="210" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1aedcaca28d62204c477fb0220249184af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::get_num_need_refine</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_need_refine</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::get_num_need_refine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="211" column="13" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="211" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1ab765a3e380d24847b0c19bb7e8ec0107" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::byte2string</definition>
+        <argsstring>(double bytes)</argsstring>
+        <name>byte2string</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::byte2string</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="212" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a63e8b7f6e24f53b7c3d1c161228d5518" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::LookUpTableForest</definition>
+        <argsstring>(double xyz_min[dim], double xyz_max[dim], EOS_ENERGY TorH, int max_level, std::map&lt; int, xThermal::propInfo &gt; name_props, void *eosPointer=NULL)</argsstring>
+        <name>LookUpTableForest</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::LookUpTableForest</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>xyz_min</declname>
+          <array>[dim]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>xyz_max</declname>
+          <array>[dim]</array>
+        </param>
+        <param>
+          <type>EOS_ENERGY</type>
+          <declname>TorH</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_level</declname>
+        </param>
+        <param>
+          <type>std::map&lt; int, <ref refid="structxThermal_1_1propInfo" kindref="compound">xThermal::propInfo</ref> &gt;</type>
+          <declname>name_props</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>eosPointer</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new Look Up Table Forest object. This is always used to create a 3D table xyz would be corresponding to TPX or PHX. Note that the unit of T is K, unit of P is Pa, unit of X is wt% NaCl (e.g., seawater is 0.032), unit of H is J/kg. The same as H2ONaCl::cH2ONaCl::prop_pTX and The same as H2ONaCl::cH2ONaCl::prop_pHX. For 3D case, the order of the variable MUST BE [T/H, p, X], T or H is specify by argument eos_space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xyz_min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xyz_max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>eosPointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="223" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1acb0b88c04765c33f51b6e38f84a42f4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::LookUpTableForest</definition>
+        <argsstring>(double xy_min[dim], double xy_max[dim], double constZ, CONST_WHICH_VAR const_which_var, EOS_ENERGY TorH, int max_level, std::map&lt; int, xThermal::propInfo &gt; name_props, void *eosPointer=NULL)</argsstring>
+        <name>LookUpTableForest</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::LookUpTableForest</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>xy_min</declname>
+          <array>[dim]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>xy_max</declname>
+          <array>[dim]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>constZ</declname>
+        </param>
+        <param>
+          <type>CONST_WHICH_VAR</type>
+          <declname>const_which_var</declname>
+        </param>
+        <param>
+          <type>EOS_ENERGY</type>
+          <declname>TorH</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_level</declname>
+        </param>
+        <param>
+          <type>std::map&lt; int, <ref refid="structxThermal_1_1propInfo" kindref="compound">xThermal::propInfo</ref> &gt;</type>
+          <declname>name_props</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>eosPointer</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new Look Up Table Forest object. This is always used to create a 2D table xyz would be corresponding to TPX or PHX. Note that the unit of T is K, unit of P is Pa, unit of X is wt% NaCl (e.g., seawater is 0.032), unit of H is J/kg. The same as H2ONaCl::cH2ONaCl::prop_pTX and The same as H2ONaCl::cH2ONaCl::prop_pHX. For 2D case, (1) if constant variable is X, xy order MUST BE T/H, P; (2) if constant variable is T/H, xy order MUST BE X, P; (3) if constant variable is P, xy order MUST BE X, T/H. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xy_min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xy_max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>constZ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>const_which_var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>eosPointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="236" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a66ad019ce61eaa174952fb36e5950d3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::LookUpTableForest</definition>
+        <argsstring>(std::string filename_forest, void *pointer=NULL, bool printStatus=true)</argsstring>
+        <name>LookUpTableForest</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::LookUpTableForest</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>filename_forest</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pointer</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>printStatus</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="237" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a9dc6beff099f7b77b50a5884ebd17dd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::destory</definition>
+        <argsstring>()</argsstring>
+        <name>destory</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::destory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="238" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a62ab68f91eeb81429e7b71fb4b47c3db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;::~LookUpTableForest</definition>
+        <argsstring>()</argsstring>
+        <name>~LookUpTableForest</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::LookUpTableForest::~LookUpTableForest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="239" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Pass dimension and data type to the class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>USER_DATA</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>LOOKUPTABLE_FOREST::LookUpTableForest&lt; dim, USER_DATA &gt;</label>
+        <link refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_props_unique_points_leaves</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_RMSD_RefineCriterion</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>LOOKUPTABLE_FOREST::PropsData</label>
+        <link refid="structLOOKUPTABLE__FOREST_1_1PropsData"/>
+      </node>
+      <node id="3">
+        <label>LOOKUPTABLE_FOREST::RMSD_RefineCriterion</label>
+        <link refid="structLOOKUPTABLE__FOREST_1_1RMSD__RefineCriterion"/>
+      </node>
+    </collaborationgraph>
+    <location file="Library/AMR_LUT/LookUpTableForest.h" line="153" column="5" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="154" bodyend="240"/>
+    <listofallmembers>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a9bcd222294e9a23a16c8814f580f53b3" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>assemble_data</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1ab765a3e380d24847b0c19bb7e8ec0107" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>byte2string</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a4fed3de8fc8e5deaf42f468d9f43229b" prot="private" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>construct_map2dat</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1ab5ae73ee4016c5797c1286bd3bbecb8e" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>construct_props_leaves</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a9dc6beff099f7b77b50a5884ebd17dd5" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>destory</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1ad5c2c2420cd948492dbf0b8087f357f0" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>get_ijk_nodes_quadrant</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1acc926d3fcd40ad20234f4b43d6e8ad63" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>get_num_leaves</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1aedcaca28d62204c477fb0220249184af" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>get_num_need_refine</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a7cf5661cec8323f199401b9738a11f81" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>get_num_quads</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a1a9ca0f5326234b0b8b1f46b8a9c2097" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>get_quadrant_physical_length</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a906af3d82422f3ffc90b414ada019d7e" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>get_root</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a68264227b0f56205d7b542be0e936b55" prot="private" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>get_unique_points_leaves</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1ae178fb959ee7455c56dd093ac1a3f869" prot="private" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>getLeaves</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1aab0511fdc1985294435d62d82f4de043" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>ijk2xyz</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a3ff5128a2dd4920d4d3d2eca231e96cd" prot="private" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>init</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a24164fa574003f8ef0e4dd6c9bcc222d" prot="private" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>init_Root</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a63e8b7f6e24f53b7c3d1c161228d5518" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>LookUpTableForest</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1acb0b88c04765c33f51b6e38f84a42f4e" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>LookUpTableForest</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a66ad019ce61eaa174952fb36e5950d3d" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>LookUpTableForest</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a79ad307423cb3dba8b32ab4a95c50984" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>m_const_which_var</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1ab808e3996c75ee69088cc876870d5613" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>m_constZ</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a4ecfb0f135c29ca5f75b980e9c8421ba" prot="private" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>m_data_size</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a86e45c60a4aa16b4422f191a95a39eee" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>m_eosPointer</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a9706b45cce9903e2d9222e2f651d2a39" prot="private" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>m_length_scale</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1ae1951c66faebd6058d161dbca8c4e2de" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>m_map_prop2index</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a996494e9ad4050a86e1fde1bb056f971" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>m_map_props</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a04456c26d0aba8ad0ba04d908cf3e732" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>m_max_level</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1af01ee3d85069bba717a4e9f7afae047a" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>m_min_level</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a625af769e25437a48fe0159de694fe37" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>m_num_children</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a1efa08edbbd36c8e540567693e9151e5" prot="private" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>m_num_leaves</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1aa378a6ed934ed8800b0d5294a2c678fc" prot="private" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>m_num_need_refine</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a9746ef981c7e6f8670ef000f2a5890e2" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>m_num_node_per_quad</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a02cd4bdce45c5bbf3c1af0b74020b92d" prot="private" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>m_num_quads</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a31d86a4794cac1a3a9e97b1af9d48912" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>m_props_unique_points_leaves</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a3eeba0bc879a599eaee531840f7f876b" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>m_RMSD_RefineCriterion</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a2f3687814a5b1355bcf3fbf18618db79" prot="private" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>m_root</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a8fa3763fbda3a18ee587024c206be5e7" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>m_TorH</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a428fcc1d6aacf9b9897dbb6ba164583e" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>m_xyz_max</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1af82fe3d8e7e05fc2454e2b0a91dae37c" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>m_xyz_min</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a513e649834efb6559d17e7ea3251996a" prot="private" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>pass_props_pointer_leaves</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1aff905746e1617a1888c62dbf5ecf6210" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>print_summary</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a41675a3bb50d96dbc75d7805c30c576f" prot="private" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>read_forest</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a7435228195791dbe3df57aa3901e7d62" prot="private" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>read_forest_from_binary</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1ac529ecf69477206c70e95e656336f67f" prot="private" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>read_props_from_binary</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1ad9e3561a6c647f86abb0036be947feca" prot="private" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>refine</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a521f6b822b3c0cfecf2f0aab415853ed" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>refine</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a0e5078bb32dfb86cb019bffaf10fa31c" prot="private" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>release_leaves</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a497c223ab0dbdd43afb3695898925a22" prot="private" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>release_quadrant_data</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a2c19fff34d3d595886c1ec06ad5d2bd9" prot="private" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>searchQuadrant</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a398e88407013801ec224de52e7c2a982" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>searchQuadrant</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a40021eb4a8cea0ab2771af9d1ba7dcb6" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>set_min_level</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a3381c6f345360c5d852ce2191fdb967a" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>union_ijk2xyz</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1ac03d22ada9ccc86e7477c60bd14df1b0" prot="private" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>write_forest</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a3f0120e907b536725f40f86dd9158539" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>write_point_index</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a176d7cb054ca4fa06cd2a9572fc38819" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>write_point_index</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a7fd89639e98d0bcbc49365847e72e583" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>write_to_binary</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1ad90b3a270e440415a52666e8448f7606" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>write_to_vtk</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1ac2af9dd17e568bca3937aedbedded681" prot="private" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>write_vtk_cellData</name></member>
+      <member refid="classLOOKUPTABLE__FOREST_1_1LookUpTableForest_1a62ab68f91eeb81429e7b71fb4b47c3db" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::LookUpTableForest</scope><name>~LookUpTableForest</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

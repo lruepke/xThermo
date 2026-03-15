@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1Surface" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::Surface</compoundname>
+    <includes refid="DataStructures_8h" local="no">DataStructures.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1Surface_1ae7e81e309b0b578151ee9b9cc3f601c6" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string xThermal::Surface::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>xThermal::Surface::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="875" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="875" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Surface_1ad3170b4495895edcf29ca895ac2cccbf" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string xThermal::Surface::shortName</definition>
+        <argsstring></argsstring>
+        <name>shortName</name>
+        <qualifiedname>xThermal::Surface::shortName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="875" column="26" bodyfile="Library/thermo/DataStructures.h" bodystart="875" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Surface_1a57e3c1a2555d847e034ba973f4ffacc3" prot="public" static="no" mutable="no">
+        <type><ref refid="structxThermal_1_1DeformLinearMesh" kindref="compound">DeformLinearMesh</ref></type>
+        <definition>DeformLinearMesh xThermal::Surface::mesh</definition>
+        <argsstring></argsstring>
+        <name>mesh</name>
+        <qualifiedname>xThermal::Surface::mesh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="876" column="26" bodyfile="Library/thermo/DataStructures.h" bodystart="876" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Surface_1a6625b73b3ef0ff46d43e8fdc6a62d1ea" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string xThermal::Surface::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <qualifiedname>xThermal::Surface::color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="877" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="877" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Data structure for a phase boundary surface </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>xThermal::DeformLinearMesh</label>
+        <link refid="structxThermal_1_1DeformLinearMesh"/>
+      </node>
+      <node id="1">
+        <label>xThermal::Surface</label>
+        <link refid="structxThermal_1_1Surface"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mesh</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Library/thermo/DataStructures.h" line="873" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="874" bodyend="878"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1Surface_1a6625b73b3ef0ff46d43e8fdc6a62d1ea" prot="public" virt="non-virtual"><scope>xThermal::Surface</scope><name>color</name></member>
+      <member refid="structxThermal_1_1Surface_1a57e3c1a2555d847e034ba973f4ffacc3" prot="public" virt="non-virtual"><scope>xThermal::Surface</scope><name>mesh</name></member>
+      <member refid="structxThermal_1_1Surface_1ae7e81e309b0b578151ee9b9cc3f601c6" prot="public" virt="non-virtual"><scope>xThermal::Surface</scope><name>name</name></member>
+      <member refid="structxThermal_1_1Surface_1ad3170b4495895edcf29ca895ac2cccbf" prot="public" virt="non-virtual"><scope>xThermal::Surface</scope><name>shortName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

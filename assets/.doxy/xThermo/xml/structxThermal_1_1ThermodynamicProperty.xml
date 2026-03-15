@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1ThermodynamicProperty" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::ThermodynamicProperty</compoundname>
+    <includes refid="DataStructures_8h" local="no">DataStructures.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicProperty_1a39a9ba9266740d29d8b0d071932f19b3" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::ThermodynamicProperty::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>xThermal::ThermodynamicProperty::value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>value of a property </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="258" column="16" bodyfile="Library/thermo/DataStructures.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicProperty_1aeae897f5e9248d3f1832002f91faa8da" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">char</ref></type>
+        <definition>char xThermal::ThermodynamicProperty::name[LENGTH_CHAR_NAME]</definition>
+        <argsstring>[LENGTH_CHAR_NAME]</argsstring>
+        <name>name</name>
+        <qualifiedname>xThermal::ThermodynamicProperty::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>name of a property </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="259" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicProperty_1a9eff3e1f8b89529daabf8140e1ed3411" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">char</ref></type>
+        <definition>char xThermal::ThermodynamicProperty::name_math[LENGTH_CHAR_NAME]</definition>
+        <argsstring>[LENGTH_CHAR_NAME]</argsstring>
+        <name>name_math</name>
+        <qualifiedname>xThermal::ThermodynamicProperty::name_math</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Latex format of the name </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="260" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicProperty_1accfb9a91dfac270d0f2194cfaebb3065" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">char</ref></type>
+        <definition>char xThermal::ThermodynamicProperty::unit_name[LENGTH_CHAR_NAME]</definition>
+        <argsstring>[LENGTH_CHAR_NAME]</argsstring>
+        <name>unit_name</name>
+        <qualifiedname>xThermal::ThermodynamicProperty::unit_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Latex format of the unit </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="261" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicProperty_1ae98617fbede0dbe7c700b74e8c3371e7" prot="public" static="no" mutable="no">
+        <type><ref refid="structxThermal_1_1PhysicalDimension" kindref="compound">PhysicalDimension</ref></type>
+        <definition>PhysicalDimension xThermal::ThermodynamicProperty::dimension</definition>
+        <argsstring></argsstring>
+        <name>dimension</name>
+        <qualifiedname>xThermal::ThermodynamicProperty::dimension</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dimension of a property in OpenFOAM&apos;s format: [kg, m, s, K, mol, A, cd] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="262" column="27" bodyfile="Library/thermo/DataStructures.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Data struct of a thermodynamic property. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>xThermal::PhysicalDimension</label>
+        <link refid="structxThermal_1_1PhysicalDimension"/>
+      </node>
+      <node id="1">
+        <label>xThermal::ThermodynamicProperty</label>
+        <link refid="structxThermal_1_1ThermodynamicProperty"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dimension</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Library/thermo/DataStructures.h" line="256" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="257" bodyend="263"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1ThermodynamicProperty_1ae98617fbede0dbe7c700b74e8c3371e7" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicProperty</scope><name>dimension</name></member>
+      <member refid="structxThermal_1_1ThermodynamicProperty_1aeae897f5e9248d3f1832002f91faa8da" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicProperty</scope><name>name</name></member>
+      <member refid="structxThermal_1_1ThermodynamicProperty_1a9eff3e1f8b89529daabf8140e1ed3411" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicProperty</scope><name>name_math</name></member>
+      <member refid="structxThermal_1_1ThermodynamicProperty_1accfb9a91dfac270d0f2194cfaebb3065" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicProperty</scope><name>unit_name</name></member>
+      <member refid="structxThermal_1_1ThermodynamicProperty_1a39a9ba9266740d29d8b0d071932f19b3" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicProperty</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

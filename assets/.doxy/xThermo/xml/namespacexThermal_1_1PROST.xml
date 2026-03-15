@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacexThermal_1_1PROST" kind="namespace" language="C++">
+    <compoundname>xThermal::PROST</compoundname>
+    <innerclass refid="classxThermal_1_1PROST_1_1cIAPS84" prot="public">xThermal::PROST::cIAPS84</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/H2O/IAPS84.cpp" line="25" column="5"/>
+  </compounddef>
+</doxygen>

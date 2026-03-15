@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="CppInterface_8h" kind="file" language="C++">
+    <compoundname>CppInterface.h</compoundname>
+    <includedby refid="CppInterface_8mm" local="yes">Library/test/cpp_crossplatform/app_ios/CppInterface.mm</includedby>
+    <includedby refid="ViewController_8m" local="yes">Library/test/cpp_crossplatform/app_ios/ViewController.m</includedby>
+    <innerclass refid="interfaceCppInterface" prot="public">CppInterface</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Objective-C++<sp/>objective-c<sp/>class<sp/>to<sp/>interface<sp/>with<sp/>C++<sp/>Library</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="interfaceCppInterface" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interfaceCppInterface" kindref="compound">CppInterface</ref><sp/>:<sp/>NSObject</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Library/test/cpp_crossplatform/app_ios/CppInterface.h"/>
+  </compounddef>
+</doxygen>

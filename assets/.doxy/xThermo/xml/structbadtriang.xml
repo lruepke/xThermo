@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structbadtriang" kind="struct" language="C++" prot="public">
+    <compoundname>badtriang</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbadtriang_1a11b132e0890478d17dff89632f334430" prot="public" static="no" mutable="no">
+        <type>triangle</type>
+        <definition>triangle badtriang::poortri</definition>
+        <argsstring></argsstring>
+        <name>poortri</name>
+        <qualifiedname>badtriang::poortri</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="556" column="12" bodyfile="Library/thermo/triangle.cpp" bodystart="556" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbadtriang_1afdb4dc4ae4b0b7578b64ae2742e7b1a9" prot="public" static="no" mutable="no">
+        <type>REAL</type>
+        <definition>REAL badtriang::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <qualifiedname>badtriang::key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="557" column="8" bodyfile="Library/thermo/triangle.cpp" bodystart="557" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbadtriang_1a92cb1bf38baf5779865262bacc7f8139" prot="public" static="no" mutable="no">
+        <type>vertex</type>
+        <definition>vertex badtriang::triangorg</definition>
+        <argsstring></argsstring>
+        <name>triangorg</name>
+        <qualifiedname>badtriang::triangorg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="558" column="10" bodyfile="Library/thermo/triangle.cpp" bodystart="558" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbadtriang_1ab1ad44ac98c5e8fd7940ad45f6ef25d1" prot="public" static="no" mutable="no">
+        <type>vertex</type>
+        <definition>vertex badtriang::triangdest</definition>
+        <argsstring></argsstring>
+        <name>triangdest</name>
+        <qualifiedname>badtriang::triangdest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="558" column="20" bodyfile="Library/thermo/triangle.cpp" bodystart="558" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbadtriang_1a44ad69b4811716b4adf50f50b98ab7f0" prot="public" static="no" mutable="no">
+        <type>vertex</type>
+        <definition>vertex badtriang::triangapex</definition>
+        <argsstring></argsstring>
+        <name>triangapex</name>
+        <qualifiedname>badtriang::triangapex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="558" column="31" bodyfile="Library/thermo/triangle.cpp" bodystart="558" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbadtriang_1abe7ce1ffe7da4fe5cb17ebcbaa18515b" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structbadtriang" kindref="compound">badtriang</ref> *</type>
+        <definition>struct badtriang* badtriang::nexttriang</definition>
+        <argsstring></argsstring>
+        <name>nexttriang</name>
+        <qualifiedname>badtriang::nexttriang</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="559" column="18" bodyfile="Library/thermo/triangle.cpp" bodystart="559" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>badtriang</label>
+        <link refid="structbadtriang"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>nexttriang</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Library/thermo/triangle.cpp" line="555" column="1" bodyfile="Library/thermo/triangle.cpp" bodystart="555" bodyend="560"/>
+    <listofallmembers>
+      <member refid="structbadtriang_1afdb4dc4ae4b0b7578b64ae2742e7b1a9" prot="public" virt="non-virtual"><scope>badtriang</scope><name>key</name></member>
+      <member refid="structbadtriang_1abe7ce1ffe7da4fe5cb17ebcbaa18515b" prot="public" virt="non-virtual"><scope>badtriang</scope><name>nexttriang</name></member>
+      <member refid="structbadtriang_1a11b132e0890478d17dff89632f334430" prot="public" virt="non-virtual"><scope>badtriang</scope><name>poortri</name></member>
+      <member refid="structbadtriang_1a44ad69b4811716b4adf50f50b98ab7f0" prot="public" virt="non-virtual"><scope>badtriang</scope><name>triangapex</name></member>
+      <member refid="structbadtriang_1ab1ad44ac98c5e8fd7940ad45f6ef25d1" prot="public" virt="non-virtual"><scope>badtriang</scope><name>triangdest</name></member>
+      <member refid="structbadtriang_1a92cb1bf38baf5779865262bacc7f8139" prot="public" virt="non-virtual"><scope>badtriang</scope><name>triangorg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

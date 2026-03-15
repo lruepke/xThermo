@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="interfaceAppDelegate" kind="class" language="Objective-C" prot="public">
+    <compoundname>AppDelegate</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UIResponder</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;UIApplicationDelegate&gt;</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="interfaceAppDelegate_1acf48ac24125e688cac1a85445cd7fac2" prot="public" static="no" readable="yes" writable="yes" gettable="no" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no" accessor="strong">
+        <type>UIWindow *</type>
+        <definition>UIWindow* AppDelegate::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <qualifiedname>AppDelegate::window</qualifiedname>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/cpp_crossplatform/app_ios/AppDelegate.h" line="5" column="11" bodyfile="Library/test/cpp_crossplatform/app_ios/AppDelegate.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>&lt;UIApplicationDelegate&gt;</label>
+      </node>
+      <node id="1">
+        <label>AppDelegate</label>
+        <link refid="interfaceAppDelegate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UIResponder</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>&lt;UIApplicationDelegate&gt;</label>
+      </node>
+      <node id="1">
+        <label>AppDelegate</label>
+        <link refid="interfaceAppDelegate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UIResponder</label>
+      </node>
+    </collaborationgraph>
+    <location file="Library/test/cpp_crossplatform/app_ios/AppDelegate.h" line="3" column="12" bodyfile="Library/test/cpp_crossplatform/app_ios/AppDelegate.h" bodystart="3" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interfaceAppDelegate_1acf48ac24125e688cac1a85445cd7fac2" prot="public" virt="non-virtual"><scope>AppDelegate</scope><name>window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

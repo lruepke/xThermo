@@ -1,0 +1,590 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="test__H2O_8cpp" kind="file" language="C++">
+    <compoundname>test_H2O.cpp</compoundname>
+    <includes local="yes">H2O.h</includes>
+    <includes local="yes">IAPWS-95.h</includes>
+    <includes refid="IAPWS-IF97_8h" local="yes">IAPWS-IF97.h</includes>
+    <incdepgraph>
+      <node id="18">
+        <label>LookUpTableForest.h</label>
+        <link refid="LookUpTableForest_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IAPWS-IF97.h</label>
+        <link refid="IAPWS-IF97_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Library/benchmark_test/test_H2O.cpp</label>
+        <link refid="test__H2O_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>DataStructures.h</label>
+        <link refid="DataStructures_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Exception.h</label>
+        <link refid="thermo_2Exception_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>MultiProgressBar.h</label>
+        <link refid="MultiProgressBar_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>thermo.h</label>
+        <link refid="thermo_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>triangle.h</label>
+        <link refid="triangle_8h_source"/>
+      </node>
+      <node id="2">
+        <label>H2O.h</label>
+      </node>
+      <node id="3">
+        <label>IAPWS-95.h</label>
+      </node>
+      <node id="13">
+        <label>algorithm</label>
+      </node>
+      <node id="16">
+        <label>cmath</label>
+      </node>
+      <node id="15">
+        <label>exception</label>
+      </node>
+      <node id="8">
+        <label>fstream</label>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="19">
+        <label>map</label>
+      </node>
+      <node id="10">
+        <label>sstream</label>
+      </node>
+      <node id="6">
+        <label>stdfunc.h</label>
+      </node>
+      <node id="20">
+        <label>string</label>
+      </node>
+      <node id="22">
+        <label>sys/ioctl.h</label>
+      </node>
+      <node id="11">
+        <label>utility</label>
+      </node>
+      <node id="12">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacestd">std</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="test__H2O_8cpp_1ae719b49853633af80bd416b69e920d45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_Boiling_P</definition>
+        <argsstring>(double T_K)</argsstring>
+        <name>test_Boiling_P</name>
+        <param>
+          <type>double</type>
+          <declname>T_K</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/test_H2O.cpp" line="244" column="6" bodyfile="Library/benchmark_test/test_H2O.cpp" bodystart="244" bodyend="250" declfile="Library/benchmark_test/test_H2O.cpp" declline="11" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="test__H2O_8cpp_1aca281abfd50ce862dd98d0e851097d0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_Boiling_T</definition>
+        <argsstring>(double P)</argsstring>
+        <name>test_Boiling_T</name>
+        <param>
+          <type>double</type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/test_H2O.cpp" line="252" column="6" bodyfile="Library/benchmark_test/test_H2O.cpp" bodystart="252" bodyend="258" declfile="Library/benchmark_test/test_H2O.cpp" declline="12" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="test__H2O_8cpp_1a6494ee5b6ac0cf0652ffa281ea8a104b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double test_TP2Rho</definition>
+        <argsstring>(double T_K, double P_Pa)</argsstring>
+        <name>test_TP2Rho</name>
+        <param>
+          <type>double</type>
+          <declname>T_K</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>P_Pa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/test_H2O.cpp" line="232" column="8" bodyfile="Library/benchmark_test/test_H2O.cpp" bodystart="232" bodyend="242" declfile="Library/benchmark_test/test_H2O.cpp" declline="13" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="test__H2O_8cpp_1a58ed0b824d5f101389676cc1466b7fea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void validate_SinglePhaseRegion_Table7</definition>
+        <argsstring>()</argsstring>
+        <name>validate_SinglePhaseRegion_Table7</name>
+        <briefdescription>
+<para>Compare and validate result given in Table 7 of IAPWS-95. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/test_H2O.cpp" line="206" column="6" bodyfile="Library/benchmark_test/test_H2O.cpp" bodystart="206" bodyend="230" declfile="Library/benchmark_test/test_H2O.cpp" declline="18" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="test__H2O_8cpp_1a169b1bb0ff29d1fe423a6a0a83b5b914" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void validate_TwoPhaseRegion_Table8</definition>
+        <argsstring>()</argsstring>
+        <name>validate_TwoPhaseRegion_Table8</name>
+        <briefdescription>
+<para>Compare and validate result given in Table 8 of IAPWS-95. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/test_H2O.cpp" line="162" column="6" bodyfile="Library/benchmark_test/test_H2O.cpp" bodystart="162" bodyend="204" declfile="Library/benchmark_test/test_H2O.cpp" declline="23" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="test__H2O_8cpp_1afbdcba53726fb09cd295b85db0f58620" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void validate_phio_phir_Table6</definition>
+        <argsstring>()</argsstring>
+        <name>validate_phio_phir_Table6</name>
+        <briefdescription>
+<para>Validate ideal-gas part <formula id="0">$ \phi^o $</formula> and residual part <formula id="1">$ \phi^r $</formula> of the dimensionless Helmholtz energy and its derivatives for T=500 K and <formula id="2">$ \rho = 838.025 kg/m^3$</formula>. See Table 6 of IAPWS-95. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/test_H2O.cpp" line="119" column="6" bodyfile="Library/benchmark_test/test_H2O.cpp" bodystart="119" bodyend="160" declfile="Library/benchmark_test/test_H2O.cpp" declline="28" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="test__H2O_8cpp_1a525e733ed8d77cb44454bc5b5a02622b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_H</definition>
+        <argsstring>(double T_K, double P)</argsstring>
+        <name>test_H</name>
+        <param>
+          <type>double</type>
+          <declname>T_K</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/test_H2O.cpp" line="111" column="6" bodyfile="Library/benchmark_test/test_H2O.cpp" bodystart="111" bodyend="117" declfile="Library/benchmark_test/test_H2O.cpp" declline="30" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="test__H2O_8cpp_1a989cce80f343c2e835b1ad1a2515863b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_state_HP</definition>
+        <argsstring>(double H, double P)</argsstring>
+        <name>test_state_HP</name>
+        <param>
+          <type>double</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/test_H2O.cpp" line="60" column="6" bodyfile="Library/benchmark_test/test_H2O.cpp" bodystart="60" bodyend="86" declfile="Library/benchmark_test/test_H2O.cpp" declline="32" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="test__H2O_8cpp_1af971ad00ed065447cb211db8c8dbbd01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_state_HP_2D</definition>
+        <argsstring>()</argsstring>
+        <name>test_state_HP_2D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/test_H2O.cpp" line="87" column="6" bodyfile="Library/benchmark_test/test_H2O.cpp" bodystart="87" bodyend="109" declfile="Library/benchmark_test/test_H2O.cpp" declline="33" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="test__H2O_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/test_H2O.cpp" line="34" column="5" bodyfile="Library/benchmark_test/test_H2O.cpp" bodystart="34" bodyend="58"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;H2O.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;IAPWS-95.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="IAPWS-IF97_8h" kindref="compound">IAPWS-IF97.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>IAPWS_OTHERS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;freesteam_class.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;PROST_class.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;CoolProp_class.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_Boiling_P(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T_K);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_Boiling_T(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>P);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>test_TP2Rho(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T_K,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>P_Pa);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>validate_SinglePhaseRegion_Table7();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>validate_TwoPhaseRegion_Table8();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>validate_phio_phir_Table6();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_H(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T_K,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>P);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_state_HP(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>H,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>P);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_state_HP_2D();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>argv)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>IAPWS95::cIAPWS95<sp/>iapws95;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;Pc<sp/>=<sp/>%.20E\n&quot;,iapws95.Boundary_region3ab_P2H(H2O::P_c));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_Boiling_P(450);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_Boiling_T(0.169082693E8);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_TP2Rho(300,<sp/>0.992418352E5);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>validate_SinglePhaseRegion_Table7();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>validate_TwoPhaseRegion_Table8();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>validate_phio_phir_Table6();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_H(200<sp/>+<sp/>273.15,<sp/>300E5);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_state_HP(3900000.000,<sp/>9100000.000);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_state_HP(800000.000,<sp/>29100000.000);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_state_HP(700000.000,<sp/>18100000.000);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_state_HP(2500000.000,<sp/>19100000.000);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_state_HP(1350000.000,<sp/>8700000.000);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_state_HP(CONST_IF97_H_c,<sp/>H2O::P_c);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_state_HP(CONST_IF97_H_c,<sp/>120E6);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_state_HP(6E6,<sp/>120E6);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_state_HP(0.4E6,<sp/>120E6);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_state_HP(200000.000,<sp/>358586031.862);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>test_state_HP(1509418.838,<sp/>12450741.483);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_state_HP_2D();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_state_HP(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>H,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>P)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>IAPWS95::cIAPWS95<sp/>iapws95;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>IAPWS95::State<sp/>state;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>iapws95.UpdateState_HP(H,<sp/>P);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>state<sp/>=<sp/>iapws95.getState();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h,<sp/>hl,<sp/>hv;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>iapws95.h(h,<sp/>hl,<sp/>hv);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cp,<sp/>cpl,<sp/>cpv;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>iapws95.cp(cp,<sp/>cpl,<sp/>cpv);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;----<sp/>H<sp/>=<sp/>%f<sp/>MJ/kg,<sp/>P<sp/>=<sp/>%f<sp/>bar\n&quot;</highlight><highlight class="normal">,<sp/>H/1E6,<sp/>P/1E5);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Phase<sp/>region:<sp/>%d,<sp/>T<sp/>=<sp/>%.2f<sp/>K,<sp/>cp<sp/>=<sp/>%.2f<sp/>J/kg/K,<sp/>rho<sp/>=<sp/>%.2f<sp/>kg/m3,<sp/>x<sp/>=<sp/>%.2E\n&quot;</highlight><highlight class="normal">,<sp/>state.phase,<sp/>state.T.value,<sp/>cp,<sp/>state.Rho.value,<sp/>state.x.value);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>IAPWS_OTHERS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FREESTEAM::cFreeSteam<sp/>steam;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>steam.UpdateState_HP(H,<sp/>P);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Freesteam,<sp/>T<sp/>=<sp/>%.2f<sp/>K,<sp/>cp<sp/>=<sp/>%.2f<sp/>J/kg/K,<sp/>rho<sp/>=<sp/>%.2f<sp/>kg/m3\n&quot;</highlight><highlight class="normal">,steam.T(),<sp/>steam.cp(),<sp/>steam.rho());</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PROST::cPROST<sp/>prost;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prost.UpdateState_TP(steam.T(),<sp/>P);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;PROST,<sp/>H<sp/>=<sp/>%f<sp/>MJ/kg,<sp/>rho<sp/>=<sp/>%f<sp/>kg/m3\n&quot;</highlight><highlight class="normal">,<sp/>prost.h()/1E6,<sp/>prost.rho());</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>COOLPROP::cCoolProp<sp/>coolprop;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>coolprop.UpdateState_HP(H,<sp/>P);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;CoolProp,<sp/>T<sp/>=<sp/>%.2f<sp/>K,<sp/>cp<sp/>=<sp/>%.2f<sp/>J/kg/K,<sp/>rho<sp/>=<sp/>%.2f<sp/>kg/m3\n&quot;</highlight><highlight class="normal">,coolprop.T(),<sp/>coolprop.cp(),<sp/>coolprop.rho());</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;Phase<sp/>region:<sp/>%d,<sp/>T<sp/>=<sp/>%.2f<sp/>K,<sp/>x<sp/>=<sp/>%.2E,<sp/>hl<sp/>=<sp/>%f,<sp/>hv=\n&quot;,<sp/>state.phase,<sp/>state.T.value,<sp/>state.x.value);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>WAIT(&quot;TEST&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_state_HP_2D()</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>IAPWS95::cIAPWS95<sp/>iapws95;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>IAPWS95::State<sp/>state;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>H,<sp/>P;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test<sp/>2D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Hmin<sp/>=<sp/>0.1E6,<sp/>Hmax<sp/>=<sp/>4.5E6,<sp/>Pmin<sp/>=<sp/>H2O::P_MIN,<sp/>Pmax<sp/>=<sp/>200E6;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dh=0.01E6,<sp/>dp<sp/>=<sp/>1E5;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>np<sp/>=<sp/>int((Pmax-Pmin)/dp);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nh<sp/>=<sp/>int((Hmax<sp/>-<sp/>Hmin)/dh);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>np;<sp/>i++)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;%d\n&quot;,<sp/>i);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P<sp/>=<sp/>Pmin<sp/>+<sp/>i*dp;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>nh;<sp/>j++)</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>H<sp/>=<sp/>Hmin<sp/>+<sp/>j*dh;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>iapws95.UpdateState_HP(H<sp/>,<sp/>P,<sp/>state);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_H(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T_K,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>P)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>IAPWS95::cIAPWS95<sp/>iapws95;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h<sp/>=<sp/>iapws95._enthalpy(T_K,<sp/>P);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;T<sp/>=<sp/>%.2f<sp/>K,<sp/>P<sp/>=<sp/>%.2f<sp/>bar,<sp/>H<sp/>=<sp/>%.2f<sp/>J/kg\n&quot;</highlight><highlight class="normal">,<sp/>T_K,<sp/>P,<sp/>h);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>validate_phio_phir_Table6()</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>IAPWS95::cIAPWS95<sp/>iapws95;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T<sp/>=<sp/>500;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rho<sp/>=<sp/>838.025;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>delta<sp/>=<sp/>rho/H2O::Rho_c;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tau<sp/>=<sp/>H2O::T_c/T;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>IAPWS95::HelmholtzEnergy_dimensionless<sp/>phio_<sp/>=<sp/>{0.204797733E1,<sp/>0.384236747,<sp/>-0.147637878,<sp/>0.904611106E1,<sp/>-0.193249185E1,<sp/>0};</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>IAPWS95::HelmholtzEnergy_dimensionless<sp/>phir_<sp/>=<sp/>{-0.342693206E1,<sp/>-0.364366650,<sp/>0.856063701,<sp/>-0.581403435E1,<sp/>-0.223440737E1,<sp/>-0.112176915E1};</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>IAPWS95::HelmholtzEnergy_dimensionless<sp/>phio,<sp/>phir;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>iapws95.phi_o(delta,<sp/>tau,<sp/>phio,<sp/><ref refid="group__BITMASK__phi_1ga6e72e1082694169d8c2c8313cd855038" kindref="member">Update_phi_all</ref>);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>phir.value<sp/>=<sp/>iapws95.phi_r(delta,<sp/>tau);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>phir.d<sp/>=<sp/>iapws95.phi_r_d(delta,<sp/>tau);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>phir.dd<sp/>=<sp/>iapws95.phi_r_dd(delta,<sp/>tau);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>phir.t<sp/>=<sp/>iapws95.phi_r_t(delta,<sp/>tau);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>phir.tt<sp/>=<sp/>iapws95.phi_r_tt(delta,<sp/>tau);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>phir.dt<sp/>=<sp/>iapws95.phi_r_dt(delta,<sp/>tau);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;=======<sp/>T<sp/>=<sp/>%.0f<sp/>K,<sp/>rho<sp/>=<sp/>%.3f<sp/>kg/m3<sp/>========\n&quot;</highlight><highlight class="normal">,<sp/>T,<sp/>rho);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(phio==phio_)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;phio:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;COLOR_GREEN&lt;&lt;</highlight><highlight class="stringliteral">&quot;pass&quot;</highlight><highlight class="normal">&lt;&lt;COLOR_DEFAULT&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;phi0:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;COLOR_RED&lt;&lt;</highlight><highlight class="stringliteral">&quot;failed&quot;</highlight><highlight class="normal">&lt;&lt;COLOR_DEFAULT&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;phio_cal:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;phio&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;phio_tab:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;phio_&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;err:<sp/><sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">&lt;&lt;phio<sp/>-<sp/>phio_&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(phir==phir_)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;phir:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;COLOR_GREEN&lt;&lt;</highlight><highlight class="stringliteral">&quot;pass&quot;</highlight><highlight class="normal">&lt;&lt;COLOR_DEFAULT&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;phir:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;COLOR_RED&lt;&lt;</highlight><highlight class="stringliteral">&quot;failed&quot;</highlight><highlight class="normal">&lt;&lt;COLOR_DEFAULT&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;phir_cal:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;phir&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;phir_tab:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;phir_&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;err:<sp/><sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">&lt;&lt;phir<sp/>-<sp/>phir_&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;===============================================\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>validate_TwoPhaseRegion_Table8()</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>T_K<sp/><sp/><sp/><sp/><sp/>=<sp/>{275,<sp/>450,<sp/>625};</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>P<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{0.698451167E3,0.932203564E6,0.169082693E8};</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>rho_l<sp/><sp/><sp/>=<sp/>{0.999887406E3,0.890341250E3,0.567090385E3};</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>rho_v<sp/><sp/><sp/>=<sp/>{0.550664919E-2,0.481200360E1,0.118290280E3};</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>calculate<sp/>and<sp/>compare<sp/>rho</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>IAPWS95::cIAPWS95<sp/>iapws95;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>err,<sp/>p_cal,<sp/>rho_l_cal,<sp/>rho_v_cal,<sp/>T_cal;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;===========<sp/>Validate<sp/>Boiling_P<sp/>=========\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>T_K.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iapws95.Boiling_P(T_K[i],<sp/>p_cal,<sp/>rho_l_cal,<sp/>rho_v_cal);<sp/></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>=<sp/>(fabs(p_cal<sp/>-<sp/>P[i])/p_cal<sp/>+<sp/>fabs(rho_l_cal<sp/>-<sp/>rho_l[i])/rho_l_cal<sp/>+<sp/>fabs(rho_v_cal<sp/>-<sp/>rho_v[i])/rho_v_cal)/3;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(err&lt;1E-6)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Two<sp/>phase<sp/>validation<sp/>%ssame%s:<sp/>T<sp/>=<sp/>%.1f,<sp/>P<sp/>=<sp/>%.8E,<sp/>rho_l<sp/>=<sp/>%.8E,<sp/>rho_v:<sp/>%.8E,<sp/>err<sp/>=<sp/>%.2E,<sp/>err<sp/>=<sp/>%.2E,<sp/>err<sp/>=<sp/>%.2E\n&quot;</highlight><highlight class="normal">,<sp/>COLOR_GREEN,<sp/>COLOR_DEFAULT,<sp/>T_K[i],<sp/>p_cal,<sp/>rho_l_cal,<sp/>rho_v_cal,<sp/>fabs(p_cal<sp/>-<sp/>P[i])<sp/>,<sp/>fabs(rho_l_cal<sp/>-<sp/>rho_l[i])<sp/>,<sp/>fabs(rho_v_cal<sp/>-<sp/>rho_v[i]));</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(err&lt;1E-3)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Two<sp/>phase<sp/>validation<sp/>%sgood%s:<sp/>T<sp/>=<sp/>%.1f,<sp/>P<sp/>=<sp/>%.8E,<sp/>rho_l<sp/>=<sp/>%.8E,<sp/>rho_v:<sp/>%.8E,<sp/>err<sp/>=<sp/>%.2E,<sp/>err<sp/>=<sp/>%.2E,<sp/>err<sp/>=<sp/>%.2E\n&quot;</highlight><highlight class="normal">,<sp/>COLOR_BLUE,<sp/>COLOR_DEFAULT,<sp/>T_K[i],<sp/>p_cal,<sp/>rho_l_cal,<sp/>rho_v_cal,<sp/>fabs(p_cal<sp/>-<sp/>P[i])<sp/>,<sp/>fabs(rho_l_cal<sp/>-<sp/>rho_l[i])<sp/>,<sp/>fabs(rho_v_cal<sp/>-<sp/>rho_v[i]));</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Two<sp/>phase<sp/>validation<sp/>%sfailed%s:<sp/>T<sp/>=<sp/>%.1f,<sp/>P<sp/>=<sp/>%.8E,<sp/>rho_l<sp/>=<sp/>%.8E,<sp/>rho_v:<sp/>%.8E,<sp/>err<sp/>=<sp/>%.2E,<sp/>err<sp/>=<sp/>%.2E,<sp/>err<sp/>=<sp/>%.2E\n&quot;</highlight><highlight class="normal">,<sp/>COLOR_RED,<sp/>COLOR_DEFAULT,<sp/>T_K[i],<sp/>p_cal,<sp/>rho_l_cal,<sp/>rho_v_cal,<sp/>fabs(p_cal<sp/>-<sp/>P[i])<sp/>,<sp/>fabs(rho_l_cal<sp/>-<sp/>rho_l[i])<sp/>,<sp/>fabs(rho_v_cal<sp/>-<sp/>rho_v[i]));</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test<sp/>Boiling_T</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;===========<sp/>Validate<sp/>Boiling_T<sp/>=========\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>P.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iapws95.Boiling_T(P[i],<sp/>T_cal,<sp/>rho_l_cal,<sp/>rho_v_cal);<sp/></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>=<sp/>(fabs(T_cal<sp/>-<sp/>T_K[i])/T_cal<sp/>+<sp/>fabs(rho_l_cal<sp/>-<sp/>rho_l[i])/rho_l_cal<sp/>+<sp/>fabs(rho_v_cal<sp/>-<sp/>rho_v[i])/rho_v_cal)/3;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(err&lt;1E-6)</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Two<sp/>phase<sp/>validation<sp/>%ssame%s:<sp/>P<sp/>=<sp/>%.8E,<sp/>T<sp/>=<sp/>%.1f,<sp/><sp/>rho_l<sp/>=<sp/>%.8E,<sp/>rho_v:<sp/>%.8E,<sp/>err<sp/>=<sp/>%.2E,<sp/>err<sp/>=<sp/>%.2E,<sp/>err<sp/>=<sp/>%.2E\n&quot;</highlight><highlight class="normal">,<sp/>COLOR_GREEN,<sp/>COLOR_DEFAULT,<sp/>P[i],<sp/>T_cal,<sp/>rho_l_cal,<sp/>rho_v_cal,<sp/>fabs(T_cal<sp/>-<sp/>T_K[i])<sp/>,<sp/>fabs(rho_l_cal<sp/>-<sp/>rho_l[i])<sp/>,<sp/>fabs(rho_v_cal<sp/>-<sp/>rho_v[i]));</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(err&lt;1E-3)</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Two<sp/>phase<sp/>validation<sp/>%sgood%s:<sp/>P<sp/>=<sp/>%.8E,<sp/>T<sp/>=<sp/>%.1f,<sp/>rho_l<sp/>=<sp/>%.8E,<sp/>rho_v:<sp/>%.8E,<sp/>err<sp/>=<sp/>%.2E,<sp/>err<sp/>=<sp/>%.2E,<sp/>err<sp/>=<sp/>%.2E\n&quot;</highlight><highlight class="normal">,<sp/>COLOR_BLUE,<sp/>COLOR_DEFAULT,<sp/>P[i],<sp/>T_cal,<sp/>rho_l_cal,<sp/>rho_v_cal,<sp/>fabs(T_cal<sp/>-<sp/>T_K[i])<sp/>,<sp/>fabs(rho_l_cal<sp/>-<sp/>rho_l[i])<sp/>,<sp/>fabs(rho_v_cal<sp/>-<sp/>rho_v[i]));</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Two<sp/>phase<sp/>validation<sp/>%sfailed%s:<sp/>P<sp/>=<sp/>%.8E,<sp/>T<sp/>=<sp/>%.1f,<sp/>rho_l<sp/>=<sp/>%.8E,<sp/>rho_v:<sp/>%.8E,<sp/>err<sp/>=<sp/>%.2E,<sp/>err<sp/>=<sp/>%.2E,<sp/>err<sp/>=<sp/>%.2E\n&quot;</highlight><highlight class="normal">,<sp/>COLOR_RED,<sp/>COLOR_DEFAULT,<sp/>P[i],<sp/>T_cal,<sp/>rho_l_cal,<sp/>rho_v_cal,<sp/>fabs(T_cal<sp/>-<sp/>T_K[i])<sp/>,<sp/>fabs(rho_l_cal<sp/>-<sp/>rho_l[i])<sp/>,<sp/>fabs(rho_v_cal<sp/>-<sp/>rho_v[i]));</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>validate_SinglePhaseRegion_Table7()</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>T_K<sp/><sp/><sp/><sp/><sp/>=<sp/>{300,<sp/>300,<sp/>300,<sp/>500,<sp/>500,<sp/>500,<sp/>500,<sp/>647,<sp/>900,<sp/>900,<sp/>900};</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>p_Pa<sp/><sp/><sp/><sp/>=<sp/>{0.992418352E5,<sp/>0.200022515E8,<sp/>0.700004704E9,<sp/>0.999679423E5,<sp/></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.999938125E6,<sp/>0.100003858E8,<sp/>0.700000405E9,<sp/>0.220384756E8,<sp/></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.100062559E6,<sp/>0.200000690E8,<sp/>0.700000006E9};</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>rho<sp/><sp/><sp/><sp/><sp/>=<sp/>{0.9965560E3,<sp/>0.1005308E4,<sp/>0.1188202E4,<sp/>0.4350000,<sp/>0.4532000E1,<sp/></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.8380250E3,<sp/>0.1084564E4,<sp/>0.3580000E3,<sp/>0.2410000,<sp/>0.5261500E2,<sp/></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.8707690E3};</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>calculate<sp/>and<sp/>compare<sp/>rho</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>err,<sp/>rho_cal;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>T_K.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rho_cal<sp/>=<sp/>test_TP2Rho(T_K[i],<sp/>p_Pa[i]);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>=<sp/>fabs(rho_cal<sp/>-<sp/>rho[i]);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(err&lt;1E-6)</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Single<sp/>phase<sp/>validation<sp/>%ssame%s:<sp/>T<sp/>=<sp/>%.1f<sp/>K,<sp/>P<sp/>=<sp/>%.8E<sp/>Pa,<sp/>rho<sp/>=<sp/>%.8E<sp/>kg/m3,<sp/>err<sp/>=<sp/>%.8E<sp/>kg/m3\n&quot;</highlight><highlight class="normal">,<sp/>COLOR_GREEN,<sp/>COLOR_DEFAULT,<sp/>T_K[i],<sp/>p_Pa[i],<sp/>rho_cal,<sp/>err);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Single<sp/>phase<sp/>validation<sp/>%sgood%s:<sp/>T<sp/>=<sp/>%.1f<sp/>K,<sp/>P<sp/>=<sp/>%.8E<sp/>Pa,<sp/>rho<sp/>=<sp/>%.8E<sp/>kg/m3,<sp/>err<sp/>=<sp/>%.8E<sp/>kg/m3\n&quot;</highlight><highlight class="normal">,<sp/>COLOR_RED,<sp/>COLOR_DEFAULT,<sp/>T_K[i],<sp/>p_Pa[i],<sp/>rho_cal,<sp/>err);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="230"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>test_TP2Rho(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T_K,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>P_Pa)</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>IAPWS95::cIAPWS95<sp/>iapws95;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rho;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>rho<sp/>=<sp/>iapws95.Rho(T_K,<sp/>P_Pa);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>rho<sp/>=<sp/>iapws95.Rho(T_K,<sp/>P_Pa,<sp/></highlight><highlight class="stringliteral">&quot;bisection&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;T=%f<sp/>C,<sp/>P<sp/>=<sp/>%f<sp/>bar,<sp/>Rho<sp/>=<sp/>%f<sp/>kg/m3\n&quot;,<sp/>T_K<sp/>-<sp/>273.15,<sp/>P_Pa/1E5,<sp/>rho);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>rho<sp/>=<sp/>iapws95.Rho_fdf(T_K,<sp/>P_Pa);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rho;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_Boiling_P(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T_K)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>IAPWS95::cIAPWS95<sp/>iapws95;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>P,<sp/>rho_l,<sp/>rho_v;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>iapws95.Boiling_P(T_K,<sp/>P,<sp/>rho_l,<sp/>rho_v);<sp/></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;T=%f<sp/>C,<sp/>P<sp/>=<sp/>%.10f<sp/>bar,<sp/>Rho_l<sp/>=<sp/>%.10f<sp/>kg/m3,<sp/>Rho_v:<sp/>%.10f<sp/>kg/m3\n&quot;</highlight><highlight class="normal">,<sp/>T_K<sp/>-<sp/>273.15,<sp/>P/1E5,<sp/>rho_l,<sp/>rho_v);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_Boiling_T(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>P)</highlight></codeline>
+<codeline lineno="253"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>IAPWS95::cIAPWS95<sp/>iapws95;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T_K,<sp/>rho_l,<sp/>rho_v;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>iapws95.Boiling_T(P,<sp/>T_K,<sp/>rho_l,<sp/>rho_v);<sp/></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;P<sp/>=<sp/>%.10f<sp/>bar,<sp/>T=%f<sp/>C,<sp/>Rho_l<sp/>=<sp/>%.10f<sp/>kg/m3,<sp/>Rho_v:<sp/>%.10f<sp/>kg/m3\n&quot;</highlight><highlight class="normal">,<sp/>P/1E5,<sp/>T_K<sp/>-<sp/>273.15,<sp/>rho_l,<sp/>rho_v);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Library/benchmark_test/test_H2O.cpp"/>
+  </compounddef>
+</doxygen>

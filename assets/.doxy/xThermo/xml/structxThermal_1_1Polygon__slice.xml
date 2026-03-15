@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1Polygon__slice" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::Polygon_slice</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1Polygon__slice_1a6d3c33db9438257e37d05de2c29e2343" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::Polygon_slice::T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <qualifiedname>xThermal::Polygon_slice::T</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1006" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1006" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Polygon__slice_1a8ca0e363ca255f746bfbfcec533263b4" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::Polygon_slice::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <qualifiedname>xThermal::Polygon_slice::P</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1006" column="22" bodyfile="Library/thermo/DataStructures.h" bodystart="1006" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Polygon__slice_1aa98a04f16f4c88eb2a05ee92c04f014b" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::Polygon_slice::X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <qualifiedname>xThermal::Polygon_slice::X</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1006" column="23" bodyfile="Library/thermo/DataStructures.h" bodystart="1006" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Polygon__slice_1a477660befe34b2464436cd970aaac517" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::Polygon_slice::H</definition>
+        <argsstring></argsstring>
+        <name>H</name>
+        <qualifiedname>xThermal::Polygon_slice::H</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1006" column="24" bodyfile="Library/thermo/DataStructures.h" bodystart="1006" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Polygon__slice_1a08ea4b1bb8931c430c29f080de95ee94" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string xThermal::Polygon_slice::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>xThermal::Polygon_slice::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1007" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1007" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Polygon__slice_1abb61ede81e9092234dcaf2aafe6a6d6f" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::Polygon_slice::fc</definition>
+        <argsstring></argsstring>
+        <name>fc</name>
+        <qualifiedname>xThermal::Polygon_slice::fc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1008" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1008" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Polygon__slice_1a1259b3eb2f75883515115c932950c318" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::Polygon_slice::ec</definition>
+        <argsstring></argsstring>
+        <name>ec</name>
+        <qualifiedname>xThermal::Polygon_slice::ec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1009" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1009" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structxThermal_1_1Polygon__slice_1a99d224a49aeeb1def9793ae2ea62d5bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xThermal::Polygon_slice::Polygon_slice</definition>
+        <argsstring>()</argsstring>
+        <name>Polygon_slice</name>
+        <qualifiedname>xThermal::Polygon_slice::Polygon_slice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1010" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="1010" bodyend="1010"/>
+      </memberdef>
+      <memberdef kind="function" id="structxThermal_1_1Polygon__slice_1a3e0aed160907df9ed9e72cc5b6dbc24a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xThermal::Polygon_slice::Polygon_slice</definition>
+        <argsstring>(std::vector&lt; double &gt; T0, std::vector&lt; double &gt; P0, std::vector&lt; double &gt; X0, std::vector&lt; double &gt; H0, std::string name0, COLOR fc0, COLOR ec0)</argsstring>
+        <name>Polygon_slice</name>
+        <qualifiedname>xThermal::Polygon_slice::Polygon_slice</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+          <declname>T0</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+          <declname>P0</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+          <declname>X0</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+          <declname>H0</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name0</declname>
+        </param>
+        <param>
+          <type><ref refid="structxThermal_1_1COLOR" kindref="compound">COLOR</ref></type>
+          <declname>fc0</declname>
+        </param>
+        <param>
+          <type><ref refid="structxThermal_1_1COLOR" kindref="compound">COLOR</ref></type>
+          <declname>ec0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1011" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="1011" bodyend="1015"/>
+      </memberdef>
+      <memberdef kind="function" id="structxThermal_1_1Polygon__slice_1aa3e75a4601341bbb9c2f0660df8351f4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+        <definition>bool xThermal::Polygon_slice::operator&lt;</definition>
+        <argsstring>(const Polygon_slice &amp;other) const</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>xThermal::Polygon_slice::operator&lt;</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1Polygon__slice" kindref="compound">Polygon_slice</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1016" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="1016" bodyend="1016"/>
+      </memberdef>
+      <memberdef kind="function" id="structxThermal_1_1Polygon__slice_1a907c58261081245f497a8b57cfa26824" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+        <definition>bool xThermal::Polygon_slice::operator==</definition>
+        <argsstring>(const Polygon_slice &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>xThermal::Polygon_slice::operator==</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1Polygon__slice" kindref="compound">Polygon_slice</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1017" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="1017" bodyend="1017"/>
+      </memberdef>
+      <memberdef kind="function" id="structxThermal_1_1Polygon__slice_1afa378b4f68cea21c65336f824c9bd376" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string xThermal::Polygon_slice::info</definition>
+        <argsstring>(const Polygon_slice &amp;self)</argsstring>
+        <name>info</name>
+        <qualifiedname>xThermal::Polygon_slice::info</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1Polygon__slice" kindref="compound">Polygon_slice</ref> &amp;</type>
+          <declname>self</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1032" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1032" bodyend="1037"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="structxThermal_1_1Polygon__slice_1a40cd87d0560ffa33c19ba537207be000" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Polygon_slice &amp;self)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>xThermal::Polygon_slice::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1Polygon__slice" kindref="compound">Polygon_slice</ref> &amp;</type>
+          <declname>self</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1019" column="16" bodyfile="Library/thermo/DataStructures.h" bodystart="1019" bodyend="1030"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/thermo/DataStructures.h" line="1004" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="1005" bodyend="1038"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1Polygon__slice_1a1259b3eb2f75883515115c932950c318" prot="public" virt="non-virtual"><scope>xThermal::Polygon_slice</scope><name>ec</name></member>
+      <member refid="structxThermal_1_1Polygon__slice_1abb61ede81e9092234dcaf2aafe6a6d6f" prot="public" virt="non-virtual"><scope>xThermal::Polygon_slice</scope><name>fc</name></member>
+      <member refid="structxThermal_1_1Polygon__slice_1a477660befe34b2464436cd970aaac517" prot="public" virt="non-virtual"><scope>xThermal::Polygon_slice</scope><name>H</name></member>
+      <member refid="structxThermal_1_1Polygon__slice_1afa378b4f68cea21c65336f824c9bd376" prot="public" virt="non-virtual"><scope>xThermal::Polygon_slice</scope><name>info</name></member>
+      <member refid="structxThermal_1_1Polygon__slice_1a08ea4b1bb8931c430c29f080de95ee94" prot="public" virt="non-virtual"><scope>xThermal::Polygon_slice</scope><name>name</name></member>
+      <member refid="structxThermal_1_1Polygon__slice_1aa3e75a4601341bbb9c2f0660df8351f4" prot="public" virt="non-virtual"><scope>xThermal::Polygon_slice</scope><name>operator&lt;</name></member>
+      <member refid="structxThermal_1_1Polygon__slice_1a40cd87d0560ffa33c19ba537207be000" prot="public" virt="non-virtual"><scope>xThermal::Polygon_slice</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structxThermal_1_1Polygon__slice_1a907c58261081245f497a8b57cfa26824" prot="public" virt="non-virtual"><scope>xThermal::Polygon_slice</scope><name>operator==</name></member>
+      <member refid="structxThermal_1_1Polygon__slice_1a8ca0e363ca255f746bfbfcec533263b4" prot="public" virt="non-virtual"><scope>xThermal::Polygon_slice</scope><name>P</name></member>
+      <member refid="structxThermal_1_1Polygon__slice_1a99d224a49aeeb1def9793ae2ea62d5bb" prot="public" virt="non-virtual"><scope>xThermal::Polygon_slice</scope><name>Polygon_slice</name></member>
+      <member refid="structxThermal_1_1Polygon__slice_1a3e0aed160907df9ed9e72cc5b6dbc24a" prot="public" virt="non-virtual"><scope>xThermal::Polygon_slice</scope><name>Polygon_slice</name></member>
+      <member refid="structxThermal_1_1Polygon__slice_1a6d3c33db9438257e37d05de2c29e2343" prot="public" virt="non-virtual"><scope>xThermal::Polygon_slice</scope><name>T</name></member>
+      <member refid="structxThermal_1_1Polygon__slice_1aa98a04f16f4c88eb2a05ee92c04f014b" prot="public" virt="non-virtual"><scope>xThermal::Polygon_slice</scope><name>X</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

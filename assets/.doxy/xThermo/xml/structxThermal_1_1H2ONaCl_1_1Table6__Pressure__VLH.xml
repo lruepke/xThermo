@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1H2ONaCl_1_1Table6__Pressure__VLH" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::H2ONaCl::Table6_Pressure_VLH</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Table6__Pressure__VLH_1a76e479d63971e7375f9e75ba3fbca65a" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>const int xThermal::H2ONaCl::Table6_Pressure_VLH::num</definition>
+        <argsstring></argsstring>
+        <name>num</name>
+        <qualifiedname>xThermal::H2ONaCl::Table6_Pressure_VLH::num</qualifiedname>
+        <initializer>= 11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="104" column="23" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Table6__Pressure__VLH_1a6ca52d716272aa541a880ac098a0b2c5" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::H2ONaCl::Table6_Pressure_VLH::f[11]</definition>
+        <argsstring>[11]</argsstring>
+        <name>f</name>
+        <qualifiedname>xThermal::H2ONaCl::Table6_Pressure_VLH::f</qualifiedname>
+        <initializer>= {464.0, 0.05, 1690780.0, -26914800.0, 763204000.0, -4956360000.0, 233119.0E5, -513556.0E5, 549708.0E5, -284628.0E5, 
+                                <ref refid="group__CONSTANTS__NACL_1gadf2b6f27d28e1bbe8b94b2bc9851e96c" kindref="member">NaCl::P_Triple</ref> - (464.0 + 0.05 + 1690780.0 - 26914800.0 + 763204000.0 - 4956360000.0 + 233119.0E5 - 513556.0E5 + 549708.0E5 - 284628.0E5)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="106" column="26" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="106" bodyend="107"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/H2ONaCl/H2ONaCl.h" line="102" column="9" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="103" bodyend="108"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1H2ONaCl_1_1Table6__Pressure__VLH_1a6ca52d716272aa541a880ac098a0b2c5" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Table6_Pressure_VLH</scope><name>f</name></member>
+      <member refid="structxThermal_1_1H2ONaCl_1_1Table6__Pressure__VLH_1a76e479d63971e7375f9e75ba3fbca65a" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Table6_Pressure_VLH</scope><name>num</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

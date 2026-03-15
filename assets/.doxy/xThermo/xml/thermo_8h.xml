@@ -1,0 +1,493 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="thermo_8h" kind="file" language="C++">
+    <compoundname>thermo.h</compoundname>
+    <includes local="yes">stdfunc.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes refid="DataStructures_8h" local="yes">DataStructures.h</includes>
+    <includes refid="thermo_2Exception_8h" local="yes">Exception.h</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">algorithm</includes>
+    <includes refid="triangle_8h" local="yes">triangle.h</includes>
+    <includes refid="LookUpTableForest_8h" local="yes">LookUpTableForest.h</includes>
+    <includes local="no">string</includes>
+    <includes refid="MultiProgressBar_8h" local="yes">MultiProgressBar.h</includes>
+    <includedby refid="LookUpTableForest_8h" local="yes">Library/AMR_LUT/LookUpTableForest.h</includedby>
+    <includedby refid="IAPS84_8h" local="yes">Library/H2O/IAPS84.h</includedby>
+    <includedby refid="IAPWS-IF97_8h" local="yes">Library/H2O/IAPWS-IF97.h</includedby>
+    <includedby refid="IAPWS95_8h" local="yes">Library/H2O/IAPWS95.h</includedby>
+    <includedby refid="prop__water__TP_8cpp" local="yes">Library/H2ONaCl/Matlab/prop_water_TP.cpp</includedby>
+    <includedby refid="test__PROST_8cpp" local="yes">Library/test/test_PROST.cpp</includedby>
+    <includedby refid="thermo_8cpp" local="yes">Library/thermo/thermo.cpp</includedby>
+    <incdepgraph>
+      <node id="14">
+        <label>LookUpTableForest.h</label>
+        <link refid="LookUpTableForest_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>DataStructures.h</label>
+        <link refid="DataStructures_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Exception.h</label>
+        <link refid="thermo_2Exception_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>MultiProgressBar.h</label>
+        <link refid="MultiProgressBar_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Library/thermo/thermo.h</label>
+        <link refid="thermo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>triangle.h</label>
+        <link refid="triangle_8h_source"/>
+      </node>
+      <node id="9">
+        <label>algorithm</label>
+      </node>
+      <node id="12">
+        <label>cmath</label>
+      </node>
+      <node id="11">
+        <label>exception</label>
+      </node>
+      <node id="4">
+        <label>fstream</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="15">
+        <label>map</label>
+      </node>
+      <node id="6">
+        <label>sstream</label>
+      </node>
+      <node id="2">
+        <label>stdfunc.h</label>
+      </node>
+      <node id="16">
+        <label>string</label>
+      </node>
+      <node id="18">
+        <label>sys/ioctl.h</label>
+      </node>
+      <node id="7">
+        <label>utility</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>Library/AMR_LUT/LookUpTableForest.h</label>
+        <link refid="LookUpTableForest_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Library/H2O/IAPS84.cpp</label>
+        <link refid="IAPS84_8cpp"/>
+      </node>
+      <node id="4">
+        <label>Library/H2O/IAPS84.h</label>
+        <link refid="IAPS84_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Library/H2O/IAPWS-IF97.cpp</label>
+        <link refid="IAPWS-IF97_8cpp"/>
+      </node>
+      <node id="10">
+        <label>Library/H2O/IAPWS-IF97.h</label>
+        <link refid="IAPWS-IF97_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Library/H2O/IAPWS95.cpp</label>
+        <link refid="IAPWS95_8cpp"/>
+      </node>
+      <node id="12">
+        <label>Library/H2O/IAPWS95.h</label>
+        <link refid="IAPWS95_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Library/H2ONaCl/H2ONaCl.cpp</label>
+        <link refid="H2ONaCl_8cpp"/>
+      </node>
+      <node id="5">
+        <label>Library/H2ONaCl/H2ONaCl.h</label>
+        <link refid="H2ONaCl_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Library/H2ONaCl/test.cxx</label>
+        <link refid="H2ONaCl_2test_8cxx"/>
+      </node>
+      <node id="9">
+        <label>Library/NaCl/NaCl.cpp</label>
+        <link refid="NaCl_8cpp"/>
+      </node>
+      <node id="8">
+        <label>Library/NaCl/NaCl.h</label>
+        <link refid="NaCl_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Library/thermo/thermo.h</label>
+        <link refid="thermo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classxThermal_1_1cxThermal" prot="public">xThermal::cxThermal</innerclass>
+    <innernamespace refid="namespacexThermal">xThermal</innernamespace>
+    <briefdescription>
+<para>Head file of <ref refid="namespacexThermal" kindref="compound">xThermal</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Zhikui Guo (<ulink url="mailto:zguo@geomar.de">zguo@geomar.de</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2022-01-04</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2022 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>XTHERMO_THERMO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>XTHERMO_THERMO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stdfunc.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="DataStructures_8h" kindref="compound">DataStructures.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Exception.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>is<sp/>fine<sp/>for<sp/>mac<sp/>and<sp/>linux<sp/>with<sp/>this<sp/>head,<sp/>but<sp/>it<sp/>is<sp/>required<sp/>in<sp/>windows</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;triangle.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;LookUpTableForest.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="MultiProgressBar_8h" kindref="compound">MultiProgressBar.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacexThermal" kindref="compound">xThermal</ref></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36" refid="namespacexThermal_1a9f162768e192f9a3ca91f946a35bd428" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespacexThermal_1a9f162768e192f9a3ca91f946a35bd428" kindref="member">R</ref><sp/>=<sp/>461.51805;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>see<sp/>also<sp/>http://www.coolprop.org/fluid_properties/PurePseudoPure.html#list-of-fluids</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>map:<sp/>fluid<sp/>name<sp/>to<sp/>index</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>const<sp/>std::map&lt;std::string,<sp/>int<sp/>&gt;<sp/>FluidName2Index={&quot;dsafds&quot;,2};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>map:<sp/>fluid<sp/>index<sp/>to<sp/>fluid<sp/>name</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>INDEX_FLUID</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Fluid_Unknown<sp/>=<sp/>-1,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLUID_Water,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLUID_H2O_NaCl</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classxThermal_1_1cxThermal" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxThermal_1_1cxThermal" kindref="compound">cxThermal</ref></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MAP_PhaseRegion2Name<sp/>m_map_phase2name;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//LUT<sp/>related<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_num_threads;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*m_pLUT;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_dim_lut;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*m_pLUT_lookup;<sp/></highlight><highlight class="comment">//used<sp/>as<sp/>input<sp/>LUT<sp/>and<sp/>used<sp/>to<sp/>lookup.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_dim_lut_lookup;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_index_Rho_in_LUT;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;int,<sp/>propInfo&gt;<sp/>m_supported_props;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;int,<sp/>propInfo&gt;<sp/>m_update_which_props;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>LUT<sp/>related<sp/>methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initialize_data();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init_supported_props();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>parse_update_which_props(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">update_which_props</ref>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>destroyLUT(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">pLUT</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">dim_lut</ref>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim&gt;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>interp_quad_prop(<ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">LOOKUPTABLE_FOREST::Quadrant</ref>&lt;dim,<ref refid="structLOOKUPTABLE__FOREST_1_1FIELD__DATA" kindref="compound">LOOKUPTABLE_FOREST::FIELD_DATA&lt;dim&gt;</ref><sp/>&gt;<sp/>*<ref refid="classxThermal_1_1xThermalError" kindref="compound">targetLeaf</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">xyz_min_target</ref>,<sp/><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref>&amp;<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">prop</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">xyz</ref>[dim]);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim&gt;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>interp_quad_prop(<ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">LOOKUPTABLE_FOREST::Quadrant</ref>&lt;dim,<ref refid="structLOOKUPTABLE__FOREST_1_1FIELD__DATA" kindref="compound">LOOKUPTABLE_FOREST::FIELD_DATA&lt;dim&gt;</ref><sp/>&gt;<sp/>*<ref refid="classxThermal_1_1xThermalError" kindref="compound">targetLeaf</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">xyz_min_target</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>props,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">xyz</ref>[dim]);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1cxThermal" kindref="compound">cxThermal</ref>(</highlight><highlight class="comment">/*<sp/>args<sp/>*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal" kindref="compound">~cxThermal</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_isShowProgressBar;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>showProgressBar(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">isShow</ref>){m_isShowProgressBar<sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">isShow</ref>;};</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>INDEX_FLUID<sp/>validateFluid(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>fluidName);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="83" refid="classxThermal_1_1cxThermal_1a41d03988aa51b30d08db19df1fca0dbd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classxThermal_1_1cxThermal_1a41d03988aa51b30d08db19df1fca0dbd" kindref="member">name</ref>()<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>--------<sp/>Some<sp/>required<sp/>information<sp/>for<sp/>every<sp/>child<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="classxThermal_1_1cxThermal_1aaae6d6ea6a66f48860daa4d0b6eef79a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal_1aaae6d6ea6a66f48860daa4d0b6eef79a" kindref="member">Tmin</ref>()<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86" refid="classxThermal_1_1cxThermal_1a04cebc45b1be27386dc767c7eee56ab5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal_1a04cebc45b1be27386dc767c7eee56ab5" kindref="member">Tmax</ref>()<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87" refid="classxThermal_1_1cxThermal_1a5800a85e519e23ccfd04c11f3bbab89b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal_1a5800a85e519e23ccfd04c11f3bbab89b" kindref="member">pmin</ref>()<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88" refid="classxThermal_1_1cxThermal_1a7cc7e8214f233b89f3952a4c6ff70a92" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal_1a7cc7e8214f233b89f3952a4c6ff70a92" kindref="member">pmax</ref>()<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89" refid="classxThermal_1_1cxThermal_1a13a75da8301c717105f456c9c7a19896" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal_1a13a75da8301c717105f456c9c7a19896" kindref="member">Ttriple</ref>()<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90" refid="classxThermal_1_1cxThermal_1ab4b38c96c6ea4f9b6a79532a3d0edabb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal_1ab4b38c96c6ea4f9b6a79532a3d0edabb" kindref="member">T_critical</ref>()<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91" refid="classxThermal_1_1cxThermal_1a454a4e29dac7a62800c8a42ddaf98b73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal_1a454a4e29dac7a62800c8a42ddaf98b73" kindref="member">p_critical</ref>()<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92" refid="classxThermal_1_1cxThermal_1a5a3ef49d78de8a82b7333b2bfc382e97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal_1a5a3ef49d78de8a82b7333b2bfc382e97" kindref="member">rhomass_critical</ref>()<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93" refid="classxThermal_1_1cxThermal_1ac63458e41ee8729b7fff59cb23e91353" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal_1ac63458e41ee8729b7fff59cb23e91353" kindref="member">molar_mass</ref>()<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rhomolar_critical(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal_1a5a3ef49d78de8a82b7333b2bfc382e97" kindref="member">rhomass_critical</ref>()/<ref refid="classxThermal_1_1cxThermal_1ac63458e41ee8729b7fff59cb23e91353" kindref="member">molar_mass</ref>();};<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/></highlight></codeline>
+<codeline lineno="102" refid="classxThermal_1_1cxThermal_1a3d7c1b12767a6348b6d291e708ec0a5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal_1a3d7c1b12767a6348b6d291e708ec0a5e" kindref="member">UpdateState_TPX</ref>(<ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref>&amp;<sp/>props,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>T,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>X=0)<sp/>{</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">NotImplementedError</ref>(<ref refid="classxThermal_1_1cxThermal_1a41d03988aa51b30d08db19df1fca0dbd" kindref="member">name</ref>()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>does<sp/>not<sp/>implement<sp/>UpdateState_TPX<sp/>function&quot;</highlight><highlight class="normal">);};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateState_HPX(<ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref>&amp;<sp/>props,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>H,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>X=0)<sp/>{</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">NotImplementedError</ref>(<ref refid="classxThermal_1_1cxThermal_1a41d03988aa51b30d08db19df1fca0dbd" kindref="member">name</ref>()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>does<sp/>not<sp/>implement<sp/>UpdateState_HPX<sp/>function&quot;</highlight><highlight class="normal">);};</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>ThermodynamicPropertiesVector<sp/><ref refid="classxThermal_1_1cxThermal_1a3d7c1b12767a6348b6d291e708ec0a5e" kindref="member">UpdateState_TPX</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;&amp;<sp/>T,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;&amp;<sp/>p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;&amp;<sp/>X,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isMeshGrid=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>final;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>ThermodynamicPropertiesVector<sp/>UpdateState_HPX(const<sp/>std::vector&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;&amp;<sp/>H,<sp/>const<sp/>std::vector&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;&amp;<sp/>p,<sp/>const<sp/>std::vector&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;&amp;<sp/>X,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isMeshGrid=false)<sp/>final;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>matlab<sp/>API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal_1a3d7c1b12767a6348b6d291e708ec0a5e" kindref="member">UpdateState_TPX</ref>(ThermodynamicPropertiesArray&amp;<sp/>stateArray,<sp/>const<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">&amp;<sp/>N,<sp/>const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>T,<sp/>const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>p,<sp/>const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>X=NULL);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateState_HPX(ThermodynamicPropertiesArray&amp;<sp/>stateArray,<sp/>const<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">&amp;<sp/>N,<sp/>const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>H,<sp/>const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>p,<sp/>const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>X=NULL);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>phase_name(<ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50" kindref="member">PhaseRegion</ref><sp/>phase_index)<sp/>final;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>======<sp/>LUT<sp/>related<sp/>functions<sp/>======</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_num_threads(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_threads)<sp/>final;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>get_num_threads()<sp/>final;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/><ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50" kindref="member">PhaseRegion</ref><sp/>findPhaseRegion_TPX(const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>T,<sp/>const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>p,<sp/>const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>X=0){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>NotImplementedError(<ref refid="classxThermal_1_1cxThermal_1a41d03988aa51b30d08db19df1fca0dbd" kindref="member">name</ref>()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>does<sp/>not<sp/>implement<sp/>findPhaseRegion_pTX<sp/>function&quot;</highlight><highlight class="normal">);};</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::map&lt;int,<sp/>propInfo&gt;&amp;<sp/>get_UpdateWhichProps()<sp/>final;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>createLUT_2D(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>xy_min[2],<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>xy_max[2],<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>constZ,<sp/>LOOKUPTABLE_FOREST::CONST_WHICH_VAR<sp/>const_which_var,<sp/>LOOKUPTABLE_FOREST::EOS_ENERGY<sp/>TorH,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_level<sp/>=<sp/>4,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_level<sp/>=<sp/>6,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>update_which_props=0)<sp/>final;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>createLUT_2D(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>xmin,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>xmax,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ymin,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ymax,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>constZ,<sp/>LOOKUPTABLE_FOREST::CONST_WHICH_VAR<sp/>const_which_var,<sp/>LOOKUPTABLE_FOREST::EOS_ENERGY<sp/>TorH,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_level<sp/>=<sp/>4,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_level<sp/>=<sp/>6,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>update_which_props=0)final;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>createLUT_3D(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>xyz_min[3],<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>xyz_max[3],<sp/>LOOKUPTABLE_FOREST::EOS_ENERGY<sp/>TorH,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_level<sp/>=<sp/>4,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_level<sp/>=<sp/>6,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>update_which_props=0)<sp/>final;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>createLUT_3D(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>xmin,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>xmax,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ymin,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ymax,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>zmin,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>zmax,<sp/>LOOKUPTABLE_FOREST::EOS_ENERGY<sp/>TorH,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_level<sp/>=<sp/>4,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_level<sp/>=<sp/>6,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>update_which_props=0)<sp/>final;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>save_lut_to_vtk(std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isNormalizeXYZ=true)<sp/>final;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>save_lut_to_binary(std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename)<sp/>final;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOOKUPTABLE_FOREST::Quadrant&lt;2,LOOKUPTABLE_FOREST::FIELD_DATA&lt;2&gt;<sp/>&gt;<sp/>*lookup(ThermodynamicProperties&amp;<sp/>prop,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOOKUPTABLE_FOREST::Quadrant&lt;2,LOOKUPTABLE_FOREST::FIELD_DATA&lt;2&gt;<sp/>&gt;<sp/>*lookup(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>props,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>xyz_min_target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_cal=true);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOOKUPTABLE_FOREST::Quadrant&lt;3,LOOKUPTABLE_FOREST::FIELD_DATA&lt;3&gt;<sp/>&gt;<sp/>*lookup(ThermodynamicProperties&amp;<sp/>prop,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOOKUPTABLE_FOREST::Quadrant&lt;3,LOOKUPTABLE_FOREST::FIELD_DATA&lt;3&gt;<sp/>&gt;<sp/>*lookup(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>props,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>xyz_min_target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_cal=true);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOOKUPTABLE_FOREST::Quadrant&lt;2,LOOKUPTABLE_FOREST::FIELD_DATA&lt;2&gt;<sp/>&gt;<sp/>*lookup_only(ThermodynamicProperties&amp;<sp/>prop,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOOKUPTABLE_FOREST::Quadrant&lt;3,LOOKUPTABLE_FOREST::FIELD_DATA&lt;3&gt;<sp/>&gt;<sp/>*lookup_only(ThermodynamicProperties&amp;<sp/>prop,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadLUT(const<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>filename,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>printStatus=true);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>get_pLUT();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>get_pLUT_lookup();</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>get_dim_lut(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_dim_lut;<sp/>};</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>get_dim_lut_lookup(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_dim_lut_lookup;<sp/>};</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50" kindref="member">PhaseRegion</ref><sp/><ref refid="classxThermal_1_1cxThermal_1a1a54bed7b543424948282e9c8d53d8e9" kindref="member">Rho_lookup</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>Rho_estimate,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>Rho_min,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>Rho_max,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>T,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>P);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//====================================</highlight></codeline>
+<codeline lineno="143" refid="classxThermal_1_1cxThermal_1a872af1d919899a42bb3ce8d973c117b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal_1a872af1d919899a42bb3ce8d973c117b7" kindref="member">Boiling_p</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>T)<sp/>{</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">NotImplementedError</ref>(<ref refid="classxThermal_1_1cxThermal_1a41d03988aa51b30d08db19df1fca0dbd" kindref="member">name</ref>()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>does<sp/>not<sp/>implement<sp/>Boiling_p(const<sp/>double&amp;<sp/>T)<sp/>function&quot;</highlight><highlight class="normal">);};</highlight></codeline>
+<codeline lineno="149" refid="classxThermal_1_1cxThermal_1a1dc4226ef05683a6596d59833ab65d44" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal_1a1dc4226ef05683a6596d59833ab65d44" kindref="member">Boiling_T</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>p){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">NotImplementedError</ref>(<ref refid="classxThermal_1_1cxThermal_1a41d03988aa51b30d08db19df1fca0dbd" kindref="member">name</ref>()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>does<sp/>not<sp/>implement<sp/>Boiling_T(const<sp/>double&amp;<sp/>p)<sp/>function&quot;</highlight><highlight class="normal">);};</highlight></codeline>
+<codeline lineno="157" refid="classxThermal_1_1cxThermal_1a85bd89ebf43267eadc91d8bcbb3ca7e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal_1a85bd89ebf43267eadc91d8bcbb3ca7e0" kindref="member">Boiling_p</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>T,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">rho_l</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">rho_v</ref>){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">NotImplementedError</ref>(<ref refid="classxThermal_1_1cxThermal_1a41d03988aa51b30d08db19df1fca0dbd" kindref="member">name</ref>()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>does<sp/>not<sp/>implement<sp/>Boiling_p(const<sp/>double&amp;<sp/>T,<sp/>double<sp/>&amp;<sp/>rho_l,<sp/>double<sp/>&amp;<sp/>rho_v)<sp/>function&quot;</highlight><highlight class="normal">);};</highlight></codeline>
+<codeline lineno="165" refid="classxThermal_1_1cxThermal_1a50d71178278a67ccad67316f8d9d99d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal_1a50d71178278a67ccad67316f8d9d99d3" kindref="member">Boiling_T</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">rho_l</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">rho_v</ref>){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">NotImplementedError</ref>(<ref refid="classxThermal_1_1cxThermal_1a41d03988aa51b30d08db19df1fca0dbd" kindref="member">name</ref>()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>does<sp/>not<sp/>implement<sp/>Boiling_T(const<sp/>double&amp;<sp/>p,<sp/>double&amp;<sp/>rho_l,<sp/>double&amp;<sp/>rho_v)<sp/>function&quot;</highlight><highlight class="normal">);};</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal_1a1dc4226ef05683a6596d59833ab65d44" kindref="member">Boiling_T</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>p,<sp/><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref>&amp;<sp/>props){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">NotImplementedError</ref>(<ref refid="classxThermal_1_1cxThermal_1a41d03988aa51b30d08db19df1fca0dbd" kindref="member">name</ref>()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>does<sp/>not<sp/>implement<sp/>Boiling_T(const<sp/>double&amp;<sp/>p,<sp/>ThermodynamicProperties&amp;<sp/>props)<sp/>function&quot;</highlight><highlight class="normal">);};</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal_1a872af1d919899a42bb3ce8d973c117b7" kindref="member">Boiling_p</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>T,<sp/>ThermodynamicProperties&amp;<sp/>props){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>NotImplementedError(<ref refid="classxThermal_1_1cxThermal_1a41d03988aa51b30d08db19df1fca0dbd" kindref="member">name</ref>()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>does<sp/>not<sp/>implement<sp/>Boiling_p(const<sp/>double&amp;<sp/>T,<sp/>ThermodynamicProperties&amp;<sp/>props)<sp/>function&quot;</highlight><highlight class="normal">);};</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal_1add580814bcf501ea557a03b7eac042bd" kindref="member">Triangulation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;&amp;<sp/>x_poly,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;&amp;<sp/>y_poly,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pointInMesh[2],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dxdy[2],<sp/>TriMesh&amp;<sp/>trimesh,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>normalize=</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>writeTriMesh2Txt(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TriMesh&amp;<sp/><ref refid="structmesh" kindref="compound">mesh</ref>,<sp/>std::string<sp/>path_out=</highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">)final;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>write<sp/>mesh<sp/>to<sp/>vtu<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal_1a774e75ede316e2cf1151998b7e716094" kindref="member">writeXXYYZZ2VTU</ref>(std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>vtuFile,<sp/>const<sp/>std::vector&lt;std::vector&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;<sp/>&gt;&amp;<sp/>XX,<sp/>const<sp/>std::vector&lt;std::vector&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;<sp/>&gt;&amp;<sp/>YY,<sp/>const<sp/>std::vector&lt;std::vector&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;<sp/>&gt;&amp;<sp/>ZZ,</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scale_x=1.0,<sp/>const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scale_y=1.0,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scale_z=1.0)final;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>writeLine2VTU(std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>vtuFile,<sp/>const<sp/>std::vector&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;&amp;<sp/>X,<sp/>const<sp/>std::vector&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;&amp;<sp/>Y,<sp/>const<sp/>std::vector&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;&amp;<sp/>Z,<sp/>const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scale_x=1.0,<sp/>const<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scale_y=1.0,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scale_z=1.0)final;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>writePhaseBoundaries2VTU(std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>outputPath,<sp/>const<sp/>PhaseBoundaries&amp;<sp/>phaseBoundaries,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scale_T=1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scale_p<sp/>=<sp/>1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scale_X<sp/>=<sp/>1)final;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1cxThermal_1a100ba0ae27d311a3726e53cf4671aee1" kindref="member">normalizePhaseBoundaries</ref>(PhaseBoundaries&amp;<sp/>phaseBoundaries)final;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>writeMeshGrid2VTK(const<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;vtkFile,<sp/>const<sp/>std::vector&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;<sp/>&amp;x,<sp/>const<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>xTitle,<sp/>const<sp/>std::vector&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;<sp/>&amp;y,<sp/>const<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>yTitle,<sp/>const<sp/>std::vector&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;<sp/>&amp;z,<sp/>const<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>zTitle,</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>std::vector&lt;std::vector&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;&gt;<sp/>&amp;props,<sp/>const<sp/>std::vector&lt;propInfo&gt;<sp/>&amp;propsInfo,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isNormalize=false)<sp/>final;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>public:</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>template&lt;class<sp/>T&gt;<sp/>T<sp/>min_vector(const<sp/>std::vector&lt;T&gt;<sp/>&amp;x)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>min<sp/>=<sp/>1e40;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>N<sp/>=<sp/>x.size();</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>++i)</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>axi<sp/>=<sp/>x[i];</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(axi<sp/>&lt;<sp/>min){<sp/>min<sp/>=<sp/>axi;<sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>min;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;<sp/>T<sp/>max_vector(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;T&gt;<sp/>&amp;x)</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>max<sp/>=<sp/>-1E30;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>N<sp/>=<sp/>x.size();</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>++i)</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>axi<sp/>=<sp/>x[i];</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(axi<sp/>&gt;<sp/>max){<sp/>max<sp/>=<sp/>axi;<sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>max;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;<sp/>T<sp/>sum_vector(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;T&gt;<sp/>&amp;x)</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>sum<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>N<sp/>=<sp/>x.size();</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>++i)</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sum<sp/>+=<sp/>x[i];</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sum;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;<sp/>T<sp/>mean_vector(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;T&gt;<sp/>&amp;x)</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sum_vector(x)/x.size();</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="216" refid="classxThermal_1_1cxThermal_1ac5f99481c6cd9da1089920870f5884f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/>std::vector&lt;T&gt;<sp/><ref refid="classxThermal_1_1cxThermal_1ac5f99481c6cd9da1089920870f5884f9" kindref="member">linspace</ref>(T<sp/>xmin,<sp/>T<sp/>xmax,<sp/>std::size_t<sp/>n,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">isLogScale</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;T&gt;<sp/>x(n,<sp/>0.0);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>one<sp/>of<sp/>xmin<sp/>and<sp/>xmax<sp/>is<sp/>negative,<sp/>logscale<sp/>is<sp/>not<sp/>available</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(xmin&lt;0<sp/>||<sp/>xmax&lt;0)<ref refid="classxThermal_1_1xThermalError" kindref="compound">isLogScale</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classxThermal_1_1xThermalError" kindref="compound">isLogScale</ref>)</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>delta<sp/>=<sp/>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">log10</ref>(xmax)-<ref refid="classxThermal_1_1xThermalError" kindref="compound">log10</ref>(xmin))/(n-1);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">min</ref><sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">log10</ref>(xmin);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>std::size_t<sp/>i<sp/>=<sp/>0;<sp/><sp/>i<sp/>&lt;<sp/>n;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x[i]<sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">pow</ref>(10.0,<sp/>delta*i+<ref refid="classxThermal_1_1xThermalError" kindref="compound">min</ref>);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>std::size_t<sp/>i<sp/>=<sp/>0;<sp/><sp/>i<sp/>&lt;<sp/>n;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x[i]<sp/>=<sp/>(xmax-xmin)/(n-1)*i+xmin;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/>std::vector&lt;T&gt;<sp/><ref refid="classxThermal_1_1cxThermal_1ac5f99481c6cd9da1089920870f5884f9" kindref="member">linspace</ref>(T<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">xmindxxmax</ref>[3])<sp/>{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">dx</ref><sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">xmindxxmax</ref>[1];</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>N<sp/>=<sp/>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">size_t</ref>)((<ref refid="classxThermal_1_1xThermalError" kindref="compound">xmindxxmax</ref>[2]<sp/>-<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">xmindxxmax</ref>[0])/<ref refid="classxThermal_1_1xThermalError" kindref="compound">dx</ref><sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">dx_new</ref><sp/>=<sp/>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">xmindxxmax</ref>[2]<sp/>-<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">xmindxxmax</ref>[0])/(N<sp/>-1);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;T&gt;<sp/>x(N);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x[i]<sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">xmindxxmax</ref>[0]<sp/>+<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">dx_new</ref>*i;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>(T<sp/>x0<sp/>=<sp/>xmindxxmax[0];<sp/>x0<sp/>&lt;=xmindxxmax[2];<sp/>x0<sp/>+=xmindxxmax[1])<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>x.push_back(x0);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="257" refid="classxThermal_1_1cxThermal_1af3b3b4ad31b34288c94903d19c540c7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/>std::vector&lt;size_t&gt;<sp/><ref refid="classxThermal_1_1cxThermal_1af3b3b4ad31b34288c94903d19c540c7b" kindref="member">meshgrid</ref>(T<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">xmindxxmax</ref>[3],<sp/>T<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">ymindyymax</ref>[3],<sp/>std::vector&lt;T&gt;&amp;<sp/>XX,<sp/>std::vector&lt;T&gt;&amp;<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">YY</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;T&gt;<sp/>x,<sp/>y;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(T<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">x0</ref><sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">xmindxxmax</ref>[0];<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">x0</ref><sp/>&lt;=<ref refid="classxThermal_1_1xThermalError" kindref="compound">xmindxxmax</ref>[2];<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">x0</ref><sp/>+=<ref refid="classxThermal_1_1xThermalError" kindref="compound">xmindxxmax</ref>[1])<sp/>x.push_back(<ref refid="classxThermal_1_1xThermalError" kindref="compound">x0</ref>);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(T<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">y0</ref><sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">ymindyymax</ref>[0];<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">y0</ref><sp/>&lt;=<ref refid="classxThermal_1_1xThermalError" kindref="compound">ymindyymax</ref>[2];<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">y0</ref><sp/>+=<ref refid="classxThermal_1_1xThermalError" kindref="compound">ymindyymax</ref>[1])<sp/>y.push_back(<ref refid="classxThermal_1_1xThermalError" kindref="compound">y0</ref>);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">nx</ref><sp/>=<sp/>x.size(),<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">ny</ref><sp/>=<sp/>y.size();</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>XX.resize(<ref refid="classxThermal_1_1xThermalError" kindref="compound">nx</ref><sp/>*<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">ny</ref>);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">YY</ref>.resize(XX.size());</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>make<sp/>grid</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">ind</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">ny</ref>;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">nx</ref>;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">ind</ref><sp/>=<sp/>j<sp/>+<sp/>i*<ref refid="classxThermal_1_1xThermalError" kindref="compound">nx</ref>;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>XX[<ref refid="classxThermal_1_1xThermalError" kindref="compound">ind</ref>]<sp/>=<sp/>x[j];</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">YY</ref>[<ref refid="classxThermal_1_1xThermalError" kindref="compound">ind</ref>]<sp/>=<sp/>y[i];</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<ref refid="classxThermal_1_1xThermalError" kindref="compound">nx</ref>,<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">ny</ref>};</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/><sp/></highlight><highlight class="comment">//for<sp/>python<sp/>wrapper</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref><sp/>Boiling_p_props(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>T);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref><sp/>Boiling_T_props(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>p);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref><sp/><ref refid="classxThermal_1_1cxThermal_1a3d7c1b12767a6348b6d291e708ec0a5e" kindref="member">UpdateState_TPX</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>T,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>X=0);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref><sp/>UpdateState_HPX(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>H,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>X=0);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structxThermal_1_1Head__AMR__LUT" kindref="compound">Head_AMR_LUT</ref><sp/><ref refid="classxThermal_1_1cxThermal_1a4be2a8d169afbe20f14b5ca6c06ab9cc" kindref="member">getLutInfo</ref>(std::string<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">file_lut</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">printSummary</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//LUT<sp/>related<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fill_prop2data(cxThermal*<sp/>pEOS,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ThermodynamicProperties*<sp/>prop,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::map&lt;int,<sp/>propInfo&gt;&amp;<sp/>update_which_props,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>data);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Library/thermo/thermo.h"/>
+  </compounddef>
+</doxygen>

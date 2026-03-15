@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="readme_8md" kind="file" language="Markdown">
+    <compoundname>readme.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">Test<sp/>how<sp/>to<sp/>use<sp/>c++<sp/>code<sp/>library<sp/>on<sp/>ios<sp/>platform.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>cpp目录下存放的是关于c++的代码和动态库生成的东西，生成完了之后可以安装到当前目录的install文件夹</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-DCMAKE_TOOLCHAIN_FILE=./ios.cmake<sp/>-DIOS_PLATFORM=OS<sp/>-Bframewrok.ios<sp/>-GXcode<sp/>..</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>编译ios<sp/>app</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-DCMAKE_TOOLCHAIN_FILE=./ios.cmake<sp/>-DIOS_PLATFORM=OS<sp/>-Bapp.ios<sp/>-GXcode<sp/>..</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+    </programlisting>
+    <location file="Library/test/cpp_crossplatform/readme.md"/>
+  </compounddef>
+</doxygen>

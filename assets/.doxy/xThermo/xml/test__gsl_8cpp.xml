@@ -1,0 +1,815 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="test__gsl_8cpp" kind="file" language="C++">
+    <compoundname>test_gsl.cpp</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">gsl/gsl_vector.h</includes>
+    <includes local="no">gsl/gsl_multiroots.h</includes>
+    <includes local="no">gsl/gsl_errno.h</includes>
+    <includes local="no">gsl/gsl_math.h</includes>
+    <includes local="no">gsl/gsl_roots.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>Library/test/test_gsl.cpp</label>
+        <link refid="test__gsl_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>gsl/gsl_errno.h</label>
+      </node>
+      <node id="7">
+        <label>gsl/gsl_math.h</label>
+      </node>
+      <node id="5">
+        <label>gsl/gsl_multiroots.h</label>
+      </node>
+      <node id="8">
+        <label>gsl/gsl_roots.h</label>
+      </node>
+      <node id="4">
+        <label>gsl/gsl_vector.h</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structrparams" prot="public">rparams</innerclass>
+    <innerclass refid="structparams" prot="public">params</innerclass>
+    <innerclass refid="structquadratic__params" prot="public">quadratic_params</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="test__gsl_8cpp_1ab1a1ff25bfff522f515b68364416c8a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int rosenbrock_f</definition>
+        <argsstring>(const gsl_vector *x, void *params, gsl_vector *f)</argsstring>
+        <name>rosenbrock_f</name>
+        <param>
+          <type>const gsl_vector *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>gsl_vector *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="30" column="5" bodyfile="Library/test/test_gsl.cpp" bodystart="30" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="test__gsl_8cpp_1a91a93c126f3e9e22d95c7f0b0b10f6f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int rosenbrock_df</definition>
+        <argsstring>(const gsl_vector *x, void *params, gsl_matrix *J)</argsstring>
+        <name>rosenbrock_df</name>
+        <param>
+          <type>const gsl_vector *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>gsl_matrix *</type>
+          <declname>J</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="42" column="5" bodyfile="Library/test/test_gsl.cpp" bodystart="42" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="test__gsl_8cpp_1a192e7f32330d4cf6db69111250579c51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int rosenbrock_fdf</definition>
+        <argsstring>(const gsl_vector *x, void *params, gsl_vector *f, gsl_matrix *J)</argsstring>
+        <name>rosenbrock_fdf</name>
+        <param>
+          <type>const gsl_vector *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>gsl_vector *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>gsl_matrix *</type>
+          <declname>J</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="61" column="5" bodyfile="Library/test/test_gsl.cpp" bodystart="61" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="test__gsl_8cpp_1aefae00dd27618c8713f65a0c53260db9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_state</definition>
+        <argsstring>(size_t iter, gsl_multiroot_fsolver *s)</argsstring>
+        <name>print_state</name>
+        <param>
+          <type>size_t</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>gsl_multiroot_fsolver *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="69" column="6" bodyfile="Library/test/test_gsl.cpp" bodystart="69" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="test__gsl_8cpp_1a272a7d500dc66b4196edcf022c4a1b63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_state</definition>
+        <argsstring>(size_t iter, gsl_multiroot_fdfsolver *s)</argsstring>
+        <name>print_state</name>
+        <param>
+          <type>size_t</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>gsl_multiroot_fdfsolver *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="75" column="6" bodyfile="Library/test/test_gsl.cpp" bodystart="75" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="test__gsl_8cpp_1a28b1feff31ea74c837d66125aa59d214" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_gsl_release2_7_chap38_8</definition>
+        <argsstring>()</argsstring>
+        <name>test_gsl_release2_7_chap38_8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="81" column="6" bodyfile="Library/test/test_gsl.cpp" bodystart="81" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="test__gsl_8cpp_1af1a176e8f105e09435f97015224b3051" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_gsl_release2_7_chap38_8_fdf</definition>
+        <argsstring>()</argsstring>
+        <name>test_gsl_release2_7_chap38_8_fdf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="112" column="6" bodyfile="Library/test/test_gsl.cpp" bodystart="112" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="test__gsl_8cpp_1a788fd28f27a65556dc0d1e21e5717a51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int func</definition>
+        <argsstring>(const gsl_vector *x, void *params, gsl_vector *f)</argsstring>
+        <name>func</name>
+        <param>
+          <type>const gsl_vector *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>gsl_vector *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="152" column="5" bodyfile="Library/test/test_gsl.cpp" bodystart="152" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="test__gsl_8cpp_1a6c3138247644ae5478ed5b900c3397e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int func_df</definition>
+        <argsstring>(const gsl_vector *x, void *params, gsl_matrix *J)</argsstring>
+        <name>func_df</name>
+        <param>
+          <type>const gsl_vector *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>gsl_matrix *</type>
+          <declname>J</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="163" column="5" bodyfile="Library/test/test_gsl.cpp" bodystart="163" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="test__gsl_8cpp_1ad39885da6986d1660252627ee9c28c0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int func_fdf</definition>
+        <argsstring>(const gsl_vector *x, void *params, gsl_vector *f, gsl_matrix *J)</argsstring>
+        <name>func_fdf</name>
+        <param>
+          <type>const gsl_vector *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>gsl_vector *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>gsl_matrix *</type>
+          <declname>J</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="176" column="5" bodyfile="Library/test/test_gsl.cpp" bodystart="176" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="test__gsl_8cpp_1a97e65dced4b87710837ce127da262078" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_state2</definition>
+        <argsstring>(size_t iter, gsl_multiroot_fsolver *s)</argsstring>
+        <name>print_state2</name>
+        <param>
+          <type>size_t</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>gsl_multiroot_fsolver *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="184" column="6" bodyfile="Library/test/test_gsl.cpp" bodystart="184" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="test__gsl_8cpp_1a63251f390a8b009be8285ca3738b99ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_state2</definition>
+        <argsstring>(size_t iter, gsl_multiroot_fdfsolver *s)</argsstring>
+        <name>print_state2</name>
+        <param>
+          <type>size_t</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>gsl_multiroot_fdfsolver *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="190" column="6" bodyfile="Library/test/test_gsl.cpp" bodystart="190" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="test__gsl_8cpp_1a486fa499f5d582a351cc4eb710ba675f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_NLopt_tutorial</definition>
+        <argsstring>()</argsstring>
+        <name>test_NLopt_tutorial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="196" column="6" bodyfile="Library/test/test_gsl.cpp" bodystart="196" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="test__gsl_8cpp_1a478bbfdc6c567a444988cd2d38ba15b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_NLopt_tutorial_fdf</definition>
+        <argsstring>()</argsstring>
+        <name>test_NLopt_tutorial_fdf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="226" column="6" bodyfile="Library/test/test_gsl.cpp" bodystart="226" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="test__gsl_8cpp_1a24a26c5e0abaf3d0f89fb7780514b281" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double quadratic</definition>
+        <argsstring>(double x, void *params)</argsstring>
+        <name>quadratic</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="326" column="1" bodyfile="Library/test/test_gsl.cpp" bodystart="326" bodyend="336" declfile="Library/test/test_gsl.cpp" declline="262" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="test__gsl_8cpp_1a05bf1432b76d6305d3b17b836ab67e38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double quadratic_deriv</definition>
+        <argsstring>(double x, void *params)</argsstring>
+        <name>quadratic_deriv</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="339" column="1" bodyfile="Library/test/test_gsl.cpp" bodystart="339" bodyend="348" declfile="Library/test/test_gsl.cpp" declline="263" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="test__gsl_8cpp_1aed41de9dbc3b97211ffa40ed6ac29c4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void quadratic_fdf</definition>
+        <argsstring>(double x, void *params, double *y, double *dy)</argsstring>
+        <name>quadratic_fdf</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>dy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="351" column="1" bodyfile="Library/test/test_gsl.cpp" bodystart="351" bodyend="363" declfile="Library/test/test_gsl.cpp" declline="264" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="test__gsl_8cpp_1ac38d31957ec18028c20106c2f1438a68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_onedimensional_root_finding</definition>
+        <argsstring>()</argsstring>
+        <name>test_onedimensional_root_finding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="276" column="5" bodyfile="Library/test/test_gsl.cpp" bodystart="276" bodyend="324" declfile="Library/test/test_gsl.cpp" declline="266" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="test__gsl_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="267" column="5" bodyfile="Library/test/test_gsl.cpp" bodystart="267" bodyend="275"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This test example comes from GSL release 2.7 chapter 38.8. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Zhikui Guo (<ulink url="mailto:zguo@geomar.de">zguo@geomar.de</ulink>)  <formula id="254">\begin{equation}
+\begin{matrix}
+f_1(x,y) &amp; =  &amp; a(1-x) \\
+f_2(x,y) &amp; = &amp; b(y-x^2)
+\end{matrix}, (a=1, b=10)
+\end{equation}</formula> </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-12-27</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2021 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_vector.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_multiroots.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_errno.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_roots.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="structrparams" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrparams" kindref="compound">rparams</ref></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>b;<sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rosenbrock_f<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gsl_vector<sp/>*<sp/>x,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structparams" kindref="compound">params</ref>,<sp/>gsl_vector<sp/>*<sp/>f)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>((</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrparams" kindref="compound">rparams</ref><sp/>*)<sp/><ref refid="structparams" kindref="compound">params</ref>)-&gt;a;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>b<sp/>=<sp/>((</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrparams" kindref="compound">rparams</ref><sp/>*)<sp/><ref refid="structparams" kindref="compound">params</ref>)-&gt;b;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x0<sp/>=<sp/>gsl_vector_get<sp/>(x,<sp/>0);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x1<sp/>=<sp/>gsl_vector_get<sp/>(x,<sp/>1);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y0<sp/>=<sp/>a<sp/>*<sp/>(1<sp/>-<sp/>x0);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y1<sp/>=<sp/>b<sp/>*<sp/>(x1<sp/>-<sp/>x0<sp/>*<sp/>x0);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>gsl_vector_set<sp/>(f,<sp/>0,<sp/>y0);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>gsl_vector_set<sp/>(f,<sp/>1,<sp/>y1);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GSL_SUCCESS;<sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rosenbrock_df<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gsl_vector<sp/>*<sp/>x,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structparams" kindref="compound">params</ref>,<sp/>gsl_matrix<sp/>*<sp/>J)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>((</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrparams" kindref="compound">rparams</ref><sp/>*)<sp/><ref refid="structparams" kindref="compound">params</ref>)-&gt;a;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>b<sp/>=<sp/>((</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrparams" kindref="compound">rparams</ref><sp/>*)<sp/><ref refid="structparams" kindref="compound">params</ref>)-&gt;b;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x0<sp/>=<sp/>gsl_vector_get<sp/>(x,<sp/>0);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>df00<sp/>=<sp/>-a;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>df01<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>df10<sp/>=<sp/>-2<sp/>*<sp/>b<sp/><sp/>*<sp/>x0;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>df11<sp/>=<sp/>b;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>gsl_matrix_set<sp/>(J,<sp/>0,<sp/>0,<sp/>df00);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>gsl_matrix_set<sp/>(J,<sp/>0,<sp/>1,<sp/>df01);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>gsl_matrix_set<sp/>(J,<sp/>1,<sp/>0,<sp/>df10);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>gsl_matrix_set<sp/>(J,<sp/>1,<sp/>1,<sp/>df11);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GSL_SUCCESS;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rosenbrock_fdf<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gsl_vector<sp/>*<sp/>x,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structparams" kindref="compound">params</ref>,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gsl_vector<sp/>*<sp/>f,<sp/>gsl_matrix<sp/>*<sp/>J)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>rosenbrock_f<sp/>(x,<sp/><ref refid="structparams" kindref="compound">params</ref>,<sp/>f);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>rosenbrock_df<sp/>(x,<sp/><ref refid="structparams" kindref="compound">params</ref>,<sp/>J);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GSL_SUCCESS;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_state<sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>iter,<sp/>gsl_multiroot_fsolver<sp/>*<sp/>s)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;iter<sp/>=<sp/>%3lu<sp/>x<sp/>=<sp/>%<sp/>15.8f<sp/>%<sp/>15.8f<sp/><sp/>f(x)<sp/>=<sp/>%<sp/>.3e<sp/>%<sp/>.3e\n&quot;</highlight><highlight class="normal">,iter,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gsl_vector_get<sp/>(s-&gt;x,<sp/>0),<sp/>gsl_vector_get<sp/>(s-&gt;x,<sp/>1),</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gsl_vector_get<sp/>(s-&gt;f,<sp/>0),<sp/>gsl_vector_get<sp/>(s-&gt;f,<sp/>1));</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_state<sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>iter,<sp/>gsl_multiroot_fdfsolver<sp/>*<sp/>s)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;iter<sp/>=<sp/>%3lu<sp/>x<sp/>=<sp/>%<sp/>15.8f<sp/>%<sp/>15.8f<sp/><sp/>f(x)<sp/>=<sp/>%<sp/>.3e<sp/>%<sp/>.3e\n&quot;</highlight><highlight class="normal">,iter,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gsl_vector_get<sp/>(s-&gt;x,<sp/>0),<sp/>gsl_vector_get<sp/>(s-&gt;x,<sp/>1),</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gsl_vector_get<sp/>(s-&gt;f,<sp/>0),<sp/>gsl_vector_get<sp/>(s-&gt;f,<sp/>1));</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_gsl_release2_7_chap38_8()</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gsl_multiroot_fsolver_type<sp/>*T;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_multiroot_fsolver<sp/>*s;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i,<sp/>iter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrparams" kindref="compound">rparams</ref><sp/>p<sp/>=<sp/>{1.0,<sp/>10.0};</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_multiroot_function<sp/>f<sp/>=<sp/>{&amp;rosenbrock_f,<sp/>n,<sp/>&amp;p};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x_init[2]<sp/>=<sp/>{-10,<sp/>-5};<sp/></highlight><highlight class="comment">//initial<sp/>guess</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_vector<sp/>*x<sp/>=<sp/>gsl_vector_alloc<sp/>(n);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_vector_set<sp/>(x,<sp/>0,<sp/>x_init[0]);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_vector_set<sp/>(x,<sp/>1,<sp/>x_init[1]);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>=<sp/>gsl_multiroot_fsolver_hybrids;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>s<sp/>=<sp/>gsl_multiroot_fsolver_alloc<sp/>(T,<sp/>2);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_multiroot_fsolver_set<sp/>(s,<sp/>&amp;f,<sp/>x);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>print_state<sp/>(iter,<sp/>s);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iter++;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/>gsl_multiroot_fsolver_iterate<sp/>(s);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print_state<sp/>(iter,<sp/>s);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status)<sp/></highlight><highlight class="comment">/*<sp/>check<sp/>if<sp/>solver<sp/>is<sp/>stuck<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gsl_multiroot_test_residual<sp/>(s-&gt;f,<sp/>1e-7);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(status<sp/>==<sp/>GSL_CONTINUE<sp/>&amp;&amp;<sp/>iter<sp/>&lt;<sp/>1000);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;status<sp/>=<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>gsl_strerror<sp/>(status));</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_multiroot_fsolver_free<sp/>(s);<sp/>gsl_vector_free<sp/>(x);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_gsl_release2_7_chap38_8_fdf()</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gsl_multiroot_fdfsolver_type<sp/>*T;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_multiroot_fdfsolver<sp/>*s;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i,<sp/>iter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrparams" kindref="compound">rparams</ref><sp/>p<sp/>=<sp/>{1.0,<sp/>10.0};</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_multiroot_function_fdf<sp/>f<sp/>=<sp/>{&amp;rosenbrock_f,<sp/>&amp;rosenbrock_df,<sp/>&amp;rosenbrock_fdf,<sp/>n,<sp/>&amp;p};</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x_init[2]<sp/>=<sp/>{-10,<sp/>-5};<sp/></highlight><highlight class="comment">//initial<sp/>guess</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_vector<sp/>*x<sp/>=<sp/>gsl_vector_alloc<sp/>(n);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_vector_set<sp/>(x,<sp/>0,<sp/>x_init[0]);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_vector_set<sp/>(x,<sp/>1,<sp/>x_init[1]);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>=<sp/>gsl_multiroot_fdfsolver_gnewton;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>s<sp/>=<sp/>gsl_multiroot_fdfsolver_alloc<sp/>(T,<sp/>2);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_multiroot_fdfsolver_set<sp/>(s,<sp/>&amp;f,<sp/>x);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>print_state<sp/>(iter,<sp/>s);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iter++;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/>gsl_multiroot_fdfsolver_iterate<sp/>(s);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print_state<sp/>(iter,<sp/>s);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status)<sp/></highlight><highlight class="comment">/*<sp/>check<sp/>if<sp/>solver<sp/>is<sp/>stuck<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gsl_multiroot_test_residual<sp/>(s-&gt;f,<sp/>1e-7);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(status<sp/>==<sp/>GSL_CONTINUE<sp/>&amp;&amp;<sp/>iter<sp/>&lt;<sp/>1000);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;status<sp/>=<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>gsl_strerror<sp/>(status));</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_multiroot_fdfsolver_free<sp/>(s);<sp/>gsl_vector_free<sp/>(x);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="structparams" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structparams" kindref="compound">params</ref></highlight></codeline>
+<codeline lineno="149"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a,<sp/>b,<sp/>c,<sp/>d;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>func(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gsl_vector<sp/>*<sp/>x,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structparams" kindref="compound">params</ref>,<sp/>gsl_vector*<sp/>f)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>((</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structparams" kindref="compound">params</ref><sp/>*)<sp/><ref refid="structparams" kindref="compound">params</ref>)-&gt;a;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>b<sp/>=<sp/>((</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structparams" kindref="compound">params</ref><sp/>*)<sp/><ref refid="structparams" kindref="compound">params</ref>)-&gt;b;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>((</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structparams" kindref="compound">params</ref><sp/>*)<sp/><ref refid="structparams" kindref="compound">params</ref>)-&gt;c;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d<sp/>=<sp/>((</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structparams" kindref="compound">params</ref><sp/>*)<sp/><ref refid="structparams" kindref="compound">params</ref>)-&gt;d;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x0<sp/>=<sp/>gsl_vector_get<sp/>(x,<sp/>0);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y0<sp/>=<sp/>pow(a*x0<sp/>+<sp/>b,<sp/>3.0)<sp/>-<sp/>pow(c*x0<sp/>+<sp/>d,<sp/>3.0);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_vector_set<sp/>(f,<sp/>0,<sp/>y0);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GSL_SUCCESS;<sp/></highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>func_df<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gsl_vector<sp/>*<sp/>x,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structparams" kindref="compound">params</ref>,<sp/>gsl_matrix<sp/>*<sp/>J)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>((</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrparams" kindref="compound">rparams</ref><sp/>*)<sp/><ref refid="structparams" kindref="compound">params</ref>)-&gt;a;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>b<sp/>=<sp/>((</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrparams" kindref="compound">rparams</ref><sp/>*)<sp/><ref refid="structparams" kindref="compound">params</ref>)-&gt;b;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x0<sp/>=<sp/>gsl_vector_get<sp/>(x,<sp/>0);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>df00<sp/>=<sp/>6*(2*x0)*(2*x0)<sp/>+<sp/>3*(-x0<sp/>+<sp/>1)*(-x0+1);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>gsl_matrix_set<sp/>(J,<sp/>0,<sp/>0,<sp/>df00);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GSL_SUCCESS;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>func_fdf<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gsl_vector<sp/>*<sp/>x,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structparams" kindref="compound">params</ref>,</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gsl_vector<sp/>*<sp/>f,<sp/>gsl_matrix<sp/>*<sp/>J)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/>func<sp/>(x,<sp/><ref refid="structparams" kindref="compound">params</ref>,<sp/>f);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>func_df<sp/>(x,<sp/><ref refid="structparams" kindref="compound">params</ref>,<sp/>J);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GSL_SUCCESS;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_state2<sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>iter,<sp/>gsl_multiroot_fsolver<sp/>*<sp/>s)</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;iter<sp/>=<sp/>%3lu<sp/>x<sp/>=<sp/>%<sp/>15.8f<sp/>f(x)<sp/>=<sp/>%<sp/>.3e<sp/>\n&quot;</highlight><highlight class="normal">,iter,</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gsl_vector_get<sp/>(s-&gt;x,<sp/>0),</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gsl_vector_get<sp/>(s-&gt;f,<sp/>0));</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_state2<sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>iter,<sp/>gsl_multiroot_fdfsolver<sp/>*<sp/>s)</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;iter<sp/>=<sp/>%3lu<sp/>x<sp/>=<sp/>%<sp/>15.8f<sp/>f(x)<sp/>=<sp/>%<sp/>.3e<sp/>\n&quot;</highlight><highlight class="normal">,iter,</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gsl_vector_get<sp/>(s-&gt;x,<sp/>0),</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gsl_vector_get<sp/>(s-&gt;f,<sp/>0));</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_NLopt_tutorial()</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gsl_multiroot_fsolver_type<sp/>*T;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_multiroot_fsolver<sp/>*s;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i,<sp/>iter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structparams" kindref="compound">params</ref><sp/>p<sp/>=<sp/>{2,<sp/>0,<sp/>-1,<sp/>1};</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_multiroot_function<sp/>f<sp/>=<sp/>{&amp;func,<sp/>n,<sp/>&amp;p};</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x_init[n]<sp/>=<sp/>{3};<sp/></highlight><highlight class="comment">//initial<sp/>guess</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_vector<sp/>*x<sp/>=<sp/>gsl_vector_alloc<sp/>(n);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_vector_set<sp/>(x,<sp/>0,<sp/>x_init[0]);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>=<sp/>gsl_multiroot_fsolver_hybrids;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>s<sp/>=<sp/>gsl_multiroot_fsolver_alloc<sp/>(T,<sp/>n);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_multiroot_fsolver_set<sp/>(s,<sp/>&amp;f,<sp/>x);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>print_state2<sp/>(iter,<sp/>s);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iter++;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/>gsl_multiroot_fsolver_iterate<sp/>(s);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print_state2<sp/>(iter,<sp/>s);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status)<sp/></highlight><highlight class="comment">/*<sp/>check<sp/>if<sp/>solver<sp/>is<sp/>stuck<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gsl_multiroot_test_residual<sp/>(s-&gt;f,<sp/>1e-15);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(status<sp/>==<sp/>GSL_CONTINUE<sp/>&amp;&amp;<sp/>iter<sp/>&lt;<sp/>1000);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;status<sp/>=<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>gsl_strerror<sp/>(status));</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_multiroot_fsolver_free<sp/>(s);<sp/>gsl_vector_free<sp/>(x);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_NLopt_tutorial_fdf()</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gsl_multiroot_fdfsolver_type<sp/>*T;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_multiroot_fdfsolver<sp/>*s;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i,<sp/>iter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structparams" kindref="compound">params</ref><sp/>p<sp/>=<sp/>{2,<sp/>0,<sp/>-1,<sp/>1};</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_multiroot_function_fdf<sp/>f<sp/>=<sp/>{&amp;func,<sp/>&amp;func_df,<sp/>&amp;func_fdf,<sp/>n,<sp/>&amp;p};</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x_init[n]<sp/>=<sp/>{3};<sp/></highlight><highlight class="comment">//initial<sp/>guess</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_vector<sp/>*x<sp/>=<sp/>gsl_vector_alloc<sp/>(n);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_vector_set<sp/>(x,<sp/>0,<sp/>x_init[0]);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>=<sp/>gsl_multiroot_fdfsolver_gnewton;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>s<sp/>=<sp/>gsl_multiroot_fdfsolver_alloc<sp/>(T,<sp/>n);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_multiroot_fdfsolver_set<sp/>(s,<sp/>&amp;f,<sp/>x);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>print_state2<sp/>(iter,<sp/>s);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iter++;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/>gsl_multiroot_fdfsolver_iterate<sp/>(s);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print_state2<sp/>(iter,<sp/>s);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status)<sp/></highlight><highlight class="comment">/*<sp/>check<sp/>if<sp/>solver<sp/>is<sp/>stuck<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gsl_multiroot_test_residual<sp/>(s-&gt;f,<sp/>1e-15);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(status<sp/>==<sp/>GSL_CONTINUE<sp/>&amp;&amp;<sp/>iter<sp/>&lt;<sp/>1000);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;status<sp/>=<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>gsl_strerror<sp/>(status));</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_multiroot_fdfsolver_free<sp/>(s);<sp/>gsl_vector_free<sp/>(x);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257" refid="structquadratic__params" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structquadratic__params" kindref="compound">quadratic_params</ref></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a,<sp/>b,<sp/>c;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>quadratic<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structparams" kindref="compound">params</ref>);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>quadratic_deriv<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structparams" kindref="compound">params</ref>);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>quadratic_fdf<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structparams" kindref="compound">params</ref>,</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*dy);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_onedimensional_root_finding();</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
+<codeline lineno="268"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_gsl_release2_7_chap38_8();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_gsl_release2_7_chap38_8_fdf();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_NLopt_tutorial();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_NLopt_tutorial_fdf();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>test_onedimensional_root_finding();</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_onedimensional_root_finding()</highlight></codeline>
+<codeline lineno="277"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iter<sp/>=<sp/>0,<sp/>max_iter<sp/>=<sp/>100;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gsl_root_fsolver_type<sp/>*T;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/>gsl_root_fsolver<sp/>*s;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>r<sp/>=<sp/>0,<sp/>r_expected<sp/>=<sp/>sqrt<sp/>(5.0);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x_lo<sp/>=<sp/>0.0,<sp/>x_hi<sp/>=<sp/>5.0;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/>gsl_function<sp/>F;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structquadratic__params" kindref="compound">quadratic_params</ref><sp/><ref refid="structparams" kindref="compound">params</ref><sp/>=<sp/>{1.0,<sp/>0.0,<sp/>-5.0};</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/>F.function<sp/>=<sp/>&amp;quadratic;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/>F.params<sp/>=<sp/>&amp;<ref refid="structparams" kindref="compound">params</ref>;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/>T<sp/>=<sp/>gsl_root_fsolver_brent;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/>s<sp/>=<sp/>gsl_root_fsolver_alloc<sp/>(T);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/>gsl_root_fsolver_set<sp/>(s,<sp/>&amp;F,<sp/>x_lo,<sp/>x_hi);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;using<sp/>%s<sp/>method\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gsl_root_fsolver_name<sp/>(s));</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;%5s<sp/>[%9s,<sp/>%9s]<sp/>%9s<sp/>%10s<sp/>%9s\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;iter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;lower&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;upper&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;root&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;err&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;err(est)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>iter++;</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/>gsl_root_fsolver_iterate<sp/>(s);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/>gsl_root_fsolver_root<sp/>(s);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>x_lo<sp/>=<sp/>gsl_root_fsolver_x_lower<sp/>(s);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>x_hi<sp/>=<sp/>gsl_root_fsolver_x_upper<sp/>(s);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/>gsl_root_test_interval<sp/>(x_lo,<sp/>x_hi,</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/>0.001);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>==<sp/>GSL_SUCCESS)</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;Converged:\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;%5d<sp/>[%.7f,<sp/>%.7f]<sp/>%.7f<sp/>%+.7f<sp/>%.7f\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iter,<sp/>x_lo,<sp/>x_hi,</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r,<sp/>r<sp/>-<sp/>r_expected,</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x_hi<sp/>-<sp/>x_lo);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(status<sp/>==<sp/>GSL_CONTINUE<sp/>&amp;&amp;<sp/>iter<sp/>&lt;<sp/>max_iter);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/>gsl_root_fsolver_free<sp/>(s);</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal">quadratic<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structparams" kindref="compound">params</ref>)</highlight></codeline>
+<codeline lineno="327"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structquadratic__params" kindref="compound">quadratic_params</ref><sp/>*p</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structquadratic__params" kindref="compound">quadratic_params</ref><sp/>*)<sp/><ref refid="structparams" kindref="compound">params</ref>;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>p-&gt;a;</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>b<sp/>=<sp/>p-&gt;b;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>p-&gt;c;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;x<sp/>=<sp/>%f,<sp/>%f\n&quot;,x,(a<sp/>*<sp/>x<sp/>+<sp/>b)<sp/>*<sp/>x<sp/>+<sp/>c);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(a<sp/>*<sp/>x<sp/>+<sp/>b)<sp/>*<sp/>x<sp/>+<sp/>c;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal">quadratic_deriv<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structparams" kindref="compound">params</ref>)</highlight></codeline>
+<codeline lineno="340"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structquadratic__params" kindref="compound">quadratic_params</ref><sp/>*p</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structquadratic__params" kindref="compound">quadratic_params</ref><sp/>*)<sp/><ref refid="structparams" kindref="compound">params</ref>;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>p-&gt;a;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>b<sp/>=<sp/>p-&gt;b;</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>2.0<sp/>*<sp/>a<sp/>*<sp/>x<sp/>+<sp/>b;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal">quadratic_fdf<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structparams" kindref="compound">params</ref>,</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*dy)</highlight></codeline>
+<codeline lineno="353"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structquadratic__params" kindref="compound">quadratic_params</ref><sp/>*p</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structquadratic__params" kindref="compound">quadratic_params</ref><sp/>*)<sp/><ref refid="structparams" kindref="compound">params</ref>;</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>p-&gt;a;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>b<sp/>=<sp/>p-&gt;b;</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>p-&gt;c;</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/>*y<sp/>=<sp/>(a<sp/>*<sp/>x<sp/>+<sp/>b)<sp/>*<sp/>x<sp/>+<sp/>c;</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/>*dy<sp/>=<sp/>2.0<sp/>*<sp/>a<sp/>*<sp/>x<sp/>+<sp/>b;</highlight></codeline>
+<codeline lineno="363"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Library/test/test_gsl.cpp"/>
+  </compounddef>
+</doxygen>

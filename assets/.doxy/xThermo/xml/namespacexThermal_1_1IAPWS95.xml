@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacexThermal_1_1IAPWS95" kind="namespace" language="C++">
+    <compoundname>xThermal::IAPWS95</compoundname>
+    <innerclass refid="classxThermal_1_1IAPWS95_1_1cIAPWS95" prot="public">xThermal::IAPWS95::cIAPWS95</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__o" prot="public">xThermal::IAPWS95::Coeff_phi_o</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS95_1_1Coeff__phi__r" prot="public">xThermal::IAPWS95::Coeff_phi_r</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS95_1_1Constants__Viscosity2008__Water" prot="public">xThermal::IAPWS95::Constants_Viscosity2008_Water</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless" prot="public">xThermal::IAPWS95::HelmholtzEnergy_dimensionless</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless__SinglePhase" prot="public">xThermal::IAPWS95::HelmholtzEnergy_dimensionless_SinglePhase</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless__TwoPhase" prot="public">xThermal::IAPWS95::HelmholtzEnergy_dimensionless_TwoPhase</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS95_1_1Params__HP2RhoT" prot="public">xThermal::IAPWS95::Params_HP2RhoT</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS95_1_1Params__SolvePhaseEquilibrium" prot="public">xThermal::IAPWS95::Params_SolvePhaseEquilibrium</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS95_1_1Params__T__Sat__estimate" prot="public">xThermal::IAPWS95::Params_T_Sat_estimate</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS95_1_1Params__TP2Rho" prot="public">xThermal::IAPWS95::Params_TP2Rho</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS95_1_1State" prot="public">xThermal::IAPWS95::State</innerclass>
+    <innerclass refid="structxThermal_1_1IAPWS95_1_1STRUCT__delta__TwoPhase" prot="public">xThermal::IAPWS95::STRUCT_delta_TwoPhase</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="IAPWS95_8h_1ad774a3fb0d43ead538c30f3b3999672b" prot="public" static="no">
+        <type>std::map&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">unsigned</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">long</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref>, <ref refid="structxThermal_1_1ThermodynamicProperty" kindref="compound">ThermodynamicProperty</ref> &gt;</type>
+        <definition>typedef std::map&lt;unsigned long int, ThermodynamicProperty&gt; xThermal::IAPWS95::MAP_INDEX2PROP</definition>
+        <argsstring></argsstring>
+        <name>MAP_INDEX2PROP</name>
+        <qualifiedname>xThermal::IAPWS95::MAP_INDEX2PROP</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="216" column="26" bodyfile="Library/H2O/IAPWS95.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="IAPWS95_8cpp_1a074751355f420febbc89f9e933e91718" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS95::func_T_Sat_estimate</definition>
+        <argsstring>(double T_K, void *params)</argsstring>
+        <name>func_T_Sat_estimate</name>
+        <qualifiedname>xThermal::IAPWS95::func_T_Sat_estimate</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>T_K</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.cpp" line="444" column="16" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="444" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="IAPWS95_8cpp_1ae761ce90f01d9b119cce32a2aa981af4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::IAPWS95::print_state_TP2Rho</definition>
+        <argsstring>(size_t iter, gsl_multiroot_fsolver *s)</argsstring>
+        <name>print_state_TP2Rho</name>
+        <qualifiedname>xThermal::IAPWS95::print_state_TP2Rho</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">size_t</ref></type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_multiroot_fsolver</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.cpp" line="544" column="14" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="544" bodyend="548"/>
+      </memberdef>
+      <memberdef kind="function" id="IAPWS95_8cpp_1a042abfe224555b8f04a7058b1a1d453d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>int xThermal::IAPWS95::func_PhaseEquilibrium</definition>
+        <argsstring>(const gsl_vector *x, void *params, gsl_vector *f)</argsstring>
+        <name>func_PhaseEquilibrium</name>
+        <qualifiedname>xThermal::IAPWS95::func_PhaseEquilibrium</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_vector</ref> *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_vector</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Construct nonlinear functions according to phase-equilibrium condition. See Table 3 (pp.12) in IAPWS-95. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.cpp" line="558" column="13" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="558" bodyend="604"/>
+      </memberdef>
+      <memberdef kind="function" id="IAPWS95_8cpp_1a8e36df74e71d2a1e8d2d3417ac6cde4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::IAPWS95::print_state_PhaseEquilibrium</definition>
+        <argsstring>(size_t iter, gsl_multiroot_fsolver *s)</argsstring>
+        <name>print_state_PhaseEquilibrium</name>
+        <qualifiedname>xThermal::IAPWS95::print_state_PhaseEquilibrium</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">size_t</ref></type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_multiroot_fsolver</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.cpp" line="605" column="14" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="605" bodyend="610"/>
+      </memberdef>
+      <memberdef kind="function" id="IAPWS95_8cpp_1af97aa8ddeea01dfe78756155ff958a51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>int xThermal::IAPWS95::func_TP2Rho</definition>
+        <argsstring>(const gsl_vector *x, void *params, gsl_vector *f)</argsstring>
+        <name>func_TP2Rho</name>
+        <qualifiedname>xThermal::IAPWS95::func_TP2Rho</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_vector</ref> *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_vector</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Construct nonlinear function of <formula id="34">$ f(\rho, p, T) $</formula>, which is used to solve density by given Temperautre and pressure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.cpp" line="762" column="13" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="762" bodyend="775"/>
+      </memberdef>
+      <memberdef kind="function" id="IAPWS95_8cpp_1aa357d328409f80d0768ce1b018c829b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS95::func_TP2Rho</definition>
+        <argsstring>(double rho, void *params)</argsstring>
+        <name>func_TP2Rho</name>
+        <qualifiedname>xThermal::IAPWS95::func_TP2Rho</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>rho</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.cpp" line="776" column="16" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="776" bodyend="782"/>
+      </memberdef>
+      <memberdef kind="function" id="IAPWS95_8cpp_1ad138980891ef42cdf504b2ead50995e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>int xThermal::IAPWS95::func_HP2RhoT</definition>
+        <argsstring>(const gsl_vector *x, void *params, gsl_vector *f)</argsstring>
+        <name>func_HP2RhoT</name>
+        <qualifiedname>xThermal::IAPWS95::func_HP2RhoT</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_vector</ref> *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_vector</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Implementation of <formula id="40">$ p(\delta, \tau), h(\delta, \tau) $</formula> used in SinglePhase_HP. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Equation <formula id="41">$ h(\delta, \tau) $</formula></para>
+<para>&lt; Equation <formula id="42">$ p(\delta, \tau) $</formula></para>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.cpp" line="1008" column="13" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1008" bodyend="1028"/>
+      </memberdef>
+      <memberdef kind="function" id="IAPWS95_8cpp_1a140607f178d9a8d09dd9dc0efb98ed02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::IAPWS95::print_state_HP2RhoT</definition>
+        <argsstring>(size_t iter, gsl_multiroot_fsolver *s)</argsstring>
+        <name>print_state_HP2RhoT</name>
+        <qualifiedname>xThermal::IAPWS95::print_state_HP2RhoT</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">size_t</ref></type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_multiroot_fsolver</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.cpp" line="1029" column="14" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1029" bodyend="1034"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/H2O/IAPWS95.cpp" line="21" column="5"/>
+  </compounddef>
+</doxygen>

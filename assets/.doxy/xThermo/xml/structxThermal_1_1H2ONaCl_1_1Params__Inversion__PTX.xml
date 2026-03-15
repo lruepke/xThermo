@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1H2ONaCl_1_1Params__Inversion__PTX" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::H2ONaCl::Params_Inversion_PTX</compoundname>
+    <includes refid="H2ONaCl_8h" local="no">H2ONaCl.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Params__Inversion__PTX_1a254b803d4b01725126f59c9b011e72ba" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl" kindref="compound">cH2ONaCl</ref> *</type>
+        <definition>cH2ONaCl* xThermal::H2ONaCl::Params_Inversion_PTX::sw</definition>
+        <argsstring></argsstring>
+        <name>sw</name>
+        <qualifiedname>xThermal::H2ONaCl::Params_Inversion_PTX::sw</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer of <ref refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl" kindref="compound">cH2ONaCl</ref> class </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="327" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Params__Inversion__PTX_1a4c6a7859e28f4946fef187cf97b79a2f" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::H2ONaCl::Params_Inversion_PTX::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <qualifiedname>xThermal::H2ONaCl::Params_Inversion_PTX::P</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="328" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Params__Inversion__PTX_1a34a2f176e571c251285919209bb52ecb" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::H2ONaCl::Params_Inversion_PTX::X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <qualifiedname>xThermal::H2ONaCl::Params_Inversion_PTX::X</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="329" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Params__Inversion__PTX_1a75734f5b74854eff3e674383581eb02b" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::H2ONaCl::Params_Inversion_PTX::H</definition>
+        <argsstring></argsstring>
+        <name>H</name>
+        <qualifiedname>xThermal::H2ONaCl::Params_Inversion_PTX::H</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="330" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Parameters for pressure and temperature calculation in VLH zone. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>xThermal::H2ONaCl::Params_Inversion_PTX</label>
+        <link refid="structxThermal_1_1H2ONaCl_1_1Params__Inversion__PTX"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>sw</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>xThermal::H2ONaCl::cH2ONaCl</label>
+        <link refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>xThermal::cxThermal</label>
+        <link refid="classxThermal_1_1cxThermal"/>
+      </node>
+    </collaborationgraph>
+    <location file="Library/H2ONaCl/H2ONaCl.h" line="325" column="9" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="326" bodyend="331"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1H2ONaCl_1_1Params__Inversion__PTX_1a75734f5b74854eff3e674383581eb02b" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Params_Inversion_PTX</scope><name>H</name></member>
+      <member refid="structxThermal_1_1H2ONaCl_1_1Params__Inversion__PTX_1a4c6a7859e28f4946fef187cf97b79a2f" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Params_Inversion_PTX</scope><name>P</name></member>
+      <member refid="structxThermal_1_1H2ONaCl_1_1Params__Inversion__PTX_1a254b803d4b01725126f59c9b011e72ba" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Params_Inversion_PTX</scope><name>sw</name></member>
+      <member refid="structxThermal_1_1H2ONaCl_1_1Params__Inversion__PTX_1a34a2f176e571c251285919209bb52ecb" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Params_Inversion_PTX</scope><name>X</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

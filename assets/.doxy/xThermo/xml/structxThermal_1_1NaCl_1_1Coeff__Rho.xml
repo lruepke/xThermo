@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1NaCl_1_1Coeff__Rho" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::NaCl::Coeff_Rho</compoundname>
+    <includes refid="NaCl_8h" local="no">NaCl.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1NaCl_1_1Coeff__Rho_1ac51a4136cbed6f33751382ce818b613a" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::NaCl::Coeff_Rho::l[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>l</name>
+        <qualifiedname>xThermal::NaCl::Coeff_Rho::l</qualifiedname>
+        <initializer>= {2170.4, -0.24599, -9.5797<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-05, 0.005727<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-5, 0.002715<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-5, 733.4}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="65" column="26" bodyfile="Library/NaCl/NaCl.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1NaCl_1_1Coeff__Rho_1ae08f834e5244b25d0d734d90a11a3ebd" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::NaCl::Coeff_Rho::m[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>m</name>
+        <qualifiedname>xThermal::NaCl::Coeff_Rho::m</qualifiedname>
+        <initializer>= {58443, 23.772, 0.018639, -1.9687<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-06, -1.5259<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-10, 5.5058<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>-13}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="66" column="26" bodyfile="Library/NaCl/NaCl.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Parameters for halite and liquid NaCl volumetric properties. See table 3 of Driesner2007Part2. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>In order to make the input pressure with unit [Pa], change <formula id="251">$l_3, l_4 $</formula> to be 0.005727E-5 and 0.002715E-5, respectively. Because the pressure unit in equation (1-3) is [bar]. In addition, change <formula id="252">$ m_4, m_5 $</formula> to be -1.5259E-10, 5.5058E-13 for the same reason. (See equation 5,6 of Driesner2007Part2) </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="Library/NaCl/NaCl.h" line="63" column="9" bodyfile="Library/NaCl/NaCl.h" bodystart="64" bodyend="67"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1NaCl_1_1Coeff__Rho_1ac51a4136cbed6f33751382ce818b613a" prot="public" virt="non-virtual"><scope>xThermal::NaCl::Coeff_Rho</scope><name>l</name></member>
+      <member refid="structxThermal_1_1NaCl_1_1Coeff__Rho_1ae08f834e5244b25d0d734d90a11a3ebd" prot="public" virt="non-virtual"><scope>xThermal::NaCl::Coeff_Rho</scope><name>m</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

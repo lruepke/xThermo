@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structquadratic__params" kind="struct" language="C++" prot="public">
+    <compoundname>quadratic_params</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structquadratic__params_1a5ef7109e55fe06649c17b98c20a77345" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double quadratic_params::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <qualifiedname>quadratic_params::a</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="259" column="12" bodyfile="Library/test/test_gsl.cpp" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquadratic__params_1a7fa7bbaa23f9db017c99c2f533ba77e2" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double quadratic_params::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>quadratic_params::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="259" column="14" bodyfile="Library/test/test_gsl.cpp" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquadratic__params_1a9036833906ab859bfd4a340cc5bf17e1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double quadratic_params::c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <qualifiedname>quadratic_params::c</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_gsl.cpp" line="259" column="16" bodyfile="Library/test/test_gsl.cpp" bodystart="259" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/test/test_gsl.cpp" line="257" column="1" bodyfile="Library/test/test_gsl.cpp" bodystart="258" bodyend="260"/>
+    <listofallmembers>
+      <member refid="structquadratic__params_1a5ef7109e55fe06649c17b98c20a77345" prot="public" virt="non-virtual"><scope>quadratic_params</scope><name>a</name></member>
+      <member refid="structquadratic__params_1a7fa7bbaa23f9db017c99c2f533ba77e2" prot="public" virt="non-virtual"><scope>quadratic_params</scope><name>b</name></member>
+      <member refid="structquadratic__params_1a9036833906ab859bfd4a340cc5bf17e1" prot="public" virt="non-virtual"><scope>quadratic_params</scope><name>c</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

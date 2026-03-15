@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Table34" kind="struct" language="C++" prot="private">
+    <compoundname>xThermal::IAPWS_IF97::cIAPWS_IF97::Table34</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Table34_1a54e93ec32718be78977f731a774986ea" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Table34::n[10]</definition>
+        <argsstring>[10]</argsstring>
+        <name>n</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Table34::n</qualifiedname>
+        <initializer>= {0.11670521452767<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>+04, -0.72421316703206<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>+06, -0.17073846940092<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>+02,
+                                0.12020824702470E+05, -0.32325550322333<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>+07, 0.14915108613530E+02,
+                                -0.48232657361591<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>+04, 0.40511340542057<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>+06, -0.23855557567849<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>+00,
+                                0.65017534844798<ref refid="classxThermal_1_1xThermalError" kindref="compound">E</ref>+03}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="384" column="24" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="384" bodyend="387"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Table 34 of IF97 for saturation curve calculation. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/H2O/IAPWS-IF97.h" line="382" column="13" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="383" bodyend="388"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Table34_1a54e93ec32718be78977f731a774986ea" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97::Table34</scope><name>n</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

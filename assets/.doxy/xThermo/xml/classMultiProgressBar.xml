@@ -1,0 +1,366 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classMultiProgressBar" kind="class" language="C++" prot="public">
+    <compoundname>MultiProgressBar</compoundname>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classMultiProgressBar_1a0ecb0e6b22443b5694cc7e7d4dd01fe5" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; MultiProgressBar::m_bar_str</definition>
+        <argsstring></argsstring>
+        <name>m_bar_str</name>
+        <qualifiedname>MultiProgressBar::m_bar_str</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="61" column="21" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMultiProgressBar_1a0319176f9fc1a3443c2e7d76163d6401" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MultiProgressBar::m_length_bar</definition>
+        <argsstring></argsstring>
+        <name>m_length_bar</name>
+        <qualifiedname>MultiProgressBar::m_length_bar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="62" column="13" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMultiProgressBar_1a0988d7a44c4eb92aa791b73ed0a5c040" prot="protected" static="no" mutable="no">
+        <type>char</type>
+        <definition>char MultiProgressBar::m_bar_char_left</definition>
+        <argsstring></argsstring>
+        <name>m_bar_char_left</name>
+        <qualifiedname>MultiProgressBar::m_bar_char_left</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="63" column="14" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMultiProgressBar_1afaae2b720a00fd64a4a8298dba36268c" prot="protected" static="no" mutable="no">
+        <type>char</type>
+        <definition>char MultiProgressBar::m_bar_char_right</definition>
+        <argsstring></argsstring>
+        <name>m_bar_char_right</name>
+        <qualifiedname>MultiProgressBar::m_bar_char_right</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="64" column="14" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMultiProgressBar_1a8098a0c3b740939575f933ef57824718" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; MultiProgressBar::m_percent</definition>
+        <argsstring></argsstring>
+        <name>m_percent</name>
+        <qualifiedname>MultiProgressBar::m_percent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="65" column="21" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMultiProgressBar_1a2fb1e28be35d664687dc28779e201ccc" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; MultiProgressBar::m_title</definition>
+        <argsstring></argsstring>
+        <name>m_title</name>
+        <qualifiedname>MultiProgressBar::m_title</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="66" column="20" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMultiProgressBar_1ab01c3eb860fb0f5cc4a120640adcc1ad" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; MultiProgressBar::m_total</definition>
+        <argsstring></argsstring>
+        <name>m_total</name>
+        <qualifiedname>MultiProgressBar::m_total</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="67" column="21" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMultiProgressBar_1a7cc01d0897d90db3dd610850382e8033" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; MultiProgressBar::m_current_index</definition>
+        <argsstring></argsstring>
+        <name>m_current_index</name>
+        <qualifiedname>MultiProgressBar::m_current_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="68" column="21" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMultiProgressBar_1a1a3803e31fc7bc086854ab6f1c6e7667" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MultiProgressBar::m_bar_number</definition>
+        <argsstring></argsstring>
+        <name>m_bar_number</name>
+        <qualifiedname>MultiProgressBar::m_bar_number</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="69" column="13" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMultiProgressBar_1aeda7325a965e8787265edb9c4ef0d276" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; MultiProgressBar::m_left</definition>
+        <argsstring></argsstring>
+        <name>m_left</name>
+        <qualifiedname>MultiProgressBar::m_left</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="70" column="21" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMultiProgressBar_1a3d5c32ab5c10498569077225e77afe7b" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; MultiProgressBar::m_right</definition>
+        <argsstring></argsstring>
+        <name>m_right</name>
+        <qualifiedname>MultiProgressBar::m_right</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="70" column="27" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMultiProgressBar_1a12795fa634323457d1cacfc8a2beec12" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MultiProgressBar::m_maxLength_title</definition>
+        <argsstring></argsstring>
+        <name>m_maxLength_title</name>
+        <qualifiedname>MultiProgressBar::m_maxLength_title</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="71" column="13" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMultiProgressBar_1a3befa397116ae560dd86250d5caada4d" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double MultiProgressBar::m_factor</definition>
+        <argsstring></argsstring>
+        <name>m_factor</name>
+        <qualifiedname>MultiProgressBar::m_factor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="73" column="16" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMultiProgressBar_1a7131485c7f854af33a6079a9015349ef" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; MultiProgressBar::m_colors</definition>
+        <argsstring></argsstring>
+        <name>m_colors</name>
+        <qualifiedname>MultiProgressBar::m_colors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="74" column="20" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMultiProgressBar_1a0feeb1e41adf9e50b2b25e70a39fddb5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MultiProgressBar::m_defaultcolor</definition>
+        <argsstring></argsstring>
+        <name>m_defaultcolor</name>
+        <qualifiedname>MultiProgressBar::m_defaultcolor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="76" column="13" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMultiProgressBar_1a3464fb91306969362460c49b58e11eaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MultiProgressBar::MultiProgressBar</definition>
+        <argsstring>(std::vector&lt; double &gt; xmin, std::vector&lt; double &gt; xmax, std::vector&lt; std::string &gt; title)</argsstring>
+        <name>MultiProgressBar</name>
+        <qualifiedname>MultiProgressBar::MultiProgressBar</qualifiedname>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>xmin</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>xmax</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="55" column="9" bodyfile="Library/thermo/MultiProgressBar.cpp" bodystart="71" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classMultiProgressBar_1a192362044eb0b1f9955a6bd824300a7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MultiProgressBar::MultiProgressBar</definition>
+        <argsstring>(double total, int color=0)</argsstring>
+        <name>MultiProgressBar</name>
+        <qualifiedname>MultiProgressBar::MultiProgressBar</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>color</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="56" column="9" bodyfile="Library/thermo/MultiProgressBar.cpp" bodystart="41" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classMultiProgressBar_1aa6447c0d66c0f765f11c920863fa71ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MultiProgressBar::~MultiProgressBar</definition>
+        <argsstring>()</argsstring>
+        <name>~MultiProgressBar</name>
+        <qualifiedname>MultiProgressBar::~MultiProgressBar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="57" column="9" bodyfile="Library/thermo/MultiProgressBar.cpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classMultiProgressBar_1a58eef55ad6d5c7d769b3a402a2ef7b85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MultiProgressBar::Update</definition>
+        <argsstring>(double current_pos=-1)</argsstring>
+        <name>Update</name>
+        <qualifiedname>MultiProgressBar::Update</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>current_pos</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="58" column="14" bodyfile="Library/thermo/MultiProgressBar.cpp" bodystart="109" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classMultiProgressBar_1a4d5ac828e69361f976a0e4c3ae362780" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MultiProgressBar::Update</definition>
+        <argsstring>(std::vector&lt; double &gt;current_pos)</argsstring>
+        <name>Update</name>
+        <qualifiedname>MultiProgressBar::Update</qualifiedname>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>current_pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="59" column="14" bodyfile="Library/thermo/MultiProgressBar.cpp" bodystart="117" bodyend="158"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMultiProgressBar_1ab6dc669eb38eecf874db34f4237418fb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MultiProgressBar::init_colors</definition>
+        <argsstring>()</argsstring>
+        <name>init_colors</name>
+        <qualifiedname>MultiProgressBar::init_colors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="75" column="14" bodyfile="Library/thermo/MultiProgressBar.cpp" bodystart="21" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/thermo/MultiProgressBar.h" line="52" column="1" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="53" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classMultiProgressBar_1ab6dc669eb38eecf874db34f4237418fb" prot="private" virt="non-virtual"><scope>MultiProgressBar</scope><name>init_colors</name></member>
+      <member refid="classMultiProgressBar_1a0988d7a44c4eb92aa791b73ed0a5c040" prot="protected" virt="non-virtual"><scope>MultiProgressBar</scope><name>m_bar_char_left</name></member>
+      <member refid="classMultiProgressBar_1afaae2b720a00fd64a4a8298dba36268c" prot="protected" virt="non-virtual"><scope>MultiProgressBar</scope><name>m_bar_char_right</name></member>
+      <member refid="classMultiProgressBar_1a1a3803e31fc7bc086854ab6f1c6e7667" prot="protected" virt="non-virtual"><scope>MultiProgressBar</scope><name>m_bar_number</name></member>
+      <member refid="classMultiProgressBar_1a0ecb0e6b22443b5694cc7e7d4dd01fe5" prot="protected" virt="non-virtual"><scope>MultiProgressBar</scope><name>m_bar_str</name></member>
+      <member refid="classMultiProgressBar_1a7131485c7f854af33a6079a9015349ef" prot="private" virt="non-virtual"><scope>MultiProgressBar</scope><name>m_colors</name></member>
+      <member refid="classMultiProgressBar_1a7cc01d0897d90db3dd610850382e8033" prot="protected" virt="non-virtual"><scope>MultiProgressBar</scope><name>m_current_index</name></member>
+      <member refid="classMultiProgressBar_1a0feeb1e41adf9e50b2b25e70a39fddb5" prot="private" virt="non-virtual"><scope>MultiProgressBar</scope><name>m_defaultcolor</name></member>
+      <member refid="classMultiProgressBar_1a3befa397116ae560dd86250d5caada4d" prot="private" virt="non-virtual"><scope>MultiProgressBar</scope><name>m_factor</name></member>
+      <member refid="classMultiProgressBar_1aeda7325a965e8787265edb9c4ef0d276" prot="protected" virt="non-virtual"><scope>MultiProgressBar</scope><name>m_left</name></member>
+      <member refid="classMultiProgressBar_1a0319176f9fc1a3443c2e7d76163d6401" prot="protected" virt="non-virtual"><scope>MultiProgressBar</scope><name>m_length_bar</name></member>
+      <member refid="classMultiProgressBar_1a12795fa634323457d1cacfc8a2beec12" prot="protected" virt="non-virtual"><scope>MultiProgressBar</scope><name>m_maxLength_title</name></member>
+      <member refid="classMultiProgressBar_1a8098a0c3b740939575f933ef57824718" prot="protected" virt="non-virtual"><scope>MultiProgressBar</scope><name>m_percent</name></member>
+      <member refid="classMultiProgressBar_1a3d5c32ab5c10498569077225e77afe7b" prot="protected" virt="non-virtual"><scope>MultiProgressBar</scope><name>m_right</name></member>
+      <member refid="classMultiProgressBar_1a2fb1e28be35d664687dc28779e201ccc" prot="protected" virt="non-virtual"><scope>MultiProgressBar</scope><name>m_title</name></member>
+      <member refid="classMultiProgressBar_1ab01c3eb860fb0f5cc4a120640adcc1ad" prot="protected" virt="non-virtual"><scope>MultiProgressBar</scope><name>m_total</name></member>
+      <member refid="classMultiProgressBar_1a3464fb91306969362460c49b58e11eaf" prot="public" virt="non-virtual"><scope>MultiProgressBar</scope><name>MultiProgressBar</name></member>
+      <member refid="classMultiProgressBar_1a192362044eb0b1f9955a6bd824300a7c" prot="public" virt="non-virtual"><scope>MultiProgressBar</scope><name>MultiProgressBar</name></member>
+      <member refid="classMultiProgressBar_1a58eef55ad6d5c7d769b3a402a2ef7b85" prot="public" virt="non-virtual"><scope>MultiProgressBar</scope><name>Update</name></member>
+      <member refid="classMultiProgressBar_1a4d5ac828e69361f976a0e4c3ae362780" prot="public" virt="non-virtual"><scope>MultiProgressBar</scope><name>Update</name></member>
+      <member refid="classMultiProgressBar_1aa6447c0d66c0f765f11c920863fa71ad" prot="public" virt="non-virtual"><scope>MultiProgressBar</scope><name>~MultiProgressBar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

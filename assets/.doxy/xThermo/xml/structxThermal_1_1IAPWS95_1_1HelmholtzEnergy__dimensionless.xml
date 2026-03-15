@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::IAPWS95::HelmholtzEnergy_dimensionless</compoundname>
+    <includes refid="IAPWS95_8h" local="no">IAPWS95.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless_1a6491858fea1ad1505cde7a20f5e9a45b" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS95::HelmholtzEnergy_dimensionless::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>xThermal::IAPWS95::HelmholtzEnergy_dimensionless::value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="56">$ \phi$</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="61" column="20" bodyfile="Library/H2O/IAPWS95.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless_1a0209b43fdf9ead652a4c063cc70f6bca" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS95::HelmholtzEnergy_dimensionless::d</definition>
+        <argsstring></argsstring>
+        <name>d</name>
+        <qualifiedname>xThermal::IAPWS95::HelmholtzEnergy_dimensionless::d</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="57">$ \left[ \frac{\partial \phi}{\partial \delta} \right]_{\tau} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="62" column="20" bodyfile="Library/H2O/IAPWS95.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless_1a25f4173e38f9b20a886c78faac884caf" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS95::HelmholtzEnergy_dimensionless::dd</definition>
+        <argsstring></argsstring>
+        <name>dd</name>
+        <qualifiedname>xThermal::IAPWS95::HelmholtzEnergy_dimensionless::dd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="58">$ \left[ \frac{\partial^2 \phi}{\partial \delta^2} \right]_{\tau} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="63" column="20" bodyfile="Library/H2O/IAPWS95.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless_1a0d7fc3d97ed15978961338f6afb9b161" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS95::HelmholtzEnergy_dimensionless::t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <qualifiedname>xThermal::IAPWS95::HelmholtzEnergy_dimensionless::t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="59">$ \left[ \frac{\partial \phi}{\partial \tau} \right]_{\delta} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="64" column="20" bodyfile="Library/H2O/IAPWS95.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless_1af11b1ae9e5993e05be29217f5ec6cafb" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS95::HelmholtzEnergy_dimensionless::tt</definition>
+        <argsstring></argsstring>
+        <name>tt</name>
+        <qualifiedname>xThermal::IAPWS95::HelmholtzEnergy_dimensionless::tt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="60">$ \left[ \frac{\partial^2 \phi}{\partial \tau^2} \right]_{\delta} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="65" column="20" bodyfile="Library/H2O/IAPWS95.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless_1ae232c46a1f7770e6e058caa641b54375" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS95::HelmholtzEnergy_dimensionless::dt</definition>
+        <argsstring></argsstring>
+        <name>dt</name>
+        <qualifiedname>xThermal::IAPWS95::HelmholtzEnergy_dimensionless::dt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="61">$ \frac{\partial^2 \phi}{\partial \delta \partial \tau} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="66" column="20" bodyfile="Library/H2O/IAPWS95.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless_1a31f1d17b759e234934664d617dadfaa3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const HelmholtzEnergy_dimensionless &amp;phi)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>xThermal::IAPWS95::HelmholtzEnergy_dimensionless::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless" kindref="compound">HelmholtzEnergy_dimensionless</ref> &amp;</type>
+          <declname>phi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="67" column="20" bodyfile="Library/H2O/IAPWS95.h" bodystart="67" bodyend="70"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless_1ae48feb0bdfa984a7bfbac5d972f0e11b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+        <definition>bool xThermal::IAPWS95::HelmholtzEnergy_dimensionless::operator==</definition>
+        <argsstring>(const HelmholtzEnergy_dimensionless &amp;phi) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>xThermal::IAPWS95::HelmholtzEnergy_dimensionless::operator==</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless" kindref="compound">HelmholtzEnergy_dimensionless</ref> &amp;</type>
+          <declname>phi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="71" column="18" bodyfile="Library/H2O/IAPWS95.h" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless_1abbcff0dfc3a2165a5325fe340dcca3b5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless" kindref="compound">HelmholtzEnergy_dimensionless</ref></type>
+        <definition>HelmholtzEnergy_dimensionless xThermal::IAPWS95::HelmholtzEnergy_dimensionless::operator+</definition>
+        <argsstring>(const HelmholtzEnergy_dimensionless &amp;phi) const</argsstring>
+        <name>operator+</name>
+        <qualifiedname>xThermal::IAPWS95::HelmholtzEnergy_dimensionless::operator+</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless" kindref="compound">HelmholtzEnergy_dimensionless</ref> &amp;</type>
+          <declname>phi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="75" column="43" bodyfile="Library/H2O/IAPWS95.h" bodystart="75" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless_1a930aa284496ee9f03024914544b47bc7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless" kindref="compound">HelmholtzEnergy_dimensionless</ref></type>
+        <definition>HelmholtzEnergy_dimensionless xThermal::IAPWS95::HelmholtzEnergy_dimensionless::operator-</definition>
+        <argsstring>(const HelmholtzEnergy_dimensionless &amp;phi) const</argsstring>
+        <name>operator-</name>
+        <qualifiedname>xThermal::IAPWS95::HelmholtzEnergy_dimensionless::operator-</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless" kindref="compound">HelmholtzEnergy_dimensionless</ref> &amp;</type>
+          <declname>phi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="80" column="43" bodyfile="Library/H2O/IAPWS95.h" bodystart="80" bodyend="84"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Dimensionless Helmholtz free energy <formula id="55">$ \phi = f/(RT) $</formula> and its partial derivatives. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/H2O/IAPWS95.h" line="59" column="9" bodyfile="Library/H2O/IAPWS95.h" bodystart="60" bodyend="85"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless_1a0209b43fdf9ead652a4c063cc70f6bca" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::HelmholtzEnergy_dimensionless</scope><name>d</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless_1a25f4173e38f9b20a886c78faac884caf" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::HelmholtzEnergy_dimensionless</scope><name>dd</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless_1ae232c46a1f7770e6e058caa641b54375" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::HelmholtzEnergy_dimensionless</scope><name>dt</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless_1abbcff0dfc3a2165a5325fe340dcca3b5" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::HelmholtzEnergy_dimensionless</scope><name>operator+</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless_1a930aa284496ee9f03024914544b47bc7" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::HelmholtzEnergy_dimensionless</scope><name>operator-</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless_1a31f1d17b759e234934664d617dadfaa3" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::HelmholtzEnergy_dimensionless</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless_1ae48feb0bdfa984a7bfbac5d972f0e11b" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::HelmholtzEnergy_dimensionless</scope><name>operator==</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless_1a0d7fc3d97ed15978961338f6afb9b161" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::HelmholtzEnergy_dimensionless</scope><name>t</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless_1af11b1ae9e5993e05be29217f5ec6cafb" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::HelmholtzEnergy_dimensionless</scope><name>tt</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless_1a6491858fea1ad1505cde7a20f5e9a45b" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::HelmholtzEnergy_dimensionless</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_fd7e605cf972a87e804527375e37bc17" kind="dir">
+    <compoundname>Library/test</compoundname>
+    <innerdir refid="dir_8f5c6e5eb084b783ee371ac7f3f40468">Library/test/cpp_crossplatform</innerdir>
+    <innerdir refid="dir_6271c49d5f270c0fb3e744706a6d7da9">Library/test/test_swig</innerdir>
+    <innerdir refid="dir_954facde36cda98a0027ddce7db85b3d">Library/test/test_templateClass</innerdir>
+    <innerfile refid="test__gsl_8cpp">test_gsl.cpp</innerfile>
+    <innerfile refid="test__omp_8cpp">test_omp.cpp</innerfile>
+    <innerfile refid="test__PROST_8cpp">test_PROST.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/test/"/>
+  </compounddef>
+</doxygen>

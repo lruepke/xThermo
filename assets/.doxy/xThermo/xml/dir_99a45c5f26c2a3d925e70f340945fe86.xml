@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_99a45c5f26c2a3d925e70f340945fe86" kind="dir">
+    <compoundname>Library/NaCl</compoundname>
+    <innerfile refid="NaCl_8cpp">NaCl.cpp</innerfile>
+    <innerfile refid="NaCl_8h">NaCl.h</innerfile>
+    <innerfile refid="NaCl_2test_8cxx">test.cxx</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/NaCl/"/>
+  </compounddef>
+</doxygen>

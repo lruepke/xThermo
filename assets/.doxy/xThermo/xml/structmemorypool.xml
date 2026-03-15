@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmemorypool" kind="struct" language="C++" prot="public">
+    <compoundname>memorypool</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmemorypool_1afac6d33dcfe9df284f27ca630123332f" prot="public" static="no" mutable="no">
+        <type>VOID **</type>
+        <definition>VOID** memorypool::firstblock</definition>
+        <argsstring></argsstring>
+        <name>firstblock</name>
+        <qualifiedname>memorypool::firstblock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="628" column="8" bodyfile="Library/thermo/triangle.cpp" bodystart="628" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmemorypool_1aaf9ecf13c92d2bfbf3bcbfb8715e19f0" prot="public" static="no" mutable="no">
+        <type>VOID **</type>
+        <definition>VOID ** memorypool::nowblock</definition>
+        <argsstring></argsstring>
+        <name>nowblock</name>
+        <qualifiedname>memorypool::nowblock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="628" column="19" bodyfile="Library/thermo/triangle.cpp" bodystart="628" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmemorypool_1a998808704144a4045a7e03656ef94185" prot="public" static="no" mutable="no">
+        <type>VOID *</type>
+        <definition>VOID* memorypool::nextitem</definition>
+        <argsstring></argsstring>
+        <name>nextitem</name>
+        <qualifiedname>memorypool::nextitem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="629" column="8" bodyfile="Library/thermo/triangle.cpp" bodystart="629" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmemorypool_1a994ac2f58b146dc4eaef504a70358582" prot="public" static="no" mutable="no">
+        <type>VOID *</type>
+        <definition>VOID* memorypool::deaditemstack</definition>
+        <argsstring></argsstring>
+        <name>deaditemstack</name>
+        <qualifiedname>memorypool::deaditemstack</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="630" column="8" bodyfile="Library/thermo/triangle.cpp" bodystart="630" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmemorypool_1a72733c1e19035f973e60706be7b32364" prot="public" static="no" mutable="no">
+        <type>VOID **</type>
+        <definition>VOID** memorypool::pathblock</definition>
+        <argsstring></argsstring>
+        <name>pathblock</name>
+        <qualifiedname>memorypool::pathblock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="631" column="8" bodyfile="Library/thermo/triangle.cpp" bodystart="631" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmemorypool_1a60cac87ccd6a441c5358a5bf9fcf3064" prot="public" static="no" mutable="no">
+        <type>VOID *</type>
+        <definition>VOID* memorypool::pathitem</definition>
+        <argsstring></argsstring>
+        <name>pathitem</name>
+        <qualifiedname>memorypool::pathitem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="632" column="8" bodyfile="Library/thermo/triangle.cpp" bodystart="632" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmemorypool_1a143c77d997e424a4be406ee4b3338c12" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int memorypool::alignbytes</definition>
+        <argsstring></argsstring>
+        <name>alignbytes</name>
+        <qualifiedname>memorypool::alignbytes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="633" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="633" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmemorypool_1a2658208bb7b2949b51f679e0a8278e3b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int memorypool::itembytes</definition>
+        <argsstring></argsstring>
+        <name>itembytes</name>
+        <qualifiedname>memorypool::itembytes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="634" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="634" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmemorypool_1a725760a5cc69917ea955ce4b64ed022f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int memorypool::itemsperblock</definition>
+        <argsstring></argsstring>
+        <name>itemsperblock</name>
+        <qualifiedname>memorypool::itemsperblock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="635" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="635" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmemorypool_1aea58af830e899435d7f9547fd8920c3f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int memorypool::itemsfirstblock</definition>
+        <argsstring></argsstring>
+        <name>itemsfirstblock</name>
+        <qualifiedname>memorypool::itemsfirstblock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="636" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="636" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmemorypool_1a9a59491a2dbbb46ae00b494a2652404f" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long memorypool::items</definition>
+        <argsstring></argsstring>
+        <name>items</name>
+        <qualifiedname>memorypool::items</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="637" column="8" bodyfile="Library/thermo/triangle.cpp" bodystart="637" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmemorypool_1a851a3bc61c20c58ba0da9b8e45e7ab3d" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long memorypool::maxitems</definition>
+        <argsstring></argsstring>
+        <name>maxitems</name>
+        <qualifiedname>memorypool::maxitems</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="637" column="14" bodyfile="Library/thermo/triangle.cpp" bodystart="637" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmemorypool_1ae407db4294305e97b4072f6117f2bfa9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int memorypool::unallocateditems</definition>
+        <argsstring></argsstring>
+        <name>unallocateditems</name>
+        <qualifiedname>memorypool::unallocateditems</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="638" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="638" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmemorypool_1a34c47ac30b534652a93e9d3f742648ff" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int memorypool::pathitemsleft</definition>
+        <argsstring></argsstring>
+        <name>pathitemsleft</name>
+        <qualifiedname>memorypool::pathitemsleft</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="639" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="639" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/thermo/triangle.cpp" line="627" column="1" bodyfile="Library/thermo/triangle.cpp" bodystart="627" bodyend="640"/>
+    <listofallmembers>
+      <member refid="structmemorypool_1a143c77d997e424a4be406ee4b3338c12" prot="public" virt="non-virtual"><scope>memorypool</scope><name>alignbytes</name></member>
+      <member refid="structmemorypool_1a994ac2f58b146dc4eaef504a70358582" prot="public" virt="non-virtual"><scope>memorypool</scope><name>deaditemstack</name></member>
+      <member refid="structmemorypool_1afac6d33dcfe9df284f27ca630123332f" prot="public" virt="non-virtual"><scope>memorypool</scope><name>firstblock</name></member>
+      <member refid="structmemorypool_1a2658208bb7b2949b51f679e0a8278e3b" prot="public" virt="non-virtual"><scope>memorypool</scope><name>itembytes</name></member>
+      <member refid="structmemorypool_1a9a59491a2dbbb46ae00b494a2652404f" prot="public" virt="non-virtual"><scope>memorypool</scope><name>items</name></member>
+      <member refid="structmemorypool_1aea58af830e899435d7f9547fd8920c3f" prot="public" virt="non-virtual"><scope>memorypool</scope><name>itemsfirstblock</name></member>
+      <member refid="structmemorypool_1a725760a5cc69917ea955ce4b64ed022f" prot="public" virt="non-virtual"><scope>memorypool</scope><name>itemsperblock</name></member>
+      <member refid="structmemorypool_1a851a3bc61c20c58ba0da9b8e45e7ab3d" prot="public" virt="non-virtual"><scope>memorypool</scope><name>maxitems</name></member>
+      <member refid="structmemorypool_1a998808704144a4045a7e03656ef94185" prot="public" virt="non-virtual"><scope>memorypool</scope><name>nextitem</name></member>
+      <member refid="structmemorypool_1aaf9ecf13c92d2bfbf3bcbfb8715e19f0" prot="public" virt="non-virtual"><scope>memorypool</scope><name>nowblock</name></member>
+      <member refid="structmemorypool_1a72733c1e19035f973e60706be7b32364" prot="public" virt="non-virtual"><scope>memorypool</scope><name>pathblock</name></member>
+      <member refid="structmemorypool_1a60cac87ccd6a441c5358a5bf9fcf3064" prot="public" virt="non-virtual"><scope>memorypool</scope><name>pathitem</name></member>
+      <member refid="structmemorypool_1a34c47ac30b534652a93e9d3f742648ff" prot="public" virt="non-virtual"><scope>memorypool</scope><name>pathitemsleft</name></member>
+      <member refid="structmemorypool_1ae407db4294305e97b4072f6117f2bfa9" prot="public" virt="non-virtual"><scope>memorypool</scope><name>unallocateditems</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

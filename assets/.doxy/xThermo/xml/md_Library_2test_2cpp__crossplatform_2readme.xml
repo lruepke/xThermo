@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="md_Library_2test_2cpp__crossplatform_2readme" kind="page">
+    <compoundname>md_Library_2test_2cpp__crossplatform_2readme</compoundname>
+    <title>readme</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Test how to use c++ code library on ios platform.</para>
+<para><itemizedlist>
+<listitem><para>cpp目录下存放的是关于c++的代码和动态库生成的东西，生成完了之后可以安装到当前目录的install文件夹</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting><codeline><highlight class="normal">cmake<sp/>-DCMAKE_TOOLCHAIN_FILE=./ios.cmake<sp/>-DIOS_PLATFORM=OS<sp/>-Bframewrok.ios<sp/>-GXcode<sp/>..</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para>编译ios app <programlisting><codeline><highlight class="normal">cmake<sp/>-DCMAKE_TOOLCHAIN_FILE=./ios.cmake<sp/>-DIOS_PLATFORM=OS<sp/>-Bapp.ios<sp/>-GXcode<sp/>..</highlight></codeline>
+</programlisting> </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="Library/test/cpp_crossplatform/readme.md"/>
+  </compounddef>
+</doxygen>

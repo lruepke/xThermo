@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="unionLOOKUPTABLE__FOREST_1_1Quad__data" kind="union" language="C++" prot="public">
+    <compoundname>LOOKUPTABLE_FOREST::Quad_data</compoundname>
+    <templateparamlist>
+      <param>
+        <type>int</type>
+        <declname>dim</declname>
+        <defname>dim</defname>
+      </param>
+      <param>
+        <type>typename USER_DATA</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionLOOKUPTABLE__FOREST_1_1Quad__data_1a4b42126dbaada73b06c0f03e60b5e78e" prot="public" static="no" mutable="no">
+        <type><ref refid="structLOOKUPTABLE__FOREST_1_1NonLeafQuad" kindref="compound">NonLeafQuad</ref>&lt; dim, USER_DATA &gt; *</type>
+        <definition>NonLeafQuad&lt;dim, USER_DATA&gt;* LOOKUPTABLE_FOREST::Quad_data&lt; dim, USER_DATA &gt;::nonleaf</definition>
+        <argsstring></argsstring>
+        <name>nonleaf</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::Quad_data::nonleaf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="66" column="21" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionLOOKUPTABLE__FOREST_1_1Quad__data_1a89758fea81916e4e2911b1f9a9aaf83f" prot="public" static="no" mutable="no">
+        <type><ref refid="structLOOKUPTABLE__FOREST_1_1LeafQuad" kindref="compound">LeafQuad</ref>&lt; dim, USER_DATA &gt; *</type>
+        <definition>LeafQuad&lt;dim, USER_DATA&gt;* LOOKUPTABLE_FOREST::Quad_data&lt; dim, USER_DATA &gt;::leaf</definition>
+        <argsstring></argsstring>
+        <name>leaf</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::Quad_data::leaf</qualifiedname>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="67" column="18" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/AMR_LUT/LookUpTableForest.h" line="64" column="18" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="65" bodyend="68"/>
+    <listofallmembers>
+      <member refid="unionLOOKUPTABLE__FOREST_1_1Quad__data_1a89758fea81916e4e2911b1f9a9aaf83f" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::Quad_data</scope><name>leaf</name></member>
+      <member refid="unionLOOKUPTABLE__FOREST_1_1Quad__data_1a4b42126dbaada73b06c0f03e60b5e78e" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::Quad_data</scope><name>nonleaf</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

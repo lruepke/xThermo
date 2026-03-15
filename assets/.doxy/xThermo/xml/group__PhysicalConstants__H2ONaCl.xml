@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__PhysicalConstants__H2ONaCl" kind="group">
+    <compoundname>PhysicalConstants_H2ONaCl</compoundname>
+    <title>Physical constants for H2ONaCl.</title>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="group__PhysicalConstants__H2ONaCl_1ga3f60bf26b7fbe6d843933c6013e0af17" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double xThermal::H2ONaCl::T_MIN</definition>
+        <argsstring></argsstring>
+        <name>T_MIN</name>
+        <qualifiedname>xThermal::H2ONaCl::T_MIN</qualifiedname>
+        <initializer>= 273.16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minimum valid temperature 2 [deg.C]. See Driesner2007Part1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="55" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__PhysicalConstants__H2ONaCl_1ga8231d0db1350bb215c640d65d9b2c01e" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double xThermal::H2ONaCl::P_MIN</definition>
+        <argsstring></argsstring>
+        <name>P_MIN</name>
+        <qualifiedname>xThermal::H2ONaCl::P_MIN</qualifiedname>
+        <initializer>= 1E5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minimum valid pressure 1bar = 1E5 [Pa]. See Driesner2007Part1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="57" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__PhysicalConstants__H2ONaCl_1ga75dd7bc90fb8221616322427f8d16854" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double xThermal::H2ONaCl::P_MAX</definition>
+        <argsstring></argsstring>
+        <name>P_MAX</name>
+        <qualifiedname>xThermal::H2ONaCl::P_MAX</qualifiedname>
+        <initializer>= 5000E5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum valid pressure [Pa], same as that of H2O </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="59" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__PhysicalConstants__H2ONaCl_1gafc902a29b69c72fb7a181becf4a38707" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double xThermal::H2ONaCl::T_MAX</definition>
+        <argsstring></argsstring>
+        <name>T_MAX</name>
+        <qualifiedname>xThermal::H2ONaCl::T_MAX</qualifiedname>
+        <initializer>= 1273.15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum valid temperature [K] = 1000 <formula id="181">$^{\circ} $</formula>C </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="61" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__PhysicalConstants__H2ONaCl_1ga43fcdfada7d9df263ffae5b90077df53" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double xThermal::H2ONaCl::X_MIN</definition>
+        <argsstring></argsstring>
+        <name>X_MIN</name>
+        <qualifiedname>xThermal::H2ONaCl::X_MIN</qualifiedname>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minimum valid salinity [kg/kg] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="63" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__PhysicalConstants__H2ONaCl_1gabcdf9fee5f9581ebdab11a1120096a63" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double xThermal::H2ONaCl::X_MAX</definition>
+        <argsstring></argsstring>
+        <name>X_MAX</name>
+        <qualifiedname>xThermal::H2ONaCl::X_MAX</qualifiedname>
+        <initializer>= 1.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum valid salinity [kg/kg] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="65" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__PhysicalConstants__H2ONaCl_1ga12d7ab3521648c9e6a8c43f5c1e0e402" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double xThermal::H2ONaCl::T_MAX_VLH</definition>
+        <argsstring></argsstring>
+        <name>T_MAX_VLH</name>
+        <qualifiedname>xThermal::H2ONaCl::T_MAX_VLH</qualifiedname>
+        <initializer>= 1073.5662157838103</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum temperature [K] of the VLH zone. Calculated by function <ref refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a0d8824796065ac3429a39cd9fc3be17f" kindref="member">cH2ONaCl::Tmax_VLH</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="67" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__PhysicalConstants__H2ONaCl_1gae0dd80244c31c9f9aacf2615d779fc15" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double xThermal::H2ONaCl::T_MIN_VLH</definition>
+        <argsstring></argsstring>
+        <name>T_MIN_VLH</name>
+        <qualifiedname>xThermal::H2ONaCl::T_MIN_VLH</qualifiedname>
+        <initializer>= 380.912102015643</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minimum temperature [K] of the VLH zone. Calculated by function <ref refid="_1a311a8d4cc2a622555b38185d320df6c2" kindref="member">cH2ONaCl::Tmin_VLH</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="69" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__PhysicalConstants__H2ONaCl_1ga9f170fe2af16cfe31f09a1a1533f8790" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double xThermal::H2ONaCl::T_Peak_VLH</definition>
+        <argsstring></argsstring>
+        <name>T_Peak_VLH</name>
+        <qualifiedname>xThermal::H2ONaCl::T_Peak_VLH</qualifiedname>
+        <initializer>= 867.782443</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Temperature [K] at peak of VLH zone. Calculated by function <ref refid="" kindref="compound">cH2ONaCl::T_Pmax_VLH</ref> <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="71" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__PhysicalConstants__H2ONaCl_1gaa939ae8d1b447bbdcc2528fee46d25f0" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double xThermal::H2ONaCl::P_Peak_VLH</definition>
+        <argsstring></argsstring>
+        <name>P_Peak_VLH</name>
+        <qualifiedname>xThermal::H2ONaCl::P_Peak_VLH</qualifiedname>
+        <initializer>= 39014744.433797</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pressure [Pa] at peak of VLH zone. Calculate by <ref refid="" kindref="compound">P_VLH</ref> function and <ref refid="group__PhysicalConstants__H2ONaCl_1ga9f170fe2af16cfe31f09a1a1533f8790" kindref="member">T_Peak_VLH</ref> constant </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="73" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__PhysicalConstants__H2ONaCl_1ga866343363b17c6ebf9e178cf72985d7d" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double xThermal::H2ONaCl::T_Peak_VLH_C</definition>
+        <argsstring></argsstring>
+        <name>T_Peak_VLH_C</name>
+        <qualifiedname>xThermal::H2ONaCl::T_Peak_VLH_C</qualifiedname>
+        <initializer>= 867.782443 - 273.15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Temperature [deg.C] at peak of VLH zone. Calculated by function <ref refid="" kindref="compound">cH2ONaCl::T_Pmax_VLH</ref> <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="75" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__PhysicalConstants__H2ONaCl_1ga0c98a9d0943da08d24e0a7f1877baa55" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double xThermal::H2ONaCl::P_Peak_VLH_bar</definition>
+        <argsstring></argsstring>
+        <name>P_Peak_VLH_bar</name>
+        <qualifiedname>xThermal::H2ONaCl::P_Peak_VLH_bar</qualifiedname>
+        <initializer>= 390.14744433797</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pressure [bar] at peak of VLH zone. Calculate by <ref refid="" kindref="compound">P_VLH</ref> function and <ref refid="group__PhysicalConstants__H2ONaCl_1ga9f170fe2af16cfe31f09a1a1533f8790" kindref="member">T_Peak_VLH</ref> constant </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="77" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><xrefsect id="todo_1_todo000004"><xreftitle>Todo</xreftitle><xrefdescription><para>Need to discuss how to deal with the discrepancy between the critical point of H2O in the original paper (Driesner2007Part1) and that in IAPWS95_CoolProp release.</para>
+</xrefdescription></xrefsect></para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

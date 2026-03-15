@@ -1,0 +1,435 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="MultiProgressBar_8h" kind="file" language="C++">
+    <compoundname>MultiProgressBar.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">string</includes>
+    <includes local="no">sys/ioctl.h</includes>
+    <includedby refid="MultiProgressBar_8cpp" local="yes">Library/thermo/MultiProgressBar.cpp</includedby>
+    <includedby refid="thermo_8h" local="yes">Library/thermo/thermo.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>Library/thermo/MultiProgressBar.h</label>
+        <link refid="MultiProgressBar_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cmath</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>sys/ioctl.h</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>Library/AMR_LUT/LookUpTableForest.h</label>
+        <link refid="LookUpTableForest_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Library/H2O/IAPS84.cpp</label>
+        <link refid="IAPS84_8cpp"/>
+      </node>
+      <node id="6">
+        <label>Library/H2O/IAPS84.h</label>
+        <link refid="IAPS84_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Library/H2O/IAPWS-IF97.cpp</label>
+        <link refid="IAPWS-IF97_8cpp"/>
+      </node>
+      <node id="12">
+        <label>Library/H2O/IAPWS-IF97.h</label>
+        <link refid="IAPWS-IF97_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Library/H2O/IAPWS95.cpp</label>
+        <link refid="IAPWS95_8cpp"/>
+      </node>
+      <node id="14">
+        <label>Library/H2O/IAPWS95.h</label>
+        <link refid="IAPWS95_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Library/H2ONaCl/H2ONaCl.cpp</label>
+        <link refid="H2ONaCl_8cpp"/>
+      </node>
+      <node id="7">
+        <label>Library/H2ONaCl/H2ONaCl.h</label>
+        <link refid="H2ONaCl_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Library/H2ONaCl/test.cxx</label>
+        <link refid="H2ONaCl_2test_8cxx"/>
+      </node>
+      <node id="11">
+        <label>Library/NaCl/NaCl.cpp</label>
+        <link refid="NaCl_8cpp"/>
+      </node>
+      <node id="10">
+        <label>Library/NaCl/NaCl.h</label>
+        <link refid="NaCl_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Library/thermo/MultiProgressBar.cpp</label>
+        <link refid="MultiProgressBar_8cpp"/>
+      </node>
+      <node id="1">
+        <label>Library/thermo/MultiProgressBar.h</label>
+        <link refid="MultiProgressBar_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Library/thermo/thermo.h</label>
+        <link refid="thermo_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classMultiProgressBar" prot="public">MultiProgressBar</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="MultiProgressBar_8h_1ab589c13d16b9e75f1eed85fbe257c03e" prot="public" static="no">
+        <name>COLOR_BAR_PURPLE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="20" column="9" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MultiProgressBar_8h_1a65aa66afcbf532bd581294d258fa9693" prot="public" static="no">
+        <name>COLOR_BAR_BLUE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="21" column="9" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MultiProgressBar_8h_1a7080343a386e15c8dd80644bda3719fd" prot="public" static="no">
+        <name>COLOR_BAR_GREEN</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="22" column="9" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MultiProgressBar_8h_1a1d1e9c5bcd33b84a0162a3427720d366" prot="public" static="no">
+        <name>COLOR_BAR_YELLOW</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="23" column="9" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MultiProgressBar_8h_1af6be5a3539547eda75e4aaeac3c94c27" prot="public" static="no">
+        <name>COLOR_BAR_RED</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="24" column="9" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MultiProgressBar_8h_1a39d49b877205e65853206f931e5c2e75" prot="public" static="no">
+        <name>MOVEUP</name>
+        <param><defname>x</defname></param>
+        <initializer>printf(&quot;\033[%dA&quot;, (x))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="30" column="16" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MultiProgressBar_8h_1aacb71dbc63837c5e60f70180643354b2" prot="public" static="no">
+        <name>CLEAR</name>
+        <param></param>
+        <initializer>printf(&quot;\033[2J&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="32" column="9" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MultiProgressBar_8h_1a39d49b877205e65853206f931e5c2e75" prot="public" static="no">
+        <name>MOVEUP</name>
+        <param><defname>x</defname></param>
+        <initializer>printf(&quot;\033[%dA&quot;, (x))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="34" column="9" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MultiProgressBar_8h_1a60c20a6d25d201dedc09459516728b71" prot="public" static="no">
+        <name>MOVEDOWN</name>
+        <param><defname>x</defname></param>
+        <initializer>printf(&quot;\033[%dB&quot;, (x))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="36" column="9" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MultiProgressBar_8h_1aa4013bd7c760612afc0aae84427d1830" prot="public" static="no">
+        <name>MOVELEFT</name>
+        <param><defname>y</defname></param>
+        <initializer>printf(&quot;\033[%dD&quot;, (y))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="38" column="9" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MultiProgressBar_8h_1a04d744faff56ecc898524480a76747b8" prot="public" static="no">
+        <name>MOVERIGHT</name>
+        <param><defname>y</defname></param>
+        <initializer>printf(&quot;\033[%dC&quot;,(y))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="40" column="9" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MultiProgressBar_8h_1a0d378f5b71290eff0a6252149f0e311e" prot="public" static="no">
+        <name>MOVETO</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <initializer>printf(&quot;\033[%d;%dH&quot;, (x), (y))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="42" column="9" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MultiProgressBar_8h_1a7c3dbb2345379003d264cc94aeda5f6c" prot="public" static="no">
+        <name>RESET_CURSOR</name>
+        <param></param>
+        <initializer>printf(&quot;\033[H&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="44" column="9" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MultiProgressBar_8h_1afda389c3c8b482e025dc765d250a5a0d" prot="public" static="no">
+        <name>HIDE_CURSOR</name>
+        <param></param>
+        <initializer>printf(&quot;\033[?25l&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="46" column="9" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MultiProgressBar_8h_1ade9c2a563b11982d9d657d3ac3a0ceb1" prot="public" static="no">
+        <name>SHOW_CURSOR</name>
+        <param></param>
+        <initializer>printf(&quot;\033[?25h&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="48" column="9" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MultiProgressBar_8h_1abcf37352db560ac79462be29a1e5d2f9" prot="public" static="no">
+        <name>HIGHT_LIGHT</name>
+        <param></param>
+        <initializer>printf(&quot;\033[7m&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="49" column="9" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MultiProgressBar_8h_1ab97f6b5de02db4483a7d6bb9bc0c75c0" prot="public" static="no">
+        <name>UN_HIGHT_LIGHT</name>
+        <param></param>
+        <initializer>printf(&quot;\033[27m&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/MultiProgressBar.h" line="50" column="9" bodyfile="Library/thermo/MultiProgressBar.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Definition of progress bar. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Zhikui Guo (<ulink url="mailto:zhikuiguo@live.cn">zhikuiguo@live.cn</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2019-09-03</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2019 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MULTIPROGRESSBAR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MULTIPROGRESSBAR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COLOR_BAR_PURPLE<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COLOR_BAR_BLUE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COLOR_BAR_GREEN<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COLOR_BAR_YELLOW<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COLOR_BAR_RED<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;windows.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;sys/ioctl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MOVEUP(x)<sp/>printf(&quot;\033[%dA&quot;,<sp/>(x))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/>clean<sp/>screen</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLEAR()<sp/>printf(&quot;\033[2J&quot;)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>move<sp/>up<sp/>cursor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MOVEUP(x)<sp/>printf(&quot;\033[%dA&quot;,<sp/>(x))<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>move<sp/>down<sp/>cursor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MOVEDOWN(x)<sp/>printf(&quot;\033[%dB&quot;,<sp/>(x))<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>move<sp/>left<sp/>cursor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MOVELEFT(y)<sp/>printf(&quot;\033[%dD&quot;,<sp/>(y))<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>move<sp/>right<sp/>cursor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MOVERIGHT(y)<sp/>printf(&quot;\033[%dC&quot;,(y))<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>locate<sp/>cursor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MOVETO(x,y)<sp/>printf(&quot;\033[%d;%dH&quot;,<sp/>(x),<sp/>(y))<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/>reset<sp/>cursor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RESET_CURSOR()<sp/>printf(&quot;\033[H&quot;)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/>hide<sp/>cursor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HIDE_CURSOR()<sp/>printf(&quot;\033[?25l&quot;)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/>show<sp/>cursor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHOW_CURSOR()<sp/>printf(&quot;\033[?25h&quot;)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HIGHT_LIGHT()<sp/>printf(&quot;\033[7m&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UN_HIGHT_LIGHT()<sp/>printf(&quot;\033[27m&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classMultiProgressBar" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMultiProgressBar" kindref="compound">MultiProgressBar</ref></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMultiProgressBar" kindref="compound">MultiProgressBar</ref>(std::vector&lt;double&gt;<sp/>xmin,std::vector&lt;double&gt;<sp/>xmax,std::vector&lt;std::string&gt;<sp/>title);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMultiProgressBar" kindref="compound">MultiProgressBar</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>total,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>color=0);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMultiProgressBar" kindref="compound">~MultiProgressBar</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Update(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>current_pos=-1);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Update(std::vector&lt;double&gt;current_pos);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>m_bar_str;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_length_bar;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>m_bar_char_left;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>m_bar_char_right;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>m_percent;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;m_title;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>m_total;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>m_current_index;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_bar_number;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>m_left,m_right;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_maxLength_title;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_factor;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;m_colors;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init_colors();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_defaultcolor;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//MULTIPROGRESSBAR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Library/thermo/MultiProgressBar.h"/>
+  </compounddef>
+</doxygen>

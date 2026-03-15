@@ -1,0 +1,748 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacexThermal" kind="namespace" language="C++">
+    <compoundname>xThermal</compoundname>
+    <innerclass refid="structxThermal_1_1COLOR" prot="public">xThermal::COLOR</innerclass>
+    <innerclass refid="structxThermal_1_1CONSTENTS__Thermo" prot="public">xThermal::CONSTENTS_Thermo</innerclass>
+    <innerclass refid="classxThermal_1_1cxThermal" prot="public">xThermal::cxThermal</innerclass>
+    <innerclass refid="structxThermal_1_1DeformLinearMesh" prot="public">xThermal::DeformLinearMesh</innerclass>
+    <innerclass refid="structxThermal_1_1Head__AMR__LUT" prot="public">xThermal::Head_AMR_LUT</innerclass>
+    <innerclass refid="structxThermal_1_1Line" prot="public">xThermal::Line</innerclass>
+    <innerclass refid="structxThermal_1_1Line__slice" prot="public">xThermal::Line_slice</innerclass>
+    <innerclass refid="structxThermal_1_1PhaseBoundaries" prot="public">xThermal::PhaseBoundaries</innerclass>
+    <innerclass refid="structxThermal_1_1PhaseRegion__Slice" prot="public">xThermal::PhaseRegion_Slice</innerclass>
+    <innerclass refid="structxThermal_1_1PhysicalDimension" prot="public">xThermal::PhysicalDimension</innerclass>
+    <innerclass refid="structxThermal_1_1Point" prot="public">xThermal::Point</innerclass>
+    <innerclass refid="structxThermal_1_1Point__slice" prot="public">xThermal::Point_slice</innerclass>
+    <innerclass refid="structxThermal_1_1Polygon__slice" prot="public">xThermal::Polygon_slice</innerclass>
+    <innerclass refid="structxThermal_1_1propInfo" prot="public">xThermal::propInfo</innerclass>
+    <innerclass refid="structxThermal_1_1Surface" prot="public">xThermal::Surface</innerclass>
+    <innerclass refid="structxThermal_1_1ThermodynamicProperties" prot="public">xThermal::ThermodynamicProperties</innerclass>
+    <innerclass refid="structxThermal_1_1ThermodynamicPropertiesArray" prot="public">xThermal::ThermodynamicPropertiesArray</innerclass>
+    <innerclass refid="structxThermal_1_1ThermodynamicPropertiesVector" prot="public">xThermal::ThermodynamicPropertiesVector</innerclass>
+    <innerclass refid="structxThermal_1_1ThermodynamicProperty" prot="public">xThermal::ThermodynamicProperty</innerclass>
+    <innerclass refid="structxThermal_1_1TriMesh" prot="public">xThermal::TriMesh</innerclass>
+    <innerclass refid="classxThermal_1_1ValueErrorSpec" prot="public">xThermal::ValueErrorSpec</innerclass>
+    <innerclass refid="classxThermal_1_1xThermalBaseError" prot="public">xThermal::xThermalBaseError</innerclass>
+    <innerclass refid="classxThermal_1_1xThermalError" prot="public">xThermal::xThermalError</innerclass>
+    <innernamespace refid="namespacexThermal_1_1H2ONaCl">xThermal::H2ONaCl</innernamespace>
+    <innernamespace refid="namespacexThermal_1_1IAPWS95">xThermal::IAPWS95</innernamespace>
+    <innernamespace refid="namespacexThermal_1_1IAPWS__IF97">xThermal::IAPWS_IF97</innernamespace>
+    <innernamespace refid="namespacexThermal_1_1NaCl">xThermal::NaCl</innernamespace>
+    <innernamespace refid="namespacexThermal_1_1PROST">xThermal::PROST</innernamespace>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacexThermal_1a0685604125210eaa088959dce9c93b25" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SOLVE_SATURATED_PorT</name>
+        <qualifiedname>xThermal::SOLVE_SATURATED_PorT</qualifiedname>
+        <enumvalue id="namespacexThermal_1a0685604125210eaa088959dce9c93b25ae7fb5148d37e23b456becf1619724c21" prot="public">
+          <name>SOLVE_SATURATED_P</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Solve <formula id="358">$ p_{sat} $</formula> </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1a0685604125210eaa088959dce9c93b25a4fde50f7ee7ce5b0c5a9c3c3fc4d0c14" prot="public">
+          <name>SOLVE_SATURATED_T</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Solve <formula id="66">$ T_{sat} $</formula> </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Define flag of solving saturated pressure or saturated temperature. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="153" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacexThermal_1a6670166c9cb5f52c62c794400a4b0992" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Space_EOS</name>
+        <qualifiedname>xThermal::Space_EOS</qualifiedname>
+        <enumvalue id="namespacexThermal_1a6670166c9cb5f52c62c794400a4b0992ac6663036602327e8c028c9dd15b46e4e" prot="public">
+          <name>Space_TP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1a6670166c9cb5f52c62c794400a4b0992a5b602836d5364cf024b142ac5c91907c" prot="public">
+          <name>Space_HP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1a6670166c9cb5f52c62c794400a4b0992a76f4b7c96e304da8748b5e02a195a299" prot="public">
+          <name>Space_TPX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1a6670166c9cb5f52c62c794400a4b0992a79d7b6ac7beaab09018747a867d9b0c9" prot="public">
+          <name>Space_HPX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Which space of the EOS is calculated or defined. For H2O, the available space are Space_TP and Space_HP. For H2ONaCl, the available space are Space_TPX and Space_HPX. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="163" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="163" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacexThermal_1a957e44bcd46f32d5d1a856dd4ad76088" prot="public" static="no" strong="no">
+        <type></type>
+        <name>dimensionType</name>
+        <qualifiedname>xThermal::dimensionType</qualifiedname>
+        <enumvalue id="namespacexThermal_1a957e44bcd46f32d5d1a856dd4ad76088a5706ceebc45f501df4e2c0261501c995" prot="public">
+          <name>MASS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1a957e44bcd46f32d5d1a856dd4ad76088ae40bbb8f04aa12841041540fc86d7454" prot="public">
+          <name>LENGTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1a957e44bcd46f32d5d1a856dd4ad76088a2bd6e5f3da41563e4c90765c243a3f44" prot="public">
+          <name>TIME</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1a957e44bcd46f32d5d1a856dd4ad76088acb42a6fcfb776ccfc6ca2af623bca73b" prot="public">
+          <name>TEMPERATURE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1a957e44bcd46f32d5d1a856dd4ad76088ac40b73df9d242deaf5d253873e9fbeaa" prot="public">
+          <name>MOLES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1a957e44bcd46f32d5d1a856dd4ad76088a07c758d1f96c8986ee86eaba0dd1e5d2" prot="public">
+          <name>CURRENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1a957e44bcd46f32d5d1a856dd4ad76088af693bd7b15b40721eda64eb2d718a1fa" prot="public">
+          <name>LUMINOUS_INTENSITY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>index of dimension vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="168" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="169" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50" prot="public" static="no" strong="no">
+        <type></type>
+        <name>PhaseRegion</name>
+        <qualifiedname>xThermal::PhaseRegion</qualifiedname>
+        <enumvalue id="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50a76315af3e8043a62c2081c3800179c11" prot="public">
+          <name>MixPhaseRegion</name>
+          <initializer>=-1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>MixPhaseRegion is used in AMR lookup table. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50ad559207a1ef04ced99eaf53ac448c2c7" prot="public">
+          <name>SinglePhase_L</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Single phase: liquid. Regard single-phase &quot;liquid-like&quot; and &quot;vapor-like&quot; fluid as &quot;Single phase liquid&quot; as well. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50a55bfb6e82bc37f09fb10c10a68c711f3" prot="public">
+          <name>SinglePhase_V</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Single phase: vapor </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50ad414840b470292fe222eff8d0a2423e0" prot="public">
+          <name>SinglePhase_S</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Single phase: solid, e.g. NaCl </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50a32f6f03b1198a692050d60fc2b062d4a" prot="public">
+          <name>Supercritical</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Supercritical (p &gt; pc, T &gt; Tc) for pure water </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50aa75580a83abdaf8d03a0f887297cd169" prot="public">
+          <name>Supercritical_vapor</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Supercritical vapor (p &lt; pc, T &gt; Tc) for pure water </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50a34ac20b3cc1ec01ab9330b33f716928b" prot="public">
+          <name>Supercritical_liquid</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Supercritical liquid (p &gt; pc, T &lt; Tc) for pure water </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50a6a2af3c6d7523059108ccaa417f6899e" prot="public">
+          <name>Critical</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>At the critical point of pure water or on critical curve of H2ONaCl </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50aa8882ef3bdb57e82e6038e5fd520fc99" prot="public">
+          <name>TwoPhase_VL_Water</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Two phase: liquid + vapor, salinity = 0 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50a1c2333a3e52a17b5b7168a5d4436e0a3" prot="public">
+          <name>TwoPhase_LH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Two phase: liquid + halite </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50a17695e6a016557aa64fa3485d338dcc8" prot="public">
+          <name>TwoPhase_VH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Two phase: vapor + halite </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50a0a606f377d0b2ce5738a69b8be581798" prot="public">
+          <name>TwoPhase_VL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Two phase: VL region </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50abd57c2b864f66d38273c3324f7fb105a" prot="public">
+          <name>ThreePhase_VLH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Three phase: vapor + liquid + halite </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50acea30341b4925461d75ba644de9f7017" prot="public">
+          <name>Unknown</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unknown phase region for bug report </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50ad58525e6184c189f6a1d2b71d4370c66" prot="public">
+          <name>NotImposed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Phase is not imposed </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Phase region index of H2O, NaCl, H2ONaCl system. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="270" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="271" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacexThermal_1a02981dc49f0ba850ff112b9d0faab94e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>PhaseType</name>
+        <qualifiedname>xThermal::PhaseType</qualifiedname>
+        <enumvalue id="namespacexThermal_1a02981dc49f0ba850ff112b9d0faab94ea4c8656b1a1524fe1b91bccd5e72f4be2" prot="public">
+          <name>Vapor</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1a02981dc49f0ba850ff112b9d0faab94ea4cad6d068666d0b7976a9103dd27b1e4" prot="public">
+          <name>Liquid</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>only used as input argument for <ref refid="" kindref="compound">Rho_phase</ref>; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="316" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="316" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacexThermal_1a9f8f5fd6daa5e46885df0b3ec7068993" prot="public" static="no" strong="no">
+        <type></type>
+        <name>INPUT_PAIR</name>
+        <qualifiedname>xThermal::INPUT_PAIR</qualifiedname>
+        <enumvalue id="namespacexThermal_1a9f8f5fd6daa5e46885df0b3ec7068993a82502537ecea2c0f7be86351f704a0d4" prot="public">
+          <name>TPX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1a9f8f5fd6daa5e46885df0b3ec7068993a639d76c91c42d0d4d7116a6af8f4748e" prot="public">
+          <name>HPX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="320" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="320" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacexThermal_1a979ba5e8ff8d4f989008f4cd9327fa54" prot="public" static="no" strong="no">
+        <type></type>
+        <name>INDEX_FLUID</name>
+        <qualifiedname>xThermal::INDEX_FLUID</qualifiedname>
+        <enumvalue id="namespacexThermal_1a979ba5e8ff8d4f989008f4cd9327fa54a63b73601838a2279a79dd2d1f6745091" prot="public">
+          <name>Fluid_Unknown</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1a979ba5e8ff8d4f989008f4cd9327fa54ab38b4d547968a84371de896ad0ebb862" prot="public">
+          <name>FLUID_Water</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1a979ba5e8ff8d4f989008f4cd9327fa54a690fe6b460481bfa8c9cf6a4a5e06774" prot="public">
+          <name>FLUID_H2O_NaCl</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="41" column="5" bodyfile="Library/thermo/thermo.h" bodystart="42" bodyend="46"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacexThermal_1af39c4b5dfdc857fb6eec161eea722ab0" prot="public" static="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">xThermalError</ref>&lt; xThermalBaseError::eNotImplemented &gt;</type>
+        <definition>typedef xThermalError&lt; xThermalBaseError::eNotImplemented &gt; xThermal::NotImplementedError</definition>
+        <argsstring></argsstring>
+        <name>NotImplementedError</name>
+        <qualifiedname>xThermal::NotImplementedError</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/Exception.h" line="31" column="23" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacexThermal_1a054d6c9fa24bc0787f7312ed8e766a6a" prot="public" static="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">xThermalError</ref>&lt; xThermalBaseError::eSolution &gt;</type>
+        <definition>typedef xThermalError&lt; xThermalBaseError::eSolution &gt; xThermal::SolutionError</definition>
+        <argsstring></argsstring>
+        <name>SolutionError</name>
+        <qualifiedname>xThermal::SolutionError</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/Exception.h" line="32" column="23" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacexThermal_1a381246644a3bd69e454454a514fd8625" prot="public" static="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">xThermalError</ref>&lt; xThermalBaseError::eAttribute &gt;</type>
+        <definition>typedef xThermalError&lt; xThermalBaseError::eAttribute &gt; xThermal::AttributeError</definition>
+        <argsstring></argsstring>
+        <name>AttributeError</name>
+        <qualifiedname>xThermal::AttributeError</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/Exception.h" line="33" column="23" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacexThermal_1a0063798569c5f87665dc9f4047512238" prot="public" static="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">xThermalError</ref>&lt; xThermalBaseError::eOutOfRange &gt;</type>
+        <definition>typedef xThermalError&lt; xThermalBaseError::eOutOfRange &gt; xThermal::OutOfRangeError</definition>
+        <argsstring></argsstring>
+        <name>OutOfRangeError</name>
+        <qualifiedname>xThermal::OutOfRangeError</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/Exception.h" line="34" column="23" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacexThermal_1ab9115270561687dfb73273e43c5a06d9" prot="public" static="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">xThermalError</ref>&lt; xThermalBaseError::eValue &gt;</type>
+        <definition>typedef xThermalError&lt; xThermalBaseError::eValue &gt; xThermal::ValueError</definition>
+        <argsstring></argsstring>
+        <name>ValueError</name>
+        <qualifiedname>xThermal::ValueError</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/Exception.h" line="35" column="23" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacexThermal_1a45f5ed07c6e388139363da491249ac06" prot="public" static="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">xThermalError</ref>&lt; xThermalBaseError::eKey &gt;</type>
+        <definition>typedef xThermalError&lt; xThermalBaseError::eKey &gt; xThermal::KeyError</definition>
+        <argsstring></argsstring>
+        <name>KeyError</name>
+        <qualifiedname>xThermal::KeyError</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/Exception.h" line="36" column="23" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacexThermal_1ada91242933abe12206bdfae59e7376fa" prot="public" static="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">xThermalError</ref>&lt; xThermalBaseError::eHandle &gt;</type>
+        <definition>typedef xThermalError&lt; xThermalBaseError::eHandle &gt; xThermal::HandleError</definition>
+        <argsstring></argsstring>
+        <name>HandleError</name>
+        <qualifiedname>xThermal::HandleError</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/Exception.h" line="37" column="23" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacexThermal_1a84cff6c3c8fd728f83a89f102fc8bd0a" prot="public" static="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">xThermalError</ref>&lt; xThermalBaseError::eUnableToLoad &gt;</type>
+        <definition>typedef xThermalError&lt; xThermalBaseError::eUnableToLoad &gt; xThermal::UnableToLoadError</definition>
+        <argsstring></argsstring>
+        <name>UnableToLoadError</name>
+        <qualifiedname>xThermal::UnableToLoadError</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/Exception.h" line="38" column="23" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacexThermal_1a5384d2d66bc2c0368945ef9a41977719" prot="public" static="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">xThermalError</ref>&lt; xThermalBaseError::eDirectorySize &gt;</type>
+        <definition>typedef xThermalError&lt; xThermalBaseError::eDirectorySize &gt; xThermal::DirectorySizeError</definition>
+        <argsstring></argsstring>
+        <name>DirectorySizeError</name>
+        <qualifiedname>xThermal::DirectorySizeError</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/Exception.h" line="39" column="23" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacexThermal_1a11640d0e8b1321e9b92c584b12719820" prot="public" static="no">
+        <type><ref refid="classxThermal_1_1ValueErrorSpec" kindref="compound">ValueErrorSpec</ref>&lt; xThermalBaseError::eWrongFluid &gt;</type>
+        <definition>typedef ValueErrorSpec&lt; xThermalBaseError::eWrongFluid &gt; xThermal::WrongFluidError</definition>
+        <argsstring></argsstring>
+        <name>WrongFluidError</name>
+        <qualifiedname>xThermal::WrongFluidError</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/Exception.h" line="48" column="24" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacexThermal_1a4c5c4895de78c1a4ad976bf485026da3" prot="public" static="no">
+        <type><ref refid="classxThermal_1_1ValueErrorSpec" kindref="compound">ValueErrorSpec</ref>&lt; xThermalBaseError::eComposition &gt;</type>
+        <definition>typedef ValueErrorSpec&lt; xThermalBaseError::eComposition &gt; xThermal::CompositionError</definition>
+        <argsstring></argsstring>
+        <name>CompositionError</name>
+        <qualifiedname>xThermal::CompositionError</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/Exception.h" line="49" column="24" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacexThermal_1acf44bbc93309019f1f2bad6004881cec" prot="public" static="no">
+        <type><ref refid="classxThermal_1_1ValueErrorSpec" kindref="compound">ValueErrorSpec</ref>&lt; xThermalBaseError::eInput &gt;</type>
+        <definition>typedef ValueErrorSpec&lt; xThermalBaseError::eInput &gt; xThermal::InputError</definition>
+        <argsstring></argsstring>
+        <name>InputError</name>
+        <qualifiedname>xThermal::InputError</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/Exception.h" line="50" column="24" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacexThermal_1a3d1351d09c64bc808f3c3b4a3285902c" prot="public" static="no">
+        <type><ref refid="classxThermal_1_1ValueErrorSpec" kindref="compound">ValueErrorSpec</ref>&lt; xThermalBaseError::eNotAvailable &gt;</type>
+        <definition>typedef ValueErrorSpec&lt; xThermalBaseError::eNotAvailable &gt; xThermal::NotAvailableError</definition>
+        <argsstring></argsstring>
+        <name>NotAvailableError</name>
+        <qualifiedname>xThermal::NotAvailableError</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/Exception.h" line="51" column="24" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacexThermal_1af9f05200d8e3f0f94c13177d4fdf9496" prot="public" static="no">
+        <type>std::map&lt; <ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50" kindref="member">PhaseRegion</ref>, std::string &gt;</type>
+        <definition>typedef std::map&lt;PhaseRegion,std::string&gt; xThermal::MAP_PhaseRegion2Name</definition>
+        <argsstring></argsstring>
+        <name>MAP_PhaseRegion2Name</name>
+        <qualifiedname>xThermal::MAP_PhaseRegion2Name</qualifiedname>
+        <briefdescription>
+<para>Map of phase region index (enum) to phase region name (string). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="294" column="22" bodyfile="Library/thermo/DataStructures.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacexThermal_1a5152083af71ed8549b53957b08b949c5" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>const int xThermal::nDimensions</definition>
+        <argsstring></argsstring>
+        <name>nDimensions</name>
+        <qualifiedname>xThermal::nDimensions</qualifiedname>
+        <initializer>= 7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="172" column="15" bodyfile="Library/thermo/DataStructures.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacexThermal_1a851e97dd53b87b4049f4b6a51b88b1f0" prot="public" static="yes" mutable="no">
+        <type><ref refid="namespacexThermal_1af9f05200d8e3f0f94c13177d4fdf9496" kindref="member">MAP_PhaseRegion2Name</ref></type>
+        <definition>MAP_PhaseRegion2Name xThermal::map_phase2name</definition>
+        <argsstring></argsstring>
+        <name>map_phase2name</name>
+        <qualifiedname>xThermal::map_phase2name</qualifiedname>
+        <initializer>={
+            {<ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50a76315af3e8043a62c2081c3800179c11" kindref="member">MixPhaseRegion</ref>, &quot;Mix phase <ref refid="classxThermal_1_1xThermalError" kindref="compound">region</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">in</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">AMR</ref>-<ref refid="classxThermal_1_1xThermalError" kindref="compound">LUT&quot;</ref>},
+            {<ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50ad559207a1ef04ced99eaf53ac448c2c7" kindref="member">SinglePhase_L</ref>,&quot;Liquid&quot;},
+            {<ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50a55bfb6e82bc37f09fb10c10a68c711f3" kindref="member">SinglePhase_V</ref>, &quot;Vapor&quot;},
+            {<ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50ad414840b470292fe222eff8d0a2423e0" kindref="member">SinglePhase_S</ref>, &quot;Solid&quot;},
+            {<ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50a32f6f03b1198a692050d60fc2b062d4a" kindref="member">Supercritical</ref>, &quot;Supercritical&quot;},
+            {<ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50aa75580a83abdaf8d03a0f887297cd169" kindref="member">Supercritical_vapor</ref>, &quot;Sup.crit. <ref refid="classxThermal_1_1xThermalError" kindref="compound">vapor&quot;</ref>},
+            {<ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50a34ac20b3cc1ec01ab9330b33f716928b" kindref="member">Supercritical_liquid</ref>, &quot;Sup.crit. <ref refid="classxThermal_1_1xThermalError" kindref="compound">liquid&quot;</ref>},
+            {<ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50a6a2af3c6d7523059108ccaa417f6899e" kindref="member">Critical</ref>, &quot;Critical <ref refid="classxThermal_1_1xThermalError" kindref="compound">point&quot;</ref>},
+            {<ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50aa8882ef3bdb57e82e6038e5fd520fc99" kindref="member">TwoPhase_VL_Water</ref>, &quot;V+<ref refid="classxThermal_1_1xThermalError" kindref="compound">L</ref>(water)&quot;},
+            {TwoPhase_LH, &quot;L+<ref refid="classxThermal_1_1xThermalError" kindref="compound">H&quot;</ref>},
+            {<ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50a17695e6a016557aa64fa3485d338dcc8" kindref="member">TwoPhase_VH</ref>, &quot;V+<ref refid="classxThermal_1_1xThermalError" kindref="compound">H&quot;</ref>},
+            {<ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50a0a606f377d0b2ce5738a69b8be581798" kindref="member">TwoPhase_VL</ref>, &quot;V+<ref refid="classxThermal_1_1xThermalError" kindref="compound">L&quot;</ref>},
+            {<ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50abd57c2b864f66d38273c3324f7fb105a" kindref="member">ThreePhase_VLH</ref>, &quot;V+<ref refid="classxThermal_1_1xThermalError" kindref="compound">L</ref>+<ref refid="classxThermal_1_1xThermalError" kindref="compound">H&quot;</ref>},
+            {<ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50acea30341b4925461d75ba644de9f7017" kindref="member">Unknown</ref>, &quot;Unknown&quot;},
+            {<ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50ad58525e6184c189f6a1d2b71d4370c66" kindref="member">NotImposed</ref>, &quot;Phase <ref refid="classxThermal_1_1xThermalError" kindref="compound">is</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">not</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">imposed&quot;</ref>}
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="295" column="33" bodyfile="Library/thermo/DataStructures.h" bodystart="295" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacexThermal_1a9f162768e192f9a3ca91f946a35bd428" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::R</definition>
+        <argsstring></argsstring>
+        <name>R</name>
+        <qualifiedname>xThermal::R</qualifiedname>
+        <initializer>= 461.51805</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specific gass constant: <formula id="359">$ J/kg/K $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="36" column="18" bodyfile="Library/thermo/thermo.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacexThermal_1a84f02780c656415ebfe346041b27a7bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; xThermal::string_split</definition>
+        <argsstring>(const std::string &amp;s, const std::string &amp;delimiter)</argsstring>
+        <name>string_split</name>
+        <qualifiedname>xThermal::string_split</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::string &amp;</type>
+          <declname>delimiter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/stdfunc.cpp" line="3" column="17" bodyfile="Library/thermo/stdfunc.cpp" bodystart="3" bodyend="16" declfile="Library/stdfunc.h" declline="124" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacexThermal_1ab45ef4764ac45cfedd7d4d3a1773a7e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string xThermal::extname_file</definition>
+        <argsstring>(const std::string &amp;filepath)</argsstring>
+        <name>extname_file</name>
+        <qualifiedname>xThermal::extname_file</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::string &amp;</type>
+          <declname>filepath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/stdfunc.cpp" line="18" column="17" bodyfile="Library/thermo/stdfunc.cpp" bodystart="18" bodyend="27" declfile="Library/stdfunc.h" declline="125" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacexThermal_1a2647e9e618454e5119bf093ba777ad8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string xThermal::filename_without_ext</definition>
+        <argsstring>(const std::string &amp;filepath)</argsstring>
+        <name>filename_without_ext</name>
+        <qualifiedname>xThermal::filename_without_ext</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::string &amp;</type>
+          <declname>filepath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/stdfunc.cpp" line="29" column="17" bodyfile="Library/thermo/stdfunc.cpp" bodystart="29" bodyend="44" declfile="Library/stdfunc.h" declline="126" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacexThermal_1a960a8fa20e4629abf126d5ff81616c78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::fill_prop2data</definition>
+        <argsstring>(cxThermal *pEOS, const ThermodynamicProperties *prop, const std::map&lt; int, propInfo &gt; &amp;update_which_props, double *data)</argsstring>
+        <name>fill_prop2data</name>
+        <qualifiedname>xThermal::fill_prop2data</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1cxThermal" kindref="compound">cxThermal</ref> *</type>
+          <declname>pEOS</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> *</type>
+          <declname>prop</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::map&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref>, <ref refid="structxThermal_1_1propInfo" kindref="compound">propInfo</ref> &gt; &amp;</type>
+          <declname>update_which_props</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.cpp" line="1106" column="10" bodyfile="Library/thermo/thermo.cpp" bodystart="1106" bodyend="1142" declfile="Library/thermo/thermo.h" declline="285" declcolumn="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Namespace of <ref refid="namespacexThermal" kindref="compound">xThermal</ref> library. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/H2O/IAPS84.cpp" line="23" column="1"/>
+  </compounddef>
+</doxygen>

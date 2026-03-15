@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__REGIONS__IF97" kind="group">
+    <compoundname>REGIONS_IF97</compoundname>
+    <title>Define IAPWS-IF97 region index.</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group__REGIONS__IF97_1ga267c2ba813caefd22154a728717c7d80" prot="public" static="no">
+        <name>IF97_REGION1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="27" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__REGIONS__IF97_1gad0d9d185ddfd213fb61f128635185876" prot="public" static="no">
+        <name>IF97_REGION2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="28" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__REGIONS__IF97_1gadf9304ee7bba72499d2b48e775244d85" prot="public" static="no">
+        <name>IF97_REGION3</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="29" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__REGIONS__IF97_1ga5544b3c078aec4cfda354f2f3d1d9626" prot="public" static="no">
+        <name>IF97_REGION4</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="30" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__REGIONS__IF97_1gaf1e223056ee3bbe3e058ac86f817f9b7" prot="public" static="no">
+        <name>IF97_REGION5</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="31" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__REGIONS__IF97_1gaf7db4d597bc8b0d01f2921254211565a" prot="public" static="no">
+        <name>IF97_REGION2a</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used for backward equation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="33" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__REGIONS__IF97_1ga7481d32a4a69c8e453f763bbe5051b99" prot="public" static="no">
+        <name>IF97_REGION2b</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used for backward equation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="35" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__REGIONS__IF97_1gabdf721a54d6338d4b2626dc7b3e1001f" prot="public" static="no">
+        <name>IF97_REGION2c</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used for backward equation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="37" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__REGIONS__IF97_1gaa67ad50013ba6881041ee2f25a36a834" prot="public" static="no">
+        <name>IF97_REGION3a</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used for backward equation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="39" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__REGIONS__IF97_1ga8405b1f97d502b1332214ac72f41701e" prot="public" static="no">
+        <name>IF97_REGION3b</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used for backward equation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="41" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__REGIONS__IF97_1ga59dbbd165115c6cf3474e4f17d6879ae" prot="public" static="no">
+        <name>IF97_RegionUndefined</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="42" column="17" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

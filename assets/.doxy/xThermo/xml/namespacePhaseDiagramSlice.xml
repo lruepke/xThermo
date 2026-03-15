@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacePhaseDiagramSlice" kind="namespace" language="Python">
+    <compoundname>PhaseDiagramSlice</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="PhaseDiagramSlice_8py_1a55e40ce39924dc9db5b1f89aba94a7c0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>PhaseDiagramSlice.sw</definition>
+        <argsstring></argsstring>
+        <name>sw</name>
+        <qualifiedname>PhaseDiagramSlice.sw</qualifiedname>
+        <initializer>=  H2ONaCl.cH2ONaCl(&quot;IAPS84&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/example_H2ONaCl/PhaseDiagramSlice.py" line="13" column="1" bodyfile="Library/H2ONaCl/example_H2ONaCl/PhaseDiagramSlice.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="PhaseDiagramSlice_8py_1a877394d9cda396a30b00720aea4b01af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PhaseDiagramSlice.makeLogLinearAxes</definition>
+        <argsstring>(ax, width_logaxis=0.4, xlim_log=(2E-3, 1), xmax=100, xloc_major=20, xloc_minor=4, yloc=&apos;left&apos;, color_log=(127/255, 0, 1), xlabel=&apos;Bulk salinity(wt % NaCl)&apos;, bkcolor=&apos;None&apos;, ylim=None, yloc_major=None, yloc_minor=None, ylabel=None)</argsstring>
+        <name>makeLogLinearAxes</name>
+        <qualifiedname>PhaseDiagramSlice.makeLogLinearAxes</qualifiedname>
+        <param>
+          <type>ax</type>
+          <defname>ax</defname>
+        </param>
+        <param>
+          <type>width_logaxis</type>
+          <defname>width_logaxis</defname>
+          <defval>0.4</defval>
+        </param>
+        <param>
+          <type>xlim_log</type>
+          <defname>xlim_log</defname>
+          <defval>(2E-3, 1)</defval>
+        </param>
+        <param>
+          <type>xmax</type>
+          <defname>xmax</defname>
+          <defval>100</defval>
+        </param>
+        <param>
+          <type>xloc_major</type>
+          <defname>xloc_major</defname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>xloc_minor</type>
+          <defname>xloc_minor</defname>
+          <defval>4</defval>
+        </param>
+        <param>
+          <type>yloc</type>
+          <defname>yloc</defname>
+          <defval>&apos;left&apos;</defval>
+        </param>
+        <param>
+          <type>color_log</type>
+          <defname>color_log</defname>
+          <defval>(127/255, 0, 1)</defval>
+        </param>
+        <param>
+          <type>xlabel</type>
+          <defname>xlabel</defname>
+          <defval>&apos;Bulk salinity(wt % NaCl)&apos;</defval>
+        </param>
+        <param>
+          <type>bkcolor</type>
+          <defname>bkcolor</defname>
+          <defval>&apos;None&apos;</defval>
+        </param>
+        <param>
+          <type>ylim</type>
+          <defname>ylim</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>yloc_major</type>
+          <defname>yloc_major</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>yloc_minor</type>
+          <defname>yloc_minor</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>ylabel</type>
+          <defname>ylabel</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/example_H2ONaCl/PhaseDiagramSlice.py" line="16" column="1" bodyfile="Library/H2ONaCl/example_H2ONaCl/PhaseDiagramSlice.py" bodystart="16" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="PhaseDiagramSlice_8py_1a96ebb7a524c718750beefaa2c2da40b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PhaseDiagramSlice.plot_PhaseRegions</definition>
+        <argsstring>(PhaseRegions, ax_linear_TPX, ax_log_TPX, ax_linear_HPX, ax_log_HPX, lw)</argsstring>
+        <name>plot_PhaseRegions</name>
+        <qualifiedname>PhaseDiagramSlice.plot_PhaseRegions</qualifiedname>
+        <param>
+          <type>PhaseRegions</type>
+          <defname>PhaseRegions</defname>
+        </param>
+        <param>
+          <type>ax_linear_TPX</type>
+          <defname>ax_linear_TPX</defname>
+        </param>
+        <param>
+          <type>ax_log_TPX</type>
+          <defname>ax_log_TPX</defname>
+        </param>
+        <param>
+          <type>ax_linear_HPX</type>
+          <defname>ax_linear_HPX</defname>
+        </param>
+        <param>
+          <type>ax_log_HPX</type>
+          <defname>ax_log_HPX</defname>
+        </param>
+        <param>
+          <type>lw</type>
+          <defname>lw</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/example_H2ONaCl/PhaseDiagramSlice.py" line="60" column="1" bodyfile="Library/H2ONaCl/example_H2ONaCl/PhaseDiagramSlice.py" bodystart="60" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="PhaseDiagramSlice_8py_1a93de95e294fff1b943bdea2fa6d9e7b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PhaseDiagramSlice.PhaseDiagramSlice_constP</definition>
+        <argsstring>(P0=250E5, X0=0.4, Tmin=200+273.15, Tmax=H2ONaCl.T_MAX_VLH+50, fmt=&apos;jpeg&apos;, dpi=900, figpath=&apos;.&apos;, x0_log_linear=0.01, lw=0.5, points=30)</argsstring>
+        <name>PhaseDiagramSlice_constP</name>
+        <qualifiedname>PhaseDiagramSlice.PhaseDiagramSlice_constP</qualifiedname>
+        <param>
+          <type>P0</type>
+          <defname>P0</defname>
+          <defval>250E5</defval>
+        </param>
+        <param>
+          <type>X0</type>
+          <defname>X0</defname>
+          <defval>0.4</defval>
+        </param>
+        <param>
+          <type>Tmin</type>
+          <defname>Tmin</defname>
+          <defval>200+273.15</defval>
+        </param>
+        <param>
+          <type>Tmax</type>
+          <defname>Tmax</defname>
+          <defval>H2ONaCl.T_MAX_VLH+50</defval>
+        </param>
+        <param>
+          <type>fmt</type>
+          <defname>fmt</defname>
+          <defval>&apos;jpeg&apos;</defval>
+        </param>
+        <param>
+          <type>dpi</type>
+          <defname>dpi</defname>
+          <defval>900</defval>
+        </param>
+        <param>
+          <type>figpath</type>
+          <defname>figpath</defname>
+          <defval>&apos;.&apos;</defval>
+        </param>
+        <param>
+          <type>x0_log_linear</type>
+          <defname>x0_log_linear</defname>
+          <defval>0.01</defval>
+        </param>
+        <param>
+          <type>lw</type>
+          <defname>lw</defname>
+          <defval>0.5</defval>
+        </param>
+        <param>
+          <type>points</type>
+          <defname>points</defname>
+          <defval>30</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/example_H2ONaCl/PhaseDiagramSlice.py" line="96" column="1" bodyfile="Library/H2ONaCl/example_H2ONaCl/PhaseDiagramSlice.py" bodystart="96" bodyend="317"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/H2ONaCl/example_H2ONaCl/PhaseDiagramSlice.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

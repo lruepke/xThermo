@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region2a" kind="struct" language="C++" prot="private">
+    <compoundname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2a</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region2a_1a81bc8802cc38772e5eaa237f2c130578" prot="public" static="yes" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>const int xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2a::num</definition>
+        <argsstring></argsstring>
+        <name>num</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2a::num</qualifiedname>
+        <initializer>=34</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="238" column="34" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region2a_1a54bed50b7641be97f52044428e85264f" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2a::I[num]</definition>
+        <argsstring>[num]</argsstring>
+        <name>I</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2a::I</qualifiedname>
+        <initializer>= {0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2,
+                                 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="239" column="24" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="239" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region2a_1a2ce79c10e911e5ace1b6232a451196bb" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2a::J[num]</definition>
+        <argsstring>[num]</argsstring>
+        <name>J</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2a::J</qualifiedname>
+        <initializer>= {0, 1, 2, 3, 7, 20, 0, 1, 2, 3, 7, 9, 11, 18, 44, 0, 2, 7, 36, 38, 40,
+                                 42, 44, 24, 44, 12, 32, 44, 32, 36, 42, 34, 44, 28}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="241" column="24" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="241" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region2a_1a6e5208ec80ffe80ad06c7d3e5b02bdc0" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2a::n[num]</definition>
+        <argsstring>[num]</argsstring>
+        <name>n</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2a::n</qualifiedname>
+        <initializer>= {0.10898952318288<ref refid="classxThermal_1_1xThermalError" kindref="compound">e4</ref>, 0.84951654495535<ref refid="classxThermal_1_1xThermalError" kindref="compound">e3</ref>, -0.10781748091826<ref refid="classxThermal_1_1xThermalError" kindref="compound">e3</ref>,
+                                 0.33153654801263<ref refid="classxThermal_1_1xThermalError" kindref="compound">e2</ref>, -0.74232016790248<ref refid="classxThermal_1_1xThermalError" kindref="compound">e1</ref>, 0.11765048724356<ref refid="classxThermal_1_1xThermalError" kindref="compound">e2</ref>,
+                                 0.18445749355790e1, -0.41792700549624<ref refid="classxThermal_1_1xThermalError" kindref="compound">e1</ref>, 0.62478196935812<ref refid="classxThermal_1_1xThermalError" kindref="compound">e1</ref>,
+                                 -0.17344563108114<ref refid="classxThermal_1_1xThermalError" kindref="compound">e2</ref>, -0.20058176862096<ref refid="classxThermal_1_1xThermalError" kindref="compound">e3</ref>, 0.27196065473796<ref refid="classxThermal_1_1xThermalError" kindref="compound">e3</ref>,
+                                 -0.45511318285818<ref refid="classxThermal_1_1xThermalError" kindref="compound">e3</ref>, 0.30919688604755<ref refid="classxThermal_1_1xThermalError" kindref="compound">e4</ref>, 0.25226640357872<ref refid="classxThermal_1_1xThermalError" kindref="compound">e6</ref>,
+                                 -0.61707422868339<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-2, -0.31078046629583, 0.11670873077107<ref refid="classxThermal_1_1xThermalError" kindref="compound">e2</ref>,
+                                 0.12812798404046<ref refid="classxThermal_1_1xThermalError" kindref="compound">e9</ref>, -0.98554909623276<ref refid="classxThermal_1_1xThermalError" kindref="compound">e9</ref>, 0.28224546973002<ref refid="classxThermal_1_1xThermalError" kindref="compound">e10</ref>,
+                                 -0.35948971410703<ref refid="classxThermal_1_1xThermalError" kindref="compound">e10</ref>, 0.17227349913197<ref refid="classxThermal_1_1xThermalError" kindref="compound">e10</ref>, -0.13551334240775<ref refid="classxThermal_1_1xThermalError" kindref="compound">e5</ref>,
+                                 0.12848734664650e8, 0.13865724283226<ref refid="classxThermal_1_1xThermalError" kindref="compound">e1</ref>, 0.23598832556514<ref refid="classxThermal_1_1xThermalError" kindref="compound">e6</ref>,
+                                 -0.13105236545054<ref refid="classxThermal_1_1xThermalError" kindref="compound">e8</ref>, 0.73999835474766<ref refid="classxThermal_1_1xThermalError" kindref="compound">e4</ref>, -0.55196697030060e6,
+                                 0.37154085996233<ref refid="classxThermal_1_1xThermalError" kindref="compound">e7</ref>, 0.19127729239660e5, -0.41535164835634<ref refid="classxThermal_1_1xThermalError" kindref="compound">e6</ref>,
+                                 -0.62459855192507<ref refid="classxThermal_1_1xThermalError" kindref="compound">e2</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="243" column="24" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="243" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region2a_1abada68dac8602e4fd5d8afcac3a12297" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2a::pStar</definition>
+        <argsstring></argsstring>
+        <name>pStar</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2a::pStar</qualifiedname>
+        <initializer>= 1<ref refid="classxThermal_1_1xThermalError" kindref="compound">E6</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="19">$ p^*  $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="255" column="24" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region2a_1adad993c591600704b1dc8b25446814a8" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2a::hStar</definition>
+        <argsstring></argsstring>
+        <name>hStar</name>
+        <qualifiedname>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2a::hStar</qualifiedname>
+        <initializer>= 2000E3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="22">$ h^{*} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="256" column="24" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Numerical values of the coefficients and exponents of the backward equation T ( p, h ) for subregion 2a, Eq. (22). See Table 20 of IF97. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/H2O/IAPWS-IF97.h" line="236" column="13" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="237" bodyend="258"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region2a_1adad993c591600704b1dc8b25446814a8" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2a</scope><name>hStar</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region2a_1a54bed50b7641be97f52044428e85264f" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2a</scope><name>I</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region2a_1a2ce79c10e911e5ace1b6232a451196bb" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2a</scope><name>J</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region2a_1a6e5208ec80ffe80ad06c7d3e5b02bdc0" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2a</scope><name>n</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region2a_1a81bc8802cc38772e5eaa237f2c130578" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2a</scope><name>num</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region2a_1abada68dac8602e4fd5d8afcac3a12297" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region2a</scope><name>pStar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

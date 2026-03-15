@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1IAPWS95_1_1Params__T__Sat__estimate" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::IAPWS95::Params_T_Sat_estimate</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Params__T__Sat__estimate_1a8ca3b398dc7a36294a2e05de31f8f0a8" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1IAPWS95_1_1cIAPWS95" kindref="compound">cIAPWS95</ref> *</type>
+        <definition>cIAPWS95* xThermal::IAPWS95::Params_T_Sat_estimate::iapws</definition>
+        <argsstring></argsstring>
+        <name>iapws</name>
+        <qualifiedname>xThermal::IAPWS95::Params_T_Sat_estimate::iapws</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="354" column="22" bodyfile="Library/H2O/IAPWS95.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Params__T__Sat__estimate_1aba2819e0b9987bf0d58f0d1d3bbb5d5b" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS95::Params_T_Sat_estimate::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <qualifiedname>xThermal::IAPWS95::Params_T_Sat_estimate::p</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="355" column="20" bodyfile="Library/H2O/IAPWS95.h" bodystart="355" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>xThermal::CONSTENTS_Thermo</label>
+        <link refid="structxThermal_1_1CONSTENTS__Thermo"/>
+      </node>
+      <node id="1">
+        <label>xThermal::IAPWS95::Params_T_Sat_estimate</label>
+        <link refid="structxThermal_1_1IAPWS95_1_1Params__T__Sat__estimate"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>iapws</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>xThermal::IAPWS95::cIAPWS95</label>
+        <link refid="classxThermal_1_1IAPWS95_1_1cIAPWS95"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_constants</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>xThermal::cxThermal</label>
+        <link refid="classxThermal_1_1cxThermal"/>
+      </node>
+    </collaborationgraph>
+    <location file="Library/H2O/IAPWS95.h" line="352" column="9" bodyfile="Library/H2O/IAPWS95.h" bodystart="353" bodyend="356"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1IAPWS95_1_1Params__T__Sat__estimate_1a8ca3b398dc7a36294a2e05de31f8f0a8" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Params_T_Sat_estimate</scope><name>iapws</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Params__T__Sat__estimate_1aba2819e0b9987bf0d58f0d1d3bbb5d5b" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Params_T_Sat_estimate</scope><name>p</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structotri" kind="struct" language="C++" prot="public">
+    <compoundname>otri</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structotri_1a238238ab7eb61074eceb8382b6bdc835" prot="public" static="no" mutable="no">
+        <type>triangle *</type>
+        <definition>triangle* otri::tri</definition>
+        <argsstring></argsstring>
+        <name>tri</name>
+        <qualifiedname>otri::tri</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="515" column="12" bodyfile="Library/thermo/triangle.cpp" bodystart="515" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structotri_1a3f79d64391ce76f64acc0aec04bf8805" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int otri::orient</definition>
+        <argsstring></argsstring>
+        <name>orient</name>
+        <qualifiedname>otri::orient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="516" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="516" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/thermo/triangle.cpp" line="514" column="1" bodyfile="Library/thermo/triangle.cpp" bodystart="514" bodyend="517"/>
+    <listofallmembers>
+      <member refid="structotri_1a3f79d64391ce76f64acc0aec04bf8805" prot="public" virt="non-virtual"><scope>otri</scope><name>orient</name></member>
+      <member refid="structotri_1a238238ab7eb61074eceb8382b6bdc835" prot="public" virt="non-virtual"><scope>otri</scope><name>tri</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

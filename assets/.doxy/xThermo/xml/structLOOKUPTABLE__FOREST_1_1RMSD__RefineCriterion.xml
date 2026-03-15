@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structLOOKUPTABLE__FOREST_1_1RMSD__RefineCriterion" kind="struct" language="C++" prot="public">
+    <compoundname>LOOKUPTABLE_FOREST::RMSD_RefineCriterion</compoundname>
+    <includes refid="LookUpTableForest_8h" local="no">LookUpTableForest.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLOOKUPTABLE__FOREST_1_1RMSD__RefineCriterion_1ad62162b087059be46833dd49981898d8" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double LOOKUPTABLE_FOREST::RMSD_RefineCriterion::Rho</definition>
+        <argsstring></argsstring>
+        <name>Rho</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::RMSD_RefineCriterion::Rho</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="111" column="16" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLOOKUPTABLE__FOREST_1_1RMSD__RefineCriterion_1a0902b30e2c9ddef3bef84b1c4063b3c2" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double LOOKUPTABLE_FOREST::RMSD_RefineCriterion::H</definition>
+        <argsstring></argsstring>
+        <name>H</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::RMSD_RefineCriterion::H</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="112" column="16" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLOOKUPTABLE__FOREST_1_1RMSD__RefineCriterion_1af4a1fcfdab3afbf212aaccd8130b4cf8" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double LOOKUPTABLE_FOREST::RMSD_RefineCriterion::Mu</definition>
+        <argsstring></argsstring>
+        <name>Mu</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::RMSD_RefineCriterion::Mu</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="113" column="16" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Property refinement criterion, minimum RMSD of a quadran, if the RMSD of a property in a quadran grater than this criterion, it will be refined. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/AMR_LUT/LookUpTableForest.h" line="109" column="5" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="110" bodyend="114"/>
+    <listofallmembers>
+      <member refid="structLOOKUPTABLE__FOREST_1_1RMSD__RefineCriterion_1a0902b30e2c9ddef3bef84b1c4063b3c2" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::RMSD_RefineCriterion</scope><name>H</name></member>
+      <member refid="structLOOKUPTABLE__FOREST_1_1RMSD__RefineCriterion_1af4a1fcfdab3afbf212aaccd8130b4cf8" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::RMSD_RefineCriterion</scope><name>Mu</name></member>
+      <member refid="structLOOKUPTABLE__FOREST_1_1RMSD__RefineCriterion_1ad62162b087059be46833dd49981898d8" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::RMSD_RefineCriterion</scope><name>Rho</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

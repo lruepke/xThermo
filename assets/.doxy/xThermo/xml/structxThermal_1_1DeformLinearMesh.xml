@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1DeformLinearMesh" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::DeformLinearMesh</compoundname>
+    <includes refid="DataStructures_8h" local="no">DataStructures.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1DeformLinearMesh_1a7287a252e3febe62aec3fe440809daa9" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;double&gt; &gt; xThermal::DeformLinearMesh::T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <qualifiedname>xThermal::DeformLinearMesh::T</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="844" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="844" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1DeformLinearMesh_1aa575135f2165b7c0b88d3f3398df77af" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;double&gt; &gt; xThermal::DeformLinearMesh::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <qualifiedname>xThermal::DeformLinearMesh::p</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="844" column="23" bodyfile="Library/thermo/DataStructures.h" bodystart="844" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1DeformLinearMesh_1abafc619b74712eb82401edfc082687e5" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;double&gt; &gt; xThermal::DeformLinearMesh::X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <qualifiedname>xThermal::DeformLinearMesh::X</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="844" column="25" bodyfile="Library/thermo/DataStructures.h" bodystart="844" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>2D Deformable linear &quot;structured&quot; mesh. Related to matplotlib ax.plot_wireframe() </para>
+    </detaileddescription>
+    <location file="Library/thermo/DataStructures.h" line="842" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="843" bodyend="845"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1DeformLinearMesh_1aa575135f2165b7c0b88d3f3398df77af" prot="public" virt="non-virtual"><scope>xThermal::DeformLinearMesh</scope><name>p</name></member>
+      <member refid="structxThermal_1_1DeformLinearMesh_1a7287a252e3febe62aec3fe440809daa9" prot="public" virt="non-virtual"><scope>xThermal::DeformLinearMesh</scope><name>T</name></member>
+      <member refid="structxThermal_1_1DeformLinearMesh_1abafc619b74712eb82401edfc082687e5" prot="public" virt="non-virtual"><scope>xThermal::DeformLinearMesh</scope><name>X</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

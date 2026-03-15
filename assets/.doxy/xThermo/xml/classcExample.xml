@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcExample" kind="class" language="C++" prot="public">
+    <compoundname>cExample</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcExample_1a0768236b09d5d63bb9e20875ee2bc976" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cExample::cExample</definition>
+        <argsstring>()</argsstring>
+        <name>cExample</name>
+        <qualifiedname>cExample::cExample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/cpp_crossplatform/cpp_framework/example.h" line="15" column="9" bodyfile="Library/test/cpp_crossplatform/cpp_framework/example.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classcExample_1a8adda4d22d42712eead6115a8818cae5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cExample::~cExample</definition>
+        <argsstring>()</argsstring>
+        <name>~cExample</name>
+        <qualifiedname>cExample::~cExample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/cpp_crossplatform/cpp_framework/example.h" line="16" column="9" bodyfile="Library/test/cpp_crossplatform/cpp_framework/example.cpp" bodystart="14" bodyend="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/test/cpp_crossplatform/cpp_framework/example.h" line="10" column="5" bodyfile="Library/test/cpp_crossplatform/cpp_framework/example.h" bodystart="11" bodyend="17"/>
+    <listofallmembers>
+      <member refid="classcExample_1a0768236b09d5d63bb9e20875ee2bc976" prot="public" virt="non-virtual"><scope>cExample</scope><name>cExample</name></member>
+      <member refid="classcExample_1a8adda4d22d42712eead6115a8818cae5" prot="public" virt="non-virtual"><scope>cExample</scope><name>~cExample</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

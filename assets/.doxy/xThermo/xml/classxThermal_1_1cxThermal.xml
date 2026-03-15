@@ -1,0 +1,2549 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classxThermal_1_1cxThermal" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>xThermal::cxThermal</compoundname>
+    <derivedcompoundref refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl" prot="public" virt="non-virtual">xThermal::H2ONaCl::cH2ONaCl</derivedcompoundref>
+    <derivedcompoundref refid="classxThermal_1_1IAPWS95_1_1cIAPWS95" prot="public" virt="non-virtual">xThermal::IAPWS95::cIAPWS95</derivedcompoundref>
+    <derivedcompoundref refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97" prot="public" virt="non-virtual">xThermal::IAPWS_IF97::cIAPWS_IF97</derivedcompoundref>
+    <derivedcompoundref refid="classxThermal_1_1NaCl_1_1cNaCl" prot="public" virt="non-virtual">xThermal::NaCl::cNaCl</derivedcompoundref>
+    <derivedcompoundref refid="classxThermal_1_1PROST_1_1cIAPS84" prot="public" virt="non-virtual">xThermal::PROST::cIAPS84</derivedcompoundref>
+    <includes refid="thermo_8h" local="no">thermo.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxThermal_1_1cxThermal_1a6c720bebafd947b8205410104146ba44" prot="private" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>int xThermal::cxThermal::m_num_threads</definition>
+        <argsstring></argsstring>
+        <name>m_num_threads</name>
+        <qualifiedname>xThermal::cxThermal::m_num_threads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="57" column="13" bodyfile="Library/thermo/thermo.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1cxThermal_1ade90f43e5beb7b2436e14224bf2e148b" prot="private" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref> *</type>
+        <definition>void* xThermal::cxThermal::m_pLUT</definition>
+        <argsstring></argsstring>
+        <name>m_pLUT</name>
+        <qualifiedname>xThermal::cxThermal::m_pLUT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="58" column="14" bodyfile="Library/thermo/thermo.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1cxThermal_1a86310c178e3bc63585863db582cfb197" prot="private" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>int xThermal::cxThermal::m_dim_lut</definition>
+        <argsstring></argsstring>
+        <name>m_dim_lut</name>
+        <qualifiedname>xThermal::cxThermal::m_dim_lut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="59" column="13" bodyfile="Library/thermo/thermo.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1cxThermal_1ac1fe17e123586c42ed2239e6505287de" prot="private" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref> *</type>
+        <definition>void* xThermal::cxThermal::m_pLUT_lookup</definition>
+        <argsstring></argsstring>
+        <name>m_pLUT_lookup</name>
+        <qualifiedname>xThermal::cxThermal::m_pLUT_lookup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="60" column="14" bodyfile="Library/thermo/thermo.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1cxThermal_1affa1c977dde19b3806669b9e795c272a" prot="private" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>int xThermal::cxThermal::m_dim_lut_lookup</definition>
+        <argsstring></argsstring>
+        <name>m_dim_lut_lookup</name>
+        <qualifiedname>xThermal::cxThermal::m_dim_lut_lookup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="61" column="13" bodyfile="Library/thermo/thermo.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1cxThermal_1a4f054e1c5b636fae618ff847439f2de7" prot="private" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>int xThermal::cxThermal::m_index_Rho_in_LUT</definition>
+        <argsstring></argsstring>
+        <name>m_index_Rho_in_LUT</name>
+        <qualifiedname>xThermal::cxThermal::m_index_Rho_in_LUT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="62" column="13" bodyfile="Library/thermo/thermo.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1cxThermal_1aea46f9c06e4a4b2e44a6d6b1413726ad" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref>, <ref refid="structxThermal_1_1propInfo" kindref="compound">propInfo</ref> &gt;</type>
+        <definition>std::map&lt;int, propInfo&gt; xThermal::cxThermal::m_supported_props</definition>
+        <argsstring></argsstring>
+        <name>m_supported_props</name>
+        <qualifiedname>xThermal::cxThermal::m_supported_props</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="63" column="18" bodyfile="Library/thermo/thermo.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1cxThermal_1acdc960f6f983b902b88b94f4e88338a5" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref>, <ref refid="structxThermal_1_1propInfo" kindref="compound">propInfo</ref> &gt;</type>
+        <definition>std::map&lt;int, propInfo&gt; xThermal::cxThermal::m_update_which_props</definition>
+        <argsstring></argsstring>
+        <name>m_update_which_props</name>
+        <qualifiedname>xThermal::cxThermal::m_update_which_props</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="64" column="18" bodyfile="Library/thermo/thermo.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classxThermal_1_1cxThermal_1ac9e985e8dc2959d6c8537229a60696ee" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+        <definition>bool xThermal::cxThermal::m_isShowProgressBar</definition>
+        <argsstring></argsstring>
+        <name>m_isShowProgressBar</name>
+        <qualifiedname>xThermal::cxThermal::m_isShowProgressBar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="79" column="14" bodyfile="Library/thermo/thermo.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a080b54c4784eb1aebbcc1cf5244cb528" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::initialize_data</definition>
+        <argsstring>()</argsstring>
+        <name>initialize_data</name>
+        <qualifiedname>xThermal::cxThermal::initialize_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="66" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="12" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a21d11cb2ab9144b1d2fa67b64e2551f7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::init_supported_props</definition>
+        <argsstring>()</argsstring>
+        <name>init_supported_props</name>
+        <qualifiedname>xThermal::cxThermal::init_supported_props</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="67" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="477" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a7b8da7ae38ad278f28736667233b632a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::parse_update_which_props</definition>
+        <argsstring>(int update_which_props)</argsstring>
+        <name>parse_update_which_props</name>
+        <qualifiedname>xThermal::cxThermal::parse_update_which_props</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+          <declname>update_which_props</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="68" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="512" bodyend="531"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a48aad0df3347983ebe57dc1986728761" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::destroyLUT</definition>
+        <argsstring>(void *pLUT, int &amp;dim_lut)</argsstring>
+        <name>destroyLUT</name>
+        <qualifiedname>xThermal::cxThermal::destroyLUT</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref> *</type>
+          <declname>pLUT</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref> &amp;</type>
+          <declname>dim_lut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="69" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="533" bodyend="549"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1ada930d7a306258c0a10d7e2a2c3ae277" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+            <declname>dim</declname>
+            <defname>dim</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::interp_quad_prop</definition>
+        <argsstring>(LOOKUPTABLE_FOREST::Quadrant&lt; dim, LOOKUPTABLE_FOREST::FIELD_DATA&lt; dim &gt; &gt; *targetLeaf, double *xyz_min_target, ThermodynamicProperties &amp;prop, const double xyz[dim])</argsstring>
+        <name>interp_quad_prop</name>
+        <qualifiedname>xThermal::cxThermal::interp_quad_prop</qualifiedname>
+        <param>
+          <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">LOOKUPTABLE_FOREST::Quadrant</ref>&lt; dim, <ref refid="structLOOKUPTABLE__FOREST_1_1FIELD__DATA" kindref="compound">LOOKUPTABLE_FOREST::FIELD_DATA</ref>&lt; dim &gt; &gt; *</type>
+          <declname>targetLeaf</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>xyz_min_target</declname>
+        </param>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> &amp;</type>
+          <declname>prop</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>xyz</declname>
+          <array>[dim]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="71" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="724" bodyend="749"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a9b135b6613c5319ce57ecf50c4720487" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+            <declname>dim</declname>
+            <defname>dim</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::interp_quad_prop</definition>
+        <argsstring>(LOOKUPTABLE_FOREST::Quadrant&lt; dim, LOOKUPTABLE_FOREST::FIELD_DATA&lt; dim &gt; &gt; *targetLeaf, double *xyz_min_target, double *props, const double xyz[dim])</argsstring>
+        <name>interp_quad_prop</name>
+        <qualifiedname>xThermal::cxThermal::interp_quad_prop</qualifiedname>
+        <param>
+          <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">LOOKUPTABLE_FOREST::Quadrant</ref>&lt; dim, <ref refid="structLOOKUPTABLE__FOREST_1_1FIELD__DATA" kindref="compound">LOOKUPTABLE_FOREST::FIELD_DATA</ref>&lt; dim &gt; &gt; *</type>
+          <declname>targetLeaf</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>xyz_min_target</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>props</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>xyz</declname>
+          <array>[dim]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="74" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="752" bodyend="787"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a2314586579c4061048c886be74236db7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xThermal::cxThermal::cxThermal</definition>
+        <argsstring>()</argsstring>
+        <name>cxThermal</name>
+        <qualifiedname>xThermal::cxThermal::cxThermal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="77" column="9" bodyfile="Library/thermo/thermo.cpp" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1ac7feaf94672b8ee16a914b76cedb1ff9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>xThermal::cxThermal::~cxThermal</definition>
+        <argsstring>()</argsstring>
+        <name>~cxThermal</name>
+        <qualifiedname>xThermal::cxThermal::~cxThermal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="78" column="17" bodyfile="Library/thermo/thermo.cpp" bodystart="29" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1ad65432e862bd77c4fd116598f8ed74f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::showProgressBar</definition>
+        <argsstring>(bool isShow)</argsstring>
+        <name>showProgressBar</name>
+        <qualifiedname>xThermal::cxThermal::showProgressBar</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+          <declname>isShow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="80" column="14" bodyfile="Library/thermo/thermo.h" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a41d03988aa51b30d08db19df1fca0dbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string xThermal::cxThermal::name</definition>
+        <argsstring>()=0</argsstring>
+        <name>name</name>
+        <qualifiedname>xThermal::cxThermal::name</qualifiedname>
+        <reimplementedby refid="classxThermal_1_1PROST_1_1cIAPS84_1a7de03e3e6c82688e8397d2c3f100b782">name</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a4d3de92fb6c14a070b24013fc6eeba5c">name</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a6bc041d41ef39f7d9ce29f8ffc1441dd">name</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a30cb1a1d3a189cc3f83dcd8b1652ce27">name</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1NaCl_1_1cNaCl_1ad9649fd0f288fa028500f351bf4203a4">name</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of the model </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="83" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1aaae6d6ea6a66f48860daa4d0b6eef79a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>virtual double xThermal::cxThermal::Tmin</definition>
+        <argsstring>()=0</argsstring>
+        <name>Tmin</name>
+        <qualifiedname>xThermal::cxThermal::Tmin</qualifiedname>
+        <reimplementedby refid="classxThermal_1_1PROST_1_1cIAPS84_1a982d52e05cb22939233dd16416a70dfd">Tmin</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1abfabafa793a0b828e4e5175e10cfec20">Tmin</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a1fa02bdf0998291f3e88dbd554323bdd">Tmin</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a5a96c5d4365545b082fa4bdbe269f288">Tmin</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1NaCl_1_1cNaCl_1af8ae4b1a94d82329eba3dd653ca0e5a2">Tmin</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the minimum temperature in K </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="85" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a04cebc45b1be27386dc767c7eee56ab5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>virtual double xThermal::cxThermal::Tmax</definition>
+        <argsstring>()=0</argsstring>
+        <name>Tmax</name>
+        <qualifiedname>xThermal::cxThermal::Tmax</qualifiedname>
+        <reimplementedby refid="classxThermal_1_1PROST_1_1cIAPS84_1abc22849a2f74c8a8fcc65081c2e1eaca">Tmax</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ab7c9dcd202b4e98032beb7aa1d50547b">Tmax</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a73096f64e5da4f805668670fce4b9457">Tmax</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1afe232857a064def51f69d124f164deb4">Tmax</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1NaCl_1_1cNaCl_1a190298ad12006dc4035b8f35bb0165c7">Tmax</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the maximum temperature in K </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="86" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a5800a85e519e23ccfd04c11f3bbab89b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>virtual double xThermal::cxThermal::pmin</definition>
+        <argsstring>()=0</argsstring>
+        <name>pmin</name>
+        <qualifiedname>xThermal::cxThermal::pmin</qualifiedname>
+        <reimplementedby refid="classxThermal_1_1PROST_1_1cIAPS84_1a9e7bc9900d2e38711a5138b777bf5015">pmin</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a4bd0ce575b99e9396b1bfe2bad6ad1f1">pmin</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ac2ef2f1e698cb41292b12c59a1a4cc3d">pmin</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aa0e7e2609d27cd239fb0ac03f49691fa">pmin</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1NaCl_1_1cNaCl_1a3dcf5ff575f5258a5661b3889dc45079">pmin</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the minimum pressure in Pa </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="87" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a7cc7e8214f233b89f3952a4c6ff70a92" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>virtual double xThermal::cxThermal::pmax</definition>
+        <argsstring>()=0</argsstring>
+        <name>pmax</name>
+        <qualifiedname>xThermal::cxThermal::pmax</qualifiedname>
+        <reimplementedby refid="classxThermal_1_1PROST_1_1cIAPS84_1ad0f56406061e260c4c6c208855cb12fe">pmax</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1aefdbc2d77780d635cd4e298888dd3595">pmax</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ae280d34a13a610d95c1678999a438ac9">pmax</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a35f9d474c03682d2f09bc4dc8bb343cd">pmax</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1NaCl_1_1cNaCl_1a551ee24885f6516299023cd4355ad90c">pmax</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the maximum pressure in Pa </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="88" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a13a75da8301c717105f456c9c7a19896" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>virtual double xThermal::cxThermal::Ttriple</definition>
+        <argsstring>()=0</argsstring>
+        <name>Ttriple</name>
+        <qualifiedname>xThermal::cxThermal::Ttriple</qualifiedname>
+        <reimplementedby refid="classxThermal_1_1PROST_1_1cIAPS84_1ac05ee3450794da93ffe147e070283f8e">Ttriple</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a39ed22586a3055657a384587aa12d5fb">Ttriple</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a2bf54e74807f5e3b1fb0437a074cc34e">Ttriple</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a60f00452fe44cba20fe5caa4f9901ebd">Ttriple</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1NaCl_1_1cNaCl_1ab1f86648e05cdbde07c65eb1f469f6db">Ttriple</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the triple point temperature in K </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="89" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1ab4b38c96c6ea4f9b6a79532a3d0edabb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>virtual double xThermal::cxThermal::T_critical</definition>
+        <argsstring>()=0</argsstring>
+        <name>T_critical</name>
+        <qualifiedname>xThermal::cxThermal::T_critical</qualifiedname>
+        <reimplementedby refid="classxThermal_1_1PROST_1_1cIAPS84_1a04c49973d63b665c2401a1dccf56cde4">T_critical</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a73a3bff40919befa2ddca7ba313b7de6">T_critical</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a052191b8d42af0402255602aaebe47f2">T_critical</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a7cc0386a1a35ddab0407f60652ed6f68">T_critical</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1NaCl_1_1cNaCl_1a5703b9a24fd3623b2104fdddbd0b3209">T_critical</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the critical temperature in K </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="90" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a454a4e29dac7a62800c8a42ddaf98b73" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>virtual double xThermal::cxThermal::p_critical</definition>
+        <argsstring>()=0</argsstring>
+        <name>p_critical</name>
+        <qualifiedname>xThermal::cxThermal::p_critical</qualifiedname>
+        <reimplementedby refid="classxThermal_1_1PROST_1_1cIAPS84_1a9cdcb6c459af4cba718e958f828240c3">p_critical</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1accc73fbe300306b3424731b0ee1d2494">p_critical</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a64f9ba8120d97f9e2b0e61a0c5e724c7">p_critical</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a72db79a2feb82065d821b1bddef77559">p_critical</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1NaCl_1_1cNaCl_1a11c926824f4b3ffcc5b4a9606fe48f9e">p_critical</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the critical pressure in Pa </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="91" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a5a3ef49d78de8a82b7333b2bfc382e97" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>virtual double xThermal::cxThermal::rhomass_critical</definition>
+        <argsstring>()=0</argsstring>
+        <name>rhomass_critical</name>
+        <qualifiedname>xThermal::cxThermal::rhomass_critical</qualifiedname>
+        <reimplementedby refid="classxThermal_1_1PROST_1_1cIAPS84_1a05c36584081484da7053cea652c310ce">rhomass_critical</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a6e24988d15cfeccdb5c04d91fa12eda2">rhomass_critical</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ab9a748643086a14fb093ab5509c5223f">rhomass_critical</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aba58cde4dd2ef7bd8c75514229f9d2d5">rhomass_critical</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1NaCl_1_1cNaCl_1a093bba2ef1762e96b013eff96d27936e">rhomass_critical</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the critical mass density in <formula id="3">$ kg/m^3 $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="92" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1ac63458e41ee8729b7fff59cb23e91353" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>virtual double xThermal::cxThermal::molar_mass</definition>
+        <argsstring>()=0</argsstring>
+        <name>molar_mass</name>
+        <qualifiedname>xThermal::cxThermal::molar_mass</qualifiedname>
+        <reimplementedby refid="classxThermal_1_1PROST_1_1cIAPS84_1a83462f992a5eea79e59b2c2ea14e17b7">molar_mass</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a113ef536e50cc1cc58c1a81bd79fa558">molar_mass</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a7fecf7fee4e86c539986047488ca7fb6">molar_mass</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a963eabf1ce3a54e710451fcfbd9262ca">molar_mass</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1NaCl_1_1cNaCl_1a2022a5991d7de46f04c708771a79cbfe">molar_mass</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the molar mass in kg/mol </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="93" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a3aaf46ee7758d1fd49ca0201cefdf4b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>virtual double xThermal::cxThermal::rhomolar_critical</definition>
+        <argsstring>()</argsstring>
+        <name>rhomolar_critical</name>
+        <qualifiedname>xThermal::cxThermal::rhomolar_critical</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="94" column="24" bodyfile="Library/thermo/thermo.h" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a3d7c1b12767a6348b6d291e708ec0a5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>virtual void xThermal::cxThermal::UpdateState_TPX</definition>
+        <argsstring>(ThermodynamicProperties &amp;props, const double &amp;T, const double &amp;p, const double &amp;X=0)</argsstring>
+        <name>UpdateState_TPX</name>
+        <qualifiedname>xThermal::cxThermal::UpdateState_TPX</qualifiedname>
+        <reimplementedby refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a6c402e23181d652b0b394f9857262194">UpdateState_TPX</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1PROST_1_1cIAPS84_1a8150e13aee5226b71f8bc057132e0428">UpdateState_TPX</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a65e4fdc35cc70a378485842bc5350a2f">UpdateState_TPX</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1NaCl_1_1cNaCl_1ab0c2dbfadcdf95080b7201c8902cd36b">UpdateState_TPX</reimplementedby>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> &amp;</type>
+          <declname>props</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>X</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Update state using T, p as independent variables. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the critical molar density in <formula id="360">$ mol/m^3 $</formula> </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[K] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[Pa] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="102" column="22" bodyfile="Library/thermo/thermo.h" bodystart="102" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1ac1094a81aa03a8856a5299b1f588f547" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>virtual void xThermal::cxThermal::UpdateState_HPX</definition>
+        <argsstring>(ThermodynamicProperties &amp;props, const double &amp;H, const double &amp;p, const double &amp;X=0)</argsstring>
+        <name>UpdateState_HPX</name>
+        <qualifiedname>xThermal::cxThermal::UpdateState_HPX</qualifiedname>
+        <reimplementedby refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a5b8e67bbbf29baf382f5c6541576920d">UpdateState_HPX</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1PROST_1_1cIAPS84_1af2f80c5cedc6f5d61bb7c7f1d9d90ffa">UpdateState_HPX</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ad9125fb6f05d402281af3e97e46c4c09">UpdateState_HPX</reimplementedby>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> &amp;</type>
+          <declname>props</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>X</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="103" column="22" bodyfile="Library/thermo/thermo.h" bodystart="103" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1afe86ef340ece855c4aa01ed160aa5e2c" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="structxThermal_1_1ThermodynamicPropertiesVector" kindref="compound">ThermodynamicPropertiesVector</ref></type>
+        <definition>ThermodynamicPropertiesVector xThermal::cxThermal::UpdateState_TPX</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;T, const std::vector&lt; double &gt; &amp;p, const std::vector&lt; double &gt; &amp;X, bool isMeshGrid=false) final</argsstring>
+        <name>UpdateState_TPX</name>
+        <qualifiedname>xThermal::cxThermal::UpdateState_TPX</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+          <declname>isMeshGrid</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">false</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="104" column="47" bodyfile="Library/thermo/thermo.cpp" bodystart="1273" bodyend="1333"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a5c0e0ff376db670fffd97808b39eb1a0" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="structxThermal_1_1ThermodynamicPropertiesVector" kindref="compound">ThermodynamicPropertiesVector</ref></type>
+        <definition>ThermodynamicPropertiesVector xThermal::cxThermal::UpdateState_HPX</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;H, const std::vector&lt; double &gt; &amp;p, const std::vector&lt; double &gt; &amp;X, bool isMeshGrid=false) final</argsstring>
+        <name>UpdateState_HPX</name>
+        <qualifiedname>xThermal::cxThermal::UpdateState_HPX</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+          <declname>isMeshGrid</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">false</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="105" column="47" bodyfile="Library/thermo/thermo.cpp" bodystart="1335" bodyend="1394"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a929aa6a64ac637437b0a409ffa379aab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::UpdateState_TPX</definition>
+        <argsstring>(ThermodynamicPropertiesArray &amp;stateArray, const size_t &amp;N, const double *T, const double *p, const double *X=NULL)</argsstring>
+        <name>UpdateState_TPX</name>
+        <qualifiedname>xThermal::cxThermal::UpdateState_TPX</qualifiedname>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicPropertiesArray" kindref="compound">ThermodynamicPropertiesArray</ref> &amp;</type>
+          <declname>stateArray</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">size_t</ref> &amp;</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>X</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">NULL</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="107" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="1577" bodyend="1587"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a7a9db3f1c95f91044b59478cef3c5a14" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::UpdateState_HPX</definition>
+        <argsstring>(ThermodynamicPropertiesArray &amp;stateArray, const size_t &amp;N, const double *H, const double *p, const double *X=NULL)</argsstring>
+        <name>UpdateState_HPX</name>
+        <qualifiedname>xThermal::cxThermal::UpdateState_HPX</qualifiedname>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicPropertiesArray" kindref="compound">ThermodynamicPropertiesArray</ref> &amp;</type>
+          <declname>stateArray</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">size_t</ref> &amp;</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>X</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">NULL</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="108" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="1589" bodyend="1598"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1ad2a2c4793c91176e05bd41705fe9afd3" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string xThermal::cxThermal::phase_name</definition>
+        <argsstring>(PhaseRegion phase_index) final</argsstring>
+        <name>phase_name</name>
+        <qualifiedname>xThermal::cxThermal::phase_name</qualifiedname>
+        <param>
+          <type><ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50" kindref="member">PhaseRegion</ref></type>
+          <declname>phase_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="110" column="29" bodyfile="Library/thermo/thermo.cpp" bodystart="649" bodyend="652"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1acd77431d0c19b2367db797381c2378ff" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::set_num_threads</definition>
+        <argsstring>(int num_threads) final</argsstring>
+        <name>set_num_threads</name>
+        <qualifiedname>xThermal::cxThermal::set_num_threads</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+          <declname>num_threads</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="113" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="35" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a7517c9dee29f395abb315bfc75d2ec05" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>int xThermal::cxThermal::get_num_threads</definition>
+        <argsstring>() final</argsstring>
+        <name>get_num_threads</name>
+        <qualifiedname>xThermal::cxThermal::get_num_threads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="114" column="21" bodyfile="Library/thermo/thermo.cpp" bodystart="42" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a056253dca6d9635e19acc2380f7f682e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50" kindref="member">PhaseRegion</ref></type>
+        <definition>virtual PhaseRegion xThermal::cxThermal::findPhaseRegion_TPX</definition>
+        <argsstring>(const double &amp;T, const double &amp;p, const double &amp;X=0)</argsstring>
+        <name>findPhaseRegion_TPX</name>
+        <qualifiedname>xThermal::cxThermal::findPhaseRegion_TPX</qualifiedname>
+        <reimplementedby refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a8c2fec6dd493535e3850b75940a5ddab">findPhaseRegion_TPX</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1PROST_1_1cIAPS84_1ae590eb6841e7d929ff02aba16b0bcfe2">findPhaseRegion_TPX</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a0357fa1e0a00bc647db710155b7c0b0c">findPhaseRegion_TPX</reimplementedby>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>X</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="115" column="29" bodyfile="Library/thermo/thermo.h" bodystart="115" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1aab0b032c6538401c6f9cfbe4c467d4b8" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::map&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref>, <ref refid="structxThermal_1_1propInfo" kindref="compound">propInfo</ref> &gt; &amp;</type>
+        <definition>const std::map&lt; int, propInfo &gt; &amp; xThermal::cxThermal::get_UpdateWhichProps</definition>
+        <argsstring>() final</argsstring>
+        <name>get_UpdateWhichProps</name>
+        <qualifiedname>xThermal::cxThermal::get_UpdateWhichProps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="116" column="32" bodyfile="Library/thermo/thermo.cpp" bodystart="646" bodyend="648"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1ad4bb785d01a6aac083e1e3c481b1e485" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>virtual void xThermal::cxThermal::createLUT_2D</definition>
+        <argsstring>(double xy_min[2], double xy_max[2], double constZ, LOOKUPTABLE_FOREST::CONST_WHICH_VAR const_which_var, LOOKUPTABLE_FOREST::EOS_ENERGY TorH, int min_level=4, int max_level=6, int update_which_props=0) final</argsstring>
+        <name>createLUT_2D</name>
+        <qualifiedname>xThermal::cxThermal::createLUT_2D</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>xy_min</declname>
+          <array>[2]</array>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>xy_max</declname>
+          <array>[2]</array>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>constZ</declname>
+        </param>
+        <param>
+          <type>LOOKUPTABLE_FOREST::CONST_WHICH_VAR</type>
+          <declname>const_which_var</declname>
+        </param>
+        <param>
+          <type>LOOKUPTABLE_FOREST::EOS_ENERGY</type>
+          <declname>TorH</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+          <declname>min_level</declname>
+          <defval>4</defval>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+          <declname>max_level</declname>
+          <defval>6</defval>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+          <declname>update_which_props</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="117" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a26dd1d5506a4a837b03137fc8084dd7c" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::createLUT_2D</definition>
+        <argsstring>(double xmin, double xmax, double ymin, double ymax, double constZ, LOOKUPTABLE_FOREST::CONST_WHICH_VAR const_which_var, LOOKUPTABLE_FOREST::EOS_ENERGY TorH, int min_level=4, int max_level=6, int update_which_props=0) final</argsstring>
+        <name>createLUT_2D</name>
+        <qualifiedname>xThermal::cxThermal::createLUT_2D</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>xmin</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>xmax</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>ymin</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>ymax</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>constZ</declname>
+        </param>
+        <param>
+          <type>LOOKUPTABLE_FOREST::CONST_WHICH_VAR</type>
+          <declname>const_which_var</declname>
+        </param>
+        <param>
+          <type>LOOKUPTABLE_FOREST::EOS_ENERGY</type>
+          <declname>TorH</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+          <declname>min_level</declname>
+          <defval>4</defval>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+          <declname>max_level</declname>
+          <defval>6</defval>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+          <declname>update_which_props</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="119" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="637" bodyend="644"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1ad2d8ab7263231e60593e889815b0c46f" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>virtual void xThermal::cxThermal::createLUT_3D</definition>
+        <argsstring>(double xyz_min[3], double xyz_max[3], LOOKUPTABLE_FOREST::EOS_ENERGY TorH, int min_level=4, int max_level=6, int update_which_props=0) final</argsstring>
+        <name>createLUT_3D</name>
+        <qualifiedname>xThermal::cxThermal::createLUT_3D</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>xyz_min</declname>
+          <array>[3]</array>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>xyz_max</declname>
+          <array>[3]</array>
+        </param>
+        <param>
+          <type>LOOKUPTABLE_FOREST::EOS_ENERGY</type>
+          <declname>TorH</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+          <declname>min_level</declname>
+          <defval>4</defval>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+          <declname>max_level</declname>
+          <defval>6</defval>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+          <declname>update_which_props</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="121" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a35bccaf5cb9424b49117a7c288d5c510" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::createLUT_3D</definition>
+        <argsstring>(double xmin, double xmax, double ymin, double ymax, double zmin, double zmax, LOOKUPTABLE_FOREST::EOS_ENERGY TorH, int min_level=4, int max_level=6, int update_which_props=0) final</argsstring>
+        <name>createLUT_3D</name>
+        <qualifiedname>xThermal::cxThermal::createLUT_3D</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>xmin</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>xmax</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>ymin</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>ymax</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>zmin</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>zmax</declname>
+        </param>
+        <param>
+          <type>LOOKUPTABLE_FOREST::EOS_ENERGY</type>
+          <declname>TorH</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+          <declname>min_level</declname>
+          <defval>4</defval>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+          <declname>max_level</declname>
+          <defval>6</defval>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+          <declname>update_which_props</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="122" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="1453" bodyend="1460"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a76b25e7264dfa903b2c77f7ac1cca6d4" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::save_lut_to_vtk</definition>
+        <argsstring>(std::string filename, bool isNormalizeXYZ=true) final</argsstring>
+        <name>save_lut_to_vtk</name>
+        <qualifiedname>xThermal::cxThermal::save_lut_to_vtk</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+          <declname>isNormalizeXYZ</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">true</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="123" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="551" bodyend="561"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a20ff092e4c13c13abb16b58a05b6c73d" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::save_lut_to_binary</definition>
+        <argsstring>(std::string filename) final</argsstring>
+        <name>save_lut_to_binary</name>
+        <qualifiedname>xThermal::cxThermal::save_lut_to_binary</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="124" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="563" bodyend="569"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1aa8d2dbcb90e5c336e3c92554659759ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">LOOKUPTABLE_FOREST::Quadrant</ref>&lt; 2, <ref refid="structLOOKUPTABLE__FOREST_1_1FIELD__DATA" kindref="compound">LOOKUPTABLE_FOREST::FIELD_DATA</ref>&lt; 2 &gt; &gt; *</type>
+        <definition>LOOKUPTABLE_FOREST::Quadrant&lt; 2, LOOKUPTABLE_FOREST::FIELD_DATA&lt; 2 &gt; &gt; * xThermal::cxThermal::lookup</definition>
+        <argsstring>(ThermodynamicProperties &amp;prop, double x, double y)</argsstring>
+        <name>lookup</name>
+        <qualifiedname>xThermal::cxThermal::lookup</qualifiedname>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> &amp;</type>
+          <declname>prop</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="125" column="38" bodyfile="Library/thermo/thermo.cpp" bodystart="668" bodyend="721"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a17f4d34888919db43c7f5cfde5800f79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">LOOKUPTABLE_FOREST::Quadrant</ref>&lt; 2, <ref refid="structLOOKUPTABLE__FOREST_1_1FIELD__DATA" kindref="compound">LOOKUPTABLE_FOREST::FIELD_DATA</ref>&lt; 2 &gt; &gt; *</type>
+        <definition>LOOKUPTABLE_FOREST::Quadrant&lt; 2, LOOKUPTABLE_FOREST::FIELD_DATA&lt; 2 &gt; &gt; * xThermal::cxThermal::lookup</definition>
+        <argsstring>(double *props, double *xyz_min_target, double x, double y, bool is_cal=true)</argsstring>
+        <name>lookup</name>
+        <qualifiedname>xThermal::cxThermal::lookup</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>props</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>xyz_min_target</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+          <declname>is_cal</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">true</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="126" column="38" bodyfile="Library/thermo/thermo.cpp" bodystart="790" bodyend="870"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a26f3394bb36fd9462882e8783b87496c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">LOOKUPTABLE_FOREST::Quadrant</ref>&lt; 3, <ref refid="structLOOKUPTABLE__FOREST_1_1FIELD__DATA" kindref="compound">LOOKUPTABLE_FOREST::FIELD_DATA</ref>&lt; 3 &gt; &gt; *</type>
+        <definition>LOOKUPTABLE_FOREST::Quadrant&lt; 3, LOOKUPTABLE_FOREST::FIELD_DATA&lt; 3 &gt; &gt; * xThermal::cxThermal::lookup</definition>
+        <argsstring>(ThermodynamicProperties &amp;prop, double x, double y, double z)</argsstring>
+        <name>lookup</name>
+        <qualifiedname>xThermal::cxThermal::lookup</qualifiedname>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> &amp;</type>
+          <declname>prop</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="127" column="38" bodyfile="Library/thermo/thermo.cpp" bodystart="873" bodyend="906"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a6577db0fac8ac9d1c55933d4d7d270f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">LOOKUPTABLE_FOREST::Quadrant</ref>&lt; 3, <ref refid="structLOOKUPTABLE__FOREST_1_1FIELD__DATA" kindref="compound">LOOKUPTABLE_FOREST::FIELD_DATA</ref>&lt; 3 &gt; &gt; *</type>
+        <definition>LOOKUPTABLE_FOREST::Quadrant&lt; 3, LOOKUPTABLE_FOREST::FIELD_DATA&lt; 3 &gt; &gt; * xThermal::cxThermal::lookup</definition>
+        <argsstring>(double *props, double *xyz_min_target, double x, double y, double z, bool is_cal=true)</argsstring>
+        <name>lookup</name>
+        <qualifiedname>xThermal::cxThermal::lookup</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>props</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>xyz_min_target</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+          <declname>is_cal</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">true</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="128" column="38" bodyfile="Library/thermo/thermo.cpp" bodystart="909" bodyend="952"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a6bb528c3c3dfd646e0fb762edbf88fd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">LOOKUPTABLE_FOREST::Quadrant</ref>&lt; 2, <ref refid="structLOOKUPTABLE__FOREST_1_1FIELD__DATA" kindref="compound">LOOKUPTABLE_FOREST::FIELD_DATA</ref>&lt; 2 &gt; &gt; *</type>
+        <definition>LOOKUPTABLE_FOREST::Quadrant&lt; 2, LOOKUPTABLE_FOREST::FIELD_DATA&lt; 2 &gt; &gt; * xThermal::cxThermal::lookup_only</definition>
+        <argsstring>(ThermodynamicProperties &amp;prop, double x, double y)</argsstring>
+        <name>lookup_only</name>
+        <qualifiedname>xThermal::cxThermal::lookup_only</qualifiedname>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> &amp;</type>
+          <declname>prop</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="129" column="38" bodyfile="Library/thermo/thermo.cpp" bodystart="955" bodyend="973"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a415cc702ea606481ebbf8d33ad982709" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">LOOKUPTABLE_FOREST::Quadrant</ref>&lt; 3, <ref refid="structLOOKUPTABLE__FOREST_1_1FIELD__DATA" kindref="compound">LOOKUPTABLE_FOREST::FIELD_DATA</ref>&lt; 3 &gt; &gt; *</type>
+        <definition>LOOKUPTABLE_FOREST::Quadrant&lt; 3, LOOKUPTABLE_FOREST::FIELD_DATA&lt; 3 &gt; &gt; * xThermal::cxThermal::lookup_only</definition>
+        <argsstring>(ThermodynamicProperties &amp;prop, double x, double y, double z)</argsstring>
+        <name>lookup_only</name>
+        <qualifiedname>xThermal::cxThermal::lookup_only</qualifiedname>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> &amp;</type>
+          <declname>prop</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="130" column="38" bodyfile="Library/thermo/thermo.cpp" bodystart="976" bodyend="996"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1abea9131853ebea3cf40745470e9893d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::loadLUT</definition>
+        <argsstring>(const std::string &amp;filename, bool printStatus=true)</argsstring>
+        <name>loadLUT</name>
+        <qualifiedname>xThermal::cxThermal::loadLUT</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+          <declname>printStatus</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">true</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="131" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="998" bodyend="1045"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1ab10e4e206240690a92ce59c44bcb74f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref> *</type>
+        <definition>void * xThermal::cxThermal::get_pLUT</definition>
+        <argsstring>()</argsstring>
+        <name>get_pLUT</name>
+        <qualifiedname>xThermal::cxThermal::get_pLUT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="132" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="1614" bodyend="1620"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1ae562806cfcaff5aa82512d2858144564" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref> *</type>
+        <definition>void * xThermal::cxThermal::get_pLUT_lookup</definition>
+        <argsstring>()</argsstring>
+        <name>get_pLUT_lookup</name>
+        <qualifiedname>xThermal::cxThermal::get_pLUT_lookup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="133" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="1622" bodyend="1628"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a1fadd87926ebe880d3273ea3b2a930f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>int xThermal::cxThermal::get_dim_lut</definition>
+        <argsstring>()</argsstring>
+        <name>get_dim_lut</name>
+        <qualifiedname>xThermal::cxThermal::get_dim_lut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="134" column="13" bodyfile="Library/thermo/thermo.h" bodystart="134" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a5004c02f781d224121fed323d2e7fdb6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>int xThermal::cxThermal::get_dim_lut_lookup</definition>
+        <argsstring>()</argsstring>
+        <name>get_dim_lut_lookup</name>
+        <qualifiedname>xThermal::cxThermal::get_dim_lut_lookup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="135" column="13" bodyfile="Library/thermo/thermo.h" bodystart="135" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a1a54bed7b543424948282e9c8d53d8e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50" kindref="member">PhaseRegion</ref></type>
+        <definition>PhaseRegion xThermal::cxThermal::Rho_lookup</definition>
+        <argsstring>(double &amp;Rho_estimate, double &amp;Rho_min, double &amp;Rho_max, const double &amp;T, const double &amp;P)</argsstring>
+        <name>Rho_lookup</name>
+        <qualifiedname>xThermal::cxThermal::Rho_lookup</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>Rho_estimate</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>Rho_min</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>Rho_max</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>P</declname>
+          <defname>y</defname>
+        </param>
+        <briefdescription>
+<para>Only lookup density for given T,P,X from loaded LUT. This information can be a good guess of Rho for IAPWS95 solution of Rho. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Rho_estimate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interpolated density in the quad. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Rho_min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum rho in the target (searched) quad </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Rho_max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum rho in the target (searched) quad </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[K] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[Pa] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="136" column="21" bodyfile="Library/thermo/thermo.cpp" bodystart="1055" bodyend="1092"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a872af1d919899a42bb3ce8d973c117b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>virtual double xThermal::cxThermal::Boiling_p</definition>
+        <argsstring>(const double &amp;T)</argsstring>
+        <name>Boiling_p</name>
+        <qualifiedname>xThermal::cxThermal::Boiling_p</qualifiedname>
+        <reimplementedby refid="classxThermal_1_1PROST_1_1cIAPS84_1a3dd7ae80bcd9225743f9f4c369c7ced0">Boiling_p</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a7c50e7cf051ef4fa8fb545b586b0d039">Boiling_p</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a8b586f9bbe66ceb02872b729ee4b34d2">Boiling_p</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1NaCl_1_1cNaCl_1a54a39f4e9bb8729f13b8b7c3fe755754">Boiling_p</reimplementedby>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate boiling pressure [Pa] of water for a given T [K] <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="143" column="24" bodyfile="Library/thermo/thermo.h" bodystart="143" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a1dc4226ef05683a6596d59833ab65d44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>virtual double xThermal::cxThermal::Boiling_T</definition>
+        <argsstring>(const double &amp;p)</argsstring>
+        <name>Boiling_T</name>
+        <qualifiedname>xThermal::cxThermal::Boiling_T</qualifiedname>
+        <reimplementedby refid="classxThermal_1_1PROST_1_1cIAPS84_1a24331d561462a46ddcacf60f30412ba6">Boiling_T</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a9a28becb21cf10f16d4e78ebb8f78bea">Boiling_T</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1NaCl_1_1cNaCl_1a34f46456146d5c0bb25ea31f38378752">Boiling_T</reimplementedby>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate boiling temperature [K] of water for a given p [Pa] <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="149" column="24" bodyfile="Library/thermo/thermo.h" bodystart="149" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a85bd89ebf43267eadc91d8bcbb3ca7e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>virtual double xThermal::cxThermal::Boiling_p</definition>
+        <argsstring>(const double &amp;T, double &amp;rho_l, double &amp;rho_v)</argsstring>
+        <name>Boiling_p</name>
+        <qualifiedname>xThermal::cxThermal::Boiling_p</qualifiedname>
+        <reimplementedby refid="classxThermal_1_1PROST_1_1cIAPS84_1aa516db1c3479558c0e7820e1b28237e4">Boiling_p</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a41c593a082880b8808e6409eb2d3dee4">Boiling_p</reimplementedby>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>rho_l</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>rho_v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate both boiling temperature and density of liquid and vapor phase. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[K] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rho_l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[kg/m3] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rho_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[kg/m3] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="157" column="24" bodyfile="Library/thermo/thermo.h" bodystart="157" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a50d71178278a67ccad67316f8d9d99d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>virtual double xThermal::cxThermal::Boiling_T</definition>
+        <argsstring>(const double &amp;p, double &amp;rho_l, double &amp;rho_v)</argsstring>
+        <name>Boiling_T</name>
+        <qualifiedname>xThermal::cxThermal::Boiling_T</qualifiedname>
+        <reimplementedby refid="classxThermal_1_1PROST_1_1cIAPS84_1a25152e5d790881c545d7bf55a2b6378f">Boiling_T</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1aa6a2cf4a92cb932ab0252c2449e07433">Boiling_T</reimplementedby>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>rho_l</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>rho_v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate both boiling temperature and density of liquid and vapor phase. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[Pa] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rho_l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[kg/m3] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rho_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[kg/m3] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="165" column="24" bodyfile="Library/thermo/thermo.h" bodystart="165" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a5e60254d3b64b561693f0d01aa2e272f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>virtual double xThermal::cxThermal::Boiling_T</definition>
+        <argsstring>(const double &amp;p, ThermodynamicProperties &amp;props)</argsstring>
+        <name>Boiling_T</name>
+        <qualifiedname>xThermal::cxThermal::Boiling_T</qualifiedname>
+        <reimplementedby refid="classxThermal_1_1PROST_1_1cIAPS84_1a50380fa2d4de4f34adebf78e31ac3773">Boiling_T</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a2f9d6f8468824fe16754895c16252001">Boiling_T</reimplementedby>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> &amp;</type>
+          <declname>props</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="166" column="24" bodyfile="Library/thermo/thermo.h" bodystart="166" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a426c0796ffc4b4810ccb309067433e55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>virtual double xThermal::cxThermal::Boiling_p</definition>
+        <argsstring>(const double &amp;T, ThermodynamicProperties &amp;props)</argsstring>
+        <name>Boiling_p</name>
+        <qualifiedname>xThermal::cxThermal::Boiling_p</qualifiedname>
+        <reimplementedby refid="classxThermal_1_1PROST_1_1cIAPS84_1a7750a52e70977c85ebf2794da5eea7b8">Boiling_p</reimplementedby>
+        <reimplementedby refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a4f67b665087dc6c1030dd0da51156fe9">Boiling_p</reimplementedby>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> &amp;</type>
+          <declname>props</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="167" column="24" bodyfile="Library/thermo/thermo.h" bodystart="167" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1add580814bcf501ea557a03b7eac042bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::Triangulation</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;x_poly, const std::vector&lt; double &gt; &amp;y_poly, const double pointInMesh[2], const double dxdy[2], TriMesh &amp;trimesh, bool normalize=true)</argsstring>
+        <name>Triangulation</name>
+        <qualifiedname>xThermal::cxThermal::Triangulation</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>x_poly</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>y_poly</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>pointInMesh</declname>
+          <array>[2]</array>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>dxdy</declname>
+          <array>[2]</array>
+        </param>
+        <param>
+          <type><ref refid="structxThermal_1_1TriMesh" kindref="compound">TriMesh</ref> &amp;</type>
+          <declname>trimesh</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+          <declname>normalize</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">true</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Triangulate a polygon using the Triangle code, see <ulink url="https://www.cs.cmu.edu/~quake/triangle.html">https://www.cs.cmu.edu/~quake/triangle.html</ulink> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x_poly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y_poly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>trimesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="168" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="80" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a7d21c71bc4fee7d64d08a907a2922fe2" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::writeTriMesh2Txt</definition>
+        <argsstring>(const TriMesh &amp;mesh, std::string path_out=&quot;.&quot;) final</argsstring>
+        <name>writeTriMesh2Txt</name>
+        <qualifiedname>xThermal::cxThermal::writeTriMesh2Txt</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1TriMesh" kindref="compound">TriMesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>path_out</declname>
+          <defval>&quot;.&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="169" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="202" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a774e75ede316e2cf1151998b7e716094" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::writeXXYYZZ2VTU</definition>
+        <argsstring>(std::string vtuFile, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;XX, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;YY, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;ZZ, const double scale_x=1.0, const double scale_y=1.0, double scale_z=1.0) final</argsstring>
+        <name>writeXXYYZZ2VTU</name>
+        <qualifiedname>xThermal::cxThermal::writeXXYYZZ2VTU</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>vtuFile</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &gt; &amp;</type>
+          <declname>XX</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &gt; &amp;</type>
+          <declname>YY</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &gt; &amp;</type>
+          <declname>ZZ</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>scale_x</declname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>scale_y</declname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>scale_z</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write a grid mesh to vtu file. The grid is described by three/to 2-D array. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vtuFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>XX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>YY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ZZ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale_z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="171" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="231" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a2da135b28df9f19644be7d405bbe9509" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::writeLine2VTU</definition>
+        <argsstring>(std::string vtuFile, const std::vector&lt; double &gt; &amp;X, const std::vector&lt; double &gt; &amp;Y, const std::vector&lt; double &gt; &amp;Z, const double scale_x=1.0, const double scale_y=1.0, double scale_z=1.0) final</argsstring>
+        <name>writeLine2VTU</name>
+        <qualifiedname>xThermal::cxThermal::writeLine2VTU</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>vtuFile</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>Y</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>Z</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>scale_x</declname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>scale_y</declname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>scale_z</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="173" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="291" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a8b93eee1a5d36c6cedaa33dd3f8e93a6" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::writePhaseBoundaries2VTU</definition>
+        <argsstring>(std::string outputPath, const PhaseBoundaries &amp;phaseBoundaries, double scale_T=1, double scale_p=1, double scale_X=1) final</argsstring>
+        <name>writePhaseBoundaries2VTU</name>
+        <qualifiedname>xThermal::cxThermal::writePhaseBoundaries2VTU</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>outputPath</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1PhaseBoundaries" kindref="compound">PhaseBoundaries</ref> &amp;</type>
+          <declname>phaseBoundaries</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>scale_T</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>scale_p</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>scale_X</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="174" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="338" bodyend="377"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a100ba0ae27d311a3726e53cf4671aee1" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::normalizePhaseBoundaries</definition>
+        <argsstring>(PhaseBoundaries &amp;phaseBoundaries) final</argsstring>
+        <name>normalizePhaseBoundaries</name>
+        <qualifiedname>xThermal::cxThermal::normalizePhaseBoundaries</qualifiedname>
+        <param>
+          <type><ref refid="structxThermal_1_1PhaseBoundaries" kindref="compound">PhaseBoundaries</ref> &amp;</type>
+          <declname>phaseBoundaries</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Normalize phase boundaries p,T,X to [0,1] range. This function is designed for VTU format output, because the data visualization in ParaView is default supported x,y,z in 1:1:1 scale. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>phaseBoundaries</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="175" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="383" bodyend="474"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1ab803d85ba54f23bd952f2b0dddaf4771" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::writeMeshGrid2VTK</definition>
+        <argsstring>(const std::string &amp;vtkFile, const std::vector&lt; double &gt; &amp;x, const std::string &amp;xTitle, const std::vector&lt; double &gt; &amp;y, const std::string &amp;yTitle, const std::vector&lt; double &gt; &amp;z, const std::string &amp;zTitle, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;props, const std::vector&lt; propInfo &gt; &amp;propsInfo, bool isNormalize=false) final</argsstring>
+        <name>writeMeshGrid2VTK</name>
+        <qualifiedname>xThermal::cxThermal::writeMeshGrid2VTK</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::string &amp;</type>
+          <declname>vtkFile</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::string &amp;</type>
+          <declname>xTitle</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::string &amp;</type>
+          <declname>yTitle</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::string &amp;</type>
+          <declname>zTitle</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &gt; &amp;</type>
+          <declname>props</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="structxThermal_1_1propInfo" kindref="compound">propInfo</ref> &gt; &amp;</type>
+          <declname>propsInfo</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+          <declname>isNormalize</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">false</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="176" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="1462" bodyend="1575"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1ab445f14e450a7bab32910860f48697d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">class</ref> T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T xThermal::cxThermal::min_vector</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;x)</argsstring>
+        <name>min_vector</name>
+        <qualifiedname>xThermal::cxThermal::min_vector</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; T &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="179" column="22" bodyfile="Library/thermo/thermo.h" bodystart="179" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1adb79d590bd8c3a980a215c1a9762cbac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">class</ref> T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T xThermal::cxThermal::max_vector</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;x)</argsstring>
+        <name>max_vector</name>
+        <qualifiedname>xThermal::cxThermal::max_vector</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; T &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="190" column="22" bodyfile="Library/thermo/thermo.h" bodystart="190" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1afef0be88b200e99935b46e535c5754ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">class</ref> T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T xThermal::cxThermal::sum_vector</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;x)</argsstring>
+        <name>sum_vector</name>
+        <qualifiedname>xThermal::cxThermal::sum_vector</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; T &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="201" column="22" bodyfile="Library/thermo/thermo.h" bodystart="201" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a9e116b0051d1d7171a41fc116f6c43ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">class</ref> T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T xThermal::cxThermal::mean_vector</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;x)</argsstring>
+        <name>mean_vector</name>
+        <qualifiedname>xThermal::cxThermal::mean_vector</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; T &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="211" column="22" bodyfile="Library/thermo/thermo.h" bodystart="211" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1ac5f99481c6cd9da1089920870f5884f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">typename</ref> T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt; T &gt; xThermal::cxThermal::linspace</definition>
+        <argsstring>(T xmin, T xmax, std::size_t n, bool isLogScale=false)</argsstring>
+        <name>linspace</name>
+        <qualifiedname>xThermal::cxThermal::linspace</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>xmin</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>xmax</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+          <declname>isLogScale</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">false</ref></defval>
+        </param>
+        <briefdescription>
+<para>Make a linearly spaced vector of points. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="216" column="33" bodyfile="Library/thermo/thermo.h" bodystart="216" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1aaedbcb53b296a96b1e65a1247e859c94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">typename</ref> T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt; T &gt; xThermal::cxThermal::linspace</definition>
+        <argsstring>(T xmindxxmax[3])</argsstring>
+        <name>linspace</name>
+        <qualifiedname>xThermal::cxThermal::linspace</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>xmindxxmax</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="235" column="33" bodyfile="Library/thermo/thermo.h" bodystart="235" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1af3b3b4ad31b34288c94903d19c540c7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">typename</ref> T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">size_t</ref> &gt;</type>
+        <definition>std::vector&lt; size_t &gt; xThermal::cxThermal::meshgrid</definition>
+        <argsstring>(T xmindxxmax[3], T ymindyymax[3], std::vector&lt; T &gt; &amp;XX, std::vector&lt; T &gt; &amp;YY)</argsstring>
+        <name>meshgrid</name>
+        <qualifiedname>xThermal::cxThermal::meshgrid</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>xmindxxmax</declname>
+          <array>[3]</array>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>ymindyymax</declname>
+          <array>[3]</array>
+        </param>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <declname>XX</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <declname>YY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a regular mesh grid. <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xmindxxmax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[xmin, dx, xmax] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ymindyymax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[ymin, dy, ymax] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>XX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1D vector of X in order of [x0, x1, ..., xn; x0, x1, ..., xn; ... ; x0, x1, ..., xn] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>YY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1D vector of Y in order of [y0, y0, ..., y0; y1, y1, ..., y1; ...; yn, yn, ..., yn] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[nx, ny] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="257" column="33" bodyfile="Library/thermo/thermo.h" bodystart="257" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a49daf6499acf6dc965fbe396a4ce4897" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
+        <definition>ThermodynamicProperties xThermal::cxThermal::Boiling_p_props</definition>
+        <argsstring>(const double &amp;T)</argsstring>
+        <name>Boiling_p_props</name>
+        <qualifiedname>xThermal::cxThermal::Boiling_p_props</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="277" column="33" bodyfile="Library/thermo/thermo.cpp" bodystart="654" bodyend="658"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1ac824ca28cf0c5e4884bf692f8e313e1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
+        <definition>ThermodynamicProperties xThermal::cxThermal::Boiling_T_props</definition>
+        <argsstring>(const double &amp;p)</argsstring>
+        <name>Boiling_T_props</name>
+        <qualifiedname>xThermal::cxThermal::Boiling_T_props</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="278" column="33" bodyfile="Library/thermo/thermo.cpp" bodystart="660" bodyend="665"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a89ce494a32e38aafb64abd36fdf67229" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
+        <definition>ThermodynamicProperties xThermal::cxThermal::UpdateState_TPX</definition>
+        <argsstring>(const double &amp;T, const double &amp;p, const double &amp;X=0)</argsstring>
+        <name>UpdateState_TPX</name>
+        <qualifiedname>xThermal::cxThermal::UpdateState_TPX</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>X</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="279" column="33" bodyfile="Library/thermo/thermo.cpp" bodystart="1094" bodyend="1098"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a889b6fb0deadb20dacd44338a1c4a144" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
+        <definition>ThermodynamicProperties xThermal::cxThermal::UpdateState_HPX</definition>
+        <argsstring>(const double &amp;H, const double &amp;p, const double &amp;X=0)</argsstring>
+        <name>UpdateState_HPX</name>
+        <qualifiedname>xThermal::cxThermal::UpdateState_HPX</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>X</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="280" column="33" bodyfile="Library/thermo/thermo.cpp" bodystart="1099" bodyend="1103"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a4be2a8d169afbe20f14b5ca6c06ab9cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structxThermal_1_1Head__AMR__LUT" kindref="compound">Head_AMR_LUT</ref></type>
+        <definition>Head_AMR_LUT xThermal::cxThermal::getLutInfo</definition>
+        <argsstring>(std::string file_lut, bool printSummary=true)</argsstring>
+        <name>getLutInfo</name>
+        <qualifiedname>xThermal::cxThermal::getLutInfo</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>file_lut</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+          <declname>printSummary</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">true</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_lut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The .bin file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="281" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="1148" bodyend="1271"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classxThermal_1_1cxThermal_1a8349d4a9fd155cc40963b1cac6dcc003" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INDEX_FLUID</type>
+        <definition>INDEX_FLUID xThermal::cxThermal::validateFluid</definition>
+        <argsstring>(const std::string &amp;fluidName)</argsstring>
+        <name>validateFluid</name>
+        <qualifiedname>xThermal::cxThermal::validateFluid</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::string &amp;</type>
+          <declname>fluidName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.h" line="81" column="28" bodyfile="Library/thermo/thermo.cpp" bodystart="1600" bodyend="1612"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Top abstract class of the thermodynamic model. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>xThermal::H2ONaCl::cH2ONaCl</label>
+        <link refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>xThermal::IAPWS95::cIAPWS95</label>
+        <link refid="classxThermal_1_1IAPWS95_1_1cIAPWS95"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>xThermal::IAPWS_IF97::cIAPWS_IF97</label>
+        <link refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>xThermal::NaCl::cNaCl</label>
+        <link refid="classxThermal_1_1NaCl_1_1cNaCl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>xThermal::PROST::cIAPS84</label>
+        <link refid="classxThermal_1_1PROST_1_1cIAPS84"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>xThermal::cxThermal</label>
+        <link refid="classxThermal_1_1cxThermal"/>
+      </node>
+    </inheritancegraph>
+    <location file="Library/thermo/thermo.h" line="52" column="5" bodyfile="Library/thermo/thermo.h" bodystart="53" bodyend="282"/>
+    <listofallmembers>
+      <member refid="classxThermal_1_1cxThermal_1a872af1d919899a42bb3ce8d973c117b7" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>Boiling_p</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a85bd89ebf43267eadc91d8bcbb3ca7e0" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>Boiling_p</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a426c0796ffc4b4810ccb309067433e55" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>Boiling_p</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a49daf6499acf6dc965fbe396a4ce4897" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>Boiling_p_props</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a1dc4226ef05683a6596d59833ab65d44" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>Boiling_T</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a50d71178278a67ccad67316f8d9d99d3" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>Boiling_T</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a5e60254d3b64b561693f0d01aa2e272f" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>Boiling_T</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ac824ca28cf0c5e4884bf692f8e313e1f" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>Boiling_T_props</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ad4bb785d01a6aac083e1e3c481b1e485" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>createLUT_2D</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a26dd1d5506a4a837b03137fc8084dd7c" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>createLUT_2D</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ad2d8ab7263231e60593e889815b0c46f" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>createLUT_3D</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a35bccaf5cb9424b49117a7c288d5c510" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>createLUT_3D</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a2314586579c4061048c886be74236db7" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>cxThermal</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a48aad0df3347983ebe57dc1986728761" prot="private" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>destroyLUT</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a056253dca6d9635e19acc2380f7f682e" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>findPhaseRegion_TPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a1fadd87926ebe880d3273ea3b2a930f6" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>get_dim_lut</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a5004c02f781d224121fed323d2e7fdb6" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>get_dim_lut_lookup</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a7517c9dee29f395abb315bfc75d2ec05" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>get_num_threads</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ab10e4e206240690a92ce59c44bcb74f2" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>get_pLUT</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ae562806cfcaff5aa82512d2858144564" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>get_pLUT_lookup</name></member>
+      <member refid="classxThermal_1_1cxThermal_1aab0b032c6538401c6f9cfbe4c467d4b8" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>get_UpdateWhichProps</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a4be2a8d169afbe20f14b5ca6c06ab9cc" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>getLutInfo</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a21d11cb2ab9144b1d2fa67b64e2551f7" prot="private" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>init_supported_props</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a080b54c4784eb1aebbcc1cf5244cb528" prot="private" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>initialize_data</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ada930d7a306258c0a10d7e2a2c3ae277" prot="private" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>interp_quad_prop</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a9b135b6613c5319ce57ecf50c4720487" prot="private" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>interp_quad_prop</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ac5f99481c6cd9da1089920870f5884f9" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>linspace</name></member>
+      <member refid="classxThermal_1_1cxThermal_1aaedbcb53b296a96b1e65a1247e859c94" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>linspace</name></member>
+      <member refid="classxThermal_1_1cxThermal_1abea9131853ebea3cf40745470e9893d5" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>loadLUT</name></member>
+      <member refid="classxThermal_1_1cxThermal_1aa8d2dbcb90e5c336e3c92554659759ac" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>lookup</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a17f4d34888919db43c7f5cfde5800f79" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>lookup</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a26f3394bb36fd9462882e8783b87496c" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>lookup</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a6577db0fac8ac9d1c55933d4d7d270f8" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>lookup</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a6bb528c3c3dfd646e0fb762edbf88fd1" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>lookup_only</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a415cc702ea606481ebbf8d33ad982709" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>lookup_only</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a86310c178e3bc63585863db582cfb197" prot="private" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>m_dim_lut</name></member>
+      <member refid="classxThermal_1_1cxThermal_1affa1c977dde19b3806669b9e795c272a" prot="private" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>m_dim_lut_lookup</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a4f054e1c5b636fae618ff847439f2de7" prot="private" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>m_index_Rho_in_LUT</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ac9e985e8dc2959d6c8537229a60696ee" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>m_isShowProgressBar</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a6c720bebafd947b8205410104146ba44" prot="private" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>m_num_threads</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ade90f43e5beb7b2436e14224bf2e148b" prot="private" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>m_pLUT</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ac1fe17e123586c42ed2239e6505287de" prot="private" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>m_pLUT_lookup</name></member>
+      <member refid="classxThermal_1_1cxThermal_1aea46f9c06e4a4b2e44a6d6b1413726ad" prot="private" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>m_supported_props</name></member>
+      <member refid="classxThermal_1_1cxThermal_1acdc960f6f983b902b88b94f4e88338a5" prot="private" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>m_update_which_props</name></member>
+      <member refid="classxThermal_1_1cxThermal_1adb79d590bd8c3a980a215c1a9762cbac" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>max_vector</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a9e116b0051d1d7171a41fc116f6c43ff" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>mean_vector</name></member>
+      <member refid="classxThermal_1_1cxThermal_1af3b3b4ad31b34288c94903d19c540c7b" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>meshgrid</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ab445f14e450a7bab32910860f48697d1" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>min_vector</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ac63458e41ee8729b7fff59cb23e91353" prot="public" virt="pure-virtual"><scope>xThermal::cxThermal</scope><name>molar_mass</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a41d03988aa51b30d08db19df1fca0dbd" prot="public" virt="pure-virtual"><scope>xThermal::cxThermal</scope><name>name</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a100ba0ae27d311a3726e53cf4671aee1" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>normalizePhaseBoundaries</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a454a4e29dac7a62800c8a42ddaf98b73" prot="public" virt="pure-virtual"><scope>xThermal::cxThermal</scope><name>p_critical</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a7b8da7ae38ad278f28736667233b632a" prot="private" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>parse_update_which_props</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ad2a2c4793c91176e05bd41705fe9afd3" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>phase_name</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a7cc7e8214f233b89f3952a4c6ff70a92" prot="public" virt="pure-virtual"><scope>xThermal::cxThermal</scope><name>pmax</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a5800a85e519e23ccfd04c11f3bbab89b" prot="public" virt="pure-virtual"><scope>xThermal::cxThermal</scope><name>pmin</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a1a54bed7b543424948282e9c8d53d8e9" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>Rho_lookup</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a5a3ef49d78de8a82b7333b2bfc382e97" prot="public" virt="pure-virtual"><scope>xThermal::cxThermal</scope><name>rhomass_critical</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a3aaf46ee7758d1fd49ca0201cefdf4b2" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>rhomolar_critical</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a20ff092e4c13c13abb16b58a05b6c73d" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>save_lut_to_binary</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a76b25e7264dfa903b2c77f7ac1cca6d4" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>save_lut_to_vtk</name></member>
+      <member refid="classxThermal_1_1cxThermal_1acd77431d0c19b2367db797381c2378ff" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>set_num_threads</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ad65432e862bd77c4fd116598f8ed74f4" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>showProgressBar</name></member>
+      <member refid="classxThermal_1_1cxThermal_1afef0be88b200e99935b46e535c5754ae" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>sum_vector</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ab4b38c96c6ea4f9b6a79532a3d0edabb" prot="public" virt="pure-virtual"><scope>xThermal::cxThermal</scope><name>T_critical</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a04cebc45b1be27386dc767c7eee56ab5" prot="public" virt="pure-virtual"><scope>xThermal::cxThermal</scope><name>Tmax</name></member>
+      <member refid="classxThermal_1_1cxThermal_1aaae6d6ea6a66f48860daa4d0b6eef79a" prot="public" virt="pure-virtual"><scope>xThermal::cxThermal</scope><name>Tmin</name></member>
+      <member refid="classxThermal_1_1cxThermal_1add580814bcf501ea557a03b7eac042bd" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>Triangulation</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a13a75da8301c717105f456c9c7a19896" prot="public" virt="pure-virtual"><scope>xThermal::cxThermal</scope><name>Ttriple</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ac1094a81aa03a8856a5299b1f588f547" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a5c0e0ff376db670fffd97808b39eb1a0" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a7a9db3f1c95f91044b59478cef3c5a14" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a889b6fb0deadb20dacd44338a1c4a144" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a3d7c1b12767a6348b6d291e708ec0a5e" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1afe86ef340ece855c4aa01ed160aa5e2c" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a929aa6a64ac637437b0a409ffa379aab" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a89ce494a32e38aafb64abd36fdf67229" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a8349d4a9fd155cc40963b1cac6dcc003" prot="public" virt="non-virtual"><scope>xThermal::cxThermal</scope><name>validateFluid</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a2da135b28df9f19644be7d405bbe9509" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>writeLine2VTU</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ab803d85ba54f23bd952f2b0dddaf4771" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>writeMeshGrid2VTK</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a8b93eee1a5d36c6cedaa33dd3f8e93a6" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>writePhaseBoundaries2VTU</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a7d21c71bc4fee7d64d08a907a2922fe2" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>writeTriMesh2Txt</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a774e75ede316e2cf1151998b7e716094" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>writeXXYYZZ2VTU</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ac7feaf94672b8ee16a914b76cedb1ff9" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>~cxThermal</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

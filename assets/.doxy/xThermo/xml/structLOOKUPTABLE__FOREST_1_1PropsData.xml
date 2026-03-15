@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structLOOKUPTABLE__FOREST_1_1PropsData" kind="struct" language="C++" prot="public">
+    <compoundname>LOOKUPTABLE_FOREST::PropsData</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLOOKUPTABLE__FOREST_1_1PropsData_1a4453ea43a0598a44364db0d3bd875f22" prot="public" static="no" mutable="no">
+        <type>double **</type>
+        <definition>double** LOOKUPTABLE_FOREST::PropsData::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::PropsData::data</qualifiedname>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="31" column="16" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLOOKUPTABLE__FOREST_1_1PropsData_1aeccb788240918425f739d3268bd4ec25" prot="public" static="no" mutable="no">
+        <type>int_pointIndex</type>
+        <definition>int_pointIndex LOOKUPTABLE_FOREST::PropsData::num_points</definition>
+        <argsstring></argsstring>
+        <name>num_points</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::PropsData::num_points</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="32" column="24" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLOOKUPTABLE__FOREST_1_1PropsData_1af3c690b548efa962ea3bbedb9ff0cad8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LOOKUPTABLE_FOREST::PropsData::num_props</definition>
+        <argsstring></argsstring>
+        <name>num_props</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::PropsData::num_props</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="33" column="13" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structLOOKUPTABLE__FOREST_1_1PropsData_1a6b3f691a59a321388fa84f9e52bdd413" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::PropsData::create</definition>
+        <argsstring>()</argsstring>
+        <name>create</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::PropsData::create</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="34" column="14" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="34" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="structLOOKUPTABLE__FOREST_1_1PropsData_1a5c662e7a0bccfb8258744e2923c1701c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LOOKUPTABLE_FOREST::PropsData::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::PropsData::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="45" column="14" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="45" bodyend="57"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/AMR_LUT/LookUpTableForest.h" line="29" column="5" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="30" bodyend="58"/>
+    <listofallmembers>
+      <member refid="structLOOKUPTABLE__FOREST_1_1PropsData_1a5c662e7a0bccfb8258744e2923c1701c" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::PropsData</scope><name>clear</name></member>
+      <member refid="structLOOKUPTABLE__FOREST_1_1PropsData_1a6b3f691a59a321388fa84f9e52bdd413" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::PropsData</scope><name>create</name></member>
+      <member refid="structLOOKUPTABLE__FOREST_1_1PropsData_1a4453ea43a0598a44364db0d3bd875f22" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::PropsData</scope><name>data</name></member>
+      <member refid="structLOOKUPTABLE__FOREST_1_1PropsData_1aeccb788240918425f739d3268bd4ec25" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::PropsData</scope><name>num_points</name></member>
+      <member refid="structLOOKUPTABLE__FOREST_1_1PropsData_1af3c690b548efa962ea3bbedb9ff0cad8" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::PropsData</scope><name>num_props</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

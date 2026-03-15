@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1H2ONaCl_1_1Params__P2CriticalT" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::H2ONaCl::Params_P2CriticalT</compoundname>
+    <includes refid="H2ONaCl_8h" local="no">H2ONaCl.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Params__P2CriticalT_1a1df78023169d43612896ed085dd74163" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl" kindref="compound">cH2ONaCl</ref> *</type>
+        <definition>cH2ONaCl* xThermal::H2ONaCl::Params_P2CriticalT::sw</definition>
+        <argsstring></argsstring>
+        <name>sw</name>
+        <qualifiedname>xThermal::H2ONaCl::Params_P2CriticalT::sw</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer of <ref refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl" kindref="compound">cH2ONaCl</ref> class </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="318" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Params__P2CriticalT_1a782d2ffc7469eb54516a45ecbc232394" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::H2ONaCl::Params_P2CriticalT::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <qualifiedname>xThermal::H2ONaCl::Params_P2CriticalT::P</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Input pressure [Pa] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="319" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Parameters for inversion of critical temperature from pressure. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>xThermal::H2ONaCl::Params_P2CriticalT</label>
+        <link refid="structxThermal_1_1H2ONaCl_1_1Params__P2CriticalT"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>sw</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>xThermal::H2ONaCl::cH2ONaCl</label>
+        <link refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>xThermal::cxThermal</label>
+        <link refid="classxThermal_1_1cxThermal"/>
+      </node>
+    </collaborationgraph>
+    <location file="Library/H2ONaCl/H2ONaCl.h" line="316" column="9" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="317" bodyend="320"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1H2ONaCl_1_1Params__P2CriticalT_1a782d2ffc7469eb54516a45ecbc232394" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Params_P2CriticalT</scope><name>P</name></member>
+      <member refid="structxThermal_1_1H2ONaCl_1_1Params__P2CriticalT_1a1df78023169d43612896ed085dd74163" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Params_P2CriticalT</scope><name>sw</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

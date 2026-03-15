@@ -1,0 +1,563 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="stdfunc_8h" kind="file" language="C++">
+    <compoundname>stdfunc.h</compoundname>
+    <includes local="no">cstdio</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">map</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">sys/stat.h</includes>
+    <includes local="no">cstring</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">iomanip</includes>
+    <includes local="no">cassert</includes>
+    <includes local="no">unistd.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>Library/stdfunc.h</label>
+        <link refid="stdfunc_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>cassert</label>
+      </node>
+      <node id="2">
+        <label>cstdio</label>
+      </node>
+      <node id="7">
+        <label>cstring</label>
+      </node>
+      <node id="9">
+        <label>iomanip</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>map</label>
+      </node>
+      <node id="8">
+        <label>sstream</label>
+      </node>
+      <node id="6">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="11">
+        <label>unistd.h</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacexThermal">xThermal</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="stdfunc_8h_1a854562f9e367b898e13e4d87083cf81e" prot="public" static="no">
+        <name>xTHERMO_VAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="28" column="12" bodyfile="Library/stdfunc.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1a6200c444a92cd12d31ac6bdaf7c221d0" prot="public" static="no">
+        <name>ERROR_COUT</name>
+        <initializer>(isatty(STDOUT_FILENO) == true ? &quot;[\033[31mError: \033[0m] &quot; : &quot;[Error: ]&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="87" column="13" bodyfile="Library/stdfunc.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1a624c50676f68bfc5c188e83c1fb102d3" prot="public" static="no">
+        <name>WARN_COUT</name>
+        <initializer>(isatty(STDOUT_FILENO) == true ? &quot;[\033[33mWarning: \033[0m] &quot; : &quot;[Warning: ]&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="88" column="13" bodyfile="Library/stdfunc.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1a361bd41194ac13caf9169f3f689dc179" prot="public" static="no">
+        <name>COLOR_PURPLE</name>
+        <initializer>(isatty(STDOUT_FILENO) == true ? &quot;\033[35m&quot; : &quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="89" column="13" bodyfile="Library/stdfunc.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1ad86358bf19927183dd7b4ae215a29731" prot="public" static="no">
+        <name>COLOR_RED</name>
+        <initializer>(isatty(STDOUT_FILENO) == true ? &quot;\033[31m&quot; : &quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="90" column="13" bodyfile="Library/stdfunc.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1afc9149f5de51bd9ac4f5ebbfa153f018" prot="public" static="no">
+        <name>COLOR_GREEN</name>
+        <initializer>(isatty(STDOUT_FILENO) == true ? &quot;\033[32m&quot; : &quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="91" column="13" bodyfile="Library/stdfunc.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1a4534b577b74a58b0f4b7be027af664e0" prot="public" static="no">
+        <name>COLOR_YELLOW</name>
+        <initializer>(isatty(STDOUT_FILENO) == true ? &quot;\033[33m&quot; : &quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="92" column="13" bodyfile="Library/stdfunc.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1a23c70d699a5a775bc2e1ebeb8603f630" prot="public" static="no">
+        <name>COLOR_BLUE</name>
+        <initializer>(isatty(STDOUT_FILENO) == true ? &quot;\033[34m&quot; : &quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="93" column="13" bodyfile="Library/stdfunc.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1a8deb0beccea721b35bdb1b4f7264fe75" prot="public" static="no">
+        <name>COLOR_MAGENTA</name>
+        <initializer>(isatty(STDOUT_FILENO) == true ? &quot;\033[35m&quot; : &quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="94" column="13" bodyfile="Library/stdfunc.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1a82573859711fce56f1aa0a76b18a9b18" prot="public" static="no">
+        <name>COLOR_CYAN</name>
+        <initializer>(isatty(STDOUT_FILENO) == true ? &quot;\033[36m&quot; : &quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="95" column="13" bodyfile="Library/stdfunc.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1a9b44987ffdc2af19b635206b94334b69" prot="public" static="no">
+        <name>COLOR_WHITE</name>
+        <initializer>(isatty(STDOUT_FILENO) == true ? &quot;\033[37m&quot; : &quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="96" column="13" bodyfile="Library/stdfunc.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1a0287476fe504cfd071bf10263fb9b9f8" prot="public" static="no">
+        <name>COLOR_BRIGHT_BLACK</name>
+        <initializer>(isatty(STDOUT_FILENO) == true ? &quot;\033[90m&quot; : &quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="97" column="13" bodyfile="Library/stdfunc.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1a07544b84bb0b8d3c7b2580ca0b48a098" prot="public" static="no">
+        <name>COLOR_BRIGHT_RED</name>
+        <initializer>(isatty(STDOUT_FILENO) == true ? &quot;\033[91m&quot; : &quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="98" column="13" bodyfile="Library/stdfunc.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1a30dd0aa7ae6b1f5ffbcdd51024ee6c47" prot="public" static="no">
+        <name>COLOR_BRIGHT_GREEN</name>
+        <initializer>(isatty(STDOUT_FILENO) == true ? &quot;\033[92m&quot; : &quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="99" column="13" bodyfile="Library/stdfunc.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1a27c03232867e0e1d6477d73e4e385026" prot="public" static="no">
+        <name>COLOR_BRIGHT_YELLOW</name>
+        <initializer>(isatty(STDOUT_FILENO) == true ? &quot;\033[93m&quot; : &quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="100" column="13" bodyfile="Library/stdfunc.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1ae2eb7ceea22b4d7a5e8833f542bd7b24" prot="public" static="no">
+        <name>COLOR_BRIGHT_BLUE</name>
+        <initializer>(isatty(STDOUT_FILENO) == true ? &quot;\033[94m&quot; : &quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="101" column="13" bodyfile="Library/stdfunc.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1a697a4dbb6586b2627454a4ef43c5b63c" prot="public" static="no">
+        <name>COLOR_BRIGHT_MAGENTA</name>
+        <initializer>(isatty(STDOUT_FILENO) == true ? &quot;\033[95m&quot; : &quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="102" column="13" bodyfile="Library/stdfunc.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1ac45fac0dcefd97502824521c5f1d4c4d" prot="public" static="no">
+        <name>COLOR_BRIGHT_CYAN</name>
+        <initializer>(isatty(STDOUT_FILENO) == true ? &quot;\033[96m&quot; : &quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="103" column="13" bodyfile="Library/stdfunc.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1aa0977659d900017c4b65818c42a60a66" prot="public" static="no">
+        <name>COLOR_BRIGHT_WHITE</name>
+        <initializer>(isatty(STDOUT_FILENO) == true ? &quot;\033[97m&quot; : &quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="104" column="13" bodyfile="Library/stdfunc.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1a56e1aea61ee305e3648158362333b3a8" prot="public" static="no">
+        <name>COLOR_DEFAULT</name>
+        <initializer>(isatty(STDOUT_FILENO) == true ? &quot;\033[0m&quot; : &quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="105" column="13" bodyfile="Library/stdfunc.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1ab47b356496ca267edf5551c1e28e1b54" prot="public" static="no">
+        <name>STATUS</name>
+        <param><defname>info</defname></param>
+        <initializer>std::cout&lt;&lt;&quot;--  &quot;&lt;&lt;COLOR_GREEN&lt;&lt;info&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="110" column="13" bodyfile="Library/stdfunc.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1a0ffc38903a81a8527bb48a86c722bbaa" prot="public" static="no">
+        <name>STATUS_color</name>
+        <param><defname>info</defname></param>
+        <param><defname>color</defname></param>
+        <initializer>std::cout&lt;&lt;&quot;--  &quot;&lt;&lt;color&lt;&lt;info&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="111" column="13" bodyfile="Library/stdfunc.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1a209de7ced6e8cdfc2a78295e228170b6" prot="public" static="no">
+        <name>STATUS_time</name>
+        <param><defname>info</defname></param>
+        <param><defname>time_taken</defname></param>
+        <initializer>std::cout&lt;&lt;&quot;--  &quot;&lt;&lt;COLOR_GREEN&lt;&lt;info&lt;&lt;&quot;, time: &quot;&lt;&lt;(double)(time_taken)/CLOCKS_PER_SEC&lt;&lt;&quot; s&quot;&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="112" column="13" bodyfile="Library/stdfunc.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1af8e92e047e0cf174d4e8ffe521d51d93" prot="public" static="no">
+        <name>STATUS_system_time</name>
+        <param><defname>info</defname></param>
+        <param><defname>duration</defname></param>
+        <initializer>std::cout&lt;&lt;&quot;--  &quot;&lt;&lt;COLOR_GREEN&lt;&lt;info&lt;&lt;&quot;, time: &quot;&lt;&lt; double(duration) * std::chrono::microseconds::period::num / std::chrono::microseconds::period::den&lt;&lt;&quot; s&quot;&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="113" column="13" bodyfile="Library/stdfunc.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1a38fa7a91c26625ed060d63cda3a1dac5" prot="public" static="no">
+        <name>ERROR</name>
+        <param><defname>info</defname></param>
+        <initializer>{std::cout&lt;&lt;&quot;--  [&quot;&lt;&lt;COLOR_RED&lt;&lt;&quot;Error&quot;&lt;&lt;COLOR_DEFAULT&lt;&lt;&quot;]: &quot;&lt;&lt;info&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl; exit(0);}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="114" column="13" bodyfile="Library/stdfunc.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1a400b8e4552be6172843d1b8e698094f9" prot="public" static="no">
+        <name>WARNING</name>
+        <param><defname>info</defname></param>
+        <initializer>{std::cout&lt;&lt;&quot;--  &quot;&lt;&lt;COLOR_YELLOW&lt;&lt;info&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="115" column="13" bodyfile="Library/stdfunc.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1ab4bffc7205bed070ddd64b43130ee9a3" prot="public" static="no">
+        <name>ASSERT</name>
+        <param><defname>expression</defname></param>
+        <param><defname>info</defname></param>
+        <initializer>{if(!(expression))std::cout&lt;&lt;&quot;--  &quot;&lt;&lt;COLOR_RED&lt;&lt;info&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl; assert(expression);}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="116" column="13" bodyfile="Library/stdfunc.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1ab0085078c8bf44d111e2eaa5f209559f" prot="public" static="no">
+        <name>WAIT</name>
+        <param><defname>where</defname></param>
+        <initializer>{std::cout&lt;&lt;&quot;Waiting &quot;&lt;&lt;where&lt;&lt; &quot;. Enter to continue...&quot; &lt;&lt; std::endl; std::string dummy; std::getline(std::cin, dummy);}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="117" column="13" bodyfile="Library/stdfunc.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1a0d4d3a685f9501631d1feed1f4ba7577" prot="public" static="no">
+        <name>COLOR_INFO</name>
+        <initializer>COLOR_GREEN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="119" column="13" bodyfile="Library/stdfunc.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1ac7bab6591a09366d23b86d710ecc54af" prot="public" static="no">
+        <name>COLOR_ERROR</name>
+        <initializer>COLOR_RED</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="120" column="13" bodyfile="Library/stdfunc.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stdfunc_8h_1a4d79f3f59a4d19b93eaf106105bddc90" prot="public" static="no">
+        <name>COLOR_WARNING</name>
+        <initializer>COLOR_PURPLE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/stdfunc.h" line="121" column="13" bodyfile="Library/stdfunc.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>STDFUNC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STDFUNC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdio&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/stat.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//to<sp/>use<sp/>std::setprecision</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>uncomment<sp/>to<sp/>disable<sp/>assert()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>NDEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>xTHERMO_VAR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>ifdef<sp/>xTHERMO_DLL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>ifdef<sp/>xThermal_DLL_EXPORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/>define<sp/>xTHERMO_VAR<sp/>__declspec(dllexport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/>define<sp/>xTHERMO_VAR<sp/>__declspec(dllimport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>define<sp/>xTHERMO_VAR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>xTHERMO_VAR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>define<sp/>color,<sp/>this<sp/>seems<sp/>only<sp/>work<sp/>on<sp/>MacOS<sp/>and<sp/>linux,<sp/>doesn&apos;t<sp/>work<sp/>on<sp/>windows</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;windows.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BLACK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BLUE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>GREEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>CYAN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>MAGENTA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BROWN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>LIGHTGRAY<sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DARKGRAY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>LIGHTBLUE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>LIGHTGREEN<sp/><sp/><sp/><sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>LIGHTCYAN<sp/><sp/><sp/><sp/><sp/><sp/><sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>LIGHTRED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>LIGHTMAGENTA<sp/><sp/><sp/><sp/>13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>YELLOW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>WHITE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BRIGHT_BLACK<sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BRIGHT_RED<sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BRIGHT_GREEN<sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BRIGHT_YELLOW<sp/><sp/><sp/>14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BRIGHT_BLUE<sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BRIGHT_MAGENTA<sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BRIGHT_CYAN<sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BRIGHT_WHITE<sp/><sp/><sp/><sp/>15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>HANDLE<sp/><sp/><sp/>m_hConsole=GetStdHandle(STD_OUTPUT_HANDLE);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>WORD<sp/><sp/><sp/><sp/><sp/>m_currentConsoleAttr;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>CONSOLE_SCREEN_BUFFER_INFO<sp/>csbi;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ERROR_COUT<sp/>&quot;&quot;;SetConsoleTextAttribute(m_hConsole,<sp/>((BLACK<sp/>&amp;<sp/>0x0F)<sp/>&lt;&lt;<sp/>4)<sp/>+<sp/>(RED<sp/>&amp;<sp/>0x0F)<sp/>);cout&lt;&lt;&quot;Error:<sp/>&quot;&lt;&lt;COLOR_DEFAULT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>WARN_COUT<sp/>&quot;&quot;;SetConsoleTextAttribute(m_hConsole,<sp/>((BLACK<sp/>&amp;<sp/>0x0F)<sp/>&lt;&lt;<sp/>4)<sp/>+<sp/>(YELLOW<sp/>&amp;<sp/>0x0F)<sp/>);cout&lt;&lt;&quot;Warning:<sp/>&quot;&lt;&lt;COLOR_DEFAULT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_PURPLE<sp/>&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_RED<sp/>&quot;&quot;;SetConsoleTextAttribute(m_hConsole,<sp/>((BLACK<sp/>&amp;<sp/>0x0F)<sp/>&lt;&lt;<sp/>4)<sp/>+<sp/>(RED<sp/>&amp;<sp/>0x0F)<sp/>);cout&lt;&lt;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_GREEN<sp/>&quot;&quot;;SetConsoleTextAttribute(m_hConsole,<sp/>((BLACK<sp/>&amp;<sp/>0x0F)<sp/>&lt;&lt;<sp/>4)<sp/>+<sp/>(GREEN<sp/>&amp;<sp/>0x0F)<sp/>);cout&lt;&lt;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_YELLOW<sp/>&quot;&quot;;SetConsoleTextAttribute(m_hConsole,<sp/>((BLACK<sp/>&amp;<sp/>0x0F)<sp/>&lt;&lt;<sp/>4)<sp/>+<sp/>(YELLOW<sp/>&amp;<sp/>0x0F)<sp/>);cout&lt;&lt;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_BLUE<sp/>&quot;&quot;;SetConsoleTextAttribute(m_hConsole,<sp/>((BLACK<sp/>&amp;<sp/>0x0F)<sp/>&lt;&lt;<sp/>4)<sp/>+<sp/>(BLUE<sp/>&amp;<sp/>0x0F)<sp/>);cout&lt;&lt;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_MAGENTA<sp/>&quot;&quot;;SetConsoleTextAttribute(m_hConsole,<sp/>((BLACK<sp/>&amp;<sp/>0x0F)<sp/>&lt;&lt;<sp/>4)<sp/>+<sp/>(MAGENTA<sp/>&amp;<sp/>0x0F)<sp/>);cout&lt;&lt;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_CYAN<sp/>&quot;&quot;;SetConsoleTextAttribute(m_hConsole,<sp/>((BLACK<sp/>&amp;<sp/>0x0F)<sp/>&lt;&lt;<sp/>4)<sp/>+<sp/>(CYAN<sp/>&amp;<sp/>0x0F)<sp/>);cout&lt;&lt;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_WHITE<sp/>&quot;&quot;;SetConsoleTextAttribute(m_hConsole,<sp/>((BLACK<sp/>&amp;<sp/>0x0F)<sp/>&lt;&lt;<sp/>4)<sp/>+<sp/>(WHITE<sp/>&amp;<sp/>0x0F)<sp/>);cout&lt;&lt;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_BRIGHT_BLACK<sp/>&quot;&quot;;SetConsoleTextAttribute(m_hConsole,<sp/>((BLACK<sp/>&amp;<sp/>0x0F)<sp/>&lt;&lt;<sp/>4)<sp/>+<sp/>(BRIGHT_BLACK<sp/>&amp;<sp/>0x0F)<sp/>);cout&lt;&lt;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_BRIGHT_RED<sp/>&quot;&quot;;SetConsoleTextAttribute(m_hConsole,<sp/>((BLACK<sp/>&amp;<sp/>0x0F)<sp/>&lt;&lt;<sp/>4)<sp/>+<sp/>(BRIGHT_RED<sp/>&amp;<sp/>0x0F)<sp/>);cout&lt;&lt;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_BRIGHT_GREEN<sp/>&quot;&quot;;SetConsoleTextAttribute(m_hConsole,<sp/>((BLACK<sp/>&amp;<sp/>0x0F)<sp/>&lt;&lt;<sp/>4)<sp/>+<sp/>(BRIGHT_GREEN<sp/>&amp;<sp/>0x0F)<sp/>);cout&lt;&lt;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_BRIGHT_YELLOW<sp/>&quot;&quot;;SetConsoleTextAttribute(m_hConsole,<sp/>((BLACK<sp/>&amp;<sp/>0x0F)<sp/>&lt;&lt;<sp/>4)<sp/>+<sp/>(BRIGHT_YELLOW<sp/>&amp;<sp/>0x0F)<sp/>);cout&lt;&lt;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_BRIGHT_BLUE<sp/>&quot;&quot;;SetConsoleTextAttribute(m_hConsole,<sp/>((BLACK<sp/>&amp;<sp/>0x0F)<sp/>&lt;&lt;<sp/>4)<sp/>+<sp/>(BRIGHT_BLUE<sp/>&amp;<sp/>0x0F)<sp/>);cout&lt;&lt;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_BRIGHT_MAGENTA<sp/>&quot;&quot;;SetConsoleTextAttribute(m_hConsole,<sp/>((BLACK<sp/>&amp;<sp/>0x0F)<sp/>&lt;&lt;<sp/>4)<sp/>+<sp/>(BRIGHT_MAGENTA<sp/>&amp;<sp/>0x0F)<sp/>);cout&lt;&lt;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_BRIGHT_CYAN<sp/>&quot;&quot;;SetConsoleTextAttribute(m_hConsole,<sp/>((BLACK<sp/>&amp;<sp/>0x0F)<sp/>&lt;&lt;<sp/>4)<sp/>+<sp/>(BRIGHT_CYAN<sp/>&amp;<sp/>0x0F)<sp/>);cout&lt;&lt;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_BRIGHT_WHITE<sp/>&quot;&quot;;SetConsoleTextAttribute(m_hConsole,<sp/>((BLACK<sp/>&amp;<sp/>0x0F)<sp/>&lt;&lt;<sp/>4)<sp/>+<sp/>(BRIGHT_WHITE<sp/>&amp;<sp/>0x0F)<sp/>);cout&lt;&lt;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_DEFAULT<sp/>&quot;&quot;;SetConsoleTextAttribute(m_hConsole,<sp/>m_currentConsoleAttr<sp/>);cout&lt;&lt;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>use<sp/>isatty(STDOUT_FILENO)<sp/>check<sp/>if<sp/>console<sp/>is<sp/>used<sp/>or<sp/>redirect<sp/>to<sp/>file,<sp/>then<sp/>decide<sp/>use<sp/>colored<sp/>text<sp/>or<sp/>not</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>define<sp/>color,<sp/>this<sp/>seems<sp/>only<sp/>work<sp/>on<sp/>MacOS<sp/>and<sp/>linux,<sp/>doesn&apos;t<sp/>work<sp/>on<sp/>windows:<sp/>see<sp/>https://en.wikipedia.org/wiki/ANSI_escape_code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ERROR_COUT<sp/>(isatty(STDOUT_FILENO)<sp/>==<sp/>true<sp/>?<sp/>&quot;[\033[31mError:<sp/>\033[0m]<sp/>&quot;<sp/>:<sp/>&quot;[Error:<sp/>]&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>WARN_COUT<sp/>(isatty(STDOUT_FILENO)<sp/>==<sp/>true<sp/>?<sp/>&quot;[\033[33mWarning:<sp/>\033[0m]<sp/>&quot;<sp/>:<sp/>&quot;[Warning:<sp/>]&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_PURPLE<sp/>(isatty(STDOUT_FILENO)<sp/>==<sp/>true<sp/>?<sp/>&quot;\033[35m&quot;<sp/>:<sp/>&quot;&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_RED<sp/>(isatty(STDOUT_FILENO)<sp/>==<sp/>true<sp/>?<sp/>&quot;\033[31m&quot;<sp/>:<sp/>&quot;&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_GREEN<sp/>(isatty(STDOUT_FILENO)<sp/>==<sp/>true<sp/>?<sp/>&quot;\033[32m&quot;<sp/>:<sp/>&quot;&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_YELLOW<sp/>(isatty(STDOUT_FILENO)<sp/>==<sp/>true<sp/>?<sp/>&quot;\033[33m&quot;<sp/>:<sp/>&quot;&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_BLUE<sp/>(isatty(STDOUT_FILENO)<sp/>==<sp/>true<sp/>?<sp/>&quot;\033[34m&quot;<sp/>:<sp/>&quot;&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_MAGENTA<sp/>(isatty(STDOUT_FILENO)<sp/>==<sp/>true<sp/>?<sp/>&quot;\033[35m&quot;<sp/>:<sp/>&quot;&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_CYAN<sp/>(isatty(STDOUT_FILENO)<sp/>==<sp/>true<sp/>?<sp/>&quot;\033[36m&quot;<sp/>:<sp/>&quot;&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_WHITE<sp/>(isatty(STDOUT_FILENO)<sp/>==<sp/>true<sp/>?<sp/>&quot;\033[37m&quot;<sp/>:<sp/>&quot;&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_BRIGHT_BLACK<sp/>(isatty(STDOUT_FILENO)<sp/>==<sp/>true<sp/>?<sp/>&quot;\033[90m&quot;<sp/>:<sp/>&quot;&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_BRIGHT_RED<sp/>(isatty(STDOUT_FILENO)<sp/>==<sp/>true<sp/>?<sp/>&quot;\033[91m&quot;<sp/>:<sp/>&quot;&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_BRIGHT_GREEN<sp/>(isatty(STDOUT_FILENO)<sp/>==<sp/>true<sp/>?<sp/>&quot;\033[92m&quot;<sp/>:<sp/>&quot;&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_BRIGHT_YELLOW<sp/>(isatty(STDOUT_FILENO)<sp/>==<sp/>true<sp/>?<sp/>&quot;\033[93m&quot;<sp/>:<sp/>&quot;&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_BRIGHT_BLUE<sp/>(isatty(STDOUT_FILENO)<sp/>==<sp/>true<sp/>?<sp/>&quot;\033[94m&quot;<sp/>:<sp/>&quot;&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_BRIGHT_MAGENTA<sp/>(isatty(STDOUT_FILENO)<sp/>==<sp/>true<sp/>?<sp/>&quot;\033[95m&quot;<sp/>:<sp/>&quot;&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_BRIGHT_CYAN<sp/>(isatty(STDOUT_FILENO)<sp/>==<sp/>true<sp/>?<sp/>&quot;\033[96m&quot;<sp/>:<sp/>&quot;&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_BRIGHT_WHITE<sp/>(isatty(STDOUT_FILENO)<sp/>==<sp/>true<sp/>?<sp/>&quot;\033[97m&quot;<sp/>:<sp/>&quot;&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_DEFAULT<sp/>(isatty(STDOUT_FILENO)<sp/>==<sp/>true<sp/>?<sp/>&quot;\033[0m&quot;<sp/>:<sp/>&quot;&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacexThermal" kindref="compound">xThermal</ref>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STATUS(info)<sp/>std::cout&lt;&lt;&quot;--<sp/><sp/>&quot;&lt;&lt;COLOR_GREEN&lt;&lt;info&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STATUS_color(info,<sp/>color)<sp/>std::cout&lt;&lt;&quot;--<sp/><sp/>&quot;&lt;&lt;color&lt;&lt;info&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STATUS_time(info,<sp/>time_taken)<sp/>std::cout&lt;&lt;&quot;--<sp/><sp/>&quot;&lt;&lt;COLOR_GREEN&lt;&lt;info&lt;&lt;&quot;,<sp/>time:<sp/>&quot;&lt;&lt;(double)(time_taken)/CLOCKS_PER_SEC&lt;&lt;&quot;<sp/>s&quot;&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STATUS_system_time(info,<sp/>duration)<sp/>std::cout&lt;&lt;&quot;--<sp/><sp/>&quot;&lt;&lt;COLOR_GREEN&lt;&lt;info&lt;&lt;&quot;,<sp/>time:<sp/>&quot;&lt;&lt;<sp/>double(duration)<sp/>*<sp/>std::chrono::microseconds::period::num<sp/>/<sp/>std::chrono::microseconds::period::den&lt;&lt;&quot;<sp/>s&quot;&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ERROR(info)<sp/>{std::cout&lt;&lt;&quot;--<sp/><sp/>[&quot;&lt;&lt;COLOR_RED&lt;&lt;&quot;Error&quot;&lt;&lt;COLOR_DEFAULT&lt;&lt;&quot;]:<sp/>&quot;&lt;&lt;info&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl;<sp/>exit(0);}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>WARNING(info)<sp/>{std::cout&lt;&lt;&quot;--<sp/><sp/>&quot;&lt;&lt;COLOR_YELLOW&lt;&lt;info&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl;}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ASSERT(expression,<sp/>info)<sp/>{if(!(expression))std::cout&lt;&lt;&quot;--<sp/><sp/>&quot;&lt;&lt;COLOR_RED&lt;&lt;info&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl;<sp/>assert(expression);}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>WAIT(where)<sp/>{std::cout&lt;&lt;&quot;Waiting<sp/>&quot;&lt;&lt;where&lt;&lt;<sp/>&quot;.<sp/>Enter<sp/>to<sp/>continue...&quot;<sp/>&lt;&lt;<sp/>std::endl;<sp/>std::string<sp/>dummy;<sp/>std::getline(std::cin,<sp/>dummy);}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>some<sp/>special<sp/>definition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_INFO<sp/>COLOR_GREEN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_ERROR<sp/>COLOR_RED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>COLOR_WARNING<sp/>COLOR_PURPLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//some<sp/>utility<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>string_split<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>delimiter)<sp/>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>extname_file(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>filepath);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>filename_without_ext(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>filepath);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Library/stdfunc.h"/>
+  </compounddef>
+</doxygen>

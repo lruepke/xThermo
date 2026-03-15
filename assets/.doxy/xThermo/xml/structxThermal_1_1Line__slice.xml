@@ -1,0 +1,283 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1Line__slice" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::Line_slice</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1Line__slice_1a49c79c0e8086d74ad5ff7cb2dd86a68b" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::Line_slice::T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <qualifiedname>xThermal::Line_slice::T</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1041" column="20" bodyfile="Library/thermo/DataStructures.h" bodystart="1041" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Line__slice_1a60e63e86b22915f4dc5cdf848c45ae79" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::Line_slice::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <qualifiedname>xThermal::Line_slice::P</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1041" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1041" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Line__slice_1a317b374a7352fcc97e722d88e1380567" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::Line_slice::X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <qualifiedname>xThermal::Line_slice::X</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1041" column="22" bodyfile="Library/thermo/DataStructures.h" bodystart="1041" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Line__slice_1a81967e8e75782aa9401a6eb9fbf58c6c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::Line_slice::H</definition>
+        <argsstring></argsstring>
+        <name>H</name>
+        <qualifiedname>xThermal::Line_slice::H</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1041" column="23" bodyfile="Library/thermo/DataStructures.h" bodystart="1041" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Line__slice_1a6911cd3859f1f16161d740c0ff9feeaa" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string xThermal::Line_slice::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>xThermal::Line_slice::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1042" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1042" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Line__slice_1a738655c32ac80a8353ce4a2328a9fa37" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+        <definition>std::vector&lt;double&gt; xThermal::Line_slice::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <qualifiedname>xThermal::Line_slice::color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1043" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1043" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Line__slice_1aaed4d043e3668cd14961e4cbb8cb59e2" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string xThermal::Line_slice::ls</definition>
+        <argsstring></argsstring>
+        <name>ls</name>
+        <qualifiedname>xThermal::Line_slice::ls</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1044" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1044" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1Line__slice_1a051acc29a70aa4b241df322359420b6a" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::Line_slice::lw</definition>
+        <argsstring></argsstring>
+        <name>lw</name>
+        <qualifiedname>xThermal::Line_slice::lw</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1045" column="16" bodyfile="Library/thermo/DataStructures.h" bodystart="1045" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structxThermal_1_1Line__slice_1a045442346b3b9c318500fd3791147ced" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xThermal::Line_slice::Line_slice</definition>
+        <argsstring>()</argsstring>
+        <name>Line_slice</name>
+        <qualifiedname>xThermal::Line_slice::Line_slice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1046" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="1046" bodyend="1046"/>
+      </memberdef>
+      <memberdef kind="function" id="structxThermal_1_1Line__slice_1af4801c1d8d25c4644065d2f35d8ceae1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xThermal::Line_slice::Line_slice</definition>
+        <argsstring>(std::vector&lt; double &gt; T0, std::vector&lt; double &gt; P0, std::vector&lt; double &gt; X0, std::vector&lt; double &gt; H0, std::string name, COLOR c, std::string ls=&quot;solid&quot;, double lw=1)</argsstring>
+        <name>Line_slice</name>
+        <qualifiedname>xThermal::Line_slice::Line_slice</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+          <declname>T0</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+          <declname>P0</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+          <declname>X0</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
+          <declname>H0</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="structxThermal_1_1COLOR" kindref="compound">COLOR</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>ls</declname>
+          <defval>&quot;solid&quot;</defval>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>lw</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1047" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="1047" bodyend="1050"/>
+      </memberdef>
+      <memberdef kind="function" id="structxThermal_1_1Line__slice_1a7b4c8dc61a9671412993db11cc2da24d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+        <definition>bool xThermal::Line_slice::operator&lt;</definition>
+        <argsstring>(const Line_slice &amp;other) const</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>xThermal::Line_slice::operator&lt;</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1Line__slice" kindref="compound">Line_slice</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1051" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="1051" bodyend="1051"/>
+      </memberdef>
+      <memberdef kind="function" id="structxThermal_1_1Line__slice_1a2874d847b2fc28a02df7b7898b7e0fff" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+        <definition>bool xThermal::Line_slice::operator==</definition>
+        <argsstring>(const Line_slice &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>xThermal::Line_slice::operator==</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1Line__slice" kindref="compound">Line_slice</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1052" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="1052" bodyend="1052"/>
+      </memberdef>
+      <memberdef kind="function" id="structxThermal_1_1Line__slice_1a0c99e05bd06ef7d8fd0548cc74e39446" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string xThermal::Line_slice::info</definition>
+        <argsstring>(const Line_slice &amp;self)</argsstring>
+        <name>info</name>
+        <qualifiedname>xThermal::Line_slice::info</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1Line__slice" kindref="compound">Line_slice</ref> &amp;</type>
+          <declname>self</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1068" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1068" bodyend="1073"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="structxThermal_1_1Line__slice_1a5bf034352ed552d4f5c1d8ac8c654067" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Line_slice &amp;self)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>xThermal::Line_slice::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1Line__slice" kindref="compound">Line_slice</ref> &amp;</type>
+          <declname>self</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="1054" column="16" bodyfile="Library/thermo/DataStructures.h" bodystart="1054" bodyend="1066"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/thermo/DataStructures.h" line="1039" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="1040" bodyend="1074"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1Line__slice_1a738655c32ac80a8353ce4a2328a9fa37" prot="public" virt="non-virtual"><scope>xThermal::Line_slice</scope><name>color</name></member>
+      <member refid="structxThermal_1_1Line__slice_1a81967e8e75782aa9401a6eb9fbf58c6c" prot="public" virt="non-virtual"><scope>xThermal::Line_slice</scope><name>H</name></member>
+      <member refid="structxThermal_1_1Line__slice_1a0c99e05bd06ef7d8fd0548cc74e39446" prot="public" virt="non-virtual"><scope>xThermal::Line_slice</scope><name>info</name></member>
+      <member refid="structxThermal_1_1Line__slice_1a045442346b3b9c318500fd3791147ced" prot="public" virt="non-virtual"><scope>xThermal::Line_slice</scope><name>Line_slice</name></member>
+      <member refid="structxThermal_1_1Line__slice_1af4801c1d8d25c4644065d2f35d8ceae1" prot="public" virt="non-virtual"><scope>xThermal::Line_slice</scope><name>Line_slice</name></member>
+      <member refid="structxThermal_1_1Line__slice_1aaed4d043e3668cd14961e4cbb8cb59e2" prot="public" virt="non-virtual"><scope>xThermal::Line_slice</scope><name>ls</name></member>
+      <member refid="structxThermal_1_1Line__slice_1a051acc29a70aa4b241df322359420b6a" prot="public" virt="non-virtual"><scope>xThermal::Line_slice</scope><name>lw</name></member>
+      <member refid="structxThermal_1_1Line__slice_1a6911cd3859f1f16161d740c0ff9feeaa" prot="public" virt="non-virtual"><scope>xThermal::Line_slice</scope><name>name</name></member>
+      <member refid="structxThermal_1_1Line__slice_1a7b4c8dc61a9671412993db11cc2da24d" prot="public" virt="non-virtual"><scope>xThermal::Line_slice</scope><name>operator&lt;</name></member>
+      <member refid="structxThermal_1_1Line__slice_1a5bf034352ed552d4f5c1d8ac8c654067" prot="public" virt="non-virtual"><scope>xThermal::Line_slice</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structxThermal_1_1Line__slice_1a2874d847b2fc28a02df7b7898b7e0fff" prot="public" virt="non-virtual"><scope>xThermal::Line_slice</scope><name>operator==</name></member>
+      <member refid="structxThermal_1_1Line__slice_1a60e63e86b22915f4dc5cdf848c45ae79" prot="public" virt="non-virtual"><scope>xThermal::Line_slice</scope><name>P</name></member>
+      <member refid="structxThermal_1_1Line__slice_1a49c79c0e8086d74ad5ff7cb2dd86a68b" prot="public" virt="non-virtual"><scope>xThermal::Line_slice</scope><name>T</name></member>
+      <member refid="structxThermal_1_1Line__slice_1a317b374a7352fcc97e722d88e1380567" prot="public" virt="non-virtual"><scope>xThermal::Line_slice</scope><name>X</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

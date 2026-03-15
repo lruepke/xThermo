@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structevent" kind="struct" language="C++" prot="public">
+    <compoundname>event</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structevent_1a6344089925caf6f883be7f44f8f35d98" prot="public" static="no" mutable="no">
+        <type>REAL</type>
+        <definition>REAL event::xkey</definition>
+        <argsstring></argsstring>
+        <name>xkey</name>
+        <qualifiedname>event::xkey</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="582" column="8" bodyfile="Library/thermo/triangle.cpp" bodystart="582" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structevent_1a2d2948417ae2e585e251d011ed5f7fef" prot="public" static="no" mutable="no">
+        <type>REAL</type>
+        <definition>REAL event::ykey</definition>
+        <argsstring></argsstring>
+        <name>ykey</name>
+        <qualifiedname>event::ykey</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="582" column="13" bodyfile="Library/thermo/triangle.cpp" bodystart="582" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structevent_1ae5fd20373d30ff0819348af30beb33f3" prot="public" static="no" mutable="no">
+        <type>VOID *</type>
+        <definition>VOID* event::eventptr</definition>
+        <argsstring></argsstring>
+        <name>eventptr</name>
+        <qualifiedname>event::eventptr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="583" column="8" bodyfile="Library/thermo/triangle.cpp" bodystart="583" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structevent_1a9ff72d28ddb7ea57df47fe9f0a7e9004" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int event::heapposition</definition>
+        <argsstring></argsstring>
+        <name>heapposition</name>
+        <qualifiedname>event::heapposition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/triangle.cpp" line="584" column="7" bodyfile="Library/thermo/triangle.cpp" bodystart="584" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/thermo/triangle.cpp" line="581" column="1" bodyfile="Library/thermo/triangle.cpp" bodystart="581" bodyend="585"/>
+    <listofallmembers>
+      <member refid="structevent_1ae5fd20373d30ff0819348af30beb33f3" prot="public" virt="non-virtual"><scope>event</scope><name>eventptr</name></member>
+      <member refid="structevent_1a9ff72d28ddb7ea57df47fe9f0a7e9004" prot="public" virt="non-virtual"><scope>event</scope><name>heapposition</name></member>
+      <member refid="structevent_1a6344089925caf6f883be7f44f8f35d98" prot="public" virt="non-virtual"><scope>event</scope><name>xkey</name></member>
+      <member refid="structevent_1a2d2948417ae2e585e251d011ed5f7fef" prot="public" virt="non-virtual"><scope>event</scope><name>ykey</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1H2ONaCl_1_1Coeffs__Viscosity" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::H2ONaCl::Coeffs_Viscosity</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Coeffs__Viscosity_1ae551ae81ce00dd05bfa9ed6cde6443b7" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::H2ONaCl::Coeffs_Viscosity::a1</definition>
+        <argsstring></argsstring>
+        <name>a1</name>
+        <qualifiedname>xThermal::H2ONaCl::Coeffs_Viscosity::a1</qualifiedname>
+        <initializer>= -35.9858</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="131" column="26" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Coeffs__Viscosity_1a99fa782ae34206368dcf9c277bd287c2" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::H2ONaCl::Coeffs_Viscosity::a2</definition>
+        <argsstring></argsstring>
+        <name>a2</name>
+        <qualifiedname>xThermal::H2ONaCl::Coeffs_Viscosity::a2</qualifiedname>
+        <initializer>= 0.80017</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="132" column="26" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Coeffs__Viscosity_1a67ef786588c73d02bbd998287bce20e7" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::H2ONaCl::Coeffs_Viscosity::b1</definition>
+        <argsstring></argsstring>
+        <name>b1</name>
+        <qualifiedname>xThermal::H2ONaCl::Coeffs_Viscosity::b1</qualifiedname>
+        <initializer>= 1<ref refid="classxThermal_1_1xThermalError" kindref="compound">e</ref>-6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="133" column="26" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Coeffs__Viscosity_1a26ccafd0c20c794e64b681a2522c3909" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::H2ONaCl::Coeffs_Viscosity::b2</definition>
+        <argsstring></argsstring>
+        <name>b2</name>
+        <qualifiedname>xThermal::H2ONaCl::Coeffs_Viscosity::b2</qualifiedname>
+        <initializer>= -0.05239</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="134" column="26" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Coeffs__Viscosity_1a55ce468813d17abb914b74da575ecb5a" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>const double xThermal::H2ONaCl::Coeffs_Viscosity::b3</definition>
+        <argsstring></argsstring>
+        <name>b3</name>
+        <qualifiedname>xThermal::H2ONaCl::Coeffs_Viscosity::b3</qualifiedname>
+        <initializer>= 1.32936</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="135" column="26" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/H2ONaCl/H2ONaCl.h" line="129" column="9" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="130" bodyend="136"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1H2ONaCl_1_1Coeffs__Viscosity_1ae551ae81ce00dd05bfa9ed6cde6443b7" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Coeffs_Viscosity</scope><name>a1</name></member>
+      <member refid="structxThermal_1_1H2ONaCl_1_1Coeffs__Viscosity_1a99fa782ae34206368dcf9c277bd287c2" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Coeffs_Viscosity</scope><name>a2</name></member>
+      <member refid="structxThermal_1_1H2ONaCl_1_1Coeffs__Viscosity_1a67ef786588c73d02bbd998287bce20e7" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Coeffs_Viscosity</scope><name>b1</name></member>
+      <member refid="structxThermal_1_1H2ONaCl_1_1Coeffs__Viscosity_1a26ccafd0c20c794e64b681a2522c3909" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Coeffs_Viscosity</scope><name>b2</name></member>
+      <member refid="structxThermal_1_1H2ONaCl_1_1Coeffs__Viscosity_1a55ce468813d17abb914b74da575ecb5a" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Coeffs_Viscosity</scope><name>b3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

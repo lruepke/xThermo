@@ -1,0 +1,351 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="test__PROST_8cpp" kind="file" language="C++">
+    <compoundname>test_PROST.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="thermo_8h" local="yes">thermo.h</includes>
+    <includes local="yes">steam4.h</includes>
+    <includes local="yes">iaps.h</includes>
+    <includes local="no">cstdio</includes>
+    <includes refid="IAPWS95_8h" local="yes">IAPWS95.h</includes>
+    <includes refid="IAPWS95__CoolProp_8h" local="yes">IAPWS95_CoolProp.h</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>LookUpTableForest.h</label>
+        <link refid="LookUpTableForest_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>IAPWS-IF97.h</label>
+        <link refid="IAPWS-IF97_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>IAPWS95.h</label>
+        <link refid="IAPWS95_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>IAPWS95_CoolProp.h</label>
+        <link refid="IAPWS95__CoolProp_8h"/>
+      </node>
+      <node id="1">
+        <label>Library/test/test_PROST.cpp</label>
+        <link refid="test__PROST_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>DataStructures.h</label>
+        <link refid="DataStructures_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Exception.h</label>
+        <link refid="thermo_2Exception_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>MultiProgressBar.h</label>
+        <link refid="MultiProgressBar_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>thermo.h</label>
+        <link refid="thermo_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>triangle.h</label>
+        <link refid="triangle_8h_source"/>
+      </node>
+      <node id="10">
+        <label>algorithm</label>
+      </node>
+      <node id="13">
+        <label>cmath</label>
+      </node>
+      <node id="22">
+        <label>cstdio</label>
+      </node>
+      <node id="12">
+        <label>exception</label>
+      </node>
+      <node id="5">
+        <label>fstream</label>
+      </node>
+      <node id="21">
+        <label>iaps.h</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="16">
+        <label>map</label>
+      </node>
+      <node id="7">
+        <label>sstream</label>
+      </node>
+      <node id="4">
+        <label>stdfunc.h</label>
+      </node>
+      <node id="20">
+        <label>steam4.h</label>
+      </node>
+      <node id="17">
+        <label>string</label>
+      </node>
+      <node id="19">
+        <label>sys/ioctl.h</label>
+      </node>
+      <node id="8">
+        <label>utility</label>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="test__PROST_8cpp_1aa40a069330f4b7e4d4ba3c5a6f1a61a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_basicTP</definition>
+        <argsstring>()</argsstring>
+        <name>test_basicTP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_PROST.cpp" line="89" column="6" bodyfile="Library/test/test_PROST.cpp" bodystart="89" bodyend="102" declfile="Library/test/test_PROST.cpp" declline="10" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="test__PROST_8cpp_1a8000d9d8f897a576322cc4cd23aaff78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_basicHP</definition>
+        <argsstring>()</argsstring>
+        <name>test_basicHP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_PROST.cpp" line="72" column="6" bodyfile="Library/test/test_PROST.cpp" bodystart="72" bodyend="87" declfile="Library/test/test_PROST.cpp" declline="11" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="test__PROST_8cpp_1ac2161c01077a4a5142aceda241a5c87b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_derivative</definition>
+        <argsstring>()</argsstring>
+        <name>test_derivative</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_PROST.cpp" line="20" column="6" bodyfile="Library/test/test_PROST.cpp" bodystart="20" bodyend="70" declfile="Library/test/test_PROST.cpp" declline="12" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="test__PROST_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_PROST.cpp" line="13" column="5" bodyfile="Library/test/test_PROST.cpp" bodystart="13" bodyend="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="thermo_8h" kindref="compound">thermo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;steam4.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;iaps.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdio&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="IAPWS95_8h" kindref="compound">IAPWS95.h</ref>&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>used<sp/>to<sp/>compare<sp/>with<sp/>PROST</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="IAPWS95__CoolProp_8h" kindref="compound">IAPWS95_CoolProp.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_basicTP();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_basicHP();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_derivative();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_basicTP();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_basicHP();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>test_derivative();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_derivative()</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T<sp/>=<sp/>373.15,<sp/>P<sp/>=<sp/>300E5;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------<sp/>PROST<sp/>calculation<sp/>----------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d,<sp/>dp,<sp/>ds,<sp/>dh;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>dp<sp/>=<sp/>1.0e-8;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>ds<sp/>=<sp/>1.0e-8;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>dh<sp/>=<sp/>1.0e-8;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dev<sp/>=<sp/>2;<sp/></highlight><highlight class="comment">//<sp/>first<sp/>derivative</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>Prop<sp/>*prop<sp/>=<sp/>newProp(</highlight><highlight class="charliteral">&apos;t&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;p&apos;</highlight><highlight class="normal">,<sp/>dev);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>d<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>water_tp(T,P,d,dp,prop);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dPdT<sp/>=<sp/>prop-&gt;dp-&gt;T_Cd,<sp/>dPdRho<sp/>=<sp/>prop-&gt;dp-&gt;d_CT,<sp/>rho<sp/>=<sp/>prop-&gt;d;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dRhodT<sp/>=<sp/>-dPdT/dPdRho;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>--------<sp/>print<sp/>result<sp/>of<sp/>RPOST<sp/>------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>dumpProp(stdout,<sp/>prop);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;=====<sp/>Derivative<sp/>test<sp/>of<sp/>PROST<sp/>in<sp/>TP<sp/>space<sp/>=====\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;T=%f<sp/>deg.C,<sp/>P=%f<sp/>bar\n-<sp/>Rho<sp/>=<sp/>%f<sp/>kg/m3\n-<sp/>Cp<sp/>=<sp/>%f<sp/>J/kg/K\n-<sp/>H<sp/>=<sp/>%f<sp/>MJ/kg\n-<sp/>Mu<sp/>=<sp/>%f<sp/>Pa<sp/>s\n&quot;</highlight><highlight class="normal">,<sp/>T-273.15,<sp/>P/1E5,<sp/>prop-&gt;d,<sp/>prop-&gt;cp,<sp/>prop-&gt;h/1E6,<sp/>viscos(prop));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Derivatives:<sp/>\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;-<sp/>dPdT:<sp/>%f\n&quot;</highlight><highlight class="normal">,<sp/>dPdT);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;-<sp/>dPdd:<sp/>%f\n&quot;</highlight><highlight class="normal">,<sp/>dPdRho);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;-<sp/>Isothermal<sp/>compressibility:<sp/>%E\n&quot;</highlight><highlight class="normal">,<sp/>1.0/(rho<sp/>*<sp/>dPdRho));</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;-<sp/>Volume<sp/>expansivity:<sp/>%E\n&quot;</highlight><highlight class="normal">,<sp/>-dRhodT/rho);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>----------------------<sp/>IAPWS95<sp/>calculation<sp/>----------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1IAPWS95_1_1cIAPWS95" kindref="compound">xThermal::IAPWS95::cIAPWS95</ref><sp/>iapws95;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">xThermal::ThermodynamicProperties</ref><sp/>props;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>iapws95.UpdateState_TPX(props,<sp/>T,<sp/>P);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n=====<sp/>Derivative<sp/>test<sp/>of<sp/>IAPWS95<sp/>in<sp/>TP<sp/>space<sp/>=====\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;T=%f<sp/>deg.C,<sp/>P=%f<sp/>bar\n-<sp/>Rho<sp/>=<sp/>%f<sp/>kg/m3\n-<sp/>Cp<sp/>=<sp/>%f<sp/>J/kg/K\n-<sp/>H<sp/>=<sp/>%f<sp/>MJ/kg\n-<sp/>Mu<sp/>=<sp/>%f<sp/>Pa<sp/>s\n&quot;</highlight><highlight class="normal">,<sp/>T-273.15,<sp/>P/1E5,<sp/>props.Rho,<sp/>props.Cp,<sp/>props.H/1E6,<sp/>props.Mu);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Derivatives:<sp/>\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;-<sp/>dPdT:<sp/>%f\n&quot;,<sp/>props.dPdT_Rho);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;-<sp/>dPdd:<sp/>%f\n&quot;,<sp/>props.dPdRho_T);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;-<sp/>Isothermal<sp/>compressibility:<sp/>%E\n&quot;</highlight><highlight class="normal">,<sp/>props.IsothermalCompressibility);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;-<sp/>Volume<sp/>expansivity:<sp/>%E\n&quot;</highlight><highlight class="normal">,<sp/>props.IsobaricExpansivity);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>----------------------<sp/>IAPWS95<sp/>coolprop<sp/>calculation<sp/>----------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>USE_COOLPROP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>xThermal::COOLPROP::cIAPWS95_CoolProp<sp/>iapws95_coolprop;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">xThermal::ThermodynamicProperties</ref><sp/>props_coolProp;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>iapws95_coolprop.UpdateState_TPX(props_coolProp,<sp/>T,<sp/>P);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n=====<sp/>Derivative<sp/>test<sp/>of<sp/>IAPWS95-COOLPROP<sp/>in<sp/>TP<sp/>space<sp/>=====\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;T=%f<sp/>deg.C,<sp/>P=%f<sp/>bar\n-<sp/>Rho<sp/>=<sp/>%f<sp/>kg/m3\n-<sp/>Cp<sp/>=<sp/>%f<sp/>J/kg/K\n-<sp/>H<sp/>=<sp/>%f<sp/>MJ/kg\n-<sp/>Mu<sp/>=<sp/>%f<sp/>Pa<sp/>s\n&quot;</highlight><highlight class="normal">,<sp/>T-273.15,<sp/>P/1E5,<sp/>props_coolProp.Rho,<sp/>props_coolProp.Cp,<sp/>props_coolProp.H/1E6,<sp/>props_coolProp.Mu);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Derivatives:<sp/>\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;-<sp/>Isothermal<sp/>compressibility:<sp/>%E\n&quot;</highlight><highlight class="normal">,<sp/>props.IsothermalCompressibility);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;-<sp/>Volume<sp/>expansivity:<sp/>%E\n&quot;</highlight><highlight class="normal">,<sp/>props.IsobaricExpansivity);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>freeProp(prop);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_basicHP()</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>H<sp/>=<sp/>441643.903950,<sp/>P<sp/>=<sp/>300E5;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t,<sp/>d,<sp/>dp,<sp/>ds,<sp/>dh;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>dp<sp/>=<sp/>1.0e-8;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>ds<sp/>=<sp/>1.0e-8;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>dh<sp/>=<sp/>1.0e-8;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>Prop<sp/>*prop<sp/>=<sp/>newProp(</highlight><highlight class="charliteral">&apos;p&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;h&apos;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>d<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>water_ph(P,H,t,<sp/>d,dp,dh,prop);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;=====<sp/>Basic<sp/>test<sp/>of<sp/>PROST<sp/>in<sp/>HP<sp/>space<sp/>=====\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;H=%f<sp/>MJ/kg,<sp/>P=%f<sp/>bar\n-<sp/>T<sp/>=<sp/>%f<sp/>deg.C\n-<sp/>Rho<sp/>=<sp/>%f<sp/>kg/m3\n-<sp/>Cp<sp/>=<sp/>%f<sp/>J/kg\n-<sp/>H<sp/>=<sp/>%f<sp/>J\n-<sp/>Mu<sp/>=<sp/>%f<sp/>Pa<sp/>s\n\n&quot;</highlight><highlight class="normal">,<sp/>H/1E6,<sp/>P/1E5,<sp/>prop-&gt;T-273.15,<sp/>prop-&gt;d,<sp/>prop-&gt;cp,<sp/>prop-&gt;h,<sp/>viscos(prop));</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>freeProp(prop);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_basicTP()</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T<sp/>=<sp/>373.15,<sp/>P<sp/>=<sp/>300E5;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d,<sp/>dp,<sp/>ds,<sp/>dh;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>dp<sp/>=<sp/>1.0e-8;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>ds<sp/>=<sp/>1.0e-8;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>dh<sp/>=<sp/>1.0e-8;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>Prop<sp/>*prop<sp/>=<sp/>newProp(</highlight><highlight class="charliteral">&apos;t&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;p&apos;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>d<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>water_tp(T,P,d,dp,prop);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;=====<sp/>Basic<sp/>test<sp/>of<sp/>PROST<sp/>in<sp/>TP<sp/>space<sp/>=====\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;T=%f<sp/>deg.C,<sp/>P=%f<sp/>bar\n-<sp/>Rho<sp/>=<sp/>%f<sp/>kg/m3\n-<sp/>Cp<sp/>=<sp/>%f<sp/>J/kg/K\n-<sp/>H<sp/>=<sp/>%f<sp/>MJ/kg\n-<sp/>Mu<sp/>=<sp/>%f<sp/>Pa<sp/>s\n\n&quot;</highlight><highlight class="normal">,<sp/>T-273.15,<sp/>P/1E5,<sp/>prop-&gt;d,<sp/>prop-&gt;cp,<sp/>prop-&gt;h/1E6,<sp/>viscos(prop));</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>freeProp(prop);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Library/test/test_PROST.cpp"/>
+  </compounddef>
+</doxygen>

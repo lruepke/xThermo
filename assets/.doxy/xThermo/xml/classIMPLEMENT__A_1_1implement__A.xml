@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classIMPLEMENT__A_1_1implement__A" kind="class" language="C++" prot="public">
+    <compoundname>IMPLEMENT_A::implement_A</compoundname>
+    <basecompoundref refid="classABSTRACT_1_1abstract" prot="public" virt="non-virtual">ABSTRACT::abstract</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIMPLEMENT__A_1_1implement__A_1a536d364aaab6647c72208d7e32f33dc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMPLEMENT_A::implement_A::implement_A</definition>
+        <argsstring>()</argsstring>
+        <name>implement_A</name>
+        <qualifiedname>IMPLEMENT_A::implement_A::implement_A</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/implement_A.h" line="15" column="9" bodyfile="Library/test/test_templateClass/implement_A.h" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMPLEMENT__A_1_1implement__A_1a4be20d1c0ddc2fb57118328c60bbcd60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMPLEMENT_A::implement_A::~implement_A</definition>
+        <argsstring>()</argsstring>
+        <name>~implement_A</name>
+        <qualifiedname>IMPLEMENT_A::implement_A::~implement_A</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/implement_A.h" line="16" column="9" bodyfile="Library/test/test_templateClass/implement_A.h" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classIMPLEMENT__A_1_1implement__A_1a6639581c8d7767a3a935b8756140af5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double IMPLEMENT_A::implement_A::calc_Tmax</definition>
+        <argsstring>()</argsstring>
+        <name>calc_Tmax</name>
+        <qualifiedname>IMPLEMENT_A::implement_A::calc_Tmax</qualifiedname>
+        <reimplements refid="classABSTRACT_1_1abstract_1a88c7106e850e8ba6383d8a422835cad7">calc_Tmax</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/test_templateClass/implement_A.h" line="18" column="16" bodyfile="Library/test/test_templateClass/implement_A.h" bodystart="21" bodyend="24"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ABSTRACT::abstract</label>
+        <link refid="classABSTRACT_1_1abstract"/>
+      </node>
+      <node id="1">
+        <label>IMPLEMENT_A::implement_A</label>
+        <link refid="classIMPLEMENT__A_1_1implement__A"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ABSTRACT::abstract</label>
+        <link refid="classABSTRACT_1_1abstract"/>
+      </node>
+      <node id="1">
+        <label>IMPLEMENT_A::implement_A</label>
+        <link refid="classIMPLEMENT__A_1_1implement__A"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Library/test/test_templateClass/implement_A.h" line="10" column="5" bodyfile="Library/test/test_templateClass/implement_A.h" bodystart="11" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classABSTRACT_1_1abstract_1ad7daece1776ddc278bda7c537f4f7f31" prot="public" virt="non-virtual"><scope>IMPLEMENT_A::implement_A</scope><name>abstract</name></member>
+      <member refid="classIMPLEMENT__A_1_1implement__A_1a6639581c8d7767a3a935b8756140af5e" prot="public" virt="virtual"><scope>IMPLEMENT_A::implement_A</scope><name>calc_Tmax</name></member>
+      <member refid="classIMPLEMENT__A_1_1implement__A_1a536d364aaab6647c72208d7e32f33dc7" prot="public" virt="non-virtual"><scope>IMPLEMENT_A::implement_A</scope><name>implement_A</name></member>
+      <member refid="classABSTRACT_1_1abstract_1a40b74d4263b246bf75b8190d44524880" prot="public" virt="non-virtual"><scope>IMPLEMENT_A::implement_A</scope><name>~abstract</name></member>
+      <member refid="classIMPLEMENT__A_1_1implement__A_1a4be20d1c0ddc2fb57118328c60bbcd60" prot="public" virt="non-virtual"><scope>IMPLEMENT_A::implement_A</scope><name>~implement_A</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

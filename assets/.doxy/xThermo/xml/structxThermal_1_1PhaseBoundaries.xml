@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1PhaseBoundaries" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::PhaseBoundaries</compoundname>
+    <includes refid="DataStructures_8h" local="no">DataStructures.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1PhaseBoundaries_1aa495735e919d15302b1ae8ba44e1a869" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structxThermal_1_1Surface" kindref="compound">Surface</ref> &gt;</type>
+        <definition>std::vector&lt;Surface&gt; xThermal::PhaseBoundaries::surfaces</definition>
+        <argsstring></argsstring>
+        <name>surfaces</name>
+        <qualifiedname>xThermal::PhaseBoundaries::surfaces</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="905" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="905" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1PhaseBoundaries_1a26b0fa454a8a1d21ab531709b8397019" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structxThermal_1_1Line" kindref="compound">Line</ref> &gt;</type>
+        <definition>std::vector&lt;Line&gt; xThermal::PhaseBoundaries::lines</definition>
+        <argsstring></argsstring>
+        <name>lines</name>
+        <qualifiedname>xThermal::PhaseBoundaries::lines</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="906" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="906" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1PhaseBoundaries_1a5beab343e858387ccf60fd65afeb953b" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structxThermal_1_1Point" kindref="compound">Point</ref> &gt;</type>
+        <definition>std::vector&lt;Point&gt; xThermal::PhaseBoundaries::points</definition>
+        <argsstring></argsstring>
+        <name>points</name>
+        <qualifiedname>xThermal::PhaseBoundaries::points</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="907" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="907" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1PhaseBoundaries_1afc50feb649e177e9175e46b6f6f3b196" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>int xThermal::PhaseBoundaries::scale_X</definition>
+        <argsstring></argsstring>
+        <name>scale_X</name>
+        <qualifiedname>xThermal::PhaseBoundaries::scale_X</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="908" column="13" bodyfile="Library/thermo/DataStructures.h" bodystart="908" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1PhaseBoundaries_1aea1f3cc95e045ee19f61d84e20c9bde1" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PhaseBoundaries::Xcenter</definition>
+        <argsstring></argsstring>
+        <name>Xcenter</name>
+        <qualifiedname>xThermal::PhaseBoundaries::Xcenter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="909" column="16" bodyfile="Library/thermo/DataStructures.h" bodystart="909" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1PhaseBoundaries_1a6091999b6ed4069a4894cad30beef8b7" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PhaseBoundaries::ratio_log_to_linear</definition>
+        <argsstring></argsstring>
+        <name>ratio_log_to_linear</name>
+        <qualifiedname>xThermal::PhaseBoundaries::ratio_log_to_linear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="910" column="16" bodyfile="Library/thermo/DataStructures.h" bodystart="910" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1PhaseBoundaries_1a47c1cdf8e39698db785b727e85076580" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PhaseBoundaries::Tmin</definition>
+        <argsstring></argsstring>
+        <name>Tmin</name>
+        <qualifiedname>xThermal::PhaseBoundaries::Tmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="911" column="16" bodyfile="Library/thermo/DataStructures.h" bodystart="911" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1PhaseBoundaries_1a02e39a7512b9379e4b0590dcf64d7f22" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PhaseBoundaries::Tmax</definition>
+        <argsstring></argsstring>
+        <name>Tmax</name>
+        <qualifiedname>xThermal::PhaseBoundaries::Tmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="911" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="911" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1PhaseBoundaries_1a1448de6b07e23335986612f48d5bef93" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PhaseBoundaries::pmin</definition>
+        <argsstring></argsstring>
+        <name>pmin</name>
+        <qualifiedname>xThermal::PhaseBoundaries::pmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="911" column="26" bodyfile="Library/thermo/DataStructures.h" bodystart="911" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1PhaseBoundaries_1a49f9e2a1dcfbf7a84d97c22cafd270e8" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PhaseBoundaries::pmax</definition>
+        <argsstring></argsstring>
+        <name>pmax</name>
+        <qualifiedname>xThermal::PhaseBoundaries::pmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="911" column="30" bodyfile="Library/thermo/DataStructures.h" bodystart="911" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1PhaseBoundaries_1a7830f501581a27e4e1c85e7b85ca6314" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PhaseBoundaries::Xmin</definition>
+        <argsstring></argsstring>
+        <name>Xmin</name>
+        <qualifiedname>xThermal::PhaseBoundaries::Xmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="911" column="35" bodyfile="Library/thermo/DataStructures.h" bodystart="911" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1PhaseBoundaries_1a68c8e047ee324cd760b179e77b1f169a" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::PhaseBoundaries::Xmax</definition>
+        <argsstring></argsstring>
+        <name>Xmax</name>
+        <qualifiedname>xThermal::PhaseBoundaries::Xmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="911" column="40" bodyfile="Library/thermo/DataStructures.h" bodystart="911" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Struct of phase boundaries. Boundary surface, lines and points. </para>
+    </detaileddescription>
+    <location file="Library/thermo/DataStructures.h" line="903" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="904" bodyend="912"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1PhaseBoundaries_1a26b0fa454a8a1d21ab531709b8397019" prot="public" virt="non-virtual"><scope>xThermal::PhaseBoundaries</scope><name>lines</name></member>
+      <member refid="structxThermal_1_1PhaseBoundaries_1a49f9e2a1dcfbf7a84d97c22cafd270e8" prot="public" virt="non-virtual"><scope>xThermal::PhaseBoundaries</scope><name>pmax</name></member>
+      <member refid="structxThermal_1_1PhaseBoundaries_1a1448de6b07e23335986612f48d5bef93" prot="public" virt="non-virtual"><scope>xThermal::PhaseBoundaries</scope><name>pmin</name></member>
+      <member refid="structxThermal_1_1PhaseBoundaries_1a5beab343e858387ccf60fd65afeb953b" prot="public" virt="non-virtual"><scope>xThermal::PhaseBoundaries</scope><name>points</name></member>
+      <member refid="structxThermal_1_1PhaseBoundaries_1a6091999b6ed4069a4894cad30beef8b7" prot="public" virt="non-virtual"><scope>xThermal::PhaseBoundaries</scope><name>ratio_log_to_linear</name></member>
+      <member refid="structxThermal_1_1PhaseBoundaries_1afc50feb649e177e9175e46b6f6f3b196" prot="public" virt="non-virtual"><scope>xThermal::PhaseBoundaries</scope><name>scale_X</name></member>
+      <member refid="structxThermal_1_1PhaseBoundaries_1aa495735e919d15302b1ae8ba44e1a869" prot="public" virt="non-virtual"><scope>xThermal::PhaseBoundaries</scope><name>surfaces</name></member>
+      <member refid="structxThermal_1_1PhaseBoundaries_1a02e39a7512b9379e4b0590dcf64d7f22" prot="public" virt="non-virtual"><scope>xThermal::PhaseBoundaries</scope><name>Tmax</name></member>
+      <member refid="structxThermal_1_1PhaseBoundaries_1a47c1cdf8e39698db785b727e85076580" prot="public" virt="non-virtual"><scope>xThermal::PhaseBoundaries</scope><name>Tmin</name></member>
+      <member refid="structxThermal_1_1PhaseBoundaries_1aea1f3cc95e045ee19f61d84e20c9bde1" prot="public" virt="non-virtual"><scope>xThermal::PhaseBoundaries</scope><name>Xcenter</name></member>
+      <member refid="structxThermal_1_1PhaseBoundaries_1a68c8e047ee324cd760b179e77b1f169a" prot="public" virt="non-virtual"><scope>xThermal::PhaseBoundaries</scope><name>Xmax</name></member>
+      <member refid="structxThermal_1_1PhaseBoundaries_1a7830f501581a27e4e1c85e7b85ca6314" prot="public" virt="non-virtual"><scope>xThermal::PhaseBoundaries</scope><name>Xmin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

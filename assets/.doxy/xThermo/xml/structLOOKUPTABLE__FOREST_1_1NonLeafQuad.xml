@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structLOOKUPTABLE__FOREST_1_1NonLeafQuad" kind="struct" language="C++" prot="public">
+    <compoundname>LOOKUPTABLE_FOREST::NonLeafQuad</compoundname>
+    <templateparamlist>
+      <param>
+        <type>int</type>
+        <declname>dim</declname>
+        <defname>dim</defname>
+      </param>
+      <param>
+        <type>typename USER_DATA</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLOOKUPTABLE__FOREST_1_1NonLeafQuad_1a788d0302a0d6ffb0522d926962f5eca5" prot="public" static="no" mutable="no">
+        <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">Quadrant</ref>&lt; dim, USER_DATA &gt; *</type>
+        <definition>Quadrant&lt;dim, USER_DATA&gt;* LOOKUPTABLE_FOREST::NonLeafQuad&lt; dim, USER_DATA &gt;::children[1&lt;&lt; dim]</definition>
+        <argsstring>[1&lt;&lt; dim]</argsstring>
+        <name>children</name>
+        <qualifiedname>LOOKUPTABLE_FOREST::NonLeafQuad::children</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/AMR_LUT/LookUpTableForest.h" line="81" column="20" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/AMR_LUT/LookUpTableForest.h" line="79" column="5" bodyfile="Library/AMR_LUT/LookUpTableForest.h" bodystart="80" bodyend="82"/>
+    <listofallmembers>
+      <member refid="structLOOKUPTABLE__FOREST_1_1NonLeafQuad_1a788d0302a0d6ffb0522d926962f5eca5" prot="public" virt="non-virtual"><scope>LOOKUPTABLE_FOREST::NonLeafQuad</scope><name>children</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

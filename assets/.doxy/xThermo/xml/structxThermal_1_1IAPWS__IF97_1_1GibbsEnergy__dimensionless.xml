@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::IAPWS_IF97::GibbsEnergy_dimensionless</compoundname>
+    <includes refid="IAPWS-IF97_8h" local="no">IAPWS-IF97.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless_1ab48e62ff011b2d3633797fe118e15017" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::GibbsEnergy_dimensionless::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>xThermal::IAPWS_IF97::GibbsEnergy_dimensionless::value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="12">$ \gamma$</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="83" column="20" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless_1af3decb98127820407a64a51d6277dcd2" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::GibbsEnergy_dimensionless::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <qualifiedname>xThermal::IAPWS_IF97::GibbsEnergy_dimensionless::p</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="13">$ \left[ \frac{\partial \gamma}{\partial \pi} \right]_{\tau} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="84" column="20" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless_1a8931198c0d9f2e7e3a027468f230ccb4" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::GibbsEnergy_dimensionless::pp</definition>
+        <argsstring></argsstring>
+        <name>pp</name>
+        <qualifiedname>xThermal::IAPWS_IF97::GibbsEnergy_dimensionless::pp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="14">$ \left[ \frac{\partial^2 \gamma}{\partial \pi^2} \right]_{\tau} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="85" column="20" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless_1a2a338188c10a01868074f92458c7f28b" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::GibbsEnergy_dimensionless::t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <qualifiedname>xThermal::IAPWS_IF97::GibbsEnergy_dimensionless::t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="15">$ \left[ \frac{\partial \gamma}{\partial \tau} \right]_{\pi} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="86" column="20" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless_1ad6f4fd17df4913f8410c5b3a88c384f3" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::GibbsEnergy_dimensionless::tt</definition>
+        <argsstring></argsstring>
+        <name>tt</name>
+        <qualifiedname>xThermal::IAPWS_IF97::GibbsEnergy_dimensionless::tt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="16">$ \left[ \frac{\partial^2 \gamma}{\partial \tau^2} \right]_{\pi} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="87" column="20" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless_1ae40df59698efdbdf34b845d70d6bc801" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::GibbsEnergy_dimensionless::pt</definition>
+        <argsstring></argsstring>
+        <name>pt</name>
+        <qualifiedname>xThermal::IAPWS_IF97::GibbsEnergy_dimensionless::pt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="17">$ \frac{\partial^2 \gamma}{\partial \pi \partial \tau} $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="88" column="20" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless_1aa0ffa5248f1973d90ef1d03420ebeaa5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const GibbsEnergy_dimensionless &amp;gamma)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>xThermal::IAPWS_IF97::GibbsEnergy_dimensionless::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless" kindref="compound">GibbsEnergy_dimensionless</ref> &amp;</type>
+          <declname>gamma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="89" column="20" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="89" bodyend="92"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless_1a77801dc3a5ae2ca36fc7770f8fd89a80" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+        <definition>bool xThermal::IAPWS_IF97::GibbsEnergy_dimensionless::operator==</definition>
+        <argsstring>(const GibbsEnergy_dimensionless &amp;gamma) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>xThermal::IAPWS_IF97::GibbsEnergy_dimensionless::operator==</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless" kindref="compound">GibbsEnergy_dimensionless</ref> &amp;</type>
+          <declname>gamma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="93" column="18" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless_1a6b353caf291ddde2de9e5a8969d8f04b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless" kindref="compound">GibbsEnergy_dimensionless</ref></type>
+        <definition>GibbsEnergy_dimensionless xThermal::IAPWS_IF97::GibbsEnergy_dimensionless::operator+</definition>
+        <argsstring>(const GibbsEnergy_dimensionless &amp;gamma) const</argsstring>
+        <name>operator+</name>
+        <qualifiedname>xThermal::IAPWS_IF97::GibbsEnergy_dimensionless::operator+</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless" kindref="compound">GibbsEnergy_dimensionless</ref> &amp;</type>
+          <declname>gamma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="97" column="39" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="97" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless_1abfef2dbb422c57fddedfffd7613c751f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless" kindref="compound">GibbsEnergy_dimensionless</ref></type>
+        <definition>GibbsEnergy_dimensionless xThermal::IAPWS_IF97::GibbsEnergy_dimensionless::operator-</definition>
+        <argsstring>(const GibbsEnergy_dimensionless &amp;gamma) const</argsstring>
+        <name>operator-</name>
+        <qualifiedname>xThermal::IAPWS_IF97::GibbsEnergy_dimensionless::operator-</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless" kindref="compound">GibbsEnergy_dimensionless</ref> &amp;</type>
+          <declname>gamma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="102" column="39" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="102" bodyend="106"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Dimensionless Gibbs free energy <formula id="11">$ \gamma = g/(RT) $</formula> and its partial derivatives. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/H2O/IAPWS-IF97.h" line="81" column="9" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="82" bodyend="107"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless_1a6b353caf291ddde2de9e5a8969d8f04b" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::GibbsEnergy_dimensionless</scope><name>operator+</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless_1abfef2dbb422c57fddedfffd7613c751f" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::GibbsEnergy_dimensionless</scope><name>operator-</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless_1aa0ffa5248f1973d90ef1d03420ebeaa5" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::GibbsEnergy_dimensionless</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless_1a77801dc3a5ae2ca36fc7770f8fd89a80" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::GibbsEnergy_dimensionless</scope><name>operator==</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless_1af3decb98127820407a64a51d6277dcd2" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::GibbsEnergy_dimensionless</scope><name>p</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless_1a8931198c0d9f2e7e3a027468f230ccb4" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::GibbsEnergy_dimensionless</scope><name>pp</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless_1ae40df59698efdbdf34b845d70d6bc801" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::GibbsEnergy_dimensionless</scope><name>pt</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless_1a2a338188c10a01868074f92458c7f28b" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::GibbsEnergy_dimensionless</scope><name>t</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless_1ad6f4fd17df4913f8410c5b3a88c384f3" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::GibbsEnergy_dimensionless</scope><name>tt</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless_1ab48e62ff011b2d3633797fe118e15017" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::GibbsEnergy_dimensionless</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

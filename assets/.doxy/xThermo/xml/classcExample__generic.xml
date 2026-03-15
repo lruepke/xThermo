@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcExample__generic" kind="class" language="C++" prot="public">
+    <compoundname>cExample_generic</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcExample__generic_1a28c7f2403b0f3929150885b2483ca8a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cExample_generic::cExample_generic</definition>
+        <argsstring>()</argsstring>
+        <name>cExample_generic</name>
+        <qualifiedname>cExample_generic::cExample_generic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/cpp_crossplatform/cpp_generic/example_generic.h" line="12" column="9" bodyfile="Library/test/cpp_crossplatform/cpp_generic/example_generic.cpp" bodystart="3" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classcExample__generic_1a8924df7dc7cfa4462ffeb468a790fca3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cExample_generic::~cExample_generic</definition>
+        <argsstring>()</argsstring>
+        <name>~cExample_generic</name>
+        <qualifiedname>cExample_generic::~cExample_generic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/cpp_crossplatform/cpp_generic/example_generic.h" line="13" column="9" bodyfile="Library/test/cpp_crossplatform/cpp_generic/example_generic.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/test/cpp_crossplatform/cpp_generic/example_generic.h" line="7" column="5" bodyfile="Library/test/cpp_crossplatform/cpp_generic/example_generic.h" bodystart="8" bodyend="14"/>
+    <listofallmembers>
+      <member refid="classcExample__generic_1a28c7f2403b0f3929150885b2483ca8a5" prot="public" virt="non-virtual"><scope>cExample_generic</scope><name>cExample_generic</name></member>
+      <member refid="classcExample__generic_1a8924df7dc7cfa4462ffeb468a790fca3" prot="public" virt="non-virtual"><scope>cExample_generic</scope><name>~cExample_generic</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

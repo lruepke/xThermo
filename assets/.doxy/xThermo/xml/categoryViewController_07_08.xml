@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="categoryViewController_07_08" kind="category" language="Objective-C" prot="public">
+    <compoundname>ViewController()</compoundname>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="categoryViewController_07_08_1af0e8b9c32295456ee112ab15bc0f0af1" prot="protected" static="no" mutable="no">
+        <type><ref refid="interfaceCppInterface" kindref="compound">CppInterface</ref> *</type>
+        <definition>CppInterface* ViewController()::i</definition>
+        <argsstring></argsstring>
+        <name>i</name>
+        <qualifiedname>ViewController()::i</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/test/cpp_crossplatform/app_ios/ViewController.m" line="6" column="18" bodyfile="Library/test/cpp_crossplatform/app_ios/ViewController.m" bodystart="6" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>CppInterface</label>
+        <link refid="interfaceCppInterface"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>NSObject</label>
+      </node>
+      <node id="1">
+        <label>ViewController()</label>
+        <link refid="categoryViewController_07_08"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>i</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Library/test/cpp_crossplatform/app_ios/ViewController.m" line="4" column="12" bodyfile="Library/test/cpp_crossplatform/app_ios/ViewController.m" bodystart="5" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="categoryViewController_07_08_1af0e8b9c32295456ee112ab15bc0f0af1" prot="protected" virt="non-virtual"><scope>ViewController()</scope><name>i</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

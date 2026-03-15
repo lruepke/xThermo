@@ -1,0 +1,788 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="test__lookup_8m" kind="file" language="Objective-C">
+    <compoundname>test_lookup.m</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="test__lookup_8m_1aebfdce4f6cc7241ba38924f77a12e7cf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clear</definition>
+        <argsstring></argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="1" column="1" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="1" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1a3f3d3b13a15c726d6aa03db3dd0d6377" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clc</definition>
+        <argsstring></argsstring>
+        <name>clc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="1" column="7" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="1" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1aec70d633e7619583eb3a08a7afd638b4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>clf</definition>
+        <argsstring></argsstring>
+        <name>clf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="1" column="11" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="1" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1aa92c6bf73de9099391ca7b9438482b51" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>file_LUT_TPX</definition>
+        <argsstring></argsstring>
+        <name>file_LUT_TPX</name>
+        <initializer>= &apos;TPX/lut_TPX_9.bin&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="5" column="2" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1a5e83da22146a3d4775be5686198b3f6c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>file_LUT_HPX</definition>
+        <argsstring></argsstring>
+        <name>file_LUT_HPX</name>
+        <initializer>= &apos;lut_constX_HP_10.bin&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="6" column="1" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1af403dc8df502bad63096f24238f1965c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>file_LUT_HP_water</definition>
+        <argsstring></argsstring>
+        <name>file_LUT_HP_water</name>
+        <initializer>= &apos;lut_constX_HP_11.bin&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="8" column="1" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1a08ac8eaab4c34e3a74168abe772ce76c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>water[H, P, props]</definition>
+        <argsstring>[H, P, props]</argsstring>
+        <name>water</name>
+        <initializer>= test_lookup_HP(file_LUT_HP_water)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="12" column="2" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1a68f54c0dd305e157ccbac0e1d1bb0e9d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>end function</definition>
+        <argsstring>[H, P, props]</argsstring>
+        <name>function</name>
+        <initializer>= test_lookup_HP(file_LUT)
+    fluidName = &apos;H2O&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="15" column="1" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1aab05098fa81ed123960db8fadf49cdf8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>H0</definition>
+        <argsstring></argsstring>
+        <name>H0</name>
+        <initializer>= 1E6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="17" column="5" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1a6e8b36bb34e1780bb56615ea5b7d515a" prot="public" static="no" mutable="no">
+        <type>J kg</type>
+        <definition>J kg P0</definition>
+        <argsstring></argsstring>
+        <name>P0</name>
+        <initializer>= 100E5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="18" column="5" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1a8a78690fd1a897bc260e8b3ca52ba05d" prot="public" static="no" mutable="no">
+        <type>Pa</type>
+        <definition>Pa X0</definition>
+        <argsstring></argsstring>
+        <name>X0</name>
+        <initializer>= 0.1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="19" column="6" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1a9f7f534eed587c20bbe7aec00aff6b44" prot="public" static="no" mutable="no">
+        <type>kg kg</type>
+        <definition>kg kg show</definition>
+        <argsstring></argsstring>
+        <name>show</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="20" column="5" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1a0746f92ce18f3e7e2895449fbd63f44c" prot="public" static="no" mutable="no">
+        <type>single point lookup</type>
+        <definition>end matrix lookup H</definition>
+        <argsstring></argsstring>
+        <name>H</name>
+        <initializer>=H0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="22" column="5" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1a4baee84af7a92177c9064ddc2fc010ce" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <initializer>=P0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="23" column="5" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1a9d6b995b9664de45f11396410c180381" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>tic props</definition>
+        <argsstring></argsstring>
+        <name>props</name>
+        <initializer>= lookup(file_LUT, fluidName, H0,P0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="24" column="5" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1a1ddd484954b07100730e04824532912f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>prop_names</definition>
+        <argsstring></argsstring>
+        <name>prop_names</name>
+        <initializer>= fieldnames(props)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="40" column="5" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1af474bd73f6c3c8a9797b569f76ff723f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ncol</definition>
+        <argsstring></argsstring>
+        <name>ncol</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="43" column="9" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1ad8d97367caecd944ae8810b8cf26f5cd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>nrow</definition>
+        <argsstring></argsstring>
+        <name>nrow</name>
+        <initializer>= ceil(length(prop_names)/ncol)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="44" column="9" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1a6f6ccfcf58b31cb6412107d9d5281426" prot="public" static="no" mutable="no">
+        <type>for</type>
+        <definition>for i</definition>
+        <argsstring></argsstring>
+        <name>i</name>
+        <initializer>= 1:length(prop_names)
+            subplot(nrow, ncol, i)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="45" column="13" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1a58ab1fd68e97078232808206b850161b" prot="public" static="no" mutable="no">
+        <type>hold</type>
+        <definition>hold on</definition>
+        <argsstring></argsstring>
+        <name>on</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="47" column="18" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1a7626c967b638c3cc70c7c96863cbd07f" prot="public" static="no" mutable="no">
+        <type>shading</type>
+        <definition>shading interp</definition>
+        <argsstring></argsstring>
+        <name>interp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="49" column="21" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1ae5a4601548b3e753eb6a6a484af87c03" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>PP</definition>
+        <argsstring></argsstring>
+        <name>PP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="51" column="17" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1a1d572b4b9fde8409bd8e63d5119b19cb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>LineColor</definition>
+        <argsstring></argsstring>
+        <name>LineColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="51" column="25" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1adc468c70fb574ebd07287b38d0d0676d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>k</definition>
+        <argsstring></argsstring>
+        <name>k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="51" column="35" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1a835accca41274fb237599d9b3c117fcf" prot="public" static="no" mutable="no">
+        <type>end hold</type>
+        <definition>hold off</definition>
+        <argsstring></argsstring>
+        <name>off</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="53" column="18" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1ad46f33764e4d79b521e1d24b5375fe8c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>end X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <initializer>=X0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="70" column="5" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1aad347226dcc1d205f58e693925c28783" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>XX</definition>
+        <argsstring></argsstring>
+        <name>XX</name>
+        <initializer>= HH*0 + X0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="87" column="5" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1a29a7b7ac56a2fb82138e94b8cef7a49f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>T0</definition>
+        <argsstring></argsstring>
+        <name>T0</name>
+        <initializer>= 100 + 273.15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="112" column="5" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1a715afd28ffa57c6df968d72d8887ddb6" prot="public" static="no" mutable="no">
+        <type>single point lookup</type>
+        <definition>single point lookup props0</definition>
+        <argsstring></argsstring>
+        <name>props0</name>
+        <initializer>= lookup(file_LUT, fluidName, T0,P0,X0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="117" column="5" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test__lookup_8m_1a43b13b4bbb5829adef01b2490c26f624" prot="public" static="no" mutable="no">
+        <type>vector lookup</type>
+        <definition>end matrix lookup T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <initializer>= linspace(1, 500, 100) + 273.15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="120" column="5" bodyfile="Library/H2ONaCl/Matlab/test_lookup.m" bodystart="120" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="test__lookup_8m_1a82f379a0d6e98c4b07bdd50d6e3cbdb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>if</definition>
+        <argsstring>(show) figure(2)</argsstring>
+        <name>if</name>
+        <param>
+          <type>show</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="30" column="5" declfile="Library/H2ONaCl/Matlab/test_lookup.m" declline="30" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="test__lookup_8m_1a6a52c37517c73a12ea86550bd4fdbb42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>plot</definition>
+        <argsstring>(H, props.Rho)</argsstring>
+        <name>plot</name>
+        <param>
+          <type>H</type>
+        </param>
+        <param>
+          <type>props.</type>
+          <declname>Rho</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="32" column="9" declfile="Library/H2ONaCl/Matlab/test_lookup.m" declline="32" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="test__lookup_8m_1a7d5b802cf651b3085e9d69b557dbdf04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pcolor</definition>
+        <argsstring>(HH/1E6, PP/1E5, props.(cell2mat(prop_names(i))))</argsstring>
+        <name>pcolor</name>
+        <param>
+          <type>HH/</type>
+          <declname>1E6</declname>
+        </param>
+        <param>
+          <type>PP/</type>
+          <declname>1E5</declname>
+        </param>
+        <param>
+          <type>props.</type>
+          <array>cell2mat(prop_names(i))</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="48" column="13" declfile="Library/H2ONaCl/Matlab/test_lookup.m" declline="48" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__lookup_8m_1a6e48376b6b2e67376c068cbb0812a4a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>if</definition>
+        <argsstring>(~strcmp(cell2mat(prop_names(i)), &apos;Phase&apos;)) contour(HH/1E6</argsstring>
+        <name>if</name>
+        <param>
+          <type>~</type>
+          <declname>strcmp</declname>
+          <array>cell2mat(prop_names(i)), &apos;Phase&apos;</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="50" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__lookup_8m_1a87a55c2074d9ffcfcfc0e25c3d9d40dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>props</definition>
+        <argsstring>(cell2mat(prop_names(i)))</argsstring>
+        <name>props</name>
+        <param>
+          <type>cell2mat(prop_names(i))</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="51" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="test__lookup_8m_1ab25030299c6317abe292cf51facef008" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>title</definition>
+        <argsstring>(prop_names(i))</argsstring>
+        <name>title</name>
+        <param>
+          <type>prop_names(i)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="54" column="13" declfile="Library/H2ONaCl/Matlab/test_lookup.m" declline="54" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__lookup_8m_1a7ee743666456e9b436329a3e2964591f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xlabel</definition>
+        <argsstring>(&apos;Bulk specific enthalpy(MJ/kg)&apos;)</argsstring>
+        <name>xlabel</name>
+        <param>
+          <type>&apos;Bulk specific enthalpy(MJ/kg)&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="55" column="13" declfile="Library/H2ONaCl/Matlab/test_lookup.m" declline="55" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__lookup_8m_1ab0af2706eb682ca2a89a08d249fc58bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ylabel</definition>
+        <argsstring>(&apos;Pressure(bar)&apos;)</argsstring>
+        <name>ylabel</name>
+        <param>
+          <type>&apos;Pressure(bar)&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="56" column="13" declfile="Library/H2ONaCl/Matlab/test_lookup.m" declline="56" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__lookup_8m_1a1f40362686917ef94731406f56b6f31d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>plot</definition>
+        <argsstring>(T, props.Rho)</argsstring>
+        <name>plot</name>
+        <param>
+          <type>T</type>
+        </param>
+        <param>
+          <type>props.</type>
+          <declname>Rho</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="126" column="9" declfile="Library/H2ONaCl/Matlab/test_lookup.m" declline="126" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="test__lookup_8m_1aa688b5151488bdea268c2e42ddedda77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pcolor</definition>
+        <argsstring>(TT-273.15, PP/1E5, props.(cell2mat(prop_names(i))))</argsstring>
+        <name>pcolor</name>
+        <param>
+          <type>TT-273.</type>
+          <declname>15</declname>
+        </param>
+        <param>
+          <type>PP/</type>
+          <declname>1E5</declname>
+        </param>
+        <param>
+          <type>props.</type>
+          <array>cell2mat(prop_names(i))</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="143" column="13" declfile="Library/H2ONaCl/Matlab/test_lookup.m" declline="143" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="test__lookup_8m_1aa9eaa8c7ec83b84fbbeed166c3c07626" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xlabel</definition>
+        <argsstring>(&apos;Temperature(deg.C)&apos;)</argsstring>
+        <name>xlabel</name>
+        <param>
+          <type>&apos;Temperature(deg.C)&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/Matlab/test_lookup.m" line="150" column="13" declfile="Library/H2ONaCl/Matlab/test_lookup.m" declline="150" declcolumn="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">clear;<sp/>clc;<sp/>clf;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">%<sp/>==============</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">file_LUT_TPX<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;lut_constX_TP_9.bin&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">%<sp/>file_LUT_TPX<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;TPX/lut_TPX_9.bin&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">file_LUT_HPX<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;lut_constX_HP_10.bin&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">%<sp/>file_LUT_HPX<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;HPX/lut_HPX_9.bin&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">file_LUT_HP_water<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;lut_constX_HP_11.bin&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">[H,P,X,<sp/>props]<sp/>=<sp/>test_lookup_HPX(file_LUT_HPX);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">%<sp/>[T,P,X,<sp/>props]<sp/>=<sp/>test_lookup_TPX(file_LUT_TPX);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">%<sp/>water</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">%<sp/>[H,P,props]<sp/>=<sp/>test_lookup_HP(file_LUT_HP_water);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/>[H,P,props]<sp/>=<sp/>test_lookup_HP(file_LUT)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>fluidName<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;H2O&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>H0<sp/>=<sp/>1E6;<sp/>%<sp/>J/kg</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>P0<sp/>=<sp/>100E5;<sp/>%Pa</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">%<sp/><sp/><sp/><sp/><sp/>X0<sp/>=<sp/>0.1;<sp/>%kg/kg</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>show<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>1.<sp/>single<sp/>point<sp/>lookup<sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>H=H0;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>P=P0;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>props<sp/>=<sp/>lookup(file_LUT,<sp/>fluidName,<sp/>H0,P0);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>2.<sp/>vector<sp/>lookup</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>H<sp/>=<sp/>linspace(0.1E6,<sp/>4E6,<sp/>100);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>P<sp/>=<sp/>H*0<sp/>+<sp/>P0;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>props<sp/>=<sp/>lookup(file_LUT,<sp/>fluidName,<sp/>H,P);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(show)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>figure(2);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plot(H,<sp/>props.Rho);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>3.<sp/>matrix<sp/>lookup</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>H<sp/>=<sp/>linspace(0.1E6,<sp/>4E6,<sp/>100);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>P<sp/>=<sp/>linspace(10E5,<sp/>500E5,<sp/>100);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>[HH,PP]<sp/>=<sp/>meshgrid(H,P);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>props<sp/>=<sp/>lookup(file_LUT,<sp/>fluidName,<sp/>HH,PP);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>prop_names<sp/>=<sp/>fieldnames(props);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(show)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>figure(3);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ncol<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nrow<sp/>=<sp/>ceil(length(prop_names)/ncol);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1:length(prop_names)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subplot(nrow,<sp/>ncol,<sp/>i);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hold<sp/>on;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pcolor(HH/1E6,PP/1E5,props.(cell2mat(prop_names(i))));</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shading<sp/>interp;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(~strcmp(cell2mat(prop_names(i))<sp/>,<sp/></highlight><highlight class="stringliteral">&apos;Phase&apos;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>contour(HH/1E6,PP/1E5,props.(cell2mat(prop_names(i))),<sp/></highlight><highlight class="stringliteral">&apos;LineColor&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;k&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hold<sp/>off;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>title(prop_names(i));</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xlabel(</highlight><highlight class="stringliteral">&apos;Bulk<sp/>specific<sp/>enthalpy<sp/>(MJ/kg)&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ylabel(</highlight><highlight class="stringliteral">&apos;Pressure<sp/>(bar)&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/>[H,P,X,<sp/>props]<sp/>=<sp/>test_lookup_HPX(file_LUT)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>fluidName=</highlight><highlight class="stringliteral">&apos;H2O-NaCl&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>H0<sp/>=<sp/>1E6;<sp/>%<sp/>J/kg</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>P0<sp/>=<sp/>100E5;<sp/>%Pa</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>X0<sp/>=<sp/>0.1;<sp/>%kg/kg</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>show<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>1.<sp/>single<sp/>point<sp/>lookup<sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>H=H0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>P=P0;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>X=X0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>props<sp/>=<sp/>lookup(file_LUT,fluidName,<sp/>H0,P0,X0);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>2.<sp/>vector<sp/>lookup</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>H<sp/>=<sp/>linspace(0.1E6,<sp/>4E6,<sp/>100);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>P<sp/>=<sp/>H*0<sp/>+<sp/>P0;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>X<sp/>=<sp/>H*0<sp/>+<sp/>X0;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>props<sp/>=<sp/>lookup(file_LUT,fluidName,<sp/>H,P,X);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(show)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>figure(2);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plot(H,<sp/>props.Rho);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>3.<sp/>matrix<sp/>lookup</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>H<sp/>=<sp/>linspace(0.1E6,<sp/>4E6,<sp/>100);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>P<sp/>=<sp/>linspace(10E5,<sp/>500E5,<sp/>100);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>[HH,PP]<sp/>=<sp/>meshgrid(H,P);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>XX<sp/>=<sp/>HH*0<sp/>+<sp/>X0;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>props<sp/>=<sp/>lookup(file_LUT,<sp/>fluidName,<sp/>HH,PP,XX);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>prop_names<sp/>=<sp/>fieldnames(props);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(show)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>figure(3);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ncol<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nrow<sp/>=<sp/>ceil(length(prop_names)/ncol);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1:length(prop_names)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subplot(nrow,<sp/>ncol,<sp/>i);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hold<sp/>on;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pcolor(HH/1E6,PP/1E5,props.(cell2mat(prop_names(i))));</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shading<sp/>interp;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(~strcmp(cell2mat(prop_names(i))<sp/>,<sp/></highlight><highlight class="stringliteral">&apos;Phase&apos;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>contour(HH/1E6,PP/1E5,props.(cell2mat(prop_names(i))),<sp/></highlight><highlight class="stringliteral">&apos;LineColor&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;k&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hold<sp/>off;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>title(prop_names(i));</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xlabel(</highlight><highlight class="stringliteral">&apos;Bulk<sp/>specific<sp/>enthalpy<sp/>(MJ/kg)&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ylabel(</highlight><highlight class="stringliteral">&apos;Pressure<sp/>(bar)&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/>[T,P,X,<sp/>props]<sp/>=<sp/>test_lookup_TPX(file_LUT)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>fluidName<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;H2O-NaCl&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>T0<sp/>=<sp/>100<sp/>+<sp/>273.15;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>P0<sp/>=<sp/>100E5;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>X0<sp/>=<sp/>0.1;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>show<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>1.<sp/>single<sp/>point<sp/>lookup<sp/></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>props0<sp/>=<sp/>lookup(file_LUT,<sp/>fluidName,<sp/>T0,P0,X0);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>2.<sp/>vector<sp/>lookup</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>=<sp/>linspace(1,<sp/>500,<sp/>100)<sp/>+<sp/>273.15;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>P<sp/>=<sp/>T*0<sp/>+<sp/>P0;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>X<sp/>=<sp/>T*0<sp/>+<sp/>X0;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>props<sp/>=<sp/>lookup(file_LUT,<sp/>fluidName,<sp/>T,P,X);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(show)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>figure(2);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plot(T,<sp/>props.Rho);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>%<sp/>3.<sp/>matrix<sp/>lookup</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>=<sp/>linspace(1,<sp/>500,<sp/>100)<sp/>+<sp/>273.15;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>P<sp/>=<sp/>linspace(10E5,<sp/>500E5,<sp/>100);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>[TT,PP]<sp/>=<sp/>meshgrid(T,P);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>XX<sp/>=<sp/>TT*0<sp/>+<sp/>X0;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>props<sp/>=<sp/>lookup(file_LUT,<sp/>fluidName,<sp/>TT,PP,XX);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>prop_names<sp/>=<sp/>fieldnames(props);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(show)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>figure(3);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ncol<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nrow<sp/>=<sp/>ceil(length(prop_names)/ncol);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1:length(prop_names)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subplot(nrow,<sp/>ncol,<sp/>i);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hold<sp/>on;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pcolor(TT-273.15,PP/1E5,props.(cell2mat(prop_names(i))));</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shading<sp/>interp;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(~strcmp(cell2mat(prop_names(i))<sp/>,<sp/></highlight><highlight class="stringliteral">&apos;Phase&apos;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>contour(TT-273.15,PP/1E5,props.(cell2mat(prop_names(i))),<sp/></highlight><highlight class="stringliteral">&apos;LineColor&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;k&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hold<sp/>off;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>title(prop_names(i));</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xlabel(</highlight><highlight class="stringliteral">&apos;Temperature(deg.C)&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ylabel(</highlight><highlight class="stringliteral">&apos;Pressure<sp/>(bar)&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">end</highlight></codeline>
+    </programlisting>
+    <location file="Library/H2ONaCl/Matlab/test_lookup.m"/>
+  </compounddef>
+</doxygen>

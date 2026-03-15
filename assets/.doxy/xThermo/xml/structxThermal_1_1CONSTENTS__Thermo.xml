@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1CONSTENTS__Thermo" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::CONSTENTS_Thermo</compoundname>
+    <includes refid="DataStructures_8h" local="no">DataStructures.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1CONSTENTS__Thermo_1a6bf0d18d79d12b938338a0e6d11df1bb" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::CONSTENTS_Thermo::R</definition>
+        <argsstring></argsstring>
+        <name>R</name>
+        <qualifiedname>xThermal::CONSTENTS_Thermo::R</qualifiedname>
+        <initializer>=461.51805</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="918" column="16" bodyfile="Library/thermo/DataStructures.h" bodystart="918" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1CONSTENTS__Thermo_1a2feb348b281c7a2dcc74e491992cda35" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::CONSTENTS_Thermo::Tmin</definition>
+        <argsstring></argsstring>
+        <name>Tmin</name>
+        <qualifiedname>xThermal::CONSTENTS_Thermo::Tmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="918" column="18" bodyfile="Library/thermo/DataStructures.h" bodystart="918" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1CONSTENTS__Thermo_1aa70e353741b50b41918ab321ea8108f8" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::CONSTENTS_Thermo::Tmax</definition>
+        <argsstring></argsstring>
+        <name>Tmax</name>
+        <qualifiedname>xThermal::CONSTENTS_Thermo::Tmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="918" column="23" bodyfile="Library/thermo/DataStructures.h" bodystart="918" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1CONSTENTS__Thermo_1a77a3668b1d5958d16a7e874b5fc8371e" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::CONSTENTS_Thermo::pmin</definition>
+        <argsstring></argsstring>
+        <name>pmin</name>
+        <qualifiedname>xThermal::CONSTENTS_Thermo::pmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="918" column="28" bodyfile="Library/thermo/DataStructures.h" bodystart="918" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1CONSTENTS__Thermo_1ab9cffd1908d0c56c7d9f3b8bda92a25c" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::CONSTENTS_Thermo::pmax</definition>
+        <argsstring></argsstring>
+        <name>pmax</name>
+        <qualifiedname>xThermal::CONSTENTS_Thermo::pmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="918" column="33" bodyfile="Library/thermo/DataStructures.h" bodystart="918" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1CONSTENTS__Thermo_1a6122fc8ef2d1163cf3c6acfa7e679317" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::CONSTENTS_Thermo::Ttriple</definition>
+        <argsstring></argsstring>
+        <name>Ttriple</name>
+        <qualifiedname>xThermal::CONSTENTS_Thermo::Ttriple</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="918" column="38" bodyfile="Library/thermo/DataStructures.h" bodystart="918" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1CONSTENTS__Thermo_1a2d4af2837905dbd3e712bccf058fa063" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::CONSTENTS_Thermo::T_critical</definition>
+        <argsstring></argsstring>
+        <name>T_critical</name>
+        <qualifiedname>xThermal::CONSTENTS_Thermo::T_critical</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="918" column="46" bodyfile="Library/thermo/DataStructures.h" bodystart="918" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1CONSTENTS__Thermo_1a5237ccd57e643502569be9c16d60bda5" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::CONSTENTS_Thermo::p_critical</definition>
+        <argsstring></argsstring>
+        <name>p_critical</name>
+        <qualifiedname>xThermal::CONSTENTS_Thermo::p_critical</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="918" column="57" bodyfile="Library/thermo/DataStructures.h" bodystart="918" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1CONSTENTS__Thermo_1a0cfda982308af7e71cad3b34daaf7597" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::CONSTENTS_Thermo::rhomass_critical</definition>
+        <argsstring></argsstring>
+        <name>rhomass_critical</name>
+        <qualifiedname>xThermal::CONSTENTS_Thermo::rhomass_critical</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="918" column="68" bodyfile="Library/thermo/DataStructures.h" bodystart="918" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1CONSTENTS__Thermo_1a6df4f128bb632dec5d865741180a512e" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::CONSTENTS_Thermo::molar_mass</definition>
+        <argsstring></argsstring>
+        <name>molar_mass</name>
+        <qualifiedname>xThermal::CONSTENTS_Thermo::molar_mass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="918" column="85" bodyfile="Library/thermo/DataStructures.h" bodystart="918" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1CONSTENTS__Thermo_1ae4b70c1bb019c191e6461a6ff6ccaa27" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::CONSTENTS_Thermo::rhomolar_critical</definition>
+        <argsstring></argsstring>
+        <name>rhomolar_critical</name>
+        <qualifiedname>xThermal::CONSTENTS_Thermo::rhomolar_critical</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="918" column="96" bodyfile="Library/thermo/DataStructures.h" bodystart="918" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>为了实现多个H2O EOS的backend，必须使用虚函数调用相应的参数，比如T_critical()，但是在子类中频繁调用函数的性能肯定很低，所以将所有热力学常数打包为一个struct类型，作为子类的成员变量，然后在构造函数中进行初始化，后面需要常数的地方直接访问成员变量即可，可提高性能。 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/thermo/DataStructures.h" line="916" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="917" bodyend="919"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1CONSTENTS__Thermo_1a6df4f128bb632dec5d865741180a512e" prot="public" virt="non-virtual"><scope>xThermal::CONSTENTS_Thermo</scope><name>molar_mass</name></member>
+      <member refid="structxThermal_1_1CONSTENTS__Thermo_1a5237ccd57e643502569be9c16d60bda5" prot="public" virt="non-virtual"><scope>xThermal::CONSTENTS_Thermo</scope><name>p_critical</name></member>
+      <member refid="structxThermal_1_1CONSTENTS__Thermo_1ab9cffd1908d0c56c7d9f3b8bda92a25c" prot="public" virt="non-virtual"><scope>xThermal::CONSTENTS_Thermo</scope><name>pmax</name></member>
+      <member refid="structxThermal_1_1CONSTENTS__Thermo_1a77a3668b1d5958d16a7e874b5fc8371e" prot="public" virt="non-virtual"><scope>xThermal::CONSTENTS_Thermo</scope><name>pmin</name></member>
+      <member refid="structxThermal_1_1CONSTENTS__Thermo_1a6bf0d18d79d12b938338a0e6d11df1bb" prot="public" virt="non-virtual"><scope>xThermal::CONSTENTS_Thermo</scope><name>R</name></member>
+      <member refid="structxThermal_1_1CONSTENTS__Thermo_1a0cfda982308af7e71cad3b34daaf7597" prot="public" virt="non-virtual"><scope>xThermal::CONSTENTS_Thermo</scope><name>rhomass_critical</name></member>
+      <member refid="structxThermal_1_1CONSTENTS__Thermo_1ae4b70c1bb019c191e6461a6ff6ccaa27" prot="public" virt="non-virtual"><scope>xThermal::CONSTENTS_Thermo</scope><name>rhomolar_critical</name></member>
+      <member refid="structxThermal_1_1CONSTENTS__Thermo_1a2d4af2837905dbd3e712bccf058fa063" prot="public" virt="non-virtual"><scope>xThermal::CONSTENTS_Thermo</scope><name>T_critical</name></member>
+      <member refid="structxThermal_1_1CONSTENTS__Thermo_1aa70e353741b50b41918ab321ea8108f8" prot="public" virt="non-virtual"><scope>xThermal::CONSTENTS_Thermo</scope><name>Tmax</name></member>
+      <member refid="structxThermal_1_1CONSTENTS__Thermo_1a2feb348b281c7a2dcc74e491992cda35" prot="public" virt="non-virtual"><scope>xThermal::CONSTENTS_Thermo</scope><name>Tmin</name></member>
+      <member refid="structxThermal_1_1CONSTENTS__Thermo_1a6122fc8ef2d1163cf3c6acfa7e679317" prot="public" virt="non-virtual"><scope>xThermal::CONSTENTS_Thermo</scope><name>Ttriple</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1IAPWS95_1_1Params__SolvePhaseEquilibrium" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::IAPWS95::Params_SolvePhaseEquilibrium</compoundname>
+    <includes refid="IAPWS95_8h" local="no">IAPWS95.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Params__SolvePhaseEquilibrium_1ae9ebbb89b251d35425464240a6e711f1" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1IAPWS95_1_1cIAPWS95" kindref="compound">cIAPWS95</ref> *</type>
+        <definition>cIAPWS95* xThermal::IAPWS95::Params_SolvePhaseEquilibrium::iapws</definition>
+        <argsstring></argsstring>
+        <name>iapws</name>
+        <qualifiedname>xThermal::IAPWS95::Params_SolvePhaseEquilibrium::iapws</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="329" column="22" bodyfile="Library/H2O/IAPWS95.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Params__SolvePhaseEquilibrium_1a32cabf10ad144c89216a5846a05a90ce" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS95::Params_SolvePhaseEquilibrium::RT</definition>
+        <argsstring></argsstring>
+        <name>RT</name>
+        <qualifiedname>xThermal::IAPWS95::Params_SolvePhaseEquilibrium::RT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="namespacexThermal_1a9f162768e192f9a3ca91f946a35bd428" kindref="member">xThermal::R</ref> times T: <formula id="62">$RT $</formula> [J/kg] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="330" column="20" bodyfile="Library/H2O/IAPWS95.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Params__SolvePhaseEquilibrium_1ab80ae7921bd9163261b694c512ff062b" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS95::Params_SolvePhaseEquilibrium::tau</definition>
+        <argsstring></argsstring>
+        <name>tau</name>
+        <qualifiedname>xThermal::IAPWS95::Params_SolvePhaseEquilibrium::tau</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="67">$T_c/T $</formula> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="337" column="24" bodyfile="Library/H2O/IAPWS95.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Params__SolvePhaseEquilibrium_1a0ad9aa631e3c4aab3d748d11893f4aee" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS95::Params_SolvePhaseEquilibrium::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <qualifiedname>xThermal::IAPWS95::Params_SolvePhaseEquilibrium::P</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pressure [Pa] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="338" column="24" bodyfile="Library/H2O/IAPWS95.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Params__SolvePhaseEquilibrium_1ad4aae75c08a7afbd3c064095a2ec493b" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">union</ref> <ref refid="structxThermal_1_1IAPWS95_1_1Params__SolvePhaseEquilibrium" kindref="compound">xThermal::IAPWS95::Params_SolvePhaseEquilibrium</ref></type>
+        <definition>union xThermal::IAPWS95::Params_SolvePhaseEquilibrium xThermal::IAPWS95::Params_SolvePhaseEquilibrium::TorP</definition>
+        <argsstring></argsstring>
+        <name>TorP</name>
+        <qualifiedname>xThermal::IAPWS95::Params_SolvePhaseEquilibrium::TorP</qualifiedname>
+        <briefdescription>
+<para>One of <formula id="63">$ \tau $</formula> and <formula id="64">$p$</formula>, which is used for solving saturated pressure and saturated temperature, respectively. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Because for solving phase equilibrium, only P or T is given, so here I use an union to store it. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="339" column="17"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Params__SolvePhaseEquilibrium_1a4965623624715e1ff5aab98c854e3c06" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacexThermal_1a0685604125210eaa088959dce9c93b25" kindref="member">SOLVE_SATURATED_PorT</ref></type>
+        <definition>SOLVE_SATURATED_PorT xThermal::IAPWS95::Params_SolvePhaseEquilibrium::Solve_PorT</definition>
+        <argsstring></argsstring>
+        <name>Solve_PorT</name>
+        <qualifiedname>xThermal::IAPWS95::Params_SolvePhaseEquilibrium::Solve_PorT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag of solving <formula id="65">$ P_{sat} $</formula> or <formula id="66">$ T_{sat} $</formula>, the value will be one of <ref refid="namespacexThermal_1a0685604125210eaa088959dce9c93b25ae7fb5148d37e23b456becf1619724c21" kindref="member">SOLVE_SATURATED_P</ref>, <ref refid="namespacexThermal_1a0685604125210eaa088959dce9c93b25a4fde50f7ee7ce5b0c5a9c3c3fc4d0c14" kindref="member">SOLVE_SATURATED_T</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="340" column="34" bodyfile="Library/H2O/IAPWS95.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Data struct for phase equilibrium solving. It is used in <ref refid="IAPWS95_8cpp_1a042abfe224555b8f04a7058b1a1d453d" kindref="member">func_PhaseEquilibrium</ref> , <ref refid="" kindref="compound">cIAPWS95::Boiling_P</ref> and <ref refid="_1a76ce3c1862702d622939512a5ae69bf2" kindref="member">cIAPWS95::Boiling_T</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>xThermal::CONSTENTS_Thermo</label>
+        <link refid="structxThermal_1_1CONSTENTS__Thermo"/>
+      </node>
+      <node id="1">
+        <label>xThermal::IAPWS95::Params_SolvePhaseEquilibrium</label>
+        <link refid="structxThermal_1_1IAPWS95_1_1Params__SolvePhaseEquilibrium"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>iapws</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>xThermal::IAPWS95::cIAPWS95</label>
+        <link refid="classxThermal_1_1IAPWS95_1_1cIAPWS95"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_constants</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>xThermal::cxThermal</label>
+        <link refid="classxThermal_1_1cxThermal"/>
+      </node>
+    </collaborationgraph>
+    <location file="Library/H2O/IAPWS95.h" line="327" column="9" bodyfile="Library/H2O/IAPWS95.h" bodystart="328" bodyend="341"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1IAPWS95_1_1Params__SolvePhaseEquilibrium_1ae9ebbb89b251d35425464240a6e711f1" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Params_SolvePhaseEquilibrium</scope><name>iapws</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Params__SolvePhaseEquilibrium_1a0ad9aa631e3c4aab3d748d11893f4aee" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Params_SolvePhaseEquilibrium</scope><name>P</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Params__SolvePhaseEquilibrium_1a32cabf10ad144c89216a5846a05a90ce" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Params_SolvePhaseEquilibrium</scope><name>RT</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Params__SolvePhaseEquilibrium_1a4965623624715e1ff5aab98c854e3c06" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Params_SolvePhaseEquilibrium</scope><name>Solve_PorT</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Params__SolvePhaseEquilibrium_1ab80ae7921bd9163261b694c512ff062b" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Params_SolvePhaseEquilibrium</scope><name>tau</name></member>
+      <member refid="structxThermal_1_1IAPWS95_1_1Params__SolvePhaseEquilibrium_1ad4aae75c08a7afbd3c064095a2ec493b" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Params_SolvePhaseEquilibrium</scope><name>TorP</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

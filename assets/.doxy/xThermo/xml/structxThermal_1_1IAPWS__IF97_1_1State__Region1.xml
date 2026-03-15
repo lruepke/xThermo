@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxThermal_1_1IAPWS__IF97_1_1State__Region1" kind="struct" language="C++" prot="public">
+    <compoundname>xThermal::IAPWS_IF97::State_Region1</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1State__Region1_1ae13019be055cc89183c48467fbf0b3a2" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::State_Region1::T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <qualifiedname>xThermal::IAPWS_IF97::State_Region1::T</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="116" column="20" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1State__Region1_1aa47c696837be8a445238eec781f13171" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::State_Region1::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <qualifiedname>xThermal::IAPWS_IF97::State_Region1::P</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="116" column="22" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1State__Region1_1a4a54d1fccfd0ab975bb1fe311f2636c9" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::State_Region1::pi</definition>
+        <argsstring></argsstring>
+        <name>pi</name>
+        <qualifiedname>xThermal::IAPWS_IF97::State_Region1::pi</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="116" column="24" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1State__Region1_1ad02dc48f88e60e14c400b1e2a3d2abf9" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::State_Region1::tau</definition>
+        <argsstring></argsstring>
+        <name>tau</name>
+        <qualifiedname>xThermal::IAPWS_IF97::State_Region1::tau</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="116" column="27" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1State__Region1_1a8f35c3d950884be33b4725ce6dc3dcdd" prot="public" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::IAPWS_IF97::State_Region1::RT</definition>
+        <argsstring></argsstring>
+        <name>RT</name>
+        <qualifiedname>xThermal::IAPWS_IF97::State_Region1::RT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="116" column="31" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1IAPWS__IF97_1_1State__Region1_1a2a52312cc0d750bb377aa3b62ab73749" prot="public" static="no" mutable="no">
+        <type><ref refid="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless" kindref="compound">GibbsEnergy_dimensionless</ref></type>
+        <definition>GibbsEnergy_dimensionless xThermal::IAPWS_IF97::State_Region1::gamma</definition>
+        <argsstring></argsstring>
+        <name>gamma</name>
+        <qualifiedname>xThermal::IAPWS_IF97::State_Region1::gamma</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS-IF97.h" line="117" column="39" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>xThermal::IAPWS_IF97::GibbsEnergy_dimensionless</label>
+        <link refid="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless"/>
+      </node>
+      <node id="1">
+        <label>xThermal::IAPWS_IF97::State_Region1</label>
+        <link refid="structxThermal_1_1IAPWS__IF97_1_1State__Region1"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>gamma</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Library/H2O/IAPWS-IF97.h" line="114" column="9" bodyfile="Library/H2O/IAPWS-IF97.h" bodystart="115" bodyend="118"/>
+    <listofallmembers>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1State__Region1_1a2a52312cc0d750bb377aa3b62ab73749" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::State_Region1</scope><name>gamma</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1State__Region1_1aa47c696837be8a445238eec781f13171" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::State_Region1</scope><name>P</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1State__Region1_1a4a54d1fccfd0ab975bb1fe311f2636c9" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::State_Region1</scope><name>pi</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1State__Region1_1a8f35c3d950884be33b4725ce6dc3dcdd" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::State_Region1</scope><name>RT</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1State__Region1_1ae13019be055cc89183c48467fbf0b3a2" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::State_Region1</scope><name>T</name></member>
+      <member refid="structxThermal_1_1IAPWS__IF97_1_1State__Region1_1ad02dc48f88e60e14c400b1e2a3d2abf9" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::State_Region1</scope><name>tau</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

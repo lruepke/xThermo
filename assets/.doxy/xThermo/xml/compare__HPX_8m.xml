@@ -1,0 +1,486 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="compare__HPX_8m" kind="file" language="Objective-C">
+    <compoundname>compare_HPX.m</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="compare__HPX_8m_1a67bbc066588a15ddd93c61146435246e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Hmin</definition>
+        <argsstring></argsstring>
+        <name>Hmin</name>
+        <initializer>= 0.1E6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="6" column="5" bodyfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__HPX_8m_1a947629f0e293d89614424b77967fe892" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Hmax</definition>
+        <argsstring></argsstring>
+        <name>Hmax</name>
+        <initializer>= 4.5E6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="7" column="5" bodyfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__HPX_8m_1a8f3b9237505721d22fe4b8afeceec4bd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Pmin</definition>
+        <argsstring></argsstring>
+        <name>Pmin</name>
+        <initializer>= 1E5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="8" column="5" bodyfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__HPX_8m_1a88b876e4c5bb6b655bb907587bd2bb77" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Pmax</definition>
+        <argsstring></argsstring>
+        <name>Pmax</name>
+        <initializer>= 600E5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="9" column="5" bodyfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__HPX_8m_1a0746f92ce18f3e7e2895449fbd63f44c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>end matrix lookup H</definition>
+        <argsstring></argsstring>
+        <name>H</name>
+        <initializer>= linspace(Hmin, Hmax, 100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="11" column="5" bodyfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__HPX_8m_1a4baee84af7a92177c9064ddc2fc010ce" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <initializer>= linspace(Pmin, Pmax ,100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="12" column="5" bodyfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__HPX_8m_1abb1cf3b5e97652a3b201a0e5faaddca0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>fpout_H</definition>
+        <argsstring></argsstring>
+        <name>fpout_H</name>
+        <initializer>=fopen(&apos;HH.txt&apos;,&apos;w&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="13" column="5" bodyfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__HPX_8m_1a1336d176ce9286fbf184c87be0af5b5e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>fpout_p</definition>
+        <argsstring></argsstring>
+        <name>fpout_p</name>
+        <initializer>=fopen(&apos;PP.txt&apos;,&apos;w&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="14" column="5" bodyfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__HPX_8m_1ad1d093318811ab92b723ba36bdf86879" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>fpout_Rho</definition>
+        <argsstring></argsstring>
+        <name>fpout_Rho</name>
+        <initializer>=fopen(&apos;RHO.txt&apos;,&apos;w&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="15" column="5" bodyfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__HPX_8m_1acf19a30a7abed926d198dc1b2c605a4d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>fpout_T</definition>
+        <argsstring></argsstring>
+        <name>fpout_T</name>
+        <initializer>=fopen(&apos;TT.txt&apos;,&apos;w&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="16" column="5" bodyfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__HPX_8m_1a6f6ccfcf58b31cb6412107d9d5281426" prot="public" static="no" mutable="no">
+        <type>for</type>
+        <definition>for i</definition>
+        <argsstring></argsstring>
+        <name>i</name>
+        <initializer>= 1:length(H)
+        h = H(i)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="17" column="9" bodyfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="compare__HPX_8m_1ac86694252f8dfdb19aaeadc4b7c342c6" prot="public" static="no" mutable="no">
+        <type>for</type>
+        <definition>for j</definition>
+        <argsstring></argsstring>
+        <name>j</name>
+        <initializer>= 1:length(P)
+            p = P(j)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="19" column="13" bodyfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="compare__HPX_8m_1a1dc5af0c85d822c71db1204d7ca3433d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>constX</definition>
+        <argsstring>(0.2)</argsstring>
+        <name>constX</name>
+        <param>
+          <type>0.</type>
+          <declname>2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="2" column="1" declfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" declline="2" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__HPX_8m_1aca1a73bb78a2906334191e4c1e919b6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>function</type>
+        <definition>function constX</definition>
+        <argsstring>(x) tol</argsstring>
+        <name>constX</name>
+        <param>
+          <type>x</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="4" column="10" declfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" declline="4" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__HPX_8m_1a3b53d49e274c8f99292f44e66743c83b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fprintf</definition>
+        <argsstring>(fpout_H,&apos;%.8E &apos;, H)</argsstring>
+        <name>fprintf</name>
+        <param>
+          <type>fpout_H</type>
+        </param>
+        <param>
+          <type>&apos;%.8E &apos;</type>
+        </param>
+        <param>
+          <type>H</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="22" column="13" declfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" declline="22" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__HPX_8m_1a59d7c5e3952d4b593f7e0848631e690b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fprintf</definition>
+        <argsstring>(fpout_p,&apos;%.8E &apos;, p)</argsstring>
+        <name>fprintf</name>
+        <param>
+          <type>fpout_p</type>
+        </param>
+        <param>
+          <type>&apos;%.8E &apos;</type>
+        </param>
+        <param>
+          <type>p</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="23" column="13" declfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" declline="23" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__HPX_8m_1a0aa8cf23bd9ca42727a4baada4294a4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fprintf</definition>
+        <argsstring>(fpout_Rho,&apos;%.8E &apos;, PROP.rho)</argsstring>
+        <name>fprintf</name>
+        <param>
+          <type>fpout_Rho</type>
+        </param>
+        <param>
+          <type>&apos;%.8E &apos;</type>
+        </param>
+        <param>
+          <type>PROP.</type>
+          <declname>rho</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="24" column="13" declfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" declline="24" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__HPX_8m_1ac8df0feec725f2469b177e9517dc5318" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fprintf</definition>
+        <argsstring>(fpout_T,&apos;%.8E &apos;, PROP.T)</argsstring>
+        <name>fprintf</name>
+        <param>
+          <type>fpout_T</type>
+        </param>
+        <param>
+          <type>&apos;%.8E &apos;</type>
+        </param>
+        <param>
+          <type>PROP.</type>
+          <declname>T</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="25" column="13" declfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" declline="25" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__HPX_8m_1a5e9e73a3738aa035f83c813fbe2505a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>end</type>
+        <definition>end fprintf</definition>
+        <argsstring>(fpout_H,&apos;\n&apos;)</argsstring>
+        <name>fprintf</name>
+        <param>
+          <type>fpout_H</type>
+        </param>
+        <param>
+          <type>&apos;\n&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="27" column="9" declfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" declline="27" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__HPX_8m_1aa00f02e29a8247ce7d7b906d7f21c5ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fprintf</definition>
+        <argsstring>(fpout_p,&apos;\n&apos;)</argsstring>
+        <name>fprintf</name>
+        <param>
+          <type>fpout_p</type>
+        </param>
+        <param>
+          <type>&apos;\n&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="28" column="9" declfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" declline="28" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__HPX_8m_1a7ce777cffdedc2e3732d1d9e5496f569" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fprintf</definition>
+        <argsstring>(fpout_Rho,&apos;\n&apos;)</argsstring>
+        <name>fprintf</name>
+        <param>
+          <type>fpout_Rho</type>
+        </param>
+        <param>
+          <type>&apos;\n&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="29" column="9" declfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" declline="29" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__HPX_8m_1a22e9a3602ab16db67af962ef0b2df1e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fprintf</definition>
+        <argsstring>(fpout_T,&apos;\n&apos;)</argsstring>
+        <name>fprintf</name>
+        <param>
+          <type>fpout_T</type>
+        </param>
+        <param>
+          <type>&apos;\n&apos;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="30" column="9" declfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" declline="30" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__HPX_8m_1a25ea57d5f1f28f01e72bcc9e2039ed8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>end</type>
+        <definition>end fclose</definition>
+        <argsstring>(fpout_H)</argsstring>
+        <name>fclose</name>
+        <param>
+          <type>fpout_H</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="32" column="5" declfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" declline="32" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__HPX_8m_1a57c3d85d15f2a3655ce7740f273098df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fclose</definition>
+        <argsstring>(fpout_p)</argsstring>
+        <name>fclose</name>
+        <param>
+          <type>fpout_p</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="33" column="5" declfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" declline="33" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__HPX_8m_1a966c8dfa27b47c7aa5ff6e7ba94928dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fclose</definition>
+        <argsstring>(fpout_Rho)</argsstring>
+        <name>fclose</name>
+        <param>
+          <type>fpout_Rho</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="34" column="5" declfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" declline="34" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="compare__HPX_8m_1adfb5ab391d2ddf4123bbf4ff795c6575" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fclose</definition>
+        <argsstring>(fpout_T)</argsstring>
+        <name>fclose</name>
+        <param>
+          <type>fpout_T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m" line="35" column="5" declfile="Library/benchmark_test/compare_matlabcode/compare_HPX.m" declline="35" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal">constX(0.2);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/>constX(x)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>tol<sp/>=<sp/>1E-10;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>Hmin<sp/>=<sp/>0.1E6;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>Hmax<sp/>=<sp/>4.5E6;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>Pmin<sp/>=<sp/>1E5;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>Pmax<sp/>=<sp/>600E5;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>H<sp/>=<sp/>linspace(Hmin,<sp/>Hmax,<sp/>100);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>P<sp/>=<sp/>linspace(Pmin,<sp/>Pmax<sp/>,100);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>fpout_H=fopen(</highlight><highlight class="stringliteral">&apos;HH.txt&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;w&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>fpout_p=fopen(</highlight><highlight class="stringliteral">&apos;PP.txt&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;w&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>fpout_Rho=fopen(</highlight><highlight class="stringliteral">&apos;RHO.txt&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;w&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>fpout_T=fopen(</highlight><highlight class="stringliteral">&apos;TT.txt&apos;</highlight><highlight class="normal">,</highlight><highlight class="charliteral">&apos;w&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1:length(H)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h<sp/>=<sp/>H(i);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>1:length(P)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p<sp/>=<sp/>P(j);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[<sp/>PROP<sp/>]<sp/>=<sp/>fluidprop_NaCl_PhX(<sp/>p,<sp/>h,<sp/>x,tol<sp/>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fpout_H,</highlight><highlight class="stringliteral">&apos;%.8E<sp/>&apos;</highlight><highlight class="normal">,<sp/>H);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fpout_p,</highlight><highlight class="stringliteral">&apos;%.8E<sp/>&apos;</highlight><highlight class="normal">,<sp/>p);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fpout_Rho,</highlight><highlight class="stringliteral">&apos;%.8E<sp/>&apos;</highlight><highlight class="normal">,<sp/>PROP.rho);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fpout_T,</highlight><highlight class="stringliteral">&apos;%.8E<sp/>&apos;</highlight><highlight class="normal">,<sp/>PROP.T);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fpout_H,</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fpout_p,</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fpout_Rho,</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fpout_T,</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose(fpout_H);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose(fpout_p);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose(fpout_Rho);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose(fpout_T);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">end</highlight></codeline>
+    </programlisting>
+    <location file="Library/benchmark_test/compare_matlabcode/compare_HPX.m"/>
+  </compounddef>
+</doxygen>
