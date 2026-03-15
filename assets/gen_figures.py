@@ -124,8 +124,140 @@ def vlh_curve(out=OUT):
     print(f'saved {path}')
     plt.close(fig)
 
+# ---------------------------------------------------------------------------
+# 4. 3-D T-p-X phase boundary diagram
+# ---------------------------------------------------------------------------
+def phase_diagram_3d(out=OUT):
+    import warnings
+    warnings.filterwarnings("ignore", category=RuntimeWarning)
+    from matplotlib.patches import Patch
+    from mpl_toolkits.mplot3d import Axes3D  # noqa: F401
+
+    # --- compute phase boundary surfaces ---
+    nT = 80
+
+    # VLH surface
+    nT_high = int(nT / 3)
+    nT_low  = nT - nT_high
+    T_high  = H2ONaCl.T_MIN_VLH + (sw.Tmax_VLH() - H2ONaCl.T_MIN_VLH) * 0.95
+    T_vlh   = np.append(np.linspace(H2ONaCl.T_MIN_VLH, T_high, nT_low),
+                        np.linspace(T_high, sw.Tmax_VLH(), nT_high))
+    P_vlh   = np.array(sw.P_VLH(T_vlh))
+    Xl_vlh, Xv_vlh = np.array(sw.X_VLH(T_vlh, P_vlh))
+
+    n_log, n_lin = 20, 40
+    X_dummy = np.zeros(n_log + n_lin)
+    TT_vlh, _ = np.meshgrid(T_vlh, X_dummy)
+    PP_vlh    = np.zeros_like(TT_vlh)
+    XX_V2L    = np.zeros_like(TT_vlh)
+    XX_L2H    = np.zeros_like(TT_vlh)
+    for i in range(PP_vlh.shape[0]):
+        PP_vlh[i, :] = P_vlh
+    for j in range(TT_vlh.shape[1]):
+        XX_V2L[:, j] = np.append(
+            10 ** np.linspace(np.log10(max(Xv_vlh[j], 1e-10)),
+                              np.log10(0.01), n_log),
+            np.linspace(0.01, Xl_vlh[j], n_lin))
+        XX_L2H[:, j] = np.linspace(Xl_vlh[j], 1.0, n_log + n_lin)
+
+    # VH surface
+    nP = 60
+    T_vh = np.linspace(H2ONaCl.T_MIN_VLH, sw.Tmax_VLH(), nT)
+    P_vlh2 = np.array(sw.P_VLH(T_vh))
+    TT_vh, PP_vh_dummy = np.meshgrid(T_vh, np.zeros(nP))
+    PP_vh = np.zeros_like(TT_vh)
+    np_low = int(nP / 3)
+    np_high = nP - np_low
+    for i in range(len(T_vh)):
+        p_low = sw.pmin() + (P_vlh2[i] - sw.pmin()) * 0.1
+        PP_vh[:, i] = np.append(np.linspace(sw.pmin(), p_low, np_low),
+                                np.linspace(p_low, P_vlh2[i], np_high))
+    XX_VH = np.array(sw.X_VH(TT_vh.ravel(), PP_vh.ravel())).reshape(TT_vh.shape)
+
+    # Halite liquidus
+    TT_lh, _ = np.meshgrid(T_vh, np.zeros(nP))
+    PP_lh = np.zeros_like(TT_lh)
+    for i in range(len(T_vh)):
+        PP_lh[:, i] = np.linspace(P_vlh2[i], 2500e5, nP)
+    XL_LH = np.array(sw.X_HaliteLiquidus(TT_lh.ravel(), PP_lh.ravel())).reshape(TT_lh.shape)
+
+    # VL surfaces (liquid and vapor branches)
+    pb_l = sw.PhaseBoundary_VL_DeformLinear(H2ONaCl.Liquid)
+    pb_v = sw.PhaseBoundary_VL_DeformLinear(H2ONaCl.Vapor)
+
+    # Critical curve
+    T_crit = np.linspace(sw.get_pWater().T_critical(), sw.Tmax(), 80)
+    p_crit, X_crit = np.array(sw.P_X_Critical(T_crit))
+
+    # --- plot ---
+    fig = plt.figure(figsize=(12, 9))
+    ax  = fig.add_subplot(111, projection='3d', facecolor='None')
+
+    def surf(TT, PP, XX, color, label):
+        ax.plot_surface(XX * 100, TT - 273.15, PP / 1e5,
+                        color=color, alpha=0.45, linewidth=0)
+        ax.plot_wireframe(XX * 100, TT - 273.15, PP / 1e5,
+                          color=color, lw=0.4, label=label)
+
+    surf(TT_vlh, PP_vlh, XX_V2L,  'steelblue', 'VLH (V side)')
+    surf(TT_vlh, PP_vlh, XX_L2H,  'orange',    'VLH (L+H side)')
+    surf(TT_vh,  PP_vh,  XX_VH,   'purple',    'VH surface')
+    surf(TT_lh,  PP_lh,  XL_LH,   'limegreen', 'Halite liquidus')
+
+    for pb, color, label in [(pb_l, 'black', 'VL liquid'), (pb_v, 'gray', 'VL vapor')]:
+        TT_vl = np.array(pb.T)
+        PP_vl = np.array(pb.p)
+        XX_vl = np.array(pb.X)
+        ax.plot_surface(XX_vl * 100, TT_vl - 273.15, PP_vl / 1e5,
+                        color=color, alpha=0.3, linewidth=0)
+        ax.plot_wireframe(XX_vl * 100, TT_vl - 273.15, PP_vl / 1e5,
+                          color=color, lw=0.4, label=label)
+
+    ax.plot(X_crit * 100, T_crit - 273.15, p_crit / 1e5,
+            color='red', lw=2, label='Critical curve', zorder=10)
+    ax.plot(Xv_vlh * 100, T_vlh - 273.15, P_vlh / 1e5, color='red',    lw=1)
+    ax.plot(Xl_vlh * 100, T_vlh - 273.15, P_vlh / 1e5, color='green',  lw=1)
+
+    ax.set_xlabel('Salinity (wt% NaCl)', fontsize=10, labelpad=8)
+    ax.set_ylabel('Temperature (°C)',    fontsize=10, labelpad=8)
+    ax.set_zlabel('Pressure (bar)',      fontsize=10, labelpad=8)
+    ax.set_xlim(0, 100)
+    ax.set_ylim(0, 1000)
+    ax.set_zlim(0, 2500)
+    ax.view_init(elev=25, azim=-145)
+
+    # clean legend with patch handles
+    from matplotlib.colors import to_hex
+    handles, labels = ax.get_legend_handles_labels()
+    seen = {}
+    for h, l in zip(handles, labels):
+        if l not in seen:
+            color = None
+            for attr in ('get_edgecolor', 'get_facecolor', 'get_color'):
+                if hasattr(h, attr):
+                    try:
+                        c = getattr(h, attr)()
+                        if hasattr(c, '__len__') and len(c) >= 3:
+                            color = to_hex(c[0] if hasattr(c[0], '__len__') else c)
+                            break
+                    except Exception:
+                        pass
+            seen[l] = Patch(facecolor='white', edgecolor=color or 'black',
+                            linewidth=1.5, label=l)
+    ax.legend(handles=list(seen.values()), loc='upper left',
+              fontsize=8, ncol=2, framealpha=0.8)
+
+    ax.set_title(r'H$_2$O–NaCl phase boundaries in T–p–X space', fontsize=13, pad=12)
+    fig.tight_layout()
+    path = os.path.join(out, 'phase_diagram_3d_PTX.png')
+    fig.savefig(path, dpi=150, bbox_inches='tight')
+    print(f'saved {path}')
+    plt.close(fig)
+
+
 if __name__ == '__main__':
     phase_diagram_isobaric()
     boiling_curve()
     vlh_curve()
+    phase_diagram_3d()
     print('done')
