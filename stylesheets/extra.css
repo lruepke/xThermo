@@ -1,0 +1,6 @@
+/* Constrain figure images to 70% of the content column, cross-browser */
+.md-content img {
+  max-width: 70%;
+  height: auto;
+  display: block;
+}
