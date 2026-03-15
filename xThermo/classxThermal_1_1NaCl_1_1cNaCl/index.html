@@ -2221,23 +2221,23 @@
 <li>
 <p>Basic formula:<br />
   [\begin{align}
-H_{halite}(T, P) = \int_{(T_0,P_0)}^{(T,P)} dH = \int_{(T_0,P_0)}^{(T,P)} \left( \frac{\partial H}{\partial T}\right)<em>P dT + \left( \frac{\partial H}{\partial P} \right)_T dP = \int</em>{T_0}^{T} \left( \frac{\partial H}{\partial T}\right)<em>{P=P_0} dT + \int</em>{P_0}^{P} \left( \frac{\partial H}{\partial P} \right)_T dP
-\end{align}]</p>
+H_{halite}(T, P) = \int_{(T_0,P_0)}^{(T,P)} dH = \int_{(T_0,P_0)}^{(T,P)} \left( \frac{\partial H}{\partial T}\right)<em T_0="T_0">P dT + \left( \frac{\partial H}{\partial P} \right)_T dP = \int</em>\right)}^{T} \left( \frac{\partial H}{\partial T<em P_0="P_0">{P=P_0} dT + \int</em> \right)_T dP
+\end{align}]}^{P} \left( \frac{\partial H}{\partial P</p>
 </li>
 <li>
 <p>Integration along T (See Eq. 30 of Driesner2007Part2 for (C_p) of halite)  (\begin{align}
-\int_{T_0}^{T} \left( \frac{\partial H}{\partial T}\right)<em>{P=P_0} dT &amp;= \int</em>{T_0}^{T} C_p(T, P_0) dT =
+\int_{T_0}^{T} \left( \frac{\partial H}{\partial T}\right)<em T_0="T_0">{P=P_0} dT &amp;= \int</em> C_p(T, P_0) dT =
 \left[
-\underbrace{\left(r_0 - 2r_1 T_{triple, NaCl} + 3r_2T_{triple, NaCl}^2 + \color{red}{r_{3a}P} + r_4P^2 \right)}_{R_1}\color{blue}{T}</p>
+\underbrace{\left(r_0 - 2r_1 T_{triple, NaCl} + 3r_2T_{triple, NaCl}^2 + \color{red}{r_{3a}P} + r_4P^2 \right)}_{R_1}\color{blue}{T}}^{T</p>
 </li>
 <li>\underbrace{\left(r_1 - 3r_2T_{triple, NaCl} + \frac{1}{2}\color{red}{r_{3b}P} \right)}_{R_2}\color{blue}{T^2}</li>
-<li>\underbrace{\left(r_2 + \frac{1}{3}\color{red}{r_{3c}}P \right)}<em>{R_3}\color{blue}{T^3}
-\right] \bigg|</em>{T_0}^{T} = H_1(T, P_0) - H_1(T_0, P_0) \
+<li>\underbrace{\left(r_2 + \frac{1}{3}\color{red}{r_{3c}}P \right)}<em T_0="T_0">{R_3}\color{blue}{T^3}
+\right] \bigg|</em> = H_1(T, P_0) - H_1(T_0, P_0) \
 &amp; = \sum_{i=1}^{3}R_i T^i - R_0, ~~(R_0=\sum_{i=1}^{3}R_i T_0^i = H_1(T_0, P_0))
-\end{align})</li>
-<li>Integration along P (See Eq. 29 of Driesner2007Part2 for (\left(\frac{\partial H}{\partial P}\right)<em>T) of halite, and Eq. 1-3 for density (\rho_h) of halite)  (\begin{align}
-\int</em>{P_0}^P \left( \frac{\partial H}{\partial P} \right)<em>T dP = \int</em>{P_0}^P \left[ V - {\color{orange}{T}}\left(\frac{\partial V}{\partial T} \right)<em>P \right] dP = \color{green}{\int</em>{P_0}^P V dP} -\color{orange}{T}\frac{\partial }{\partial T} \left( \color{green}{\int_{P_0}^P V dP} \right) = H_2(T, P) - H_2(T, P_0)
-\end{align})</li>
+\end{align})}^{T</li>
+<li>Integration along P (See Eq. 29 of Driesner2007Part2 for (\left(\frac{\partial H}{\partial P}\right)<em P_0="P_0">T) of halite, and Eq. 1-3 for density (\rho_h) of halite)  (\begin{align}
+\int</em> \right)}^P \left( \frac{\partial H}{\partial P<em P_0="P_0">T dP = \int</em> \right)}^P \left[ V - {\color{orange}{T}}\left(\frac{\partial V}{\partial T<em P_0="P_0">P \right] dP = \color{green}{\int</em> \right) = H_2(T, P) - H_2(T, P_0)
+\end{align})}^P V dP} -\color{orange}{T}\frac{\partial }{\partial T} \left( \color{green}{\int_{P_0}^P V dP</li>
 </ul>
 <p><strong>Warning:</strong></p>
 <p>The unit of (\color{orange}{T}) in front of (\left( \frac{\partial V}{\partial T} \right)_P) is [K]</p>

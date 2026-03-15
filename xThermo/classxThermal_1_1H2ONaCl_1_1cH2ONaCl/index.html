@@ -2747,11 +2747,11 @@
 <p>For high-temperature(T&gt;800 deg.C) and low pressure (P&lt;P_vlh), implement the similar extrapolation method with that in \like Rho_phase .</p>
 <p>[\begin{align}
 \begin{cases}
-H_{solution} (T,P,X) &amp;= H_{H_2O}(T^<em><em>H, P)\
-H</em>{extrapol}^{lowT} (T,P,X) &amp;= o_0 + o_1 T^</em><em>V + o_2 T^{*3}</em>{H},&amp; ~~  (P&lt;P_{H_2O}^{crit}, T&lt;=T_{H_2O}^{crit})\
+H_{solution} (T,P,X) &amp;= H_{H_2O}(T^<em><em extrapol="extrapol">H, P)\
+H</em> (T,P,X) &amp;= o_0 + o_1 T^}^{lowT</em><em H="H">V + o_2 T^{*3}</em>)\
 H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P<P_{vlh}^{peak}, T>600 ^{\circ}C)
 \end{cases}
-\end{align}]</p>
+\end{align}]},&amp; ~~  (P&lt;P_{H_2O}^{crit}, T&lt;=T_{H_2O}^{crit</p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><code>T</code> </li>
@@ -3669,8 +3669,8 @@ X_{mol} = \frac{X_{wt}/M_{NaCl}}{X_{wt}/M_{NaCl} + (1-X_{wt})/M_{H_2O}}
 <a id="__codelineno-67-7" name="__codelineno-67-7" href="#__codelineno-67-7"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">dp</span><span class="o">=</span><span class="mi">1</span>
 <a id="__codelineno-67-8" name="__codelineno-67-8" href="#__codelineno-67-8"></a><span class="p">)</span><span class="w"> </span>
 </code></pre></div></p>
-<p>According to the definition of compressibility (\beta = - \frac{1}{V} \left( \frac{\partial V}{\partial p} \right)<em>T), the compressibility of two phase can be expressed as,  (\begin{equation}
-\beta = \frac{1}{\rho} \left( \frac{\partial p}{\partial p} \right)</em>{T,X}
+<p>According to the definition of compressibility (\beta = - \frac{1}{V} \left( \frac{\partial V}{\partial p} \right)<em T_X="T,X">T), the compressibility of two phase can be expressed as,  (\begin{equation}
+\beta = \frac{1}{\rho} \left( \frac{\partial p}{\partial p} \right)</em>
 \end{equation}) where (\rho = S_1 \rho_1 + S_2\rho_2) is the bulk density. The analytical expression is a bit complicated, so we can calculated it using numerical difference.  (\begin{equation}
 \beta (T,P,X) = \frac{\rho(T,P + 0.5\delta p, X) - \rho (T, P - 0.5\delta P, X)}{\delta p}
 \end{equation})</p>
