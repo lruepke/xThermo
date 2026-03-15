@@ -783,6 +783,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#linking-with-gcc-directly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linking with GCC directly
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#key-classes" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1122,6 +1133,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#linking-with-gcc-directly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linking with GCC directly
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#key-classes" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1186,6 +1208,48 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">xThermo_DIR</span><span class="o">=</span>/path/to/xThermo/install
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>cmake<span class="w"> </span>..
 </code></pre></div>
+<h2 id="linking-with-gcc-directly">Linking with GCC directly</h2>
+<p><code>libxThermal.a</code> is a static archive but it does <strong>not</strong> bundle GSL internally — it only references GSL symbols. You must therefore pass GSL explicitly on the linker command line:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">xThermo_DIR</span><span class="o">=</span>/path/to/xThermo/install
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nv">GSL_LIB</span><span class="o">=</span><span class="si">${</span><span class="nv">xThermo_DIR</span><span class="si">}</span>/../ThirdParties/install/gsl_<span class="k">$(</span>uname<span class="w"> </span>-s<span class="k">)</span>_<span class="k">$(</span>uname<span class="w"> </span>-m<span class="k">)</span>/lib
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>g++<span class="w"> </span>-std<span class="o">=</span>c++11<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span>-I<span class="si">${</span><span class="nv">xThermo_DIR</span><span class="si">}</span>/include<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span>-L<span class="si">${</span><span class="nv">xThermo_DIR</span><span class="si">}</span>/STATIC<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span>-L<span class="si">${</span><span class="nv">GSL_LIB</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span>-o<span class="w"> </span>my_app<span class="w"> </span>main.cpp<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span>-lxThermal<span class="w"> </span>-lgsl<span class="w"> </span>-lgslcblas<span class="w"> </span>-lm
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Why GSL?</p>
+<p>xThermo uses GSL for multidimensional root-finding (saturation pressure, phase boundaries).
+When you build with CMake, <code>target_link_libraries</code> resolves the GSL dependency automatically.
+When linking manually with <code>g++</code>, you must add <code>-lgsl -lgslcblas</code> yourself and point
+<code>-L</code> at the GSL library built in <code>ThirdParties/</code>.</p>
+</div>
+<p>The <code>$(uname -s)_$(uname -m)</code> part expands to the platform-specific install directory, e.g.:</p>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Path suffix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>macOS Apple Silicon</td>
+<td><code>gsl_Darwin_arm64</code></td>
+</tr>
+<tr>
+<td>macOS Intel</td>
+<td><code>gsl_Darwin_x86_64</code></td>
+</tr>
+<tr>
+<td>Linux x86_64</td>
+<td><code>gsl_Linux_x86_64</code></td>
+</tr>
+</tbody>
+</table>
 <h2 id="key-classes">Key classes</h2>
 <table>
 <thead>
