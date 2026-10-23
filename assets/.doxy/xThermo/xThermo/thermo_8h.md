@@ -46,6 +46,7 @@ _Head file of_ [_**xThermal**_](namespacexThermal.md) _._[More...](#detailed-des
 
 | Type | Name |
 | ---: | :--- |
+| class | [**OuterEvaluation**](classxThermal_1_1OuterEvaluation.md) <br>_Reset of a caller's result object at the outermost public evaluation entry (C7)._  |
 | class | [**cxThermal**](classxThermal_1_1cxThermal.md) <br>_Top abstract class of the thermodynamic model._  |
 
 

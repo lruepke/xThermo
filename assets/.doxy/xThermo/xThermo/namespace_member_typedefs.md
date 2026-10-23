@@ -44,6 +44,7 @@
 
 * **MAP\_PhaseRegion2Name** ([**xThermal**](namespacexThermal.md))
 * **MAP\_INDEX2PROP** ([**xThermal::IAPWS95**](namespacexThermal_1_1IAPWS95.md))
+* **MultirootSolver** ([**xThermal::gsl\_guard**](namespacexThermal_1_1gsl__guard.md))
 
 
 ## n
@@ -55,6 +56,11 @@
 ## o
 
 * **OutOfRangeError** ([**xThermal**](namespacexThermal.md))
+
+
+## r
+
+* **RootSolver** ([**xThermal::gsl\_guard**](namespacexThermal_1_1gsl__guard.md))
 
 
 ## s
@@ -70,6 +76,7 @@
 ## v
 
 * **ValueError** ([**xThermal**](namespacexThermal.md))
+* **Vector** ([**xThermal::gsl\_guard**](namespacexThermal_1_1gsl__guard.md))
 
 
 ## w

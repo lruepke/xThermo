@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="104" column="23" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="104" bodyend="-1"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="107" column="23" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="107" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Table6__Pressure__VLH_1a6ca52d716272aa541a880ac098a0b2c5" prot="public" static="no" mutable="no">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -32,14 +32,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="106" column="26" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="106" bodyend="107"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="109" column="26" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="109" bodyend="110"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Library/H2ONaCl/H2ONaCl.h" line="102" column="9" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="103" bodyend="108"/>
+    <location file="Library/H2ONaCl/H2ONaCl.h" line="105" column="9" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="106" bodyend="111"/>
     <listofallmembers>
       <member refid="structxThermal_1_1H2ONaCl_1_1Table6__Pressure__VLH_1a6ca52d716272aa541a880ac098a0b2c5" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Table6_Pressure_VLH</scope><name>f</name></member>
       <member refid="structxThermal_1_1H2ONaCl_1_1Table6__Pressure__VLH_1a76e479d63971e7375f9e75ba3fbca65a" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Table6_Pressure_VLH</scope><name>num</name></member>

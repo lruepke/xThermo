@@ -46,7 +46,7 @@ _Constants for water viscosity calculation, see mu2008._
 |  [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) | [**mu\_star**](#variable-mu_star)   = `1.0E-6`<br> |
 |  [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) | [**nu**](#variable-nu)   = `0.630`<br> |
 |  [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) | [**nuBygamma**](#variable-nubygamma)   = `nu/gamma`<br> |
-|  [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) | [**p\_star**](#variable-p_star)   = `22.064[**E5**](classxThermal_1_1xThermalError.md)`<br> |
+|  [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) | [**p\_star**](#variable-p_star)   = `22.064[**E6**](classxThermal_1_1xThermalError.md)`<br> |
 |  [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) | [**p\_starByRho\_star**](#variable-p_starbyrho_star)   = `p\_star/rho\_star`<br> |
 |  [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) | [**qC**](#variable-qc)   = `1.0/1.9`<br> |
 |  [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) | [**qD**](#variable-qd)   = `1.0/1.1`<br> |

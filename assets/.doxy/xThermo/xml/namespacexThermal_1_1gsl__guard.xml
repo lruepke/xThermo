@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacexThermal_1_1gsl__guard" kind="namespace" language="C++">
+    <compoundname>xThermal::gsl_guard</compoundname>
+    <innerclass refid="classxThermal_1_1gsl__guard_1_1GuardedFunction" prot="public">xThermal::gsl_guard::GuardedFunction</innerclass>
+    <innerclass refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction" prot="public">xThermal::gsl_guard::GuardedMultirootFunction</innerclass>
+    <innerclass refid="structxThermal_1_1gsl__guard_1_1MultirootSolverFree" prot="public">xThermal::gsl_guard::MultirootSolverFree</innerclass>
+    <innerclass refid="structxThermal_1_1gsl__guard_1_1RootSolverFree" prot="public">xThermal::gsl_guard::RootSolverFree</innerclass>
+    <innerclass refid="structxThermal_1_1gsl__guard_1_1VectorFree" prot="public">xThermal::gsl_guard::VectorFree</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="gsl__guard_8hpp_1a835ab10480936a497116eb9ee14342f2" prot="public" static="no">
+        <type>std::unique_ptr&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_root_fsolver</ref>, <ref refid="structxThermal_1_1gsl__guard_1_1RootSolverFree" kindref="compound">RootSolverFree</ref> &gt;</type>
+        <definition>typedef std::unique_ptr&lt;gsl_root_fsolver, RootSolverFree&gt; xThermal::gsl_guard::RootSolver</definition>
+        <argsstring></argsstring>
+        <name>RootSolver</name>
+        <qualifiedname>xThermal::gsl_guard::RootSolver</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/gsl_guard.hpp" line="40" column="33" bodyfile="Library/thermo/gsl_guard.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="gsl__guard_8hpp_1a2c8d2afeadc61ca2819c8dd32501684c" prot="public" static="no">
+        <type>std::unique_ptr&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_multiroot_fsolver</ref>, <ref refid="structxThermal_1_1gsl__guard_1_1MultirootSolverFree" kindref="compound">MultirootSolverFree</ref> &gt;</type>
+        <definition>typedef std::unique_ptr&lt;gsl_multiroot_fsolver, MultirootSolverFree&gt; xThermal::gsl_guard::MultirootSolver</definition>
+        <argsstring></argsstring>
+        <name>MultirootSolver</name>
+        <qualifiedname>xThermal::gsl_guard::MultirootSolver</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/gsl_guard.hpp" line="41" column="33" bodyfile="Library/thermo/gsl_guard.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="gsl__guard_8hpp_1a8099976704ee8b45e4fd06d36522a010" prot="public" static="no">
+        <type>std::unique_ptr&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_vector</ref>, <ref refid="structxThermal_1_1gsl__guard_1_1VectorFree" kindref="compound">VectorFree</ref> &gt;</type>
+        <definition>typedef std::unique_ptr&lt;gsl_vector, VectorFree&gt; xThermal::gsl_guard::Vector</definition>
+        <argsstring></argsstring>
+        <name>Vector</name>
+        <qualifiedname>xThermal::gsl_guard::Vector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/gsl_guard.hpp" line="42" column="33" bodyfile="Library/thermo/gsl_guard.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="gsl__guard_8hpp_1acd22db3df85fd03b1bbd140cad26280c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string xThermal::gsl_guard::num</definition>
+        <argsstring>(double x)</argsstring>
+        <name>num</name>
+        <qualifiedname>xThermal::gsl_guard::num</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/gsl_guard.hpp" line="44" column="28" bodyfile="Library/thermo/gsl_guard.hpp" bodystart="44" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Library/thermo/gsl_guard.hpp" line="35" column="5"/>
+  </compounddef>
+</doxygen>

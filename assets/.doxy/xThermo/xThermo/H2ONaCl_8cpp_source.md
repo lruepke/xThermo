@@ -10,6 +10,7 @@
 ```C++
 
 #include "H2ONaCl.h"
+#include "gsl_guard.hpp"
 // ----- LUT related head filess --------
 #include "LookUpTableForestI.H"
 #include "interpolationI.H"
@@ -255,14 +256,16 @@ namespace xThermal
             F.params = &params;
 
             T = gsl_root_fsolver_brent;
-            s = gsl_root_fsolver_alloc (T);
-            gsl_root_fsolver_set (s, &F, x_lo, x_hi);
+            gsl_guard::RootSolver solver(gsl_root_fsolver_alloc (T)); // owns s (C1, LIB-27)
+            s = solver.get();
+            gsl_guard::GuardedFunction guarded(F, "cH2ONaCl::T_Critical_Bisection"); // bracket check, callback failures contained (C1)
+            guarded.set (s, x_lo, x_hi);
             // printf ("using %s method\n", gsl_root_fsolver_name (s));
             // printf ("%5s [%9s, %9s] %9s %10s %9s\n", "iter", "lower", "upper", "root", "err", "err(est)");
             do
             {
                 iter++;
-                status = gsl_root_fsolver_iterate (s);
+                status = guarded.iterate (s);
                 T_crit = gsl_root_fsolver_root (s);
                 x_lo = gsl_root_fsolver_x_lower (s);
                 x_hi = gsl_root_fsolver_x_upper (s);
@@ -276,9 +279,8 @@ namespace xThermal
             {
                 printf ("status = %s\n\n", gsl_strerror (status));
                 printf("P = %.3E Pa\n", P);
-                ERROR("Fatal error in void cH2ONaCl::T_Critical(double P, double& T_crit)");
+                throw SolutionError("Fatal error in void cH2ONaCl::T_Critical(double P, double& T_crit)");
             }
-            gsl_root_fsolver_free (s);
         }
 
         double func_TL_VL(double T, void *params)
@@ -347,15 +349,17 @@ namespace xThermal
             F.params = &params;
 
             T = gsl_root_fsolver_brent;
-            s = gsl_root_fsolver_alloc (T);
-            gsl_root_fsolver_set (s, &F, x_lo, x_hi);
+            gsl_guard::RootSolver solver(gsl_root_fsolver_alloc (T)); // owns s (C1, LIB-27)
+            s = solver.get();
+            gsl_guard::GuardedFunction guarded(F, "cH2ONaCl::T_VL_bisection"); // bracket check, callback failures contained (C1)
+            guarded.set (s, x_lo, x_hi);
             // printf ("using %s method\n", gsl_root_fsolver_name (s));
             // printf ("%5s [%9s, %9s] %9s %10s %9s\n", "iter", "lower", "upper", "root", "err", "err(est)");
             // printf ("%5d [%.7f, %.7f] %.7f\n",iter, x_lo-273.15, x_hi-273.15,T_res-273.15);
             do
             {
                 iter++;
-                status = gsl_root_fsolver_iterate (s);
+                status = guarded.iterate (s);
                 T_res = gsl_root_fsolver_root (s);
                 x_lo = gsl_root_fsolver_x_lower (s);
                 x_hi = gsl_root_fsolver_x_upper (s);
@@ -369,9 +373,8 @@ namespace xThermal
             {
                 printf ("status = %s\n\n", gsl_strerror (status));
                 printf("P = %.3E Pa, X = %.3E wt%% NaCl\n", P, X*100.0);
-                ERROR("Fatal error in void cH2ONaCl::T_VL_LiquidBranch_bisection(double P, double X, double& T_res)");
+                throw SolutionError("Fatal error in void cH2ONaCl::T_VL_LiquidBranch_bisection(double P, double X, double& T_res)");
             }
-            gsl_root_fsolver_free (s);
         }
 
         double cH2ONaCl::T_VL(const double& P, const double& X, PhaseType phase)
@@ -481,14 +484,16 @@ namespace xThermal
         F.params = &params;
 
         T = gsl_root_fsolver_brent;
-        s = gsl_root_fsolver_alloc (T);
-        gsl_root_fsolver_set (s, &F, x_lo, x_hi);
+        gsl_guard::RootSolver solver(gsl_root_fsolver_alloc (T)); // owns s (C1, LIB-27)
+        s = solver.get();
+        gsl_guard::GuardedFunction guarded(F, "cH2ONaCl::T_VLH_P0_"); // bracket check, callback failures contained (C1)
+        guarded.set (s, x_lo, x_hi);
         // printf ("using %s method\n", gsl_root_fsolver_name (s));
         // printf ("%5s [%9s, %9s] %9s %10s %9s\n", "iter", "lower", "upper", "root", "err", "err(est)");
         do
         {
             iter++;
-            status = gsl_root_fsolver_iterate (s);
+            status = guarded.iterate (s);
             T_ = gsl_root_fsolver_root (s);
             x_lo = gsl_root_fsolver_x_lower (s);
             x_hi = gsl_root_fsolver_x_upper (s);
@@ -501,9 +506,8 @@ namespace xThermal
         if(!((status == GSL_SUCCESS)))
         {
             printf ("status = %s\n\n", gsl_strerror (status));
-            ERROR("Fatal error in double cH2ONaCl::T_VLH_P0");
+            throw SolutionError("Fatal error in double cH2ONaCl::T_VLH_P0");
         }
-        gsl_root_fsolver_free (s);
         return T_;
     }
 
@@ -703,14 +707,16 @@ namespace xThermal
             F.params = &params;
 
             T = gsl_root_fsolver_brent;
-            s = gsl_root_fsolver_alloc (T);
-            gsl_root_fsolver_set (s, &F, x_lo, x_hi);
+            gsl_guard::RootSolver solver(gsl_root_fsolver_alloc (T)); // owns s (C1, LIB-27)
+            s = solver.get();
+            gsl_guard::GuardedFunction guarded(F, "cH2ONaCl::T_VL_L"); // bracket check, callback failures contained (C1)
+            guarded.set (s, x_lo, x_hi);
             // printf ("using %s method\n", gsl_root_fsolver_name (s));
             // printf ("%5s [%9s, %9s] %9s %10s %9s\n", "iter", "lower", "upper", "root", "err", "err(est)");
             do
             {
                 iter++;
-                status = gsl_root_fsolver_iterate (s);
+                status = guarded.iterate (s);
                 T_ = gsl_root_fsolver_root (s);
                 x_lo = gsl_root_fsolver_x_lower (s);
                 x_hi = gsl_root_fsolver_x_upper (s);
@@ -723,9 +729,8 @@ namespace xThermal
             if(!((status == GSL_SUCCESS)))
             {
                 printf ("status = %s\n\n", gsl_strerror (status));
-                ERROR("Fatal error in double cH2ONaCl::T_VLH_P0");
+                throw SolutionError("Fatal error in double cH2ONaCl::T_VLH_P0");
             }
-            gsl_root_fsolver_free (s);
             return T_;
         }
 
@@ -773,14 +778,16 @@ namespace xThermal
             F.params = &params;
 
             T = gsl_root_fsolver_brent;
-            s = gsl_root_fsolver_alloc (T);
-            gsl_root_fsolver_set (s, &F, x_lo, x_hi);
+            gsl_guard::RootSolver solver(gsl_root_fsolver_alloc (T)); // owns s (C1, LIB-27)
+            s = solver.get();
+            gsl_guard::GuardedFunction guarded(F, "cH2ONaCl::T_VL_V"); // bracket check, callback failures contained (C1)
+            guarded.set (s, x_lo, x_hi);
             // printf ("using %s method\n", gsl_root_fsolver_name (s));
             // printf ("%5s [%9s, %9s] %9s %10s %9s\n", "iter", "lower", "upper", "root", "err", "err(est)");
             do
             {
                 iter++;
-                status = gsl_root_fsolver_iterate (s);
+                status = guarded.iterate (s);
                 T_ = gsl_root_fsolver_root (s);
                 x_lo = gsl_root_fsolver_x_lower (s);
                 x_hi = gsl_root_fsolver_x_upper (s);
@@ -793,9 +800,8 @@ namespace xThermal
             if(!((status == GSL_SUCCESS)))
             {
                 printf ("status = %s\n\n", gsl_strerror (status));
-                ERROR("Fatal error in double cH2ONaCl::T_VLH_P0");
+                throw SolutionError("Fatal error in double cH2ONaCl::T_VLH_P0");
             }
-            gsl_root_fsolver_free (s);
             return T_;
         }
 
@@ -1187,7 +1193,45 @@ namespace xThermal
             // printf("v390: %.4E, v400: %.4E, v1000: %.4E\n",V_water_P390, V_water_P390_dP,V_water_1000bar);
             return o3 + o4*log(P_bar + 1000) + o5*P_bar; //kg/m^3
         }
-        
+
+        double cH2ONaCl::extrapolation_V_highT(const double& T_C, const double& P_bar, const double& X_mol, double& dVdT, double& dVdP_bar)
+        {
+            double n1, n2, Tstar;
+            double dP = 1; //bar
+            double dRhodP_w, dRhodT_w, kappa_w, beta_w;
+            // the same anchors as extrapolation_V_highT, with the water temperature derivatives
+            n1n2_Tstar_V(P_Peak_VLH_bar, X_mol, n1, n2);
+            Tstar = n1 + n2*T_C; // deg.C
+            double rho_water_P390 = _Rho_water(Tstar+273.15, P_Peak_VLH, dRhodP_w, dRhodT_w, kappa_w, beta_w);
+            double V_water_P390 = m_constants_Water.molar_mass/rho_water_P390; // m^3/mol
+            double dV_water_P390 = -m_constants_Water.molar_mass/(rho_water_P390*rho_water_P390)*dRhodT_w*n2;
+            n1n2_Tstar_V(P_Peak_VLH_bar + dP, X_mol, n1, n2);
+            Tstar = n1 + n2*T_C; // deg.C
+            double rho_water_P390_dP = _Rho_water(Tstar+273.15, (P_Peak_VLH_bar+dP)*1E5, dRhodP_w, dRhodT_w, kappa_w, beta_w);
+            double V_water_P390_dP = m_constants_Water.molar_mass/rho_water_P390_dP; // m^3/mol
+            double dV_water_P390_dP = -m_constants_Water.molar_mass/(rho_water_P390_dP*rho_water_P390_dP)*dRhodT_w*n2;
+            double dVdP = (V_water_P390_dP - V_water_P390)/dP;
+            double d_dVdP = (dV_water_P390_dP - dV_water_P390)/dP;
+            n1n2_Tstar_V(1000, X_mol, n1, n2);
+            Tstar = n1 + n2*T_C; // deg.C
+            double rho_water_1000bar = _Rho_water(Tstar+273.15, 1000E5, dRhodP_w, dRhodT_w, kappa_w, beta_w);
+            double V_water_1000bar = m_constants_Water.molar_mass/rho_water_1000bar; // m^3/mol
+            double dV_water_1000bar = -m_constants_Water.molar_mass/(rho_water_1000bar*rho_water_1000bar)*dRhodT_w*n2;
+
+            double delta_V = V_water_1000bar - V_water_P390;
+            double d_delta_V = dV_water_1000bar - dV_water_P390;
+            double delta_P = 1000 - P_Peak_VLH_bar;
+            double P_Peak_VLH_bar_plus1000 = P_Peak_VLH_bar + 1000;
+            double L = log(2000) - log(P_Peak_VLH_bar_plus1000) - delta_P/P_Peak_VLH_bar_plus1000;
+            double o4 = (delta_V - dVdP*delta_P)/L, d_o4 = (d_delta_V - d_dVdP*delta_P)/L;
+            double o5 = dVdP - o4/P_Peak_VLH_bar_plus1000, d_o5 = d_dVdP - d_o4/P_Peak_VLH_bar_plus1000;
+            double o3 = V_water_P390 - o4*log(P_Peak_VLH_bar_plus1000) - o5*P_Peak_VLH_bar;
+            double d_o3 = dV_water_P390 - d_o4*log(P_Peak_VLH_bar_plus1000) - d_o5*P_Peak_VLH_bar;
+            dVdT = d_o3 + d_o4*log(P_bar + 1000) + d_o5*P_bar;
+            dVdP_bar = o4/(P_bar + 1000) + o5;
+            return o3 + o4*log(P_bar + 1000) + o5*P_bar;
+        }
+
         double cH2ONaCl::extrapolation_V_lowPlowT(const double& Tstar_C, const double& P_bar, const double& X_mol)
         {
             // printf("Tstar[C]: %.6E, P[bar]: %.6E, X[mol]: %.6E\n",Tstar_C, P_bar, X_mol);
@@ -1213,6 +1257,24 @@ namespace xThermal
             return o0 + o1*Tstar_C + o2*Tstar_sqre*Tstar_C;
         }
 
+        static void dn1n2dP_Tstar_V(const double& P, const double& X, double& dn1dP, double& dn2dP)
+        {
+            double one_minus_X = 1-X;
+            double P_sqrt = sqrt(P), PP = P*P;
+
+            double dn11 = 45.7623 * 0.000944785 * exp(-0.000944785 * P);
+            double dn10 = 0.942876 * 0.5 / P_sqrt + 0.0817193 - 2 * 2.47556E-08 * P + 3 * 3.45052E-10 * PP;
+            double dn12 = -dn11 - dn10;
+            dn1dP = dn10 + dn11 * one_minus_X + dn12 * one_minus_X*one_minus_X;
+
+            double n21 = -2.6142 - 0.000239092 * P, dn21 = -0.000239092;
+            double n22 = 0.0356828 + 4.37235E-06 * P + 2.0566E-09 * PP, dn22 = 4.37235E-06 + 2 * 2.0566E-09 * P;
+            double dn2_XNaCl = 0.00237723 * 0.5 / P_sqrt + 5.42049E-05 + 2 * 5.84709E-09 * P - 3 * 5.99373E-13 * PP;
+            double dn20 = -dn21 * sqrt(n22) - n21 * dn22 / (2 * sqrt(n22));
+            double dn23 = dn2_XNaCl - dn20 - dn21 * sqrt(1 + n22) - n21 * dn22 / (2 * sqrt(1 + n22));
+            dn2dP = dn20 + dn21 * sqrt(X + n22) + n21 * dn22 / (2 * sqrt(X + n22)) + dn23 * X;
+        }
+
         void cH2ONaCl::Rho_phase(const double& T, const double& P, const double& X, double& rho, double& dRhodP, double& dRhodT,PhaseType phase)
         {
             // X==0 means the input phase doesn't exist, how to deal with that ? Actually we don't need special process for X==0, because the "correction method" already include the case of X==0
@@ -1235,9 +1297,13 @@ namespace xThermal
             double dRhodP_water, dRhodT_water, kappa_water, beta_water;
             double rho_water = _Rho_water(Tstar + 273.15, P, dRhodP_water, dRhodT_water, kappa_water, beta_water, phase);  //input T in unit K
             double molarVolume2MassDensity = (m_constants_Water.molar_mass*(1-X_mol) + NaCl::M*X_mol)/m_constants_Water.molar_mass;
+            // chain rule through T* = n1(P,X) + n2(P,X)*T (C12, LIB-25): dT*/dT = n2, dT*/dP = (n1' + n2'*T)/1E5 [deg.C/Pa]
+            double dn1dP, dn2dP;
+            dn1n2dP_Tstar_V(P_bar, X_mol, dn1dP, dn2dP);
+            double dTstardP = (dn1dP + dn2dP*T_C)/1E5;
             rho = molarVolume2MassDensity * rho_water;
-            dRhodP = molarVolume2MassDensity * dRhodP_water;
-            dRhodT = molarVolume2MassDensity * dRhodT_water;
+            dRhodP = molarVolume2MassDensity * (dRhodP_water + dRhodT_water*dTstardP);
+            dRhodT = molarVolume2MassDensity * dRhodT_water * n2;
 
             // If calculate density of vapor, we dont't need to make extrapolation
 
@@ -1249,22 +1315,24 @@ namespace xThermal
                 if(T>=873.15 && P<P_Peak_VLH && X_mol>0.1)
                 {
                     rho = (m_constants_Water.molar_mass*(1-X_mol) + NaCl::M*X_mol)/extrapolation_V_highT(T_C,P_bar,X_mol);
-                    double dT = 0.1;
-                    double rho_dT = (m_constants_Water.molar_mass*(1-X_mol) + NaCl::M*X_mol)/extrapolation_V_highT(T_C + dT,P_bar,X_mol);
-                    dRhodT = (rho_dT - rho)/dT;
-                    double dP_bar = 0.1;
-                    double rho_dP = (m_constants_Water.molar_mass*(1-X_mol) + NaCl::M*X_mol)/extrapolation_V_highT(T_C,P_bar + dP_bar,X_mol);
-                    dRhodP = (rho_dP - rho)/(dP_bar*1E5);
+                    // exact derivatives of Eq. 18 (C13b, LIB-24); the density above is unchanged
+                    double dVdT, dVdP_bar;
+                    double V = extrapolation_V_highT(T_C, P_bar, X_mol, dVdT, dVdP_bar);
+                    dRhodT = -(m_constants_Water.molar_mass*(1-X_mol) + NaCl::M*X_mol)/(V*V)*dVdT;
+                    dRhodP = -(m_constants_Water.molar_mass*(1-X_mol) + NaCl::M*X_mol)/(V*V)*dVdP_bar/1E5;
                     // std::cout<<rho<<std::endl;
                 }else if(P<15E5 && rho_water < m_constants_Water.rhomass_critical) // see also Line 142 of calc_rho.m
                 {
                     rho = (m_constants_Water.molar_mass*(1-X_mol) + NaCl::M*X_mol)/extrapolation_V_lowPlowT(Tstar, P_bar, X_mol);
                     double dT = 0.1;
                     double rho_dT = (m_constants_Water.molar_mass*(1-X_mol) + NaCl::M*X_mol)/extrapolation_V_lowPlowT(Tstar +dT, P_bar, X_mol);
-                    dRhodT = (rho_dT - rho)/dT;
+                    double dRhodTstar = (rho_dT - rho)/dT; // derivative w.r.t. T*
                     double dP_bar = 0.1;
                     double rho_dP = (m_constants_Water.molar_mass*(1-X_mol) + NaCl::M*X_mol)/extrapolation_V_lowPlowT(Tstar, P_bar + dP_bar, X_mol);
-                    dRhodP = (rho_dP - rho)/(dP_bar*1E5);
+                    double dRhodP_Tstar = (rho_dP - rho)/(dP_bar*1E5); // derivative w.r.t. P at constant T*
+                    // chain rule through T* (C12, LIB-25)
+                    dRhodT = dRhodTstar * n2;
+                    dRhodP = dRhodP_Tstar + dRhodTstar*dTstardP;
                 }
             }
         }
@@ -1434,8 +1502,9 @@ namespace xThermal
             if(X==0)
             {
                 m_Water->Boiling_T(P, props);
-                if (phase == Liquid)H = props.H_l;//m_Water->props_sat_liquid().H;
-                else if (phase == Vapor)H = props.H_v;//m_Water->props_sat_vapor().H;
+                // LIB-54: Cp of the same saturated phase as H (intrinsic saturated c_P, LIB-35); was left unset
+                if (phase == Liquid) { H = props.H_l; Cp = props.Cp_l; }
+                else if (phase == Vapor) { H = props.H_v; Cp = props.Cp_v; }
                 return;
             }
             double X_mol;
@@ -2543,6 +2612,12 @@ namespace xThermal
         }
 
         void cH2ONaCl::UpdateState_TPX(ThermodynamicProperties& props, const double& T, const double& p, const double& X) {
+            OuterEvaluation outer(props);  // C7: reset at the outermost entry
+            // LIB-55: the published upper temperature limit of the H2O-NaCl model (Driesner & Heinrich 2007; T_MAX); above
+            // it the phase relations are not defined (the evaluation jumped to "Liquid" with discontinuous H and possibly
+            // negative density). The pure-water backends keep their own range.
+            if (T > T_MAX)
+                throw OutOfRangeError("cH2ONaCl::UpdateState_TPX: T="+std::to_string(T)+" K is above the upper temperature limit T_MAX="+std::to_string(T_MAX)+" K of the H2O-NaCl model (LIB-55)");
             props.fluidName = name();
             // props.input_pair = TPX;
             props.T = T;    props.p = p;   props.X = X;
@@ -2633,6 +2708,7 @@ namespace xThermal
                     Mu_phase(T,p,props.X_l, props.Mu_l, Liquid);
                     props.Rho_h = m_NaCl->Rho_Solid(T,p);
                     props.H_h = m_NaCl->H_Solid(T,p);
+                    props.Cp_h = m_NaCl->Cp_Solid(T,p); // LIB-46: used in the bulk Cp below; was never set in L+H
                     props.S_h = Saturation_Phase1(1.0, props.X_l, props.Rho_h, props.Rho_l, props.X);
                     props.S_l = 1.0 - props.S_h;
                     props.S_v = 0;
@@ -2668,6 +2744,8 @@ namespace xThermal
                     props.S_l = 0;
                     props.Rho_l = 0; props.H_l = 0; props.Cp_l = 0; props.Mu_l = 0;
                     props.Rho_h = 0; props.H_h = 0; props.Cp_h = 0;
+                    props.dRhodP = props.dRhodP_v;  // LIB-30: bulk derivatives of the single vapour phase, as for the liquid
+                    props.dRhodT = props.dRhodT_v;
                     props.IsothermalCompressibility_v = props.dRhodP_v/props.Rho_v;
                     props.IsobaricExpansivity_v = -props.dRhodT_v/props.Rho_v;
                     props.IsothermalCompressibility = props.IsothermalCompressibility_v;
@@ -2696,6 +2774,8 @@ namespace xThermal
         }
 
         PhaseRegion cH2ONaCl::findPhaseRegion_TPX(const double &T, const double &p, const double &X) {
+            if (T > T_MAX)   // LIB-55, as UpdateState_TPX
+                throw OutOfRangeError("cH2ONaCl::findPhaseRegion_TPX: T="+std::to_string(T)+" K is above the upper temperature limit T_MAX="+std::to_string(T_MAX)+" K of the H2O-NaCl model (LIB-55)");
             PhaseRegion phase;
             double X_l, X_v;
             getPhaseRegion_TPX(T,p,X, phase, X_l, X_v);
@@ -2723,25 +2803,56 @@ namespace xThermal
             ThermodynamicProperties props;
             UpdateState_TPX(props, T_MAX, p, X);
             Hmax= props.H;
-            if(H>props.H)
+            // LIB-19 / LIB-55: above H(T_MAX). On the limit within H_TOL_T_LIMIT (rounding of range-edge inputs); otherwise
+            // above the model's upper temperature limit: a typed failure (previously NaN, which gave an "Unknown" state)
+            if(H>Hmax)
             {
-                static bool ShowWarning_Hmax = true;
-                if(ShowWarning_Hmax)WARNING("Value exceed bound in T_HPX(const double &H, const double &p, const double &X, const double &Tmin, const double &Tmax)\nThe input H greater than Hmax of given p="+std::to_string(p)+"Pa, X="+std::to_string(X)+" kg/kg, Hmax="+std::to_string(Hmax)+"J/kg, input H="+std::to_string(H)+"J/kg. The T will be NAN. This warning information will only display once.");
-                ShowWarning_Hmax = false;
-                return NAN;
+                if (H - Hmax <= H_TOL_T_LIMIT) return T_MAX;
+                throw OutOfRangeError("T_HPX: H="+std::to_string(H)+" J/kg is above the enthalpy at the upper temperature limit T_MAX="+std::to_string(T_MAX)+" K (H="+std::to_string(Hmax)+" J/kg), p="+std::to_string(p)+" Pa, X="+std::to_string(X)+" kg/kg (LIB-19, LIB-55)");
             }
-            UpdateState_TPX(props, T_MIN, p, X);
+            double T_lo = this->Tmin();
+            auto evaluable = [&](double T) {
+                try { UpdateState_TPX(props, T, p, X); return true; }
+                catch (const OutOfRangeError& e) {
+                    std::string msg = e.what();
+                    if (msg.find("cIAPWS95::UpdateState_TP") == std::string::npos || msg.find("T out of bound") == std::string::npos) throw;
+                    return false;
+                }
+            };
+            if (!evaluable(T_lo))
+            {
+                double T_fail = T_lo, T_ok = NAN;
+                for (double step = 1.0; T_lo + step < Tmax; step *= 2)  // coarse upward search, doubling steps (at most 10 for T_MIN..T_MAX)
+                {
+                    if (evaluable(T_lo + step)) { T_ok = T_lo + step; break; }
+                    T_fail = T_lo + step;
+                }
+                if (isnan(T_ok))
+                    throw OutOfRangeError("T_HPX: the H2O-NaCl T-P-X evaluation is not available between T = "+std::to_string(T_lo)+" K and "+std::to_string(Tmax)+" K with the "+m_Water->name()+" backend, p="+std::to_string(p)+" Pa, X="+std::to_string(X)+" kg/kg");
+                if (H < props.H)  // the root, if any, lies below T_ok: locate the availability boundary (bisection, at most 64 steps)
+                {
+                    for (int i = 0; i < 64 && T_ok - T_fail > 1E-6; i++)
+                    {
+                        double T_mid = 0.5*(T_fail + T_ok);
+                        if (evaluable(T_mid)) T_ok = T_mid; else T_fail = T_mid;
+                    }
+                    UpdateState_TPX(props, T_ok, p, X);
+                    if (H < props.H)
+                        throw OutOfRangeError("T_HPX: H="+std::to_string(H)+" J/kg is below the enthalpy at the lowest temperature where the H2O-NaCl T-P-X evaluation is available with the "+m_Water->name()+" backend (T="+std::to_string(T_ok)+" K, H="+std::to_string(props.H)+" J/kg, p="+std::to_string(p)+" Pa, X="+std::to_string(X)+" kg/kg); no extrapolation (C5b)");
+                }
+                T_lo = T_ok;
+            }
             Hmin = props.H;
+            // LIB-19: below H at the lowest available temperature. On the limit within H_TOL_T_LIMIT (rounding of
+            // range-edge inputs); otherwise a typed failure instead of NaN (which gave an "Unknown" state)
             if(H<Hmin)
             {
-                static bool ShowWarning_Hmin = true;
-                if(ShowWarning_Hmin)WARNING("Value exceed bound in T_HPX(const double &H, const double &p, const double &X, const double &Tmin, const double &Tmax)\nThe input H smaller than Hmin of given p="+std::to_string(p)+"Pa, X="+std::to_string(X)+" kg/kg, Hmin="+std::to_string(Hmin)+"J/kg, input H="+std::to_string(H)+"J/kg. The T will be NAN. This warning information will only display once.");
-                ShowWarning_Hmin = false;
-                return NAN;
+                if (Hmin - H <= H_TOL_T_LIMIT) return T_lo;
+                throw OutOfRangeError("T_HPX: H="+std::to_string(H)+" J/kg is below the enthalpy at the lowest temperature T="+std::to_string(T_lo)+" K (H="+std::to_string(Hmin)+" J/kg), p="+std::to_string(p)+" Pa, X="+std::to_string(X)+" kg/kg (LIB-19)");
             }
             //
             double T_ = 573; // need a guess T ? but now it works quite well.
-            double x_lo = Tmin, x_hi = Tmax;
+            double x_lo = std::max(Tmin, T_lo), x_hi = Tmax;
             int status;
             int iter = 0;
             const gsl_root_fsolver_type *T;
@@ -2758,14 +2869,16 @@ namespace xThermal
             F.params = &params;
             // printf ("%5d [%.7f, %.7f] %.7f, p=%.4f bar, H=%.4f J/kg, Hmin = %.4f, Hmax = %.4f, X=%.4f\n",iter, x_lo, x_hi,T_,p/1E5, H,Hmin, Hmax, X);
             T = gsl_root_fsolver_brent;
-            s = gsl_root_fsolver_alloc (T);
-            gsl_root_fsolver_set (s, &F, x_lo, x_hi);
+            gsl_guard::RootSolver solver(gsl_root_fsolver_alloc (T)); // owns s (C1, LIB-27)
+            s = solver.get();
+            gsl_guard::GuardedFunction guarded(F, "cH2ONaCl::T_HPX"); // bracket check, callback failures contained (C1)
+            guarded.set (s, x_lo, x_hi);
             // printf ("using %s method\n", gsl_root_fsolver_name (s));
             // printf ("%5s [%9s, %9s] %9s %10s %9s\n", "iter", "lower", "upper", "root", "err", "err(est)");
             do
             {
                 iter++;
-                status = gsl_root_fsolver_iterate (s);
+                status = guarded.iterate (s);
                 T_ = gsl_root_fsolver_root (s);
                 x_lo = gsl_root_fsolver_x_lower (s);
                 x_hi = gsl_root_fsolver_x_upper (s);
@@ -2778,9 +2891,8 @@ namespace xThermal
             if(status != GSL_SUCCESS)
             {
                 printf ("status = %s\n\n", gsl_strerror (status));
-                ERROR("Fatal error in double cH2ONaCl::T_VLH_P0");
+                throw SolutionError("Fatal error in double cH2ONaCl::T_VLH_P0");
             }
-            gsl_root_fsolver_free (s);
             return T_;
         }
 
@@ -2864,10 +2976,12 @@ namespace xThermal
             double H_lvh[3] = {0, 0, 0};
             double Cp_lvh[3] = {0, 0,0};
             double S_lvh[3]={0,0,0};        // in order of L,V,H
+            // LIB-32: the derivatives of each trial temperature stay local; only an accepted V+L+H state writes them
+            double dRhodP_lv[2] = {0, 0}, dRhodT_lv[2] = {0, 0};   // in order of L,V
             for (int i = 0; i < T1_T2.size(); ++i) {
                 X_VLH(T1_T2[i], p, X_lvh[0], X_lvh[1]);
-                Rho_phase(T1_T2[i], p, X_lvh[0], Rho_lvh[0], props.dRhodP_l, props.dRhodT_l, Liquid);
-                Rho_phase(T1_T2[i], p, X_lvh[1], Rho_lvh[1], props.dRhodP_v, props.dRhodT_v, Vapor);
+                Rho_phase(T1_T2[i], p, X_lvh[0], Rho_lvh[0], dRhodP_lv[0], dRhodT_lv[0], Liquid);
+                Rho_phase(T1_T2[i], p, X_lvh[1], Rho_lvh[1], dRhodP_lv[1], dRhodT_lv[1], Vapor);
                 Rho_lvh[2]= m_NaCl->Rho_Solid(T1_T2[i], p); // note that in VLH region, halite is in solid phase.
                 H_phase(T1_T2[i], p, X_lvh[0], H_lvh[0], Cp_lvh[0], Liquid);
                 H_phase(T1_T2[i], p, X_lvh[1], H_lvh[1], Cp_lvh[1], Vapor);
@@ -2877,6 +2991,10 @@ namespace xThermal
                 {
                     props.T=T1_T2[i];
                     props.phase = ThreePhase_VLH;
+                    props.dRhodP_l = dRhodP_lv[0];
+                    props.dRhodT_l = dRhodT_lv[0];
+                    props.dRhodP_v = dRhodP_lv[1];
+                    props.dRhodT_v = dRhodT_lv[1];
                     props.X_l = X_lvh[0];
                     props.X_v = X_lvh[1];
                     props.H_l = H_lvh[0];
@@ -2921,6 +3039,8 @@ namespace xThermal
             H_v = props_boil.H_v;
             Cp_v = props_boil.Cp_v;
             Rho_v = props_boil.Rho_v;
+            // H_phase does not set Cp for pure water (X == 0): use the saturated liquid of the same state as H_l (LIB-33)
+            if (X == 0) Cp_l = props_boil.Cp_l;
             // check H,P,X in VL zone or not
             if (H>H_v || H<H_l)return false;
 
@@ -2932,8 +3052,30 @@ namespace xThermal
             props.H_l = H_l;
             props.H_v = H_v;
             props.H_h = 0; //because in the VL zone, so we don't need to calculate property of halite! set it to 0
-            props.Rho_l = Rho_phase(Tl, p, X, Liquid);
+            // pure water (X == 0): the saturated liquid of the same state as H_l, Cp_l, H_v, Rho_v (LIB-36; T_VL(p, 0, Liquid) returns Tmin)
+            if (X == 0)
+            {
+                props.Rho_l = props_boil.Rho_l;
+                props.dRhodP_l = props_boil.dRhodP_l;   // LIB-52: intrinsic derivatives of the saturated liquid
+                props.dRhodT_l = props_boil.dRhodT_l;
+                props.IsothermalCompressibility_l = props_boil.IsothermalCompressibility_l;
+                props.IsobaricExpansivity_l = props_boil.IsobaricExpansivity_l;
+            }
+            else
+            {
+                Rho_phase(Tl, p, X, props.Rho_l, props.dRhodP_l, props.dRhodT_l, Liquid);   // LIB-52: same call as for Rho_l
+                props.IsothermalCompressibility_l = props.dRhodP_l/props.Rho_l;
+                props.IsobaricExpansivity_l = -props.dRhodT_l/props.Rho_l;
+            }
             props.Rho_v = Rho_v; //Rho_phase(Tv, p, X, Vapor);
+            props.dRhodP_v = props_boil.dRhodP_v;   // LIB-52: the saturated water vapour that gives Rho_v
+            props.dRhodT_v = props_boil.dRhodT_v;
+            props.IsothermalCompressibility_v = props_boil.IsothermalCompressibility_v;
+            props.IsobaricExpansivity_v = props_boil.IsobaricExpansivity_v;
+            // LIB-52: with X == 0 the trial T-P evaluation was a single-phase water state; its bulk derivatives are not
+            // two-phase quantities. Bulk derivatives of this state are not computed (C8). With X > 0 the trial state is
+            // the brine V+L state at the reported (T, p, X), whose bulk values follow the existing convention: kept.
+            if (X == 0) { props.dRhodP = 0; props.dRhodT = 0; props.IsothermalCompressibility = 0; props.IsobaricExpansivity = 0; }
             props.Rho_h = 0;
             props.S_l = (props.Rho_v * ( props.H_v - H))/(H * (props.Rho_l - props.Rho_v) - (props.Rho_l * props.H_l - props.Rho_v * props.H_v));
             props.S_v = 1.0 - props.S_l;
@@ -2954,12 +3096,9 @@ namespace xThermal
 
         void cH2ONaCl::UpdateState_HPX(ThermodynamicProperties& props, const double& H, const double& p, const double& X)
         {
+            OuterEvaluation outer(props);  // C7: reset at the outermost entry
             props.fluidName = name();
-            // ------ maybe safe check is not needed ----
-            ThermodynamicProperties prop;
-            UpdateState_TPX(prop, T_MAX, p, X);
-            if(H>prop.H)return;
-            //-----------------------------------------
+            // LIB-19: no early return for H > H(T_MAX) (it left an "Unknown" state with zeros); T_HPX handles the limits
 
             props.H = H;
             props.X = X;

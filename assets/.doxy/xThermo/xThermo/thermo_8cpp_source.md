@@ -1248,13 +1248,30 @@ namespace xThermal
         return headinfo;
     }
 
+    // C7: evaluation depth per thread (OpenMP threads of the vector API each have their own)
+    static int& evaluation_depth()
+    {
+        thread_local int depth = 0;
+        return depth;
+    }
+
+    OuterEvaluation::OuterEvaluation(ThermodynamicProperties& props)
+    {
+        if (evaluation_depth()++ == 0) props = ThermodynamicProperties();
+    }
+
+    OuterEvaluation::~OuterEvaluation()
+    {
+        --evaluation_depth();
+    }
+
     ThermodynamicPropertiesVector cxThermal::UpdateState_TPX(const std::vector<double>& T, const std::vector<double>& p, const std::vector<double>& X, bool isMeshGrid)
     {
         ThermodynamicPropertiesVector stateVector;
         stateVector.fluidName = name();
         if (!isMeshGrid)
         {
-            if (T.size() != p.size() && T.size() != X.size()) ERROR("The size of input T,p,X vectors are not identical in cxThermal::UpdateState_TPX(const std::vector<double>& T, const std::vector<double>& p, const std::vector<double>& X, bool isMeshGrid), can not process vector calculation, please check.");
+            if (T.size() != p.size() || T.size() != X.size()) throw InputError("The size of input T,p,X vectors are not identical in cxThermal::UpdateState_TPX(const std::vector<double>& T, const std::vector<double>& p, const std::vector<double>& X, bool isMeshGrid), can not process vector calculation, please check.");
             size_t N = T.size();
             stateVector.resize(N);
             MultiProgressBar multiBar(N);
@@ -1316,6 +1333,7 @@ namespace xThermal
         stateVector.fluidName = name();
         if (!isMeshGrid)
         {
+            if (H.size() != p.size() || H.size() != X.size()) throw InputError("The size of input H,p,X vectors are not identical in cxThermal::UpdateState_HPX(const std::vector<double>& H, const std::vector<double>& p, const std::vector<double>& X, bool isMeshGrid), can not process vector calculation, please check.");
             size_t N = H.size();
             stateVector.resize(N);
             MultiProgressBar multiBar(N);

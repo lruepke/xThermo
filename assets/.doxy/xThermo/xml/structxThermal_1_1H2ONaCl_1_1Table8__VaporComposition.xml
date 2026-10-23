@@ -18,14 +18,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="123" column="26" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="123" bodyend="125"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="126" column="26" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="126" bodyend="128"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Library/H2ONaCl/H2ONaCl.h" line="122" column="9" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="122" bodyend="127"/>
+    <location file="Library/H2ONaCl/H2ONaCl.h" line="125" column="9" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="125" bodyend="130"/>
     <listofallmembers>
       <member refid="structxThermal_1_1H2ONaCl_1_1Table8__VaporComposition_1acda7fb982a7e13f111e5ba050e8163b0" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Table8_VaporComposition</scope><name>k</name></member>
     </listofallmembers>

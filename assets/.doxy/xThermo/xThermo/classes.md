@@ -85,6 +85,10 @@
 
 * [**GibbsEnergy\_dimensionless**](structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless.md)
 ([**xThermal::IAPWS\_IF97**](namespacexThermal_1_1IAPWS__IF97.md))
+* [**GuardedFunction**](classxThermal_1_1gsl__guard_1_1GuardedFunction.md)
+([**xThermal::gsl\_guard**](namespacexThermal_1_1gsl__guard.md))
+* [**GuardedMultirootFunction**](classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction.md)
+([**xThermal::gsl\_guard**](namespacexThermal_1_1gsl__guard.md))
 
 
 ## h
@@ -128,6 +132,8 @@
 * [**memorypool**](structmemorypool.md)
 * [**mesh**](structmesh.md)
 * [**MultiProgressBar**](classMultiProgressBar.md)
+* [**MultirootSolverFree**](structxThermal_1_1gsl__guard_1_1MultirootSolverFree.md)
+([**xThermal::gsl\_guard**](namespacexThermal_1_1gsl__guard.md))
 
 
 ## n
@@ -140,6 +146,8 @@
 
 * [**osub**](structosub.md)
 * [**otri**](structotri.md)
+* [**OuterEvaluation**](classxThermal_1_1OuterEvaluation.md)
+([**xThermal**](namespacexThermal.md))
 
 
 ## p
@@ -191,6 +199,8 @@
 
 * [**RMSD\_RefineCriterion**](structLOOKUPTABLE__FOREST_1_1RMSD__RefineCriterion.md)
 ([**LOOKUPTABLE\_FOREST**](namespaceLOOKUPTABLE__FOREST.md))
+* [**RootSolverFree**](structxThermal_1_1gsl__guard_1_1RootSolverFree.md)
+([**xThermal::gsl\_guard**](namespacexThermal_1_1gsl__guard.md))
 * [**rparams**](structrparams.md)
 
 
@@ -239,6 +249,8 @@
 
 * [**ValueErrorSpec**](classxThermal_1_1ValueErrorSpec.md)
 ([**xThermal**](namespacexThermal.md))
+* [**VectorFree**](structxThermal_1_1gsl__guard_1_1VectorFree.md)
+([**xThermal::gsl\_guard**](namespacexThermal_1_1gsl__guard.md))
 * [**ViewController**](interfaceViewController.md)
 
 

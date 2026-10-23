@@ -43,7 +43,7 @@
     <detaileddescription>
 <para><simplesect kind="note"><para>r[3] is a function of T, need to updated inside function <ref refid="" kindref="compound">Cp</ref>.</para>
 </simplesect>
-<simplesect kind="note"><para>Again, in order to make input P with unit [Pa], multiply 1E-5 and 1E-10 to <formula id="253">$ r_3, r_4 $</formula>, respectively, see equation 30 of Driesner2007Part2.</para>
+<simplesect kind="note"><para>Again, in order to make input P with unit [Pa], multiply 1E-5 and 1E-10 to <formula id="258">$ r_3, r_4 $</formula>, respectively, see equation 30 of Driesner2007Part2.</para>
 </simplesect>
 <simplesect kind="warning"><para>Why the r4 is written as summation of some tiny values in the Tab. 5 ?</para>
 </simplesect>

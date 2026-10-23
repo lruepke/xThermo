@@ -35,6 +35,7 @@
 
 | Type | Name |
 | ---: | :--- |
+|  const double | [**H\_TOL\_T\_LIMIT**](#variable-h_tol_t_limit)   = `1E-3`<br> |
 |  const double | [**P\_MAX**](#variable-p_max)   = `5000E5`<br> |
 |  const double | [**P\_MIN**](#variable-p_min)   = `1E5`<br> |
 |  const double | [**P\_Peak\_VLH**](#variable-p_peak_vlh)   = `39014744.433797`<br> |
@@ -106,6 +107,23 @@ Need to discuss how to deal with the discrepancy between the critical point of H
     
 ## Public Attributes Documentation
 
+
+
+
+### variable H\_TOL\_T\_LIMIT 
+
+```
+const double xThermal::H2ONaCl::H_TOL_T_LIMIT;
+```
+
+
+
+H-P-X only (LIB-19): an enthalpy within this distance [J/kg] of H(T\_MIN) or H(T\_MAX) lies on that limit (about 1e-6 K; rounding of range-edge inputs) 
+
+
+        
+
+<hr>
 
 
 

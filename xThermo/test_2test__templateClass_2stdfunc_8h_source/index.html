@@ -17,7 +17,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -25,7 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1062,47 +1062,47 @@
 <p><a href="../test_2test__templateClass_2stdfunc_8h/">Go to the documentation of this file</a></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#ifndef STDFUNC_H</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="cp">#define STDFUNC_H</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;stdio.h&quot;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">"stdio.h"</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="cp">#include</span><span class="cpf">&lt;map&gt;</span>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sys/stat.h&gt;</span>
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cstring&gt;</span>
 <a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sstream&gt;</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iomanip&gt;</span><span class="c1"> //to use std::setprecision</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iomanip&gt;</span><span class="w"> </span><span class="c1">//to use std::setprecision</span>
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1">// uncomment to disable assert()</span>
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="c1">// #define NDEBUG</span>
 <a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cassert&gt;</span>
 <a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
 <a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w"> </span><span class="cp">#ifdef _WIN32</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="c1">// define color, this seems only work on MacOS and linux, doesn&#39;t work on windows</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="cp">#define ERROR_COUT &quot;&quot;</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="cp">#define WARN_COUT &quot;&quot;</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span><span class="cp">#define COLOR_PURPLE &quot;&quot;</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="cp">#define COLOR_RED &quot;&quot;</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="cp">#define COLOR_GREEN &quot;&quot;</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span><span class="cp">#define COLOR_YELLOW &quot;&quot;</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">    </span><span class="cp">#define COLOR_BLUE &quot;&quot;</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">    </span><span class="cp">#define COLOR_DEFAULT &quot;&quot;</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="c1">// define color, this seems only work on MacOS and linux, doesn't work on windows</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="cp">#define ERROR_COUT ""</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="cp">#define WARN_COUT ""</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span><span class="cp">#define COLOR_PURPLE ""</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="cp">#define COLOR_RED ""</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="cp">#define COLOR_GREEN ""</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span><span class="cp">#define COLOR_YELLOW ""</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">    </span><span class="cp">#define COLOR_BLUE ""</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">    </span><span class="cp">#define COLOR_DEFAULT ""</span>
 <a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="cp">#else</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">    </span><span class="c1">// define color, this seems only work on MacOS and linux, doesn&#39;t work on windows</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="cp">#define ERROR_COUT &quot;[&quot;&lt;&lt;&quot;\033[31mError: &quot;&lt;&lt;&quot;\033[0m] &quot;</span>
-<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">    </span><span class="cp">#define WARN_COUT &quot;[&quot;&lt;&lt;&quot;\033[33mWarning: &quot;&lt;&lt;&quot;\033[0m] &quot;</span>
-<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">    </span><span class="cp">#define COLOR_PURPLE &quot;\033[35m&quot;</span>
-<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">    </span><span class="cp">#define COLOR_RED &quot;\033[31m&quot;</span>
-<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">    </span><span class="cp">#define COLOR_GREEN &quot;\033[32m&quot;</span>
-<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">    </span><span class="cp">#define COLOR_YELLOW &quot;\033[33m&quot;</span>
-<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">    </span><span class="cp">#define COLOR_BLUE &quot;\033[34m&quot;</span>
-<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">    </span><span class="cp">#define COLOR_DEFAULT &quot;\033[0m&quot;</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">    </span><span class="c1">// define color, this seems only work on MacOS and linux, doesn't work on windows</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="cp">#define ERROR_COUT "["&lt;&lt;"\033[31mError: "&lt;&lt;"\033[0m] "</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">    </span><span class="cp">#define WARN_COUT "["&lt;&lt;"\033[33mWarning: "&lt;&lt;"\033[0m] "</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">    </span><span class="cp">#define COLOR_PURPLE "\033[35m"</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">    </span><span class="cp">#define COLOR_RED "\033[31m"</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">    </span><span class="cp">#define COLOR_GREEN "\033[32m"</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">    </span><span class="cp">#define COLOR_YELLOW "\033[33m"</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">    </span><span class="cp">#define COLOR_BLUE "\033[34m"</span>
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">    </span><span class="cp">#define COLOR_DEFAULT "\033[0m"</span>
 <a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="cp">#endif</span>
 <a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>
-<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="cp">#define STATUS(info) std::cout&lt;&lt;&quot;--  &quot;&lt;&lt;COLOR_GREEN&lt;&lt;info&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl;</span>
-<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="cp">#define STATUS_color(info, color) std::cout&lt;&lt;&quot;--  &quot;&lt;&lt;color&lt;&lt;info&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl;</span>
-<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="cp">#define STATUS_time(info, time_taken) std::cout&lt;&lt;&quot;--  &quot;&lt;&lt;COLOR_GREEN&lt;&lt;info&lt;&lt;&quot;, time: &quot;&lt;&lt;(double)(time_taken)/CLOCKS_PER_SEC&lt;&lt;&quot; s&quot;&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl;</span>
-<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="cp">#define STATUS_system_time(info, duration) std::cout&lt;&lt;&quot;--  &quot;&lt;&lt;COLOR_GREEN&lt;&lt;info&lt;&lt;&quot;, time: &quot;&lt;&lt; double(duration) * std::chrono::microseconds::period::num / std::chrono::microseconds::period::den&lt;&lt;&quot; s&quot;&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl;</span>
-<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="cp">#define ERROR(info) {std::cout&lt;&lt;&quot;--  &quot;&lt;&lt;COLOR_RED&lt;&lt;info&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl; exit(0);}</span>
-<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="cp">#define WARNING(info) {std::cout&lt;&lt;&quot;--  &quot;&lt;&lt;COLOR_YELLOW&lt;&lt;info&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl;}</span>
-<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="cp">#define ASSERT(expression, info) {if(!(expression))std::cout&lt;&lt;&quot;--  &quot;&lt;&lt;COLOR_RED&lt;&lt;info&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl; assert(expression);}</span>
-<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="cp">#define WAIT(where) {std::cout&lt;&lt;&quot;Waiting &quot;&lt;&lt;where&lt;&lt; &quot;. Enter to continue...&quot; &lt;&lt; std::endl; std::string dummy; std::getline(std::cin, dummy);}</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="cp">#define STATUS(info) std::cout&lt;&lt;"--  "&lt;&lt;COLOR_GREEN&lt;&lt;info&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl;</span>
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="cp">#define STATUS_color(info, color) std::cout&lt;&lt;"--  "&lt;&lt;color&lt;&lt;info&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl;</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="cp">#define STATUS_time(info, time_taken) std::cout&lt;&lt;"--  "&lt;&lt;COLOR_GREEN&lt;&lt;info&lt;&lt;", time: "&lt;&lt;(double)(time_taken)/CLOCKS_PER_SEC&lt;&lt;" s"&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl;</span>
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="cp">#define STATUS_system_time(info, duration) std::cout&lt;&lt;"--  "&lt;&lt;COLOR_GREEN&lt;&lt;info&lt;&lt;", time: "&lt;&lt; double(duration) * std::chrono::microseconds::period::num / std::chrono::microseconds::period::den&lt;&lt;" s"&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl;</span>
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="cp">#define ERROR(info) {std::cout&lt;&lt;"--  "&lt;&lt;COLOR_RED&lt;&lt;info&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl; exit(0);}</span>
+<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="cp">#define WARNING(info) {std::cout&lt;&lt;"--  "&lt;&lt;COLOR_YELLOW&lt;&lt;info&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl;}</span>
+<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="cp">#define ASSERT(expression, info) {if(!(expression))std::cout&lt;&lt;"--  "&lt;&lt;COLOR_RED&lt;&lt;info&lt;&lt;COLOR_DEFAULT&lt;&lt;std::endl; assert(expression);}</span>
+<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="cp">#define WAIT(where) {std::cout&lt;&lt;"Waiting "&lt;&lt;where&lt;&lt; ". Enter to continue..." &lt;&lt; std::endl; std::string dummy; std::getline(std::cin, dummy);}</span>
 <a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="cp">#endif</span>
 </code></pre></div>
 
@@ -1157,7 +1157,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

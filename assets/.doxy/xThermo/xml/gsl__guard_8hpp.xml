@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="gsl__guard_8hpp" kind="file" language="C++">
+    <compoundname>gsl_guard.hpp</compoundname>
+    <includes local="no">cmath</includes>
+    <includes local="no">cstdio</includes>
+    <includes local="no">exception</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">string</includes>
+    <includes local="no">gsl/gsl_errno.h</includes>
+    <includes local="no">gsl/gsl_multiroots.h</includes>
+    <includes local="no">gsl/gsl_roots.h</includes>
+    <includes local="no">gsl/gsl_vector.h</includes>
+    <includes refid="thermo_2Exception_8h" local="yes">Exception.h</includes>
+    <includedby refid="IAPWS95_8cpp" local="yes">Library/H2O/IAPWS95.cpp</includedby>
+    <includedby refid="H2ONaCl_8cpp" local="yes">Library/H2ONaCl/H2ONaCl.cpp</includedby>
+    <incdepgraph>
+      <node id="11">
+        <label>Exception.h</label>
+        <link refid="thermo_2Exception_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Library/thermo/gsl_guard.hpp</label>
+        <link refid="gsl__guard_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cmath</label>
+      </node>
+      <node id="3">
+        <label>cstdio</label>
+      </node>
+      <node id="4">
+        <label>exception</label>
+      </node>
+      <node id="7">
+        <label>gsl/gsl_errno.h</label>
+      </node>
+      <node id="8">
+        <label>gsl/gsl_multiroots.h</label>
+      </node>
+      <node id="9">
+        <label>gsl/gsl_roots.h</label>
+      </node>
+      <node id="10">
+        <label>gsl/gsl_vector.h</label>
+      </node>
+      <node id="12">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>memory</label>
+      </node>
+      <node id="13">
+        <label>stdfunc.h</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>Library/H2O/IAPWS95.cpp</label>
+        <link refid="IAPWS95_8cpp"/>
+      </node>
+      <node id="3">
+        <label>Library/H2ONaCl/H2ONaCl.cpp</label>
+        <link refid="H2ONaCl_8cpp"/>
+      </node>
+      <node id="1">
+        <label>Library/thermo/gsl_guard.hpp</label>
+        <link refid="gsl__guard_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structxThermal_1_1gsl__guard_1_1RootSolverFree" prot="public">xThermal::gsl_guard::RootSolverFree</innerclass>
+    <innerclass refid="structxThermal_1_1gsl__guard_1_1MultirootSolverFree" prot="public">xThermal::gsl_guard::MultirootSolverFree</innerclass>
+    <innerclass refid="structxThermal_1_1gsl__guard_1_1VectorFree" prot="public">xThermal::gsl_guard::VectorFree</innerclass>
+    <innerclass refid="classxThermal_1_1gsl__guard_1_1GuardedFunction" prot="public">xThermal::gsl_guard::GuardedFunction</innerclass>
+    <innerclass refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction" prot="public">xThermal::gsl_guard::GuardedMultirootFunction</innerclass>
+    <innernamespace refid="namespacexThermal">xThermal</innernamespace>
+    <innernamespace refid="namespacexThermal_1_1gsl__guard">xThermal::gsl_guard</innernamespace>
+    <briefdescription>
+<para>Internal (not installed): RAII ownership and exception-safe callbacks for the GSL solvers (C1, LIB-02/18, LIB-27). </para>
+    </briefdescription>
+    <detaileddescription>
+<para>GSL&apos;s process-global error handler is never read or written. Instead, the conditions under which GSL would call it (and, with its default handler, abort the host process) are prevented here:<itemizedlist>
+<listitem><para>Brent bracket: lower &gt; upper (or NaN), non-finite endpoint values and endpoints that do not straddle zero are detected before gsl_root_fsolver_set, with exactly GSL&apos;s criteria, and reported as SolutionError;</para>
+</listitem><listitem><para>a non-finite function value, or a C++ exception, inside a callback is recorded; GSL receives a finite placeholder and the caller checks the record after every set/iterate and throws before it reads any solver result. No C++ exception crosses a GSL frame. All state belongs to one solve: no static or global mutable state.</para>
+</listitem></itemizedlist>
+</para>
+<para>Valid results are unchanged: the bracket check evaluates f(lower), f(upper) in GSL&apos;s order, and GSL&apos;s own evaluation of the same endpoints in gsl_root_fsolver_set is served from that result, so the sequence of function evaluations is identical to the unguarded code. Hybrid (multiroot) solvers keep their non-finite and non-convergence behaviour; only callback exceptions are contained there. Not preventable without a handler: GSL&apos;s allocation failures (GSL_ENOMEM) in *_alloc. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>XTHERMAL_GSL_GUARD_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>XTHERMAL_GSL_GUARD_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdio&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;exception&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_errno.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_multiroots.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_roots.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_vector.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Exception.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacexThermal" kindref="compound">xThermal</ref></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">gsl_guard</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37" refid="structxThermal_1_1gsl__guard_1_1RootSolverFree" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structxThermal_1_1gsl__guard_1_1RootSolverFree" kindref="compound">RootSolverFree</ref><sp/>{<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>operator()(<ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_root_fsolver</ref>*<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">s</ref>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_root_fsolver_free</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">s</ref>);<sp/>}<sp/>};</highlight></codeline>
+<codeline lineno="38" refid="structxThermal_1_1gsl__guard_1_1MultirootSolverFree" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structxThermal_1_1gsl__guard_1_1MultirootSolverFree" kindref="compound">MultirootSolverFree</ref><sp/>{<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>operator()(<ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_multiroot_fsolver</ref>*<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">s</ref>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_multiroot_fsolver_free</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">s</ref>);<sp/>}<sp/>};</highlight></codeline>
+<codeline lineno="39" refid="structxThermal_1_1gsl__guard_1_1VectorFree" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structxThermal_1_1gsl__guard_1_1VectorFree" kindref="compound">VectorFree</ref><sp/>{<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>operator()(<ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_vector</ref>*<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">v</ref>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_vector_free</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">v</ref>);<sp/>}<sp/>};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::unique_ptr&lt;gsl_root_fsolver,<sp/>RootSolverFree&gt;<sp/>RootSolver;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::unique_ptr&lt;gsl_multiroot_fsolver,<sp/>MultirootSolverFree&gt;<sp/>MultirootSolver;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::unique_ptr&lt;gsl_vector,<sp/>VectorFree&gt;<sp/>Vector;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/>num(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">buf</ref>[32];</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::snprintf(<ref refid="classxThermal_1_1xThermalError" kindref="compound">buf</ref>,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="classxThermal_1_1xThermalError" kindref="compound">buf</ref>),<sp/></highlight><highlight class="stringliteral">&quot;%.17g&quot;</highlight><highlight class="normal">,<sp/>x);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">buf</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classxThermal_1_1gsl__guard_1_1GuardedFunction" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxThermal_1_1gsl__guard_1_1GuardedFunction" kindref="compound">GuardedFunction</ref></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1gsl__guard_1_1GuardedFunction" kindref="compound">GuardedFunction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_function</ref>&amp;<sp/>f,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">where</ref>)<sp/>:<sp/>m_f(f),<sp/>m_where(<ref refid="classxThermal_1_1xThermalError" kindref="compound">where</ref>)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_gsl.function<sp/>=<sp/>&amp;eval;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_gsl.params<sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61" refid="classxThermal_1_1gsl__guard_1_1GuardedFunction_1af4d50cb76a97b14acfaeadb4f96b4245" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1gsl__guard_1_1GuardedFunction_1af4d50cb76a97b14acfaeadb4f96b4245" kindref="member">set</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_root_fsolver</ref>*<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">s</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">x_lower</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">x_upper</ref>)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!(<ref refid="classxThermal_1_1xThermalError" kindref="compound">x_lower</ref><sp/>&lt;=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">x_upper</ref>))</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">SolutionError</ref>(std::string(</highlight><highlight class="stringliteral">&quot;Fatal<sp/>error<sp/>in<sp/>&quot;</highlight><highlight class="normal">)<sp/>+<sp/>m_where<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>invalid<sp/>bracket<sp/>[&quot;</highlight><highlight class="normal"><sp/>+<sp/>num(<ref refid="classxThermal_1_1xThermalError" kindref="compound">x_lower</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>num(<ref refid="classxThermal_1_1xThermalError" kindref="compound">x_upper</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>evaluated<sp/>here,<sp/>in<sp/>C++<sp/>frames:<sp/>an<sp/>exception<sp/>from<sp/>the<sp/>function<sp/>propagates<sp/>normally</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">f_lower</ref><sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">GSL_FN_EVAL</ref>(&amp;m_f,<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">x_lower</ref>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">f_upper</ref><sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">GSL_FN_EVAL</ref>(&amp;m_f,<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">x_upper</ref>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!std::isfinite(<ref refid="classxThermal_1_1xThermalError" kindref="compound">f_lower</ref>)<sp/>||<sp/>!std::isfinite(<ref refid="classxThermal_1_1xThermalError" kindref="compound">f_upper</ref>))</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">SolutionError</ref>(std::string(</highlight><highlight class="stringliteral">&quot;Fatal<sp/>error<sp/>in<sp/>&quot;</highlight><highlight class="normal">)<sp/>+<sp/>m_where<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>function<sp/>value<sp/>is<sp/>not<sp/>finite<sp/>at<sp/>the<sp/>bracket<sp/>[&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>num(<ref refid="classxThermal_1_1xThermalError" kindref="compound">x_lower</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>num(<ref refid="classxThermal_1_1xThermalError" kindref="compound">x_upper</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;]:<sp/>f<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>num(<ref refid="classxThermal_1_1xThermalError" kindref="compound">f_lower</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>num(<ref refid="classxThermal_1_1xThermalError" kindref="compound">f_upper</ref>));</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="classxThermal_1_1xThermalError" kindref="compound">f_lower</ref><sp/>&lt;<sp/>0.0<sp/>&amp;&amp;<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">f_upper</ref><sp/>&lt;<sp/>0.0)<sp/>||<sp/>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">f_lower</ref><sp/>&gt;<sp/>0.0<sp/>&amp;&amp;<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">f_upper</ref><sp/>&gt;<sp/>0.0))</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">SolutionError</ref>(std::string(</highlight><highlight class="stringliteral">&quot;Fatal<sp/>error<sp/>in<sp/>&quot;</highlight><highlight class="normal">)<sp/>+<sp/>m_where<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>bracket<sp/>[&quot;</highlight><highlight class="normal"><sp/>+<sp/>num(<ref refid="classxThermal_1_1xThermalError" kindref="compound">x_lower</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>num(<ref refid="classxThermal_1_1xThermalError" kindref="compound">x_upper</ref>)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;]<sp/>does<sp/>not<sp/>contain<sp/>a<sp/>root:<sp/>f<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>num(<ref refid="classxThermal_1_1xThermalError" kindref="compound">f_lower</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>num(<ref refid="classxThermal_1_1xThermalError" kindref="compound">f_upper</ref>));</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_cache_x[0]<sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">x_lower</ref>;<sp/>m_cache_f[0]<sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">f_lower</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_cache_x[1]<sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">x_upper</ref>;<sp/>m_cache_f[1]<sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">f_upper</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_cache_n<sp/>=<sp/>2;<sp/>m_cache_next<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">status</ref><sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_root_fsolver_set</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">s</ref>,<sp/>&amp;m_gsl,<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">x_lower</ref>,<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">x_upper</ref>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_cache_n<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>check(<ref refid="classxThermal_1_1xThermalError" kindref="compound">status</ref>,<sp/></highlight><highlight class="stringliteral">&quot;gsl_root_fsolver_set&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82" refid="classxThermal_1_1gsl__guard_1_1GuardedFunction_1adc1ba8008fb23d8248e5e79b01f5aca2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1gsl__guard_1_1GuardedFunction_1adc1ba8008fb23d8248e5e79b01f5aca2" kindref="member">iterate</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_root_fsolver</ref>*<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">s</ref>)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">status</ref><sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_root_fsolver_iterate</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">s</ref>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>check(<ref refid="classxThermal_1_1xThermalError" kindref="compound">status</ref>,<sp/></highlight><highlight class="stringliteral">&quot;gsl_root_fsolver_iterate&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">status</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eval(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">self</ref>)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classxThermal_1_1gsl__guard_1_1GuardedFunction" kindref="compound">GuardedFunction</ref>*<sp/>g<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="classxThermal_1_1gsl__guard_1_1GuardedFunction" kindref="compound">GuardedFunction</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classxThermal_1_1xThermalError" kindref="compound">self</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(g-&gt;m_cache_next<sp/>&lt;<sp/>g-&gt;m_cache_n<sp/>&amp;&amp;<sp/>x<sp/>==<sp/>g-&gt;m_cache_x[g-&gt;m_cache_next])</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>g-&gt;m_cache_f[g-&gt;m_cache_next++];</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g-&gt;m_cache_n<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(g-&gt;m_exception<sp/>||<sp/>g-&gt;m_nonfinite)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>already<sp/>failed:<sp/>do<sp/>not<sp/>evaluate<sp/>again</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y<sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">GSL_FN_EVAL</ref>(&amp;g-&gt;m_f,<sp/>x);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(std::isfinite(y))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>y;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g-&gt;m_nonfinite<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g-&gt;m_x_failed<sp/>=<sp/>x;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g-&gt;m_f_failed<sp/>=<sp/>y;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(...)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g-&gt;m_exception<sp/>=<sp/>std::current_exception();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>finite<sp/>placeholder;<sp/>check()<sp/>throws<sp/>before<sp/>any<sp/>solver<sp/>result<sp/>is<sp/>used</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>check(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>call)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="112"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_exception)<sp/>std::rethrow_exception(m_exception);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_nonfinite)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>SolutionError(std::string(</highlight><highlight class="stringliteral">&quot;Fatal<sp/>error<sp/>in<sp/>&quot;</highlight><highlight class="normal">)<sp/>+<sp/>m_where<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>function<sp/>value<sp/>is<sp/>not<sp/>finite:<sp/>f(&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>num(m_x_failed)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>num(m_f_failed));</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>!=<sp/>GSL_SUCCESS)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>SolutionError(std::string(</highlight><highlight class="stringliteral">&quot;Fatal<sp/>error<sp/>in<sp/>&quot;</highlight><highlight class="normal">)<sp/>+<sp/>m_where<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>call<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>gsl_strerror(status));</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gsl_function<sp/>m_f,<sp/>m_gsl;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>m_where;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::exception_ptr<sp/>m_exception;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_nonfinite<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_x_failed<sp/>=<sp/>0,<sp/>m_f_failed<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_cache_x[2]<sp/>=<sp/>{0,<sp/>0},<sp/>m_cache_f[2]<sp/>=<sp/>{0,<sp/>0};</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_cache_n<sp/>=<sp/>0,<sp/>m_cache_next<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction" kindref="compound">GuardedMultirootFunction</ref></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction" kindref="compound">GuardedMultirootFunction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_multiroot_function</ref>&amp;<sp/>f)<sp/>:<sp/>m_f(f)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_gsl.f<sp/>=<sp/>&amp;eval;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_gsl.n<sp/>=<sp/>f.n;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_gsl.params<sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140" refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1a90b20fa3dadd02e9f146aff533c0a3f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1a90b20fa3dadd02e9f146aff533c0a3f8" kindref="member">set</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_multiroot_fsolver</ref>*<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">s</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_vector</ref>*<sp/>x)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">status</ref><sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_multiroot_fsolver_set</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">s</ref>,<sp/>&amp;m_gsl,<sp/>x);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>check();</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">status</ref>;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iterate(<ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_multiroot_fsolver</ref>*<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">s</ref>)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">status</ref><sp/>=<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_multiroot_fsolver_iterate</ref>(<ref refid="classxThermal_1_1xThermalError" kindref="compound">s</ref>);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>check();</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">status</ref>;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eval(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_vector</ref>*<sp/>x,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">self</ref>,<sp/><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_vector</ref>*<sp/>f)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GuardedMultirootFunction*<sp/>g<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">GuardedMultirootFunction*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classxThermal_1_1xThermalError" kindref="compound">self</ref>);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!g-&gt;m_exception)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>g-&gt;m_f.f(x,<sp/>g-&gt;m_f.params,<sp/>f);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(...)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g-&gt;m_exception<sp/>=<sp/>std::current_exception();</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gsl_vector_set_zero(f);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>finite<sp/>placeholder;<sp/>GSL<sp/>returns<sp/>the<sp/>status<sp/>without<sp/>calling<sp/>its<sp/>error<sp/>handler</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GSL_EBADFUNC;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>check()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="172"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_exception)<sp/>std::rethrow_exception(m_exception);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gsl_multiroot_function<sp/>m_f,<sp/>m_gsl;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::exception_ptr<sp/>m_exception;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Library/thermo/gsl_guard.hpp"/>
+  </compounddef>
+</doxygen>

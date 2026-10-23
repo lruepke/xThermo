@@ -40,6 +40,15 @@ namespace xThermal
         FLUID_H2O_NaCl
     };
 
+    class OuterEvaluation
+    {
+    public:
+        explicit OuterEvaluation(ThermodynamicProperties& props);
+        ~OuterEvaluation();
+        OuterEvaluation(const OuterEvaluation&) = delete;
+        OuterEvaluation& operator=(const OuterEvaluation&) = delete;
+    };
+
     class cxThermal
     {
     private:

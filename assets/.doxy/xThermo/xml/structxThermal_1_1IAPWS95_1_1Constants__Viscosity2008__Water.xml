@@ -40,7 +40,7 @@
         <argsstring></argsstring>
         <name>p_star</name>
         <qualifiedname>xThermal::IAPWS95::Constants_Viscosity2008_Water::p_star</qualifiedname>
-        <initializer>= 22.064<ref refid="classxThermal_1_1xThermalError" kindref="compound">E5</ref></initializer>
+        <initializer>= 22.064<ref refid="classxThermal_1_1xThermalError" kindref="compound">E6</ref></initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>

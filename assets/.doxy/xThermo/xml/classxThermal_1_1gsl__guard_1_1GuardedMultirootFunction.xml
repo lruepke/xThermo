@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction" kind="class" language="C++" prot="public">
+    <compoundname>xThermal::gsl_guard::GuardedMultirootFunction</compoundname>
+    <includes refid="gsl__guard_8hpp" local="no">gsl_guard.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1aec3c5ae5c4d03f428004e6590158057e" prot="private" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_multiroot_function</ref></type>
+        <definition>gsl_multiroot_function xThermal::gsl_guard::GuardedMultirootFunction::m_f</definition>
+        <argsstring></argsstring>
+        <name>m_f</name>
+        <qualifiedname>xThermal::gsl_guard::GuardedMultirootFunction::m_f</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/gsl_guard.hpp" line="175" column="36" bodyfile="Library/thermo/gsl_guard.hpp" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1a47f01ad5546b19fc87a936f36ad4f7d3" prot="private" static="no" mutable="no">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_multiroot_function</ref></type>
+        <definition>gsl_multiroot_function xThermal::gsl_guard::GuardedMultirootFunction::m_gsl</definition>
+        <argsstring></argsstring>
+        <name>m_gsl</name>
+        <qualifiedname>xThermal::gsl_guard::GuardedMultirootFunction::m_gsl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/gsl_guard.hpp" line="175" column="40" bodyfile="Library/thermo/gsl_guard.hpp" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1aecf26f5c4231327d963f57889fbec716" prot="private" static="no" mutable="no">
+        <type>std::exception_ptr</type>
+        <definition>std::exception_ptr xThermal::gsl_guard::GuardedMultirootFunction::m_exception</definition>
+        <argsstring></argsstring>
+        <name>m_exception</name>
+        <qualifiedname>xThermal::gsl_guard::GuardedMultirootFunction::m_exception</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/gsl_guard.hpp" line="176" column="32" bodyfile="Library/thermo/gsl_guard.hpp" bodystart="176" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1a9fe73a6419e4f6401f38bb08d92ae34b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>xThermal::gsl_guard::GuardedMultirootFunction::GuardedMultirootFunction</definition>
+        <argsstring>(const gsl_multiroot_function &amp;f)</argsstring>
+        <name>GuardedMultirootFunction</name>
+        <qualifiedname>xThermal::gsl_guard::GuardedMultirootFunction::GuardedMultirootFunction</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_multiroot_function</ref> &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/gsl_guard.hpp" line="133" column="22" bodyfile="Library/thermo/gsl_guard.hpp" bodystart="133" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1a90b20fa3dadd02e9f146aff533c0a3f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>int xThermal::gsl_guard::GuardedMultirootFunction::set</definition>
+        <argsstring>(gsl_multiroot_fsolver *s, const gsl_vector *x)</argsstring>
+        <name>set</name>
+        <qualifiedname>xThermal::gsl_guard::GuardedMultirootFunction::set</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_multiroot_fsolver</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_vector</ref> *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns GSL&apos;s status unchanged (the caller&apos;s convergence handling is not changed). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/gsl_guard.hpp" line="140" column="17" bodyfile="Library/thermo/gsl_guard.hpp" bodystart="140" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1ae5987654933dcdb1b91b148980a0d771" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>int xThermal::gsl_guard::GuardedMultirootFunction::iterate</definition>
+        <argsstring>(gsl_multiroot_fsolver *s)</argsstring>
+        <name>iterate</name>
+        <qualifiedname>xThermal::gsl_guard::GuardedMultirootFunction::iterate</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_multiroot_fsolver</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/gsl_guard.hpp" line="146" column="17" bodyfile="Library/thermo/gsl_guard.hpp" bodystart="146" bodyend="151"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1a6dc4f42ad4482b1679aba1d104a1fadd" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
+        <definition>static int xThermal::gsl_guard::GuardedMultirootFunction::eval</definition>
+        <argsstring>(const gsl_vector *x, void *self, gsl_vector *f)</argsstring>
+        <name>eval</name>
+        <qualifiedname>xThermal::gsl_guard::GuardedMultirootFunction::eval</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_vector</ref> *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref> *</type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">gsl_vector</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/gsl_guard.hpp" line="154" column="24" bodyfile="Library/thermo/gsl_guard.hpp" bodystart="154" bodyend="170"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1a8227c54b50c8600393e2c8bbead3dc4d" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::gsl_guard::GuardedMultirootFunction::check</definition>
+        <argsstring>() const</argsstring>
+        <name>check</name>
+        <qualifiedname>xThermal::gsl_guard::GuardedMultirootFunction::check</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/gsl_guard.hpp" line="171" column="18" bodyfile="Library/thermo/gsl_guard.hpp" bodystart="171" bodyend="174"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Multidimensional function for a hybrid solve: contains callback exceptions; values pass through unchanged. </para>
+    </detaileddescription>
+    <location file="Library/thermo/gsl_guard.hpp" line="130" column="9" bodyfile="Library/thermo/gsl_guard.hpp" bodystart="131" bodyend="177"/>
+    <listofallmembers>
+      <member refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1a8227c54b50c8600393e2c8bbead3dc4d" prot="private" virt="non-virtual"><scope>xThermal::gsl_guard::GuardedMultirootFunction</scope><name>check</name></member>
+      <member refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1a6dc4f42ad4482b1679aba1d104a1fadd" prot="private" virt="non-virtual"><scope>xThermal::gsl_guard::GuardedMultirootFunction</scope><name>eval</name></member>
+      <member refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1a9fe73a6419e4f6401f38bb08d92ae34b" prot="public" virt="non-virtual"><scope>xThermal::gsl_guard::GuardedMultirootFunction</scope><name>GuardedMultirootFunction</name></member>
+      <member refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1ae5987654933dcdb1b91b148980a0d771" prot="public" virt="non-virtual"><scope>xThermal::gsl_guard::GuardedMultirootFunction</scope><name>iterate</name></member>
+      <member refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1aecf26f5c4231327d963f57889fbec716" prot="private" virt="non-virtual"><scope>xThermal::gsl_guard::GuardedMultirootFunction</scope><name>m_exception</name></member>
+      <member refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1aec3c5ae5c4d03f428004e6590158057e" prot="private" virt="non-virtual"><scope>xThermal::gsl_guard::GuardedMultirootFunction</scope><name>m_f</name></member>
+      <member refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1a47f01ad5546b19fc87a936f36ad4f7d3" prot="private" virt="non-virtual"><scope>xThermal::gsl_guard::GuardedMultirootFunction</scope><name>m_gsl</name></member>
+      <member refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1a90b20fa3dadd02e9f146aff533c0a3f8" prot="public" virt="non-virtual"><scope>xThermal::gsl_guard::GuardedMultirootFunction</scope><name>set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

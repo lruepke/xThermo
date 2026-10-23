@@ -12,6 +12,7 @@
 
 * **benchmark\_VL** ([**compare\_VL**](namespacecompare__VL.md))
 * **BasicThermodynamicProperties** ([**xThermal::IAPWS\_IF97**](namespacexThermal_1_1IAPWS__IF97.md))
+* **bisect\_density** ([**xThermal::PROST**](namespacexThermal_1_1PROST.md))
 
 
 ## c
@@ -28,12 +29,16 @@
 
 * **DirectorySizeError** ([**xThermal**](namespacexThermal.md))
 * **dimensionType** ([**xThermal**](namespacexThermal.md))
+* **dn1n2dP\_Tstar\_V** ([**xThermal::H2ONaCl**](namespacexThermal_1_1H2ONaCl.md))
+* **density\_residual\_ok** ([**xThermal::PROST**](namespacexThermal_1_1PROST.md))
 
 
 ## e
 
 * **EOS\_ENERGY** ([**LOOKUPTABLE\_FOREST**](namespaceLOOKUPTABLE__FOREST.md))
+* **evaluation\_depth** ([**xThermal**](namespacexThermal.md))
 * **extname\_file** ([**xThermal**](namespacexThermal.md))
+* **eos\_at** ([**xThermal::PROST**](namespacexThermal_1_1PROST.md))
 
 
 ## f
@@ -91,6 +96,7 @@
 * **MAP\_PhaseRegion2Name** ([**xThermal**](namespacexThermal.md))
 * **map\_phase2name** ([**xThermal**](namespacexThermal.md))
 * **MAP\_INDEX2PROP** ([**xThermal::IAPWS95**](namespacexThermal_1_1IAPWS95.md))
+* **MultirootSolver** ([**xThermal::gsl\_guard**](namespacexThermal_1_1gsl__guard.md))
 
 
 ## n
@@ -100,6 +106,8 @@
 * **NotAvailableError** ([**xThermal**](namespacexThermal.md))
 * **NotImplementedError** ([**xThermal**](namespacexThermal.md))
 * **nDimensions** ([**xThermal**](namespacexThermal.md))
+* **near\_critical\_band\_state** ([**xThermal::PROST**](namespacexThermal_1_1PROST.md))
+* **num** ([**xThermal::gsl\_guard**](namespacexThermal_1_1gsl__guard.md))
 
 
 ## o
@@ -130,6 +138,7 @@
 
 * **result\_path** ([**compare\_VL**](namespacecompare__VL.md))
 * **R** ([**xThermal**](namespacexThermal.md))
+* **RootSolver** ([**xThermal::gsl\_guard**](namespacexThermal_1_1gsl__guard.md))
 
 
 ## s
@@ -143,6 +152,7 @@
 * **SolutionError** ([**xThermal**](namespacexThermal.md))
 * **Space\_EOS** ([**xThermal**](namespacexThermal.md))
 * **string\_split** ([**xThermal**](namespacexThermal.md))
+* **stable\_on\_phase\_side** ([**xThermal::PROST**](namespacexThermal_1_1PROST.md))
 
 
 ## t
@@ -162,11 +172,14 @@
 ## v
 
 * **ValueError** ([**xThermal**](namespacexThermal.md))
+* **viscosity\_or\_nan** ([**xThermal::PROST**](namespacexThermal_1_1PROST.md))
+* **Vector** ([**xThermal::gsl\_guard**](namespacexThermal_1_1gsl__guard.md))
 
 
 ## w
 
 * **WrongFluidError** ([**xThermal**](namespacexThermal.md))
+* **water\_tp\_verified** ([**xThermal::PROST**](namespacexThermal_1_1PROST.md))
 
 
 ## x

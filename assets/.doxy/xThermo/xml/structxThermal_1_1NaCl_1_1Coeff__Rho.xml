@@ -39,7 +39,7 @@
 <para>Parameters for halite and liquid NaCl volumetric properties. See table 3 of Driesner2007Part2. </para>
     </briefdescription>
     <detaileddescription>
-<para><simplesect kind="note"><para>In order to make the input pressure with unit [Pa], change <formula id="251">$l_3, l_4 $</formula> to be 0.005727E-5 and 0.002715E-5, respectively. Because the pressure unit in equation (1-3) is [bar]. In addition, change <formula id="252">$ m_4, m_5 $</formula> to be -1.5259E-10, 5.5058E-13 for the same reason. (See equation 5,6 of Driesner2007Part2) </para>
+<para><simplesect kind="note"><para>In order to make the input pressure with unit [Pa], change <formula id="256">$l_3, l_4 $</formula> to be 0.005727E-5 and 0.002715E-5, respectively. Because the pressure unit in equation (1-3) is [bar]. In addition, change <formula id="257">$ m_4, m_5 $</formula> to be -1.5259E-10, 5.5058E-13 for the same reason. (See equation 5,6 of Driesner2007Part2) </para>
 </simplesect>
 </para>
     </detaileddescription>

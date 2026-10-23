@@ -8,7 +8,7 @@
 
 [Go to the source code of this file](IAPS84_8h_source.md)
 
-_EOS of H2O in formula of IAPS84 which is based on prost._ [More...](#detailed-description)
+_xThermo backend "IAPS84": a C++ wrapper around PROST 4.1, which implements the IAPS-84 equation of state for water (Haar, Gallagher & Kell 1984; prost)._ [More...](#detailed-description)
 
 * `#include "thermo.h"`
 
@@ -102,7 +102,7 @@ _EOS of H2O in formula of IAPS84 which is based on prost._ [More...](#detailed-d
 Zhikui Guo ([zguo@geomar.de](mailto:zguo@geomar.de)) 
 
 
-
+The equation of state, its derivatives, the saturation routines and the viscosity correlation are computed entirely by PROST 4.1 (O. Bauer and O. Engel, TU Hamburg-Harburg, 1998; ThirdParties/PROST), which is distributed under the GNU Library General Public License v2.0 (ThirdParties/PROST/COPYING.LIB-2.0). This wrapper contains only the xThermo interface: state set-up, unit and derivative conversion, phase classification and result mapping. The changes xThermo made to PROST itself are listed in ThirdParties/PROST/XTHERMO\_MODIFICATIONS.txt. 
 
 **Version:**
 
@@ -120,7 +120,7 @@ Zhikui Guo ([zguo@geomar.de](mailto:zguo@geomar.de))
 
 **Copyright:**
 
-Copyright (c) 2022 
+Copyright (c) 2022. This wrapper is part of xThermo (MIT licence, see LICENSE). PROST is not covered by xThermo's licence (see THIRD\_PARTY\_NOTICES.md). 
 
 
 

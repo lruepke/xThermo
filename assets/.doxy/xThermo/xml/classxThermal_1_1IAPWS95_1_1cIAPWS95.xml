@@ -91,7 +91,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="230" column="13" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="35" bodyend="38"/>
+        <location file="Library/H2O/IAPWS95.h" line="230" column="13" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="36" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ace69b7c3b237f0ec1f64539907ef3394" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="231" column="13" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="40" bodyend="42"/>
+        <location file="Library/H2O/IAPWS95.h" line="231" column="13" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="41" bodyend="43"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a268959ae9df749187b180cf6487ffb45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -174,7 +174,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="256" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="52" bodyend="95"/>
+        <location file="Library/H2O/IAPWS95.h" line="256" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="53" bodyend="96"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a51e31d1bdca92ef9e42011783035f9c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -230,7 +230,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="257" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="114" bodyend="144"/>
+        <location file="Library/H2O/IAPWS95.h" line="257" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="115" bodyend="145"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ad5440c39d3ebc1149861642bf9eba980" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -275,7 +275,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="258" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="159" bodyend="192"/>
+        <location file="Library/H2O/IAPWS95.h" line="258" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="160" bodyend="193"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a17c2360986073f18932805c30fafb145" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -320,7 +320,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="259" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="207" bodyend="243"/>
+        <location file="Library/H2O/IAPWS95.h" line="259" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="208" bodyend="245"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1aec876f1daa1050dd52e3fcb32900cb74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -365,7 +365,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="260" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="258" bodyend="290"/>
+        <location file="Library/H2O/IAPWS95.h" line="260" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="260" bodyend="292"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a7cb83298c1847835a122024d41a4e5f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -410,7 +410,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="261" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="305" bodyend="339"/>
+        <location file="Library/H2O/IAPWS95.h" line="261" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="307" bodyend="341"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a30019a9c80e91019d0e9593e01c02fed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -455,7 +455,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="262" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="354" bodyend="391"/>
+        <location file="Library/H2O/IAPWS95.h" line="262" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="356" bodyend="393"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1af99966b82712b4e54a9f8cf1e8deda8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -481,7 +481,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="263" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="399" bodyend="407"/>
+        <location file="Library/H2O/IAPWS95.h" line="263" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="401" bodyend="409"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1adfd38243f3658034c90d0d71904ccc9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -516,7 +516,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="264" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="416" bodyend="423"/>
+        <location file="Library/H2O/IAPWS95.h" line="264" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="418" bodyend="425"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1afa0164800d8c28c6fc9cd2bf7a5f1da2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -571,7 +571,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="265" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="433" bodyend="442"/>
+        <location file="Library/H2O/IAPWS95.h" line="265" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="435" bodyend="444"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ae4b01b24f1d12e235704bd05c7971dce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -602,7 +602,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="266" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="458" bodyend="501"/>
+        <location file="Library/H2O/IAPWS95.h" line="266" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="460" bodyend="503"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1add22aaf76f19c908121dc717e5a1c068" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -636,7 +636,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="267" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="509" bodyend="522"/>
+        <location file="Library/H2O/IAPWS95.h" line="267" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="511" bodyend="524"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1accf0135c1262e12cb4fd12e04e5adbd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -670,7 +670,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="268" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="530" bodyend="542"/>
+        <location file="Library/H2O/IAPWS95.h" line="268" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="532" bodyend="544"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a4ae2f000f093488c74e68e1b40288e78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -737,7 +737,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="269" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="621" bodyend="681"/>
+        <location file="Library/H2O/IAPWS95.h" line="269" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="623" bodyend="685"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a76ce3c1862702d622939512a5ae69bf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -767,7 +767,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="270" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="683" bodyend="747"/>
+        <location file="Library/H2O/IAPWS95.h" line="270" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="687" bodyend="753"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a8338b9262421a5c115430295fe8fd2af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -789,7 +789,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="271" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="749" bodyend="752"/>
+        <location file="Library/H2O/IAPWS95.h" line="271" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="755" bodyend="758"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a00e9759c7227339fa9777edb935fba7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -848,7 +848,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="272" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="932" bodyend="946"/>
+        <location file="Library/H2O/IAPWS95.h" line="272" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="941" bodyend="955"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a458b7b09b3938403c7b71596803ae1aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -907,7 +907,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="273" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="963" bodyend="977"/>
+        <location file="Library/H2O/IAPWS95.h" line="273" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="972" bodyend="986"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a42003af9ea513680ea1f1fe9dd55d4bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -950,7 +950,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="274" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1748" bodyend="1753"/>
+        <location file="Library/H2O/IAPWS95.h" line="274" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1829" bodyend="1834"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1aee4a18cc975a85b246aff65fb1bf65c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -968,7 +968,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="275" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1776" bodyend="1786"/>
+        <location file="Library/H2O/IAPWS95.h" line="275" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1857" bodyend="1867"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a6bc041d41ef39f7d9ce29f8ffc1441dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>std::string</type>
@@ -1157,7 +1157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="289" column="25" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1492" bodyend="1531"/>
+        <location file="Library/H2O/IAPWS95.h" line="289" column="25" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1532" bodyend="1571"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a65e4fdc35cc70a378485842bc5350a2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1187,7 +1187,7 @@
 <para>Update state using T, p as independent variables. </para>
         </briefdescription>
         <detaileddescription>
-<para>Calculate the critical molar density in <formula id="360">$ mol/m^3 $</formula> </para>
+<para>Calculate the critical molar density in <formula id="365">$ mol/m^3 $</formula> </para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>T</parametername>
@@ -1209,7 +1209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="290" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1487" bodyend="1490"/>
+        <location file="Library/H2O/IAPWS95.h" line="290" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1526" bodyend="1530"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a814a49bf32b20cb4d0b3a6c662d1bfab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
@@ -1236,7 +1236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="292" column="37" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1788" bodyend="1792"/>
+        <location file="Library/H2O/IAPWS95.h" line="292" column="37" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1869" bodyend="1873"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a502e79665cebfc1c9b124d66a29a344d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50" kindref="member">PhaseRegion</ref></type>
@@ -1263,7 +1263,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="293" column="25" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1590" bodyend="1638"/>
+        <location file="Library/H2O/IAPWS95.h" line="293" column="25" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1671" bodyend="1719"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ad9125fb6f05d402281af3e97e46c4c09" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1295,7 +1295,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="294" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1585" bodyend="1588"/>
+        <location file="Library/H2O/IAPWS95.h" line="294" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1665" bodyend="1669"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a8b586f9bbe66ceb02872b729ee4b34d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1326,7 +1326,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="295" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1474" bodyend="1478"/>
+        <location file="Library/H2O/IAPWS95.h" line="295" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1513" bodyend="1517"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a41c593a082880b8808e6409eb2d3dee4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1381,7 +1381,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="296" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1480" bodyend="1484"/>
+        <location file="Library/H2O/IAPWS95.h" line="296" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1519" bodyend="1523"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a4f67b665087dc6c1030dd0da51156fe9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1404,7 +1404,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="297" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1533" bodyend="1552"/>
+        <location file="Library/H2O/IAPWS95.h" line="297" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1573" bodyend="1611"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a9a28becb21cf10f16d4e78ebb8f78bea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1435,7 +1435,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="298" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1554" bodyend="1558"/>
+        <location file="Library/H2O/IAPWS95.h" line="298" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1613" bodyend="1617"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1aa6a2cf4a92cb932ab0252c2449e07433" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1490,7 +1490,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="299" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1560" bodyend="1564"/>
+        <location file="Library/H2O/IAPWS95.h" line="299" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1619" bodyend="1623"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a2f9d6f8468824fe16754895c16252001" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1513,7 +1513,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="300" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1566" bodyend="1582"/>
+        <location file="Library/H2O/IAPWS95.h" line="300" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1625" bodyend="1662"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a2f122191527f5b5ae32b17d0eef7a127" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1539,7 +1539,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="309" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="145" bodyend="150"/>
+        <location file="Library/H2O/IAPWS95.h" line="309" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="146" bodyend="151"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a21fba1a9f330c8926e0e4bac351df2a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1565,7 +1565,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="310" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="193" bodyend="198"/>
+        <location file="Library/H2O/IAPWS95.h" line="310" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="194" bodyend="199"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a5a0040f03db58b1921822c7c7ba92905" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1591,7 +1591,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="311" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="244" bodyend="249"/>
+        <location file="Library/H2O/IAPWS95.h" line="311" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="246" bodyend="251"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ade30d24de1ab449b582bfb6c3648b32b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1617,7 +1617,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="312" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="291" bodyend="296"/>
+        <location file="Library/H2O/IAPWS95.h" line="312" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="293" bodyend="298"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1af595e78520ea6f18a9e865101818ab51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1643,7 +1643,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="313" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="340" bodyend="345"/>
+        <location file="Library/H2O/IAPWS95.h" line="313" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="342" bodyend="347"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1acf6e6dd2d998dc38a80ee788b1defe6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1669,7 +1669,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="314" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="392" bodyend="397"/>
+        <location file="Library/H2O/IAPWS95.h" line="314" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="394" bodyend="399"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -1685,7 +1685,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="233" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="23" bodyend="34"/>
+        <location file="Library/H2O/IAPWS95.h" line="233" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="24" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1adf845fdcfd60f87c156371fb17e31a56" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1730,7 +1730,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="237" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="791" bodyend="850"/>
+        <location file="Library/H2O/IAPWS95.h" line="237" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="797" bodyend="858"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ab6f1a00d30169c3dfd6cbbfa69b09c06" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1788,7 +1788,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="238" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="859" bodyend="921"/>
+        <location file="Library/H2O/IAPWS95.h" line="238" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="867" bodyend="930"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ac5d207cf85aa174596e6045d00c967f8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1826,7 +1826,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="239" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="948" bodyend="951"/>
+        <location file="Library/H2O/IAPWS95.h" line="239" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="957" bodyend="960"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ae9ce7a50e1af060d071688ae313069a5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1904,7 +1904,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="240" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1045" bodyend="1094"/>
+        <location file="Library/H2O/IAPWS95.h" line="240" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1054" bodyend="1105"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a9c3e31bd0c12f3fa6acaf05edaeaf1d6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1974,7 +1974,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="242" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1161" bodyend="1391"/>
+        <location file="Library/H2O/IAPWS95.h" line="242" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1184" bodyend="1430"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a7b0286673a42da75b77a1ea9e667e737" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -2004,7 +2004,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="243" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1096" bodyend="1151"/>
+        <location file="Library/H2O/IAPWS95.h" line="243" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1107" bodyend="1174"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a5211198dcfe4cad65188da36de8fc6f9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -2046,7 +2046,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="245" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1393" bodyend="1396"/>
+        <location file="Library/H2O/IAPWS95.h" line="245" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1432" bodyend="1435"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1aeca7ba964222bffe11233a55961b3cde" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -2068,7 +2068,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="246" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1398" bodyend="1434"/>
+        <location file="Library/H2O/IAPWS95.h" line="246" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1437" bodyend="1473"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ab4e578d85b41fc99bd935048db4df3b0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -2171,7 +2171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="247" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="990" bodyend="999"/>
+        <location file="Library/H2O/IAPWS95.h" line="247" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="999" bodyend="1008"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a76c60c2718c023e941cb59eca5c1b3ed" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -2193,7 +2193,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="248" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1436" bodyend="1472"/>
+        <location file="Library/H2O/IAPWS95.h" line="248" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1475" bodyend="1511"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a82f0b7fe45af3105dab299d739b35212" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -2235,7 +2235,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="249" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1732" bodyend="1735"/>
+        <location file="Library/H2O/IAPWS95.h" line="249" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1813" bodyend="1816"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ace06f7dd990dfd69f26240928de68941" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -2299,7 +2299,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="251" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1737" bodyend="1740"/>
+        <location file="Library/H2O/IAPWS95.h" line="251" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1818" bodyend="1821"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ae1302f9f7b42b0d54ede17487288bba6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -2382,7 +2382,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="253" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1647" bodyend="1730"/>
+        <location file="Library/H2O/IAPWS95.h" line="253" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1728" bodyend="1811"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

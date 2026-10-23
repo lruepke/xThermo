@@ -99,6 +99,7 @@
     <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1af7e46e52faf24d75c3b2548b3b069893" kind="function"><name>n1n2_Tstar_V</name></member>
     <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a08098dca6ac4d169f181f6cf0d1322f4" kind="function"><name>D_Tstar_V</name></member>
     <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ad461ae2f7b00ba81fd2813e61aafe5b7" kind="function"><name>extrapolation_V_highT</name></member>
+    <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aaa1ceae60e09d1ef5db2a83157527dd3" kind="function"><name>extrapolation_V_highT</name></member>
     <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a27d5123c79733271ad407d8bba290a6f" kind="function"><name>extrapolation_V_lowPlowT</name></member>
     <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a24c3db7630ffbb4dc2ac5e7c2d6a9fea" kind="function"><name>_Rho_water</name></member>
     <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aac0e171c37a82d0571225bdf102a9068" kind="function"><name>_Rho_water</name></member>
@@ -724,6 +725,34 @@
     <member refid="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless_1a6b353caf291ddde2de9e5a8969d8f04b" kind="function"><name>operator+</name></member>
     <member refid="structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless_1abfef2dbb422c57fddedfffd7613c751f" kind="function"><name>operator-</name></member>
   </compound>
+  <compound refid="classxThermal_1_1gsl__guard_1_1GuardedFunction" kind="class"><name>xThermal::gsl_guard::GuardedFunction</name>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedFunction_1a426135c2eb252e10ecddca861b4553c4" kind="variable"><name>m_f</name></member>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedFunction_1aa756740c336d95633447667751815efc" kind="variable"><name>m_gsl</name></member>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedFunction_1a8e69e36c71435d8296cfb7f5a774dce6" kind="variable"><name>m_where</name></member>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedFunction_1a490defe31753e4c7b8ca6014a066d93c" kind="variable"><name>m_exception</name></member>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedFunction_1ab1ca817f684f6446f7e0d97003bf60b2" kind="variable"><name>m_nonfinite</name></member>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedFunction_1a03d49d6beaba3e24d961e4a0648eb7ad" kind="variable"><name>m_x_failed</name></member>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedFunction_1a48530c6764b35786fa3e7a8179339803" kind="variable"><name>m_f_failed</name></member>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedFunction_1a22ec5ab989dc8118045914543d90df66" kind="variable"><name>m_cache_x</name></member>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedFunction_1ac4b78363b2ede01c224b932937ca7a0a" kind="variable"><name>m_cache_f</name></member>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedFunction_1a004ab22d59f6f95472dd329f112e5260" kind="variable"><name>m_cache_n</name></member>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedFunction_1a82fdc36b1f5f57d1ce42c7199024d5d7" kind="variable"><name>m_cache_next</name></member>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedFunction_1ada4981d197013647df05054c7f6d1cf0" kind="function"><name>GuardedFunction</name></member>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedFunction_1af4d50cb76a97b14acfaeadb4f96b4245" kind="function"><name>set</name></member>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedFunction_1adc1ba8008fb23d8248e5e79b01f5aca2" kind="function"><name>iterate</name></member>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedFunction_1ab146baad1b282c18b13c4c629abba633" kind="function"><name>eval</name></member>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedFunction_1abe60be8510bac9686432041af5f34ab0" kind="function"><name>check</name></member>
+  </compound>
+  <compound refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction" kind="class"><name>xThermal::gsl_guard::GuardedMultirootFunction</name>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1aec3c5ae5c4d03f428004e6590158057e" kind="variable"><name>m_f</name></member>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1a47f01ad5546b19fc87a936f36ad4f7d3" kind="variable"><name>m_gsl</name></member>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1aecf26f5c4231327d963f57889fbec716" kind="variable"><name>m_exception</name></member>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1a9fe73a6419e4f6401f38bb08d92ae34b" kind="function"><name>GuardedMultirootFunction</name></member>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1a90b20fa3dadd02e9f146aff533c0a3f8" kind="function"><name>set</name></member>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1ae5987654933dcdb1b91b148980a0d771" kind="function"><name>iterate</name></member>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1a6dc4f42ad4482b1679aba1d104a1fadd" kind="function"><name>eval</name></member>
+    <member refid="classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction_1a8227c54b50c8600393e2c8bbead3dc4d" kind="function"><name>check</name></member>
+  </compound>
   <compound refid="structxThermal_1_1NaCl_1_1H__halite__ref" kind="struct"><name>xThermal::NaCl::H_halite_ref</name>
     <member refid="structxThermal_1_1NaCl_1_1H__halite__ref_1a7a46bdbf2a8f2aacd9314edaadced63f" kind="variable"><name>H</name></member>
     <member refid="structxThermal_1_1NaCl_1_1H__halite__ref_1a59d83adb047630a2b881476953cf22ed" kind="variable"><name>T_C</name></member>
@@ -980,6 +1009,9 @@
     <member refid="classMultiProgressBar_1a4d5ac828e69361f976a0e4c3ae362780" kind="function"><name>Update</name></member>
     <member refid="classMultiProgressBar_1ab6dc669eb38eecf874db34f4237418fb" kind="function"><name>init_colors</name></member>
   </compound>
+  <compound refid="structxThermal_1_1gsl__guard_1_1MultirootSolverFree" kind="struct"><name>xThermal::gsl_guard::MultirootSolverFree</name>
+    <member refid="structxThermal_1_1gsl__guard_1_1MultirootSolverFree_1a97c88f3800d66c996a56bfd6427a75db" kind="function"><name>operator()</name></member>
+  </compound>
   <compound refid="structLOOKUPTABLE__FOREST_1_1NonLeafQuad" kind="struct"><name>LOOKUPTABLE_FOREST::NonLeafQuad</name>
     <member refid="structLOOKUPTABLE__FOREST_1_1NonLeafQuad_1a788d0302a0d6ffb0522d926962f5eca5" kind="variable"><name>children</name></member>
   </compound>
@@ -990,6 +1022,12 @@
   <compound refid="structotri" kind="struct"><name>otri</name>
     <member refid="structotri_1a238238ab7eb61074eceb8382b6bdc835" kind="variable"><name>tri</name></member>
     <member refid="structotri_1a3f79d64391ce76f64acc0aec04bf8805" kind="variable"><name>orient</name></member>
+  </compound>
+  <compound refid="classxThermal_1_1OuterEvaluation" kind="class"><name>xThermal::OuterEvaluation</name>
+    <member refid="classxThermal_1_1OuterEvaluation_1a081e1f0379b2300cb2d12bb914fccac7" kind="function"><name>OuterEvaluation</name></member>
+    <member refid="classxThermal_1_1OuterEvaluation_1aace182908d21cdd8182515581b687e44" kind="function"><name>~OuterEvaluation</name></member>
+    <member refid="classxThermal_1_1OuterEvaluation_1aa1453c45b26f8eaac1bac04239553ff6" kind="function"><name>OuterEvaluation</name></member>
+    <member refid="classxThermal_1_1OuterEvaluation_1a3308fdcf71d4d4b11ffca2b8d168c1bd" kind="function"><name>operator=</name></member>
   </compound>
   <compound refid="structparams" kind="struct"><name>params</name>
     <member refid="structparams_1aa146c2aa436a2bd29d2dc2317a6ed75f" kind="variable"><name>a</name></member>
@@ -1155,6 +1193,9 @@
     <member refid="structLOOKUPTABLE__FOREST_1_1RMSD__RefineCriterion_1ad62162b087059be46833dd49981898d8" kind="variable"><name>Rho</name></member>
     <member refid="structLOOKUPTABLE__FOREST_1_1RMSD__RefineCriterion_1a0902b30e2c9ddef3bef84b1c4063b3c2" kind="variable"><name>H</name></member>
     <member refid="structLOOKUPTABLE__FOREST_1_1RMSD__RefineCriterion_1af4a1fcfdab3afbf212aaccd8130b4cf8" kind="variable"><name>Mu</name></member>
+  </compound>
+  <compound refid="structxThermal_1_1gsl__guard_1_1RootSolverFree" kind="struct"><name>xThermal::gsl_guard::RootSolverFree</name>
+    <member refid="structxThermal_1_1gsl__guard_1_1RootSolverFree_1aaa95055ae50d8fffa59ac676142b3ec8" kind="function"><name>operator()</name></member>
   </compound>
   <compound refid="structrparams" kind="struct"><name>rparams</name>
     <member refid="structrparams_1a5e3d895bf512e693c4397c0721e68633" kind="variable"><name>a</name></member>
@@ -1398,6 +1439,9 @@
     <member refid="classxThermal_1_1ValueErrorSpec_1a24f8e02bc619d6fa1dedcb5cf0ed35ec" kind="function"><name>ValueErrorSpec</name></member>
     <member refid="classxThermal_1_1ValueErrorSpec_1a24f8e02bc619d6fa1dedcb5cf0ed35ec" kind="function"><name>ValueErrorSpec</name></member>
   </compound>
+  <compound refid="structxThermal_1_1gsl__guard_1_1VectorFree" kind="struct"><name>xThermal::gsl_guard::VectorFree</name>
+    <member refid="structxThermal_1_1gsl__guard_1_1VectorFree_1ae098a0ef8301a8c037a253c047538443" kind="function"><name>operator()</name></member>
+  </compound>
   <compound refid="interfaceViewController" kind="class"><name>ViewController</name>
   </compound>
   <compound refid="categoryViewController_07_08" kind="category"><name>ViewController()</name>
@@ -1619,12 +1663,20 @@
     <member refid="namespacexThermal_1ab45ef4764ac45cfedd7d4d3a1773a7e6" kind="function"><name>extname_file</name></member>
     <member refid="namespacexThermal_1a2647e9e618454e5119bf093ba777ad8c" kind="function"><name>filename_without_ext</name></member>
     <member refid="namespacexThermal_1a960a8fa20e4629abf126d5ff81616c78" kind="function"><name>fill_prop2data</name></member>
+    <member refid="namespacexThermal_1aab774150d676d93511cab63dde0ea981" kind="function"><name>evaluation_depth</name></member>
+  </compound>
+  <compound refid="namespacexThermal_1_1gsl__guard" kind="namespace"><name>xThermal::gsl_guard</name>
+    <member refid="gsl__guard_8hpp_1a835ab10480936a497116eb9ee14342f2" kind="typedef"><name>RootSolver</name></member>
+    <member refid="gsl__guard_8hpp_1a2c8d2afeadc61ca2819c8dd32501684c" kind="typedef"><name>MultirootSolver</name></member>
+    <member refid="gsl__guard_8hpp_1a8099976704ee8b45e4fd06d36522a010" kind="typedef"><name>Vector</name></member>
+    <member refid="gsl__guard_8hpp_1acd22db3df85fd03b1bbd140cad26280c" kind="function"><name>num</name></member>
   </compound>
   <compound refid="namespacexThermal_1_1H2ONaCl" kind="namespace"><name>xThermal::H2ONaCl</name>
     <member refid="group__PhysicalConstants__H2ONaCl_1ga3f60bf26b7fbe6d843933c6013e0af17" kind="variable"><name>T_MIN</name></member>
     <member refid="group__PhysicalConstants__H2ONaCl_1ga8231d0db1350bb215c640d65d9b2c01e" kind="variable"><name>P_MIN</name></member>
     <member refid="group__PhysicalConstants__H2ONaCl_1ga75dd7bc90fb8221616322427f8d16854" kind="variable"><name>P_MAX</name></member>
     <member refid="group__PhysicalConstants__H2ONaCl_1gafc902a29b69c72fb7a181becf4a38707" kind="variable"><name>T_MAX</name></member>
+    <member refid="group__PhysicalConstants__H2ONaCl_1gad9340a282c7b0fdf51c7e7489402d414" kind="variable"><name>H_TOL_T_LIMIT</name></member>
     <member refid="group__PhysicalConstants__H2ONaCl_1ga43fcdfada7d9df263ffae5b90077df53" kind="variable"><name>X_MIN</name></member>
     <member refid="group__PhysicalConstants__H2ONaCl_1gabcdf9fee5f9581ebdab11a1120096a63" kind="variable"><name>X_MAX</name></member>
     <member refid="group__PhysicalConstants__H2ONaCl_1ga12d7ab3521648c9e6a8c43f5c1e0e402" kind="variable"><name>T_MAX_VLH</name></member>
@@ -1638,6 +1690,7 @@
     <member refid="H2ONaCl_8cpp_1afb984117d6830165a6588339da25a7af" kind="function"><name>func_T_VLH</name></member>
     <member refid="H2ONaCl_8cpp_1aa8ff093435ba8f6f67e3bb52c989f4ae" kind="function"><name>func_T_VL_L</name></member>
     <member refid="H2ONaCl_8cpp_1a078fc86157c615888771c2ba339e39be" kind="function"><name>func_T_VL_V</name></member>
+    <member refid="H2ONaCl_8cpp_1a06bdceb34e4ea8eb24067b8c80adede3" kind="function"><name>dn1n2dP_Tstar_V</name></member>
     <member refid="H2ONaCl_8cpp_1a88318574172162ce252b2292ecdd6654" kind="function"><name>func_T_HPX</name></member>
   </compound>
   <compound refid="namespacexThermal_1_1IAPWS95" kind="namespace"><name>xThermal::IAPWS95</name>
@@ -1674,6 +1727,13 @@
     <member refid="group__CONSTANTS__NACL_1ga6c5e63110817e3938dee4f47ecda2ec9" kind="variable"><name>slope_Clapeyron</name></member>
   </compound>
   <compound refid="namespacexThermal_1_1PROST" kind="namespace"><name>xThermal::PROST</name>
+    <member refid="IAPS84_8cpp_1a2bb832197ea32223500f214b62093797" kind="function"><name>viscosity_or_nan</name></member>
+    <member refid="IAPS84_8cpp_1a69202e5952483dfd8d3618c9abd1499e" kind="function"><name>density_residual_ok</name></member>
+    <member refid="IAPS84_8cpp_1a3019c5a83c93ef829bb66e93f9241a62" kind="function"><name>stable_on_phase_side</name></member>
+    <member refid="IAPS84_8cpp_1a898583bda5fd5112788100b0f1e40a18" kind="function"><name>eos_at</name></member>
+    <member refid="IAPS84_8cpp_1a5973439cfebedda5b3e6bd6f5e5fb5c5" kind="function"><name>bisect_density</name></member>
+    <member refid="IAPS84_8cpp_1affa8e4ede75e4482a88fff7b5e2fc04f" kind="function"><name>near_critical_band_state</name></member>
+    <member refid="IAPS84_8cpp_1a55edb6f73d6279173e2c347178d22540" kind="function"><name>water_tp_verified</name></member>
   </compound>
   <compound refid="LookUpTableForest_8h" kind="file"><name>LookUpTableForest.h</name>
     <member refid="LookUpTableForest_8h_1ae67018f71446d8f74d06f846eb0c46b3" kind="define"><name>MAX_FOREST_LEVEL</name></member>
@@ -1812,6 +1872,45 @@
   <compound refid="IAPWS95__CoolProp_8cpp" kind="file"><name>IAPWS95_CoolProp.cpp</name>
   </compound>
   <compound refid="IAPWS95__CoolProp_8h" kind="file"><name>IAPWS95_CoolProp.h</name>
+  </compound>
+  <compound refid="H2O_2test_8cxx" kind="file"><name>test.cxx</name>
+    <member refid="H2O_2test_8cxx_1aa30110e8aa35c94c29880271788ca704" kind="function"><name>test_constants</name></member>
+    <member refid="H2O_2test_8cxx_1a6ab42941a1fd9f59ca7ae3deb3f8c21f" kind="function"><name>test_PhaseDiagram</name></member>
+    <member refid="H2O_2test_8cxx_1a0df57e7bb36eea43197a249967def5e4" kind="function"><name>test_Rho</name></member>
+    <member refid="H2O_2test_8cxx_1a8de1cf8a069c05cab4b08a08bd083567" kind="function"><name>test_Performance</name></member>
+    <member refid="H2O_2test_8cxx_1a2dc3f4f663eb071725c0f39eddf85419" kind="function"><name>test_water_profile</name></member>
+    <member refid="H2O_2test_8cxx_1a79609e94f42f6004d5f633782fe501d1" kind="function"><name>test_LUTgen</name></member>
+    <member refid="H2O_2test_8cxx_1aa1d9ef561e2b6da409006760000ed9d3" kind="function"><name>lutinfo</name></member>
+    <member refid="H2O_2test_8cxx_1aadca82a6b742dec09b942af75a2fe8c3" kind="function"><name>test_LUT_lookup</name></member>
+    <member refid="H2O_2test_8cxx_1ad5778c35a650ee4e1b2178e6702f2eb3" kind="function"><name>test_viscosity</name></member>
+    <member refid="H2O_2test_8cxx_1a211cfb653b0f3bbc3e751b0aa7f9c545" kind="function"><name>test_PH</name></member>
+    <member refid="H2O_2test_8cxx_1a333d951bbacb96acfc15b301ab4fe2dc" kind="function"><name>test_compressibility_twophase_in_porousmedium</name></member>
+    <member refid="H2O_2test_8cxx_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="H2ONaCl_2test_8cxx" kind="file"><name>test.cxx</name>
+    <member refid="H2ONaCl_2test_8cxx_1a25071b48ed56590feb64cbdac087f8ea" kind="function"><name>test_constants</name></member>
+    <member refid="H2ONaCl_2test_8cxx_1a47513b6635d83a76bb2abbf5ad47f1b8" kind="function"><name>test_criticalCurve</name></member>
+    <member refid="H2ONaCl_2test_8cxx_1ac046b89d8ddf7f9e3cdfb46585a3ca60" kind="function"><name>test_HaliteLiquidus</name></member>
+    <member refid="H2ONaCl_2test_8cxx_1ac5f4d709898c63b74614bb5ad1d6b227" kind="function"><name>debug_HaliteLiquidus_RhoL</name></member>
+    <member refid="H2ONaCl_2test_8cxx_1ab33870be5b498e6a4ba834470d5a9153" kind="function"><name>debug_VL_props</name></member>
+    <member refid="H2ONaCl_2test_8cxx_1aeaba60c6777aa8b749b5a89409874a0e" kind="function"><name>test_phaseBoundaries2VTU</name></member>
+    <member refid="H2ONaCl_2test_8cxx_1a291c7e81ccc7776f8b7ac3cdf79ac656" kind="function"><name>test_Props_TPX</name></member>
+    <member refid="H2ONaCl_2test_8cxx_1a758f490ef9ade0b8e28af341ce3749e8" kind="function"><name>lutGen_2D</name></member>
+    <member refid="H2ONaCl_2test_8cxx_1a0fabb74083c627c2b4164fea86cf9ed2" kind="function"><name>lutInfo</name></member>
+    <member refid="H2ONaCl_2test_8cxx_1a129a3de11c6287bcc970c677cda28766" kind="function"><name>test_T_VL</name></member>
+    <member refid="H2ONaCl_2test_8cxx_1a2ab1a8a4382d35d5e29b51a76da4470b" kind="function"><name>test_T_HPX</name></member>
+    <member refid="H2ONaCl_2test_8cxx_1a69a493eba47604a2a221e3c612d3f974" kind="function"><name>test_phaseRegion_HPX</name></member>
+    <member refid="H2ONaCl_2test_8cxx_1a577ffccda3082f46306215a24439a2be" kind="function"><name>test_viscosity</name></member>
+    <member refid="H2ONaCl_2test_8cxx_1a37983a828d4c2ef94f2fd48df57b865e" kind="function"><name>test_sliceP</name></member>
+    <member refid="H2ONaCl_2test_8cxx_1a89680d04a0e357835ab132030e3f3537" kind="function"><name>test_sliceT</name></member>
+    <member refid="H2ONaCl_2test_8cxx_1aadca82a6b742dec09b942af75a2fe8c3" kind="function"><name>test_LUT_lookup</name></member>
+    <member refid="H2ONaCl_2test_8cxx_1a9eeb65fe21fdbcd0c18500ffb5d203dc" kind="function"><name>test_compressibility_multiphase</name></member>
+    <member refid="H2ONaCl_2test_8cxx_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="NaCl_2test_8cxx" kind="file"><name>test.cxx</name>
+    <member refid="NaCl_2test_8cxx_1aa30110e8aa35c94c29880271788ca704" kind="function"><name>test_constants</name></member>
+    <member refid="NaCl_2test_8cxx_1ae3ab530d3b92c9adf4b6e8d8f26ace63" kind="function"><name>test_prop_TP</name></member>
+    <member refid="NaCl_2test_8cxx_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
   </compound>
   <compound refid="test__H2O_8py" kind="file"><name>test_H2O.py</name>
   </compound>
@@ -2122,44 +2221,56 @@
   </compound>
   <compound refid="NaCl_8h" kind="file"><name>NaCl.h</name>
   </compound>
-  <compound refid="H2O_2test_8cxx" kind="file"><name>test.cxx</name>
-    <member refid="H2O_2test_8cxx_1aa30110e8aa35c94c29880271788ca704" kind="function"><name>test_constants</name></member>
-    <member refid="H2O_2test_8cxx_1a6ab42941a1fd9f59ca7ae3deb3f8c21f" kind="function"><name>test_PhaseDiagram</name></member>
-    <member refid="H2O_2test_8cxx_1a0df57e7bb36eea43197a249967def5e4" kind="function"><name>test_Rho</name></member>
-    <member refid="H2O_2test_8cxx_1a8de1cf8a069c05cab4b08a08bd083567" kind="function"><name>test_Performance</name></member>
-    <member refid="H2O_2test_8cxx_1a2dc3f4f663eb071725c0f39eddf85419" kind="function"><name>test_water_profile</name></member>
-    <member refid="H2O_2test_8cxx_1a79609e94f42f6004d5f633782fe501d1" kind="function"><name>test_LUTgen</name></member>
-    <member refid="H2O_2test_8cxx_1aa1d9ef561e2b6da409006760000ed9d3" kind="function"><name>lutinfo</name></member>
-    <member refid="H2O_2test_8cxx_1aadca82a6b742dec09b942af75a2fe8c3" kind="function"><name>test_LUT_lookup</name></member>
-    <member refid="H2O_2test_8cxx_1ad5778c35a650ee4e1b2178e6702f2eb3" kind="function"><name>test_viscosity</name></member>
-    <member refid="H2O_2test_8cxx_1a211cfb653b0f3bbc3e751b0aa7f9c545" kind="function"><name>test_PH</name></member>
-    <member refid="H2O_2test_8cxx_1a333d951bbacb96acfc15b301ab4fe2dc" kind="function"><name>test_compressibility_twophase_in_porousmedium</name></member>
-    <member refid="H2O_2test_8cxx_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  <compound refid="stdfunc_8h" kind="file"><name>stdfunc.h</name>
+    <member refid="stdfunc_8h_1a854562f9e367b898e13e4d87083cf81e" kind="define"><name>xTHERMO_VAR</name></member>
+    <member refid="stdfunc_8h_1a6200c444a92cd12d31ac6bdaf7c221d0" kind="define"><name>ERROR_COUT</name></member>
+    <member refid="stdfunc_8h_1a624c50676f68bfc5c188e83c1fb102d3" kind="define"><name>WARN_COUT</name></member>
+    <member refid="stdfunc_8h_1a361bd41194ac13caf9169f3f689dc179" kind="define"><name>COLOR_PURPLE</name></member>
+    <member refid="stdfunc_8h_1ad86358bf19927183dd7b4ae215a29731" kind="define"><name>COLOR_RED</name></member>
+    <member refid="stdfunc_8h_1afc9149f5de51bd9ac4f5ebbfa153f018" kind="define"><name>COLOR_GREEN</name></member>
+    <member refid="stdfunc_8h_1a4534b577b74a58b0f4b7be027af664e0" kind="define"><name>COLOR_YELLOW</name></member>
+    <member refid="stdfunc_8h_1a23c70d699a5a775bc2e1ebeb8603f630" kind="define"><name>COLOR_BLUE</name></member>
+    <member refid="stdfunc_8h_1a8deb0beccea721b35bdb1b4f7264fe75" kind="define"><name>COLOR_MAGENTA</name></member>
+    <member refid="stdfunc_8h_1a82573859711fce56f1aa0a76b18a9b18" kind="define"><name>COLOR_CYAN</name></member>
+    <member refid="stdfunc_8h_1a9b44987ffdc2af19b635206b94334b69" kind="define"><name>COLOR_WHITE</name></member>
+    <member refid="stdfunc_8h_1a0287476fe504cfd071bf10263fb9b9f8" kind="define"><name>COLOR_BRIGHT_BLACK</name></member>
+    <member refid="stdfunc_8h_1a07544b84bb0b8d3c7b2580ca0b48a098" kind="define"><name>COLOR_BRIGHT_RED</name></member>
+    <member refid="stdfunc_8h_1a30dd0aa7ae6b1f5ffbcdd51024ee6c47" kind="define"><name>COLOR_BRIGHT_GREEN</name></member>
+    <member refid="stdfunc_8h_1a27c03232867e0e1d6477d73e4e385026" kind="define"><name>COLOR_BRIGHT_YELLOW</name></member>
+    <member refid="stdfunc_8h_1ae2eb7ceea22b4d7a5e8833f542bd7b24" kind="define"><name>COLOR_BRIGHT_BLUE</name></member>
+    <member refid="stdfunc_8h_1a697a4dbb6586b2627454a4ef43c5b63c" kind="define"><name>COLOR_BRIGHT_MAGENTA</name></member>
+    <member refid="stdfunc_8h_1ac45fac0dcefd97502824521c5f1d4c4d" kind="define"><name>COLOR_BRIGHT_CYAN</name></member>
+    <member refid="stdfunc_8h_1aa0977659d900017c4b65818c42a60a66" kind="define"><name>COLOR_BRIGHT_WHITE</name></member>
+    <member refid="stdfunc_8h_1a56e1aea61ee305e3648158362333b3a8" kind="define"><name>COLOR_DEFAULT</name></member>
+    <member refid="stdfunc_8h_1ab47b356496ca267edf5551c1e28e1b54" kind="define"><name>STATUS</name></member>
+    <member refid="stdfunc_8h_1a0ffc38903a81a8527bb48a86c722bbaa" kind="define"><name>STATUS_color</name></member>
+    <member refid="stdfunc_8h_1a209de7ced6e8cdfc2a78295e228170b6" kind="define"><name>STATUS_time</name></member>
+    <member refid="stdfunc_8h_1af8e92e047e0cf174d4e8ffe521d51d93" kind="define"><name>STATUS_system_time</name></member>
+    <member refid="stdfunc_8h_1a38fa7a91c26625ed060d63cda3a1dac5" kind="define"><name>ERROR</name></member>
+    <member refid="stdfunc_8h_1a400b8e4552be6172843d1b8e698094f9" kind="define"><name>WARNING</name></member>
+    <member refid="stdfunc_8h_1ab4bffc7205bed070ddd64b43130ee9a3" kind="define"><name>ASSERT</name></member>
+    <member refid="stdfunc_8h_1ab0085078c8bf44d111e2eaa5f209559f" kind="define"><name>WAIT</name></member>
+    <member refid="stdfunc_8h_1a0d4d3a685f9501631d1feed1f4ba7577" kind="define"><name>COLOR_INFO</name></member>
+    <member refid="stdfunc_8h_1ac7bab6591a09366d23b86d710ecc54af" kind="define"><name>COLOR_ERROR</name></member>
+    <member refid="stdfunc_8h_1a4d79f3f59a4d19b93eaf106105bddc90" kind="define"><name>COLOR_WARNING</name></member>
   </compound>
-  <compound refid="H2ONaCl_2test_8cxx" kind="file"><name>test.cxx</name>
-    <member refid="H2ONaCl_2test_8cxx_1a25071b48ed56590feb64cbdac087f8ea" kind="function"><name>test_constants</name></member>
-    <member refid="H2ONaCl_2test_8cxx_1a47513b6635d83a76bb2abbf5ad47f1b8" kind="function"><name>test_criticalCurve</name></member>
-    <member refid="H2ONaCl_2test_8cxx_1ac046b89d8ddf7f9e3cdfb46585a3ca60" kind="function"><name>test_HaliteLiquidus</name></member>
-    <member refid="H2ONaCl_2test_8cxx_1ac5f4d709898c63b74614bb5ad1d6b227" kind="function"><name>debug_HaliteLiquidus_RhoL</name></member>
-    <member refid="H2ONaCl_2test_8cxx_1ab33870be5b498e6a4ba834470d5a9153" kind="function"><name>debug_VL_props</name></member>
-    <member refid="H2ONaCl_2test_8cxx_1aeaba60c6777aa8b749b5a89409874a0e" kind="function"><name>test_phaseBoundaries2VTU</name></member>
-    <member refid="H2ONaCl_2test_8cxx_1a291c7e81ccc7776f8b7ac3cdf79ac656" kind="function"><name>test_Props_TPX</name></member>
-    <member refid="H2ONaCl_2test_8cxx_1a758f490ef9ade0b8e28af341ce3749e8" kind="function"><name>lutGen_2D</name></member>
-    <member refid="H2ONaCl_2test_8cxx_1a0fabb74083c627c2b4164fea86cf9ed2" kind="function"><name>lutInfo</name></member>
-    <member refid="H2ONaCl_2test_8cxx_1a129a3de11c6287bcc970c677cda28766" kind="function"><name>test_T_VL</name></member>
-    <member refid="H2ONaCl_2test_8cxx_1a2ab1a8a4382d35d5e29b51a76da4470b" kind="function"><name>test_T_HPX</name></member>
-    <member refid="H2ONaCl_2test_8cxx_1a69a493eba47604a2a221e3c612d3f974" kind="function"><name>test_phaseRegion_HPX</name></member>
-    <member refid="H2ONaCl_2test_8cxx_1a577ffccda3082f46306215a24439a2be" kind="function"><name>test_viscosity</name></member>
-    <member refid="H2ONaCl_2test_8cxx_1a37983a828d4c2ef94f2fd48df57b865e" kind="function"><name>test_sliceP</name></member>
-    <member refid="H2ONaCl_2test_8cxx_1a89680d04a0e357835ab132030e3f3537" kind="function"><name>test_sliceT</name></member>
-    <member refid="H2ONaCl_2test_8cxx_1aadca82a6b742dec09b942af75a2fe8c3" kind="function"><name>test_LUT_lookup</name></member>
-    <member refid="H2ONaCl_2test_8cxx_1a9eeb65fe21fdbcd0c18500ffb5d203dc" kind="function"><name>test_compressibility_multiphase</name></member>
-    <member refid="H2ONaCl_2test_8cxx_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
-  </compound>
-  <compound refid="NaCl_2test_8cxx" kind="file"><name>test.cxx</name>
-    <member refid="NaCl_2test_8cxx_1aa30110e8aa35c94c29880271788ca704" kind="function"><name>test_constants</name></member>
-    <member refid="NaCl_2test_8cxx_1ae3ab530d3b92c9adf4b6e8d8f26ace63" kind="function"><name>test_prop_TP</name></member>
-    <member refid="NaCl_2test_8cxx_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  <compound refid="test_2test__templateClass_2stdfunc_8h" kind="file"><name>stdfunc.h</name>
+    <member refid="test_2test__templateClass_2stdfunc_8h_1a6200c444a92cd12d31ac6bdaf7c221d0" kind="define"><name>ERROR_COUT</name></member>
+    <member refid="test_2test__templateClass_2stdfunc_8h_1a624c50676f68bfc5c188e83c1fb102d3" kind="define"><name>WARN_COUT</name></member>
+    <member refid="test_2test__templateClass_2stdfunc_8h_1a361bd41194ac13caf9169f3f689dc179" kind="define"><name>COLOR_PURPLE</name></member>
+    <member refid="test_2test__templateClass_2stdfunc_8h_1ad86358bf19927183dd7b4ae215a29731" kind="define"><name>COLOR_RED</name></member>
+    <member refid="test_2test__templateClass_2stdfunc_8h_1afc9149f5de51bd9ac4f5ebbfa153f018" kind="define"><name>COLOR_GREEN</name></member>
+    <member refid="test_2test__templateClass_2stdfunc_8h_1a4534b577b74a58b0f4b7be027af664e0" kind="define"><name>COLOR_YELLOW</name></member>
+    <member refid="test_2test__templateClass_2stdfunc_8h_1a23c70d699a5a775bc2e1ebeb8603f630" kind="define"><name>COLOR_BLUE</name></member>
+    <member refid="test_2test__templateClass_2stdfunc_8h_1a56e1aea61ee305e3648158362333b3a8" kind="define"><name>COLOR_DEFAULT</name></member>
+    <member refid="test_2test__templateClass_2stdfunc_8h_1ab47b356496ca267edf5551c1e28e1b54" kind="define"><name>STATUS</name></member>
+    <member refid="test_2test__templateClass_2stdfunc_8h_1a0ffc38903a81a8527bb48a86c722bbaa" kind="define"><name>STATUS_color</name></member>
+    <member refid="test_2test__templateClass_2stdfunc_8h_1a209de7ced6e8cdfc2a78295e228170b6" kind="define"><name>STATUS_time</name></member>
+    <member refid="test_2test__templateClass_2stdfunc_8h_1af8e92e047e0cf174d4e8ffe521d51d93" kind="define"><name>STATUS_system_time</name></member>
+    <member refid="test_2test__templateClass_2stdfunc_8h_1a38fa7a91c26625ed060d63cda3a1dac5" kind="define"><name>ERROR</name></member>
+    <member refid="test_2test__templateClass_2stdfunc_8h_1a400b8e4552be6172843d1b8e698094f9" kind="define"><name>WARNING</name></member>
+    <member refid="test_2test__templateClass_2stdfunc_8h_1ab4bffc7205bed070ddd64b43130ee9a3" kind="define"><name>ASSERT</name></member>
+    <member refid="test_2test__templateClass_2stdfunc_8h_1ab0085078c8bf44d111e2eaa5f209559f" kind="define"><name>WAIT</name></member>
   </compound>
   <compound refid="AppDelegate_8h" kind="file"><name>AppDelegate.h</name>
   </compound>
@@ -2219,6 +2330,12 @@
     <member refid="test__PROST_8cpp_1ac2161c01077a4a5142aceda241a5c87b" kind="function"><name>test_derivative</name></member>
     <member refid="test__PROST_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
   </compound>
+  <compound refid="test__swig_2main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="test__swig_2main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="test__templateClass_2main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="test__templateClass_2main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
   <compound refid="test_8cpp" kind="file"><name>test.cpp</name>
   </compound>
   <compound refid="test_8py" kind="file"><name>test.py</name>
@@ -2226,68 +2343,15 @@
   <compound refid="abstract_8h" kind="file"><name>abstract.h</name>
     <member refid="abstract_8h_1acabf12b71bdc1858f0fc21e4cedd00b7" kind="define"><name>ABSTRACT_H</name></member>
   </compound>
+  <compound refid="test_2test__templateClass_2Exception_8h" kind="file"><name>Exception.h</name>
+  </compound>
+  <compound refid="thermo_2Exception_8h" kind="file"><name>Exception.h</name>
+  </compound>
   <compound refid="implement__A_8h" kind="file"><name>implement_A.h</name>
   </compound>
   <compound refid="implement__AB_8h" kind="file"><name>implement_AB.h</name>
   </compound>
   <compound refid="implement__B_8h" kind="file"><name>implement_B.h</name>
-  </compound>
-  <compound refid="test__swig_2main_8cpp" kind="file"><name>main.cpp</name>
-    <member refid="test__swig_2main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
-  </compound>
-  <compound refid="test__templateClass_2main_8cpp" kind="file"><name>main.cpp</name>
-    <member refid="test__templateClass_2main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
-  </compound>
-  <compound refid="stdfunc_8h" kind="file"><name>stdfunc.h</name>
-    <member refid="stdfunc_8h_1a854562f9e367b898e13e4d87083cf81e" kind="define"><name>xTHERMO_VAR</name></member>
-    <member refid="stdfunc_8h_1a6200c444a92cd12d31ac6bdaf7c221d0" kind="define"><name>ERROR_COUT</name></member>
-    <member refid="stdfunc_8h_1a624c50676f68bfc5c188e83c1fb102d3" kind="define"><name>WARN_COUT</name></member>
-    <member refid="stdfunc_8h_1a361bd41194ac13caf9169f3f689dc179" kind="define"><name>COLOR_PURPLE</name></member>
-    <member refid="stdfunc_8h_1ad86358bf19927183dd7b4ae215a29731" kind="define"><name>COLOR_RED</name></member>
-    <member refid="stdfunc_8h_1afc9149f5de51bd9ac4f5ebbfa153f018" kind="define"><name>COLOR_GREEN</name></member>
-    <member refid="stdfunc_8h_1a4534b577b74a58b0f4b7be027af664e0" kind="define"><name>COLOR_YELLOW</name></member>
-    <member refid="stdfunc_8h_1a23c70d699a5a775bc2e1ebeb8603f630" kind="define"><name>COLOR_BLUE</name></member>
-    <member refid="stdfunc_8h_1a8deb0beccea721b35bdb1b4f7264fe75" kind="define"><name>COLOR_MAGENTA</name></member>
-    <member refid="stdfunc_8h_1a82573859711fce56f1aa0a76b18a9b18" kind="define"><name>COLOR_CYAN</name></member>
-    <member refid="stdfunc_8h_1a9b44987ffdc2af19b635206b94334b69" kind="define"><name>COLOR_WHITE</name></member>
-    <member refid="stdfunc_8h_1a0287476fe504cfd071bf10263fb9b9f8" kind="define"><name>COLOR_BRIGHT_BLACK</name></member>
-    <member refid="stdfunc_8h_1a07544b84bb0b8d3c7b2580ca0b48a098" kind="define"><name>COLOR_BRIGHT_RED</name></member>
-    <member refid="stdfunc_8h_1a30dd0aa7ae6b1f5ffbcdd51024ee6c47" kind="define"><name>COLOR_BRIGHT_GREEN</name></member>
-    <member refid="stdfunc_8h_1a27c03232867e0e1d6477d73e4e385026" kind="define"><name>COLOR_BRIGHT_YELLOW</name></member>
-    <member refid="stdfunc_8h_1ae2eb7ceea22b4d7a5e8833f542bd7b24" kind="define"><name>COLOR_BRIGHT_BLUE</name></member>
-    <member refid="stdfunc_8h_1a697a4dbb6586b2627454a4ef43c5b63c" kind="define"><name>COLOR_BRIGHT_MAGENTA</name></member>
-    <member refid="stdfunc_8h_1ac45fac0dcefd97502824521c5f1d4c4d" kind="define"><name>COLOR_BRIGHT_CYAN</name></member>
-    <member refid="stdfunc_8h_1aa0977659d900017c4b65818c42a60a66" kind="define"><name>COLOR_BRIGHT_WHITE</name></member>
-    <member refid="stdfunc_8h_1a56e1aea61ee305e3648158362333b3a8" kind="define"><name>COLOR_DEFAULT</name></member>
-    <member refid="stdfunc_8h_1ab47b356496ca267edf5551c1e28e1b54" kind="define"><name>STATUS</name></member>
-    <member refid="stdfunc_8h_1a0ffc38903a81a8527bb48a86c722bbaa" kind="define"><name>STATUS_color</name></member>
-    <member refid="stdfunc_8h_1a209de7ced6e8cdfc2a78295e228170b6" kind="define"><name>STATUS_time</name></member>
-    <member refid="stdfunc_8h_1af8e92e047e0cf174d4e8ffe521d51d93" kind="define"><name>STATUS_system_time</name></member>
-    <member refid="stdfunc_8h_1a38fa7a91c26625ed060d63cda3a1dac5" kind="define"><name>ERROR</name></member>
-    <member refid="stdfunc_8h_1a400b8e4552be6172843d1b8e698094f9" kind="define"><name>WARNING</name></member>
-    <member refid="stdfunc_8h_1ab4bffc7205bed070ddd64b43130ee9a3" kind="define"><name>ASSERT</name></member>
-    <member refid="stdfunc_8h_1ab0085078c8bf44d111e2eaa5f209559f" kind="define"><name>WAIT</name></member>
-    <member refid="stdfunc_8h_1a0d4d3a685f9501631d1feed1f4ba7577" kind="define"><name>COLOR_INFO</name></member>
-    <member refid="stdfunc_8h_1ac7bab6591a09366d23b86d710ecc54af" kind="define"><name>COLOR_ERROR</name></member>
-    <member refid="stdfunc_8h_1a4d79f3f59a4d19b93eaf106105bddc90" kind="define"><name>COLOR_WARNING</name></member>
-  </compound>
-  <compound refid="test_2test__templateClass_2stdfunc_8h" kind="file"><name>stdfunc.h</name>
-    <member refid="test_2test__templateClass_2stdfunc_8h_1a6200c444a92cd12d31ac6bdaf7c221d0" kind="define"><name>ERROR_COUT</name></member>
-    <member refid="test_2test__templateClass_2stdfunc_8h_1a624c50676f68bfc5c188e83c1fb102d3" kind="define"><name>WARN_COUT</name></member>
-    <member refid="test_2test__templateClass_2stdfunc_8h_1a361bd41194ac13caf9169f3f689dc179" kind="define"><name>COLOR_PURPLE</name></member>
-    <member refid="test_2test__templateClass_2stdfunc_8h_1ad86358bf19927183dd7b4ae215a29731" kind="define"><name>COLOR_RED</name></member>
-    <member refid="test_2test__templateClass_2stdfunc_8h_1afc9149f5de51bd9ac4f5ebbfa153f018" kind="define"><name>COLOR_GREEN</name></member>
-    <member refid="test_2test__templateClass_2stdfunc_8h_1a4534b577b74a58b0f4b7be027af664e0" kind="define"><name>COLOR_YELLOW</name></member>
-    <member refid="test_2test__templateClass_2stdfunc_8h_1a23c70d699a5a775bc2e1ebeb8603f630" kind="define"><name>COLOR_BLUE</name></member>
-    <member refid="test_2test__templateClass_2stdfunc_8h_1a56e1aea61ee305e3648158362333b3a8" kind="define"><name>COLOR_DEFAULT</name></member>
-    <member refid="test_2test__templateClass_2stdfunc_8h_1ab47b356496ca267edf5551c1e28e1b54" kind="define"><name>STATUS</name></member>
-    <member refid="test_2test__templateClass_2stdfunc_8h_1a0ffc38903a81a8527bb48a86c722bbaa" kind="define"><name>STATUS_color</name></member>
-    <member refid="test_2test__templateClass_2stdfunc_8h_1a209de7ced6e8cdfc2a78295e228170b6" kind="define"><name>STATUS_time</name></member>
-    <member refid="test_2test__templateClass_2stdfunc_8h_1af8e92e047e0cf174d4e8ffe521d51d93" kind="define"><name>STATUS_system_time</name></member>
-    <member refid="test_2test__templateClass_2stdfunc_8h_1a38fa7a91c26625ed060d63cda3a1dac5" kind="define"><name>ERROR</name></member>
-    <member refid="test_2test__templateClass_2stdfunc_8h_1a400b8e4552be6172843d1b8e698094f9" kind="define"><name>WARNING</name></member>
-    <member refid="test_2test__templateClass_2stdfunc_8h_1ab4bffc7205bed070ddd64b43130ee9a3" kind="define"><name>ASSERT</name></member>
-    <member refid="test_2test__templateClass_2stdfunc_8h_1ab0085078c8bf44d111e2eaa5f209559f" kind="define"><name>WAIT</name></member>
   </compound>
   <compound refid="DataStructures_8h" kind="file"><name>DataStructures.h</name>
     <member refid="group__GENERAL__CONSTS_1ga366c57afacdbc6e90ea5a37fb276c8a1" kind="define"><name>LENGTH_CHAR_NAME</name></member>
@@ -2403,9 +2467,7 @@
     <member refid="DataStructures_8h_1a3b9bb8b97e71365a13224e7574464a50" kind="define"><name>COLOR_VLH_highT</name></member>
     <member refid="DataStructures_8h_1ad9dd3c7862944bdffe7c62fb623721c1" kind="define"><name>COLOR_VLH</name></member>
   </compound>
-  <compound refid="test_2test__templateClass_2Exception_8h" kind="file"><name>Exception.h</name>
-  </compound>
-  <compound refid="thermo_2Exception_8h" kind="file"><name>Exception.h</name>
+  <compound refid="gsl__guard_8hpp" kind="file"><name>gsl_guard.hpp</name>
   </compound>
   <compound refid="MultiProgressBar_8cpp" kind="file"><name>MultiProgressBar.cpp</name>
     <member refid="MultiProgressBar_8cpp_1a4e533540203bc548415da07513a6d8fd" kind="define"><name>COLOR_DEFAULT_PROGRESSBAR</name></member>
@@ -2760,6 +2822,7 @@
     <member refid="group__PhysicalConstants__H2ONaCl_1ga8231d0db1350bb215c640d65d9b2c01e" kind="variable"><name>P_MIN</name></member>
     <member refid="group__PhysicalConstants__H2ONaCl_1ga75dd7bc90fb8221616322427f8d16854" kind="variable"><name>P_MAX</name></member>
     <member refid="group__PhysicalConstants__H2ONaCl_1gafc902a29b69c72fb7a181becf4a38707" kind="variable"><name>T_MAX</name></member>
+    <member refid="group__PhysicalConstants__H2ONaCl_1gad9340a282c7b0fdf51c7e7489402d414" kind="variable"><name>H_TOL_T_LIMIT</name></member>
     <member refid="group__PhysicalConstants__H2ONaCl_1ga43fcdfada7d9df263ffae5b90077df53" kind="variable"><name>X_MIN</name></member>
     <member refid="group__PhysicalConstants__H2ONaCl_1gabcdf9fee5f9581ebdab11a1120096a63" kind="variable"><name>X_MAX</name></member>
     <member refid="group__PhysicalConstants__H2ONaCl_1ga12d7ab3521648c9e6a8c43f5c1e0e402" kind="variable"><name>T_MAX_VLH</name></member>
@@ -2858,8 +2921,6 @@
   <compound refid="md_Library_2test_2cpp__crossplatform_2readme" kind="page"><name>md_Library_2test_2cpp__crossplatform_2readme</name>
   </compound>
   <compound refid="todo" kind="page"><name>todo</name>
-  </compound>
-  <compound refid="bug" kind="page"><name>bug</name>
   </compound>
   <compound refid="dir_eb711624b693511de215f59cb195e6f2" kind="dir"><name>Library/AMR_LUT</name>
   </compound>

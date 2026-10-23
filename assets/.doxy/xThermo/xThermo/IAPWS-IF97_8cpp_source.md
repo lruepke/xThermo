@@ -382,7 +382,7 @@ namespace xThermal
                 else
                 {
                     printf("P = %f Pa, T = %f K\n", P, T);
-                    ERROR("T out of bound in int cIAPWS_IF97::GetRegion_PT(double P, double T)");
+                    throw OutOfRangeError("T out of bound in int cIAPWS_IF97::GetRegion_PT(double P, double T)");
                 }
             }else if(P>CONST_IF97_Pmin_Region3 && P<=CONST_IF97_Pmax_Region5)
             {
@@ -402,7 +402,7 @@ namespace xThermal
                 }else
                 {
                     printf("P = %f Pa, T = %f K\n", P, T);
-                    ERROR("T out of bound in int cIAPWS_IF97::GetRegion_PT(double P, double T)");
+                    throw OutOfRangeError("T out of bound in int cIAPWS_IF97::GetRegion_PT(double P, double T)");
                 }
             }else if(P>CONST_IF97_Pmax_Region5 && P<=CONST_IF97_Pmax_Region1)
             {
@@ -422,12 +422,12 @@ namespace xThermal
                 }else
                 {
                     printf("P = %f Pa, T = %f K\n", P, T);
-                    ERROR("T out of bound in int cIAPWS_IF97::GetRegion_PT(double P, double T)");
+                    throw OutOfRangeError("T out of bound in int cIAPWS_IF97::GetRegion_PT(double P, double T)");
                 }
             }
             else
             {
-                ERROR("Fatal error in int cIAPWS_IF97::GetRegion_PT(double P, double T): input pressure out of bound.\nP = "+std::to_string(P)+", pressure bound: ["+std::to_string(m_constants.pmin)+", "+std::to_string(CONST_IF97_Pmax_Region1)+"] Pa");
+                throw OutOfRangeError("Fatal error in int cIAPWS_IF97::GetRegion_PT(double P, double T): input pressure out of bound.\nP = "+std::to_string(P)+", pressure bound: ["+std::to_string(m_constants.pmin)+", "+std::to_string(CONST_IF97_Pmax_Region1)+"] Pa");
             }
             return IF97_RegionUndefined;
         }
@@ -527,7 +527,7 @@ namespace xThermal
                 case Prop_w:
                     return state.RT*state.gamma.p*state.gamma.p/(pow(state.gamma.p - state.tau*state.gamma.pt, 2.0)/(state.tau*state.tau*state.gamma.tt) - state.gamma.pp);
                 default:
-                ERROR("Unsupported basic property in region 1: "+std::to_string(which));
+                throw NotImplementedError("Unsupported basic property in region 1: "+std::to_string(which));
                     break;
             }
             return 0;
@@ -554,7 +554,7 @@ namespace xThermal
                 case Prop_w:
                     return state.RT * (1.0 + 2.0*state.pi*state.gammar.p + state.pi*state.pi*pow(state.gammar.p, 2.0))/((1.0 - state.pi*state.pi*state.gammar.pp) + pow(1.0+state.pi*state.gammar.p - state.tau*state.pi*state.gammar.pt, 2.0)/(state.tau*state.tau*(state.gammao.tt + state.gammar.tt)));
                 default:
-                ERROR("Unsupported basic property in region 2: "+std::to_string(which));
+                throw NotImplementedError("Unsupported basic property in region 2: "+std::to_string(which));
                     break;
             }
             return 0;
@@ -581,7 +581,7 @@ namespace xThermal
                 case Prop_w:
                     return state.RT * (1.0 + 2.0*state.pi*state.gammar.p + state.pi*state.pi*pow(state.gammar.p, 2.0))/((1.0 - state.pi*state.pi*state.gammar.pp) + pow(1.0+state.pi*state.gammar.p - state.tau*state.pi*state.gammar.pt, 2.0)/(state.tau*state.tau*(state.gammao.tt + state.gammar.tt)));
                 default:
-                ERROR("Unsupported basic property in region 2: "+std::to_string(which));
+                throw NotImplementedError("Unsupported basic property in region 2: "+std::to_string(which));
                     break;
             }
             return 0;
@@ -646,7 +646,7 @@ namespace xThermal
                 case IF97_RegionUndefined:
                     return NAN;
                 default:
-                ERROR("Region "+std::to_string(region)+" is not supported for backward temperature");
+                throw NotImplementedError("Region "+std::to_string(region)+" is not supported for backward temperature");
                     break;
             }
         }

@@ -32,6 +32,7 @@ _Namespace of_ [_**xThermal**_](namespacexThermal.md) _library._
 | namespace | [**IAPWS\_IF97**](namespacexThermal_1_1IAPWS__IF97.md) <br> |
 | namespace | [**NaCl**](namespacexThermal_1_1NaCl.md) <br> |
 | namespace | [**PROST**](namespacexThermal_1_1PROST.md) <br> |
+| namespace | [**gsl\_guard**](namespacexThermal_1_1gsl__guard.md) <br> |
 
 
 ## Classes
@@ -44,6 +45,7 @@ _Namespace of_ [_**xThermal**_](namespacexThermal.md) _library._
 | struct | [**Head\_AMR\_LUT**](structxThermal_1_1Head__AMR__LUT.md) <br> |
 | struct | [**Line**](structxThermal_1_1Line.md) <br> |
 | struct | [**Line\_slice**](structxThermal_1_1Line__slice.md) <br> |
+| class | [**OuterEvaluation**](classxThermal_1_1OuterEvaluation.md) <br>_Reset of a caller's result object at the outermost public evaluation entry (C7)._  |
 | struct | [**PhaseBoundaries**](structxThermal_1_1PhaseBoundaries.md) <br> |
 | struct | [**PhaseRegion\_Slice**](structxThermal_1_1PhaseRegion__Slice.md) <br> |
 | struct | [**PhysicalDimension**](structxThermal_1_1PhysicalDimension.md) <br>_Physical dimension of a quantity can be expressed in terms of 7 basic SI unit, e.g. dimension of density is_ \(kg/m^3\) _, can be expressed in vector of [1, -3, 0, 0, 0, 0, 0]. This idea comes from OpenFOAM._ |
@@ -129,6 +131,11 @@ _Namespace of_ [_**xThermal**_](namespacexThermal.md) _library._
 |  std::vector&lt; std::string &gt; | [**string\_split**](#function-string_split) ([**const**](classxThermal_1_1xThermalError.md) std::string & s, [**const**](classxThermal_1_1xThermalError.md) std::string & delimiter) <br> |
 
 
+## Public Static Functions
+
+| Type | Name |
+| ---: | :--- |
+|  [**int**](classxThermal_1_1xThermalError.md) & | [**evaluation\_depth**](#function-evaluation_depth) () <br> |
 
 
 
@@ -588,6 +595,21 @@ std::vector< std::string > xThermal::string_split (
     const std::string & s,
     const std::string & delimiter
 ) 
+```
+
+
+
+
+<hr>
+## Public Static Functions Documentation
+
+
+
+
+### function evaluation\_depth 
+
+```C++
+static int & xThermal::evaluation_depth () 
 ```
 
 

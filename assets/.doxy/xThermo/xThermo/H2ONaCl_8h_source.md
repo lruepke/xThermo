@@ -38,6 +38,7 @@ namespace xThermal
         const double P_MIN = 1E5;
         const double P_MAX = 5000E5;
         const double T_MAX = 1273.15;
+        const double H_TOL_T_LIMIT = 1E-3;
         const double X_MIN = 0.0;
         const double X_MAX = 1.0;
         const double T_MAX_VLH = 1073.5662157838103;
@@ -133,6 +134,7 @@ namespace xThermal
             void n1n2_Tstar_V(const double& P, const double& X, double& n1, double& n2);
             double D_Tstar_V(const double& T, const double& P, const double& X);
             double extrapolation_V_highT(const double& T_C, const double& P_bar, const double& X_mol);
+            double extrapolation_V_highT(const double& T_C, const double& P_bar, const double& X_mol, double& dVdT, double& dVdP_bar);
             double extrapolation_V_lowPlowT(const double& T_C, const double& P_bar, const double& X_mol);
             double _Rho_water(const double& T, const double& P, double& dRhodP, double& dRhodT, double& IsothermalCompresibility, double& IsobaricExpansivity, PhaseType phase=Liquid);
             double _Rho_water(const double& T, const double& P, PhaseType phase=Liquid);

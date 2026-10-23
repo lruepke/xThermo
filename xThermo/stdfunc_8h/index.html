@@ -17,7 +17,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -25,7 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1615,62 +1615,62 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#define ASSERT (</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="n">expression</span><span class="p">,</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">info</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">)</span><span class="w"> </span><span class="err">`</span><span class="p">{</span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">expression</span><span class="p">))</span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;--  &quot;</span><span class="o">&lt;&lt;</span><span class="n">COLOR_RED</span><span class="o">&lt;&lt;</span><span class="n">info</span><span class="o">&lt;&lt;</span><span class="n">COLOR_DEFAULT</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"> </span><span class="n">assert</span><span class="p">(</span><span class="n">expression</span><span class="p">);}</span><span class="err">`</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">)</span><span class="w"> </span><span class="err">`</span><span class="p">{</span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">expression</span><span class="p">))</span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"--  "</span><span class="o">&lt;&lt;</span><span class="n">COLOR_RED</span><span class="o">&lt;&lt;</span><span class="n">info</span><span class="o">&lt;&lt;</span><span class="n">COLOR_DEFAULT</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"> </span><span class="n">assert</span><span class="p">(</span><span class="n">expression</span><span class="p">);}</span><span class="err">`</span>
 </code></pre></div>
 <hr>
 
 <h3 id="define-color_blue">define COLOR_BLUE</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">#define COLOR_BLUE `(isatty(STDOUT_FILENO) == true ? &quot;\033[34m&quot; : &quot;&quot;)`</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">#define COLOR_BLUE `(isatty(STDOUT_FILENO) == true ? "\033[34m" : "")`</span>
 </code></pre></div>
 <hr>
 
 <h3 id="define-color_bright_black">define COLOR_BRIGHT_BLACK</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">#define COLOR_BRIGHT_BLACK `(isatty(STDOUT_FILENO) == true ? &quot;\033[90m&quot; : &quot;&quot;)`</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">#define COLOR_BRIGHT_BLACK `(isatty(STDOUT_FILENO) == true ? "\033[90m" : "")`</span>
 </code></pre></div>
 <hr>
 
 <h3 id="define-color_bright_blue">define COLOR_BRIGHT_BLUE</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="cp">#define COLOR_BRIGHT_BLUE `(isatty(STDOUT_FILENO) == true ? &quot;\033[94m&quot; : &quot;&quot;)`</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="cp">#define COLOR_BRIGHT_BLUE `(isatty(STDOUT_FILENO) == true ? "\033[94m" : "")`</span>
 </code></pre></div>
 <hr>
 
 <h3 id="define-color_bright_cyan">define COLOR_BRIGHT_CYAN</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="cp">#define COLOR_BRIGHT_CYAN `(isatty(STDOUT_FILENO) == true ? &quot;\033[96m&quot; : &quot;&quot;)`</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="cp">#define COLOR_BRIGHT_CYAN `(isatty(STDOUT_FILENO) == true ? "\033[96m" : "")`</span>
 </code></pre></div>
 <hr>
 
 <h3 id="define-color_bright_green">define COLOR_BRIGHT_GREEN</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="cp">#define COLOR_BRIGHT_GREEN `(isatty(STDOUT_FILENO) == true ? &quot;\033[92m&quot; : &quot;&quot;)`</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="cp">#define COLOR_BRIGHT_GREEN `(isatty(STDOUT_FILENO) == true ? "\033[92m" : "")`</span>
 </code></pre></div>
 <hr>
 
 <h3 id="define-color_bright_magenta">define COLOR_BRIGHT_MAGENTA</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="cp">#define COLOR_BRIGHT_MAGENTA `(isatty(STDOUT_FILENO) == true ? &quot;\033[95m&quot; : &quot;&quot;)`</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="cp">#define COLOR_BRIGHT_MAGENTA `(isatty(STDOUT_FILENO) == true ? "\033[95m" : "")`</span>
 </code></pre></div>
 <hr>
 
 <h3 id="define-color_bright_red">define COLOR_BRIGHT_RED</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="cp">#define COLOR_BRIGHT_RED `(isatty(STDOUT_FILENO) == true ? &quot;\033[91m&quot; : &quot;&quot;)`</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="cp">#define COLOR_BRIGHT_RED `(isatty(STDOUT_FILENO) == true ? "\033[91m" : "")`</span>
 </code></pre></div>
 <hr>
 
 <h3 id="define-color_bright_white">define COLOR_BRIGHT_WHITE</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="cp">#define COLOR_BRIGHT_WHITE `(isatty(STDOUT_FILENO) == true ? &quot;\033[97m&quot; : &quot;&quot;)`</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="cp">#define COLOR_BRIGHT_WHITE `(isatty(STDOUT_FILENO) == true ? "\033[97m" : "")`</span>
 </code></pre></div>
 <hr>
 
 <h3 id="define-color_bright_yellow">define COLOR_BRIGHT_YELLOW</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="cp">#define COLOR_BRIGHT_YELLOW `(isatty(STDOUT_FILENO) == true ? &quot;\033[93m&quot; : &quot;&quot;)`</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="cp">#define COLOR_BRIGHT_YELLOW `(isatty(STDOUT_FILENO) == true ? "\033[93m" : "")`</span>
 </code></pre></div>
 <hr>
 
 <h3 id="define-color_cyan">define COLOR_CYAN</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="cp">#define COLOR_CYAN `(isatty(STDOUT_FILENO) == true ? &quot;\033[36m&quot; : &quot;&quot;)`</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="cp">#define COLOR_CYAN `(isatty(STDOUT_FILENO) == true ? "\033[36m" : "")`</span>
 </code></pre></div>
 <hr>
 
 <h3 id="define-color_default">define COLOR_DEFAULT</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="cp">#define COLOR_DEFAULT `(isatty(STDOUT_FILENO) == true ? &quot;\033[0m&quot; : &quot;&quot;)`</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="cp">#define COLOR_DEFAULT `(isatty(STDOUT_FILENO) == true ? "\033[0m" : "")`</span>
 </code></pre></div>
 <hr>
 
@@ -1680,7 +1680,7 @@
 <hr>
 
 <h3 id="define-color_green">define COLOR_GREEN</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="cp">#define COLOR_GREEN `(isatty(STDOUT_FILENO) == true ? &quot;\033[32m&quot; : &quot;&quot;)`</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="cp">#define COLOR_GREEN `(isatty(STDOUT_FILENO) == true ? "\033[32m" : "")`</span>
 </code></pre></div>
 <hr>
 
@@ -1690,17 +1690,17 @@
 <hr>
 
 <h3 id="define-color_magenta">define COLOR_MAGENTA</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="cp">#define COLOR_MAGENTA `(isatty(STDOUT_FILENO) == true ? &quot;\033[35m&quot; : &quot;&quot;)`</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="cp">#define COLOR_MAGENTA `(isatty(STDOUT_FILENO) == true ? "\033[35m" : "")`</span>
 </code></pre></div>
 <hr>
 
 <h3 id="define-color_purple">define COLOR_PURPLE</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="cp">#define COLOR_PURPLE `(isatty(STDOUT_FILENO) == true ? &quot;\033[35m&quot; : &quot;&quot;)`</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="cp">#define COLOR_PURPLE `(isatty(STDOUT_FILENO) == true ? "\033[35m" : "")`</span>
 </code></pre></div>
 <hr>
 
 <h3 id="define-color_red">define COLOR_RED</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="cp">#define COLOR_RED `(isatty(STDOUT_FILENO) == true ? &quot;\033[31m&quot; : &quot;&quot;)`</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="cp">#define COLOR_RED `(isatty(STDOUT_FILENO) == true ? "\033[31m" : "")`</span>
 </code></pre></div>
 <hr>
 
@@ -1710,31 +1710,31 @@
 <hr>
 
 <h3 id="define-color_white">define COLOR_WHITE</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="cp">#define COLOR_WHITE `(isatty(STDOUT_FILENO) == true ? &quot;\033[37m&quot; : &quot;&quot;)`</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="cp">#define COLOR_WHITE `(isatty(STDOUT_FILENO) == true ? "\033[37m" : "")`</span>
 </code></pre></div>
 <hr>
 
 <h3 id="define-color_yellow">define COLOR_YELLOW</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="cp">#define COLOR_YELLOW `(isatty(STDOUT_FILENO) == true ? &quot;\033[33m&quot; : &quot;&quot;)`</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="cp">#define COLOR_YELLOW `(isatty(STDOUT_FILENO) == true ? "\033[33m" : "")`</span>
 </code></pre></div>
 <hr>
 
 <h3 id="define-error">define ERROR</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="cp">#define ERROR (</span>
 <a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="w">    </span><span class="n">info</span>
-<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="p">)</span><span class="w"> </span><span class="err">`</span><span class="p">{</span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;--  [&quot;</span><span class="o">&lt;&lt;</span><span class="n">COLOR_RED</span><span class="o">&lt;&lt;</span><span class="s">&quot;Error&quot;</span><span class="o">&lt;&lt;</span><span class="n">COLOR_DEFAULT</span><span class="o">&lt;&lt;</span><span class="s">&quot;]: &quot;</span><span class="o">&lt;&lt;</span><span class="n">info</span><span class="o">&lt;&lt;</span><span class="n">COLOR_DEFAULT</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"> </span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);}</span><span class="err">`</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="p">)</span><span class="w"> </span><span class="err">`</span><span class="p">{</span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"--  ["</span><span class="o">&lt;&lt;</span><span class="n">COLOR_RED</span><span class="o">&lt;&lt;</span><span class="s">"Error"</span><span class="o">&lt;&lt;</span><span class="n">COLOR_DEFAULT</span><span class="o">&lt;&lt;</span><span class="s">"]: "</span><span class="o">&lt;&lt;</span><span class="n">info</span><span class="o">&lt;&lt;</span><span class="n">COLOR_DEFAULT</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"> </span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);}</span><span class="err">`</span>
 </code></pre></div>
 <hr>
 
 <h3 id="define-error_cout">define ERROR_COUT</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="cp">#define ERROR_COUT `(isatty(STDOUT_FILENO) == true ? &quot;[\033[31mError: \033[0m] &quot; : &quot;[Error: ]&quot;)`</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="cp">#define ERROR_COUT `(isatty(STDOUT_FILENO) == true ? "[\033[31mError: \033[0m] " : "[Error: ]")`</span>
 </code></pre></div>
 <hr>
 
 <h3 id="define-status">define STATUS</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="cp">#define STATUS (</span>
 <a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="w">    </span><span class="n">info</span>
-<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="p">)</span><span class="w"> </span><span class="err">`</span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;--  &quot;</span><span class="o">&lt;&lt;</span><span class="n">COLOR_GREEN</span><span class="o">&lt;&lt;</span><span class="n">info</span><span class="o">&lt;&lt;</span><span class="n">COLOR_DEFAULT</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="err">`</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="p">)</span><span class="w"> </span><span class="err">`</span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"--  "</span><span class="o">&lt;&lt;</span><span class="n">COLOR_GREEN</span><span class="o">&lt;&lt;</span><span class="n">info</span><span class="o">&lt;&lt;</span><span class="n">COLOR_DEFAULT</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="err">`</span>
 </code></pre></div>
 <hr>
 
@@ -1742,7 +1742,7 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="cp">#define STATUS_color (</span>
 <a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="w">    </span><span class="n">info</span><span class="p">,</span>
 <a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="w">    </span><span class="n">color</span>
-<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="p">)</span><span class="w"> </span><span class="err">`</span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;--  &quot;</span><span class="o">&lt;&lt;</span><span class="n">color</span><span class="o">&lt;&lt;</span><span class="n">info</span><span class="o">&lt;&lt;</span><span class="n">COLOR_DEFAULT</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="err">`</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="p">)</span><span class="w"> </span><span class="err">`</span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"--  "</span><span class="o">&lt;&lt;</span><span class="n">color</span><span class="o">&lt;&lt;</span><span class="n">info</span><span class="o">&lt;&lt;</span><span class="n">COLOR_DEFAULT</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="err">`</span>
 </code></pre></div>
 <hr>
 
@@ -1750,7 +1750,7 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="cp">#define STATUS_system_time (</span>
 <a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="w">    </span><span class="n">info</span><span class="p">,</span>
 <a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="w">    </span><span class="n">duration</span>
-<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="p">)</span><span class="w"> </span><span class="err">`</span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;--  &quot;</span><span class="o">&lt;&lt;</span><span class="n">COLOR_GREEN</span><span class="o">&lt;&lt;</span><span class="n">info</span><span class="o">&lt;&lt;</span><span class="s">&quot;, time: &quot;</span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="kt">double</span><span class="p">(</span><span class="n">duration</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">microseconds</span><span class="o">::</span><span class="n">period</span><span class="o">::</span><span class="n">num</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">microseconds</span><span class="o">::</span><span class="n">period</span><span class="o">::</span><span class="n">den</span><span class="o">&lt;&lt;</span><span class="s">&quot; s&quot;</span><span class="o">&lt;&lt;</span><span class="n">COLOR_DEFAULT</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="err">`</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="p">)</span><span class="w"> </span><span class="err">`</span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"--  "</span><span class="o">&lt;&lt;</span><span class="n">COLOR_GREEN</span><span class="o">&lt;&lt;</span><span class="n">info</span><span class="o">&lt;&lt;</span><span class="s">", time: "</span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="kt">double</span><span class="p">(</span><span class="n">duration</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">microseconds</span><span class="o">::</span><span class="n">period</span><span class="o">::</span><span class="n">num</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">microseconds</span><span class="o">::</span><span class="n">period</span><span class="o">::</span><span class="n">den</span><span class="o">&lt;&lt;</span><span class="s">" s"</span><span class="o">&lt;&lt;</span><span class="n">COLOR_DEFAULT</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="err">`</span>
 </code></pre></div>
 <hr>
 
@@ -1758,26 +1758,26 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="cp">#define STATUS_time (</span>
 <a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="w">    </span><span class="n">info</span><span class="p">,</span>
 <a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="w">    </span><span class="n">time_taken</span>
-<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a><span class="p">)</span><span class="w"> </span><span class="err">`</span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;--  &quot;</span><span class="o">&lt;&lt;</span><span class="n">COLOR_GREEN</span><span class="o">&lt;&lt;</span><span class="n">info</span><span class="o">&lt;&lt;</span><span class="s">&quot;, time: &quot;</span><span class="o">&lt;&lt;</span><span class="p">(</span><span class="kt">double</span><span class="p">)(</span><span class="n">time_taken</span><span class="p">)</span><span class="o">/</span><span class="n">CLOCKS_PER_SEC</span><span class="o">&lt;&lt;</span><span class="s">&quot; s&quot;</span><span class="o">&lt;&lt;</span><span class="n">COLOR_DEFAULT</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="err">`</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a><span class="p">)</span><span class="w"> </span><span class="err">`</span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"--  "</span><span class="o">&lt;&lt;</span><span class="n">COLOR_GREEN</span><span class="o">&lt;&lt;</span><span class="n">info</span><span class="o">&lt;&lt;</span><span class="s">", time: "</span><span class="o">&lt;&lt;</span><span class="p">(</span><span class="kt">double</span><span class="p">)(</span><span class="n">time_taken</span><span class="p">)</span><span class="o">/</span><span class="n">CLOCKS_PER_SEC</span><span class="o">&lt;&lt;</span><span class="s">" s"</span><span class="o">&lt;&lt;</span><span class="n">COLOR_DEFAULT</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="err">`</span>
 </code></pre></div>
 <hr>
 
 <h3 id="define-wait">define WAIT</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="cp">#define WAIT (</span>
 <a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="w">    </span><span class="n">where</span>
-<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="p">)</span><span class="w"> </span><span class="err">`</span><span class="p">{</span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;Waiting &quot;</span><span class="o">&lt;&lt;</span><span class="n">where</span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;. Enter to continue...&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">dummy</span><span class="p">;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">getline</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="p">,</span><span class="w"> </span><span class="n">dummy</span><span class="p">);}</span><span class="err">`</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="p">)</span><span class="w"> </span><span class="err">`</span><span class="p">{</span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"Waiting "</span><span class="o">&lt;&lt;</span><span class="n">where</span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">". Enter to continue..."</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">dummy</span><span class="p">;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">getline</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="p">,</span><span class="w"> </span><span class="n">dummy</span><span class="p">);}</span><span class="err">`</span>
 </code></pre></div>
 <hr>
 
 <h3 id="define-warning">define WARNING</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="cp">#define WARNING (</span>
 <a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="w">    </span><span class="n">info</span>
-<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="p">)</span><span class="w"> </span><span class="err">`</span><span class="p">{</span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;--  &quot;</span><span class="o">&lt;&lt;</span><span class="n">COLOR_YELLOW</span><span class="o">&lt;&lt;</span><span class="n">info</span><span class="o">&lt;&lt;</span><span class="n">COLOR_DEFAULT</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;}</span><span class="err">`</span>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="p">)</span><span class="w"> </span><span class="err">`</span><span class="p">{</span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"--  "</span><span class="o">&lt;&lt;</span><span class="n">COLOR_YELLOW</span><span class="o">&lt;&lt;</span><span class="n">info</span><span class="o">&lt;&lt;</span><span class="n">COLOR_DEFAULT</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;}</span><span class="err">`</span>
 </code></pre></div>
 <hr>
 
 <h3 id="define-warn_cout">define WARN_COUT</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="cp">#define WARN_COUT `(isatty(STDOUT_FILENO) == true ? &quot;[\033[33mWarning: \033[0m] &quot; : &quot;[Warning: ]&quot;)`</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="cp">#define WARN_COUT `(isatty(STDOUT_FILENO) == true ? "[\033[33mWarning: \033[0m] " : "[Warning: ]")`</span>
 </code></pre></div>
 <hr>
 
@@ -1840,7 +1840,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

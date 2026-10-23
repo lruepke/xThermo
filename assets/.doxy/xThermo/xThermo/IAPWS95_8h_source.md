@@ -118,7 +118,7 @@ namespace xThermal
         {
             const double T_star = 647.096;
             const double rho_star = 322.0;
-            const double p_star = 22.064E5;
+            const double p_star = 22.064E6;
             const double mu_star = 1.0E-6;
             static const int N_Hi = 4;
             const double H_i[4] = {1.67752, 2.20462, 0.6366564, -0.241605};

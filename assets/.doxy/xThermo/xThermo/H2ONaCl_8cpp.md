@@ -11,6 +11,7 @@
 _Implementation of H2O-NaCl model._ [More...](#detailed-description)
 
 * `#include "H2ONaCl.h"`
+* `#include "gsl_guard.hpp"`
 * `#include "LookUpTableForestI.H"`
 * `#include "interpolationI.H"`
 * `#include "AMR_LUT_RefineFuncI.H"`

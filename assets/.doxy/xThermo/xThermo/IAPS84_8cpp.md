@@ -8,7 +8,7 @@
 
 [Go to the source code of this file](IAPS84_8cpp_source.md)
 
-_Implementation of IAPS84._ [More...](#detailed-description)
+_Implementation of the xThermo backend "IAPS84", a C++ wrapper around PROST 4.1 (see_ [_**IAPS84.h**_](IAPS84_8h.md) _)._[More...](#detailed-description)
 
 * `#include "IAPS84.h"`
 * `#include "steam4.h"`
@@ -98,7 +98,7 @@ _Implementation of IAPS84._ [More...](#detailed-description)
 Zhikui Guo ([zguo@geomar.de](mailto:zguo@geomar.de)) 
 
 
-
+All IAPS-84 computations (equation of state, derivatives, saturation, viscosity) are done by PROST 4.1 (O. Bauer and O. Engel, TU Hamburg-Harburg, 1998; ThirdParties/PROST; GNU LGPL v2.0). This file contains only the xThermo interface around it. 
 
 **Version:**
 
@@ -116,7 +116,7 @@ Zhikui Guo ([zguo@geomar.de](mailto:zguo@geomar.de))
 
 **Copyright:**
 
-Copyright (c) 2022 
+Copyright (c) 2022. This wrapper is part of xThermo (MIT licence, see LICENSE). PROST is not covered by xThermo's licence (see THIRD\_PARTY\_NOTICES.md). 
 
 
 

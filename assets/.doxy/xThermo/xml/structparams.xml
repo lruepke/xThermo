@@ -61,7 +61,7 @@
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para>See <ulink url="https://nlopt.readthedocs.io/en/latest/NLopt_Tutorial/">https://nlopt.readthedocs.io/en/latest/NLopt_Tutorial/</ulink> <formula id="255">$ f=(2x + 0)^3 - (-x + 1)^3 = 0 $</formula>. </para>
+<para>See <ulink url="https://nlopt.readthedocs.io/en/latest/NLopt_Tutorial/">https://nlopt.readthedocs.io/en/latest/NLopt_Tutorial/</ulink> <formula id="260">$ f=(2x + 0)^3 - (-x + 1)^3 = 0 $</formula>. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>

@@ -94,6 +94,7 @@ Here are the classes, structs, unions and interfaces with brief descriptions:
         * **struct** [**Coeff\_Rho**](structxThermal_1_1NaCl_1_1Coeff__Rho.md) _Parameters for halite and liquid NaCl volumetric properties. See table 3 of Driesner2007Part2._     
         * **struct** [**H\_halite\_ref**](structxThermal_1_1NaCl_1_1H__halite__ref.md)     
         * **class** [**cNaCl**](classxThermal_1_1NaCl_1_1cNaCl.md) _Class of NaCl EOS._     
+    * **class** [**OuterEvaluation**](classxThermal_1_1OuterEvaluation.md) _Reset of a caller's result object at the outermost public evaluation entry (C7)._     
     * **namespace** [**PROST**](namespacexThermal_1_1PROST.md)     
         * **class** [**cIAPS84**](classxThermal_1_1PROST_1_1cIAPS84.md)     
     * **struct** [**PhaseBoundaries**](structxThermal_1_1PhaseBoundaries.md)     
@@ -110,6 +111,12 @@ Here are the classes, structs, unions and interfaces with brief descriptions:
     * **struct** [**TriMesh**](structxThermal_1_1TriMesh.md)     
     * **class** [**ValueErrorSpec**](classxThermal_1_1ValueErrorSpec.md)     
     * **class** [**cxThermal**](classxThermal_1_1cxThermal.md) _Top abstract class of the thermodynamic model._     
+    * **namespace** [**gsl\_guard**](namespacexThermal_1_1gsl__guard.md)     
+        * **class** [**GuardedFunction**](classxThermal_1_1gsl__guard_1_1GuardedFunction.md)     
+        * **class** [**GuardedMultirootFunction**](classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction.md)     
+        * **struct** [**MultirootSolverFree**](structxThermal_1_1gsl__guard_1_1MultirootSolverFree.md)     
+        * **struct** [**RootSolverFree**](structxThermal_1_1gsl__guard_1_1RootSolverFree.md)     
+        * **struct** [**VectorFree**](structxThermal_1_1gsl__guard_1_1VectorFree.md)     
     * **struct** [**propInfo**](structxThermal_1_1propInfo.md) _Information of a thermodynamic property._     
     * **class** [**xThermalBaseError**](classxThermal_1_1xThermalBaseError.md)     
     * **class** [**xThermalError**](classxThermal_1_1xThermalError.md)     

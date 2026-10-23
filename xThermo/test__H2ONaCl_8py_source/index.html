@@ -17,7 +17,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -25,7 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1064,7 +1064,7 @@
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xThermal</span><span class="w"> </span><span class="kn">import</span> <span class="n">H2O</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xThermal</span><span class="w"> </span><span class="kn">import</span> <span class="n">NaCl</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xThermal</span><span class="w"> </span><span class="kn">import</span> <span class="n">H2ONaCl</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">sw_84</span> <span class="o">=</span> <span class="n">H2ONaCl</span><span class="o">.</span><span class="n">cH2ONaCl</span><span class="p">(</span><span class="s2">&quot;IAPS84&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">sw_84</span> <span class="o">=</span> <span class="n">H2ONaCl</span><span class="o">.</span><span class="n">cH2ONaCl</span><span class="p">(</span><span class="s2">"IAPS84"</span><span class="p">)</span>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">sw</span> <span class="o">=</span> <span class="n">sw_84</span>
 <a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">T_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">373</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">650</span><span class="p">]</span>
@@ -1072,7 +1072,7 @@
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">X_list</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">]</span>
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="k">for</span> <span class="n">T</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">X</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">T_list</span><span class="p">,</span> <span class="n">p_list</span><span class="p">,</span> <span class="n">X_list</span><span class="p">):</span>
 <a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">props</span> <span class="o">=</span> <span class="n">sw</span><span class="o">.</span><span class="n">UpdateState_TPX</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;T=</span><span class="si">{</span><span class="n">T</span><span class="si">}</span><span class="s2"> K  p=</span><span class="si">{</span><span class="n">p</span><span class="o">/</span><span class="mf">1e5</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2"> bar  X=</span><span class="si">{</span><span class="n">X</span><span class="si">}</span><span class="s2">  Rho=</span><span class="si">{</span><span class="n">props</span><span class="o">.</span><span class="n">Rho</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> kg/m3  H=</span><span class="si">{</span><span class="n">props</span><span class="o">.</span><span class="n">H</span><span class="o">/</span><span class="mf">1e3</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> kJ/kg  phase=</span><span class="si">{</span><span class="n">props</span><span class="o">.</span><span class="n">phase</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"T=</span><span class="si">{</span><span class="n">T</span><span class="si">}</span><span class="s2"> K  p=</span><span class="si">{</span><span class="n">p</span><span class="o">/</span><span class="mf">1e5</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2"> bar  X=</span><span class="si">{</span><span class="n">X</span><span class="si">}</span><span class="s2">  Rho=</span><span class="si">{</span><span class="n">props</span><span class="o">.</span><span class="n">Rho</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> kg/m3  H=</span><span class="si">{</span><span class="n">props</span><span class="o">.</span><span class="n">H</span><span class="o">/</span><span class="mf">1e3</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> kJ/kg  phase=</span><span class="si">{</span><span class="n">props</span><span class="o">.</span><span class="n">phase</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </code></pre></div>
 
 
@@ -1126,7 +1126,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

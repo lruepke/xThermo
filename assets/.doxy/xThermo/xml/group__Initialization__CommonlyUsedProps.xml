@@ -58,7 +58,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>initialization of property vapor mass fraction: <formula id="356">$ x=\frac{m^{\prime\prime}}{m^{\prime} + m^{\prime}} = \frac{h - h^{\prime}}{h^{\prime\prime} - h^{\prime}} =\frac{v - v^{\prime}}{v^{\prime\prime} - v^{\prime}} = \frac{1/\rho - 1/\rho^{\prime}}{1/\rho^{\prime\prime} - 1/\rho^{\prime}} $</formula>, where the superscript <formula id="357">$\prime, \prime\prime$</formula> denote liquid and vapor, respectively. </para>
+<para>initialization of property vapor mass fraction: <formula id="361">$ x=\frac{m^{\prime\prime}}{m^{\prime} + m^{\prime}} = \frac{h - h^{\prime}}{h^{\prime\prime} - h^{\prime}} =\frac{v - v^{\prime}}{v^{\prime\prime} - v^{\prime}} = \frac{1/\rho - 1/\rho^{\prime}}{1/\rho^{\prime\prime} - 1/\rho^{\prime}} $</formula>, where the superscript <formula id="362">$\prime, \prime\prime$</formula> denote liquid and vapor, respectively. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>

@@ -62,11 +62,27 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Maximum valid temperature [K] = 1000 <formula id="181">$^{\circ} $</formula>C </para>
+<para>Maximum valid temperature [K] = 1000 <formula id="186">$^{\circ} $</formula>C </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="Library/H2ONaCl/H2ONaCl.h" line="61" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__PhysicalConstants__H2ONaCl_1gad9340a282c7b0fdf51c7e7489402d414" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double xThermal::H2ONaCl::H_TOL_T_LIMIT</definition>
+        <argsstring></argsstring>
+        <name>H_TOL_T_LIMIT</name>
+        <qualifiedname>xThermal::H2ONaCl::H_TOL_T_LIMIT</qualifiedname>
+        <initializer>= 1E-3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>H-P-X only (LIB-19): an enthalpy within this distance [J/kg] of H(T_MIN) or H(T_MAX) lies on that limit (about 1e-6 K; rounding of range-edge inputs) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="64" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="64" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__PhysicalConstants__H2ONaCl_1ga43fcdfada7d9df263ffae5b90077df53" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -82,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="63" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="63" bodyend="-1"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="66" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__PhysicalConstants__H2ONaCl_1gabcdf9fee5f9581ebdab11a1120096a63" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -98,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="65" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="65" bodyend="-1"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="68" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__PhysicalConstants__H2ONaCl_1ga12d7ab3521648c9e6a8c43f5c1e0e402" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -114,7 +130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="67" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="67" bodyend="-1"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="70" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="70" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__PhysicalConstants__H2ONaCl_1gae0dd80244c31c9f9aacf2615d779fc15" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -130,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="69" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="69" bodyend="-1"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="72" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__PhysicalConstants__H2ONaCl_1ga9f170fe2af16cfe31f09a1a1533f8790" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -147,7 +163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="71" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="71" bodyend="-1"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="74" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="74" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__PhysicalConstants__H2ONaCl_1gaa939ae8d1b447bbdcc2528fee46d25f0" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -163,7 +179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="73" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="73" bodyend="-1"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="76" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="76" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__PhysicalConstants__H2ONaCl_1ga866343363b17c6ebf9e178cf72985d7d" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -180,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="75" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="75" bodyend="-1"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="78" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="78" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__PhysicalConstants__H2ONaCl_1ga0c98a9d0943da08d24e0a7f1877baa55" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -196,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="77" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="77" bodyend="-1"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="80" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="80" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

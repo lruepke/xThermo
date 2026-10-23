@@ -10,6 +10,7 @@
 ```C++
 
 #include "IAPWS95.h"
+#include "gsl_guard.hpp"
 #include <gsl/gsl_vector.h>
 #include <gsl/gsl_multiroots.h>
 #include <gsl/gsl_errno.h>
@@ -195,7 +196,8 @@ namespace xThermal
                 Delta_d = (delta - 1)*(m_coeff_phir.A_term4 * theta * 2.0/m_coeff_phir.beta_term4*pow(delta_1_sqr, 0.5/m_coeff_phir.beta_term4 - 1.0) + 2.0*m_coeff_phir.B_term4*m_coeff_phir.a_term4*pow(delta_1_sqr, m_coeff_phir.a_term4-1.0));
                 Delta_bi_d = m_coeff_phir.bi_term4[i]*pow(Delta, m_coeff_phir.bi_term4[i]-1.0)*Delta_d;
                 psi_dd = (2.0*m_coeff_phir.Ci_term4[i]*pow(delta - 1.0, 2.0) - 1.0)*2.0*m_coeff_phir.Ci_term4[i]*psi;
-                Delta_dd = 1.0/(delta-1.0)*Delta_d + pow(delta-1, 2.0)*(4.0*m_coeff_phir.B_term4*m_coeff_phir.a_term4*(m_coeff_phir.a_term4-1)*pow(delta_1_sqr, m_coeff_phir.a_term4-2) + 2.0*pow(m_coeff_phir.A_term4, 2.0)*pow(m_coeff_phir.beta_term4, -2)*pow(pow(delta_1_sqr, 0.5/m_coeff_phir.beta_term4-1), 2.0) + m_coeff_phir.A_term4*theta*4/m_coeff_phir.beta_term4*(0.5/m_coeff_phir.beta_term4 - 1.0)*pow(delta_1_sqr, 0.5/m_coeff_phir.beta_term4 - 2));
+                // LIB-43: (1/(delta-1)) dDelta/ddelta + (delta-1)^2 [...] is a removable singularity at delta = 1; its limit is 0
+                Delta_dd = (delta == 1.0) ? 0.0 : 1.0/(delta-1.0)*Delta_d + pow(delta-1, 2.0)*(4.0*m_coeff_phir.B_term4*m_coeff_phir.a_term4*(m_coeff_phir.a_term4-1)*pow(delta_1_sqr, m_coeff_phir.a_term4-2) + 2.0*pow(m_coeff_phir.A_term4, 2.0)*pow(m_coeff_phir.beta_term4, -2)*pow(pow(delta_1_sqr, 0.5/m_coeff_phir.beta_term4-1), 2.0) + m_coeff_phir.A_term4*theta*4/m_coeff_phir.beta_term4*(0.5/m_coeff_phir.beta_term4 - 1.0)*pow(delta_1_sqr, 0.5/m_coeff_phir.beta_term4 - 2));
                 Delta_bi_dd = m_coeff_phir.bi_term4[i] * (pow(Delta, m_coeff_phir.bi_term4[i]-1)*Delta_dd + (m_coeff_phir.bi_term4[i]-1)*pow(Delta, m_coeff_phir.bi_term4[i]-2)*pow(Delta_d, 2.0));
 
                 phir_dd += m_coeff_phir.ni_term4[i]*(pow(Delta, m_coeff_phir.bi_term4[i])*(2*psi_d + delta*psi_dd) + 2.0*Delta_bi_d*(psi + delta*psi_d) + Delta_bi_dd * delta * psi);
@@ -267,21 +269,21 @@ namespace xThermal
             {
                 phir_tt += m_coeff_phir.ni_term3[i]*pow(delta, m_coeff_phir.d_term3)*pow(tau, m_coeff_phir.ti_term3[i])*exp(-m_coeff_phir.alpha_term3*pow(delta-m_coeff_phir.epsilon_term3, 2.0) - m_coeff_phir.betai_term3[i]*pow(tau-m_coeff_phir.gammai_term3[i], 2.0))*(pow(m_coeff_phir.ti_term3[i]/tau - 2.0*m_coeff_phir.betai_term3[i]*(tau - m_coeff_phir.gammai_term3[i]), 2.0) - m_coeff_phir.ti_term3[i]/pow(tau, 2.0) - 2.0*m_coeff_phir.betai_term3[i]);
             }
-            // // terms 4: Nonanalytical term
-            // double Delta, theta, psi, delta_1_sqr, psi_t, psi_tt, Delta_bi_t, Delta_bi_tt;
-            // for (int i = 0; i < m_coeff_phir.n4; i++)
-            // {
-            //     delta_1_sqr = (delta-1)*(delta-1);
-            //     theta = (1-tau) + m_coeff_phir.A_term4 * pow(delta_1_sqr, 0.5/m_coeff_phir.beta_term4);
-            //     Delta = theta*theta + m_coeff_phir.B_term4 * pow(delta_1_sqr, m_coeff_phir.a_term4);
-            //     psi   = exp(-m_coeff_phir.Ci_term4[i]*delta_1_sqr - m_coeff_phir.Di_term4[i] * (tau-1)*(tau-1));
-            //     psi_t = -2.0*m_coeff_phir.Di_term4[i]*(tau - 1.0)*psi;
-            //     psi_tt = (2.0*m_coeff_phir.Di_term4[i]*pow(tau-1.0, 2.0) - 1.0)*2.0*m_coeff_phir.Di_term4[i]*psi;
-            //     Delta_bi_t = -2.0*theta*m_coeff_phir.bi_term4[i]*pow(Delta, m_coeff_phir.bi_term4[i] - 1.0);
-            //     Delta_bi_tt = 2.0*m_coeff_phir.bi_term4[i]*pow(Delta, m_coeff_phir.bi_term4[i]-1.0) + 2.0*pow(theta, 2.0)*m_coeff_phir.bi_term4[i]*(m_coeff_phir.bi_term4[i]-1.0)*pow(Delta, m_coeff_phir.bi_term4[i]-2.0);
+            // terms 4: Nonanalytical term (LIB-41: restored; d2(Delta^b)/dtau2 with the coefficient 4 of IAPWS R6-95 Table 5)
+            double Delta, theta, psi, delta_1_sqr, psi_t, psi_tt, Delta_bi_t, Delta_bi_tt;
+            for (int i = 0; i < m_coeff_phir.n4; i++)
+            {
+                delta_1_sqr = (delta-1)*(delta-1);
+                theta = (1-tau) + m_coeff_phir.A_term4 * pow(delta_1_sqr, 0.5/m_coeff_phir.beta_term4);
+                Delta = theta*theta + m_coeff_phir.B_term4 * pow(delta_1_sqr, m_coeff_phir.a_term4);
+                psi   = exp(-m_coeff_phir.Ci_term4[i]*delta_1_sqr - m_coeff_phir.Di_term4[i] * (tau-1)*(tau-1));
+                psi_t = -2.0*m_coeff_phir.Di_term4[i]*(tau - 1.0)*psi;
+                psi_tt = (2.0*m_coeff_phir.Di_term4[i]*pow(tau-1.0, 2.0) - 1.0)*2.0*m_coeff_phir.Di_term4[i]*psi;
+                Delta_bi_t = -2.0*theta*m_coeff_phir.bi_term4[i]*pow(Delta, m_coeff_phir.bi_term4[i] - 1.0);
+                Delta_bi_tt = 2.0*m_coeff_phir.bi_term4[i]*pow(Delta, m_coeff_phir.bi_term4[i]-1.0) + 4.0*pow(theta, 2.0)*m_coeff_phir.bi_term4[i]*(m_coeff_phir.bi_term4[i]-1.0)*pow(Delta, m_coeff_phir.bi_term4[i]-2.0);
 
-            //     phir_tt += m_coeff_phir.ni_term4[i]*delta*(Delta_bi_tt*psi + 2.0*Delta_bi_t*psi_t + pow(Delta, m_coeff_phir.bi_term4[i])*psi_tt);
-            // }
+                phir_tt += m_coeff_phir.ni_term4[i]*delta*(Delta_bi_tt*psi + 2.0*Delta_bi_t*psi_t + pow(Delta, m_coeff_phir.bi_term4[i])*psi_tt);
+            }
             return phir_tt;
         }
         void cIAPWS95::phi_r_tt(const std::vector<double> delta, const std::vector<double> tau, std::vector<double>& res)
@@ -529,19 +531,22 @@ namespace xThermal
             Params_SolvePhaseEquilibrium params={this, T_K*m_constants.R, m_constants.T_critical/T_K, SOLVE_SATURATED_P};
             gsl_multiroot_function f = {&func_PhaseEquilibrium, n, &params};
             double x_init[n] = {P0, Rho_l0, Rho_v0}; //initial guess
-            gsl_vector *x = gsl_vector_alloc (n);
+            gsl_guard::Vector x_owner(gsl_vector_alloc (n)); // owns x (C1, LIB-27)
+            gsl_vector *x = x_owner.get();
             gsl_vector_set (x, 0, x_init[0]);
             gsl_vector_set (x, 1, x_init[1]);
             gsl_vector_set (x, 2, x_init[2]);
             T = gsl_multiroot_fsolver_hybrids;
-            s = gsl_multiroot_fsolver_alloc (T, n);
-            gsl_multiroot_fsolver_set (s, &f, x);
+            gsl_guard::MultirootSolver solver(gsl_multiroot_fsolver_alloc (T, n)); // owns s (C1, LIB-27)
+            s = solver.get();
+            gsl_guard::GuardedMultirootFunction guarded(f); // callback exceptions contained (C1); GSL status unchanged
+            guarded.set (s, x);
             // print_state_PhaseEquilibrium (iter, s);
             // iteration: solve
             do
             {
                 iter++;
-                status = gsl_multiroot_fsolver_iterate (s);
+                status = guarded.iterate (s);
                 // print_state_PhaseEquilibrium (iter, s);
                 if (status) /* check if solver is stuck */
                     break;
@@ -560,14 +565,13 @@ namespace xThermal
                     print_state_TP2Rho (iter, s);
                     printf ("status = %s\n\n", gsl_strerror (status));
                     printf("T = %.3f K\n", T_K);
-                    ERROR("Fatal error in cIAPWS95::Boiling_P(const double T_K, double& P, double& rho_l, double& rho_v)");
+                    throw SolutionError("Fatal error in cIAPWS95::Boiling_P(const double T_K, double& P, double& rho_l, double& rho_v)");
                 }
             }
             P = gsl_vector_get (s->x, 0);
             rho_l = gsl_vector_get (s->x, 1);
             rho_v = gsl_vector_get (s->x, 2);
             // release pointer
-            gsl_multiroot_fsolver_free (s); gsl_vector_free (x);
         }
 
         void cIAPWS95::Boiling_T(const double& P, double& T_K, double& rho_l, double& rho_v)
@@ -596,19 +600,22 @@ namespace xThermal
             Params_SolvePhaseEquilibrium params={this, 0, P, SOLVE_SATURATED_T};
             gsl_multiroot_function f = {&func_PhaseEquilibrium, n, &params};
             double x_init[n] = {T_K, Rho_l0, Rho_v0}; //initial guess
-            gsl_vector *x = gsl_vector_alloc (n);
+            gsl_guard::Vector x_owner(gsl_vector_alloc (n)); // owns x (C1, LIB-27)
+            gsl_vector *x = x_owner.get();
             gsl_vector_set (x, 0, x_init[0]);
             gsl_vector_set (x, 1, x_init[1]);
             gsl_vector_set (x, 2, x_init[2]);
             T = gsl_multiroot_fsolver_hybrids;
-            s = gsl_multiroot_fsolver_alloc (T, n);
-            gsl_multiroot_fsolver_set (s, &f, x);
+            gsl_guard::MultirootSolver solver(gsl_multiroot_fsolver_alloc (T, n)); // owns s (C1, LIB-27)
+            s = solver.get();
+            gsl_guard::GuardedMultirootFunction guarded(f); // callback exceptions contained (C1); GSL status unchanged
+            guarded.set (s, x);
             // print_state_PhaseEquilibrium (iter, s);
             // iteration: solve
             do
             {
                 iter++;
-                status = gsl_multiroot_fsolver_iterate (s);
+                status = guarded.iterate (s);
                 // print_state_PhaseEquilibrium (iter, s);
                 if (status) /* check if solver is stuck */
                     break;
@@ -626,14 +633,13 @@ namespace xThermal
                     print_state_TP2Rho (iter, s);
                     printf ("status = %s\n\n", gsl_strerror (status));
                     printf("P = %.3E Pa\n", P);
-                    ERROR("Fatal error in Boiling_T(const double P, double& T_K, double& rho_l, double& rho_v)");
+                    throw SolutionError("Fatal error in Boiling_T(const double P, double& T_K, double& rho_l, double& rho_v)");
                 }
             }
             T_K = gsl_vector_get (s->x, 0);
             rho_l = gsl_vector_get (s->x, 1);
             rho_v = gsl_vector_get (s->x, 2);
             // release pointer
-            gsl_multiroot_fsolver_free (s); gsl_vector_free (x);
         }
 
         double cIAPWS95::P_delta_tau(const double& delta, const double& tau)
@@ -687,17 +693,20 @@ namespace xThermal
             Params_TP2Rho params={this, T_K, m_constants.T_critical/T_K, P, m_constants.rhomass_critical*m_constants.R*T_K};
             gsl_multiroot_function f = {&func_TP2Rho, n, &params};
             double x_init[n] = {Rho0}; //initial guess
-            gsl_vector *x = gsl_vector_alloc (n);
+            gsl_guard::Vector x_owner(gsl_vector_alloc (n)); // owns x (C1, LIB-27)
+            gsl_vector *x = x_owner.get();
             gsl_vector_set (x, 0, x_init[0]);
             T = gsl_multiroot_fsolver_hybrids;
-            s = gsl_multiroot_fsolver_alloc (T, n);
-            gsl_multiroot_fsolver_set (s, &f, x);
+            gsl_guard::MultirootSolver solver(gsl_multiroot_fsolver_alloc (T, n)); // owns s (C1, LIB-27)
+            s = solver.get();
+            gsl_guard::GuardedMultirootFunction guarded(f); // callback exceptions contained (C1); GSL status unchanged
+            guarded.set (s, x);
             // print_state_TP2Rho (iter, s);
             // iteration: solve
             do
             {
                 iter++;
-                status = gsl_multiroot_fsolver_iterate (s);
+                status = guarded.iterate (s);
                 // print_state_TP2Rho (iter, s);
                 if (status) /* check if solver is stuck */
                     break;
@@ -715,12 +724,11 @@ namespace xThermal
                     print_state_TP2Rho (iter, s);
                     printf ("status = %s\n\n", gsl_strerror (status));
                     printf("T_K = %.3f K, P = %.3E Pa\n", T_K, P);
-                    ERROR("Fatal error in cIAPWS95::Rho(const double T_K, const double P)");
+                    throw SolutionError("Fatal error in cIAPWS95::Rho(const double T_K, const double P)");
                 }
             }
             Rho0 = gsl_vector_get (s->x, 0);
             // release pointer
-            gsl_multiroot_fsolver_free (s); gsl_vector_free (x);
             return Rho0;
         }
 
@@ -759,15 +767,17 @@ namespace xThermal
             F.params = &params;
 
             T = gsl_root_fsolver_brent;
-            s = gsl_root_fsolver_alloc (T);
-            gsl_root_fsolver_set (s, &F, x_lo, x_hi);
+            gsl_guard::RootSolver solver(gsl_root_fsolver_alloc (T)); // owns s (C1, LIB-27)
+            s = solver.get();
+            gsl_guard::GuardedFunction guarded(F, "cIAPWS95::Rho_bisection"); // bracket check, callback failures contained (C1)
+            guarded.set (s, x_lo, x_hi);
             // printf ("using %s method\n", gsl_root_fsolver_name (s));
             // printf ("%5s [%9s, %9s] %9s %10s %9s\n", "iter", "lower", "upper", "root", "err", "err(est)");
 //            printf ("%5d [%.7f, %.7f] %.7f\n",iter, x_lo, x_hi,rho);
             do
             {
                 iter++;
-                status = gsl_root_fsolver_iterate (s);
+                status = guarded.iterate (s);
                 rho = gsl_root_fsolver_root (s);
                 x_lo = gsl_root_fsolver_x_lower (s);
                 x_hi = gsl_root_fsolver_x_upper (s);
@@ -781,9 +791,8 @@ namespace xThermal
             {
                 printf ("status = %s\n\n", gsl_strerror (status));
                 printf("T_K = %.3f K, P = %.3E Pa\n", T_K, P);
-                ERROR("Fatal error in cIAPWS95::Rho(const double T_K, const double P)");
+                throw SolutionError("Fatal error in cIAPWS95::Rho(const double T_K, const double P)");
             }
-            gsl_root_fsolver_free (s);
 
             return rho;
         }
@@ -874,18 +883,21 @@ namespace xThermal
             Params_HP2RhoT params={this, H, P};
             gsl_multiroot_function f = {&func_HP2RhoT, n, &params};
             double x_init[n] = {rho, T_K}; //initial guess
-            gsl_vector *x = gsl_vector_alloc (n);
+            gsl_guard::Vector x_owner(gsl_vector_alloc (n)); // owns x (C1, LIB-27)
+            gsl_vector *x = x_owner.get();
             gsl_vector_set (x, 0, x_init[0]);
             gsl_vector_set (x, 1, x_init[1]);
             T = gsl_multiroot_fsolver_hybrids;
-            s = gsl_multiroot_fsolver_alloc (T, n);
-            gsl_multiroot_fsolver_set (s, &f, x);
+            gsl_guard::MultirootSolver solver(gsl_multiroot_fsolver_alloc (T, n)); // owns s (C1, LIB-27)
+            s = solver.get();
+            gsl_guard::GuardedMultirootFunction guarded(f); // callback exceptions contained (C1); GSL status unchanged
+            guarded.set (s, x);
             // print_state_HP2RhoT (iter, s);
             // iteration: solve
             do
             {
                 iter++;
-                status = gsl_multiroot_fsolver_iterate (s);
+                status = guarded.iterate (s);
                 // print_state_HP2RhoT (iter, s);
                 if (status) /* check if solver is stuck */
                     break;
@@ -904,13 +916,12 @@ namespace xThermal
                     print_state_HP2RhoT (iter, s);
                     printf ("status = %s\n\n", gsl_strerror (status));
                     printf("H = %.3f J/kg, P = %.3f Pa\n", H, P);
-                    ERROR("Fatal error in cIAPWS95::SinglePhase_HP(const double& H, const double& P, double& rho, double& T_K, std::string method)");
+                    throw SolutionError("Fatal error in cIAPWS95::SinglePhase_HP(const double& H, const double& P, double& rho, double& T_K, std::string method)");
                 }
             }
             rho = gsl_vector_get (s->x, 0);
             T_K = gsl_vector_get (s->x, 1);
             // release pointer
-            gsl_multiroot_fsolver_free (s); gsl_vector_free (x);
         }
 
         void cIAPWS95::UpdateState_TP(ThermodynamicProperties& props, State& state, const double& T, const double& P)
@@ -960,12 +971,24 @@ namespace xThermal
                     props.H_v = props.H;
                     props.Mu_v = props.Mu;
                     props.Cp_v = props.Cp;
+                    props.S_v = 1;  // LIB-48: saturation of the phase slot, as in cIAPS84
+                    props.S_l = 0;
+                    props.dRhodP_v = props.dRhodP;  // LIB-47: per-phase derivatives of the phase slot
+                    props.dRhodT_v = props.dRhodT;
+                    props.IsothermalCompressibility_v = props.IsothermalCompressibility;
+                    props.IsobaricExpansivity_v = props.IsobaricExpansivity;
                     break;
                 default:
                     props.Rho_l = props.Rho;
                     props.H_l = props.H;
                     props.Mu_l = props.Mu;
                     props.Cp_l = props.Cp;
+                    props.S_l = 1;  // LIB-48
+                    props.S_v = 0;
+                    props.dRhodP_l = props.dRhodP;  // LIB-47
+                    props.dRhodT_l = props.dRhodT;
+                    props.IsothermalCompressibility_l = props.IsothermalCompressibility;
+                    props.IsobaricExpansivity_l = props.IsobaricExpansivity;
                     break;
             }
         }
@@ -1014,7 +1037,7 @@ namespace xThermal
                             props.T = 1273.13; //For the upper part (P>50MPa) of region 5, it is not defined in IF97, so here use a random number in region 5 as a initial guess.
                             break;
                         default:
-                        ERROR("Unknown IF97 region index in supper critical region: "+std::to_string(region));
+                        throw SolutionError("Unknown IF97 region index in supper critical region: "+std::to_string(region));
                             break;
                     }
                 }else
@@ -1067,7 +1090,7 @@ namespace xThermal
                             props.T = T_sat - 0.1; //Relax: Because the small difference on phase boundary between IF97 and IAPWS95 equations, here use a little bit smaller value than T_sat as the initial guess.
                             break;
                         default:
-                        ERROR("Unknown IF97 phase region in pure liquid region in cIAPWS95::UpdateState_HP: "+std::to_string(region));
+                        throw SolutionError("Unknown IF97 phase region in pure liquid region in cIAPWS95::UpdateState_HP: "+std::to_string(region));
                             break;
                     }
                     if(props.T > T_sat)props.T = T_sat - 0.01; //Relax: Make sure it is indeed in the liquid phase region
@@ -1096,7 +1119,7 @@ namespace xThermal
                             props.T = T_sat + 0.01; //Relax
                             break;
                         default:
-                        ERROR("Unknown IF97 phase region in pure vapor region in cIAPWS95::UpdateState_HP: "+std::to_string(region));
+                        throw SolutionError("Unknown IF97 phase region in pure vapor region in cIAPWS95::UpdateState_HP: "+std::to_string(region));
                             break;
                     }
                     if(props.T < T_sat)props.T = T_sat + 0.01; //Relax: Make sure it is indeed in the vapor phase region
@@ -1113,7 +1136,7 @@ namespace xThermal
             else
             {
                 printf("H = %f J/kg, P = %f Pa\n", props.H, P);
-                ERROR("Fatal error in cIAPWS95::UpdateState_HP(const double H, const double P, State& state, std::string method)\nP out of bound");
+                throw OutOfRangeError("Fatal error in cIAPWS95::UpdateState_HP(const double H, const double P, State& state, std::string method)\nP out of bound");
             }
 
             // calculate single phase T and Helmholtz free energy and properties based on Rho
@@ -1145,12 +1168,28 @@ namespace xThermal
                         props.H_v = props.H;
                         props.Mu_v = props.Mu;
                         props.Cp_v = props.Cp;
+                        props.S_v = 1;  // LIB-48: saturation of the phase slot, as in cIAPS84
+                        props.S_l = 0;
+                        props.Rho_l = 0;  // LIB-53: the saturated liquid of the phase classification is not part of this state
+                        props.H_l = 0;
+                        props.dRhodP_v = props.dRhodP;  // LIB-47: per-phase derivatives of the phase slot
+                        props.dRhodT_v = props.dRhodT;
+                        props.IsothermalCompressibility_v = props.IsothermalCompressibility;
+                        props.IsobaricExpansivity_v = props.IsobaricExpansivity;
                         break;
                     default:
                         props.Rho_l = props.Rho;
                         props.H_l = props.H;
                         props.Mu_l = props.Mu;
                         props.Cp_l = props.Cp;
+                        props.S_l = 1;  // LIB-48
+                        props.S_v = 0;
+                        props.Rho_v = 0;  // LIB-53: the saturated vapour of the phase classification is not part of this state
+                        props.H_v = 0;
+                        props.dRhodP_l = props.dRhodP;  // LIB-47
+                        props.dRhodT_l = props.dRhodT;
+                        props.IsothermalCompressibility_l = props.IsothermalCompressibility;
+                        props.IsobaricExpansivity_l = props.IsobaricExpansivity;
                         break;
                 }
             } else
@@ -1163,8 +1202,8 @@ namespace xThermal
                 // Some derivatives to T is not defined in the two phase region, use their initial value 0
 
                 //Cp: dHdT_P
-                // _dhdT_P(props.Cp_l,props.Rho_l,props.T,state.delta.twoPhase.delta_l,state.tau, state.phi.twoPhase.phio_l, state.phi.twoPhase.phir_l);
-                // _dhdT_P(props.Cp_v,props.Rho_v,props.T,state.delta.twoPhase.delta_v,state.tau, state.phi.twoPhase.phio_v, state.phi.twoPhase.phir_v);
+                _dhdT_P(props.Cp_l,props.Rho_l,props.T,state.delta.twoPhase.delta_l,state.tau, state.phi.twoPhase.phio_l, state.phi.twoPhase.phir_l);
+                _dhdT_P(props.Cp_v,props.Rho_v,props.T,state.delta.twoPhase.delta_v,state.tau, state.phi.twoPhase.phio_v, state.phi.twoPhase.phir_v);
                 // _dhdT_P(props.Cp, props.Rho, props.T, delta, state.tau, phio, phir);
                 // // dPdRho_P
                 // double tmp_dPdRho_T, tmp_dPdRho_T_l, tmp_dPdRho_T_v, tmp_dPdT_Rho, tmp_dPdT_Rho_l, tmp_dPdT_Rho_v;
@@ -1240,7 +1279,7 @@ namespace xThermal
                 }
                     break;
                 default:
-                ERROR("Unknown Phase index of IAPWS95 in void cIAPWS95::h(double& h, double& prop_l, double& prop_v): "+std::to_string(props.phase));
+                throw NotImplementedError("Unknown Phase index of IAPWS95 in void cIAPWS95::h(double& h, double& prop_l, double& prop_v): "+std::to_string(props.phase));
                     break;
             }
         }
@@ -1278,7 +1317,7 @@ namespace xThermal
                 }
                     break;
                 default:
-                ERROR("Unknown Phase index of IAPWS95 in void cIAPWS95::_dhdT_P(double& h, double& prop_l, double& prop_v): "+std::to_string(props.phase));
+                throw NotImplementedError("Unknown Phase index of IAPWS95 in void cIAPWS95::_dhdT_P(double& h, double& prop_l, double& prop_v): "+std::to_string(props.phase));
                     break;
             }
         }
@@ -1297,6 +1336,7 @@ namespace xThermal
 
         void
         cIAPWS95::UpdateState_TPX(ThermodynamicProperties &props, const double &T, const double &P, const double &X) {
+            OuterEvaluation outer(props);  // C7: reset at the outermost entry
             State state;
             UpdateState_TP(props, state, T, P);
         }
@@ -1343,6 +1383,7 @@ namespace xThermal
         }
 
         double cIAPWS95::Boiling_p(const double &T, ThermodynamicProperties &props) {
+            OuterEvaluation outer(props);  // C7: reset at the outermost entry
             props.fluidName = name();
             props.T = T;
             Boiling_p(T, props.p, props.Rho_l, props.Rho_v);
@@ -1359,6 +1400,24 @@ namespace xThermal
             _enthalpy(T, state.delta.twoPhase.delta_v, state.tau, state.phi.twoPhase.phio_v, state.phi.twoPhase.phir_v, props.H_v);
             _dhdT_P(props.Cp_l, props.Rho_l,props.T,state.delta.twoPhase.delta_l,state.tau, state.phi.twoPhase.phio_l, state.phi.twoPhase.phir_l);
             _dhdT_P(props.Cp_v, props.Rho_v,props.T,state.delta.twoPhase.delta_v,state.tau, state.phi.twoPhase.phio_v, state.phi.twoPhase.phir_v);
+            Viscosity_H2O_IAPWS2008(props.T, props.Rho_l, props.Mu_l);
+            Viscosity_H2O_IAPWS2008(props.T, props.Rho_v, props.Mu_v);
+            // LIB-52: intrinsic derivatives of each saturated phase at its coexisting density
+            {
+                double dPdRho, dPdT;
+                _dPdRho_T(dPdRho, props.Rho_l, props.T, state.delta.twoPhase.delta_l, state.tau, state.phi.twoPhase.phio_l, state.phi.twoPhase.phir_l);
+                _dPdT_Rho(dPdT, props.Rho_l, props.T, state.delta.twoPhase.delta_l, state.tau, state.phi.twoPhase.phio_l, state.phi.twoPhase.phir_l);
+                props.dRhodP_l = 1.0/dPdRho;
+                props.dRhodT_l = -dPdT * props.dRhodP_l;
+                props.IsothermalCompressibility_l = 1.0/(props.Rho_l * dPdRho);
+                props.IsobaricExpansivity_l = dPdT/dPdRho/props.Rho_l;
+                _dPdRho_T(dPdRho, props.Rho_v, props.T, state.delta.twoPhase.delta_v, state.tau, state.phi.twoPhase.phio_v, state.phi.twoPhase.phir_v);
+                _dPdT_Rho(dPdT, props.Rho_v, props.T, state.delta.twoPhase.delta_v, state.tau, state.phi.twoPhase.phio_v, state.phi.twoPhase.phir_v);
+                props.dRhodP_v = 1.0/dPdRho;
+                props.dRhodT_v = -dPdT * props.dRhodP_v;
+                props.IsothermalCompressibility_v = 1.0/(props.Rho_v * dPdRho);
+                props.IsobaricExpansivity_v = dPdT/dPdRho/props.Rho_v;
+            }
 
             return props.p;
         }
@@ -1376,6 +1435,7 @@ namespace xThermal
         }
 
         double cIAPWS95::Boiling_T(const double &p, ThermodynamicProperties &props) {
+            OuterEvaluation outer(props);  // C7: reset at the outermost entry
             props.p = p;
             Boiling_T(p, props.T, props.Rho_l, props.Rho_v);
             // calculate H_l, H_v
@@ -1389,12 +1449,33 @@ namespace xThermal
             phi_r(state.delta.twoPhase.delta_v, state.tau, state.phi.twoPhase.phir_v);
             _enthalpy(props.T, state.delta.twoPhase.delta_l, state.tau, state.phi.twoPhase.phio_l, state.phi.twoPhase.phir_l, props.H_l);
             _enthalpy(props.T, state.delta.twoPhase.delta_v, state.tau, state.phi.twoPhase.phio_v, state.phi.twoPhase.phir_v, props.H_v);
+            _dhdT_P(props.Cp_l, props.Rho_l,props.T,state.delta.twoPhase.delta_l,state.tau, state.phi.twoPhase.phio_l, state.phi.twoPhase.phir_l);
+            _dhdT_P(props.Cp_v, props.Rho_v,props.T,state.delta.twoPhase.delta_v,state.tau, state.phi.twoPhase.phio_v, state.phi.twoPhase.phir_v);
+            Viscosity_H2O_IAPWS2008(props.T, props.Rho_l, props.Mu_l);
+            Viscosity_H2O_IAPWS2008(props.T, props.Rho_v, props.Mu_v);
+            // LIB-52: intrinsic derivatives of each saturated phase at its coexisting density
+            {
+                double dPdRho, dPdT;
+                _dPdRho_T(dPdRho, props.Rho_l, props.T, state.delta.twoPhase.delta_l, state.tau, state.phi.twoPhase.phio_l, state.phi.twoPhase.phir_l);
+                _dPdT_Rho(dPdT, props.Rho_l, props.T, state.delta.twoPhase.delta_l, state.tau, state.phi.twoPhase.phio_l, state.phi.twoPhase.phir_l);
+                props.dRhodP_l = 1.0/dPdRho;
+                props.dRhodT_l = -dPdT * props.dRhodP_l;
+                props.IsothermalCompressibility_l = 1.0/(props.Rho_l * dPdRho);
+                props.IsobaricExpansivity_l = dPdT/dPdRho/props.Rho_l;
+                _dPdRho_T(dPdRho, props.Rho_v, props.T, state.delta.twoPhase.delta_v, state.tau, state.phi.twoPhase.phio_v, state.phi.twoPhase.phir_v);
+                _dPdT_Rho(dPdT, props.Rho_v, props.T, state.delta.twoPhase.delta_v, state.tau, state.phi.twoPhase.phio_v, state.phi.twoPhase.phir_v);
+                props.dRhodP_v = 1.0/dPdRho;
+                props.dRhodT_v = -dPdT * props.dRhodP_v;
+                props.IsothermalCompressibility_v = 1.0/(props.Rho_v * dPdRho);
+                props.IsobaricExpansivity_v = dPdT/dPdRho/props.Rho_v;
+            }
 
             return props.p;
         }
 
         void
         cIAPWS95::UpdateState_HPX(ThermodynamicProperties &props, const double &H, const double &p, const double &X) {
+            OuterEvaluation outer(props);  // C7: reset at the outermost entry
             State state;
             UpdateState_HP(props, state, H, p);
         }
@@ -1445,7 +1526,7 @@ namespace xThermal
             else
             {
                 printf("H = %f J/kg, P = %f Pa\n", props.H, p);
-                ERROR("Fatal error in cIAPWS95::UpdateState_HP(const double H, const double P, State& state, std::string method)\nP out of bound");
+                throw OutOfRangeError("Fatal error in cIAPWS95::UpdateState_HP(const double H, const double P, State& state, std::string method)\nP out of bound");
             }
         }
 
@@ -1496,7 +1577,7 @@ namespace xThermal
             state.tau   = m_constants.T_critical/T;
             phi_o(state.delta.singlePhase, state.tau, state.phi.singlePhase.phio);
             phi_r(state.delta.singlePhase, state.tau, state.phi.singlePhase.phir);
-            _dPdRho_T(dRhodP, Rho, m_constants_mu2008.T_R, state.delta.singlePhase, state.tau, state.phi.singlePhase.phio, state.phi.singlePhase.phir);
+            _dPdRho_T(dRhodP, Rho, T, state.delta.singlePhase, state.tau, state.phi.singlePhase.phio, state.phi.singlePhase.phir);
             dRhodP = 1.0/dRhodP;
             // 2. calculate dRhodP_T for T = T_R, rho = Rho
             State state_TR;
@@ -1515,7 +1596,7 @@ namespace xThermal
             double qD_times_xi = m_constants_mu2008.qD * xi;
             if (xi <= 0.3817016416)
             {
-               Y = 0.2 * qC_times_xi * pow(qD_times_xi, 5.0) * (1.0 - qC_times_xi + qD_times_xi*qD_times_xi - 765.0/504.0*qD_times_xi*qD_times_xi);
+               Y = 0.2 * qC_times_xi * pow(qD_times_xi, 5.0) * (1.0 - qC_times_xi + qC_times_xi*qC_times_xi - 765.0/504.0*qD_times_xi*qD_times_xi);
             } else
             {
                 double psiD = acos(1.0/sqrt(1 + qD_times_xi*qD_times_xi));

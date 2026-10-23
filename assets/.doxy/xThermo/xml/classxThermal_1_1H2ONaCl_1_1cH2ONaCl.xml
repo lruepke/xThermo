@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="157" column="23" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="157" bodyend="-1"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="160" column="23" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="160" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aba372b6fa2c50073e05bd4b29d3cc40d" prot="private" static="no" mutable="no">
         <type><ref refid="classxThermal_1_1NaCl_1_1cNaCl" kindref="compound">NaCl::cNaCl</ref> *</type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="158" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="158" bodyend="-1"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="161" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="161" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aac131a6c175daa2f7314441dbe282eb7" prot="private" static="no" mutable="no">
         <type><ref refid="structxThermal_1_1CONSTENTS__Thermo" kindref="compound">CONSTENTS_Thermo</ref></type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="159" column="30" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="159" bodyend="-1"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="162" column="30" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="162" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a4b5d67c77db1b0d41d257cf41526c9f1" prot="private" static="no" mutable="no">
         <type><ref refid="structxThermal_1_1H2ONaCl_1_1Table4__Driesner2007a__CriticalCurve" kindref="compound">Table4_Driesner2007a_CriticalCurve</ref></type>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="160" column="48" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="160" bodyend="-1"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="163" column="48" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="163" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a1e7c15a1ad822f0d494490c814dd6cff" prot="private" static="no" mutable="no">
         <type><ref refid="structxThermal_1_1H2ONaCl_1_1Coeffs__Estimate__CriticalT" kindref="compound">Coeffs_Estimate_CriticalT</ref></type>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="161" column="39" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="161" bodyend="-1"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="164" column="39" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="164" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a43975d1ae81e0a08ff76aa18c4a563c8" prot="private" static="no" mutable="no">
         <type><ref refid="structxThermal_1_1H2ONaCl_1_1Table6__Pressure__VLH" kindref="compound">Table6_Pressure_VLH</ref></type>
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="162" column="33" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="162" bodyend="-1"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="165" column="33" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="165" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a411ba23b2741db6b3ce4487180353fb0" prot="private" static="no" mutable="no">
         <type><ref refid="structxThermal_1_1H2ONaCl_1_1Table7__XL__VL" kindref="compound">Table7_XL_VL</ref></type>
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="163" column="26" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="163" bodyend="-1"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="166" column="26" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="166" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ad9cd0cb86cd9b962169befda565caace" prot="private" static="no" mutable="no">
         <type><ref refid="structxThermal_1_1H2ONaCl_1_1Table8__VaporComposition" kindref="compound">Table8_VaporComposition</ref></type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="164" column="37" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="164" bodyend="-1"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="167" column="37" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="167" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ab3b94e459ec0187b1ffd5a7d11a74cdf" prot="private" static="no" mutable="no">
         <type><ref refid="structxThermal_1_1H2ONaCl_1_1Coeffs__Viscosity" kindref="compound">Coeffs_Viscosity</ref></type>
@@ -129,7 +129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="165" column="30" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="165" bodyend="-1"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="168" column="30" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="168" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ae1b0c376c071cba8427dc64c721dd88d" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -143,7 +143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="166" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="166" bodyend="-1"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="169" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="169" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -178,7 +178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="168" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="114" bodyend="140"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="171" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="115" bodyend="141"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1abecb657fccc9dd1b1ebd83038569e50c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -193,7 +193,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="169" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="27" bodyend="41"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="172" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="28" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a59952a4110f579d9195f78570bc7d401" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -236,7 +236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="170" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="205" bodyend="223"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="173" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="206" bodyend="224"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1accb5326ea726f881957c020e0c06932e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -278,7 +278,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="171" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="330" bodyend="369"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="174" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="331" bodyend="371"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a7af75e3041919580273859d37da9c0c9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -322,7 +322,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="172" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="291" bodyend="302"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="175" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="292" bodyend="303"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a948b9dd2a04e93aa831694c6a92314d3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -371,7 +371,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="173" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="533" bodyend="556"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="176" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="536" bodyend="559"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aa3bcd8ffe524002fd3f3b83a2631afe7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -432,7 +432,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="174" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="638" bodyend="680"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="177" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="641" bodyend="684"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a92de3153d7cd9f7051243a10cf613231" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -520,7 +520,7 @@ log_{10}\bar K = \frac{log_{10}K^{\prime} - log_{10}\left( X_{NaCl, sat}^L \righ
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="175" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="806" bodyend="814"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="178" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="810" bodyend="818"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a6a8d9661bd82c6a3ed356722c050559b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -575,7 +575,7 @@ log_{10}\bar K = \frac{log_{10}K^{\prime} - log_{10}\left( X_{NaCl, sat}^L \righ
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="176" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="728" bodyend="764"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="179" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="732" bodyend="768"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a47600e2401f7c8afd7050679158298ae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -646,7 +646,7 @@ X_{crit} &amp; = &amp; - g_0\sqrt{\color{green}{P_{crit} - P_{H_2O}}} - g_1({\co
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="177" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="901" bodyend="983"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="180" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="905" bodyend="987"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a212b41824e1ffc2ae5f9211acb182e1b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -693,7 +693,7 @@ X_{crit} &amp; = &amp; - g_0\sqrt{\color{green}{P_{crit} - P_{H_2O}}} - g_1({\co
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="178" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1075" bodyend="1083"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="181" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1080" bodyend="1088"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a399f073ff710615c70074a4771a2de2a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -783,7 +783,7 @@ X_{crit} &amp; = &amp; - g_0\sqrt{\color{green}{P_{crit} - P_{H_2O}}} - g_1({\co
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="179" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1205" bodyend="1225"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="182" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1211" bodyend="1231"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a9b36799717d174c99dc94ce4e68b40b9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -873,7 +873,7 @@ X_{crit} &amp; = &amp; - g_0\sqrt{\color{green}{P_{crit} - P_{H_2O}}} - g_1({\co
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="180" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1239" bodyend="1250"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="183" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1245" bodyend="1256"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a5d1d6d056d8ee58dc8426e5e3a8f1298" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -977,7 +977,7 @@ X_{crit} &amp; = &amp; - g_0\sqrt{\color{green}{P_{crit} - P_{H_2O}}} - g_1({\co
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="181" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1267" bodyend="1287"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="184" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1273" bodyend="1293"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1af7e46e52faf24d75c3b2548b3b069893" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1052,7 +1052,7 @@ X_{crit} &amp; = &amp; - g_0\sqrt{\color{green}{P_{crit} - P_{H_2O}}} - g_1({\co
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="182" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1591" bodyend="1608"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="185" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1597" bodyend="1614"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a08098dca6ac4d169f181f6cf0d1322f4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1109,7 +1109,7 @@ X_{crit} &amp; = &amp; - g_0\sqrt{\color{green}{P_{crit} - P_{H_2O}}} - g_1({\co
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="183" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1620" bodyend="1631"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="186" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1626" bodyend="1637"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ad461ae2f7b00ba81fd2813e61aafe5b7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1181,7 +1181,87 @@ X_{crit} &amp; = &amp; - g_0\sqrt{\color{green}{P_{crit} - P_{H_2O}}} - g_1({\co
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="184" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1662" bodyend="1699"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="187" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1668" bodyend="1705"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aaa1ceae60e09d1ef5db2a83157527dd3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+        <definition>double xThermal::H2ONaCl::cH2ONaCl::extrapolation_V_highT</definition>
+        <argsstring>(const double &amp;T_C, const double &amp;P_bar, const double &amp;X_mol, double &amp;dVdT, double &amp;dVdP_bar)</argsstring>
+        <name>extrapolation_V_highT</name>
+        <qualifiedname>xThermal::H2ONaCl::cH2ONaCl::extrapolation_V_highT</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T_C</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>P_bar</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>X_mol</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>dVdT</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>dVdP_bar</declname>
+        </param>
+        <briefdescription>
+<para>Extrapolated volume of Eq. 18 (identical to extrapolation_V_highT(T_C, P_bar, X_mol)) and its exact derivatives at constant composition (C13b, LIB-24). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The anchors are at fixed pressures, so <formula id="138">$ o_3, o_4, o_5 $</formula> depend on T only: <formula id="139">$ \partial V/\partial P = o_4/(P+1000) + o_5 $</formula>, and <formula id="140">$ \partial V/\partial T $</formula> follows from the anchor volumes <formula id="141">$ \partial V_i/\partial T = -M_w/\rho_i^2 \cdot \partial\rho_w/\partial T(T^*_i, P_i) \cdot n_2(P_i) $</formula>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T_C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[deg.C] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>P_bar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[bar] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>X_mol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[mol/mol] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dVdT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[m^3/mol/K] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dVdP_bar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[m^3/mol/bar] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double [m^3/mol] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="188" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1721" bodyend="1757"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a27d5123c79733271ad407d8bba290a6f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1238,7 +1318,7 @@ X_{crit} &amp; = &amp; - g_0\sqrt{\color{green}{P_{crit} - P_{H_2O}}} - g_1({\co
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="185" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1711" bodyend="1734"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="189" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1769" bodyend="1792"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a24c3db7630ffbb4dc2ac5e7c2d6a9fea" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1302,7 +1382,7 @@ X_{crit} &amp; = &amp; - g_0\sqrt{\color{green}{P_{crit} - P_{H_2O}}} - g_1({\co
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="186" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1377" bodyend="1440"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="190" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1383" bodyend="1446"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aac0e171c37a82d0571225bdf102a9068" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1329,7 +1409,7 @@ X_{crit} &amp; = &amp; - g_0\sqrt{\color{green}{P_{crit} - P_{H_2O}}} - g_1({\co
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="187" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1442" bodyend="1446"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="191" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1448" bodyend="1452"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a96eb6dc1bbf101afd8aef12acf8a9651" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1354,11 +1434,11 @@ X_{crit} &amp; = &amp; - g_0\sqrt{\color{green}{P_{crit} - P_{H_2O}}} - g_1({\co
           <declname>q2</declname>
         </param>
         <briefdescription>
-<para>Calculate <formula id="145">$q_1, q_2 $</formula> for the <formula id="146">$ T^*_h $</formula> in Eq. 22 of Driesner2007Part2 . </para>
+<para>Calculate <formula id="150">$q_1, q_2 $</formula> for the <formula id="151">$ T^*_h $</formula> in Eq. 22 of Driesner2007Part2 . </para>
         </briefdescription>
         <detaileddescription>
 <para><itemizedlist>
-<listitem><para>How to calculate <formula id="147">$ q_{10}, q_{12} $</formula> by given <formula id="148">$ q_{11} $</formula> formula in Tab. 5 of Driesner2007Part2.  <formula id="149">\begin{align}
+<listitem><para>How to calculate <formula id="152">$ q_{10}, q_{12} $</formula> by given <formula id="153">$ q_{11} $</formula> formula in Tab. 5 of Driesner2007Part2.  <formula id="154">\begin{align}
    \left. \begin{matrix}
    q_1(X=1) &amp;=&amp; q_{10} = q_{1, X_{NaCl}=1} \\ 
    q_1(X=0) &amp;=&amp; q_{10} + q_{11} + q_{12} = 0
@@ -1369,10 +1449,10 @@ X_{crit} &amp; = &amp; - g_0\sqrt{\color{green}{P_{crit} - P_{H_2O}}} - g_1({\co
        \end{matrix}
        \right.
    \end{align}</formula></para>
-</listitem><listitem><para>How to calculate <formula id="150">$ q_{20}, q_{23} $</formula> by given <formula id="151">$ q_{21}, q_{22} $</formula> formula in Tab. 5 of Driesner2007Part2.</para>
+</listitem><listitem><para>How to calculate <formula id="155">$ q_{20}, q_{23} $</formula> by given <formula id="156">$ q_{21}, q_{22} $</formula> formula in Tab. 5 of Driesner2007Part2.</para>
 </listitem></itemizedlist>
 </para>
-<para><formula id="152">\begin{align}
+<para><formula id="157">\begin{align}
    \left. \begin{matrix}
    q_2(X=1) &amp;=&amp; q_{20} + q_{21}\sqrt{1+q_{22}} + q_{23} = q_{2, X_{NaCl}=1} \\ 
    q_2(X=0) &amp;=&amp; q_{20} + q_{21}\sqrt{q_{22}} = 1
@@ -1420,7 +1500,7 @@ X_{crit} &amp; = &amp; - g_0\sqrt{\color{green}{P_{crit} - P_{H_2O}}} - g_1({\co
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="188" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1860" bodyend="1877"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="192" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1952" bodyend="1969"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aa1c23e4628df846a51fea7cf2499439d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1453,26 +1533,26 @@ X_{crit} &amp; = &amp; - g_0\sqrt{\color{green}{P_{crit} - P_{H_2O}}} - g_1({\co
         </briefdescription>
         <detaileddescription>
 <para>Driesner2007Part2 did not provide such extrapolation formula, but it can be extended in the similar way of density, see eq.18 of Driesner2007Part2. Valid T-P-X range: T &gt;600deg.C, P&lt;<ref refid="group__PhysicalConstants__H2ONaCl_1gaa939ae8d1b447bbdcc2528fee46d25f0" kindref="member">P_Peak_VLH</ref>, X&gt;0.2 mole fraction.</para>
-<para><formula id="153">\begin{equation}
+<para><formula id="158">\begin{equation}
 H = o_3 + o_4ln^{P+1000} + o_5P
 \end{equation}</formula></para>
-<para>How to calculate <formula id="128">$ o_3, o_4, o_5$</formula> in eq. 18 ? First, need to calculate three values: <formula id="154">$ H_{solution}(P=P_{max}[VLH]), \left( \frac{dH_{solution}}{d P} \right)_{P=P_{max}[VLH]}, H_{solution}(P=1000bar) $</formula>, where <formula id="130">$ P_{max}[VLH] $</formula> in unit bar.</para>
+<para>How to calculate <formula id="128">$ o_3, o_4, o_5$</formula> in eq. 18 ? First, need to calculate three values: <formula id="159">$ H_{solution}(P=P_{max}[VLH]), \left( \frac{dH_{solution}}{d P} \right)_{P=P_{max}[VLH]}, H_{solution}(P=1000bar) $</formula>, where <formula id="130">$ P_{max}[VLH] $</formula> in unit bar.</para>
 <para><itemizedlist>
-<listitem><para>1. <formula id="155">$ {\color{blue}{\Delta H}} = H_{solution}(P=1000bar) - H_{solution}(P=P_{max}[VLH]) = \color{red}{o_4}(ln^{1000+1000} - ln^{P_{max}[VLH] + 1000}) + \color{red}{o_5}(1000 - P_{max}[VLH]) $</formula></para>
-</listitem><listitem><para>2. <formula id="156">$ {\color{blue}{dHdP}} = \left(\frac{dH_{solution}}{d P} \right)_{P=P_{max}[VLH]} =  \frac{\color{red}{o_4}}{P_{max}[VLH] + 1000} + \color{red}{o_5} $</formula></para>
+<listitem><para>1. <formula id="160">$ {\color{blue}{\Delta H}} = H_{solution}(P=1000bar) - H_{solution}(P=P_{max}[VLH]) = \color{red}{o_4}(ln^{1000+1000} - ln^{P_{max}[VLH] + 1000}) + \color{red}{o_5}(1000 - P_{max}[VLH]) $</formula></para>
+</listitem><listitem><para>2. <formula id="161">$ {\color{blue}{dHdP}} = \left(\frac{dH_{solution}}{d P} \right)_{P=P_{max}[VLH]} =  \frac{\color{red}{o_4}}{P_{max}[VLH] + 1000} + \color{red}{o_5} $</formula></para>
 </listitem></itemizedlist>
 </para>
 <para>Combine the above two equations, we can get <formula id="133">$ o_4 $</formula> and <formula id="134">$ o_5 $</formula> :</para>
-<para><formula id="157">\begin{equation}
+<para><formula id="162">\begin{equation}
      o_4 = \frac{ {\color{blue}{\Delta H}} - {\color{blue}{dHdP}(1000 - P_{max}[VLH])}}{ln^{1000+1000} - ln^{P_{max}[VLH] + 1000} - \frac{1000 - P_{max}[VLH]}{P_{max}[VLH] + 1000}}
 \end{equation}</formula></para>
-<para><formula id="158">\begin{equation}
+<para><formula id="163">\begin{equation}
      o_5 = {\color{blue}{dHdP}} - \frac{\color{red}{o_4}}{P_{max}[VLH] + 1000}
 \end{equation}</formula></para>
-<para><formula id="159">\begin{equation}
+<para><formula id="164">\begin{equation}
      o_3 = H_{solution}(P=P_{max}[VLH]) - o_4ln^{P_{max}[VLH] + 1000} - o_5P_{max}[VLH]
 \end{equation}</formula></para>
-<para>Note that <formula id="160">$o_3, o_4$</formula> and <formula id="161">$o_5$</formula> are function of temperature. Therefore, the isobaric specific heat capacity can be expressed  <formula id="162">\begin{equation}
+<para>Note that <formula id="165">$o_3, o_4$</formula> and <formula id="166">$o_5$</formula> are function of temperature. Therefore, the isobaric specific heat capacity can be expressed  <formula id="167">\begin{equation}
 C_p = \left( \frac{\partial H}{\partial T} \right)_P = \frac{\partial o_3}{\partial T} + ln^{P+1000}\frac{\partial o_4}{\partial T} + P \frac{\partial o_5}{\partial T}
 \end{equation}</formula></para>
 <para><parameterlist kind="param"><parameteritem>
@@ -1520,7 +1600,7 @@ C_p = \left( \frac{\partial H}{\partial T} \right)_P = \frac{\partial o_3}{\part
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="189" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1958" bodyend="2014"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="193" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2050" bodyend="2106"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a819b865f33a7e8720a6defa15d31859d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1546,7 +1626,7 @@ C_p = \left( \frac{\partial H}{\partial T} \right)_P = \frac{\partial o_3}{\part
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="190" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1879" bodyend="1917"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="194" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1971" bodyend="2009"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a1500cfe43c0e5cdd5b9c29b4aa856b91" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1593,7 +1673,7 @@ C_p = \left( \frac{\partial H}{\partial T} \right)_P = \frac{\partial o_3}{\part
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="191" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1455" bodyend="1490"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="195" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1461" bodyend="1496"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a31747421190d98678e2b39d06390bbd0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1627,7 +1707,7 @@ C_p = \left( \frac{\partial H}{\partial T} \right)_P = \frac{\partial o_3}{\part
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="192" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1491" bodyend="1527"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="196" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1497" bodyend="1533"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aa4316bb1d70522ae7d86dc99765349df" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1681,7 +1761,7 @@ C_p = \left( \frac{\partial H}{\partial T} \right)_P = \frac{\partial o_3}{\part
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="193" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1535" bodyend="1570"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="197" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1541" bodyend="1576"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a596eaa11dc1de2025d77a4f93ec620e3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1713,7 +1793,7 @@ C_p = \left( \frac{\partial H}{\partial T} \right)_P = \frac{\partial o_3}{\part
 <para>Calculate liquid saturation in V+L region. </para>
         </briefdescription>
         <detaileddescription>
-<para><formula id="164">\begin{equation}
+<para><formula id="169">\begin{equation}
 S_l = \frac{\rho_v (X_v - X)}{\rho_v (X_v - X) + \rho_l (X - X_l)}
 \end{equation}</formula></para>
 <para><parameterlist kind="param"><parameteritem>
@@ -1763,7 +1843,7 @@ S_l = \frac{\rho_v (X_v - X)}{\rho_v (X_v - X) + \rho_l (X - X_l)}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="194" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3127" bodyend="3130"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="198" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3220" bodyend="3223"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a3809d69bd302d64bc5a1b7493145455f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1795,22 +1875,22 @@ S_l = \frac{\rho_v (X_v - X)}{\rho_v (X_v - X) + \rho_l (X - X_l)}
 <para>Calculate Saturation of phase1 of the mixture of phase1 &amp; phase2. </para>
         </briefdescription>
         <detaileddescription>
-<para><formula id="165">\begin{equation}
+<para><formula id="170">\begin{equation}
 S_{phase1} = \frac{\rho_{phase2} (X_{phase2} - X)}{\rho_{phase2} (X_{phase2} - X) + \rho_{phase1} (X - X_{phase1})}
 \end{equation}</formula></para>
 <para><itemizedlist>
-<listitem><para>Calculate <formula id="166">$ S_l $</formula> of two phase V+L: Saturation_Phase1(X_l, X_v, Rho_l, Rho_v, X);</para>
+<listitem><para>Calculate <formula id="171">$ S_l $</formula> of two phase V+L: Saturation_Phase1(X_l, X_v, Rho_l, Rho_v, X);</para>
 </listitem></itemizedlist>
 </para>
-<para><formula id="167">\begin{equation}
+<para><formula id="172">\begin{equation}
 S_{l} = \frac{\rho_{v} (X_{v} - X)}{\rho_{v} (X_{v} - X) + \rho_{l} (X - X_{l})}
 \end{equation}</formula></para>
 <para><itemizedlist>
-<listitem><para>Calculate <formula id="168">$ S_h $</formula> of two phase V+H: Saturation_Phase1(1.0, X_v, Rho_h, Rho_v, X);</para>
-</listitem><listitem><para>Calculate <formula id="168">$ S_h $</formula> of two phase H+L: Saturation_Phase1(1.0, X_l, Rho_h, Rho_l, X);</para>
+<listitem><para>Calculate <formula id="173">$ S_h $</formula> of two phase V+H: Saturation_Phase1(1.0, X_v, Rho_h, Rho_v, X);</para>
+</listitem><listitem><para>Calculate <formula id="173">$ S_h $</formula> of two phase H+L: Saturation_Phase1(1.0, X_l, Rho_h, Rho_l, X);</para>
 </listitem></itemizedlist>
 </para>
-<para><formula id="169">\begin{equation}
+<para><formula id="174">\begin{equation}
 S_{h} = \frac{\rho_{l} (X_{l} - X)}{\rho_{l} (X_{l} - X) + \rho_{h} (X - X_{h})} = \frac{\rho_{l} (X_{l} - X)}{\rho_{l} (X_{l} - X) + \rho_{h} (X - 1)}
 \end{equation}</formula></para>
 <para><parameterlist kind="param"><parameteritem>
@@ -1860,7 +1940,7 @@ S_{h} = \frac{\rho_{l} (X_{l} - X)}{\rho_{l} (X_{l} - X) + \rho_{h} (X - X_{h})}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="195" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3159" bodyend="3162"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="199" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3252" bodyend="3255"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1abd0d0072f939385e089b9afe9c05c0b2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
@@ -1899,27 +1979,27 @@ S_{h} = \frac{\rho_{l} (X_{l} - X)}{\rho_{l} (X_{l} - X) + \rho_{h} (X - X_{h})}
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Solve saturation <formula id="174">$S_l, S_v, S_h $</formula> for given <formula id="175">$ X_l, X_v, X_h, \rho_l, \rho_v, \rho_h $</formula> and bulk <formula id="176">$ H, X $</formula>. See equation (6-9) of vehling2021brine.</para>
+<para>Solve saturation <formula id="179">$S_l, S_v, S_h $</formula> for given <formula id="180">$ X_l, X_v, X_h, \rho_l, \rho_v, \rho_h $</formula> and bulk <formula id="181">$ H, X $</formula>. See equation (6-9) of vehling2021brine.</para>
 <para><itemizedlist>
 <listitem><para>Definition of saturation, bulk density and bulk specific enthalpy.</para>
 </listitem></itemizedlist>
 </para>
-<para><formula id="177">\begin{align}
+<para><formula id="182">\begin{align}
 \rho = S_l \rho_l + S_v \rho_v + S_h \rho_h \ \ \ \text{(1)}\\
 H = \frac{S_l \rho_l H_l + S_v \rho_v H_v + S_h \rho_h H_h}{\rho} \ \ \ \text{(2)}\\
 X = \frac{S_l \rho_L X_l + S_v \rho_v X_v + S_h \rho_h X_h}{\rho} \ \ \ \text{(3)}\\
 S_l + S_v + S_h = 1 \ \ \ \text{(4)}
 \end{align}</formula></para>
-<para>Substitute equation (1) and (4) into equation (2) and (3),  <formula id="178">\begin{align}
+<para>Substitute equation (1) and (4) into equation (2) and (3),  <formula id="183">\begin{align}
 (H\rho_l - H_l\rho_l){\color{blue}{S_l}} + (H\rho_v - H_v\rho_v){\color{blue}{S_v}} + (H\rho_h - H_h\rho_h)(1-{\color{blue}{S_l - S_v}}) = 0  \ \ \ \text{(5)} \ \ \ \rightarrow  A{\color{blue}{S_l}} + B{\color{blue}{S_v}} + C(1-{\color{blue}{S_l - S_v}}) = 0\\
 (X\rho_l - X_l\rho_l){\color{blue}{S_l}} + (X\rho_v - X_v\rho_v){\color{blue}{S_v}} + (X\rho_h - X_h\rho_h)(1-{\color{blue}{S_l - S_v}}) = 0  \ \ \ \text{(6)} \ \ \ \rightarrow  D{\color{blue}{S_l}} + E{\color{blue}{S_v}} + F(1-{\color{blue}{S_l - S_v}}) = 0
 \end{align}</formula></para>
 <para>Rearrange equation (5) and (6),</para>
-<para><formula id="179">\begin{align}
+<para><formula id="184">\begin{align}
  (H\rho_l - H_l\rho_l - H\rho_h + H_h\rho_h){\color{blue}{S_l}} + (H\rho_v - H_v\rho_v - H\rho_h + H_h\rho_h){\color{blue}{S_v}} = H_h\rho_h - H\rho_h  \ \ \ \text{(7)} \ \ \ \rightarrow AA{\color{blue}{S_l}} + BB{\color{blue}{S_v}} = CC \\
  (X\rho_l - X_l\rho_l - X\rho_h + X_h\rho_h){\color{blue}{S_l}} + (X\rho_v - X_v\rho_v - X\rho_h + X_h\rho_h){\color{blue}{S_v}} = X_h\rho_h - X\rho_h  \ \ \ \text{(8)} \ \ \ \rightarrow DD{\color{blue}{S_l}} + EE{\color{blue}{S_v}} = FF
 \end{align}</formula></para>
-<para>Therefore,  <formula id="180">\begin{align}
+<para>Therefore,  <formula id="185">\begin{align}
 {\color{blue}{S_v}} &amp;= \frac{CC-\frac{AA}{DD}FF}{BB - \frac{AA}{DD}EE} \\
 {\color{blue}{S_l}} &amp;= \frac{FF - EE {\color{blue}{S_v}}}{DD} \\
 {\color{blue}{S_h}} &amp;= 1-{\color{blue}{S_v}}-{\color{blue}{S_l}}
@@ -1971,7 +2051,7 @@ S_l + S_v + S_h = 1 \ \ \ \text{(4)}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="196" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3851" bodyend="3877"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="200" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="4014" bodyend="4040"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ac56d6bda2e7bf8a28ee0a9290ae97240" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -2028,7 +2108,7 @@ S_l + S_v + S_h = 1 \ \ \ \text{(4)}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="197" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="387" bodyend="468"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="201" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="389" bodyend="471"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -2048,7 +2128,7 @@ S_l + S_v + S_h = 1 \ \ \ \text{(4)}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="199" column="13" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="42" bodyend="66"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="203" column="13" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="43" bodyend="67"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a2d79b6c88f48b03fcbe142b53bd0183b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -2066,7 +2146,7 @@ S_l + S_v + S_h = 1 \ \ \ \text{(4)}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="200" column="13" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="68" bodyend="92"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="204" column="13" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="69" bodyend="93"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a36325531961643e128a1719a8dff6932" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -2080,7 +2160,7 @@ S_l + S_v + S_h = 1 \ \ \ \text{(4)}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="201" column="13" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="99" bodyend="103"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="205" column="13" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="100" bodyend="104"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a61ae912d3c6192a6165017713c37c7b5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classxThermal_1_1cxThermal" kindref="compound">cxThermal</ref> *</type>
@@ -2094,7 +2174,7 @@ S_l + S_v + S_h = 1 \ \ \ \text{(4)}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="203" column="23" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="203" bodyend="203"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="207" column="23" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="207" bodyend="207"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1af5c4e80f3e2fbe553e8fd55c6e79c6db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -2128,7 +2208,7 @@ X_{mol} = \frac{X_{wt}/M_{NaCl}}{X_{wt}/M_{NaCl} + (1-X_{wt})/M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="204" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="152" bodyend="157"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="208" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="153" bodyend="158"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ac3715eceabe71057859578897cc6c1b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -2150,7 +2230,7 @@ X_{mol} = \frac{X_{wt}/M_{NaCl}}{X_{wt}/M_{NaCl} + (1-X_{wt})/M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="205" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="158" bodyend="161"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="209" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="159" bodyend="162"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a1dd933149e5904b3fee86f2e45b4f575" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -2184,7 +2264,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="206" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="182" bodyend="185"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="210" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="183" bodyend="186"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a50badbe13e5dca4c3da318c038594808" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -2225,7 +2305,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="209" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="231" bodyend="236"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="213" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="232" bodyend="237"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a40547059ab99973433c1d449fae4ae6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -2270,7 +2350,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="210" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="247" bodyend="268"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="214" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="248" bodyend="269"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1af1fce8e640aa1a3bf45d5cb61fb1ff77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -2311,7 +2391,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="211" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="275" bodyend="278"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="215" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="276" bodyend="279"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ad337b9b72150579e46bd0100d545a1be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -2371,7 +2451,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="212" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="497" bodyend="503"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="216" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="500" bodyend="506"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a1c2692e61972d074c1959b09a3d56382" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -2425,7 +2505,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="213" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="514" bodyend="518"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="217" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="517" bodyend="521"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a204503370429b27a423ba2c1b61dc8f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -2471,7 +2551,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="215" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="590" bodyend="598"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="219" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="593" bodyend="601"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a60408e6f2c2c0249860ee99addd4cc8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -2489,7 +2569,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="216" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="600" bodyend="604"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="220" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="603" bodyend="607"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a5e740dd341575d8e254c399ff58a7f50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -2519,7 +2599,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="217" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="610" bodyend="619"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="221" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="613" bodyend="622"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a0d8824796065ac3429a39cd9fc3be17f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -2540,7 +2620,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="218" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="691" bodyend="694"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="222" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="695" bodyend="698"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a311a8d4cc2a622555b38185d320df6c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -2554,7 +2634,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="219" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="695" bodyend="698"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="223" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="699" bodyend="702"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1adda628d7c1d0d9242c37b2135e262dc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -2611,7 +2691,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="220" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="713" bodyend="718"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="224" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="717" bodyend="722"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aa5f1f74434b7bc3fbd2cc5eb28c16ff2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -2681,7 +2761,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="221" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="848" bodyend="853"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="225" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="852" bodyend="857"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a6058147f4d2bad2ca770d2886d573502" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -2730,7 +2810,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="223" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="571" bodyend="576"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="227" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="574" bodyend="579"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a54157c43b02d771f531f38c60af1811b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -2777,7 +2857,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="226" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="827" bodyend="832"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="230" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="831" bodyend="836"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1abb4bb17dc72e5b2d67703113dfd42823" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -2826,7 +2906,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="228" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="998" bodyend="1001"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="232" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1002" bodyend="1005"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1af003967633a44be5e15a6f0632359b47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -2872,7 +2952,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="229" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="476" bodyend="481"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="233" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="479" bodyend="484"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a3a1cad4c2536c99ccd3e7131645692b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -2924,7 +3004,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="230" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1019" bodyend="1062"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="234" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1023" bodyend="1067"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ab8e1bd16be28e50eec7a11261d67435b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -2971,7 +3051,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="231" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1096" bodyend="1099"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="235" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1101" bodyend="1104"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aef8836f6fd846d8b94395b612eb8494d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -3039,7 +3119,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="232" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1119" bodyend="1162"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="236" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1124" bodyend="1168"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a7c6d36709f963f9e81e897b90dad3b23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -3109,7 +3189,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="233" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1179" bodyend="1191"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="237" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1185" bodyend="1197"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ae38832e5194e4166951faaca3fde86d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -3139,7 +3219,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="234" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3163" bodyend="3184"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="238" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3256" bodyend="3277"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aacff0d614c99e13fa68fe4a8ae7df05f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -3229,7 +3309,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="236" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1304" bodyend="1368"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="240" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1310" bodyend="1374"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a22ee9fc78651ee18e73ed6870a50418c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -3266,104 +3346,12 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
           <declname>phase</declname>
         </param>
         <briefdescription>
-<para>Calculate density of liquid or vapor phase. </para>
         </briefdescription>
         <detaileddescription>
-<para>The density of H2ONaCl can be calculated from water density, see Eq. 7 of Driesner2007Part2. <formula id="138">$ V_{solution}(P,T,X) = V_{water}(T^*,P) $</formula>, so <formula id="139">$ \frac{M_{solution}}{\rho_{solution}} = \frac{M_{water}}{\rho_{water}} $</formula>.</para>
-<para>Therefore, <formula id="140">$ \rho_{solution} = \frac{M_{solution}}{M_{H_2O}} \rho_{H_2O} $</formula>, where <formula id="141">$ M_{solution} = M_{H_2O}(1-X_{mol}) + M_{NaCl}X_{mol} $</formula></para>
-<para><simplesect kind="note"><para>Density difference calculated from IAPWS95_CoolProp and IAPS84 will cause H2ONaCl density difference up to 32 kg/m^3, test the following points:</para>
-</simplesect>
-<table rows="5" cols="5"><row>
-<entry thead="yes"><para>T[c]   </para>
-</entry><entry thead="yes"><para>P[bar]   </para>
-</entry><entry thead="yes"><para>X[mole fraction]   </para>
-</entry><entry thead="yes"><para>rho[Driesner2007Part2]   </para>
-</entry><entry thead="yes"><para>rho[<ref refid="namespacexThermal" kindref="compound">xThermal</ref>]    </para>
-</entry></row>
-<row>
-<entry thead="no"><para>8.500000e+02   </para>
-</entry><entry thead="no"><para>2.000000e+03   </para>
-</entry><entry thead="no"><para>9.996030e-01   </para>
-</entry><entry thead="no"><para>1.608149e+03   </para>
-</entry><entry thead="no"><para>1.602652e+03    </para>
-</entry></row>
-<row>
-<entry thead="no"><para>8.600000e+02   </para>
-</entry><entry thead="no"><para>2.500000e+03   </para>
-</entry><entry thead="no"><para>9.937537e-01   </para>
-</entry><entry thead="no"><para>1.615147e+03   </para>
-</entry><entry thead="no"><para>1.605205e+03    </para>
-</entry></row>
-<row>
-<entry thead="no"><para>9.200000e+02   </para>
-</entry><entry thead="no"><para>5.000000e+03   </para>
-</entry><entry thead="no"><para>9.915095e-01   </para>
-</entry><entry thead="no"><para>1.651829e+03   </para>
-</entry><entry thead="no"><para>1.619722e+03    </para>
-</entry></row>
-<row>
-<entry thead="no"><para>9.243300e+02   </para>
-</entry><entry thead="no"><para>5.000000e+03   </para>
-</entry><entry thead="no"><para>1.000000e+00   </para>
-</entry><entry thead="no"><para>1.656120e+03   </para>
-</entry><entry thead="no"><para>1.623869e+03   </para>
-</entry></row>
-</table>
-</para>
-<para>For example, T=920 deg.C, P = 5000 bar. The calculated <formula id="142">$ T^* $</formula> for density is 1279.92 deg.C. Density of water at (T=1279.92 deg.C, P=5000 bar) is 502.235 kg/m^3 (IAPWS95_CoolProp), 512.153 kg/m^3 (IAPS84). The coefficient <formula id="143">$ \frac{M_{H_2O}(1-X_{mol}) + M_{NaCl}X_{mol}}{M_{H_2O}} = 3.225 $</formula> at this P-T-X condition, therefore the final density different will be <formula id="144">$ 3.225\times(512.153-502.235)=32 $</formula> (This P-T condition exceeds the valid range of IAPWS-IF97).</para>
-<para><xrefsect id="todo_1_todo000001"><xreftitle>Todo</xreftitle><xrefdescription><para>Estimate density difference range based on the density difference between IAPWS95_CoolProp and IAPS84.</para>
-</xrefdescription></xrefsect></para>
-<para><xrefsect id="todo_1_todo000002"><xreftitle>Todo</xreftitle><xrefdescription><para>How to deal with properties at high-T low-P region, e.g. sw.Rho_phase(1.700000e+02+273.15,7.914706e+00*1E5,0,Rhol, H2ONaCl::Liquid); see mmc4 of Driesner(2007b).</para>
-</xrefdescription></xrefsect></para>
-<para><xrefsect id="todo_1_todo000003"><xreftitle>Todo</xreftitle><xrefdescription><para>Merge Rho_phase of liquid and vapor together to calculate them simultaneously, because property of saturated vapor and liquid always needed simultaneous, it could save computing time in this way. </para>
-</xrefdescription></xrefsect><xrefsect id="bug_1_bug000001"><xreftitle>Bug</xreftitle><xrefdescription><para>T=273.16, P=20E5, X=0.1, Tstar = n1 + n2*T_C + D will be negative.</para>
-</xrefdescription></xrefsect></para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>T</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>[K] </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>P</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>[Pa] </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>X</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>[kg/kg] salinity of liquid or salinity of vapor, not bulk salinity </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>Tstar</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>[K] </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>rho</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>[ <formula id="3">$ kg/m^3 $</formula>] </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="238" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1769" bodyend="1823"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="242" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="1855" bodyend="1915"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a67eb34991c4f591a3df21d994636ee2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -3443,7 +3431,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="239" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2030" bodyend="2071"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="243" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2122" bodyend="2163"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aebf93d2b981476ed38a2b02973cd1075" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -3480,7 +3468,7 @@ X_{wt} = \frac{X_{mol}M_{NaCl}}{X_{mol}M_{NaCl} + (1-X_{mol})M_{H_2O}}
         </briefdescription>
         <detaileddescription>
 <para>For high-temperature(T&gt;800 deg.C) and low pressure (P&lt;P_vlh), implement the similar extrapolation method with that in \like Rho_phase .</para>
-<para><formula id="163">\begin{align}
+<para><formula id="168">\begin{align}
 \begin{cases}
 H_{solution} (T,P,X) &amp;= H_{H_2O}(T^*_H, P)\\
 H_{extrapol}^{lowT} (T,P,X) &amp;= o_0 + o_1 T^*_V + o_2 T^{*3}_{H},&amp; ~~  (P&lt;P_{H_2O}^{crit}, T&lt;=T_{H_2O}^{crit})\\
@@ -3540,7 +3528,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="240" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2092" bodyend="2136"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="244" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2184" bodyend="2229"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a2aaa32a8ac292b9ac1488c8809be9adf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -3619,7 +3607,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="241" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2148" bodyend="2163"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="245" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2241" bodyend="2256"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ab18c936e463ccad0d51905a8c891bb62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -3655,7 +3643,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="243" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3497" bodyend="3563"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="247" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3601" bodyend="3699"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ac3395601a0568782216fc3e9c669ce20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -3728,7 +3716,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="245" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3572" bodyend="3638"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="249" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3708" bodyend="3774"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a59c2dd020bf0295f71efbe6280885e65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -3768,9 +3756,9 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
 <para>Calculate isothermal compressibility of two phase. </para>
         </briefdescription>
         <detaileddescription>
-<para>According to the definition of compressibility <formula id="170">$ \beta = - \frac{1}{V} \left( \frac{\partial V}{\partial p} \right)_T $</formula>, the compressibility of two phase can be expressed as,  <formula id="171">\begin{equation}
+<para>According to the definition of compressibility <formula id="175">$ \beta = - \frac{1}{V} \left( \frac{\partial V}{\partial p} \right)_T $</formula>, the compressibility of two phase can be expressed as,  <formula id="176">\begin{equation}
 \beta = \frac{1}{\rho} \left( \frac{\partial p}{\partial p} \right)_{T,X}
-\end{equation}</formula> where <formula id="172">$ \rho = S_1 \rho_1 + S_2\rho_2 $</formula> is the bulk density. The analytical expression is a bit complicated, so we can calculated it using numerical difference.  <formula id="173">\begin{equation}
+\end{equation}</formula> where <formula id="177">$ \rho = S_1 \rho_1 + S_2\rho_2 $</formula> is the bulk density. The analytical expression is a bit complicated, so we can calculated it using numerical difference.  <formula id="178">\begin{equation}
 \beta (T,P,X) = \frac{\rho(T,P + 0.5\delta p, X) - \rho (T, P - 0.5\delta P, X)}{\delta p}
 \end{equation}</formula></para>
 <para><parameterlist kind="param"><parameteritem>
@@ -3826,7 +3814,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="246" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3205" bodyend="3228"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="250" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3298" bodyend="3321"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aa75a13bc2423e40b703691a24f87b6fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -3865,7 +3853,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="247" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3264" bodyend="3287"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="251" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3357" bodyend="3380"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a1b2118ce76c08422df62fe80999cbbc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -3950,7 +3938,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="248" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3239" bodyend="3262"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="252" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3332" bodyend="3355"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a84f51a7de393330fa7528b31263681aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -4047,7 +4035,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="249" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3299" bodyend="3321"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="253" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3392" bodyend="3414"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a30cb1a1d3a189cc3f83dcd8b1652ce27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>std::string</type>
@@ -4063,7 +4051,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="251" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="251" bodyend="251"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="255" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="255" bodyend="255"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a81c063d82d026ac8f83fd54ca2bd7f21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -4077,7 +4065,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="252" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="94" bodyend="97"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="256" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="95" bodyend="98"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a5a96c5d4365545b082fa4bdbe269f288" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -4093,7 +4081,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="254" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="254" bodyend="254"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="258" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="258" bodyend="258"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1afe232857a064def51f69d124f164deb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -4109,7 +4097,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="255" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="255" bodyend="255"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="259" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="259" bodyend="259"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aa0e7e2609d27cd239fb0ac03f49691fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -4125,7 +4113,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="256" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="256" bodyend="256"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="260" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="260" bodyend="260"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a35f9d474c03682d2f09bc4dc8bb343cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -4141,7 +4129,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="257" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="257" bodyend="257"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="261" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="261" bodyend="261"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a60f00452fe44cba20fe5caa4f9901ebd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -4157,7 +4145,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="258" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="258" bodyend="258"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="262" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="262" bodyend="262"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a7cc0386a1a35ddab0407f60652ed6f68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -4173,7 +4161,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="259" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="259" bodyend="259"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="263" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="263" bodyend="263"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a72db79a2feb82065d821b1bddef77559" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -4189,7 +4177,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="260" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="260" bodyend="260"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="264" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="264" bodyend="264"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aba58cde4dd2ef7bd8c75514229f9d2d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -4205,7 +4193,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="261" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="261" bodyend="261"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="265" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="265" bodyend="265"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a963eabf1ce3a54e710451fcfbd9262ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -4221,7 +4209,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="262" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="262" bodyend="262"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="266" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="266" bodyend="266"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a8c2fec6dd493535e3850b75940a5ddab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50" kindref="member">PhaseRegion</ref></type>
@@ -4249,7 +4237,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="265" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3476" bodyend="3481"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="269" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3578" bodyend="3585"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a6c402e23181d652b0b394f9857262194" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -4278,7 +4266,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
 <para>Update state using T, p as independent variables. </para>
         </briefdescription>
         <detaileddescription>
-<para>Calculate the critical molar density in <formula id="360">$ mol/m^3 $</formula> </para>
+<para>Calculate the critical molar density in <formula id="365">$ mol/m^3 $</formula> </para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>T</parametername>
@@ -4300,7 +4288,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="267" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3323" bodyend="3474"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="271" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3416" bodyend="3576"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a5b8e67bbbf29baf382f5c6541576920d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -4331,7 +4319,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="268" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3761" bodyend="3810"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="272" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3927" bodyend="3973"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a0a0773d74a1e46421e6d6a9b220436ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
@@ -4409,7 +4397,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="269" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3649" bodyend="3700"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="273" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3785" bodyend="3842"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a0adb33c120d2aa80ac2f920dbcdb0855" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
@@ -4477,7 +4465,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="270" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3714" bodyend="3759"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="274" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3856" bodyend="3925"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ac0fd77c6276a43a0b107fbcb800b8b17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1DeformLinearMesh" kindref="compound">DeformLinearMesh</ref></type>
@@ -4542,7 +4530,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="274" column="30" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2282" bodyend="2323"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="278" column="30" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2375" bodyend="2416"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aa5a34ed03f17b9718e8c4c720b5d719c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1DeformLinearMesh" kindref="compound">DeformLinearMesh</ref></type>
@@ -4570,7 +4558,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="275" column="30" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2882" bodyend="2951"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="279" column="30" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2975" bodyend="3044"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aa9a410e462618cc222c2a6677120d8da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1DeformLinearMesh" kindref="compound">DeformLinearMesh</ref></type>
@@ -4594,7 +4582,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="276" column="30" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2953" bodyend="2990"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="280" column="30" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3046" bodyend="3083"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a381bbfc632d85549334ee1568060760c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1DeformLinearMesh" kindref="compound">DeformLinearMesh</ref></type>
@@ -4618,7 +4606,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="277" column="30" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2992" bodyend="3019"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="281" column="30" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3085" bodyend="3112"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a8b87074e453dc09ef076435163d09507" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1PhaseBoundaries" kindref="compound">PhaseBoundaries</ref></type>
@@ -4675,7 +4663,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="279" column="29" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3028" bodyend="3111"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="283" column="29" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3121" bodyend="3204"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1afdf8c12bf55b088d2b206b1a82aa48cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1TriMesh" kindref="compound">TriMesh</ref></type>
@@ -4722,7 +4710,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="281" column="21" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2331" bodyend="2369"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="285" column="21" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2424" bodyend="2462"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a5599c22b7db512c21f1b4289f958f898" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1TriMesh" kindref="compound">TriMesh</ref></type>
@@ -4760,7 +4748,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="282" column="21" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2372" bodyend="2379"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="286" column="21" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2465" bodyend="2472"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a44adeebca5e0182f4602fb015e2568e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1PhaseRegion__Slice" kindref="compound">PhaseRegion_Slice</ref></type>
@@ -4795,7 +4783,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="283" column="31" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2386" bodyend="2723"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="287" column="31" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2479" bodyend="2816"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a66fbceaefbddb1fcae7ade406eeceaea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1PhaseRegion__Slice" kindref="compound">PhaseRegion_Slice</ref></type>
@@ -4818,7 +4806,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="284" column="31" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2725" bodyend="2853"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="288" column="31" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2818" bodyend="2946"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a7a1ef7f88f6d6be6827f7159b3883eb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
@@ -4836,7 +4824,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="286" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="187" bodyend="195"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="290" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="188" bodyend="196"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1af38e6f42c17789e0d59b9f063f3cd00e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
@@ -4854,7 +4842,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="287" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="162" bodyend="170"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="291" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="163" bodyend="171"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a50bd1d2c21caf348575af30fec81598d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -4880,7 +4868,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="288" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2165" bodyend="2173"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="292" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2258" bodyend="2266"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a094b3cf52405cc4e412f22ffa8e62e4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -4902,7 +4890,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="289" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2175" bodyend="2179"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="293" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2268" bodyend="2272"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1adf98f860b2ac09467ecab1f90e8e5787" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -4924,7 +4912,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="290" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2181" bodyend="2185"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="294" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2274" bodyend="2278"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a65ce60622423b8d5488628d69f504ee4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -4950,7 +4938,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="291" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2187" bodyend="2192"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="295" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2280" bodyend="2285"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ae8c0b9dd22c5780f02b67a2032f4530b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -4976,7 +4964,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="292" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2194" bodyend="2198"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="296" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2287" bodyend="2291"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a3a8ed4d8dc7c7491bb879a490a600f16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -4998,7 +4986,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="293" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2200" bodyend="2204"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="297" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2293" bodyend="2297"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a27dc7a85a73ca3483648513274a8b618" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -5024,7 +5012,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="294" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2206" bodyend="2210"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="298" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2299" bodyend="2303"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a5ac6382564d0d2a4b555c556c2bd66f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -5054,7 +5042,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="295" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2212" bodyend="2217"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="299" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2305" bodyend="2310"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a2d98c7e177c181be7906d741e7e01bc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -5080,7 +5068,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="296" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2226" bodyend="2230"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="300" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2319" bodyend="2323"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a5e947b1950008ebef5eb0a424e20a38a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -5106,7 +5094,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="297" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2232" bodyend="2236"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="301" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2325" bodyend="2329"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ae3d0097a66bfaacb07d1139550243a26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -5136,7 +5124,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="298" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2219" bodyend="2224"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="302" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2312" bodyend="2317"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a2d877d98a67fa1c97adbc1d0a350a92f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref> &gt;</type>
@@ -5170,7 +5158,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="299" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2238" bodyend="2251"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="303" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2331" bodyend="2344"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a7c9874b4142fef73f415b7081f11289d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
@@ -5200,7 +5188,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="300" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2253" bodyend="2262"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="304" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2346" bodyend="2355"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1af3560864ab1c41d9a9eeaeef5b6fc030" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
@@ -5230,7 +5218,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="301" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2264" bodyend="2272"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="305" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2357" bodyend="2365"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a99642b15460e9bfa2d516c2fc9d11b6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -5260,7 +5248,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="302" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="302" bodyend="302"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="306" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="306" bodyend="306"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ab2dfaaf918852e77952b141c03b0361c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -5290,7 +5278,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="303" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="303" bodyend="303"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="307" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="307" bodyend="307"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a9948d267b27b0f983124eee3aa75e1bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -5320,7 +5308,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="304" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2864" bodyend="2871"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="308" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2957" bodyend="2964"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a21891fedeffda587f55944995fe73bb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
@@ -5346,7 +5334,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="305" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2873" bodyend="2880"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="309" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2966" bodyend="2973"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ab92ef7ef854289ca84dd5089842a3bc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -5376,11 +5364,11 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="306" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2855" bodyend="2862"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="310" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2948" bodyend="2955"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para>Class of <formula id="193">$ H_2O-NaCl$</formula> EOS. </para>
+<para>Class of <formula id="198">$ H_2O-NaCl$</formula> EOS. </para>
     </briefdescription>
     <detaileddescription>
 <para><image type="html" name="H2ONaCl/H2ONaCl_isothermal_PX.svg" width="100%">Isothermal pressure–composition sections. </image>
@@ -5410,7 +5398,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         <link refid="classxThermal_1_1cxThermal"/>
       </node>
     </collaborationgraph>
-    <location file="Library/H2ONaCl/H2ONaCl.h" line="154" column="9" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="155" bodyend="310"/>
+    <location file="Library/H2ONaCl/H2ONaCl.h" line="157" column="9" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="158" bodyend="314"/>
     <listofallmembers>
       <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a9b36799717d174c99dc94ce4e68b40b9" prot="private" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>_getPhaseRegion_node_CheckTcrit_H2O</name></member>
       <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a399f073ff710615c70074a4771a2de2a" prot="private" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>_getPhaseRegion_node_HaliteLiquidus</name></member>
@@ -5446,6 +5434,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
       <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aa1c23e4628df846a51fea7cf2499439d" prot="private" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>extrapolation_H_Cp_highT</name></member>
       <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a819b865f33a7e8720a6defa15d31859d" prot="private" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>extrapolation_H_highT</name></member>
       <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ad461ae2f7b00ba81fd2813e61aafe5b7" prot="private" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>extrapolation_V_highT</name></member>
+      <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aaa1ceae60e09d1ef5db2a83157527dd3" prot="private" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>extrapolation_V_highT</name></member>
       <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a27d5123c79733271ad407d8bba290a6f" prot="private" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>extrapolation_V_lowPlowT</name></member>
       <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a8c2fec6dd493535e3850b75940a5ddab" prot="public" virt="virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>findPhaseRegion_TPX</name></member>
       <member refid="classxThermal_1_1cxThermal_1a1fadd87926ebe880d3273ea3b2a930f6" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>get_dim_lut</name></member>

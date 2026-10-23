@@ -17,7 +17,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -25,7 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1068,6 +1068,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#public-static-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Static Functions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#public-functions-documentation" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1139,6 +1150,34 @@
     <span class="md-ellipsis">
       
         function func_T_VL_V
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-static-functions-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Static Functions Documentation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Public Static Functions Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#function-dn1n2dp_tstar_v" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function dn1n2dP_Tstar_V
       
     </span>
   </a>
@@ -1258,6 +1297,21 @@
 </tr>
 </tbody>
 </table>
+<h2 id="public-static-functions">Public Static Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-dn1n2dp_tstar_v"><strong>dn1n2dP_Tstar_V</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; P, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; X, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; dn1dP, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; dn2dP) <br><em>Calculate density of liquid or vapor phase.</em></td>
+</tr>
+</tbody>
+</table>
 <h2 id="public-functions-documentation">Public Functions Documentation</h2>
 <h3 id="function-func_p2criticalt">function func_P2CriticalT</h3>
 <p><em>Construct function of</em> (P_{critical} = f(T)) <em>, see Eq. 5a-c of Driesner2007Part1.</em>
@@ -1315,6 +1369,88 @@
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="p">)</span><span class="w"> </span>
 </code></pre></div>
 <hr>
+<h2 id="public-static-functions-documentation">Public Static Functions Documentation</h2>
+<h3 id="function-dn1n2dp_tstar_v">function dn1n2dP_Tstar_V</h3>
+<p><em>Calculate density of liquid or vapor phase.</em> 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">H2ONaCl</span><span class="o">::</span><span class="n">dn1n2dP_Tstar_V</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">P</span><span class="p">,</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">X</span><span class="p">,</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">dn1dP</span><span class="p">,</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">dn2dP</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<p>The density of H2ONaCl can be calculated from water density, see Eq. 7 of Driesner2007Part2. (V_{solution}(P,T,X) = V_{water}(T^*,P)), so (\frac{M_{solution}}{\rho_{solution}} = \frac{M_{water}}{\rho_{water}}).</p>
+<p>Therefore, (\rho_{solution} = \frac{M_{solution}}{M_{H_2O}} \rho_{H_2O}), where (M_{solution} = M_{H_2O}(1-X_{mol}) + M_{NaCl}X_{mol})</p>
+<p><strong>Note:</strong></p>
+<p>Density difference calculated from IAPWS95_CoolProp and IAPS84 will cause H2ONaCl density difference up to 32 kg/m^3, test the following points:</p>
+<table>
+<thead>
+<tr>
+<th>T[c]</th>
+<th>P[bar]</th>
+<th>X[mole fraction]</th>
+<th>rho[Driesner2007Part2]</th>
+<th>rho[<a href="../namespacexThermal/"><strong>xThermal</strong></a>]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8.500000e+02</td>
+<td>2.000000e+03</td>
+<td>9.996030e-01</td>
+<td>1.608149e+03</td>
+<td>1.602652e+03</td>
+</tr>
+<tr>
+<td>8.600000e+02</td>
+<td>2.500000e+03</td>
+<td>9.937537e-01</td>
+<td>1.615147e+03</td>
+<td>1.605205e+03</td>
+</tr>
+<tr>
+<td>9.200000e+02</td>
+<td>5.000000e+03</td>
+<td>9.915095e-01</td>
+<td>1.651829e+03</td>
+<td>1.619722e+03</td>
+</tr>
+<tr>
+<td>9.243300e+02</td>
+<td>5.000000e+03</td>
+<td>1.000000e+00</td>
+<td>1.656120e+03</td>
+<td>1.623869e+03</td>
+</tr>
+</tbody>
+</table>
+<p>For example, T=920 deg.C, P = 5000 bar. The calculated (T^*) for density is 1279.92 deg.C. Density of water at (T=1279.92 deg.C, P=5000 bar) is 502.235 kg/m^3 (IAPWS95_CoolProp), 512.153 kg/m^3 (IAPS84). The coefficient (\frac{M_{H_2O}(1-X_{mol}) + M_{NaCl}X_{mol}}{M_{H_2O}} = 3.225) at this P-T-X condition, therefore the final density different will be (3.225\times(512.153-502.235)=32) (This P-T condition exceeds the valid range of IAPWS-IF97).</p>
+<p><strong>Todo</strong></p>
+<p>Estimate density difference range based on the density difference between IAPWS95_CoolProp and IAPS84.</p>
+<p><strong>Todo</strong></p>
+<p>How to deal with properties at high-T low-P region, e.g. sw.Rho_phase(1.700000e+02+273.15,7.914706e+00*1E5,0,Rhol, H2ONaCl::Liquid); see mmc4 of Driesner(2007b).</p>
+<p><strong>Todo</strong></p>
+<p>Merge Rho_phase of liquid and vapor together to calculate them simultaneously, because property of saturated vapor and liquid always needed simultaneous, it could save computing time in this way. </p>
+<p><strong>Bug</strong></p>
+<p>T=273.16, P=20E5, X=0.1, Tstar = n1 + n2*T_C + D will be negative.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>T</code> [K] </li>
+<li><code>P</code> [Pa] </li>
+<li><code>X</code> [kg/kg] salinity of liquid or salinity of vapor, not bulk salinity </li>
+<li><code>Tstar</code> [K] </li>
+<li><code>rho</code> [ (kg/m^3)]</li>
+</ul>
+<p>Pressure derivatives of (n_1, n_2): the expressions of n1n2_Tstar_V, differentiated analytically.</p>
+<p>Needed for the chain rule of the density derivatives through (T^*_V = n_1 + n_2 T) (C12, LIB-25).</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>P</code> [bar] </li>
+<li><code>X</code> [mol/mol] </li>
+<li><code>dn1dP</code> [deg.C/bar] </li>
+<li><code>dn2dP</code> [1/bar] </li>
+</ul>
+<hr>
 
 <hr />
 <p>The documentation for this class was generated from the following file <code>Library/H2ONaCl/H2ONaCl.cpp</code></p>
@@ -1370,7 +1506,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

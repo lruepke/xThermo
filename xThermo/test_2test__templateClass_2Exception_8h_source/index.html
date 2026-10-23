@@ -17,7 +17,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -25,7 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1065,7 +1065,7 @@
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;exception&gt;</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;stdfunc.h&quot;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">"stdfunc.h"</span>
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="k">namespace</span><span class="w"> </span><span class="nn">xThermal</span>
 <a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">{</span>
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
@@ -1085,7 +1085,7 @@
 <a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="n">xThermalBaseError</span><span class="o">::</span><span class="n">ErrCode</span><span class="w"> </span><span class="n">errcode</span><span class="o">&gt;</span>
 <a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="k">class</span><span class="w"> </span><span class="nc">xThermalError</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">xThermalBaseError</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="k">public</span><span class="o">:</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="n">xThermalError</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">err</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ErrCode</span><span class="w"> </span><span class="n">ecode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">errcode</span><span class="p">)</span><span class="w"> </span><span class="k">throw</span><span class="p">()</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">xThermalBaseError</span><span class="p">(</span><span class="n">err</span><span class="p">,</span><span class="w"> </span><span class="n">ecode</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="n">xThermalError</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">err</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">""</span><span class="p">,</span><span class="w"> </span><span class="n">ErrCode</span><span class="w"> </span><span class="n">ecode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">errcode</span><span class="p">)</span><span class="w"> </span><span class="k">throw</span><span class="p">()</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">xThermalBaseError</span><span class="p">(</span><span class="n">err</span><span class="p">,</span><span class="w"> </span><span class="n">ecode</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
 <a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="p">};</span>
 <a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>
 <a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="k">typedef</span><span class="w"> </span><span class="n">xThermalError</span><span class="o">&lt;</span><span class="n">xThermalBaseError</span><span class="o">::</span><span class="n">eNotImplemented</span><span class="o">&gt;</span><span class="w"> </span><span class="n">NotImplementedError</span><span class="p">;</span>
@@ -1102,7 +1102,7 @@
 <a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="n">xThermalBaseError</span><span class="o">::</span><span class="n">ErrCode</span><span class="w"> </span><span class="n">errcode</span><span class="o">&gt;</span>
 <a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="k">class</span><span class="w"> </span><span class="nc">ValueErrorSpec</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">ValueError</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="k">public</span><span class="o">:</span>
-<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="w">    </span><span class="n">ValueErrorSpec</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">err</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ErrCode</span><span class="w"> </span><span class="n">ecode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">errcode</span><span class="p">)</span><span class="w"> </span><span class="k">throw</span><span class="p">()</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ValueError</span><span class="p">(</span><span class="n">err</span><span class="p">,</span><span class="w"> </span><span class="n">ecode</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
+<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="w">    </span><span class="n">ValueErrorSpec</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">err</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">""</span><span class="p">,</span><span class="w"> </span><span class="n">ErrCode</span><span class="w"> </span><span class="n">ecode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">errcode</span><span class="p">)</span><span class="w"> </span><span class="k">throw</span><span class="p">()</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ValueError</span><span class="p">(</span><span class="n">err</span><span class="p">,</span><span class="w"> </span><span class="n">ecode</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
 <a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="p">};</span>
 <a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>
 <a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="k">typedef</span><span class="w"> </span><span class="n">ValueErrorSpec</span><span class="o">&lt;</span><span class="n">xThermalBaseError</span><span class="o">::</span><span class="n">eWrongFluid</span><span class="o">&gt;</span><span class="w"> </span><span class="n">WrongFluidError</span><span class="p">;</span>
@@ -1165,7 +1165,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

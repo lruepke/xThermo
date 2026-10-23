@@ -55,6 +55,7 @@
 * **createLUT\_2D** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
 * **createLUT\_3D** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
 * **cxThermal** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
+* **check** ([**xThermal::gsl\_guard::GuardedFunction**](classxThermal_1_1gsl__guard_1_1GuardedFunction.md), [**xThermal::gsl\_guard::GuardedMultirootFunction**](classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction.md))
 * **code** ([**xThermal::xThermalBaseError**](classxThermal_1_1xThermalBaseError.md))
 
 
@@ -76,6 +77,7 @@
 * **extrapolation\_H\_highT** ([**xThermal::H2ONaCl::cH2ONaCl**](classxThermal_1_1H2ONaCl_1_1cH2ONaCl.md))
 * **extrapolation\_V\_highT** ([**xThermal::H2ONaCl::cH2ONaCl**](classxThermal_1_1H2ONaCl_1_1cH2ONaCl.md))
 * **extrapolation\_V\_lowPlowT** ([**xThermal::H2ONaCl::cH2ONaCl**](classxThermal_1_1H2ONaCl_1_1cH2ONaCl.md))
+* **eval** ([**xThermal::gsl\_guard::GuardedFunction**](classxThermal_1_1gsl__guard_1_1GuardedFunction.md), [**xThermal::gsl\_guard::GuardedMultirootFunction**](classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction.md))
 
 
 ## f
@@ -111,6 +113,8 @@
 * **get\_num\_threads** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
 * **get\_pLUT** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
 * **get\_pLUT\_lookup** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
+* **GuardedFunction** ([**xThermal::gsl\_guard::GuardedFunction**](classxThermal_1_1gsl__guard_1_1GuardedFunction.md))
+* **GuardedMultirootFunction** ([**xThermal::gsl\_guard::GuardedMultirootFunction**](classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction.md))
 
 
 ## h
@@ -136,6 +140,7 @@
 * **info** ([**xThermal::Line\_slice**](structxThermal_1_1Line__slice.md), [**xThermal::PhaseRegion\_Slice**](structxThermal_1_1PhaseRegion__Slice.md), [**xThermal::Point\_slice**](structxThermal_1_1Point__slice.md), [**xThermal::Polygon\_slice**](structxThermal_1_1Polygon__slice.md), [**xThermal::ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md), [**xThermal::ThermodynamicPropertiesVector**](structxThermal_1_1ThermodynamicPropertiesVector.md))
 * **init\_supported\_props** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
 * **interp\_quad\_prop** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
+* **iterate** ([**xThermal::gsl\_guard::GuardedFunction**](classxThermal_1_1gsl__guard_1_1GuardedFunction.md), [**xThermal::gsl\_guard::GuardedMultirootFunction**](classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction.md))
 
 
 ## l
@@ -179,6 +184,9 @@
 * **operator+** ([**xThermal::IAPWS95::HelmholtzEnergy\_dimensionless**](structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless.md), [**xThermal::IAPWS\_IF97::GibbsEnergy\_dimensionless**](structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless.md))
 * **operator-** ([**xThermal::IAPWS95::HelmholtzEnergy\_dimensionless**](structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless.md), [**xThermal::IAPWS\_IF97::GibbsEnergy\_dimensionless**](structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless.md))
 * **operator==** ([**xThermal::IAPWS95::HelmholtzEnergy\_dimensionless**](structxThermal_1_1IAPWS95_1_1HelmholtzEnergy__dimensionless.md), [**xThermal::IAPWS\_IF97::GibbsEnergy\_dimensionless**](structxThermal_1_1IAPWS__IF97_1_1GibbsEnergy__dimensionless.md), [**xThermal::Line\_slice**](structxThermal_1_1Line__slice.md), [**xThermal::Point\_slice**](structxThermal_1_1Point__slice.md), [**xThermal::Polygon\_slice**](structxThermal_1_1Polygon__slice.md))
+* **OuterEvaluation** ([**xThermal::OuterEvaluation**](classxThermal_1_1OuterEvaluation.md))
+* **operator=** ([**xThermal::OuterEvaluation**](classxThermal_1_1OuterEvaluation.md))
+* **operator()** ([**xThermal::gsl\_guard::MultirootSolverFree**](structxThermal_1_1gsl__guard_1_1MultirootSolverFree.md), [**xThermal::gsl\_guard::RootSolverFree**](structxThermal_1_1gsl__guard_1_1RootSolverFree.md), [**xThermal::gsl\_guard::VectorFree**](structxThermal_1_1gsl__guard_1_1VectorFree.md))
 
 
 ## p
@@ -262,6 +270,7 @@
 * **set\_num\_threads** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
 * **showProgressBar** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
 * **sum\_vector** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
+* **set** ([**xThermal::gsl\_guard::GuardedFunction**](classxThermal_1_1gsl__guard_1_1GuardedFunction.md), [**xThermal::gsl\_guard::GuardedMultirootFunction**](classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction.md))
 
 
 ## t
@@ -362,6 +371,7 @@
 * **~cIAPWS95** ([**xThermal::IAPWS95::cIAPWS95**](classxThermal_1_1IAPWS95_1_1cIAPWS95.md))
 * **~cIAPWS\_IF97** ([**xThermal::IAPWS\_IF97::cIAPWS\_IF97**](classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97.md))
 * **~cNaCl** ([**xThermal::NaCl::cNaCl**](classxThermal_1_1NaCl_1_1cNaCl.md))
+* **~OuterEvaluation** ([**xThermal::OuterEvaluation**](classxThermal_1_1OuterEvaluation.md))
 * **~cIAPS84** ([**xThermal::PROST::cIAPS84**](classxThermal_1_1PROST_1_1cIAPS84.md))
 * **~cxThermal** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
 * **~xThermalBaseError** ([**xThermal::xThermalBaseError**](classxThermal_1_1xThermalBaseError.md))

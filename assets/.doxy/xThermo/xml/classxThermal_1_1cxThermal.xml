@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="57" column="13" bodyfile="Library/thermo/thermo.h" bodystart="57" bodyend="-1"/>
+        <location file="Library/thermo/thermo.h" line="74" column="13" bodyfile="Library/thermo/thermo.h" bodystart="74" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxThermal_1_1cxThermal_1ade90f43e5beb7b2436e14224bf2e148b" prot="private" static="no" mutable="no">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref> *</type>
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="58" column="14" bodyfile="Library/thermo/thermo.h" bodystart="58" bodyend="-1"/>
+        <location file="Library/thermo/thermo.h" line="75" column="14" bodyfile="Library/thermo/thermo.h" bodystart="75" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxThermal_1_1cxThermal_1a86310c178e3bc63585863db582cfb197" prot="private" static="no" mutable="no">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="59" column="13" bodyfile="Library/thermo/thermo.h" bodystart="59" bodyend="-1"/>
+        <location file="Library/thermo/thermo.h" line="76" column="13" bodyfile="Library/thermo/thermo.h" bodystart="76" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxThermal_1_1cxThermal_1ac1fe17e123586c42ed2239e6505287de" prot="private" static="no" mutable="no">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref> *</type>
@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="60" column="14" bodyfile="Library/thermo/thermo.h" bodystart="60" bodyend="-1"/>
+        <location file="Library/thermo/thermo.h" line="77" column="14" bodyfile="Library/thermo/thermo.h" bodystart="77" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxThermal_1_1cxThermal_1affa1c977dde19b3806669b9e795c272a" prot="private" static="no" mutable="no">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="61" column="13" bodyfile="Library/thermo/thermo.h" bodystart="61" bodyend="-1"/>
+        <location file="Library/thermo/thermo.h" line="78" column="13" bodyfile="Library/thermo/thermo.h" bodystart="78" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxThermal_1_1cxThermal_1a4f054e1c5b636fae618ff847439f2de7" prot="private" static="no" mutable="no">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
@@ -91,7 +91,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="62" column="13" bodyfile="Library/thermo/thermo.h" bodystart="62" bodyend="-1"/>
+        <location file="Library/thermo/thermo.h" line="79" column="13" bodyfile="Library/thermo/thermo.h" bodystart="79" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxThermal_1_1cxThermal_1aea46f9c06e4a4b2e44a6d6b1413726ad" prot="private" static="no" mutable="no">
         <type>std::map&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref>, <ref refid="structxThermal_1_1propInfo" kindref="compound">propInfo</ref> &gt;</type>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="63" column="18" bodyfile="Library/thermo/thermo.h" bodystart="63" bodyend="-1"/>
+        <location file="Library/thermo/thermo.h" line="80" column="18" bodyfile="Library/thermo/thermo.h" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classxThermal_1_1cxThermal_1acdc960f6f983b902b88b94f4e88338a5" prot="private" static="no" mutable="no">
         <type>std::map&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref>, <ref refid="structxThermal_1_1propInfo" kindref="compound">propInfo</ref> &gt;</type>
@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="64" column="18" bodyfile="Library/thermo/thermo.h" bodystart="64" bodyend="-1"/>
+        <location file="Library/thermo/thermo.h" line="81" column="18" bodyfile="Library/thermo/thermo.h" bodystart="81" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-attrib">
@@ -135,7 +135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="79" column="14" bodyfile="Library/thermo/thermo.h" bodystart="79" bodyend="-1"/>
+        <location file="Library/thermo/thermo.h" line="96" column="14" bodyfile="Library/thermo/thermo.h" bodystart="96" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -151,7 +151,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="66" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="12" bodyend="23"/>
+        <location file="Library/thermo/thermo.h" line="83" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="12" bodyend="23"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a21d11cb2ab9144b1d2fa67b64e2551f7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -165,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="67" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="477" bodyend="510"/>
+        <location file="Library/thermo/thermo.h" line="84" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="477" bodyend="510"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a7b8da7ae38ad278f28736667233b632a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -183,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="68" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="512" bodyend="531"/>
+        <location file="Library/thermo/thermo.h" line="85" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="512" bodyend="531"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a48aad0df3347983ebe57dc1986728761" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -205,7 +205,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="69" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="533" bodyend="549"/>
+        <location file="Library/thermo/thermo.h" line="86" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="533" bodyend="549"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1ada930d7a306258c0a10d7e2a2c3ae277" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -243,7 +243,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="71" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="724" bodyend="749"/>
+        <location file="Library/thermo/thermo.h" line="88" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="724" bodyend="749"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a9b135b6613c5319ce57ecf50c4720487" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -281,7 +281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="74" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="752" bodyend="787"/>
+        <location file="Library/thermo/thermo.h" line="91" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="752" bodyend="787"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -297,7 +297,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="77" column="9" bodyfile="Library/thermo/thermo.cpp" bodystart="24" bodyend="27"/>
+        <location file="Library/thermo/thermo.h" line="94" column="9" bodyfile="Library/thermo/thermo.cpp" bodystart="24" bodyend="27"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1ac7feaf94672b8ee16a914b76cedb1ff9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -311,7 +311,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="78" column="17" bodyfile="Library/thermo/thermo.cpp" bodystart="29" bodyend="33"/>
+        <location file="Library/thermo/thermo.h" line="95" column="17" bodyfile="Library/thermo/thermo.cpp" bodystart="29" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1ad65432e862bd77c4fd116598f8ed74f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -329,7 +329,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="80" column="14" bodyfile="Library/thermo/thermo.h" bodystart="80" bodyend="80"/>
+        <location file="Library/thermo/thermo.h" line="97" column="14" bodyfile="Library/thermo/thermo.h" bodystart="97" bodyend="97"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a41d03988aa51b30d08db19df1fca0dbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::string</type>
@@ -349,7 +349,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="83" column="29"/>
+        <location file="Library/thermo/thermo.h" line="100" column="29"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1aaae6d6ea6a66f48860daa4d0b6eef79a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -369,7 +369,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="85" column="24"/>
+        <location file="Library/thermo/thermo.h" line="102" column="24"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a04cebc45b1be27386dc767c7eee56ab5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -389,7 +389,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="86" column="24"/>
+        <location file="Library/thermo/thermo.h" line="103" column="24"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a5800a85e519e23ccfd04c11f3bbab89b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -409,7 +409,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="87" column="24"/>
+        <location file="Library/thermo/thermo.h" line="104" column="24"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a7cc7e8214f233b89f3952a4c6ff70a92" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -429,7 +429,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="88" column="24"/>
+        <location file="Library/thermo/thermo.h" line="105" column="24"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a13a75da8301c717105f456c9c7a19896" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -449,7 +449,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="89" column="24"/>
+        <location file="Library/thermo/thermo.h" line="106" column="24"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1ab4b38c96c6ea4f9b6a79532a3d0edabb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -469,7 +469,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="90" column="24"/>
+        <location file="Library/thermo/thermo.h" line="107" column="24"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a454a4e29dac7a62800c8a42ddaf98b73" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -489,7 +489,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="91" column="24"/>
+        <location file="Library/thermo/thermo.h" line="108" column="24"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a5a3ef49d78de8a82b7333b2bfc382e97" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -509,7 +509,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="92" column="24"/>
+        <location file="Library/thermo/thermo.h" line="109" column="24"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1ac63458e41ee8729b7fff59cb23e91353" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -529,7 +529,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="93" column="24"/>
+        <location file="Library/thermo/thermo.h" line="110" column="24"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a3aaf46ee7758d1fd49ca0201cefdf4b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -543,7 +543,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="94" column="24" bodyfile="Library/thermo/thermo.h" bodystart="94" bodyend="94"/>
+        <location file="Library/thermo/thermo.h" line="111" column="24" bodyfile="Library/thermo/thermo.h" bodystart="111" bodyend="111"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a3d7c1b12767a6348b6d291e708ec0a5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -576,7 +576,7 @@
 <para>Update state using T, p as independent variables. </para>
         </briefdescription>
         <detaileddescription>
-<para>Calculate the critical molar density in <formula id="360">$ mol/m^3 $</formula> </para>
+<para>Calculate the critical molar density in <formula id="365">$ mol/m^3 $</formula> </para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>T</parametername>
@@ -598,7 +598,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="102" column="22" bodyfile="Library/thermo/thermo.h" bodystart="102" bodyend="102"/>
+        <location file="Library/thermo/thermo.h" line="119" column="22" bodyfile="Library/thermo/thermo.h" bodystart="119" bodyend="119"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1ac1094a81aa03a8856a5299b1f588f547" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -632,7 +632,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="103" column="22" bodyfile="Library/thermo/thermo.h" bodystart="103" bodyend="103"/>
+        <location file="Library/thermo/thermo.h" line="120" column="22" bodyfile="Library/thermo/thermo.h" bodystart="120" bodyend="120"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1afe86ef340ece855c4aa01ed160aa5e2c" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type><ref refid="structxThermal_1_1ThermodynamicPropertiesVector" kindref="compound">ThermodynamicPropertiesVector</ref></type>
@@ -663,7 +663,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="104" column="47" bodyfile="Library/thermo/thermo.cpp" bodystart="1273" bodyend="1333"/>
+        <location file="Library/thermo/thermo.h" line="121" column="47" bodyfile="Library/thermo/thermo.cpp" bodystart="1290" bodyend="1350"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a5c0e0ff376db670fffd97808b39eb1a0" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type><ref refid="structxThermal_1_1ThermodynamicPropertiesVector" kindref="compound">ThermodynamicPropertiesVector</ref></type>
@@ -694,7 +694,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="105" column="47" bodyfile="Library/thermo/thermo.cpp" bodystart="1335" bodyend="1394"/>
+        <location file="Library/thermo/thermo.h" line="122" column="47" bodyfile="Library/thermo/thermo.cpp" bodystart="1352" bodyend="1412"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a929aa6a64ac637437b0a409ffa379aab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -729,7 +729,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="107" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="1577" bodyend="1587"/>
+        <location file="Library/thermo/thermo.h" line="124" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="1595" bodyend="1605"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a7a9db3f1c95f91044b59478cef3c5a14" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -764,7 +764,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="108" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="1589" bodyend="1598"/>
+        <location file="Library/thermo/thermo.h" line="125" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="1607" bodyend="1616"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1ad2a2c4793c91176e05bd41705fe9afd3" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type>std::string</type>
@@ -782,7 +782,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="110" column="29" bodyfile="Library/thermo/thermo.cpp" bodystart="649" bodyend="652"/>
+        <location file="Library/thermo/thermo.h" line="127" column="29" bodyfile="Library/thermo/thermo.cpp" bodystart="649" bodyend="652"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1acd77431d0c19b2367db797381c2378ff" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -800,7 +800,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="113" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="35" bodyend="41"/>
+        <location file="Library/thermo/thermo.h" line="130" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="35" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a7517c9dee29f395abb315bfc75d2ec05" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
@@ -814,7 +814,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="114" column="21" bodyfile="Library/thermo/thermo.cpp" bodystart="42" bodyend="48"/>
+        <location file="Library/thermo/thermo.h" line="131" column="21" bodyfile="Library/thermo/thermo.cpp" bodystart="42" bodyend="48"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a056253dca6d9635e19acc2380f7f682e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50" kindref="member">PhaseRegion</ref></type>
@@ -844,7 +844,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="115" column="29" bodyfile="Library/thermo/thermo.h" bodystart="115" bodyend="115"/>
+        <location file="Library/thermo/thermo.h" line="132" column="29" bodyfile="Library/thermo/thermo.h" bodystart="132" bodyend="132"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1aab0b032c6538401c6f9cfbe4c467d4b8" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::map&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref>, <ref refid="structxThermal_1_1propInfo" kindref="compound">propInfo</ref> &gt; &amp;</type>
@@ -858,7 +858,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="116" column="32" bodyfile="Library/thermo/thermo.cpp" bodystart="646" bodyend="648"/>
+        <location file="Library/thermo/thermo.h" line="133" column="32" bodyfile="Library/thermo/thermo.cpp" bodystart="646" bodyend="648"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1ad4bb785d01a6aac083e1e3c481b1e485" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -909,7 +909,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="117" column="22"/>
+        <location file="Library/thermo/thermo.h" line="134" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a26dd1d5506a4a837b03137fc8084dd7c" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -966,7 +966,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="119" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="637" bodyend="644"/>
+        <location file="Library/thermo/thermo.h" line="136" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="637" bodyend="644"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1ad2d8ab7263231e60593e889815b0c46f" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1009,7 +1009,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="121" column="22"/>
+        <location file="Library/thermo/thermo.h" line="138" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a35bccaf5cb9424b49117a7c288d5c510" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1066,7 +1066,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="122" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="1453" bodyend="1460"/>
+        <location file="Library/thermo/thermo.h" line="139" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="1471" bodyend="1478"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a76b25e7264dfa903b2c77f7ac1cca6d4" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1089,7 +1089,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="123" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="551" bodyend="561"/>
+        <location file="Library/thermo/thermo.h" line="140" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="551" bodyend="561"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a20ff092e4c13c13abb16b58a05b6c73d" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1107,7 +1107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="124" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="563" bodyend="569"/>
+        <location file="Library/thermo/thermo.h" line="141" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="563" bodyend="569"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1aa8d2dbcb90e5c336e3c92554659759ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">LOOKUPTABLE_FOREST::Quadrant</ref>&lt; 2, <ref refid="structLOOKUPTABLE__FOREST_1_1FIELD__DATA" kindref="compound">LOOKUPTABLE_FOREST::FIELD_DATA</ref>&lt; 2 &gt; &gt; *</type>
@@ -1133,7 +1133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="125" column="38" bodyfile="Library/thermo/thermo.cpp" bodystart="668" bodyend="721"/>
+        <location file="Library/thermo/thermo.h" line="142" column="38" bodyfile="Library/thermo/thermo.cpp" bodystart="668" bodyend="721"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a17f4d34888919db43c7f5cfde5800f79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">LOOKUPTABLE_FOREST::Quadrant</ref>&lt; 2, <ref refid="structLOOKUPTABLE__FOREST_1_1FIELD__DATA" kindref="compound">LOOKUPTABLE_FOREST::FIELD_DATA</ref>&lt; 2 &gt; &gt; *</type>
@@ -1168,7 +1168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="126" column="38" bodyfile="Library/thermo/thermo.cpp" bodystart="790" bodyend="870"/>
+        <location file="Library/thermo/thermo.h" line="143" column="38" bodyfile="Library/thermo/thermo.cpp" bodystart="790" bodyend="870"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a26f3394bb36fd9462882e8783b87496c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">LOOKUPTABLE_FOREST::Quadrant</ref>&lt; 3, <ref refid="structLOOKUPTABLE__FOREST_1_1FIELD__DATA" kindref="compound">LOOKUPTABLE_FOREST::FIELD_DATA</ref>&lt; 3 &gt; &gt; *</type>
@@ -1198,7 +1198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="127" column="38" bodyfile="Library/thermo/thermo.cpp" bodystart="873" bodyend="906"/>
+        <location file="Library/thermo/thermo.h" line="144" column="38" bodyfile="Library/thermo/thermo.cpp" bodystart="873" bodyend="906"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a6577db0fac8ac9d1c55933d4d7d270f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">LOOKUPTABLE_FOREST::Quadrant</ref>&lt; 3, <ref refid="structLOOKUPTABLE__FOREST_1_1FIELD__DATA" kindref="compound">LOOKUPTABLE_FOREST::FIELD_DATA</ref>&lt; 3 &gt; &gt; *</type>
@@ -1237,7 +1237,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="128" column="38" bodyfile="Library/thermo/thermo.cpp" bodystart="909" bodyend="952"/>
+        <location file="Library/thermo/thermo.h" line="145" column="38" bodyfile="Library/thermo/thermo.cpp" bodystart="909" bodyend="952"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a6bb528c3c3dfd646e0fb762edbf88fd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">LOOKUPTABLE_FOREST::Quadrant</ref>&lt; 2, <ref refid="structLOOKUPTABLE__FOREST_1_1FIELD__DATA" kindref="compound">LOOKUPTABLE_FOREST::FIELD_DATA</ref>&lt; 2 &gt; &gt; *</type>
@@ -1263,7 +1263,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="129" column="38" bodyfile="Library/thermo/thermo.cpp" bodystart="955" bodyend="973"/>
+        <location file="Library/thermo/thermo.h" line="146" column="38" bodyfile="Library/thermo/thermo.cpp" bodystart="955" bodyend="973"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a415cc702ea606481ebbf8d33ad982709" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structLOOKUPTABLE__FOREST_1_1Quadrant" kindref="compound">LOOKUPTABLE_FOREST::Quadrant</ref>&lt; 3, <ref refid="structLOOKUPTABLE__FOREST_1_1FIELD__DATA" kindref="compound">LOOKUPTABLE_FOREST::FIELD_DATA</ref>&lt; 3 &gt; &gt; *</type>
@@ -1293,7 +1293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="130" column="38" bodyfile="Library/thermo/thermo.cpp" bodystart="976" bodyend="996"/>
+        <location file="Library/thermo/thermo.h" line="147" column="38" bodyfile="Library/thermo/thermo.cpp" bodystart="976" bodyend="996"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1abea9131853ebea3cf40745470e9893d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1316,7 +1316,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="131" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="998" bodyend="1045"/>
+        <location file="Library/thermo/thermo.h" line="148" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="998" bodyend="1045"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1ab10e4e206240690a92ce59c44bcb74f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref> *</type>
@@ -1330,7 +1330,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="132" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="1614" bodyend="1620"/>
+        <location file="Library/thermo/thermo.h" line="149" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="1632" bodyend="1638"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1ae562806cfcaff5aa82512d2858144564" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref> *</type>
@@ -1344,7 +1344,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="133" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="1622" bodyend="1628"/>
+        <location file="Library/thermo/thermo.h" line="150" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="1640" bodyend="1646"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a1fadd87926ebe880d3273ea3b2a930f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
@@ -1358,7 +1358,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="134" column="13" bodyfile="Library/thermo/thermo.h" bodystart="134" bodyend="134"/>
+        <location file="Library/thermo/thermo.h" line="151" column="13" bodyfile="Library/thermo/thermo.h" bodystart="151" bodyend="151"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a5004c02f781d224121fed323d2e7fdb6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref></type>
@@ -1372,7 +1372,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="135" column="13" bodyfile="Library/thermo/thermo.h" bodystart="135" bodyend="135"/>
+        <location file="Library/thermo/thermo.h" line="152" column="13" bodyfile="Library/thermo/thermo.h" bodystart="152" bodyend="152"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a1a54bed7b543424948282e9c8d53d8e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50" kindref="member">PhaseRegion</ref></type>
@@ -1451,7 +1451,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="136" column="21" bodyfile="Library/thermo/thermo.cpp" bodystart="1055" bodyend="1092"/>
+        <location file="Library/thermo/thermo.h" line="153" column="21" bodyfile="Library/thermo/thermo.cpp" bodystart="1055" bodyend="1092"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a872af1d919899a42bb3ce8d973c117b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1485,7 +1485,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="143" column="24" bodyfile="Library/thermo/thermo.h" bodystart="143" bodyend="143"/>
+        <location file="Library/thermo/thermo.h" line="160" column="24" bodyfile="Library/thermo/thermo.h" bodystart="160" bodyend="160"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a1dc4226ef05683a6596d59833ab65d44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1518,7 +1518,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="149" column="24" bodyfile="Library/thermo/thermo.h" bodystart="149" bodyend="149"/>
+        <location file="Library/thermo/thermo.h" line="166" column="24" bodyfile="Library/thermo/thermo.h" bodystart="166" bodyend="166"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a85bd89ebf43267eadc91d8bcbb3ca7e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1574,7 +1574,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="157" column="24" bodyfile="Library/thermo/thermo.h" bodystart="157" bodyend="157"/>
+        <location file="Library/thermo/thermo.h" line="174" column="24" bodyfile="Library/thermo/thermo.h" bodystart="174" bodyend="174"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a50d71178278a67ccad67316f8d9d99d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1630,7 +1630,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="165" column="24" bodyfile="Library/thermo/thermo.h" bodystart="165" bodyend="165"/>
+        <location file="Library/thermo/thermo.h" line="182" column="24" bodyfile="Library/thermo/thermo.h" bodystart="182" bodyend="182"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a5e60254d3b64b561693f0d01aa2e272f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1654,7 +1654,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="166" column="24" bodyfile="Library/thermo/thermo.h" bodystart="166" bodyend="166"/>
+        <location file="Library/thermo/thermo.h" line="183" column="24" bodyfile="Library/thermo/thermo.h" bodystart="183" bodyend="183"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a426c0796ffc4b4810ccb309067433e55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1678,7 +1678,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="167" column="24" bodyfile="Library/thermo/thermo.h" bodystart="167" bodyend="167"/>
+        <location file="Library/thermo/thermo.h" line="184" column="24" bodyfile="Library/thermo/thermo.h" bodystart="184" bodyend="184"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1add580814bcf501ea557a03b7eac042bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1745,7 +1745,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="168" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="80" bodyend="200"/>
+        <location file="Library/thermo/thermo.h" line="185" column="14" bodyfile="Library/thermo/thermo.cpp" bodystart="80" bodyend="200"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a7d21c71bc4fee7d64d08a907a2922fe2" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1768,7 +1768,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="169" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="202" bodyend="220"/>
+        <location file="Library/thermo/thermo.h" line="186" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="202" bodyend="220"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a774e75ede316e2cf1151998b7e716094" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1871,7 +1871,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="171" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="231" bodyend="289"/>
+        <location file="Library/thermo/thermo.h" line="188" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="231" bodyend="289"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a2da135b28df9f19644be7d405bbe9509" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1916,7 +1916,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="173" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="291" bodyend="337"/>
+        <location file="Library/thermo/thermo.h" line="190" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="291" bodyend="337"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a8b93eee1a5d36c6cedaa33dd3f8e93a6" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1953,7 +1953,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="174" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="338" bodyend="377"/>
+        <location file="Library/thermo/thermo.h" line="191" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="338" bodyend="377"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a100ba0ae27d311a3726e53cf4671aee1" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1981,7 +1981,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="175" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="383" bodyend="474"/>
+        <location file="Library/thermo/thermo.h" line="192" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="383" bodyend="474"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1ab803d85ba54f23bd952f2b0dddaf4771" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -2036,7 +2036,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="176" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="1462" bodyend="1575"/>
+        <location file="Library/thermo/thermo.h" line="193" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="1480" bodyend="1593"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1ab445f14e450a7bab32910860f48697d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -2059,7 +2059,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="179" column="22" bodyfile="Library/thermo/thermo.h" bodystart="179" bodyend="189"/>
+        <location file="Library/thermo/thermo.h" line="196" column="22" bodyfile="Library/thermo/thermo.h" bodystart="196" bodyend="206"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1adb79d590bd8c3a980a215c1a9762cbac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -2082,7 +2082,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="190" column="22" bodyfile="Library/thermo/thermo.h" bodystart="190" bodyend="200"/>
+        <location file="Library/thermo/thermo.h" line="207" column="22" bodyfile="Library/thermo/thermo.h" bodystart="207" bodyend="217"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1afef0be88b200e99935b46e535c5754ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -2105,7 +2105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="201" column="22" bodyfile="Library/thermo/thermo.h" bodystart="201" bodyend="210"/>
+        <location file="Library/thermo/thermo.h" line="218" column="22" bodyfile="Library/thermo/thermo.h" bodystart="218" bodyend="227"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a9e116b0051d1d7171a41fc116f6c43ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -2128,7 +2128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="211" column="22" bodyfile="Library/thermo/thermo.h" bodystart="211" bodyend="214"/>
+        <location file="Library/thermo/thermo.h" line="228" column="22" bodyfile="Library/thermo/thermo.h" bodystart="228" bodyend="231"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1ac5f99481c6cd9da1089920870f5884f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -2165,7 +2165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="216" column="33" bodyfile="Library/thermo/thermo.h" bodystart="216" bodyend="234"/>
+        <location file="Library/thermo/thermo.h" line="233" column="33" bodyfile="Library/thermo/thermo.h" bodystart="233" bodyend="251"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1aaedbcb53b296a96b1e65a1247e859c94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -2189,7 +2189,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="235" column="33" bodyfile="Library/thermo/thermo.h" bodystart="235" bodyend="247"/>
+        <location file="Library/thermo/thermo.h" line="252" column="33" bodyfile="Library/thermo/thermo.h" bodystart="252" bodyend="264"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1af3b3b4ad31b34288c94903d19c540c7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -2271,7 +2271,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="257" column="33" bodyfile="Library/thermo/thermo.h" bodystart="257" bodyend="274"/>
+        <location file="Library/thermo/thermo.h" line="274" column="33" bodyfile="Library/thermo/thermo.h" bodystart="274" bodyend="291"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a49daf6499acf6dc965fbe396a4ce4897" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
@@ -2289,7 +2289,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="277" column="33" bodyfile="Library/thermo/thermo.cpp" bodystart="654" bodyend="658"/>
+        <location file="Library/thermo/thermo.h" line="294" column="33" bodyfile="Library/thermo/thermo.cpp" bodystart="654" bodyend="658"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1ac824ca28cf0c5e4884bf692f8e313e1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
@@ -2307,7 +2307,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="278" column="33" bodyfile="Library/thermo/thermo.cpp" bodystart="660" bodyend="665"/>
+        <location file="Library/thermo/thermo.h" line="295" column="33" bodyfile="Library/thermo/thermo.cpp" bodystart="660" bodyend="665"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a89ce494a32e38aafb64abd36fdf67229" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
@@ -2334,7 +2334,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="279" column="33" bodyfile="Library/thermo/thermo.cpp" bodystart="1094" bodyend="1098"/>
+        <location file="Library/thermo/thermo.h" line="296" column="33" bodyfile="Library/thermo/thermo.cpp" bodystart="1094" bodyend="1098"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a889b6fb0deadb20dacd44338a1c4a144" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
@@ -2361,7 +2361,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="280" column="33" bodyfile="Library/thermo/thermo.cpp" bodystart="1099" bodyend="1103"/>
+        <location file="Library/thermo/thermo.h" line="297" column="33" bodyfile="Library/thermo/thermo.cpp" bodystart="1099" bodyend="1103"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1cxThermal_1a4be2a8d169afbe20f14b5ca6c06ab9cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1Head__AMR__LUT" kindref="compound">Head_AMR_LUT</ref></type>
@@ -2394,7 +2394,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="281" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="1148" bodyend="1271"/>
+        <location file="Library/thermo/thermo.h" line="298" column="22" bodyfile="Library/thermo/thermo.cpp" bodystart="1148" bodyend="1271"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -2414,7 +2414,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="81" column="28" bodyfile="Library/thermo/thermo.cpp" bodystart="1600" bodyend="1612"/>
+        <location file="Library/thermo/thermo.h" line="98" column="28" bodyfile="Library/thermo/thermo.cpp" bodystart="1618" bodyend="1630"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -2458,7 +2458,7 @@
         <link refid="classxThermal_1_1cxThermal"/>
       </node>
     </inheritancegraph>
-    <location file="Library/thermo/thermo.h" line="52" column="5" bodyfile="Library/thermo/thermo.h" bodystart="53" bodyend="282"/>
+    <location file="Library/thermo/thermo.h" line="69" column="5" bodyfile="Library/thermo/thermo.h" bodystart="70" bodyend="299"/>
     <listofallmembers>
       <member refid="classxThermal_1_1cxThermal_1a872af1d919899a42bb3ce8d973c117b7" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>Boiling_p</name></member>
       <member refid="classxThermal_1_1cxThermal_1a85bd89ebf43267eadc91d8bcbb3ca7e0" prot="public" virt="virtual"><scope>xThermal::cxThermal</scope><name>Boiling_p</name></member>

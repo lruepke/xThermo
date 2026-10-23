@@ -18,6 +18,9 @@ This inheritance list is sorted roughly, but not completely, alphabetically:
     * **class** [**xThermal::IAPWS\_IF97::cIAPWS\_IF97**](classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97.md) 
     * **class** [**xThermal::NaCl::cNaCl**](classxThermal_1_1NaCl_1_1cNaCl.md) _Class of NaCl EOS._ 
     * **class** [**xThermal::PROST::cIAPS84**](classxThermal_1_1PROST_1_1cIAPS84.md) 
+* **class** [**xThermal::OuterEvaluation**](classxThermal_1_1OuterEvaluation.md) _Reset of a caller's result object at the outermost public evaluation entry (C7)._ 
+* **class** [**xThermal::gsl\_guard::GuardedFunction**](classxThermal_1_1gsl__guard_1_1GuardedFunction.md) 
+* **class** [**xThermal::gsl\_guard::GuardedMultirootFunction**](classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction.md) 
 * **struct** [**LOOKUPTABLE\_FOREST::FIELD\_DATA**](structLOOKUPTABLE__FOREST_1_1FIELD__DATA.md) 
 * **struct** [**LOOKUPTABLE\_FOREST::LeafQuad**](structLOOKUPTABLE__FOREST_1_1LeafQuad.md) 
 * **struct** [**LOOKUPTABLE\_FOREST::NonLeafQuad**](structLOOKUPTABLE__FOREST_1_1NonLeafQuad.md) 
@@ -86,6 +89,9 @@ This inheritance list is sorted roughly, but not completely, alphabetically:
 * **struct** [**xThermal::ThermodynamicPropertiesVector**](structxThermal_1_1ThermodynamicPropertiesVector.md) 
 * **struct** [**xThermal::ThermodynamicProperty**](structxThermal_1_1ThermodynamicProperty.md) _Data struct of a thermodynamic property._ 
 * **struct** [**xThermal::TriMesh**](structxThermal_1_1TriMesh.md) 
+* **struct** [**xThermal::gsl\_guard::MultirootSolverFree**](structxThermal_1_1gsl__guard_1_1MultirootSolverFree.md) 
+* **struct** [**xThermal::gsl\_guard::RootSolverFree**](structxThermal_1_1gsl__guard_1_1RootSolverFree.md) 
+* **struct** [**xThermal::gsl\_guard::VectorFree**](structxThermal_1_1gsl__guard_1_1VectorFree.md) 
 * **struct** [**xThermal::propInfo**](structxThermal_1_1propInfo.md) _Information of a thermodynamic property._ 
 * **struct** [**xThermal::IAPWS\_IF97::cIAPWS\_IF97::Coeff\_Backward\_T\_PH\_Region1**](structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region1.md) 
 * **struct** [**xThermal::IAPWS\_IF97::cIAPWS\_IF97::Coeff\_Backward\_T\_PH\_Region2a**](structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region2a.md) _Numerical values of the coefficients and exponents of the backward equation T ( p, h ) for subregion 2a, Eq. (22). See Table 20 of IF97._ 

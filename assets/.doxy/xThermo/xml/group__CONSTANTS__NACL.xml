@@ -95,7 +95,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><formula id="249">$ \frac{1}{T_{Triple}} $</formula> </para>
+<para><formula id="254">$ \frac{1}{T_{Triple}} $</formula> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -141,7 +141,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Clapeyron slope <formula id="250">$ \frac{dP}{dT} = \frac{1}{a} ~ Pa/K $</formula> of the NaCl melting curve (see Tab. 3 of Driesner2007Part1), which is used in <formula id="213">$ \Delta H_{fus} $</formula> calculation (Eq. 28 of Driesner2007Part2) <simplesect kind="note"><para>Notice the unit! </para>
+<para>Clapeyron slope <formula id="255">$ \frac{dP}{dT} = \frac{1}{a} ~ Pa/K $</formula> of the NaCl melting curve (see Tab. 3 of Driesner2007Part1), which is used in <formula id="218">$ \Delta H_{fus} $</formula> calculation (Eq. 28 of Driesner2007Part2) <simplesect kind="note"><para>Notice the unit! </para>
 </simplesect>
 </para>
         </detaileddescription>

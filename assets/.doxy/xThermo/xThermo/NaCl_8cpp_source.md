@@ -97,6 +97,7 @@ namespace xThermal
 
         void cNaCl::UpdateState_TPX(ThermodynamicProperties& props, const double& T, const double& p, const double& X)
         {
+            OuterEvaluation outer(props);  // C7: reset at the outermost entry
             props.fluidName = name();
             props.T = T;
             props.p = p;

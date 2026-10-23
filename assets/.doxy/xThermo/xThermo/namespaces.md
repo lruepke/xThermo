@@ -23,4 +23,5 @@ Here is a list of all namespaces with brief descriptions:
     * **namespace** [**IAPWS\_IF97**](namespacexThermal_1_1IAPWS__IF97.md)     
     * **namespace** [**NaCl**](namespacexThermal_1_1NaCl.md)     
     * **namespace** [**PROST**](namespacexThermal_1_1PROST.md)     
+    * **namespace** [**gsl\_guard**](namespacexThermal_1_1gsl__guard.md)     
 

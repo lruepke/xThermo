@@ -9,8 +9,8 @@ Here is a list of all files with brief descriptions:
         * **file** [**LookUpTableForest.h**](LookUpTableForest_8h.md)     
     * **dir** [**H2O**](dir_22b94ec4f3699d3ab17d67318090f0eb.md)     
         * **file** [**H2O.cxx**](H2O_8cxx.md)     
-        * **file** [**IAPS84.cpp**](IAPS84_8cpp.md) _Implementation of IAPS84._     
-        * **file** [**IAPS84.h**](IAPS84_8h.md) _EOS of H2O in formula of IAPS84 which is based on prost._     
+        * **file** [**IAPS84.cpp**](IAPS84_8cpp.md) _Implementation of the xThermo backend "IAPS84", a C++ wrapper around PROST 4.1 (see_ [_**IAPS84.h**_](IAPS84_8h.md) _)._    
+        * **file** [**IAPS84.h**](IAPS84_8h.md) _xThermo backend "IAPS84": a C++ wrapper around PROST 4.1, which implements the IAPS-84 equation of state for water (Haar, Gallagher & Kell 1984; prost)._     
         * **file** [**IAPWS-IF97.cpp**](IAPWS-IF97_8cpp.md)     
         * **file** [**IAPWS-IF97.h**](IAPWS-IF97_8h.md) _Implementation of some parts of IAPWS-IF97 EOS._     
         * **file** [**IAPWS95.cpp**](IAPWS95_8cpp.md) _Implementation of IAPWS95 EOS._     
@@ -90,6 +90,7 @@ Here is a list of all files with brief descriptions:
         * **file** [**Exception.h**](thermo_2Exception_8h.md)     
         * **file** [**MultiProgressBar.cpp**](MultiProgressBar_8cpp.md) _Implementation of progress bar._     
         * **file** [**MultiProgressBar.h**](MultiProgressBar_8h.md) _Definition of progress bar._     
+        * **file** [**gsl\_guard.hpp**](gsl__guard_8hpp.md) _Internal (not installed): RAII ownership and exception-safe callbacks for the GSL solvers (C1, LIB-02/18, LIB-27)._     
         * **file** [**stdfunc.cpp**](stdfunc_8cpp.md)     
         * **file** [**thermo.cpp**](thermo_8cpp.md)     
         * **file** [**thermo.h**](thermo_8h.md) _Head file of_ [_**xThermal**_](namespacexThermal.md) _._    

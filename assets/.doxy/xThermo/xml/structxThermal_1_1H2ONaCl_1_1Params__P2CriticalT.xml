@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="318" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="318" bodyend="-1"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="322" column="22" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="322" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1H2ONaCl_1_1Params__P2CriticalT_1a782d2ffc7469eb54516a45ecbc232394" prot="public" static="no" mutable="no">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="319" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="319" bodyend="-1"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="323" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="323" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -59,7 +59,7 @@
         <link refid="classxThermal_1_1cxThermal"/>
       </node>
     </collaborationgraph>
-    <location file="Library/H2ONaCl/H2ONaCl.h" line="316" column="9" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="317" bodyend="320"/>
+    <location file="Library/H2ONaCl/H2ONaCl.h" line="320" column="9" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="321" bodyend="324"/>
     <listofallmembers>
       <member refid="structxThermal_1_1H2ONaCl_1_1Params__P2CriticalT_1a782d2ffc7469eb54516a45ecbc232394" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Params_P2CriticalT</scope><name>P</name></member>
       <member refid="structxThermal_1_1H2ONaCl_1_1Params__P2CriticalT_1a1df78023169d43612896ed085dd74163" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::Params_P2CriticalT</scope><name>sw</name></member>

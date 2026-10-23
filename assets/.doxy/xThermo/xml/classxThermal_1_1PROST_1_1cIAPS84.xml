@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="26" column="30" bodyfile="Library/H2O/IAPS84.h" bodystart="26" bodyend="-1"/>
+        <location file="Library/H2O/IAPS84.h" line="34" column="30" bodyfile="Library/H2O/IAPS84.h" bodystart="34" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="28" column="13" bodyfile="Library/H2O/IAPS84.cpp" bodystart="39" bodyend="42"/>
+        <location file="Library/H2O/IAPS84.h" line="36" column="13" bodyfile="Library/H2O/IAPS84.cpp" bodystart="187" bodyend="190"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1aa8e291c24fddcf8975e40cfdbffdc717" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -50,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="29" column="13" bodyfile="Library/H2O/IAPS84.cpp" bodystart="44" bodyend="47"/>
+        <location file="Library/H2O/IAPS84.h" line="37" column="13" bodyfile="Library/H2O/IAPS84.cpp" bodystart="192" bodyend="195"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a0037a196dac6dbd06202d65b45e250cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="30" column="13" bodyfile="Library/H2O/IAPS84.cpp" bodystart="48" bodyend="50"/>
+        <location file="Library/H2O/IAPS84.h" line="38" column="13" bodyfile="Library/H2O/IAPS84.cpp" bodystart="196" bodyend="198"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a7de03e3e6c82688e8397d2c3f100b782" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>std::string</type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="35" column="25" bodyfile="Library/H2O/IAPS84.h" bodystart="35" bodyend="35"/>
+        <location file="Library/H2O/IAPS84.h" line="43" column="25" bodyfile="Library/H2O/IAPS84.h" bodystart="43" bodyend="43"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a982d52e05cb22939233dd16416a70dfd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -96,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="37" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="37" bodyend="37"/>
+        <location file="Library/H2O/IAPS84.h" line="45" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="45" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1abc22849a2f74c8a8fcc65081c2e1eaca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -112,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="38" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="38" bodyend="38"/>
+        <location file="Library/H2O/IAPS84.h" line="46" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="46" bodyend="46"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a9e7bc9900d2e38711a5138b777bf5015" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -128,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="39" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="39" bodyend="39"/>
+        <location file="Library/H2O/IAPS84.h" line="47" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="47" bodyend="47"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1ad0f56406061e260c4c6c208855cb12fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -144,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="40" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="40" bodyend="40"/>
+        <location file="Library/H2O/IAPS84.h" line="48" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="48" bodyend="48"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1ac05ee3450794da93ffe147e070283f8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -160,7 +160,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="41" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="41" bodyend="41"/>
+        <location file="Library/H2O/IAPS84.h" line="49" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="49" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a04c49973d63b665c2401a1dccf56cde4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -176,7 +176,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="42" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="42" bodyend="42"/>
+        <location file="Library/H2O/IAPS84.h" line="50" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="50" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a9cdcb6c459af4cba718e958f828240c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -192,7 +192,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="43" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="43" bodyend="43"/>
+        <location file="Library/H2O/IAPS84.h" line="51" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="51" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a05c36584081484da7053cea652c310ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -208,7 +208,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="44" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="44" bodyend="44"/>
+        <location file="Library/H2O/IAPS84.h" line="52" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="52" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a83462f992a5eea79e59b2c2ea14e17b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -224,7 +224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="45" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="45" bodyend="45"/>
+        <location file="Library/H2O/IAPS84.h" line="53" column="20" bodyfile="Library/H2O/IAPS84.h" bodystart="53" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1ae590eb6841e7d929ff02aba16b0bcfe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50" kindref="member">PhaseRegion</ref></type>
@@ -253,7 +253,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="48" column="25" bodyfile="Library/H2O/IAPS84.cpp" bodystart="363" bodyend="375"/>
+        <location file="Library/H2O/IAPS84.h" line="56" column="25" bodyfile="Library/H2O/IAPS84.cpp" bodystart="559" bodyend="571"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a8150e13aee5226b71f8bc057132e0428" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -325,7 +325,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="49" column="18" bodyfile="Library/H2O/IAPS84.cpp" bodystart="63" bodyend="140"/>
+        <location file="Library/H2O/IAPS84.h" line="57" column="18" bodyfile="Library/H2O/IAPS84.cpp" bodystart="211" bodyend="299"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1af2f80c5cedc6f5d61bb7c7f1d9d90ffa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -357,7 +357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="50" column="18" bodyfile="Library/H2O/IAPS84.cpp" bodystart="142" bodyend="225"/>
+        <location file="Library/H2O/IAPS84.h" line="58" column="18" bodyfile="Library/H2O/IAPS84.cpp" bodystart="301" bodyend="401"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a34c030b29267a1e708ddbfe98239cdaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
@@ -419,7 +419,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="52" column="37" bodyfile="Library/H2O/IAPS84.cpp" bodystart="398" bodyend="402"/>
+        <location file="Library/H2O/IAPS84.h" line="60" column="37" bodyfile="Library/H2O/IAPS84.cpp" bodystart="594" bodyend="598"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a3dd7ae80bcd9225743f9f4c369c7ced0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -450,7 +450,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="53" column="20" bodyfile="Library/H2O/IAPS84.cpp" bodystart="227" bodyend="237"/>
+        <location file="Library/H2O/IAPS84.h" line="61" column="20" bodyfile="Library/H2O/IAPS84.cpp" bodystart="403" bodyend="413"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a24331d561462a46ddcacf60f30412ba6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -481,7 +481,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="54" column="20" bodyfile="Library/H2O/IAPS84.cpp" bodystart="239" bodyend="250"/>
+        <location file="Library/H2O/IAPS84.h" line="62" column="20" bodyfile="Library/H2O/IAPS84.cpp" bodystart="415" bodyend="426"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1aa516db1c3479558c0e7820e1b28237e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -536,7 +536,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="55" column="20" bodyfile="Library/H2O/IAPS84.cpp" bodystart="265" bodyend="276"/>
+        <location file="Library/H2O/IAPS84.h" line="63" column="20" bodyfile="Library/H2O/IAPS84.cpp" bodystart="441" bodyend="452"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a25152e5d790881c545d7bf55a2b6378f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -591,7 +591,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="56" column="20" bodyfile="Library/H2O/IAPS84.cpp" bodystart="252" bodyend="263"/>
+        <location file="Library/H2O/IAPS84.h" line="64" column="20" bodyfile="Library/H2O/IAPS84.cpp" bodystart="428" bodyend="439"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a7750a52e70977c85ebf2794da5eea7b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -614,7 +614,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="57" column="20" bodyfile="Library/H2O/IAPS84.cpp" bodystart="323" bodyend="341"/>
+        <location file="Library/H2O/IAPS84.h" line="65" column="20" bodyfile="Library/H2O/IAPS84.cpp" bodystart="499" bodyend="527"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a50380fa2d4de4f34adebf78e31ac3773" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -637,7 +637,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="58" column="20" bodyfile="Library/H2O/IAPS84.cpp" bodystart="343" bodyend="361"/>
+        <location file="Library/H2O/IAPS84.h" line="66" column="20" bodyfile="Library/H2O/IAPS84.cpp" bodystart="529" bodyend="557"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -653,7 +653,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="32" column="18" bodyfile="Library/H2O/IAPS84.cpp" bodystart="27" bodyend="38"/>
+        <location file="Library/H2O/IAPS84.h" line="40" column="18" bodyfile="Library/H2O/IAPS84.cpp" bodystart="175" bodyend="186"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a796a6ec610ee7e3788c615da5ce8c7c0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50" kindref="member">xThermal::PhaseRegion</ref></type>
@@ -683,7 +683,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="33" column="35" bodyfile="Library/H2O/IAPS84.cpp" bodystart="283" bodyend="321"/>
+        <location file="Library/H2O/IAPS84.h" line="41" column="35" bodyfile="Library/H2O/IAPS84.cpp" bodystart="459" bodyend="497"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -714,7 +714,7 @@
         <link refid="classxThermal_1_1cxThermal"/>
       </node>
     </collaborationgraph>
-    <location file="Library/H2O/IAPS84.h" line="23" column="9" bodyfile="Library/H2O/IAPS84.h" bodystart="24" bodyend="59"/>
+    <location file="Library/H2O/IAPS84.h" line="31" column="9" bodyfile="Library/H2O/IAPS84.h" bodystart="32" bodyend="67"/>
     <listofallmembers>
       <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a3dd7ae80bcd9225743f9f4c369c7ced0" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>Boiling_p</name></member>
       <member refid="classxThermal_1_1PROST_1_1cIAPS84_1aa516db1c3479558c0e7820e1b28237e4" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>Boiling_p</name></member>

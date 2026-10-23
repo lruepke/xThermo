@@ -450,7 +450,7 @@
 <para>This test example comes from GSL release 2.7 chapter 38.8. </para>
     </briefdescription>
     <detaileddescription>
-<para><simplesect kind="author"><para>Zhikui Guo (<ulink url="mailto:zguo@geomar.de">zguo@geomar.de</ulink>)  <formula id="254">\begin{equation}
+<para><simplesect kind="author"><para>Zhikui Guo (<ulink url="mailto:zguo@geomar.de">zguo@geomar.de</ulink>)  <formula id="259">\begin{equation}
 \begin{matrix}
 f_1(x,y) &amp; =  &amp; a(1-x) \\
 f_2(x,y) &amp; = &amp; b(y-x^2)

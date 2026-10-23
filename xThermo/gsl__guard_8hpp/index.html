@@ -17,15 +17,15 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Bug - xThermo</title>
+        <title>File gsl_guard.hpp - xThermo</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#member-xthermalh2onaclch2onaclrho_phase-const-double-t-const-double-p-const-double-x-double-rho-double-drhodp-double-drhodt-phasetype-phase" class="md-skip">
+        <a href="#file-gsl_guardhpp" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Bug
+              File gsl_guard.hpp
             
           </span>
         </div>
@@ -1036,6 +1036,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1044,10 +1046,32 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#member-xthermalh2onaclch2onaclrho_phase-const-double-t-const-double-p-const-double-x-double-rho-double-drhodp-double-drhodt-phasetype-phase" class="md-nav__link">
+  <a href="#namespaces" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Member xThermal::H2ONaCl::cH2ONaCl::Rho_phase (const double &amp;T, const double &amp;P, const double &amp;X, double &amp;rho, double &amp;dRhodP, double &amp;dRhodT, PhaseType phase)
+        Namespaces
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detailed-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detailed Description
       
     </span>
   </a>
@@ -1074,11 +1098,79 @@
   
 
 
-  <h1>Bug</h1>
-
-<p>Bug List</p>
-<h4 id="member-xthermalh2onaclch2onaclrho_phase-const-double-t-const-double-p-const-double-x-double-rho-double-drhodp-double-drhodt-phasetype-phase">Member <a href="../classxThermal_1_1H2ONaCl_1_1cH2ONaCl/#function-rho_phase-13"><strong>xThermal::H2ONaCl::cH2ONaCl::Rho_phase</strong></a>  (const double &amp;T, const double &amp;P, const double &amp;X, double &amp;rho, double &amp;dRhodP, double &amp;dRhodT, PhaseType phase)</h4>
-<p>T=273.16, P=20E5, X=0.1, Tstar = n1 + n2*T_C + D will be negative.</p>
+<h1 id="file-gsl_guardhpp">File gsl_guard.hpp</h1>
+<p><a href="../files/"><strong>FileList</strong></a> <strong>&gt;</strong> <a href="../dir_5ad7f572bbca03234e8e621e192fc099/"><strong>Library</strong></a> <strong>&gt;</strong> <a href="../dir_d760ccf1b5c74bc66b0c51c2e0ac61aa/"><strong>thermo</strong></a> <strong>&gt;</strong> <a href="./"><strong>gsl_guard.hpp</strong></a></p>
+<p><a href="../gsl__guard_8hpp_source/">Go to the source code of this file</a></p>
+<p><em>Internal (not installed): RAII ownership and exception-safe callbacks for the GSL solvers (C1, LIB-02/18, LIB-27).</em> <a href="#detailed-description">More...</a></p>
+<ul>
+<li><code>#include &lt;cmath&gt;</code></li>
+<li><code>#include &lt;cstdio&gt;</code></li>
+<li><code>#include &lt;exception&gt;</code></li>
+<li><code>#include &lt;memory&gt;</code></li>
+<li><code>#include &lt;string&gt;</code></li>
+<li><code>#include &lt;gsl/gsl_errno.h&gt;</code></li>
+<li><code>#include &lt;gsl/gsl_multiroots.h&gt;</code></li>
+<li><code>#include &lt;gsl/gsl_roots.h&gt;</code></li>
+<li><code>#include &lt;gsl/gsl_vector.h&gt;</code></li>
+<li><code>#include "Exception.h"</code></li>
+</ul>
+<h2 id="namespaces">Namespaces</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">namespace</td>
+<td style="text-align: left;"><a href="../namespacexThermal/"><strong>xThermal</strong></a> <br><em>Namespace of</em> <a href="../namespacexThermal/"><em><strong>xThermal</strong></em></a> <em>library.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">namespace</td>
+<td style="text-align: left;"><a href="../namespacexThermal_1_1gsl__guard/"><strong>gsl_guard</strong></a> <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="classes">Classes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">class</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1gsl__guard_1_1GuardedFunction/"><strong>GuardedFunction</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">class</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction/"><strong>GuardedMultirootFunction</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structxThermal_1_1gsl__guard_1_1MultirootSolverFree/"><strong>MultirootSolverFree</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structxThermal_1_1gsl__guard_1_1RootSolverFree/"><strong>RootSolverFree</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structxThermal_1_1gsl__guard_1_1VectorFree/"><strong>VectorFree</strong></a> <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="detailed-description">Detailed Description</h2>
+<p>GSL's process-global error handler is never read or written. Instead, the conditions under which GSL would call it (and, with its default handler, abort the host process) are prevented here:
+* Brent bracket: lower &gt; upper (or NaN), non-finite endpoint values and endpoints that do not straddle zero are detected before gsl_root_fsolver_set, with exactly GSL's criteria, and reported as SolutionError;
+* a non-finite function value, or a C++ exception, inside a callback is recorded; GSL receives a finite placeholder and the caller checks the record after every set/iterate and throws before it reads any solver result. No C++ exception crosses a GSL frame. All state belongs to one solve: no static or global mutable state.</p>
+<p>Valid results are unchanged: the bracket check evaluates f(lower), f(upper) in GSL's order, and GSL's own evaluation of the same endpoints in gsl_root_fsolver_set is served from that result, so the sequence of function evaluations is identical to the unguarded code. Hybrid (multiroot) solvers keep their non-finite and non-convergence behaviour; only callback exceptions are contained there. Not preventable without a handler: GSL's allocation failures (GSL_ENOMEM) in *_alloc. </p>
+<hr />
+<p>The documentation for this class was generated from the following file <code>Library/thermo/gsl_guard.hpp</code></p>
 
 
 
@@ -1131,7 +1223,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

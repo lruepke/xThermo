@@ -25,6 +25,7 @@
 | file | [**Exception.h**](thermo_2Exception_8h.md) <br> |
 | file | [**MultiProgressBar.cpp**](MultiProgressBar_8cpp.md) <br>_Implementation of progress bar._  |
 | file | [**MultiProgressBar.h**](MultiProgressBar_8h.md) <br>_Definition of progress bar._  |
+| file | [**gsl\_guard.hpp**](gsl__guard_8hpp.md) <br>_Internal (not installed): RAII ownership and exception-safe callbacks for the GSL solvers (C1, LIB-02/18, LIB-27)._  |
 | file | [**stdfunc.cpp**](stdfunc_8cpp.md) <br> |
 | file | [**thermo.cpp**](thermo_8cpp.md) <br> |
 | file | [**thermo.h**](thermo_8h.md) <br>_Head file of_ [_**xThermal**_](namespacexThermal.md) _._ |

@@ -11,6 +11,7 @@
 _Implementation of IAPWS95 EOS._ [More...](#detailed-description)
 
 * `#include "IAPWS95.h"`
+* `#include "gsl_guard.hpp"`
 * `#include <gsl/gsl_vector.h>`
 * `#include <gsl/gsl_multiroots.h>`
 * `#include <gsl/gsl_errno.h>`

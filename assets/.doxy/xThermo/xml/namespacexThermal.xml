@@ -9,6 +9,7 @@
     <innerclass refid="structxThermal_1_1Head__AMR__LUT" prot="public">xThermal::Head_AMR_LUT</innerclass>
     <innerclass refid="structxThermal_1_1Line" prot="public">xThermal::Line</innerclass>
     <innerclass refid="structxThermal_1_1Line__slice" prot="public">xThermal::Line_slice</innerclass>
+    <innerclass refid="classxThermal_1_1OuterEvaluation" prot="public">xThermal::OuterEvaluation</innerclass>
     <innerclass refid="structxThermal_1_1PhaseBoundaries" prot="public">xThermal::PhaseBoundaries</innerclass>
     <innerclass refid="structxThermal_1_1PhaseRegion__Slice" prot="public">xThermal::PhaseRegion_Slice</innerclass>
     <innerclass refid="structxThermal_1_1PhysicalDimension" prot="public">xThermal::PhysicalDimension</innerclass>
@@ -25,6 +26,7 @@
     <innerclass refid="classxThermal_1_1ValueErrorSpec" prot="public">xThermal::ValueErrorSpec</innerclass>
     <innerclass refid="classxThermal_1_1xThermalBaseError" prot="public">xThermal::xThermalBaseError</innerclass>
     <innerclass refid="classxThermal_1_1xThermalError" prot="public">xThermal::xThermalError</innerclass>
+    <innernamespace refid="namespacexThermal_1_1gsl__guard">xThermal::gsl_guard</innernamespace>
     <innernamespace refid="namespacexThermal_1_1H2ONaCl">xThermal::H2ONaCl</innernamespace>
     <innernamespace refid="namespacexThermal_1_1IAPWS95">xThermal::IAPWS95</innernamespace>
     <innernamespace refid="namespacexThermal_1_1IAPWS__IF97">xThermal::IAPWS_IF97</innernamespace>
@@ -40,7 +42,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
-<para>Solve <formula id="358">$ p_{sat} $</formula> </para>
+<para>Solve <formula id="363">$ p_{sat} $</formula> </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="namespacexThermal_1a0685604125210eaa088959dce9c93b25a4fde50f7ee7ce5b0c5a9c3c3fc4d0c14" prot="public">
@@ -641,7 +643,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Specific gass constant: <formula id="359">$ J/kg/K $</formula> </para>
+<para>Specific gass constant: <formula id="364">$ J/kg/K $</formula> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -735,7 +737,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.cpp" line="1106" column="10" bodyfile="Library/thermo/thermo.cpp" bodystart="1106" bodyend="1142" declfile="Library/thermo/thermo.h" declline="285" declcolumn="10"/>
+        <location file="Library/thermo/thermo.cpp" line="1106" column="10" bodyfile="Library/thermo/thermo.cpp" bodystart="1106" bodyend="1142" declfile="Library/thermo/thermo.h" declline="302" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacexThermal_1aab774150d676d93511cab63dde0ea981" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref> &amp;</type>
+        <definition>static int &amp; xThermal::evaluation_depth</definition>
+        <argsstring>()</argsstring>
+        <name>evaluation_depth</name>
+        <qualifiedname>xThermal::evaluation_depth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.cpp" line="1274" column="16" bodyfile="Library/thermo/thermo.cpp" bodystart="1274" bodyend="1278"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -743,6 +759,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Library/H2O/IAPS84.cpp" line="23" column="1"/>
+    <location file="Library/H2O/IAPS84.cpp" line="28" column="1"/>
   </compounddef>
 </doxygen>
