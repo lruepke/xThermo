@@ -1,0 +1,66 @@
+.. define short name variables
+
+.. _OpenFOAM: https://openfoam.org
+
+.. _CMake: https://cmake.org
+
+.. _Qt: https://www.qt.io
+
+.. _VTK: https://vtk.org
+
+.. _Visual Studio 2017 Community: https://visualstudio.microsoft.com/vs/older-downloads/
+
+.. _download page of macOS installer of swEOS: https://www.sweos.info/mac/
+
+.. _download page of Windows installer of swEOS: https://www.sweos.info/windows/
+
+.. _download page of Linux installer of swEOS: https://www.sweos.info/linux/
+
+.. _P_X_Critical: ../../../../../../doxygen/html/classH2ONaCl_1_1cH2ONaCl.html#a934dc3bd8b6a41f8968fee3fb539044d
+
+.. _TSat_P: https://iapws.readthedocs.io/en/latest/iapws.iapws97.html#iapws.iapws97._TSat_P
+
+.. _Electronic Annex EA-2: https://www.sciencedirect.com/science/article/abs/pii/S0016703707002955?via%3Dihub
+
+.. _Electronic Annex EA-1: https://www.sciencedirect.com/science/article/abs/pii/S0016703707002955?via%3Dihub
+
+.. _Electronic Annex EA-3: https://www.sciencedirect.com/science/article/abs/pii/S0016703707002955?via%3Dihub
+
+.. _Electronic Annex EA-4: https://www.sciencedirect.com/science/article/abs/pii/S0016703707002955?via%3Dihub
+
+.. _Electronic Annex EA-5: https://www.sciencedirect.com/science/article/abs/pii/S0016703707002955?via%3Dihub
+
+.. _xThermal: https://www.sweos.info
+
+.. |TSat_P| replace:: `TSat_P`_
+
+.. |P_X_Critical| replace:: `P_X_Critical`_
+
+.. |vs2017| replace:: `Visual Studio 2017 Community`_
+
+.. |ssd| replace:: :math:`^{\circ}\text{C}`
+
+.. |foam| replace:: OpenFOAM
+
+.. |htf| replace:: HydrothermalFoam
+
+.. |app_mac_download| replace:: `download page of macOS installer of swEOS`_
+
+.. |app_win_download| replace:: `download page of Windows installer of swEOS`_
+
+.. |app_linux_download| replace:: `download page of Linux installer of swEOS`_
+
+.. |xThermal| replace:: xThermal_
+
+.. |mmc1| replace:: `Electronic Annex EA-1`_
+
+.. |mmc2| replace:: `Electronic Annex EA-2`_
+
+.. |mmc3| replace:: `Electronic Annex EA-3`_
+
+.. |mmc4| replace:: `Electronic Annex EA-4`_
+
+.. |mmc5| replace:: `Electronic Annex EA-5`_
+
+
+

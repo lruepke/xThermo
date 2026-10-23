@@ -1,0 +1,6 @@
+[submodule "publication/eos_lut"]
+	path = publication/eos_lut
+	url = git@gitlab.com:publications_gzk/eos_lut.git
+[submodule "ThirdParties/coolprop"]
+	path = ThirdParties/coolprop
+	url = https://github.com/coolprop/coolprop

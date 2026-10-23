@@ -1,0 +1,65 @@
+site_name: xThermo
+site_description: H₂O–NaCl equation of state — C++ library with Python bindings
+repo_url: https://github.com/lruepke/xThermo
+repo_name: lruepke/xThermo
+
+extra_css:
+  - stylesheets/extra.css
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - scheme: default
+      primary: teal
+      accent: cyan
+
+plugins:
+  - search
+  - mkdoxy:
+      projects:
+        xThermo:
+          src-dirs: Library/
+          full-doc: true
+          doxygen-cfg:
+            FILE_PATTERNS: "*.h"
+            RECURSIVE: "YES"
+            EXTRACT_ALL: "YES"
+            GENERATE_XML: "YES"
+            XML_OUTPUT: "xml"
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Python API:
+    - Overview: python/index.md
+    - T-p-X calculation: python/tpx.md
+    - H-p-X flash: python/hpx.md
+    - Phase boundaries: python/phase_boundaries.md
+    - Saturation (H₂O): python/saturation.md
+  - Command-line tool: cli.md
+  - C++ API:
+    - Overview: cpp/index.md
+    - T-p-X calculation: cpp/tpx.md
+    - Phase region: cpp/phase_region.md
+    - Phase boundaries: cpp/phase_boundaries.md
+  - C++ Reference:
+    - Classes: xThermo/annotated.md
+    - Files: xThermo/files.md
+  - About & License: about.md
+  - Legal notice: legal.md
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables

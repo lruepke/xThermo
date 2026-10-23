@@ -1,0 +1,405 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0072)http://www.tt.tu-harburg.de/mitarbeiter/Ehemalige/engel/PROST/PROST4.TXT -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.2900.3354" name=GENERATOR></HEAD>
+<BODY><PRE>  ***************************
+  *                         *
+  *    PROST Version 4.1    *
+  *                         *
+  ***************************
+
+  PROST is a program for the calculation of the properties of water 
+  and steam and their first and second derivatives in SI-units. It
+  is written in ANSI C an can be used with any C compiler.
+
+  by Olaf Bauer &lt;o.bauer@tu-harburg.de&gt;
+  January 1998
+
+  Some changes in the implementation by Ole Engel &lt;engel@tu-harburg.de&gt;
+  September 1998
+
+  The major work on this programm has been done at
+
+      Technische Universitaet Hamburg-Harburg
+      Arbeitsbereich 6-08
+      Technische Thermodynamik
+      Denickestrasse 15
+      D-21073 Hamburg
+      Germany
+
+  The latest version is available at http://www.en.tu-harburg.de/PROST.
+
+  The implementation of the symbolic derivatives for dynamic flow models
+  using either pressure and enthalpy or pressure and entropy as state
+  variables was done by suggestion of and payment through the department
+  of solar thermal energy of the DLR in Cologne. Many thanks to Robert
+  Pitz-Paal, Robert.Pitz-Paal@dlr.de
+
+  This programm is under GPL copyright (GNU LIBRARY GENERAL PUBLIC LICENSE),
+  see file COPYING.LIB-2.0. 
+
+  $Id: PROST4.TXT,v 1.23 1998/12/02 23:45:05 engel Exp $
+
+
+------------------------------------------------------------------------------
+  PROST files:
+------------------------------------------------------------------------------
+
+  PROST4.TXT                  this file
+  decl.c, decl.h              declarations
+  iaps.c, iaps.h              main part (iaps-84 formulation)
+  more.c, more.h              additional code
+  meta.c                      meta-stable output
+  steam.c                     memory allocation
+  steam4.h                    header for all external functions
+  steam4s.h                   header file for SMILE
+  ptest.c                     test file
+  ptest.out                   expected output from the test file
+
+
+------------------------------------------------------------------------------
+  Reference:
+------------------------------------------------------------------------------
+
+  Properties of water and steam according to the fundamental equation
+  for the free energy f(t,d) by
+  L. Haar, J. Gallagher, National Bureau of Standards (NBS), Washington D. C.
+  and G. S. Kell, National Research Council of Canada (NRC).
+
+  The equation was accepted by the International Association for the
+  Properties of Water and Steam (IAPWS, formerly IAPS) as
+  "IAPS Formulation 1984 for the Thermodynamic Properties of Ordinary
+  Water Substance for Scientific and General Use".
+
+  The equation and derived data were published by Haar, Gallagher &amp; Kell
+  as "NBS/NRC Steam Tables", Hemisphere Publishing Corporation, 1984
+  ("NBS/NRC Wasserdampftafeln", Springer Verlag, 1988)
+
+
+------------------------------------------------------------------------------
+  Bounds of validity:
+------------------------------------------------------------------------------
+
+  The fundamental equation is valid within fluid region of water and
+
+      260 K &lt; T &lt; 2500 K
+  0 &lt; PMIN  &lt; p &lt; 3000 MPa
+
+  PMIN is defined as an external parameter and may be changed.
+  Validity region is restricted by ice-area, specified by
+  sublimation pressure and melting pressure. Equations for these
+  are included in functions psublm(), pice1() and pice().
+
+
+------------------------------------------------------------------------------
+  New Features of PROST4:
+------------------------------------------------------------------------------
+
+   - The library has been renamed to libsteam4.a, the header file
+     is steam4.h or steam4s.h for SMILE. 
+
+   - The Variables "indep1", "indep2" and "deriv" determines the
+     extend of computation, argument "phase" announces region 
+     (ONE/TWO-phase).
+
+   - The former used string 'char *indep' in was a potential reason
+     for run time errors like 'segmentation faults' or buffer
+     overflows. It has been replaced through simple variables.
+
+   - Some parameters in function calls are simplified (less pointer
+     needed).
+
+   - The memory allocation and freeing routines newProp() and
+     freeProp() have been update and are now part of the library.
+     dumpProp() can be used to dump computed values.
+
+   - All external used functions do a NULL check for pointers to
+     avoid 'segmentation faults'.
+
+   - All functions are now reentrance save.
+
+   - The source code is now (mostly) pure ANSI C.
+
+   - The example file ptest.c is included.
+
+------------------------------------------------------------------------------
+  New Features of PROST3:
+------------------------------------------------------------------------------
+
+   - Output structure Prop *prop used instead of vector prop[]
+     (dynamically allocated)
+
+   - Computation of third derivatives of the fundamental equation
+     to form second derivatives of properties (not during iterations)
+
+   - Steam quota x and its derivatives included,
+     speed of sound extracted as seperate function speed()
+
+   - No input restrictions in system (p, h)
+     (invalid points will be extrapolated from bounds of validity)
+
+   - File extra.c replaced by meta.c, function meta_td added,
+     functions water2_ renamed as meta_, functions water3_, water4_ removed
+
+
+------------------------------------------------------------------------------
+  Interface
+------------------------------------------------------------------------------
+
+  saturation
+  -----------
+
+  saturation properties can be calculated via
+
+  sat_t(double t, Prop *pliq, Prop *pvap)
+  sat_p(double p, Prop *pliq, Prop *pvap)
+
+  with:  t      Saturation temperature
+	 p      Saturation pressure
+	 *pliq   Output structure for liquid properties (see below)
+	 *pvap   Output structure for vapour properties (see below)
+
+  State of saturation is defined as coexistence of liquid and vapour
+  water with same temperature, pressure and free enthalpy.
+  The two points of the fundamental equation that fulfill these
+  conditions will be found in an iterative process, using internal
+  starting values and tolerances, which, for the sake of stability
+  and consistence, should not be changed.
+
+  Functions for given steam quota x plus given t or d are included in more.c
+
+
+  entire fluid state
+  ------------------
+
+  PROST contains external functions for certain combinations of two
+  input parameters a and b with a, b = {t, p, h, u, s, d, x}, a&lt;&gt;b.
+
+  water_ab(double a, double b, double t, double d
+	   double da, double db, Prop *prop)
+
+  with:   a, b     =   given properties
+	  t, d     =   approximations for t(a, b) and d(a, b)
+	  da, db   =   maximum relative tolerances for a and b
+	  *prop    =   output structure (see below)
+
+  In case a and/or b agree(s) with t and/or d,
+  approximations and tolerances are not needed.
+
+  Approximations serve as starting values for a Newton iteration to
+  invert the fundamental equation.
+  The Iteration will be stopped as soon as da and db are fulfilled
+  or IMAX is reached (then an error will be announced).
+  In the two-phase area internal approximations and tolerances are used
+  to find saturation properties.
+
+  The following functions are available in iaps.c:
+
+  water_td(t, d, prop)
+  water_tp(t, p, d, dp, prop)
+  water_hd(h, d, t, dh, prop)
+  water_ph(p, h, t, d, dp, dh, prop)
+  water_ps(p, h, t, d, dp, dh, prop)
+
+  They contain an input control and a supervision of iterations
+  to avoid multiple solutions or abnormal program terminations.
+
+  more.c contains some other combinations without these features.
+
+  meta.c contains versions of the above (except for water_tp), named meta_,
+  that require prop-&gt;phase as an input parameter (see next section).
+
+  All external functions (sat, water, meta)
+  require prop-&gt;indep1, prop-&gt;indep2 and prop-&gt;deriv as an input 
+  parameters (see last section)
+
+
+------------------------------------------------------------------------------
+  Output: struct Prop *prop, *pliq, *pvap
+------------------------------------------------------------------------------
+
+  Structure Prop is defined in decl.h and steam4.h and contains:
+
+  info
+  ----
+
+  prop-&gt;error     = 0   =&gt; calculation was successful
+		  = 1   =&gt; invalid input parameters or
+			   state undefined (water_tp only) or
+			   iteration interrupted (i&gt;IMAX)
+
+  prop-&gt;phase     = ONE =&gt; one-phase (liquid or superheated)
+		  = TWO =&gt; two-phase (saturated)
+
+
+  properties
+  ----------
+
+  prop-&gt;x   [-]      Steam Quota (for phase == TWO only)
+  prop-&gt;T   [K]      Temperature
+  prop-&gt;d   [kg/m3]  Density
+  prop-&gt;p   [Pa]     Pressure
+  prop-&gt;s   [J/kgK]  Specific Entropy
+  prop-&gt;u   [J/kg]   Specific Internal Energy
+  prop-&gt;h   [J/kg]   Specific Enthalpy h = u - p / d
+  prop-&gt;f   [J/kg]   Specific Free Energie (Helmholtz-Function) f = u - T * s
+  prop-&gt;g   [J/kg]   Specific Free Enthalpy (Gibbs-Function) g = h - T * s
+
+  In the two-phase area cp becomes infinit. Then cp = 0.0 is offered.
+
+
+  first derivatives:
+  ------------------
+  prop-&gt;cv              Specific Isochoric Heat Capacity  (du/dT),d
+  prop-&gt;cp              Specific Isochobaric Heat Capacity (dh/dT),p
+  prop-&gt;da-&gt;b_Cc        other first derivatives (da/db),c
+			a, b, c = {x, T, d, p, u, s, h}, a &lt;&gt; b &lt;&gt; c
+
+  second derivatives:
+  -------------------
+  prop-&gt;dcv-&gt;b_Cc          derivative of cv  (dcv/db),c
+  prop-&gt;dcp-&gt;b_Cc          derivative of cp  (dcp/db),c
+  prop-&gt;da-&gt;db_Cc-&gt;y_Cz    other second derivatives (d/dy(da/db),c),z
+			   a, b, c, y, z = {x, T, d, p, u, s, h}, 
+		           a &lt;&gt; b&lt;&gt; c, y &lt;&gt; z
+
+
+------------------------------------------------------------------------------
+  How to define the required output:
+------------------------------------------------------------------------------
+
+  prop-&gt;indep1, prop-&gt;indep2 and prop-&gt;deriv defines what derivatives 
+  will be calculated:
+
+  general idea:  prop-&gt;indep1 = 'a'
+                 prop-&gt;indep2 = 'b'
+                 prop-&gt;deriv = n
+
+  =&gt; calculate i-th derivative of z = {x, T, d, p, u, s, h}, z &lt;&gt; a, z &lt;&gt; b
+     and (i-1)th derivative of cv an cp
+     by a(b = const) and by b(a = const) with 0 &lt;= i &lt;= n;
+
+
+  what happens really:
+
+  for prop-&gt;phase = ONE,TWO      |  additionally for prop-&gt;phase = TWO:
+  -------------------------------+------------------------------------
+				 |
+  0.)  always calculated:        |
+				 |
+      prop-&gt;a                            prop-&gt;x
+
+	with a = {T, d, p, u, s, h, f, g, cv, cp}
+
+  1.)  for props-&gt;deriv = 1
+
+       0.) and:
+
+      prop-&gt;dp-&gt;T_Cd                     prop-&gt;dx-&gt;T_Cd
+      prop-&gt;dp-&gt;d_CT                     prop-&gt;dx-&gt;d_CT
+
+	with a = {T, d, p, u, s, h, f, g, cv, cp}
+
+  2.)  for props-&gt;deriv = 2
+
+       1.) and:
+
+      prop-&gt;dcv-&gt;T_Cd;
+      prop-&gt;dp-&gt;dT_Cd-&gt;T_Cd;             prop-&gt;dx-&gt;dT_Cd-&gt;T_Cd;
+      prop-&gt;dp-&gt;dT_Cd-&gt;d_CT;             prop-&gt;dx-&gt;dT_Cd-&gt;d_CT;
+      prop-&gt;dp-&gt;dd_CT-&gt;T_Cd;             prop-&gt;dx-&gt;dd_CT-&gt;T_Cd;
+      prop-&gt;dp-&gt;dd_CT-&gt;d_CT;             prop-&gt;dx-&gt;dd_CT-&gt;d_CT;
+
+
+  3.)  for props-&gt;indep1 = 'p'
+           props-&gt;indep2 = 'h'
+           props-&gt;deriv = 1
+
+       1.) and:
+
+      prop-&gt;da-&gt;p_Ch                     prop-&gt;dx-&gt;p_Ch
+      prop-&gt;da-&gt;h_Cp                     prop-&gt;dx-&gt;h_Cp
+
+      with a = {T, d, s, u}
+
+
+  4.)  for props-&gt;indep1 = 'p'
+           props-&gt;indep2 = 'h'
+           props-&gt;deriv = 2
+
+      2.) and 3.) and:
+
+      prop-&gt;dcv-&gt;p_Ch
+      prop-&gt;dcv-&gt;h_Cp
+      prop-&gt;dcp-&gt;p_Ch
+      prop-&gt;dcp-&gt;h_Cp
+
+      prop-&gt;da-&gt;dp_Ch-&gt;p_Ch;             prop-&gt;dx-&gt;dp_Ch-&gt;p_Ch;
+      prop-&gt;da-&gt;dp_Ch-&gt;h_Cp;             prop-&gt;dx-&gt;dp_Ch-&gt;h_Cp;
+      prop-&gt;da-&gt;dh_Cp-&gt;p_Ch;             prop-&gt;dx-&gt;dh_Cp-&gt;p_Ch;
+      prop-&gt;da-&gt;dh_Cp-&gt;h_Cp;             prop-&gt;dx-&gt;dh_Cp-&gt;h_Cp;
+
+      with a = {T, d, s, u}
+
+
+  5.)  for props-&gt;indep1 = 'p'
+           props-&gt;indep2 = 's'
+           props-&gt;deriv = 1
+
+       1.) and:
+
+      prop-&gt;da-&gt;p_Cs                     prop-&gt;dx-&gt;p_Cs
+      prop-&gt;da-&gt;s_Cp                     prop-&gt;dx-&gt;s_Cp
+
+      with a = {T, d, h, u}
+
+
+  6.)  for props-&gt;indep1 = 'p'
+           props-&gt;indep2 = 's'
+           props-&gt;deriv = 2
+
+       2.) and 5.) and:
+
+      prop-&gt;dcv-&gt;p_Cs
+      prop-&gt;dcv-&gt;s_Cp
+      prop-&gt;dcp-&gt;p_Cs
+      prop-&gt;dcp-&gt;s_Cp
+
+  Note that in the two-phase area many derivatives are = 0.0, for example:
+  - all derivatives of cp
+  - (dp/da)T and (dT/da)p with a={x, h, s, u, d}
+  - (d/dh(da/dh),p),p     with a={x, T, s, u, v} (but not with a = d)
+
+
+  There are three functions supporting the use of these structure. See
+  file ptest.c for an example. The function
+
+	Prop *newProp(int indep1, int indep2, int deriv)
+
+  allocates memory for a Prop structure. Call newProp() with characters
+  as argument for indep1 and indep2.
+  For example:
+      Prop *myProp = newProp('p', 'h', 2);
+  allocates memory for all properties and the 1. and 2. derivatives by
+  p and h as described above.
+  
+  You should free the allocated memory by calling the function:
+
+	Prop *freeProp(Prop *prop)
+
+  The function frees all allocated memory (also in the substructures) 
+  and returns NULL. It is no error to call the function with NULL as 
+  argument.
+  
+  It is possible to dump the computed values to a file or to standard out.
+  Just call the function
+
+	void dumpProp(FILE *fp, Prop *prop)
+
+  For example:
+	dumpProp(stdout, myProp);
+  dumps the values in myProp to standard out.
+
+------------------------------------------------------------------------------
+</PRE></BODY></HTML>

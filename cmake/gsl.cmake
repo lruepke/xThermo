@@ -1,0 +1,48 @@
+# =====================================================================================
+#                            Configure GSL
+# -------------------------------------------------------------------------------------
+if (WIN32)
+  set(GSL_DIR "${CMAKE_SOURCE_DIR}/../dependencies_swEOS/windows/gsl-msvc14-x64.2.3.0.2779" CACHE FILEPATH "GSL path contains include, lib")
+else()
+  set(GSL_DIR "${CMAKE_SOURCE_DIR}/ThirdParties/install/gsl_${TARGET_SUFFIX}" CACHE FILEPATH "GSL path contains include, lib")
+  if("${GSL_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}/ThirdParties/install/gsl_${TARGET_SUFFIX}")
+    message(STATUS "GSL_DIR cache is not changed")
+  else()
+    unset(GSL_DIR CACHE)
+    set(GSL_DIR "${CMAKE_SOURCE_DIR}/ThirdParties/install/gsl_${TARGET_SUFFIX}" CACHE FILEPATH "GSL path contains include, lib")
+  endif()
+endif()
+if(EXISTS ${GSL_DIR})
+  set(GSL_INCLUDE_DIR "${GSL_DIR}/include")
+  include_directories(${GSL_INCLUDE_DIR})
+  if(WIN32)
+    if(BUILD_SHARED)
+      add_compile_definitions("GSL_DLL=1")
+      set(GSL_LIBRARIES_SHARED ${GSL_DIR}/shared/gsl.lib ${GSL_DIR}/shared/gslcblas.lib)
+      set( GSL_LIBRARIES_STATIC ${GSL_DIR}/shared/gsl.lib ${GSL_DIR}/shared/gslcblas.lib )
+    else()
+      set(GSL_LIBRARIES_SHARED ${GSL_DIR}/shared/gsl.lib ${GSL_DIR}/shared/gslcblas.lib)
+      set( GSL_LIBRARIES_STATIC ${GSL_DIR}/static/gsl.lib ${GSL_DIR}/static/gslcblas.lib )
+    endif()
+  else()
+    set(GSL_LIBRARY_DIR "${GSL_DIR}/lib")
+    set(GSL_LIBRARIES_SHARED ${GSL_LIBRARY_DIR}/libgsl${CMAKE_SHARED_LIBRARY_SUFFIX} ${GSL_LIBRARY_DIR}/libgslcblas${CMAKE_SHARED_LIBRARY_SUFFIX})
+    set( GSL_LIBRARIES_STATIC ${GSL_LIBRARY_DIR}/libgsl${CMAKE_STATIC_LIBRARY_SUFFIX} ${GSL_LIBRARY_DIR}/libgslcblas${CMAKE_STATIC_LIBRARY_SUFFIX} )
+    FILE(GLOB libfiles "${GSL_DIR}/lib/*${CMAKE_SHARED_LIBRARY_SUFFIX}*")
+  endif()
+  INSTALL(DIRECTORY ${GSL_INCLUDE_DIR}/ DESTINATION ${CMAKE_INSTALL_PREFIX}/include)
+  INSTALL(FILES ${GSL_LIBRARIES_STATIC} DESTINATION ${CMAKE_INSTALL_PREFIX}/STATIC)
+  INSTALL(FILES ${GSL_LIBRARIES_SHARED} DESTINATION ${CMAKE_INSTALL_PREFIX}/SHARED)
+  message(STATUS "GSL include path found: " ${GSL_INCLUDE_DIR} )  
+  message(STATUS "GSL library path found: " ${GSL_DIR}/lib )
+  # get gsl version
+  execute_process(COMMAND grep Version  ${GSL_DIR}/lib/pkgconfig/gsl.pc
+                  WORKING_DIRECTORY ${CMAKE_SOURCE_DIR} ERROR_QUIET
+                  OUTPUT_VARIABLE GSL_VERSION_STR
+                  OUTPUT_STRIP_TRAILING_WHITESPACE)
+  string(REGEX MATCH "[0-9].[0-9]" GSL_VERSION_STR "${GSL_VERSION_STR}")
+  set(xThermal_GSL_VERSION ${GSL_VERSION_STR})  
+else()
+  message(FATAL_ERROR "GSL_DIR = ${GSL_DIR} doesn't exist.")
+endif()
+# =====================================================================================

@@ -1,0 +1,17 @@
+if(NOT Build_API_MultiLanguage)
+    return()
+endif(NOT Build_API_MultiLanguage)
+if(WIN32)
+    set(SWIG_EXECUTABLE "${CMAKE_SOURCE_DIR}/../dependencies_swEOS/windows/swigwin-4.0.2/swig.exe")
+endif(WIN32)
+
+# 配置SWIG
+set(CMAKE_SWIG_FLAGS)
+find_package(SWIG REQUIRED)
+include(UseSWIG)
+if(${SWIG_VERSION} VERSION_GREATER_EQUAL 4)
+    list(APPEND CMAKE_SWIG_FLAGS "-doxygen") #convert code comments from cpp files to the .py files (as the python comment style)
+endif()
+if(UNIX AND NOT APPLE)
+    list(APPEND CMAKE_SWIG_FLAGS "-DSWIGWORDSIZE64")
+endif()

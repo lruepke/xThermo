@@ -1,0 +1,11 @@
+/* Prevent Safari from auto-scaling fonts (shifts em-based breakpoints) */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Constrain figure images to 70% of the content column, cross-browser */
+.md-content img {
+  max-width: 70%;
+  height: auto;
+}
