@@ -866,10 +866,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#linking-with-cmake" class="md-nav__link">
+  <a href="#linking-with-cmake-recommended" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Linking with CMake
+        Linking with CMake (recommended)
       
     </span>
   </a>
@@ -1227,10 +1227,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#linking-with-cmake" class="md-nav__link">
+  <a href="#linking-with-cmake-recommended" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Linking with CMake
+        Linking with CMake (recommended)
       
     </span>
   </a>
@@ -1306,40 +1306,36 @@
 <h2 id="header">Header</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">"H2ONaCl.h"</span>
 </code></pre></div>
-<p>After <code>make install</code>, all public headers are installed flat into <code>&lt;install&gt;/include/</code>. The static libraries
-<code>libxThermal.a</code>, <code>libgsl.a</code> and <code>libgslcblas.a</code> are in <code>&lt;install&gt;/STATIC/</code>.</p>
-<h2 id="linking-with-cmake">Linking with CMake</h2>
+<p><code>cmake --install</code> puts the headers in <code>&lt;prefix&gt;/include/xThermo/</code>, the library (<code>libxThermal.a</code>, or a shared
+library with <code>-DBUILD_SHARED_LIBS=ON</code>) in <code>&lt;prefix&gt;/lib/</code>, and a CMake package in <code>&lt;prefix&gt;/lib/cmake/xThermo/</code>.</p>
+<h2 id="linking-with-cmake-recommended">Linking with CMake (recommended)</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span><span class="w"> </span><span class="s">3.18</span><span class="p">)</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">project</span><span class="p">(</span><span class="s">my_app</span><span class="w"> </span><span class="s">LANGUAGES</span><span class="w"> </span><span class="s">CXX</span><span class="p">)</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_CXX_STANDARD</span><span class="w"> </span><span class="s">11</span><span class="p">)</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nb">set</span><span class="p">(</span><span class="s">xThermo_DIR</span><span class="w"> </span><span class="s2">"$ENV{xThermo_DIR}"</span><span class="w"> </span><span class="s">CACHE</span><span class="w"> </span><span class="s">PATH</span><span class="w"> </span><span class="s2">"xThermo install prefix"</span><span class="p">)</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nb">include_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">xThermo_DIR</span><span class="o">}</span><span class="s">/include</span><span class="p">)</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="nb">link_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">xThermo_DIR</span><span class="o">}</span><span class="s">/STATIC</span><span class="p">)</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="nb">add_executable</span><span class="p">(</span><span class="s">my_app</span><span class="w"> </span><span class="s">main.cpp</span><span class="p">)</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="nb">target_link_libraries</span><span class="p">(</span><span class="s">my_app</span><span class="w"> </span><span class="s">xThermal</span><span class="w"> </span><span class="s">gsl</span><span class="w"> </span><span class="s">gslcblas</span><span class="w"> </span><span class="s">m</span><span class="p">)</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">find_package</span><span class="p">(</span><span class="s">xThermo</span><span class="w"> </span><span class="s">REQUIRED</span><span class="p">)</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nb">add_executable</span><span class="p">(</span><span class="s">my_app</span><span class="w"> </span><span class="s">main.cpp</span><span class="p">)</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nb">target_link_libraries</span><span class="p">(</span><span class="s">my_app</span><span class="w"> </span><span class="s">PRIVATE</span><span class="w"> </span><span class="s">xThermo::xThermal</span><span class="p">)</span>
 </code></pre></div>
-<p>Set the environment variable before configuring:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">xThermo_DIR</span><span class="o">=</span>/path/to/xThermo/install
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>cmake<span class="w"> </span>..
+<p>Tell CMake where xThermo is installed:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>cmake<span class="w"> </span>-S<span class="w"> </span>.<span class="w"> </span>-B<span class="w"> </span>build<span class="w"> </span>-DCMAKE_PREFIX_PATH<span class="o">=</span>/path/to/xThermo/install<span class="w">    </span><span class="c1"># or: export xThermo_DIR=/path/to/xThermo/install</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>cmake<span class="w"> </span>--build<span class="w"> </span>build
 </code></pre></div>
-<p><code>libxThermal.a</code> does not contain GSL, and xThermo installs no CMake package configuration. GSL must therefore be
-linked explicitly, as above.</p>
+<p>The target <code>xThermo::xThermal</code> brings its include directory and its GSL dependency with it.</p>
 <h2 id="linking-with-g-directly">Linking with g++ directly</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">xThermo_DIR</span><span class="o">=</span>/path/to/xThermo/install
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>g++<span class="w"> </span>-std<span class="o">=</span>c++11<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span>-I<span class="si">${</span><span class="nv">xThermo_DIR</span><span class="si">}</span>/include<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span>-L<span class="si">${</span><span class="nv">xThermo_DIR</span><span class="si">}</span>/STATIC<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span>-o<span class="w"> </span>my_app<span class="w"> </span>main.cpp<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span>-lxThermal<span class="w"> </span>-lgsl<span class="w"> </span>-lgslcblas<span class="w"> </span>-lm
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span>-I<span class="si">${</span><span class="nv">xThermo_DIR</span><span class="si">}</span>/include/xThermo<span class="w"> </span><span class="k">$(</span>gsl-config<span class="w"> </span>--cflags<span class="k">)</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span>-o<span class="w"> </span>my_app<span class="w"> </span>main.cpp<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span>-L<span class="si">${</span><span class="nv">xThermo_DIR</span><span class="si">}</span>/lib<span class="w"> </span>-lxThermal<span class="w"> </span><span class="k">$(</span>gsl-config<span class="w"> </span>--libs<span class="k">)</span>
 </code></pre></div>
 <div class="admonition note">
-<p class="admonition-title">Why GSL?</p>
-<p>xThermo uses GSL for root finding (saturation pressure, phase boundaries, the H–p–X flash). <code>make install</code> copies
-the GSL static libraries into <code>&lt;install&gt;/STATIC/</code>, so no further library path is needed.</p>
+<p class="admonition-title">GSL</p>
+<p>xThermo uses GSL for root finding (saturation pressure, phase boundaries, the H–p–X flash), so programs link
+GSL as well. <code>gsl-config</code> comes with the system GSL. If xThermo was built with <code>-DXTHERMO_BUNDLED_GSL=ON</code>, GSL is
+installed with it: use <code>-I${xThermo_DIR}/lib/xThermo/gsl/include</code> and
+<code>-L${xThermo_DIR}/lib/xThermo/gsl/lib -lgsl -lgslcblas</code> instead of <code>gsl-config</code>.</p>
 </div>
 <h2 id="key-classes">Key classes</h2>
 <table>

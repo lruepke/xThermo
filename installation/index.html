@@ -529,10 +529,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-build-gsl" class="md-nav__link">
+  <a href="#1-gsl" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Build GSL
+        1. GSL
       
     </span>
   </a>
@@ -1233,10 +1233,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-build-gsl" class="md-nav__link">
+  <a href="#1-gsl" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Build GSL
+        1. GSL
       
     </span>
   </a>
@@ -1343,7 +1343,7 @@
 <tr>
 <td>GSL</td>
 <td>yes</td>
-<td>built from <code>ThirdParties/</code> (see step 1)</td>
+<td>any GSL 2.x; from the system, or built from source by CMake (see step 1)</td>
 </tr>
 <tr>
 <td>SWIG ≥ 4</td>
@@ -1351,30 +1351,27 @@
 <td>macOS: <code>brew install swig</code>; Linux: <code>apt install swig</code></td>
 </tr>
 <tr>
-<td>conda / miniconda</td>
+<td>Python ≥ 3.8 with development headers</td>
 <td>for Python bindings</td>
-<td>provides Python 3.13 and poetry</td>
+<td>e.g. the conda environment below</td>
 </tr>
 <tr>
 <td>PROST 4.1</td>
 <td>bundled</td>
 <td>IAPS-84 water backend; compiled automatically</td>
 </tr>
-<tr>
-<td>CoolProp, freesteam</td>
-<td>no</td>
-<td>optional comparison libraries</td>
-</tr>
 </tbody>
 </table>
-<h2 id="1-build-gsl">1. Build GSL</h2>
-<p>GSL must be built before xThermo. A build script is provided in <code>ThirdParties/</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>ThirdParties
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>bash<span class="w"> </span>gsl.sh
+<h2 id="1-gsl">1. GSL</h2>
+<p>Install GSL with your package manager:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>brew<span class="w"> </span>install<span class="w"> </span>gsl<span class="w">              </span><span class="c1"># macOS</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>libgsl-dev<span class="w">   </span><span class="c1"># Debian/Ubuntu</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>gsl
 </code></pre></div>
-<p>This downloads the GSL source, builds it, and installs it to <code>ThirdParties/install/gsl_&lt;OS&gt;_&lt;arch&gt;</code>.
-See <a href="https://github.com/lruepke/xThermo/blob/main/ThirdParties/readme.md">ThirdParties/readme.md</a> for manual build
-instructions.</p>
+<p>CMake finds it automatically; for a GSL in a non-standard location add <code>-DGSL_ROOT_DIR=&lt;prefix&gt;</code> in step 3.
+Without a system GSL, add <code>-DXTHERMO_BUNDLED_GSL=ON</code> in step 3: CMake then downloads the official GSL 2.8 release
+from ftp.gnu.org, checks its SHA-256 checksum and builds it (needs a C compiler and <code>make</code>). For offline builds, point
+<code>-DXTHERMO_GSL_ARCHIVE=&lt;path to gsl-2.8.tar.gz&gt;</code> to a local copy of the same archive.</p>
 <h2 id="2-set-up-the-python-environment-python-bindings-only">2. Set up the Python environment (Python bindings only)</h2>
 <p>The environment has two layers:
 - <strong>conda</strong> (<code>environment.yaml</code>) creates the environment <code>py313_xthermo</code> with Python 3.13 and poetry;
@@ -1385,12 +1382,11 @@ instructions.</p>
 </code></pre></div>
 <h2 id="3-build-and-install-xthermo">3. Build and install xThermo</h2>
 <p>From the repository root, with the environment active:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>mkdir<span class="w"> </span>build<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>cmake<span class="w"> </span>..<span class="w"> </span>-DBuild_API_Python<span class="o">=</span>ON<span class="w"> </span>-DUSE_NUMPY<span class="o">=</span>ON<span class="w"> </span>-DCMAKE_INSTALL_PREFIX<span class="o">=</span>../install
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>make<span class="w"> </span>-j<span class="k">$(</span>nproc<span class="k">)</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>make<span class="w"> </span>install
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>cmake<span class="w"> </span>-S<span class="w"> </span>.<span class="w"> </span>-B<span class="w"> </span>build<span class="w"> </span>-DCMAKE_INSTALL_PREFIX<span class="o">=</span>install
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>cmake<span class="w"> </span>--build<span class="w"> </span>build<span class="w"> </span>-j
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>cmake<span class="w"> </span>--install<span class="w"> </span>build
 </code></pre></div>
-<p>Key CMake options:</p>
+<p>The build type is Release unless <code>-DCMAKE_BUILD_TYPE</code> is given. Options:</p>
 <table>
 <thead>
 <tr>
@@ -1401,53 +1397,50 @@ instructions.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>Build_API_Python</code></td>
+<td><code>XTHERMO_PYTHON</code></td>
 <td>ON</td>
-<td>Build Python bindings via SWIG</td>
+<td>Build the Python modules (SWIG)</td>
 </tr>
 <tr>
-<td><code>USE_NUMPY</code></td>
-<td>ON</td>
-<td>Enable NumPy array support in Python bindings</td>
-</tr>
-<tr>
-<td><code>USE_GSL</code></td>
-<td>ON</td>
-<td>Link against GSL (required for full functionality)</td>
-</tr>
-<tr>
-<td><code>USE_COOLPROP</code></td>
+<td><code>XTHERMO_BUNDLED_GSL</code></td>
 <td>OFF</td>
-<td>Link against CoolProp (optional comparison library)</td>
+<td>Build the pinned GSL release from source instead of using the system GSL</td>
 </tr>
 <tr>
-<td><code>Build_IAPWS_Others</code></td>
+<td><code>XTHERMO_OPENMP</code></td>
 <td>OFF</td>
-<td>Build the freesteam and CoolProp comparison classes</td>
+<td>Use OpenMP for batch and lookup-table evaluation</td>
 </tr>
 <tr>
-<td><code>USE_OMP</code></td>
+<td><code>BUILD_SHARED_LIBS</code></td>
 <td>OFF</td>
-<td>Enable OpenMP parallelisation</td>
+<td>Build the C++ library as a shared library</td>
+</tr>
+<tr>
+<td><code>XTHERMO_BUILD_TESTS</code></td>
+<td>OFF</td>
+<td>Build the developer test programs (<code>ctest</code>)</td>
 </tr>
 </tbody>
 </table>
-<p><code>make install</code> creates:</p>
+<p><code>cmake --install</code> creates:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>install/
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>├── bin/xThermal            # command-line tool
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>├── include/                # all public headers (flat)
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>├── STATIC/                 # libxThermal.a, libgsl.a, libgslcblas.a
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>└── API/python/cp3.13/      # Python package; the name follows the Python version used by CMake
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    ├── setup.py, setup.cfg
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    └── xThermal/
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>        ├── __init__.py
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>        ├── H2O.py      _H2O.so
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>        ├── NaCl.py     _NaCl.so
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>        └── H2ONaCl.py  _H2ONaCl.so
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>├── bin/xThermal                 # command-line tool
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>├── include/xThermo/             # C++ headers
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>├── lib/libxThermal.a            # C++ library
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>├── lib/cmake/xThermo/           # CMake package: find_package(xThermo)
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>└── API/python/cp3.13/           # Python package; the name follows the Python version used by CMake
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    ├── setup.py, setup.cfg
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    └── xThermal/
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>        ├── __init__.py
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>        ├── H2O.py      _H2O.so
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>        ├── NaCl.py     _NaCl.so
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>        └── H2ONaCl.py  _H2ONaCl.so
 </code></pre></div>
+<p>The Python package can also be used directly from the build tree: <code>PYTHONPATH=&lt;path_to_repo&gt;/build/python</code>.</p>
 <h2 id="4-make-the-python-package-available">4. Make the Python package available</h2>
 <p>You can either install the package into the active environment:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">cd</span><span class="w"> </span>../install/API/python/cp3.13
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">cd</span><span class="w"> </span>install/API/python/cp3.13
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>pip<span class="w"> </span>install<span class="w"> </span>.
 </code></pre></div>
 <p>or use it in place without an install step:</p>
@@ -1458,7 +1451,7 @@ instructions.</p>
 <p>The Python package name is <code>xThermal</code>. Import it as <code>from xThermal import H2ONaCl</code>.</p>
 </div>
 <h2 id="5-set-the-install-path-c-use">5. Set the install path (C++ use)</h2>
-<p>Export the install directory so that your own build can find the headers and libraries (see the
+<p>Export the install directory so that CMake (<code>find_package(xThermo)</code>) finds the installed package (see the
 <a href="../cpp/">C++ API overview</a>):</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">xThermo_DIR</span><span class="o">=</span>&lt;path_to_repo&gt;/install
 </code></pre></div>
@@ -1466,9 +1459,9 @@ instructions.</p>
 <ul>
 <li><strong><code>ModuleNotFoundError: No module named 'xThermal'</code>:</strong> activate <code>py313_xthermo</code>. Then either run <code>pip install .</code> or
   set <code>PYTHONPATH</code> to the <code>cp3.XX</code> directory that matches your Python version.</li>
-<li><strong>SWIG version mismatch (e.g. after <code>brew upgrade</code>):</strong> delete <code>build/CMakeCache.txt</code>, then configure and build again.</li>
-<li><strong><code>Invalid version</code> during <code>pip install</code>:</strong> the generated <code>setup.py</code> is stale. Run <code>cmake .. &amp;&amp; make install</code>
-  again, then <code>pip install .</code>.</li>
+<li><strong>SWIG or Python version changed (e.g. after <code>brew upgrade</code>):</strong> delete <code>build/CMakeCache.txt</code>, then configure and
+  build again.</li>
+<li><strong><code>GSL was not found</code>:</strong> install GSL (step 1), pass <code>-DGSL_ROOT_DIR=&lt;prefix&gt;</code>, or use <code>-DXTHERMO_BUNDLED_GSL=ON</code>.</li>
 </ul>
 
 
