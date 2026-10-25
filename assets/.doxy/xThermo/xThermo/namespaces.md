@@ -24,4 +24,6 @@ Here is a list of all namespaces with brief descriptions:
     * **namespace** [**NaCl**](namespacexThermal_1_1NaCl.md)     
     * **namespace** [**PROST**](namespacexThermal_1_1PROST.md)     
     * **namespace** [**gsl\_guard**](namespacexThermal_1_1gsl__guard.md)     
+* **namespace** [**xthermo**](namespacexthermo.md)     
+    * **namespace** [**plotting**](namespacexthermo_1_1plotting.md)     
 

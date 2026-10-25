@@ -13,6 +13,7 @@
 
 * **calculate** ([**compare\_VL**](namespacecompare__VL.md))
 * **contourf\_phase** ([**compare\_VL**](namespacecompare__VL.md))
+* **createWaterAxes** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
 
 
 ## d
@@ -51,7 +52,7 @@
 
 ## m
 
-* **makeLogLinearAxes** ([**PhaseDiagramSlice**](namespacePhaseDiagramSlice.md))
+* **makeLogLinearAxes** ([**PhaseDiagramSlice**](namespacePhaseDiagramSlice.md), [**xthermo::plotting**](namespacexthermo_1_1plotting.md))
 
 
 ## n
@@ -73,6 +74,7 @@
 * **print\_state\_HP2RhoT** ([**xThermal::IAPWS95**](namespacexThermal_1_1IAPWS95.md))
 * **print\_state\_PhaseEquilibrium** ([**xThermal::IAPWS95**](namespacexThermal_1_1IAPWS95.md))
 * **print\_state\_TP2Rho** ([**xThermal::IAPWS95**](namespacexThermal_1_1IAPWS95.md))
+* **plot\_Pslice** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
 
 
 ## s
@@ -99,6 +101,11 @@
 ## w
 
 * **water\_tp\_verified** ([**xThermal::PROST**](namespacexThermal_1_1PROST.md))
+
+
+## _
+
+* **\_\_getattr\_\_** ([**xThermal**](namespacexThermal.md), [**xthermo**](namespacexthermo.md))
 
 
 

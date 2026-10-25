@@ -27,7 +27,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><ref refid="namespacexThermal_1a9f162768e192f9a3ca91f946a35bd428" kindref="member">xThermal::R</ref> times T: <formula id="62">$RT $</formula> [J/kg] </para>
+<para><ref refid="namespacexThermal_1aa5ae42fb1fad9d9b7591479025f9555d" kindref="member">xThermal::R</ref> times T: <formula id="62">$RT $</formula> [J/kg] </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -90,7 +90,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Flag of solving <formula id="65">$ P_{sat} $</formula> or <formula id="66">$ T_{sat} $</formula>, the value will be one of <ref refid="namespacexThermal_1a0685604125210eaa088959dce9c93b25ae7fb5148d37e23b456becf1619724c21" kindref="member">SOLVE_SATURATED_P</ref>, <ref refid="namespacexThermal_1a0685604125210eaa088959dce9c93b25a4fde50f7ee7ce5b0c5a9c3c3fc4d0c14" kindref="member">SOLVE_SATURATED_T</ref> </para>
+<para>Flag of solving <formula id="65">$ P_{sat} $</formula> or <formula id="66">$ T_{sat} $</formula>, the value will be one of <ref refid="namespacexThermal_1a0685604125210eaa088959dce9c93b25a3b493fd9fa17b6533177cc260445a2a7" kindref="member">SOLVE_SATURATED_P</ref>, <ref refid="namespacexThermal_1a0685604125210eaa088959dce9c93b25a298fcf108ba2095b452763d616ea80d7" kindref="member">SOLVE_SATURATED_T</ref> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>

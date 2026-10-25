@@ -69,7 +69,7 @@
         <argsstring></argsstring>
         <name>phase</name>
         <qualifiedname>xThermal::ThermodynamicProperties::phase</qualifiedname>
-        <initializer>=<ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50acea30341b4925461d75ba644de9f7017" kindref="member">Unknown</ref></initializer>
+        <initializer>=<ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50a7667fc71c0324455e9dfd8ee6da3199d" kindref="member">Unknown</ref></initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>

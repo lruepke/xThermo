@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacexthermo_1_1plotting" kind="namespace" language="Python">
+    <compoundname>xthermo::plotting</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacexthermo_1_1plotting_1a0b949f6b0b83663d65123a1fd17e7c65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xthermo.plotting.makeLogLinearAxes</definition>
+        <argsstring>(ax, width_logaxis=0.4, xlim_log=(2E-3, 1), xmax=100, xloc_major=20, xloc_minor=4, yloc=&apos;left&apos;, color_log=(127/255, 0, 1), xlabel=&apos;Bulk salinity(wt % NaCl)&apos;, bkcolor=&apos;None&apos;, ylim=None, yloc_major=None, yloc_minor=None, ylabel=None)</argsstring>
+        <name>makeLogLinearAxes</name>
+        <qualifiedname>xthermo.plotting.makeLogLinearAxes</qualifiedname>
+        <param>
+          <type>ax</type>
+          <defname>ax</defname>
+        </param>
+        <param>
+          <type>width_logaxis</type>
+          <defname>width_logaxis</defname>
+          <defval>0.4</defval>
+        </param>
+        <param>
+          <type>xlim_log</type>
+          <defname>xlim_log</defname>
+          <defval>(2E-3, 1)</defval>
+        </param>
+        <param>
+          <type>xmax</type>
+          <defname>xmax</defname>
+          <defval>100</defval>
+        </param>
+        <param>
+          <type>xloc_major</type>
+          <defname>xloc_major</defname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>xloc_minor</type>
+          <defname>xloc_minor</defname>
+          <defval>4</defval>
+        </param>
+        <param>
+          <type>yloc</type>
+          <defname>yloc</defname>
+          <defval>&apos;left&apos;</defval>
+        </param>
+        <param>
+          <type>color_log</type>
+          <defname>color_log</defname>
+          <defval>(127/255, 0, 1)</defval>
+        </param>
+        <param>
+          <type>xlabel</type>
+          <defname>xlabel</defname>
+          <defval>&apos;Bulk salinity(wt % NaCl)&apos;</defval>
+        </param>
+        <param>
+          <type>bkcolor</type>
+          <defname>bkcolor</defname>
+          <defval>&apos;None&apos;</defval>
+        </param>
+        <param>
+          <type>ylim</type>
+          <defname>ylim</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>yloc_major</type>
+          <defname>yloc_major</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>yloc_minor</type>
+          <defname>yloc_minor</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>ylabel</type>
+          <defname>ylabel</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/plotting.py" line="15" column="1" bodyfile="Library/API/python/xthermo/plotting.py" bodystart="15" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacexthermo_1_1plotting_1a0ee926652a9abb1011988bdd60c2cbe5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xthermo.plotting.createWaterAxes</definition>
+        <argsstring>(ax, fc=&apos;whitesmoke&apos;)</argsstring>
+        <name>createWaterAxes</name>
+        <qualifiedname>xthermo.plotting.createWaterAxes</qualifiedname>
+        <param>
+          <type>ax</type>
+          <defname>ax</defname>
+        </param>
+        <param>
+          <type>fc</type>
+          <defname>fc</defname>
+          <defval>&apos;whitesmoke&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/plotting.py" line="59" column="1" bodyfile="Library/API/python/xthermo/plotting.py" bodystart="59" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacexthermo_1_1plotting_1a68e220e1c9ec75fae208ee3ee4a07434" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xthermo.plotting.plot_Pslice</definition>
+        <argsstring>(P0, x0_log_linear=0.01, sw=None)</argsstring>
+        <name>plot_Pslice</name>
+        <qualifiedname>xthermo.plotting.plot_Pslice</qualifiedname>
+        <param>
+          <type>P0</type>
+          <defname>P0</defname>
+        </param>
+        <param>
+          <type>x0_log_linear</type>
+          <defname>x0_log_linear</defname>
+          <defval>0.01</defval>
+        </param>
+        <param>
+          <type>sw</type>
+          <defname>sw</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/plotting.py" line="72" column="1" bodyfile="Library/API/python/xthermo/plotting.py" bodystart="72" bodyend="150"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Plotting helpers (require matplotlib): log-linear salinity axes and isobaric T-X / H-X phase-region sections.
+
+Moved unchanged from the former package __init__ (xThermal), except that plot_Pslice now creates its default model
+when called instead of at import time. They are also available as xthermo.plot_Pslice etc. (imported on first use).
+</verbatim> </para>
+    </detaileddescription>
+    <location file="Library/API/python/xthermo/plotting.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

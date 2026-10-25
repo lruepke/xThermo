@@ -131,4 +131,6 @@ Here are the classes, structs, unions and interfaces with brief descriptions:
 * **struct** [**Coeff\_Region2**](structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region2.md) _Numerical values of the coefficients and exponents of the ideal-gas part_ \(\gamma^o\) _o of the dimensionless Gibbs free energy for region 2, Eq. (16)a, and the residual part_\(\gamma^r\) _._    
 * **struct** [**Coeff\_Region5**](structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5.md) _Numerical values of the coefficients and exponents of the residual part  r of the dimensionless Gibbs free energy for region 5. See Table 37, 38 in IF97._     
 * **struct** [**Table34**](structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Table34.md) _Table 34 of IF97 for saturation curve calculation._     
+* **namespace** [**xthermo**](namespacexthermo.md)     
+    * **namespace** [**plotting**](namespacexthermo_1_1plotting.md)     
 

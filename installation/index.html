@@ -518,6 +518,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#python-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python package
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#dependencies" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -540,10 +551,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-set-up-the-python-environment-python-bindings-only" class="md-nav__link">
+  <a href="#2-developer-environment-optional" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Set up the Python environment (Python bindings only)
+        2. Developer environment (optional)
       
     </span>
   </a>
@@ -562,21 +573,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-make-the-python-package-available" class="md-nav__link">
+  <a href="#4-set-the-install-path-c-use" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Make the Python package available
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-set-the-install-path-c-use" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Set the install path (C++ use)
+        4. Set the install path (C++ use)
       
     </span>
   </a>
@@ -1222,6 +1222,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#python-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python package
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#dependencies" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1244,10 +1255,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-set-up-the-python-environment-python-bindings-only" class="md-nav__link">
+  <a href="#2-developer-environment-optional" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Set up the Python environment (Python bindings only)
+        2. Developer environment (optional)
       
     </span>
   </a>
@@ -1266,21 +1277,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-make-the-python-package-available" class="md-nav__link">
+  <a href="#4-set-the-install-path-c-use" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Make the Python package available
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-set-the-install-path-c-use" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Set the install path (C++ use)
+        4. Set the install path (C++ use)
       
     </span>
   </a>
@@ -1319,7 +1319,22 @@
 
 
 <h1 id="installation">Installation</h1>
-<p>xThermo is built from source with CMake. The Python bindings are built at the same time with SWIG.</p>
+<p>xThermo is a C++ library with Python bindings. Python users install the Python package <code>xthermo</code> with pip; C++
+users build and install the library with CMake.</p>
+<h2 id="python-package">Python package</h2>
+<p>From the repository root, in any Python ≥ 3.10 environment (venv, conda, …):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>.<span class="w">                 </span><span class="c1"># or: pip install ".[plotting]" to add numpy and matplotlib</span>
+</code></pre></div>
+<p>pip builds the extension modules with CMake and SWIG (both taken from PyPI if they are not installed) and links a
+GSL that it builds from the official source archive (checksum-verified). Only a C/C++ compiler and <code>make</code> are needed.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">xthermo</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xthermo</span><span class="w"> </span><span class="kn">import</span> <span class="n">H2ONaCl</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">sw</span> <span class="o">=</span> <span class="n">H2ONaCl</span><span class="o">.</span><span class="n">cH2ONaCl</span><span class="p">(</span><span class="s2">"IAPS84"</span><span class="p">)</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">sw</span><span class="o">.</span><span class="n">UpdateState_TPX</span><span class="p">(</span><span class="mf">573.15</span><span class="p">,</span> <span class="mf">300e5</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span><span class="o">.</span><span class="n">Rho</span><span class="p">)</span>
+</code></pre></div>
+<p>The former package name still works: <code>from xThermal import H2ONaCl</code> gives the same modules.</p>
+<p>The rest of this page builds the C++ library (and the Python modules for development) with CMake.</p>
 <h2 id="dependencies">Dependencies</h2>
 <table>
 <thead>
@@ -1347,13 +1362,13 @@
 </tr>
 <tr>
 <td>SWIG ≥ 4</td>
-<td>for Python bindings</td>
+<td>for the Python modules</td>
 <td>macOS: <code>brew install swig</code>; Linux: <code>apt install swig</code></td>
 </tr>
 <tr>
-<td>Python ≥ 3.8 with development headers</td>
-<td>for Python bindings</td>
-<td>e.g. the conda environment below</td>
+<td>Python ≥ 3.10 with development headers</td>
+<td>for the Python modules</td>
+<td>any environment</td>
 </tr>
 <tr>
 <td>PROST 4.1</td>
@@ -1364,27 +1379,27 @@
 </table>
 <h2 id="1-gsl">1. GSL</h2>
 <p>Install GSL with your package manager:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>brew<span class="w"> </span>install<span class="w"> </span>gsl<span class="w">              </span><span class="c1"># macOS</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>libgsl-dev<span class="w">   </span><span class="c1"># Debian/Ubuntu</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>gsl
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>brew<span class="w"> </span>install<span class="w"> </span>gsl<span class="w">              </span><span class="c1"># macOS</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>libgsl-dev<span class="w">   </span><span class="c1"># Debian/Ubuntu</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>gsl
 </code></pre></div>
 <p>CMake finds it automatically; for a GSL in a non-standard location add <code>-DGSL_ROOT_DIR=&lt;prefix&gt;</code> in step 3.
 Without a system GSL, add <code>-DXTHERMO_BUNDLED_GSL=ON</code> in step 3: CMake then downloads the official GSL 2.8 release
 from ftp.gnu.org, checks its SHA-256 checksum and builds it (needs a C compiler and <code>make</code>). For offline builds, point
 <code>-DXTHERMO_GSL_ARCHIVE=&lt;path to gsl-2.8.tar.gz&gt;</code> to a local copy of the same archive.</p>
-<h2 id="2-set-up-the-python-environment-python-bindings-only">2. Set up the Python environment (Python bindings only)</h2>
-<p>The environment has two layers:
+<h2 id="2-developer-environment-optional">2. Developer environment (optional)</h2>
+<p>The tools used for development (documentation, verification) come from a conda + poetry environment:
 - <strong>conda</strong> (<code>environment.yaml</code>) creates the environment <code>py313_xthermo</code> with Python 3.13 and poetry;
 - <strong>poetry</strong> (<code>pyproject.toml</code>, <code>poetry.lock</code>) installs the Python packages at pinned versions.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>environment.yaml<span class="w">   </span><span class="c1"># once</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>conda<span class="w"> </span>activate<span class="w"> </span>py313_xthermo
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>poetry<span class="w"> </span>install
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>environment.yaml<span class="w">   </span><span class="c1"># once</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>conda<span class="w"> </span>activate<span class="w"> </span>py313_xthermo
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>poetry<span class="w"> </span>install
 </code></pre></div>
 <h2 id="3-build-and-install-xthermo">3. Build and install xThermo</h2>
 <p>From the repository root, with the environment active:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>cmake<span class="w"> </span>-S<span class="w"> </span>.<span class="w"> </span>-B<span class="w"> </span>build<span class="w"> </span>-DCMAKE_INSTALL_PREFIX<span class="o">=</span>install
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>cmake<span class="w"> </span>--build<span class="w"> </span>build<span class="w"> </span>-j
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>cmake<span class="w"> </span>--install<span class="w"> </span>build
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>cmake<span class="w"> </span>-S<span class="w"> </span>.<span class="w"> </span>-B<span class="w"> </span>build<span class="w"> </span>-DCMAKE_INSTALL_PREFIX<span class="o">=</span>install
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>cmake<span class="w"> </span>--build<span class="w"> </span>build<span class="w"> </span>-j
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>cmake<span class="w"> </span>--install<span class="w"> </span>build
 </code></pre></div>
 <p>The build type is Release unless <code>-DCMAKE_BUILD_TYPE</code> is given. Options:</p>
 <table>
@@ -1424,41 +1439,26 @@ from ftp.gnu.org, checks its SHA-256 checksum and builds it (needs a C compiler 
 </tbody>
 </table>
 <p><code>cmake --install</code> creates:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>install/
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>├── bin/xThermal                 # command-line tool
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>├── include/xThermo/             # C++ headers
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>├── lib/libxThermal.a            # C++ library
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>├── lib/cmake/xThermo/           # CMake package: find_package(xThermo)
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>└── API/python/cp3.13/           # Python package; the name follows the Python version used by CMake
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    ├── setup.py, setup.cfg
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    └── xThermal/
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>        ├── __init__.py
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>        ├── H2O.py      _H2O.so
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>        ├── NaCl.py     _NaCl.so
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>        └── H2ONaCl.py  _H2ONaCl.so
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>install/
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>├── bin/xThermal                 # command-line tool
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>├── include/xThermo/             # C++ headers
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>├── lib/libxThermal.a            # C++ library
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>├── lib/cmake/xThermo/           # CMake package: find_package(xThermo)
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>└── API/python/cp3.13/           # Python modules; the name follows the Python version used by CMake
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    ├── xthermo/                 # __init__.py, H2O.py, NaCl.py, H2ONaCl.py, _H2O.so, _NaCl.so, _H2ONaCl.so, ...
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    └── xThermal/                # compatibility name
 </code></pre></div>
-<p>The Python package can also be used directly from the build tree: <code>PYTHONPATH=&lt;path_to_repo&gt;/build/python</code>.</p>
-<h2 id="4-make-the-python-package-available">4. Make the Python package available</h2>
-<p>You can either install the package into the active environment:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">cd</span><span class="w"> </span>install/API/python/cp3.13
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>pip<span class="w"> </span>install<span class="w"> </span>.
-</code></pre></div>
-<p>or use it in place without an install step:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">PYTHONPATH</span><span class="o">=</span><span class="s2">"&lt;path_to_repo&gt;/install/API/python/cp3.13:</span><span class="nv">$PYTHONPATH</span><span class="s2">"</span>
-</code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The Python package name is <code>xThermal</code>. Import it as <code>from xThermal import H2ONaCl</code>.</p>
-</div>
-<h2 id="5-set-the-install-path-c-use">5. Set the install path (C++ use)</h2>
+<p>To use these modules without pip, set <code>PYTHONPATH=&lt;path_to_repo&gt;/install/API/python/cp3.13</code> (or
+<code>PYTHONPATH=&lt;path_to_repo&gt;/build/python</code> for the build tree).</p>
+<h2 id="4-set-the-install-path-c-use">4. Set the install path (C++ use)</h2>
 <p>Export the install directory so that CMake (<code>find_package(xThermo)</code>) finds the installed package (see the
 <a href="../cpp/">C++ API overview</a>):</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">xThermo_DIR</span><span class="o">=</span>&lt;path_to_repo&gt;/install
 </code></pre></div>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <ul>
-<li><strong><code>ModuleNotFoundError: No module named 'xThermal'</code>:</strong> activate <code>py313_xthermo</code>. Then either run <code>pip install .</code> or
-  set <code>PYTHONPATH</code> to the <code>cp3.XX</code> directory that matches your Python version.</li>
+<li><strong><code>ModuleNotFoundError: No module named 'xthermo'</code>:</strong> run <code>pip install .</code> in the environment you use, or set
+  <code>PYTHONPATH</code> to the <code>cp3.XX</code> directory that matches your Python version.</li>
 <li><strong>SWIG or Python version changed (e.g. after <code>brew upgrade</code>):</strong> delete <code>build/CMakeCache.txt</code>, then configure and
   build again.</li>
 <li><strong><code>GSL was not found</code>:</strong> install GSL (step 1), pass <code>-DGSL_ROOT_DIR=&lt;prefix&gt;</code>, or use <code>-DXTHERMO_BUNDLED_GSL=ON</code>.</li>

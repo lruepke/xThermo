@@ -8,7 +8,7 @@
 
 
 
-_Namespace of_ [_**xThermal**_](namespacexThermal.md) _library._
+_Namespace of_ [_**xThermal**_](namespacexThermal.md) _library._[More...](#detailed-description)
 
 
 
@@ -125,6 +125,7 @@ _Namespace of_ [_**xThermal**_](namespacexThermal.md) _library._
 
 | Type | Name |
 | ---: | :--- |
+|   | [**\_\_getattr\_\_**](#function-__getattr__) (name name) <br> |
 |  std::string | [**extname\_file**](#function-extname_file) ([**const**](classxThermal_1_1xThermalError.md) std::string & filepath) <br> |
 |  std::string | [**filename\_without\_ext**](#function-filename_without_ext) ([**const**](classxThermal_1_1xThermalError.md) std::string & filepath) <br> |
 |  [**void**](classxThermal_1_1xThermalError.md) | [**fill\_prop2data**](#function-fill_prop2data) ([**cxThermal**](classxThermal_1_1cxThermal.md) \* pEOS, [**const**](classxThermal_1_1xThermalError.md) [**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) \* prop, [**const**](classxThermal_1_1xThermalError.md) std::map&lt; [**int**](classxThermal_1_1xThermalError.md), [**propInfo**](structxThermal_1_1propInfo.md) &gt; & update\_which\_props, [**double**](classxThermal_1_1xThermalError.md) \* data) <br> |
@@ -162,6 +163,13 @@ _Namespace of_ [_**xThermal**_](namespacexThermal.md) _library._
 
 
 
+## Detailed Description
+
+
+ 
+
+
+    
 ## Public Types Documentation
 
 
@@ -169,7 +177,7 @@ _Namespace of_ [_**xThermal**_](namespacexThermal.md) _library._
 
 ### typedef AttributeError 
 
-```C++
+```Python
 typedef xThermalError< xThermalBaseError::eAttribute > xThermal::AttributeError;
 ```
 
@@ -182,7 +190,7 @@ typedef xThermalError< xThermalBaseError::eAttribute > xThermal::AttributeError;
 
 ### typedef CompositionError 
 
-```C++
+```Python
 typedef ValueErrorSpec< xThermalBaseError::eComposition > xThermal::CompositionError;
 ```
 
@@ -195,7 +203,7 @@ typedef ValueErrorSpec< xThermalBaseError::eComposition > xThermal::CompositionE
 
 ### typedef DirectorySizeError 
 
-```C++
+```Python
 typedef xThermalError< xThermalBaseError::eDirectorySize > xThermal::DirectorySizeError;
 ```
 
@@ -208,7 +216,7 @@ typedef xThermalError< xThermalBaseError::eDirectorySize > xThermal::DirectorySi
 
 ### typedef HandleError 
 
-```C++
+```Python
 typedef xThermalError< xThermalBaseError::eHandle > xThermal::HandleError;
 ```
 
@@ -221,7 +229,7 @@ typedef xThermalError< xThermalBaseError::eHandle > xThermal::HandleError;
 
 ### enum INDEX\_FLUID 
 
-```C++
+```Python
 enum xThermal::INDEX_FLUID {
     Fluid_Unknown = -1,
     FLUID_Water,
@@ -238,7 +246,7 @@ enum xThermal::INDEX_FLUID {
 
 ### enum INPUT\_PAIR 
 
-```C++
+```Python
 enum xThermal::INPUT_PAIR {
     TPX,
     HPX
@@ -254,7 +262,7 @@ enum xThermal::INPUT_PAIR {
 
 ### typedef InputError 
 
-```C++
+```Python
 typedef ValueErrorSpec< xThermalBaseError::eInput > xThermal::InputError;
 ```
 
@@ -267,7 +275,7 @@ typedef ValueErrorSpec< xThermalBaseError::eInput > xThermal::InputError;
 
 ### typedef KeyError 
 
-```C++
+```Python
 typedef xThermalError< xThermalBaseError::eKey > xThermal::KeyError;
 ```
 
@@ -281,8 +289,8 @@ typedef xThermalError< xThermalBaseError::eKey > xThermal::KeyError;
 ### typedef MAP\_PhaseRegion2Name 
 
 _Map of phase region index (enum) to phase region name (string)._ 
-```C++
-typedef std::map<PhaseRegion,std::string> xThermal::MAP_PhaseRegion2Name;
+```Python
+typedef std::map<PhaseRegion,std::string> xThermal.MAP_PhaseRegion2Name;
 ```
 
 
@@ -294,7 +302,7 @@ typedef std::map<PhaseRegion,std::string> xThermal::MAP_PhaseRegion2Name;
 
 ### typedef NotAvailableError 
 
-```C++
+```Python
 typedef ValueErrorSpec< xThermalBaseError::eNotAvailable > xThermal::NotAvailableError;
 ```
 
@@ -307,7 +315,7 @@ typedef ValueErrorSpec< xThermalBaseError::eNotAvailable > xThermal::NotAvailabl
 
 ### typedef NotImplementedError 
 
-```C++
+```Python
 typedef xThermalError< xThermalBaseError::eNotImplemented > xThermal::NotImplementedError;
 ```
 
@@ -320,7 +328,7 @@ typedef xThermalError< xThermalBaseError::eNotImplemented > xThermal::NotImpleme
 
 ### typedef OutOfRangeError 
 
-```C++
+```Python
 typedef xThermalError< xThermalBaseError::eOutOfRange > xThermal::OutOfRangeError;
 ```
 
@@ -334,7 +342,7 @@ typedef xThermalError< xThermalBaseError::eOutOfRange > xThermal::OutOfRangeErro
 ### enum PhaseRegion 
 
 _Phase region index of H2O, NaCl, H2ONaCl system._ 
-```C++
+```Python
 enum xThermal::PhaseRegion {
     MixPhaseRegion =-1,
     SinglePhase_L,
@@ -363,7 +371,7 @@ enum xThermal::PhaseRegion {
 
 ### enum PhaseType 
 
-```C++
+```Python
 enum xThermal::PhaseType {
     Vapor,
     Liquid
@@ -384,7 +392,7 @@ only used as input argument for Rho\_phase;
 ### enum SOLVE\_SATURATED\_PorT 
 
 _Define flag of solving saturated pressure or saturated temperature._ 
-```C++
+```Python
 enum xThermal::SOLVE_SATURATED_PorT {
     SOLVE_SATURATED_P,
     SOLVE_SATURATED_T
@@ -400,7 +408,7 @@ enum xThermal::SOLVE_SATURATED_PorT {
 
 ### typedef SolutionError 
 
-```C++
+```Python
 typedef xThermalError< xThermalBaseError::eSolution > xThermal::SolutionError;
 ```
 
@@ -414,7 +422,7 @@ typedef xThermalError< xThermalBaseError::eSolution > xThermal::SolutionError;
 ### enum Space\_EOS 
 
 _Which space of the EOS is calculated or defined. For H2O, the available space are Space\_TP and Space\_HP. For H2ONaCl, the available space are Space\_TPX and Space\_HPX._ 
-```C++
+```Python
 enum xThermal::Space_EOS {
     Space_TP,
     Space_HP,
@@ -432,7 +440,7 @@ enum xThermal::Space_EOS {
 
 ### typedef UnableToLoadError 
 
-```C++
+```Python
 typedef xThermalError< xThermalBaseError::eUnableToLoad > xThermal::UnableToLoadError;
 ```
 
@@ -445,7 +453,7 @@ typedef xThermalError< xThermalBaseError::eUnableToLoad > xThermal::UnableToLoad
 
 ### typedef ValueError 
 
-```C++
+```Python
 typedef xThermalError< xThermalBaseError::eValue > xThermal::ValueError;
 ```
 
@@ -458,7 +466,7 @@ typedef xThermalError< xThermalBaseError::eValue > xThermal::ValueError;
 
 ### typedef WrongFluidError 
 
-```C++
+```Python
 typedef ValueErrorSpec< xThermalBaseError::eWrongFluid > xThermal::WrongFluidError;
 ```
 
@@ -472,7 +480,7 @@ typedef ValueErrorSpec< xThermalBaseError::eWrongFluid > xThermal::WrongFluidErr
 ### enum dimensionType 
 
 _index of dimension vector._ 
-```C++
+```Python
 enum xThermal::dimensionType {
     MASS,
     LENGTH,
@@ -495,8 +503,8 @@ enum xThermal::dimensionType {
 
 ### variable R 
 
-```C++
-const double xThermal::R;
+```Python
+const double xThermal.R;
 ```
 
 
@@ -512,8 +520,8 @@ Specific gass constant: \(J/kg/K\)
 
 ### variable nDimensions 
 
-```C++
-const int xThermal::nDimensions;
+```Python
+const int xThermal.nDimensions;
 ```
 
 
@@ -527,8 +535,8 @@ const int xThermal::nDimensions;
 
 ### variable map\_phase2name 
 
-```C++
-MAP_PhaseRegion2Name xThermal::map_phase2name;
+```Python
+MAP_PhaseRegion2Name xThermal.map_phase2name;
 ```
 
 
@@ -540,9 +548,24 @@ MAP_PhaseRegion2Name xThermal::map_phase2name;
 
 
 
+### function \_\_getattr\_\_ 
+
+```Python
+xThermal::__getattr__ (
+    name name
+) 
+```
+
+
+
+
+<hr>
+
+
+
 ### function extname\_file 
 
-```C++
+```Python
 std::string xThermal::extname_file (
     const std::string & filepath
 ) 
@@ -557,7 +580,7 @@ std::string xThermal::extname_file (
 
 ### function filename\_without\_ext 
 
-```C++
+```Python
 std::string xThermal::filename_without_ext (
     const std::string & filepath
 ) 
@@ -572,7 +595,7 @@ std::string xThermal::filename_without_ext (
 
 ### function fill\_prop2data 
 
-```C++
+```Python
 void xThermal::fill_prop2data (
     cxThermal * pEOS,
     const  ThermodynamicProperties * prop,
@@ -590,7 +613,7 @@ void xThermal::fill_prop2data (
 
 ### function string\_split 
 
-```C++
+```Python
 std::vector< std::string > xThermal::string_split (
     const std::string & s,
     const std::string & delimiter
@@ -608,7 +631,7 @@ std::vector< std::string > xThermal::string_split (
 
 ### function evaluation\_depth 
 
-```C++
+```Python
 static int & xThermal::evaluation_depth () 
 ```
 
@@ -618,5 +641,5 @@ static int & xThermal::evaluation_depth ()
 <hr>
 
 ------------------------------
-The documentation for this class was generated from the following file `Library/H2O/IAPS84.cpp`
+The documentation for this class was generated from the following file `Library/API/python/xThermal/__init__.py`
 
