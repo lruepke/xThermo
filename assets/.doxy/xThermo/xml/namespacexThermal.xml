@@ -352,6 +352,68 @@
         </inbodydescription>
         <location file="Library/thermo/DataStructures.h" line="320" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="320" bodyend="320"/>
       </memberdef>
+      <memberdef kind="enum" id="namespacexThermal_1af8b7978f2b9ac8f4b992f92082004207" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>EvaluationStatus</name>
+        <qualifiedname>xThermal::EvaluationStatus</qualifiedname>
+        <enumvalue id="namespacexThermal_1af8b7978f2b9ac8f4b992f92082004207aa60852f204ed8028c1c58808b746d115" prot="public">
+          <name>Ok</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>the state was evaluated </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1af8b7978f2b9ac8f4b992f92082004207ad8f78ca9a692a9411afbc7584b69d043" prot="public">
+          <name>InvalidInput</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>non-finite T, H, p or X, X &lt; 0, or p &lt;= 0 (InputError) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1af8b7978f2b9ac8f4b992f92082004207a365b2699d38b61ef4b4c8a1066c8468f" prot="public">
+          <name>OutOfRange</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>outside the range in which the model evaluates (OutOfRangeError) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1af8b7978f2b9ac8f4b992f92082004207adbbde5ea220b09db210c62e8926a02c5" prot="public">
+          <name>NotConverged</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>a numerical solution failed (SolutionError) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1af8b7978f2b9ac8f4b992f92082004207a534ceac854da4ba59c4dc41b7ab732dc" prot="public">
+          <name>NotAvailable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>not implemented or not available for this model or state (NotImplementedError, NotAvailableError) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacexThermal_1af8b7978f2b9ac8f4b992f92082004207ad7c8c85bf79bbe1b7188497c32c3b0ca" prot="public">
+          <name>Failed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>any other <ref refid="namespacexThermal" kindref="compound">xThermal</ref> error, e.g. ValueError </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Outcome of a non-throwing state evaluation (<ref refid="classxThermal_1_1cxThermal_1acc9e6ed0d508f1a089ed55a32592b427" kindref="member">cxThermal::tryUpdateState_TPX</ref>, <ref refid="classxThermal_1_1cxThermal_1ac639cc813243479c4711207e7077adb5" kindref="member">cxThermal::tryUpdateState_HPX</ref>). Each failure corresponds to the <ref refid="namespacexThermal" kindref="compound">xThermal</ref> exception that the throwing call (UpdateState_TPX / UpdateState_HPX) raises for the same input. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/Exception.h" line="58" column="1" bodyfile="Library/thermo/Exception.h" bodystart="59" bodyend="66"/>
+      </memberdef>
       <memberdef kind="enum" id="namespacexThermal_1a979ba5e8ff8d4f989008f4cd9327fa54" prot="public" static="no" strong="no">
         <type></type>
         <name>INDEX_FLUID</name>
@@ -384,7 +446,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="41" column="5" bodyfile="Library/thermo/thermo.h" bodystart="42" bodyend="46"/>
+        <location file="Library/thermo/thermo.h" line="42" column="5" bodyfile="Library/thermo/thermo.h" bodystart="43" bodyend="47"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
@@ -647,7 +709,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.h" line="36" column="18" bodyfile="Library/thermo/thermo.h" bodystart="36" bodyend="-1"/>
+        <location file="Library/thermo/thermo.h" line="37" column="18" bodyfile="Library/thermo/thermo.h" bodystart="37" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -727,6 +789,44 @@
         </inbodydescription>
         <location file="Library/thermo/stdfunc.cpp" line="29" column="17" bodyfile="Library/thermo/stdfunc.cpp" bodystart="29" bodyend="44" declfile="Library/stdfunc.h" declline="126" declcolumn="17"/>
       </memberdef>
+      <memberdef kind="function" id="namespacexThermal_1a8070d0d4b3f74d2a73d523d2461167f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacexThermal_1af8b7978f2b9ac8f4b992f92082004207" kindref="member">EvaluationStatus</ref></type>
+        <definition>EvaluationStatus xThermal::evaluation_status</definition>
+        <argsstring>(xThermalBaseError::ErrCode code)</argsstring>
+        <name>evaluation_status</name>
+        <qualifiedname>xThermal::evaluation_status</qualifiedname>
+        <param>
+          <type>xThermalBaseError::ErrCode</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Status corresponding to an <ref refid="namespacexThermal" kindref="compound">xThermal</ref> error code </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/Exception.h" line="69" column="25" bodyfile="Library/thermo/Exception.h" bodystart="69" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacexThermal_1a60cd19be36d89be431d87d8e360732ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">char</ref> *</type>
+        <definition>const char * xThermal::evaluation_status_name</definition>
+        <argsstring>(EvaluationStatus status)</argsstring>
+        <name>evaluation_status_name</name>
+        <qualifiedname>xThermal::evaluation_status_name</qualifiedname>
+        <param>
+          <type><ref refid="namespacexThermal_1af8b7978f2b9ac8f4b992f92082004207" kindref="member">EvaluationStatus</ref></type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of a status, e.g. &quot;OutOfRange&quot; (for messages and logs) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/Exception.h" line="83" column="19" bodyfile="Library/thermo/Exception.h" bodystart="83" bodyend="94"/>
+      </memberdef>
       <memberdef kind="function" id="namespacexThermal_1a960a8fa20e4629abf126d5ff81616c78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
         <definition>void xThermal::fill_prop2data</definition>
@@ -755,7 +855,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.cpp" line="1106" column="10" bodyfile="Library/thermo/thermo.cpp" bodystart="1106" bodyend="1142" declfile="Library/thermo/thermo.h" declline="302" declcolumn="10"/>
+        <location file="Library/thermo/thermo.cpp" line="1104" column="10" bodyfile="Library/thermo/thermo.cpp" bodystart="1104" bodyend="1140" declfile="Library/thermo/thermo.h" declline="355" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespacexThermal_1aab774150d676d93511cab63dde0ea981" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref> &amp;</type>
@@ -769,7 +869,134 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/thermo.cpp" line="1274" column="16" bodyfile="Library/thermo/thermo.cpp" bodystart="1274" bodyend="1278"/>
+        <location file="Library/thermo/thermo.cpp" line="1272" column="16" bodyfile="Library/thermo/thermo.cpp" bodystart="1272" bodyend="1276"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacexThermal_1a56729f94bb1b1c5ae1387e1161e9fd92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::check_state_input</definition>
+        <argsstring>(const char *where, const char *name1, double value1, double p, const double *X=nullptr)</argsstring>
+        <name>check_state_input</name>
+        <qualifiedname>xThermal::check_state_input</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">char</ref> *</type>
+          <declname>where</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">char</ref> *</type>
+          <declname>name1</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>value1</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>X</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">nullptr</ref></defval>
+        </param>
+        <briefdescription>
+<para>Input check at the public state-evaluation entry points (C2). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Throws InputError if an input is not finite, if p &lt;= 0, or (when X is given) if X &lt; 0. These inputs cannot be evaluated by any model; no model-specific range is checked here (each model keeps its own range handling). Called only for the outermost evaluation (<ref refid="classxThermal_1_1OuterEvaluation_1a0c40a7393a20d37c598f659fa89d7814" kindref="member">OuterEvaluation::is_outer</ref>), so internal calls are unaffected.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>where</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function name for the message, e.g. &quot;cH2ONaCl::UpdateState_TPX&quot; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the first input (&quot;T&quot; or &quot;H&quot;), value1 its value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pressure [Pa] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>X</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk salinity [kg/kg], or nullptr for models without composition (water, NaCl) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.cpp" line="1289" column="10" bodyfile="Library/thermo/thermo.cpp" bodystart="1289" bodyend="1304" declfile="Library/thermo/thermo.h" declline="82" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacexThermal_1a0595b940303cd3dc7f64155fb91bbe62" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>static void xThermal::set_failed_state</definition>
+        <argsstring>(ThermodynamicProperties &amp;props, const std::string &amp;fluidName, bool hpx, double v1, double p, double X)</argsstring>
+        <name>set_failed_state</name>
+        <qualifiedname>xThermal::set_failed_state</qualifiedname>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> &amp;</type>
+          <declname>props</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::string &amp;</type>
+          <declname>fluidName</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+          <declname>hpx</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
+          <declname>X</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.cpp" line="1307" column="17" bodyfile="Library/thermo/thermo.cpp" bodystart="1307" bodyend="1323"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacexThermal_1ac190ac60feefadb2dfeb546f06ef0a72" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string xThermal::plain_message</definition>
+        <argsstring>(const char *what)</argsstring>
+        <name>plain_message</name>
+        <qualifiedname>xThermal::plain_message</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">char</ref> *</type>
+          <declname>what</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/thermo.cpp" line="1326" column="24" bodyfile="Library/thermo/thermo.cpp" bodystart="1326" bodyend="1341"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

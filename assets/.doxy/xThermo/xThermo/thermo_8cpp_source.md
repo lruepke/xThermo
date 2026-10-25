@@ -9,6 +9,11 @@
 
 ```C++
 #include "thermo.h"
+#include <atomic>
+#include <cstdio>
+#include <exception>
+#include <limits>
+#include <memory>
 
 // ----- LUT related head filess --------
 #include "LookUpTableForestI.H"
@@ -45,8 +50,9 @@ namespace xThermal
     void cxThermal::set_num_threads(int num_threads)
     {
 #if USE_OMP == 1
-        omp_set_num_threads(num_threads);
-        m_num_threads = num_threads;
+        // a setting of this object only (num_threads clause in evaluate_states); omp_set_num_threads would change
+        // the OpenMP default of the whole calling program
+        m_num_threads = num_threads > 1 ? num_threads : 1;
 #endif
     }
     int cxThermal::get_num_threads()
@@ -581,15 +587,11 @@ namespace xThermal
         // parallel refine
         if (tmp_lut_2D->m_TorH == LOOKUPTABLE_FOREST::EOS_ENERGY_T)
         {
-#ifdef USE_OMP
-#pragma omp parallel //shared(n)
-#endif
+            // serial: the OpenMP tasks of the refinement called this model from several threads (shared EOS state;
+            // an exception in a task ends the process). Parallel LUT construction belongs to the LUT review.
             {
-#ifdef USE_OMP
-#pragma omp single
-#endif
                 {
-                    printf("Do refinement using %d threads.\n", m_num_threads);
+                    printf("Do refinement.\n");
                     tmp_lut_2D->refine(RefineFunc_PTX);
                 }
             }
@@ -598,15 +600,11 @@ namespace xThermal
             tmp_lut_2D->construct_props_leaves(cal_prop_PTX);
         }else if(tmp_lut_2D->m_TorH == LOOKUPTABLE_FOREST::EOS_ENERGY_H)
         {
-#ifdef USE_OMP
-#pragma omp parallel //shared(n)
-#endif
+            // serial: the OpenMP tasks of the refinement called this model from several threads (shared EOS state;
+            // an exception in a task ends the process). Parallel LUT construction belongs to the LUT review.
             {
-#ifdef USE_OMP
-#pragma omp single
-#endif
                 {
-                    printf("Do refinement using %d threads.\n", m_num_threads);
+                    printf("Do refinement.\n");
                     tmp_lut_2D->refine(RefineFunc_PHX);
                 }
             }
@@ -1256,13 +1254,151 @@ namespace xThermal
     }
 
     OuterEvaluation::OuterEvaluation(ThermodynamicProperties& props)
+        : m_outer(evaluation_depth()++ == 0)
     {
-        if (evaluation_depth()++ == 0) props = ThermodynamicProperties();
+        if (m_outer) props = ThermodynamicProperties();
     }
 
     OuterEvaluation::~OuterEvaluation()
     {
         --evaluation_depth();
+    }
+
+    void check_state_input(const char* where, const char* name1, double value1, double p, const double* X)
+    {
+        auto fail = [&](const char* name, double value, const char* why) {
+            char buf[64];
+            std::snprintf(buf, sizeof buf, "%.17g", value);
+            throw InputError(std::string(where) + ": invalid input " + name + "=" + buf + " (" + why + ")");
+        };
+        if (!std::isfinite(value1)) fail(name1, value1, "not finite");
+        if (!std::isfinite(p)) fail("p", p, "not finite");
+        if (!(p > 0)) fail("p", p, "pressure must be positive");
+        if (X)
+        {
+            if (!std::isfinite(*X)) fail("X", *X, "not finite");
+            if (*X < 0) fail("X", *X, "salinity must not be negative");
+        }
+    }
+
+    // C1: the result of a failed non-throwing evaluation: the inputs, every other number NaN, phase Unknown
+    static void set_failed_state(ThermodynamicProperties& props, const std::string& fluidName, bool hpx, double v1, double p, double X)
+    {
+        const double nan = std::numeric_limits<double>::quiet_NaN();
+        props = ThermodynamicProperties();
+        props.fluidName = fluidName;
+        props.phase = Unknown;
+        double* fields[] = {&props.T, &props.p, &props.X, &props.H, &props.S_l, &props.S_v, &props.S_h, &props.X_l, &props.X_v,
+                            &props.Rho_l, &props.Rho_v, &props.Rho_h, &props.H_l, &props.H_v, &props.H_h, &props.Cp_l, &props.Cp_v,
+                            &props.Cp_h, &props.dHdP_l, &props.dHdP_v, &props.dHdP_h, &props.Mu_l, &props.Mu_v, &props.Rho, &props.Cp,
+                            &props.Mu, &props.dRhodP, &props.dRhodP_l, &props.dRhodP_v, &props.dRhodT, &props.dRhodT_l, &props.dRhodT_v,
+                            &props.IsothermalCompressibility, &props.IsothermalCompressibility_l, &props.IsothermalCompressibility_v,
+                            &props.IsobaricExpansivity, &props.IsobaricExpansivity_l, &props.IsobaricExpansivity_v};
+        for (double* f : fields) *f = nan;
+        (hpx ? props.H : props.T) = v1;
+        props.p = p;
+        props.X = X;
+    }
+
+    // message of an xThermal error without terminal colour codes
+    static std::string plain_message(const char* what)
+    {
+        std::string out;
+        for (const char* c = what; *c; ++c)
+        {
+            if (*c == '\033' && c[1] == '[')
+            {
+                c += 2;
+                while (*c && *c != 'm') ++c;
+                if (!*c) break;
+                continue;
+            }
+            out += *c;
+        }
+        return out;
+    }
+
+    EvaluationStatus cxThermal::tryUpdateState_TPX(ThermodynamicProperties& props, const double& T, const double& p, const double& X, std::string* message)
+    {
+        const double T0 = T, p0 = p, X0 = X;   // the inputs may be fields of props
+        try {
+            UpdateState_TPX(props, T0, p0, X0);
+        } catch (const xThermalBaseError& e) {
+            set_failed_state(props, name(), false, T0, p0, X0);
+            if (message) *message = plain_message(e.what());
+            return evaluation_status(e.code());
+        }
+        if (message) message->clear();
+        return EvaluationStatus::Ok;
+    }
+
+    EvaluationStatus cxThermal::tryUpdateState_HPX(ThermodynamicProperties& props, const double& H, const double& p, const double& X, std::string* message)
+    {
+        const double H0 = H, p0 = p, X0 = X;
+        try {
+            UpdateState_HPX(props, H0, p0, X0);
+        } catch (const xThermalBaseError& e) {
+            set_failed_state(props, name(), true, H0, p0, X0);
+            if (message) *message = plain_message(e.what());
+            return evaluation_status(e.code());
+        }
+        if (message) message->clear();
+        return EvaluationStatus::Ok;
+    }
+
+    void cxThermal::evaluate_states(size_t n, const std::function<void(cxThermal&, size_t, ThermodynamicProperties&)>& eval)
+    {
+        MultiProgressBar multiBar(n);
+#ifdef USE_OMP
+        // Internal OpenMP: every thread evaluates with its own model (createWorker), so no model state is shared and
+        // this object is not used. A failure is recorded instead of leaving the parallel region (which would end
+        // the process); points above the lowest failing index found so far are skipped, every point below it is
+        // evaluated, and afterwards the exception of the lowest failing index is raised: the same as the serial loop.
+        std::unique_ptr<cxThermal> replicable(m_num_threads > 1 && n > 1 ? createWorker() : nullptr);
+        if (replicable)
+        {
+            replicable.reset();
+            STATUS("Parallel computing, threads number: "<<m_num_threads);
+            std::atomic<size_t> first_failure(n);
+            std::exception_ptr failure;
+            const bool progress = m_isShowProgressBar;
+#pragma omp parallel num_threads(m_num_threads)
+            {
+                std::unique_ptr<cxThermal> worker;
+                try { worker.reset(createWorker()); } catch (...) {
+#pragma omp critical(xThermal_evaluate_states)
+                    { first_failure = 0; failure = std::current_exception(); }
+                }
+                ThermodynamicProperties props;
+#pragma omp for schedule(dynamic, 16)
+                for (long long i = 0; i < (long long)n; ++i)
+                {
+                    if (!worker || (size_t)i > first_failure.load()) continue;
+                    try {
+                        eval(*worker, (size_t)i, props);
+                    } catch (...) {
+#pragma omp critical(xThermal_evaluate_states)
+                        {
+                            if ((size_t)i < first_failure) { first_failure = (size_t)i; failure = std::current_exception(); }
+                        }
+                    }
+                    if (progress)
+                    {
+#pragma omp critical(xThermal_progress)
+                        multiBar.Update();
+                    }
+                }
+            }
+            if (failure) std::rethrow_exception(failure);
+            return;
+        }
+#endif
+        ThermodynamicProperties props;
+        for (size_t i = 0; i < n; ++i)
+        {
+            eval(*this, i, props);
+            if (m_isShowProgressBar) multiBar.Update();
+        }
     }
 
     ThermodynamicPropertiesVector cxThermal::UpdateState_TPX(const std::vector<double>& T, const std::vector<double>& p, const std::vector<double>& X, bool isMeshGrid)
@@ -1274,55 +1410,25 @@ namespace xThermal
             if (T.size() != p.size() || T.size() != X.size()) throw InputError("The size of input T,p,X vectors are not identical in cxThermal::UpdateState_TPX(const std::vector<double>& T, const std::vector<double>& p, const std::vector<double>& X, bool isMeshGrid), can not process vector calculation, please check.");
             size_t N = T.size();
             stateVector.resize(N);
-            MultiProgressBar multiBar(N);
-            ThermodynamicProperties props;
-#ifdef USE_OMP
-            if(get_num_threads()>1)STATUS("Parallel computing, threads number: "<<get_num_threads());
-#pragma omp parallel for private(props) shared(stateVector, T, p, X)
-#endif
-            for (size_t i = 0; i < N; ++i) {
+            evaluate_states(N, [&](cxThermal& model, size_t i, ThermodynamicProperties& props) {
                 stateVector.T[i] = T[i];    stateVector.p[i] = p[i];   stateVector.X[i] = X[i];
-                UpdateState_TPX(props, T[i], p[i], X[i]);
+                model.UpdateState_TPX(props, T[i], p[i], X[i]);
                 stateVector.fill(props, i);
-                if(m_isShowProgressBar)
-                {
-#ifdef USE_OMP
-#pragma omp critical
-#endif
-                    multiBar.Update();
-                }
-            }
+            });
         }
         else
         {
+            // index = k + j*nX + i*nX*nT for p[i], T[j], X[k]
             size_t nT = T.size(), nP = p.size(), nX = X.size();
             size_t N = nT*nP*nX;
             size_t nXnT = nT*nX;
             stateVector.resize(N);
-            ThermodynamicProperties props;
-            // size_t  ind = 0;
-            MultiProgressBar multiBar(nT*nP);
-#ifdef USE_OMP
-            if(get_num_threads()>1)STATUS("Parallel computing, threads number: "<<get_num_threads()<<"\n");
-#pragma omp parallel for private(props) shared(stateVector, T, p, X)
-#endif
-            for (int i = 0; i < nP; ++i) {
-                for (int j = 0; j < nT; ++j) {
-                    for (int k = 0; k < nX; ++k) {
-                        size_t  ind = k + j*nX + i*(nXnT);
-                        stateVector.T[ind] = T[j];    stateVector.p[ind] = p[i];   stateVector.X[ind] = X[k];
-                        UpdateState_TPX(props, T[j], p[i], X[k]);
-                        stateVector.fill(props, ind);
-                    }
-                    if(m_isShowProgressBar)
-                    {
-#ifdef USE_OMP
-#pragma omp critical
-#endif
-                        multiBar.Update();
-                    }
-                }
-            }
+            evaluate_states(N, [&](cxThermal& model, size_t ind, ThermodynamicProperties& props) {
+                size_t i = ind / nXnT, j = (ind % nXnT) / nX, k = ind % nX;
+                stateVector.T[ind] = T[j];    stateVector.p[ind] = p[i];   stateVector.X[ind] = X[k];
+                model.UpdateState_TPX(props, T[j], p[i], X[k]);
+                stateVector.fill(props, ind);
+            });
         }
         return stateVector;
     }
@@ -1336,55 +1442,24 @@ namespace xThermal
             if (H.size() != p.size() || H.size() != X.size()) throw InputError("The size of input H,p,X vectors are not identical in cxThermal::UpdateState_HPX(const std::vector<double>& H, const std::vector<double>& p, const std::vector<double>& X, bool isMeshGrid), can not process vector calculation, please check.");
             size_t N = H.size();
             stateVector.resize(N);
-            MultiProgressBar multiBar(N);
-            ThermodynamicProperties props;
-#ifdef USE_OMP
-            if(get_num_threads()>1)STATUS("Parallel computing, threads number: "<<get_num_threads());
-#pragma omp parallel for private(props) shared(stateVector, H, p, X)
-#endif
-            for (size_t i = 0; i < N; ++i) {
+            evaluate_states(N, [&](cxThermal& model, size_t i, ThermodynamicProperties& props) {
                 stateVector.H[i] = H[i];    stateVector.p[i] = p[i];   stateVector.X[i] = X[i];
-                // 1. calculate phase region
-                UpdateState_HPX(props, H[i], p[i], X[i]);
+                model.UpdateState_HPX(props, H[i], p[i], X[i]);
                 stateVector.fill(props, i);
-                if(m_isShowProgressBar)
-                {
-#ifdef USE_OMP
-#pragma omp critical
-#endif
-                    multiBar.Update();
-                }
-            }
+            });
         } else
         {
+            // index = k + j*nX + i*nX*nH for p[i], H[j], X[k]
             size_t nH = H.size(), nP = p.size(), nX = X.size();
             size_t N = nH*nP*nX;
             size_t nXnH = nX*nH;
             stateVector.resize(N);
-            ThermodynamicProperties props;
-            // size_t  ind = 0;
-            MultiProgressBar multiBar(nH*nP);
-#ifdef USE_OMP
-            if(get_num_threads()>1)STATUS("Parallel computing, threads number: "<<get_num_threads()<<"\n");
-#pragma omp parallel for private(props) shared(stateVector, H, p, X)
-#endif
-            for (int i = 0; i < nP; ++i) {
-                for (int j = 0; j < nH; ++j) {
-                    for (int k = 0; k < nX; ++k) {
-                        size_t  ind = k + j*nX + i*(nXnH);
-                        stateVector.H[ind] = H[j];    stateVector.p[ind] = p[i];   stateVector.X[ind] = X[k];
-                        UpdateState_HPX(props, H[j], p[i], X[k]);
-                        stateVector.fill(props, ind);
-                    }
-                    if(m_isShowProgressBar)
-                    {
-#ifdef USE_OMP
-#pragma omp critical
-#endif
-                        multiBar.Update();
-                    }
-                }
-            }
+            evaluate_states(N, [&](cxThermal& model, size_t ind, ThermodynamicProperties& props) {
+                size_t i = ind / nXnH, j = (ind % nXnH) / nX, k = ind % nX;
+                stateVector.H[ind] = H[j];    stateVector.p[ind] = p[i];   stateVector.X[ind] = X[k];
+                model.UpdateState_HPX(props, H[j], p[i], X[k]);
+                stateVector.fill(props, ind);
+            });
         }
         return stateVector;
     }
@@ -1407,15 +1482,11 @@ namespace xThermal
         // parallel refine
         if(tmp_lut_3D->m_TorH == LOOKUPTABLE_FOREST::EOS_ENERGY_T)
         {
-#ifdef USE_OMP
-#pragma omp parallel //shared(n)
-#endif
+            // serial: the OpenMP tasks of the refinement called this model from several threads (shared EOS state;
+            // an exception in a task ends the process). Parallel LUT construction belongs to the LUT review.
             {
-#ifdef USE_OMP
-#pragma omp single
-#endif
                 {
-                    printf("Do refinement using %d threads.\n", m_num_threads);
+                    printf("Do refinement.\n");
                     tmp_lut_3D->refine(RefineFunc_PTX);
                 }
             }
@@ -1424,15 +1495,11 @@ namespace xThermal
             tmp_lut_3D->construct_props_leaves(cal_prop_PTX);
         }else if (tmp_lut_3D->m_TorH == LOOKUPTABLE_FOREST::EOS_ENERGY_H)
         {
-#ifdef USE_OMP
-#pragma omp parallel //shared(n)
-#endif
+            // serial: the OpenMP tasks of the refinement called this model from several threads (shared EOS state;
+            // an exception in a task ends the process). Parallel LUT construction belongs to the LUT review.
             {
-#ifdef USE_OMP
-#pragma omp single
-#endif
                 {
-                    printf("Do refinement using %d threads.\n", m_num_threads);
+                    printf("Do refinement.\n");
                     tmp_lut_3D->refine(RefineFunc_PHX);
                 }
             }

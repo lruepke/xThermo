@@ -287,6 +287,7 @@
 * **m\_H\_h\_ref** ([**xThermal::NaCl::cNaCl**](classxThermal_1_1NaCl_1_1cNaCl.md))
 * **m\_coeff\_H** ([**xThermal::NaCl::cNaCl**](classxThermal_1_1NaCl_1_1cNaCl.md))
 * **m\_coeff\_rho** ([**xThermal::NaCl::cNaCl**](classxThermal_1_1NaCl_1_1cNaCl.md))
+* **m\_outer** ([**xThermal::OuterEvaluation**](classxThermal_1_1OuterEvaluation.md))
 * **marker** ([**xThermal::Point\_slice**](structxThermal_1_1Point__slice.md))
 * **mec** ([**xThermal::Point\_slice**](structxThermal_1_1Point__slice.md))
 * **mfc** ([**xThermal::Point\_slice**](structxThermal_1_1Point__slice.md))

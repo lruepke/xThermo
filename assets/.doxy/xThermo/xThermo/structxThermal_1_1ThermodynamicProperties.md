@@ -8,8 +8,9 @@
 
 
 
+_Result of a state evaluation (UpdateState\_TPX / UpdateState\_HPX)._ [More...](#detailed-description)
 
-
+* `#include <DataStructures.h>`
 
 
 
@@ -124,6 +125,26 @@
 
 
 
+## Detailed Description
+
+
+SI units: T [K], p [Pa], X [kg NaCl / kg fluid], H [J/kg], densities [kg/m^3], Cp [J/kg/K], Mu [Pa s], dRhodP [kg/m^3/Pa], dRhodT [kg/m^3/K], IsothermalCompressibility [1/Pa], IsobaricExpansivity [1/K]. Suffixes \_l, \_v, \_h: the liquid, vapour and halite phase; a field of an absent phase is 0. Fields without a suffix are bulk values. A field that a model does not compute keeps its default (0, or 1 for Mu).
+
+
+Single-phase states: the bulk fields are those of the phase.
+
+
+Multiphase states (H2O-NaCl V+L, V+H, L+H, V+L+H; water two-phase), no change of values implied:
+* Rho, H: bulk values of the phase assemblage (H2O-NaCl: Rho = sum S\_i Rho\_i, H = sum S\_i Rho\_i H\_i / Rho).
+* Cp: "frozen" bulk heat capacity sum S\_i Rho\_i Cp\_i / Rho, with phase heat capacities at fixed phase composition. It contains no latent heat and is not dH/dT of the bulk state. 0 in V+L+H and in the two-phase states of the water models.
+* Mu is not a mixture viscosity; a multiphase model forms one from Mu\_l, Mu\_v and the saturations. In V+L, V+H and L+H it holds the default 1. In V+L+H and in the H-P-X V+L state at X = 0 it is S\_l Mu\_l + S\_v Mu\_v. In the two-phase states of the water models it is backend-specific (IAPWS-95: viscosity at T and bulk density).
+* IsothermalCompressibility: in H2O-NaCl V+L, V+H and L+H the equilibrium derivative of the bulk density at fixed T and bulk X (the phases re-equilibrate), 0 in V+L+H and in the H-P-X V+L state at X = 0.
+* IsobaricExpansivity, dRhodP, dRhodT: not computed for multiphase states (0; the IAPS-84 water model gives non-finite values in its two-phase states). 
+
+
+
+
+    
 ## Public Attributes Documentation
 
 
@@ -150,6 +171,10 @@ double xThermal::ThermodynamicProperties::Cp_h;
 
 
 
+phase heat capacities dH\_i/dT at fixed p and phase composition [J/kg/K] 
+
+
+        
 
 <hr>
 
@@ -189,6 +214,10 @@ double xThermal::ThermodynamicProperties::H;
 
 
 
+temperature [K], pressure [Pa], bulk salinity [kg/kg], bulk specific enthalpy [J/kg] 
+
+
+        
 
 <hr>
 
@@ -202,6 +231,10 @@ double xThermal::ThermodynamicProperties::H_h;
 
 
 
+phase specific enthalpies [J/kg] 
+
+
+        
 
 <hr>
 
@@ -267,6 +300,10 @@ double xThermal::ThermodynamicProperties::IsobaricExpansivity_v;
 
 
 
+-(1/Rho) dRho/dT at fixed p 
+
+
+        
 
 <hr>
 
@@ -306,6 +343,10 @@ double xThermal::ThermodynamicProperties::IsothermalCompressibility_v;
 
 
 
+(1/Rho) dRho/dp at fixed T 
+
+
+        
 
 <hr>
 
@@ -319,6 +360,10 @@ double xThermal::ThermodynamicProperties::Mu;
 
 
 
+bulk density, bulk "frozen" heat capacity, bulk viscosity: see the multiphase notes above 
+
+
+        
 
 <hr>
 
@@ -345,6 +390,10 @@ double xThermal::ThermodynamicProperties::Mu_v;
 
 
 
+dynamic viscosity of the liquid and vapour phase [Pa s]; NaN where the viscosity correlation does not evaluate 
+
+
+        
 
 <hr>
 
@@ -371,6 +420,10 @@ double xThermal::ThermodynamicProperties::Rho_h;
 
 
 
+phase densities [kg/m^3] 
+
+
+        
 
 <hr>
 
@@ -423,6 +476,10 @@ double xThermal::ThermodynamicProperties::S_l;
 
 
 
+Phase saturations. H2O-NaCl: volume fractions. Water models (cIAPS84, cIAPWS95) in two-phase states: mass fractions (S\_v is the vapour quality); convert with S\_i(volume) = S\_i(mass) Rho / Rho\_i, e.g. Eq. 37 of Vehling et al. (2018). 
+
+
+        
 
 <hr>
 
@@ -488,6 +545,10 @@ double xThermal::ThermodynamicProperties::X_v;
 
 
 
+salinity of the liquid and vapour phase [kg/kg] 
+
+
+        
 
 <hr>
 
@@ -501,6 +562,10 @@ double xThermal::ThermodynamicProperties::dHdP_h;
 
 
 
+phase dH\_i/dp [J/kg/Pa] 
+
+
+        
 
 <hr>
 
@@ -566,6 +631,10 @@ double xThermal::ThermodynamicProperties::dRhodP_v;
 
 
 
+dRho/dp at fixed T (and phase composition for \_l, \_v) 
+
+
+        
 
 <hr>
 
@@ -605,6 +674,10 @@ double xThermal::ThermodynamicProperties::dRhodT_v;
 
 
 
+dRho/dT at fixed p (and phase composition for \_l, \_v) 
+
+
+        
 
 <hr>
 
@@ -644,6 +717,10 @@ PhaseRegion xThermal::ThermodynamicProperties::phase;
 
 
 
+phase region of the state 
+
+
+        
 
 <hr>
 ## Public Static Functions Documentation

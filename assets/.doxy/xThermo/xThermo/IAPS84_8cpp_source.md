@@ -191,9 +191,11 @@ namespace xThermal
         cIAPS84::~cIAPS84()
         {
         }
-        void cIAPS84::UpdateState_TPX(ThermodynamicProperties& props, const double& T, const double& P, const double& X)
+        void cIAPS84::UpdateState_TPX(ThermodynamicProperties& props, const double& T_in, const double& P_in, const double& X_in)
         {
+            const double T = T_in, P = P_in, X = X_in;  // copies: the inputs may be fields of props, which is reset next
             OuterEvaluation outer(props);  // C7: reset at the outermost entry
+            if (outer.is_outer()) check_state_input("cIAPS84::UpdateState_TPX", "T", T, P);  // C2
             props.fluidName = name();
             double d, dp, ds, dh;
             dp = 1.0e-8;
@@ -281,9 +283,11 @@ namespace xThermal
             freeProp(prop);
         }
 
-        void cIAPS84::UpdateState_HPX(ThermodynamicProperties& props, const double& H, const double& p, const double& X)
+        void cIAPS84::UpdateState_HPX(ThermodynamicProperties& props, const double& H_in, const double& p_in, const double& X_in)
         {
+            const double H = H_in, p = p_in, X = X_in;  // copies: the inputs may be fields of props, which is reset next
             OuterEvaluation outer(props);  // C7: reset at the outermost entry
+            if (outer.is_outer()) check_state_input("cIAPS84::UpdateState_HPX", "H", H, p);  // C2
             props.fluidName = name();
             double t = 0.0, d, dp, ds, dh;
             dp = 1.0e-8;

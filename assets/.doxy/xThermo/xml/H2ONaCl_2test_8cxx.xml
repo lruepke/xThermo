@@ -28,21 +28,21 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="24">
+      <node id="25">
         <label>IAPWS-IF97.h</label>
         <link refid="IAPWS-IF97_8h"/>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="23">
+      <node id="24">
         <label>IAPWS95.h</label>
         <link refid="IAPWS95_8h"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
       </node>
-      <node id="22">
+      <node id="23">
         <label>IAPWS95_CoolProp.h</label>
         <link refid="IAPWS95__CoolProp_8h"/>
       </node>
@@ -51,15 +51,13 @@
         <link refid="H2ONaCl_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
-        </childnode>
         <childnode refid="23" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
         <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="27" relation="include">
         </childnode>
@@ -73,6 +71,8 @@
         </childnode>
         <childnode refid="32" relation="include">
         </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
       </node>
       <node id="1">
         <label>Library/H2ONaCl/test.cxx</label>
@@ -80,14 +80,14 @@
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="25">
+      <node id="26">
         <label>NaCl.h</label>
         <link refid="NaCl_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
-        </childnode>
         <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
       <node id="8">
@@ -118,7 +118,7 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="20">
+      <node id="21">
         <label>MultiProgressBar.h</label>
         <link refid="MultiProgressBar_8h"/>
         <childnode refid="6" relation="include">
@@ -129,7 +129,7 @@
         </childnode>
         <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
       </node>
       <node id="4">
@@ -159,6 +159,8 @@
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
       </node>
       <node id="16">
         <label>triangle.h</label>
@@ -170,10 +172,10 @@
       <node id="15">
         <label>cmath</label>
       </node>
-      <node id="27">
+      <node id="28">
         <label>cstdio</label>
       </node>
-      <node id="26">
+      <node id="27">
         <label>cstdlib</label>
       </node>
       <node id="14">
@@ -182,19 +184,22 @@
       <node id="7">
         <label>fstream</label>
       </node>
-      <node id="30">
-        <label>gsl/gsl_errno.h</label>
+      <node id="20">
+        <label>functional</label>
       </node>
       <node id="31">
-        <label>gsl/gsl_math.h</label>
-      </node>
-      <node id="29">
-        <label>gsl/gsl_multiroots.h</label>
+        <label>gsl/gsl_errno.h</label>
       </node>
       <node id="32">
+        <label>gsl/gsl_math.h</label>
+      </node>
+      <node id="30">
+        <label>gsl/gsl_multiroots.h</label>
+      </node>
+      <node id="33">
         <label>gsl/gsl_roots.h</label>
       </node>
-      <node id="28">
+      <node id="29">
         <label>gsl/gsl_vector.h</label>
       </node>
       <node id="6">
@@ -212,7 +217,7 @@
       <node id="19">
         <label>string</label>
       </node>
-      <node id="21">
+      <node id="22">
         <label>sys/ioctl.h</label>
       </node>
       <node id="10">

@@ -54,7 +54,7 @@
 | struct | [**Point\_slice**](structxThermal_1_1Point__slice.md) <br> |
 | struct | [**Polygon\_slice**](structxThermal_1_1Polygon__slice.md) <br> |
 | struct | [**Surface**](structxThermal_1_1Surface.md) <br> |
-| struct | [**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) <br> |
+| struct | [**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) <br>_Result of a state evaluation (UpdateState\_TPX / UpdateState\_HPX)._  |
 | struct | [**ThermodynamicPropertiesArray**](structxThermal_1_1ThermodynamicPropertiesArray.md) <br> |
 | struct | [**ThermodynamicPropertiesVector**](structxThermal_1_1ThermodynamicPropertiesVector.md) <br> |
 | struct | [**ThermodynamicProperty**](structxThermal_1_1ThermodynamicProperty.md) <br>_Data struct of a thermodynamic property._  |

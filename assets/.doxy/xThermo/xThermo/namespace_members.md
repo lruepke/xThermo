@@ -23,6 +23,7 @@
 * **compare** ([**compare\_VL**](namespacecompare__VL.md))
 * **contourf\_phase** ([**compare\_VL**](namespacecompare__VL.md))
 * **CompositionError** ([**xThermal**](namespacexThermal.md))
+* **check\_state\_input** ([**xThermal**](namespacexThermal.md))
 * **createWaterAxes** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
 
 
@@ -37,7 +38,10 @@
 ## e
 
 * **EOS\_ENERGY** ([**LOOKUPTABLE\_FOREST**](namespaceLOOKUPTABLE__FOREST.md))
+* **EvaluationStatus** ([**xThermal**](namespacexThermal.md))
 * **evaluation\_depth** ([**xThermal**](namespacexThermal.md))
+* **evaluation\_status** ([**xThermal**](namespacexThermal.md))
+* **evaluation\_status\_name** ([**xThermal**](namespacexThermal.md))
 * **extname\_file** ([**xThermal**](namespacexThermal.md))
 * **eos\_at** ([**xThermal::PROST**](namespacexThermal_1_1PROST.md))
 
@@ -130,6 +134,7 @@
 * **props** ([**test\_H2ONaCl**](namespacetest__H2ONaCl.md))
 * **PhaseRegion** ([**xThermal**](namespacexThermal.md))
 * **PhaseType** ([**xThermal**](namespacexThermal.md))
+* **plain\_message** ([**xThermal**](namespacexThermal.md))
 * **print\_state\_HP2RhoT** ([**xThermal::IAPWS95**](namespacexThermal_1_1IAPWS95.md))
 * **print\_state\_PhaseEquilibrium** ([**xThermal::IAPWS95**](namespacexThermal_1_1IAPWS95.md))
 * **print\_state\_TP2Rho** ([**xThermal::IAPWS95**](namespacexThermal_1_1IAPWS95.md))
@@ -153,6 +158,7 @@
 * **SOLVE\_SATURATED\_PorT** ([**xThermal**](namespacexThermal.md))
 * **SolutionError** ([**xThermal**](namespacexThermal.md))
 * **Space\_EOS** ([**xThermal**](namespacexThermal.md))
+* **set\_failed\_state** ([**xThermal**](namespacexThermal.md))
 * **string\_split** ([**xThermal**](namespacexThermal.md))
 * **stable\_on\_phase\_side** ([**xThermal::PROST**](namespacexThermal_1_1PROST.md))
 

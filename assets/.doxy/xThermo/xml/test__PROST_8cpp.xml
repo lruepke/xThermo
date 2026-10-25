@@ -28,21 +28,21 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="24">
+      <node id="25">
         <label>IAPWS-IF97.h</label>
         <link refid="IAPWS-IF97_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="23">
+      <node id="24">
         <label>IAPWS95.h</label>
         <link refid="IAPWS95_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
       </node>
-      <node id="25">
+      <node id="26">
         <label>IAPWS95_CoolProp.h</label>
         <link refid="IAPWS95__CoolProp_8h"/>
       </node>
@@ -53,15 +53,15 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
         <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="22" relation="include">
         </childnode>
         <childnode refid="23" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
         </childnode>
       </node>
       <node id="6">
@@ -92,7 +92,7 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="18">
+      <node id="19">
         <label>MultiProgressBar.h</label>
         <link refid="MultiProgressBar_8h"/>
         <childnode refid="2" relation="include">
@@ -103,7 +103,7 @@
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -133,6 +133,8 @@
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
       </node>
       <node id="14">
         <label>triangle.h</label>
@@ -144,7 +146,7 @@
       <node id="13">
         <label>cmath</label>
       </node>
-      <node id="22">
+      <node id="23">
         <label>cstdio</label>
       </node>
       <node id="12">
@@ -153,7 +155,10 @@
       <node id="5">
         <label>fstream</label>
       </node>
-      <node id="21">
+      <node id="18">
+        <label>functional</label>
+      </node>
+      <node id="22">
         <label>iaps.h</label>
       </node>
       <node id="2">
@@ -168,13 +173,13 @@
       <node id="4">
         <label>stdfunc.h</label>
       </node>
-      <node id="20">
+      <node id="21">
         <label>steam4.h</label>
       </node>
       <node id="17">
         <label>string</label>
       </node>
-      <node id="19">
+      <node id="20">
         <label>sys/ioctl.h</label>
       </node>
       <node id="8">
@@ -305,7 +310,7 @@
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">xThermal::ThermodynamicProperties</ref><sp/>props_coolProp;</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>iapws95_coolprop.UpdateState_TPX(props_coolProp,<sp/>T,<sp/>P);</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n=====<sp/>Derivative<sp/>test<sp/>of<sp/>IAPWS95-COOLPROP<sp/>in<sp/>TP<sp/>space<sp/>=====\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;T=%f<sp/>deg.C,<sp/>P=%f<sp/>bar\n-<sp/>Rho<sp/>=<sp/>%f<sp/>kg/m3\n-<sp/>Cp<sp/>=<sp/>%f<sp/>J/kg/K\n-<sp/>H<sp/>=<sp/>%f<sp/>MJ/kg\n-<sp/>Mu<sp/>=<sp/>%f<sp/>Pa<sp/>s\n&quot;</highlight><highlight class="normal">,<sp/>T-273.15,<sp/>P/1E5,<sp/>props_coolProp.Rho,<sp/>props_coolProp.Cp,<sp/>props_coolProp.H/1E6,<sp/>props_coolProp.Mu);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;T=%f<sp/>deg.C,<sp/>P=%f<sp/>bar\n-<sp/>Rho<sp/>=<sp/>%f<sp/>kg/m3\n-<sp/>Cp<sp/>=<sp/>%f<sp/>J/kg/K\n-<sp/>H<sp/>=<sp/>%f<sp/>MJ/kg\n-<sp/>Mu<sp/>=<sp/>%f<sp/>Pa<sp/>s\n&quot;</highlight><highlight class="normal">,<sp/>T-273.15,<sp/>P/1E5,<sp/>props_coolProp.Rho,<sp/>props_coolProp.Cp,<sp/>props_coolProp.<ref refid="structxThermal_1_1ThermodynamicProperties_1ad6a58ed6f1007bedeaac63747cd92130" kindref="member">H</ref>/1E6,<sp/>props_coolProp.<ref refid="structxThermal_1_1ThermodynamicProperties_1ad40ed88093a409da93ac9439ab8a83ab" kindref="member">Mu</ref>);</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Derivatives:<sp/>\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;-<sp/>Isothermal<sp/>compressibility:<sp/>%E\n&quot;</highlight><highlight class="normal">,<sp/>props.IsothermalCompressibility);</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;-<sp/>Volume<sp/>expansivity:<sp/>%E\n&quot;</highlight><highlight class="normal">,<sp/>props.IsobaricExpansivity);</highlight></codeline>

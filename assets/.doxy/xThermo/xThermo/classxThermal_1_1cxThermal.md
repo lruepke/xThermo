@@ -8,7 +8,7 @@
 
 
 
-_Top abstract class of the thermodynamic model._ 
+_Top abstract class of the thermodynamic model._ [More...](#detailed-description)
 
 * `#include <thermo.h>`
 
@@ -120,6 +120,8 @@ Inherited by the following classes: [xThermal::H2ONaCl::cH2ONaCl](classxThermal_
 | virtual [**void**](classxThermal_1_1xThermalError.md) | [**set\_num\_threads**](#function-set_num_threads) ([**int**](classxThermal_1_1xThermalError.md) num\_threads) <br> |
 |  [**void**](classxThermal_1_1xThermalError.md) | [**showProgressBar**](#function-showprogressbar) ([**bool**](classxThermal_1_1xThermalError.md) isShow) <br> |
 |  T | [**sum\_vector**](#function-sum_vector) ([**const**](classxThermal_1_1xThermalError.md) std::vector&lt; T &gt; & x) <br> |
+|  [**EvaluationStatus**](namespacexThermal.md#enum-evaluationstatus) | [**tryUpdateState\_HPX**](#function-tryupdatestate_hpx) ([**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) & props, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & H, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & p, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & X=0, std::string \* message=[**nullptr**](classxThermal_1_1xThermalError.md)) <br>_Non-throwing H-P-X evaluation; as tryUpdateState\_TPX (on failure H, p, X are the inputs, T is NaN)_  |
+|  [**EvaluationStatus**](namespacexThermal.md#enum-evaluationstatus) | [**tryUpdateState\_TPX**](#function-tryupdatestate_tpx) ([**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) & props, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & T, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & p, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & X=0, std::string \* message=[**nullptr**](classxThermal_1_1xThermalError.md)) <br>_Non-throwing T-P-X evaluation: the same evaluation as UpdateState\_TPX, reported as a status (C1)._  |
 | virtual [**void**](classxThermal_1_1xThermalError.md) | [**writeLine2VTU**](#function-writeline2vtu) (std::string vtuFile, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & X, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & Y, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & Z, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) scale\_x=1.0, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) scale\_y=1.0, [**double**](classxThermal_1_1xThermalError.md) scale\_z=1.0) <br> |
 | virtual [**void**](classxThermal_1_1xThermalError.md) | [**writeMeshGrid2VTK**](#function-writemeshgrid2vtk) ([**const**](classxThermal_1_1xThermalError.md) std::string & vtkFile, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & x, [**const**](classxThermal_1_1xThermalError.md) std::string & xTitle, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & y, [**const**](classxThermal_1_1xThermalError.md) std::string & yTitle, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & z, [**const**](classxThermal_1_1xThermalError.md) std::string & zTitle, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; &gt; & props, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**propInfo**](structxThermal_1_1propInfo.md) &gt; & propsInfo, [**bool**](classxThermal_1_1xThermalError.md) isNormalize=[**false**](classxThermal_1_1xThermalError.md)) <br> |
 | virtual [**void**](classxThermal_1_1xThermalError.md) | [**writePhaseBoundaries2VTU**](#function-writephaseboundaries2vtu) (std::string outputPath, [**const**](classxThermal_1_1xThermalError.md) [**PhaseBoundaries**](structxThermal_1_1PhaseBoundaries.md) & phaseBoundaries, [**double**](classxThermal_1_1xThermalError.md) scale\_T=1, [**double**](classxThermal_1_1xThermalError.md) scale\_p=1, [**double**](classxThermal_1_1xThermalError.md) scale\_X=1) <br> |
@@ -155,10 +157,25 @@ Inherited by the following classes: [xThermal::H2ONaCl::cH2ONaCl](classxThermal_
 
 
 
+## Protected Functions
+
+| Type | Name |
+| ---: | :--- |
+| virtual [**cxThermal**](classxThermal_1_1cxThermal.md) \* | [**createWorker**](#function-createworker) () <br>_A new, independent model that evaluates exactly as this one (same backend and settings), owned by the caller. Used for one model per thread in the internal OpenMP evaluation. The default (nullptr) means that the model cannot be replicated; its vector evaluations then run serially._  |
 
 
 
 
+## Detailed Description
+
+
+Concurrency: a model object is not thread-safe. Concurrent evaluations (threads or OpenMP of the calling code) need one model object per thread; independent objects share no state and give the same results as serial evaluation. MPI ranks have their own objects anyway. The internal OpenMP evaluation of the vector API (XTHERMO\_OPENMP=ON, set\_num\_threads) creates such an object per thread itself.
+
+
+Errors: UpdateState\_TPX / UpdateState\_HPX throw an [**xThermalBaseError**](classxThermal_1_1xThermalBaseError.md) (Exception.h) when a state cannot be evaluated; tryUpdateState\_TPX / tryUpdateState\_HPX report the same failures as an EvaluationStatus. A single property that is not available for an evaluated state may be NaN (see [**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md)). 
+
+
+    
 ## Public Attributes Documentation
 
 
@@ -1355,6 +1372,10 @@ virtual void xThermal::cxThermal::set_num_threads (
 
 
 
+Number of threads of the internal OpenMP evaluation of the vector API (default 1; only with XTHERMO\_OPENMP=ON). It is a setting of this object: the caller's OpenMP settings are not changed. 
+
+
+        
 
 <hr>
 
@@ -1386,6 +1407,50 @@ inline T xThermal::cxThermal::sum_vector (
 
 
 
+
+<hr>
+
+
+
+### function tryUpdateState\_HPX 
+
+_Non-throwing H-P-X evaluation; as tryUpdateState\_TPX (on failure H, p, X are the inputs, T is NaN)_ 
+```C++
+EvaluationStatus xThermal::cxThermal::tryUpdateState_HPX (
+    ThermodynamicProperties & props,
+    const  double & H,
+    const  double & p,
+    const  double & X=0,
+    std::string * message=nullptr
+) 
+```
+
+
+
+
+<hr>
+
+
+
+### function tryUpdateState\_TPX 
+
+_Non-throwing T-P-X evaluation: the same evaluation as UpdateState\_TPX, reported as a status (C1)._ 
+```C++
+EvaluationStatus xThermal::cxThermal::tryUpdateState_TPX (
+    ThermodynamicProperties & props,
+    const  double & T,
+    const  double & p,
+    const  double & X=0,
+    std::string * message=nullptr
+) 
+```
+
+
+
+On success (EvaluationStatus::Ok), props is identical to the result of UpdateState\_TPX and \*message (if given) is cleared. If the evaluation fails with an [**xThermal**](namespacexThermal.md) error, the function returns the corresponding status instead of throwing, props holds no result (T, p, X are the inputs, every other number is NaN, phase is Unknown) and \*message (if given) the error message. Other exceptions (e.g. std::bad\_alloc or a programming error) are not evaluation failures and propagate. 
+
+
+        
 
 <hr>
 
@@ -1530,6 +1595,22 @@ virtual xThermal::cxThermal::~cxThermal ()
 static INDEX_FLUID xThermal::cxThermal::validateFluid (
     const std::string & fluidName
 ) 
+```
+
+
+
+
+<hr>
+## Protected Functions Documentation
+
+
+
+
+### function createWorker 
+
+_A new, independent model that evaluates exactly as this one (same backend and settings), owned by the caller. Used for one model per thread in the internal OpenMP evaluation. The default (nullptr) means that the model cannot be replicated; its vector evaluations then run serially._ 
+```C++
+inline virtual cxThermal * xThermal::cxThermal::createWorker () 
 ```
 
 

@@ -1114,6 +1114,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#detailed-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detailed Description
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#public-attributes-documentation" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1648,6 +1659,10 @@
 
 <h1 id="struct-xthermalthermodynamicproperties">Struct xThermal::ThermodynamicProperties</h1>
 <p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacexThermal/"><strong>xThermal</strong></a> <strong>&gt;</strong> <a href="./"><strong>ThermodynamicProperties</strong></a></p>
+<p><em>Result of a state evaluation (UpdateState_TPX / UpdateState_HPX).</em> <a href="#detailed-description">More...</a></p>
+<ul>
+<li><code>#include &lt;DataStructures.h&gt;</code></li>
+</ul>
 <h2 id="public-attributes">Public Attributes</h2>
 <table>
 <thead>
@@ -1834,6 +1849,15 @@
 </tr>
 </tbody>
 </table>
+<h2 id="detailed-description">Detailed Description</h2>
+<p>SI units: T [K], p [Pa], X [kg NaCl / kg fluid], H [J/kg], densities [kg/m^3], Cp [J/kg/K], Mu [Pa s], dRhodP [kg/m^3/Pa], dRhodT [kg/m^3/K], IsothermalCompressibility [1/Pa], IsobaricExpansivity [1/K]. Suffixes _l, _v, _h: the liquid, vapour and halite phase; a field of an absent phase is 0. Fields without a suffix are bulk values. A field that a model does not compute keeps its default (0, or 1 for Mu).</p>
+<p>Single-phase states: the bulk fields are those of the phase.</p>
+<p>Multiphase states (H2O-NaCl V+L, V+H, L+H, V+L+H; water two-phase), no change of values implied:
+* Rho, H: bulk values of the phase assemblage (H2O-NaCl: Rho = sum S_i Rho_i, H = sum S_i Rho_i H_i / Rho).
+* Cp: "frozen" bulk heat capacity sum S_i Rho_i Cp_i / Rho, with phase heat capacities at fixed phase composition. It contains no latent heat and is not dH/dT of the bulk state. 0 in V+L+H and in the two-phase states of the water models.
+* Mu is not a mixture viscosity; a multiphase model forms one from Mu_l, Mu_v and the saturations. In V+L, V+H and L+H it holds the default 1. In V+L+H and in the H-P-X V+L state at X = 0 it is S_l Mu_l + S_v Mu_v. In the two-phase states of the water models it is backend-specific (IAPWS-95: viscosity at T and bulk density).
+* IsothermalCompressibility: in H2O-NaCl V+L, V+H and L+H the equilibrium derivative of the bulk density at fixed T and bulk X (the phases re-equilibrate), 0 in V+L+H and in the H-P-X V+L state at X = 0.
+* IsobaricExpansivity, dRhodP, dRhodT: not computed for multiphase states (0; the IAPS-84 water model gives non-finite values in its two-phase states). </p>
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-cp">variable Cp</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicProperties</span><span class="o">::</span><span class="n">Cp</span><span class="p">;</span>
@@ -1843,6 +1867,7 @@
 <h3 id="variable-cp_h">variable Cp_h</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicProperties</span><span class="o">::</span><span class="n">Cp_h</span><span class="p">;</span>
 </code></pre></div>
+<p>phase heat capacities dH_i/dT at fixed p and phase composition [J/kg/K] </p>
 <hr>
 
 <h3 id="variable-cp_l">variable Cp_l</h3>
@@ -1858,11 +1883,13 @@
 <h3 id="variable-h">variable H</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicProperties</span><span class="o">::</span><span class="n">H</span><span class="p">;</span>
 </code></pre></div>
+<p>temperature [K], pressure [Pa], bulk salinity [kg/kg], bulk specific enthalpy [J/kg] </p>
 <hr>
 
 <h3 id="variable-h_h">variable H_h</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicProperties</span><span class="o">::</span><span class="n">H_h</span><span class="p">;</span>
 </code></pre></div>
+<p>phase specific enthalpies [J/kg] </p>
 <hr>
 
 <h3 id="variable-h_l">variable H_l</h3>
@@ -1888,6 +1915,7 @@
 <h3 id="variable-isobaricexpansivity_v">variable IsobaricExpansivity_v</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicProperties</span><span class="o">::</span><span class="n">IsobaricExpansivity_v</span><span class="p">;</span>
 </code></pre></div>
+<p>-(1/Rho) dRho/dT at fixed p </p>
 <hr>
 
 <h3 id="variable-isothermalcompressibility">variable IsothermalCompressibility</h3>
@@ -1903,11 +1931,13 @@
 <h3 id="variable-isothermalcompressibility_v">variable IsothermalCompressibility_v</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicProperties</span><span class="o">::</span><span class="n">IsothermalCompressibility_v</span><span class="p">;</span>
 </code></pre></div>
+<p>(1/Rho) dRho/dp at fixed T </p>
 <hr>
 
 <h3 id="variable-mu">variable Mu</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicProperties</span><span class="o">::</span><span class="n">Mu</span><span class="p">;</span>
 </code></pre></div>
+<p>bulk density, bulk "frozen" heat capacity, bulk viscosity: see the multiphase notes above </p>
 <hr>
 
 <h3 id="variable-mu_l">variable Mu_l</h3>
@@ -1918,6 +1948,7 @@
 <h3 id="variable-mu_v">variable Mu_v</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicProperties</span><span class="o">::</span><span class="n">Mu_v</span><span class="p">;</span>
 </code></pre></div>
+<p>dynamic viscosity of the liquid and vapour phase [Pa s]; NaN where the viscosity correlation does not evaluate </p>
 <hr>
 
 <h3 id="variable-rho">variable Rho</h3>
@@ -1928,6 +1959,7 @@
 <h3 id="variable-rho_h">variable Rho_h</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicProperties</span><span class="o">::</span><span class="n">Rho_h</span><span class="p">;</span>
 </code></pre></div>
+<p>phase densities [kg/m^3] </p>
 <hr>
 
 <h3 id="variable-rho_l">variable Rho_l</h3>
@@ -1948,6 +1980,7 @@
 <h3 id="variable-s_l">variable S_l</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicProperties</span><span class="o">::</span><span class="n">S_l</span><span class="p">;</span>
 </code></pre></div>
+<p>Phase saturations. H2O-NaCl: volume fractions. Water models (cIAPS84, cIAPWS95) in two-phase states: mass fractions (S_v is the vapour quality); convert with S_i(volume) = S_i(mass) Rho / Rho_i, e.g. Eq. 37 of Vehling et al. (2018). </p>
 <hr>
 
 <h3 id="variable-s_v">variable S_v</h3>
@@ -1973,11 +2006,13 @@
 <h3 id="variable-x_v">variable X_v</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicProperties</span><span class="o">::</span><span class="n">X_v</span><span class="p">;</span>
 </code></pre></div>
+<p>salinity of the liquid and vapour phase [kg/kg] </p>
 <hr>
 
 <h3 id="variable-dhdp_h">variable dHdP_h</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicProperties</span><span class="o">::</span><span class="n">dHdP_h</span><span class="p">;</span>
 </code></pre></div>
+<p>phase dH_i/dp [J/kg/Pa] </p>
 <hr>
 
 <h3 id="variable-dhdp_l">variable dHdP_l</h3>
@@ -2003,6 +2038,7 @@
 <h3 id="variable-drhodp_v">variable dRhodP_v</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicProperties</span><span class="o">::</span><span class="n">dRhodP_v</span><span class="p">;</span>
 </code></pre></div>
+<p>dRho/dp at fixed T (and phase composition for _l, _v) </p>
 <hr>
 
 <h3 id="variable-drhodt">variable dRhodT</h3>
@@ -2018,6 +2054,7 @@
 <h3 id="variable-drhodt_v">variable dRhodT_v</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicProperties</span><span class="o">::</span><span class="n">dRhodT_v</span><span class="p">;</span>
 </code></pre></div>
+<p>dRho/dT at fixed p (and phase composition for _l, _v) </p>
 <hr>
 
 <h3 id="variable-fluidname">variable fluidName</h3>
@@ -2033,6 +2070,7 @@
 <h3 id="variable-phase">variable phase</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="n">PhaseRegion</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicProperties</span><span class="o">::</span><span class="n">phase</span><span class="p">;</span>
 </code></pre></div>
+<p>phase region of the state </p>
 <hr>
 <h2 id="public-static-functions-documentation">Public Static Functions Documentation</h2>
 <h3 id="function-info">function info</h3>

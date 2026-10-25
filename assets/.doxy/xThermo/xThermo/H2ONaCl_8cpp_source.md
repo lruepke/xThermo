@@ -2611,8 +2611,10 @@ namespace xThermal
             // }
         }
 
-        void cH2ONaCl::UpdateState_TPX(ThermodynamicProperties& props, const double& T, const double& p, const double& X) {
+        void cH2ONaCl::UpdateState_TPX(ThermodynamicProperties& props, const double& T_in, const double& p_in, const double& X_in) {
+            const double T = T_in, p = p_in, X = X_in;  // copies: the inputs may be fields of props, which is reset next
             OuterEvaluation outer(props);  // C7: reset at the outermost entry
+            if (outer.is_outer()) check_state_input("cH2ONaCl::UpdateState_TPX", "T", T, p, &X);  // C2
             // LIB-55: the published upper temperature limit of the H2O-NaCl model (Driesner & Heinrich 2007; T_MAX); above
             // it the phase relations are not defined (the evaluation jumped to "Liquid" with discontinuous H and possibly
             // negative density). The pure-water backends keep their own range.
@@ -3094,9 +3096,11 @@ namespace xThermal
             return true;
         }
 
-        void cH2ONaCl::UpdateState_HPX(ThermodynamicProperties& props, const double& H, const double& p, const double& X)
+        void cH2ONaCl::UpdateState_HPX(ThermodynamicProperties& props, const double& H_in, const double& p_in, const double& X_in)
         {
+            const double H = H_in, p = p_in, X = X_in;  // copies: the inputs may be fields of props, which is reset next
             OuterEvaluation outer(props);  // C7: reset at the outermost entry
+            if (outer.is_outer()) check_state_input("cH2ONaCl::UpdateState_HPX", "H", H, p, &X);  // C2
             props.fluidName = name();
             // LIB-19: no early return for H > H(T_MAX) (it left an "Unknown" state with zeros); T_HPX handles the limits
 

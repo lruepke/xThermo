@@ -61,7 +61,7 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="18">
+      <node id="19">
         <label>MultiProgressBar.h</label>
         <link refid="MultiProgressBar_8h"/>
         <childnode refid="4" relation="include">
@@ -72,7 +72,7 @@
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -102,6 +102,8 @@
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
       </node>
       <node id="14">
         <label>triangle.h</label>
@@ -119,6 +121,9 @@
       <node id="5">
         <label>fstream</label>
       </node>
+      <node id="18">
+        <label>functional</label>
+      </node>
       <node id="4">
         <label>iostream</label>
       </node>
@@ -134,7 +139,7 @@
       <node id="17">
         <label>string</label>
       </node>
-      <node id="19">
+      <node id="20">
         <label>sys/ioctl.h</label>
       </node>
       <node id="8">

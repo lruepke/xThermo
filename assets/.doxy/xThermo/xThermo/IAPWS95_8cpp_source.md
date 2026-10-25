@@ -1335,8 +1335,10 @@ namespace xThermal
         }
 
         void
-        cIAPWS95::UpdateState_TPX(ThermodynamicProperties &props, const double &T, const double &P, const double &X) {
+        cIAPWS95::UpdateState_TPX(ThermodynamicProperties &props, const double &T_in, const double &P_in, const double &X_in) {
+            const double T = T_in, P = P_in, X = X_in;  // copies: the inputs may be fields of props, which is reset next
             OuterEvaluation outer(props);  // C7: reset at the outermost entry
+            if (outer.is_outer()) check_state_input("cIAPWS95::UpdateState_TPX", "T", T, P);  // C2
             State state;
             UpdateState_TP(props, state, T, P);
         }
@@ -1474,8 +1476,10 @@ namespace xThermal
         }
 
         void
-        cIAPWS95::UpdateState_HPX(ThermodynamicProperties &props, const double &H, const double &p, const double &X) {
+        cIAPWS95::UpdateState_HPX(ThermodynamicProperties &props, const double &H_in, const double &p_in, const double &X_in) {
+            const double H = H_in, p = p_in, X = X_in;  // copies: the inputs may be fields of props, which is reset next
             OuterEvaluation outer(props);  // C7: reset at the outermost entry
+            if (outer.is_outer()) check_state_input("cIAPWS95::UpdateState_HPX", "H", H, p);  // C2
             State state;
             UpdateState_HP(props, state, H, p);
         }

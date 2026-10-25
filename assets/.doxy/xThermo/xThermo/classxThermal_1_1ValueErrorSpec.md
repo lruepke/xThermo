@@ -227,7 +227,7 @@ See [xThermal::xThermalBaseError](classxThermal_1_1xThermalBaseError.md)
 | Type | Name |
 | ---: | :--- |
 |  ErrCode | [**code**](classxThermal_1_1xThermalBaseError.md#function-code-12) () <br> |
-|  ErrCode | [**code**](classxThermal_1_1xThermalBaseError.md#function-code-12) () <br> |
+|  ErrCode | [**code**](classxThermal_1_1xThermalBaseError.md#function-code-22) () const<br> |
 | virtual [**const**](classxThermal_1_1xThermalError.md) [**char**](classxThermal_1_1xThermalError.md) \* | [**what**](classxThermal_1_1xThermalBaseError.md#function-what-12) () const<br> |
 | virtual [**const**](classxThermal_1_1xThermalError.md) [**char**](classxThermal_1_1xThermalError.md) \* | [**what**](classxThermal_1_1xThermalBaseError.md#function-what-12) () const<br> |
 |   | [**xThermalBaseError**](classxThermal_1_1xThermalBaseError.md#function-xthermalbaseerror-12) ([**const**](classxThermal_1_1xThermalError.md) std::string & err, ErrCode code) <br> |
@@ -243,7 +243,7 @@ See [xThermal::xThermalBaseError](classxThermal_1_1xThermalBaseError.md)
 | Type | Name |
 | ---: | :--- |
 |  ErrCode | [**code**](classxThermal_1_1xThermalBaseError.md#function-code-12) () <br> |
-|  ErrCode | [**code**](classxThermal_1_1xThermalBaseError.md#function-code-12) () <br> |
+|  ErrCode | [**code**](classxThermal_1_1xThermalBaseError.md#function-code-22) () const<br> |
 | virtual [**const**](classxThermal_1_1xThermalError.md) [**char**](classxThermal_1_1xThermalError.md) \* | [**what**](classxThermal_1_1xThermalBaseError.md#function-what-12) () const<br> |
 | virtual [**const**](classxThermal_1_1xThermalError.md) [**char**](classxThermal_1_1xThermalError.md) \* | [**what**](classxThermal_1_1xThermalBaseError.md#function-what-12) () const<br> |
 |   | [**xThermalBaseError**](classxThermal_1_1xThermalBaseError.md#function-xthermalbaseerror-12) ([**const**](classxThermal_1_1xThermalError.md) std::string & err, ErrCode code) <br> |
@@ -269,7 +269,7 @@ See [xThermal::xThermalBaseError](classxThermal_1_1xThermalBaseError.md)
 | Type | Name |
 | ---: | :--- |
 |  ErrCode | [**code**](classxThermal_1_1xThermalBaseError.md#function-code-12) () <br> |
-|  ErrCode | [**code**](classxThermal_1_1xThermalBaseError.md#function-code-12) () <br> |
+|  ErrCode | [**code**](classxThermal_1_1xThermalBaseError.md#function-code-22) () const<br> |
 | virtual [**const**](classxThermal_1_1xThermalError.md) [**char**](classxThermal_1_1xThermalError.md) \* | [**what**](classxThermal_1_1xThermalBaseError.md#function-what-12) () const<br> |
 | virtual [**const**](classxThermal_1_1xThermalError.md) [**char**](classxThermal_1_1xThermalError.md) \* | [**what**](classxThermal_1_1xThermalBaseError.md#function-what-12) () const<br> |
 |   | [**xThermalBaseError**](classxThermal_1_1xThermalBaseError.md#function-xthermalbaseerror-12) ([**const**](classxThermal_1_1xThermalError.md) std::string & err, ErrCode code) <br> |
@@ -285,7 +285,7 @@ See [xThermal::xThermalBaseError](classxThermal_1_1xThermalBaseError.md)
 | Type | Name |
 | ---: | :--- |
 |  ErrCode | [**code**](classxThermal_1_1xThermalBaseError.md#function-code-12) () <br> |
-|  ErrCode | [**code**](classxThermal_1_1xThermalBaseError.md#function-code-12) () <br> |
+|  ErrCode | [**code**](classxThermal_1_1xThermalBaseError.md#function-code-22) () const<br> |
 | virtual [**const**](classxThermal_1_1xThermalError.md) [**char**](classxThermal_1_1xThermalError.md) \* | [**what**](classxThermal_1_1xThermalBaseError.md#function-what-12) () const<br> |
 | virtual [**const**](classxThermal_1_1xThermalError.md) [**char**](classxThermal_1_1xThermalError.md) \* | [**what**](classxThermal_1_1xThermalBaseError.md#function-what-12) () const<br> |
 |   | [**xThermalBaseError**](classxThermal_1_1xThermalBaseError.md#function-xthermalbaseerror-12) ([**const**](classxThermal_1_1xThermalError.md) std::string & err, ErrCode code) <br> |

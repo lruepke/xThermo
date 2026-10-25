@@ -84,7 +84,7 @@ This inheritance list is sorted roughly, but not completely, alphabetically:
 * **struct** [**xThermal::Point\_slice**](structxThermal_1_1Point__slice.md) 
 * **struct** [**xThermal::Polygon\_slice**](structxThermal_1_1Polygon__slice.md) 
 * **struct** [**xThermal::Surface**](structxThermal_1_1Surface.md) 
-* **struct** [**xThermal::ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) 
+* **struct** [**xThermal::ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) _Result of a state evaluation (UpdateState\_TPX / UpdateState\_HPX)._ 
 * **struct** [**xThermal::ThermodynamicPropertiesArray**](structxThermal_1_1ThermodynamicPropertiesArray.md) 
 * **struct** [**xThermal::ThermodynamicPropertiesVector**](structxThermal_1_1ThermodynamicPropertiesVector.md) 
 * **struct** [**xThermal::ThermodynamicProperty**](structxThermal_1_1ThermodynamicProperty.md) _Data struct of a thermodynamic property._ 

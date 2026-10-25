@@ -45,6 +45,7 @@
 * **compressibility\_VH** ([**xThermal::H2ONaCl::cH2ONaCl**](classxThermal_1_1H2ONaCl_1_1cH2ONaCl.md))
 * **compressibility\_VL** ([**xThermal::H2ONaCl::cH2ONaCl**](classxThermal_1_1H2ONaCl_1_1cH2ONaCl.md))
 * **createTable4\_Driesner2007a** ([**xThermal::H2ONaCl::cH2ONaCl**](classxThermal_1_1H2ONaCl_1_1cH2ONaCl.md))
+* **createWorker** ([**xThermal::H2ONaCl::cH2ONaCl**](classxThermal_1_1H2ONaCl_1_1cH2ONaCl.md), [**xThermal::IAPWS95::cIAPWS95**](classxThermal_1_1IAPWS95_1_1cIAPWS95.md), [**xThermal::NaCl::cNaCl**](classxThermal_1_1NaCl_1_1cNaCl.md), [**xThermal::PROST::cIAPS84**](classxThermal_1_1PROST_1_1cIAPS84.md), [**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
 * **cIAPWS95** ([**xThermal::IAPWS95::cIAPWS95**](classxThermal_1_1IAPWS95_1_1cIAPWS95.md))
 * **cIAPWS\_IF97** ([**xThermal::IAPWS\_IF97::cIAPWS\_IF97**](classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97.md))
 * **Cp\_Liquid** ([**xThermal::NaCl::cNaCl**](classxThermal_1_1NaCl_1_1cNaCl.md))
@@ -77,6 +78,7 @@
 * **extrapolation\_H\_highT** ([**xThermal::H2ONaCl::cH2ONaCl**](classxThermal_1_1H2ONaCl_1_1cH2ONaCl.md))
 * **extrapolation\_V\_highT** ([**xThermal::H2ONaCl::cH2ONaCl**](classxThermal_1_1H2ONaCl_1_1cH2ONaCl.md))
 * **extrapolation\_V\_lowPlowT** ([**xThermal::H2ONaCl::cH2ONaCl**](classxThermal_1_1H2ONaCl_1_1cH2ONaCl.md))
+* **evaluate\_states** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
 * **eval** ([**xThermal::gsl\_guard::GuardedFunction**](classxThermal_1_1gsl__guard_1_1GuardedFunction.md), [**xThermal::gsl\_guard::GuardedMultirootFunction**](classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction.md))
 
 
@@ -138,6 +140,7 @@
 * **init\_colors** ([**MultiProgressBar**](classMultiProgressBar.md))
 * **initialize\_data** ([**xThermal::H2ONaCl::cH2ONaCl**](classxThermal_1_1H2ONaCl_1_1cH2ONaCl.md), [**xThermal::IAPWS95::cIAPWS95**](classxThermal_1_1IAPWS95_1_1cIAPWS95.md), [**xThermal::IAPWS\_IF97::cIAPWS\_IF97**](classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97.md), [**xThermal::NaCl::cNaCl**](classxThermal_1_1NaCl_1_1cNaCl.md), [**xThermal::PROST::cIAPS84**](classxThermal_1_1PROST_1_1cIAPS84.md), [**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
 * **info** ([**xThermal::Line\_slice**](structxThermal_1_1Line__slice.md), [**xThermal::PhaseRegion\_Slice**](structxThermal_1_1PhaseRegion__Slice.md), [**xThermal::Point\_slice**](structxThermal_1_1Point__slice.md), [**xThermal::Polygon\_slice**](structxThermal_1_1Polygon__slice.md), [**xThermal::ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md), [**xThermal::ThermodynamicPropertiesVector**](structxThermal_1_1ThermodynamicPropertiesVector.md))
+* **is\_outer** ([**xThermal::OuterEvaluation**](classxThermal_1_1OuterEvaluation.md))
 * **init\_supported\_props** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
 * **interp\_quad\_prop** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
 * **iterate** ([**xThermal::gsl\_guard::GuardedFunction**](classxThermal_1_1gsl__guard_1_1GuardedFunction.md), [**xThermal::gsl\_guard::GuardedMultirootFunction**](classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction.md))
@@ -298,13 +301,15 @@
 * **T\_sat\_P** ([**xThermal::IAPWS\_IF97::cIAPWS\_IF97**](classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97.md))
 * **T\_Vapor** ([**xThermal::NaCl::cNaCl**](classxThermal_1_1NaCl_1_1cNaCl.md))
 * **Tstar\_H** ([**xThermal::NaCl::cNaCl**](classxThermal_1_1NaCl_1_1cNaCl.md))
+* **tryUpdateState\_HPX** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
+* **tryUpdateState\_TPX** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
 
 
 ## u
 
 * **union\_ijk2xyz** ([**LOOKUPTABLE\_FOREST::LookUpTableForest**](classLOOKUPTABLE__FOREST_1_1LookUpTableForest.md))
 * **Update** ([**MultiProgressBar**](classMultiProgressBar.md))
-* **UpdateState\_HPX** ([**xThermal::H2ONaCl::cH2ONaCl**](classxThermal_1_1H2ONaCl_1_1cH2ONaCl.md), [**xThermal::IAPWS95::cIAPWS95**](classxThermal_1_1IAPWS95_1_1cIAPWS95.md), [**xThermal::PROST::cIAPS84**](classxThermal_1_1PROST_1_1cIAPS84.md), [**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
+* **UpdateState\_HPX** ([**xThermal::H2ONaCl::cH2ONaCl**](classxThermal_1_1H2ONaCl_1_1cH2ONaCl.md), [**xThermal::IAPWS95::cIAPWS95**](classxThermal_1_1IAPWS95_1_1cIAPWS95.md), [**xThermal::NaCl::cNaCl**](classxThermal_1_1NaCl_1_1cNaCl.md), [**xThermal::PROST::cIAPS84**](classxThermal_1_1PROST_1_1cIAPS84.md), [**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
 * **UpdateState\_HPX\_vl\_lowXlowP** ([**xThermal::H2ONaCl::cH2ONaCl**](classxThermal_1_1H2ONaCl_1_1cH2ONaCl.md))
 * **UpdateState\_HPX\_vlh** ([**xThermal::H2ONaCl::cH2ONaCl**](classxThermal_1_1H2ONaCl_1_1cH2ONaCl.md))
 * **UpdateState\_TPX** ([**xThermal::H2ONaCl::cH2ONaCl**](classxThermal_1_1H2ONaCl_1_1cH2ONaCl.md), [**xThermal::IAPWS95::cIAPWS95**](classxThermal_1_1IAPWS95_1_1cIAPWS95.md), [**xThermal::NaCl::cNaCl**](classxThermal_1_1NaCl_1_1cNaCl.md), [**xThermal::PROST::cIAPS84**](classxThermal_1_1PROST_1_1cIAPS84.md), [**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))

@@ -547,10 +547,10 @@
         </inbodydescription>
         <location file="Library/thermo/Exception.h" line="18" column="24" bodyfile="Library/thermo/Exception.h" bodystart="18" bodyend="18"/>
       </memberdef>
-      <memberdef kind="function" id="classxThermal_1_1xThermalBaseError_1af141fbaddd530708ed1fb2e256f50b6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classxThermal_1_1xThermalBaseError_1a77cdaec09fdfd00530016f0ff5365f57" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>ErrCode</type>
         <definition>ErrCode xThermal::xThermalBaseError::code</definition>
-        <argsstring>()</argsstring>
+        <argsstring>() const</argsstring>
         <name>code</name>
         <qualifiedname>xThermal::xThermalBaseError::code</qualifiedname>
         <briefdescription>
@@ -611,7 +611,7 @@
     <location file="Library/test/test_templateClass/Exception.h" line="12" column="1" bodyfile="Library/test/test_templateClass/Exception.h" bodystart="13" bodyend="23"/>
     <listofallmembers>
       <member refid="classxThermal_1_1xThermalBaseError_1af141fbaddd530708ed1fb2e256f50b6b" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>code</name></member>
-      <member refid="classxThermal_1_1xThermalBaseError_1af141fbaddd530708ed1fb2e256f50b6b" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>code</name></member>
+      <member refid="classxThermal_1_1xThermalBaseError_1a77cdaec09fdfd00530016f0ff5365f57" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>code</name></member>
       <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a7f4bcebfd533fe07b2cfdd3b9c2ae0ea" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>eAttribute</name></member>
       <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153a8c6213c04a3bc370e5fd5d1a38176be7" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>eComposition</name></member>
       <member refid="classxThermal_1_1xThermalBaseError_1a0860a44b8207e04525a22cbab9b33153aed28b213de5c642f9479e9e10fd8f2e6" prot="public" virt="non-virtual"><scope>xThermal::xThermalBaseError</scope><name>eDirectorySize</name></member>

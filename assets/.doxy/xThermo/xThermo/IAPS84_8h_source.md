@@ -45,6 +45,14 @@ namespace xThermal
             double molar_mass(){return m_constants.molar_mass;};       
             // update thermodynamic state and properties for given [T,p], or [T,p,X], X is the salinity of H2ONaCl. For pure fluid, X=0 as a default.
             PhaseRegion findPhaseRegion_TPX(const double& T, const double& p, const double& X=0);
+        protected:
+            cxThermal* createWorker() { return new cIAPS84; }   // an independent model (internal OpenMP: one per thread)
+        public:
+#ifndef SWIG
+            // C3: keep the base-class overloads (value-returning, vector, array) callable on this class
+            using cxThermal::UpdateState_TPX;
+            using cxThermal::UpdateState_HPX;
+#endif
             void UpdateState_TPX(ThermodynamicProperties& props, const double& T, const double& p, const double& X=0);
             void UpdateState_HPX(ThermodynamicProperties& props, const double& H, const double& p, const double& X=0);
             // void UpdateState_TPX(ThermodynamicPropertiesArray& stateArray, const size_t& N, const double* T, const double* p, const double* X=NULL); //for Matlab API

@@ -1225,6 +1225,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#enum-evaluationstatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        enum EvaluationStatus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#typedef-handleerror" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1518,6 +1529,39 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#function-check_state_input" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function check_state_input
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-evaluation_status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function evaluation_status
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-evaluation_status_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function evaluation_status_name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#function-extname_file" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1583,6 +1627,28 @@
     <span class="md-ellipsis">
       
         function evaluation_depth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-plain_message" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function plain_message
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-set_failed_state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function set_failed_state
       
     </span>
   </a>
@@ -1719,7 +1785,7 @@
 </tr>
 <tr>
 <td style="text-align: right;">struct</td>
-<td style="text-align: left;"><a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a> <br></td>
+<td style="text-align: left;"><a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a> <br><em>Result of a state evaluation (UpdateState_TPX / UpdateState_HPX).</em></td>
 </tr>
 <tr>
 <td style="text-align: right;">struct</td>
@@ -1779,6 +1845,10 @@
 <tr>
 <td style="text-align: right;">typedef <a href="../classxThermal_1_1xThermalError/"><strong>xThermalError</strong></a>&lt; xThermalBaseError::eDirectorySize &gt;</td>
 <td style="text-align: left;"><a href="#typedef-directorysizeerror"><strong>DirectorySizeError</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">enum</td>
+<td style="text-align: left;"><a href="#enum-evaluationstatus"><strong>EvaluationStatus</strong></a>  <br></td>
 </tr>
 <tr>
 <td style="text-align: right;">typedef <a href="../classxThermal_1_1xThermalError/"><strong>xThermalError</strong></a>&lt; xThermalBaseError::eHandle &gt;</td>
@@ -1902,6 +1972,18 @@
 <td style="text-align: left;"><a href="#function-__getattr__"><strong>__getattr__</strong></a> (name name) <br></td>
 </tr>
 <tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-check_state_input"><strong>check_state_input</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>char</strong></a> * where, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>char</strong></a> * name1, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> value1, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> p, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> * X=<a href="../classxThermal_1_1xThermalError/"><strong>nullptr</strong></a>) <br><em>Input check at the public state-evaluation entry points (C2).</em></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="./#enum-evaluationstatus"><strong>EvaluationStatus</strong></a></td>
+<td style="text-align: left;"><a href="#function-evaluation_status"><strong>evaluation_status</strong></a> (xThermalBaseError::ErrCode code) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>char</strong></a> *</td>
+<td style="text-align: left;"><a href="#function-evaluation_status_name"><strong>evaluation_status_name</strong></a> (<a href="./#enum-evaluationstatus"><strong>EvaluationStatus</strong></a> status) <br></td>
+</tr>
+<tr>
 <td style="text-align: right;">std::string</td>
 <td style="text-align: left;"><a href="#function-extname_file"><strong>extname_file</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::string &amp; filepath) <br></td>
 </tr>
@@ -1932,6 +2014,14 @@
 <td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>int</strong></a> &amp;</td>
 <td style="text-align: left;"><a href="#function-evaluation_depth"><strong>evaluation_depth</strong></a> () <br></td>
 </tr>
+<tr>
+<td style="text-align: right;">std::string</td>
+<td style="text-align: left;"><a href="#function-plain_message"><strong>plain_message</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>char</strong></a> * what) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-set_failed_state"><strong>set_failed_state</strong></a> (<a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a> &amp; props, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::string &amp; fluidName, <a href="../classxThermal_1_1xThermalError/"><strong>bool</strong></a> hpx, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> v1, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> p, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> X) <br></td>
+</tr>
 </tbody>
 </table>
 <h2 id="detailed-description">Detailed Description</h2>
@@ -1951,201 +2041,269 @@
 </code></pre></div>
 <hr>
 
+<h3 id="enum-evaluationstatus">enum EvaluationStatus</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">enum</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">EvaluationStatus</span> <span class="p">{</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="n">Ok</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="n">InvalidInput</span><span class="p">,</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="n">OutOfRange</span><span class="p">,</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="n">NotConverged</span><span class="p">,</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="n">NotAvailable</span><span class="p">,</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="n">Failed</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">};</span>
+</code></pre></div>
+<p>Outcome of a non-throwing state evaluation (<a href="../classxThermal_1_1cxThermal/#function-tryupdatestate_tpx"><strong>cxThermal::tryUpdateState_TPX</strong></a>, <a href="../classxThermal_1_1cxThermal/#function-tryupdatestate_hpx"><strong>cxThermal::tryUpdateState_HPX</strong></a>). Each failure corresponds to the <a href="./"><strong>xThermal</strong></a> exception that the throwing call (UpdateState_TPX / UpdateState_HPX) raises for the same input. </p>
+<hr>
+
 <h3 id="typedef-handleerror">typedef HandleError</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">typedef</span> <span class="n">xThermalError</span><span class="o">&lt;</span> <span class="n">xThermalBaseError</span><span class="p">::</span><span class="n">eHandle</span> <span class="o">&gt;</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">HandleError</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">typedef</span> <span class="n">xThermalError</span><span class="o">&lt;</span> <span class="n">xThermalBaseError</span><span class="p">::</span><span class="n">eHandle</span> <span class="o">&gt;</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">HandleError</span><span class="p">;</span>
 </code></pre></div>
 <hr>
 
 <h3 id="enum-index_fluid">enum INDEX_FLUID</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">enum</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">INDEX_FLUID</span> <span class="p">{</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="n">Fluid_Unknown</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="n">FLUID_Water</span><span class="p">,</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="n">FLUID_H2O_NaCl</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="p">};</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">enum</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">INDEX_FLUID</span> <span class="p">{</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="n">Fluid_Unknown</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="n">FLUID_Water</span><span class="p">,</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="n">FLUID_H2O_NaCl</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">};</span>
 </code></pre></div>
 <hr>
 
 <h3 id="enum-input_pair">enum INPUT_PAIR</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">enum</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">INPUT_PAIR</span> <span class="p">{</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="n">TPX</span><span class="p">,</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="n">HPX</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="p">};</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">enum</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">INPUT_PAIR</span> <span class="p">{</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="n">TPX</span><span class="p">,</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="n">HPX</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="p">};</span>
 </code></pre></div>
 <hr>
 
 <h3 id="typedef-inputerror">typedef InputError</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">typedef</span> <span class="n">ValueErrorSpec</span><span class="o">&lt;</span> <span class="n">xThermalBaseError</span><span class="p">::</span><span class="n">eInput</span> <span class="o">&gt;</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">InputError</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">typedef</span> <span class="n">ValueErrorSpec</span><span class="o">&lt;</span> <span class="n">xThermalBaseError</span><span class="p">::</span><span class="n">eInput</span> <span class="o">&gt;</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">InputError</span><span class="p">;</span>
 </code></pre></div>
 <hr>
 
 <h3 id="typedef-keyerror">typedef KeyError</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">typedef</span> <span class="n">xThermalError</span><span class="o">&lt;</span> <span class="n">xThermalBaseError</span><span class="p">::</span><span class="n">eKey</span> <span class="o">&gt;</span> <span class="n">xThermal</span><span class="p">::</span><span class="ne">KeyError</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">typedef</span> <span class="n">xThermalError</span><span class="o">&lt;</span> <span class="n">xThermalBaseError</span><span class="p">::</span><span class="n">eKey</span> <span class="o">&gt;</span> <span class="n">xThermal</span><span class="p">::</span><span class="ne">KeyError</span><span class="p">;</span>
 </code></pre></div>
 <hr>
 
 <h3 id="typedef-map_phaseregion2name">typedef MAP_PhaseRegion2Name</h3>
 <p><em>Map of phase region index (enum) to phase region name (string).</em> 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">typedef</span> <span class="n">std</span><span class="p">::</span><span class="nb">map</span><span class="o">&lt;</span><span class="n">PhaseRegion</span><span class="p">,</span><span class="n">std</span><span class="p">::</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">xThermal</span><span class="o">.</span><span class="n">MAP_PhaseRegion2Name</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">typedef</span> <span class="n">std</span><span class="p">::</span><span class="nb">map</span><span class="o">&lt;</span><span class="n">PhaseRegion</span><span class="p">,</span><span class="n">std</span><span class="p">::</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">xThermal</span><span class="o">.</span><span class="n">MAP_PhaseRegion2Name</span><span class="p">;</span>
 </code></pre></div></p>
 <hr>
 
 <h3 id="typedef-notavailableerror">typedef NotAvailableError</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">typedef</span> <span class="n">ValueErrorSpec</span><span class="o">&lt;</span> <span class="n">xThermalBaseError</span><span class="p">::</span><span class="n">eNotAvailable</span> <span class="o">&gt;</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">NotAvailableError</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">typedef</span> <span class="n">ValueErrorSpec</span><span class="o">&lt;</span> <span class="n">xThermalBaseError</span><span class="p">::</span><span class="n">eNotAvailable</span> <span class="o">&gt;</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">NotAvailableError</span><span class="p">;</span>
 </code></pre></div>
 <hr>
 
 <h3 id="typedef-notimplementederror">typedef NotImplementedError</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">typedef</span> <span class="n">xThermalError</span><span class="o">&lt;</span> <span class="n">xThermalBaseError</span><span class="p">::</span><span class="n">eNotImplemented</span> <span class="o">&gt;</span> <span class="n">xThermal</span><span class="p">::</span><span class="ne">NotImplementedError</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">typedef</span> <span class="n">xThermalError</span><span class="o">&lt;</span> <span class="n">xThermalBaseError</span><span class="p">::</span><span class="n">eNotImplemented</span> <span class="o">&gt;</span> <span class="n">xThermal</span><span class="p">::</span><span class="ne">NotImplementedError</span><span class="p">;</span>
 </code></pre></div>
 <hr>
 
 <h3 id="typedef-outofrangeerror">typedef OutOfRangeError</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">typedef</span> <span class="n">xThermalError</span><span class="o">&lt;</span> <span class="n">xThermalBaseError</span><span class="p">::</span><span class="n">eOutOfRange</span> <span class="o">&gt;</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">OutOfRangeError</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">typedef</span> <span class="n">xThermalError</span><span class="o">&lt;</span> <span class="n">xThermalBaseError</span><span class="p">::</span><span class="n">eOutOfRange</span> <span class="o">&gt;</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">OutOfRangeError</span><span class="p">;</span>
 </code></pre></div>
 <hr>
 
 <h3 id="enum-phaseregion">enum PhaseRegion</h3>
 <p><em>Phase region index of H2O, NaCl, H2ONaCl system.</em> 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">enum</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">PhaseRegion</span> <span class="p">{</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>    <span class="n">MixPhaseRegion</span> <span class="o">=-</span><span class="mi">1</span><span class="p">,</span>
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    <span class="n">SinglePhase_L</span><span class="p">,</span>
-<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>    <span class="n">SinglePhase_V</span><span class="p">,</span>
-<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>    <span class="n">SinglePhase_S</span><span class="p">,</span>
-<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>    <span class="n">Supercritical</span><span class="p">,</span>
-<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>    <span class="n">Supercritical_vapor</span><span class="p">,</span>
-<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>    <span class="n">Supercritical_liquid</span><span class="p">,</span>
-<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>    <span class="n">Critical</span><span class="p">,</span>
-<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>    <span class="n">TwoPhase_VL_Water</span><span class="p">,</span>
-<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>    <span class="n">TwoPhase_LH</span><span class="p">,</span>
-<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>    <span class="n">TwoPhase_VH</span><span class="p">,</span>
-<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>    <span class="n">TwoPhase_VL</span><span class="p">,</span>
-<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>    <span class="n">ThreePhase_VLH</span><span class="p">,</span>
-<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>    <span class="n">Unknown</span><span class="p">,</span>
-<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>    <span class="n">NotImposed</span>
-<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="p">};</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">enum</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">PhaseRegion</span> <span class="p">{</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>    <span class="n">MixPhaseRegion</span> <span class="o">=-</span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>    <span class="n">SinglePhase_L</span><span class="p">,</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>    <span class="n">SinglePhase_V</span><span class="p">,</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>    <span class="n">SinglePhase_S</span><span class="p">,</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>    <span class="n">Supercritical</span><span class="p">,</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>    <span class="n">Supercritical_vapor</span><span class="p">,</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>    <span class="n">Supercritical_liquid</span><span class="p">,</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>    <span class="n">Critical</span><span class="p">,</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>    <span class="n">TwoPhase_VL_Water</span><span class="p">,</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>    <span class="n">TwoPhase_LH</span><span class="p">,</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>    <span class="n">TwoPhase_VH</span><span class="p">,</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>    <span class="n">TwoPhase_VL</span><span class="p">,</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>    <span class="n">ThreePhase_VLH</span><span class="p">,</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>    <span class="n">Unknown</span><span class="p">,</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>    <span class="n">NotImposed</span>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a><span class="p">};</span>
 </code></pre></div></p>
 <hr>
 
 <h3 id="enum-phasetype">enum PhaseType</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">enum</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">PhaseType</span> <span class="p">{</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>    <span class="n">Vapor</span><span class="p">,</span>
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>    <span class="n">Liquid</span>
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="p">};</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">enum</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">PhaseType</span> <span class="p">{</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>    <span class="n">Vapor</span><span class="p">,</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>    <span class="n">Liquid</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="p">};</span>
 </code></pre></div>
 <p>only used as input argument for Rho_phase; </p>
 <hr>
 
 <h3 id="enum-solve_saturated_port">enum SOLVE_SATURATED_PorT</h3>
 <p><em>Define flag of solving saturated pressure or saturated temperature.</em> 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">enum</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">SOLVE_SATURATED_PorT</span> <span class="p">{</span>
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>    <span class="n">SOLVE_SATURATED_P</span><span class="p">,</span>
-<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>    <span class="n">SOLVE_SATURATED_T</span>
-<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="p">};</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">enum</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">SOLVE_SATURATED_PorT</span> <span class="p">{</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>    <span class="n">SOLVE_SATURATED_P</span><span class="p">,</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>    <span class="n">SOLVE_SATURATED_T</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="p">};</span>
 </code></pre></div></p>
 <hr>
 
 <h3 id="typedef-solutionerror">typedef SolutionError</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">typedef</span> <span class="n">xThermalError</span><span class="o">&lt;</span> <span class="n">xThermalBaseError</span><span class="p">::</span><span class="n">eSolution</span> <span class="o">&gt;</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">SolutionError</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">typedef</span> <span class="n">xThermalError</span><span class="o">&lt;</span> <span class="n">xThermalBaseError</span><span class="p">::</span><span class="n">eSolution</span> <span class="o">&gt;</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">SolutionError</span><span class="p">;</span>
 </code></pre></div>
 <hr>
 
 <h3 id="enum-space_eos">enum Space_EOS</h3>
 <p><em>Which space of the EOS is calculated or defined. For H2O, the available space are Space_TP and Space_HP. For H2ONaCl, the available space are Space_TPX and Space_HPX.</em> 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">enum</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">Space_EOS</span> <span class="p">{</span>
-<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>    <span class="n">Space_TP</span><span class="p">,</span>
-<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>    <span class="n">Space_HP</span><span class="p">,</span>
-<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>    <span class="n">Space_TPX</span><span class="p">,</span>
-<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>    <span class="n">Space_HPX</span>
-<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="p">};</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">enum</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">Space_EOS</span> <span class="p">{</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>    <span class="n">Space_TP</span><span class="p">,</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>    <span class="n">Space_HP</span><span class="p">,</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>    <span class="n">Space_TPX</span><span class="p">,</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>    <span class="n">Space_HPX</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="p">};</span>
 </code></pre></div></p>
 <hr>
 
 <h3 id="typedef-unabletoloaderror">typedef UnableToLoadError</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">typedef</span> <span class="n">xThermalError</span><span class="o">&lt;</span> <span class="n">xThermalBaseError</span><span class="p">::</span><span class="n">eUnableToLoad</span> <span class="o">&gt;</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">UnableToLoadError</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">typedef</span> <span class="n">xThermalError</span><span class="o">&lt;</span> <span class="n">xThermalBaseError</span><span class="p">::</span><span class="n">eUnableToLoad</span> <span class="o">&gt;</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">UnableToLoadError</span><span class="p">;</span>
 </code></pre></div>
 <hr>
 
 <h3 id="typedef-valueerror">typedef ValueError</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">typedef</span> <span class="n">xThermalError</span><span class="o">&lt;</span> <span class="n">xThermalBaseError</span><span class="p">::</span><span class="n">eValue</span> <span class="o">&gt;</span> <span class="n">xThermal</span><span class="p">::</span><span class="ne">ValueError</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">typedef</span> <span class="n">xThermalError</span><span class="o">&lt;</span> <span class="n">xThermalBaseError</span><span class="p">::</span><span class="n">eValue</span> <span class="o">&gt;</span> <span class="n">xThermal</span><span class="p">::</span><span class="ne">ValueError</span><span class="p">;</span>
 </code></pre></div>
 <hr>
 
 <h3 id="typedef-wrongfluiderror">typedef WrongFluidError</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">typedef</span> <span class="n">ValueErrorSpec</span><span class="o">&lt;</span> <span class="n">xThermalBaseError</span><span class="p">::</span><span class="n">eWrongFluid</span> <span class="o">&gt;</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">WrongFluidError</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="n">typedef</span> <span class="n">ValueErrorSpec</span><span class="o">&lt;</span> <span class="n">xThermalBaseError</span><span class="p">::</span><span class="n">eWrongFluid</span> <span class="o">&gt;</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">WrongFluidError</span><span class="p">;</span>
 </code></pre></div>
 <hr>
 
 <h3 id="enum-dimensiontype">enum dimensionType</h3>
 <p><em>index of dimension vector.</em> 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="n">enum</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">dimensionType</span> <span class="p">{</span>
-<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>    <span class="n">MASS</span><span class="p">,</span>
-<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>    <span class="n">LENGTH</span><span class="p">,</span>
-<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>    <span class="n">TIME</span><span class="p">,</span>
-<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>    <span class="n">TEMPERATURE</span><span class="p">,</span>
-<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>    <span class="n">MOLES</span><span class="p">,</span>
-<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>    <span class="n">CURRENT</span><span class="p">,</span>
-<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>    <span class="n">LUMINOUS_INTENSITY</span>
-<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a><span class="p">};</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">enum</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">dimensionType</span> <span class="p">{</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>    <span class="n">MASS</span><span class="p">,</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>    <span class="n">LENGTH</span><span class="p">,</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>    <span class="n">TIME</span><span class="p">,</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>    <span class="n">TEMPERATURE</span><span class="p">,</span>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>    <span class="n">MOLES</span><span class="p">,</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>    <span class="n">CURRENT</span><span class="p">,</span>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>    <span class="n">LUMINOUS_INTENSITY</span>
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a><span class="p">};</span>
 </code></pre></div></p>
 <hr>
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-r">variable R</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">const</span> <span class="n">double</span> <span class="n">xThermal</span><span class="o">.</span><span class="n">R</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">const</span> <span class="n">double</span> <span class="n">xThermal</span><span class="o">.</span><span class="n">R</span><span class="p">;</span>
 </code></pre></div>
 <p>Specific gass constant: (J/kg/K) </p>
 <hr>
 
 <h3 id="variable-ndimensions">variable nDimensions</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">const</span> <span class="nb">int</span> <span class="n">xThermal</span><span class="o">.</span><span class="n">nDimensions</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">const</span> <span class="nb">int</span> <span class="n">xThermal</span><span class="o">.</span><span class="n">nDimensions</span><span class="p">;</span>
 </code></pre></div>
 <hr>
 <h2 id="public-static-attributes-documentation">Public Static Attributes Documentation</h2>
 <h3 id="variable-map_phase2name">variable map_phase2name</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">MAP_PhaseRegion2Name</span> <span class="n">xThermal</span><span class="o">.</span><span class="n">map_phase2name</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="n">MAP_PhaseRegion2Name</span> <span class="n">xThermal</span><span class="o">.</span><span class="n">map_phase2name</span><span class="p">;</span>
 </code></pre></div>
 <hr>
 <h2 id="public-functions-documentation">Public Functions Documentation</h2>
 <h3 id="function-__getattr__">function __getattr__</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="n">xThermal</span><span class="p">::</span><span class="fm">__getattr__</span> <span class="p">(</span>
-<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>    <span class="n">name</span> <span class="n">name</span>
-<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="p">)</span> 
-</code></pre></div>
-<hr>
-
-<h3 id="function-extname_file">function extname_file</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">extname_file</span> <span class="p">(</span>
-<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>    <span class="n">const</span> <span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="o">&amp;</span> <span class="n">filepath</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="n">xThermal</span><span class="p">::</span><span class="fm">__getattr__</span> <span class="p">(</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>    <span class="n">name</span> <span class="n">name</span>
 <a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="p">)</span> 
 </code></pre></div>
 <hr>
 
+<h3 id="function-check_state_input">function check_state_input</h3>
+<p><em>Input check at the public state-evaluation entry points (C2).</em> 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="n">void</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">check_state_input</span> <span class="p">(</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>    <span class="n">const</span>  <span class="n">char</span> <span class="o">*</span> <span class="n">where</span><span class="p">,</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>    <span class="n">const</span>  <span class="n">char</span> <span class="o">*</span> <span class="n">name1</span><span class="p">,</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>    <span class="n">double</span> <span class="n">value1</span><span class="p">,</span>
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>    <span class="n">double</span> <span class="n">p</span><span class="p">,</span>
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>    <span class="n">const</span>  <span class="n">double</span> <span class="o">*</span> <span class="n">X</span><span class="o">=</span><span class="n">nullptr</span>
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a><span class="p">)</span> 
+</code></pre></div></p>
+<p>Throws InputError if an input is not finite, if p &lt;= 0, or (when X is given) if X &lt; 0. These inputs cannot be evaluated by any model; no model-specific range is checked here (each model keeps its own range handling). Called only for the outermost evaluation (<a href="../classxThermal_1_1OuterEvaluation/#function-is_outer"><strong>OuterEvaluation::is_outer</strong></a>), so internal calls are unaffected.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>where</code> Function name for the message, e.g. "cH2ONaCl::UpdateState_TPX" </li>
+<li><code>name1</code> Name of the first input ("T" or "H"), value1 its value </li>
+<li><code>p</code> Pressure [Pa] </li>
+<li><code>X</code> Bulk salinity [kg/kg], or nullptr for models without composition (water, NaCl) </li>
+</ul>
+<hr>
+
+<h3 id="function-evaluation_status">function evaluation_status</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="n">inline</span> <span class="n">EvaluationStatus</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">evaluation_status</span> <span class="p">(</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>    <span class="n">xThermalBaseError</span><span class="p">::</span><span class="n">ErrCode</span> <span class="n">code</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="p">)</span> 
+</code></pre></div>
+<p>Status corresponding to an <a href="./"><strong>xThermal</strong></a> error code </p>
+<hr>
+
+<h3 id="function-evaluation_status_name">function evaluation_status_name</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="n">inline</span> <span class="n">const</span>  <span class="n">char</span> <span class="o">*</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">evaluation_status_name</span> <span class="p">(</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>    <span class="n">EvaluationStatus</span> <span class="n">status</span>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="p">)</span> 
+</code></pre></div>
+<p>Name of a status, e.g. "OutOfRange" (for messages and logs) </p>
+<hr>
+
+<h3 id="function-extname_file">function extname_file</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">extname_file</span> <span class="p">(</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>    <span class="n">const</span> <span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="o">&amp;</span> <span class="n">filepath</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="p">)</span> 
+</code></pre></div>
+<hr>
+
 <h3 id="function-filename_without_ext">function filename_without_ext</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">filename_without_ext</span> <span class="p">(</span>
-<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>    <span class="n">const</span> <span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="o">&amp;</span> <span class="n">filepath</span>
-<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="p">)</span> 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">filename_without_ext</span> <span class="p">(</span>
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>    <span class="n">const</span> <span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="o">&amp;</span> <span class="n">filepath</span>
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="p">)</span> 
 </code></pre></div>
 <hr>
 
 <h3 id="function-fill_prop2data">function fill_prop2data</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="n">void</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">fill_prop2data</span> <span class="p">(</span>
-<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>    <span class="n">cxThermal</span> <span class="o">*</span> <span class="n">pEOS</span><span class="p">,</span>
-<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>    <span class="n">const</span>  <span class="n">ThermodynamicProperties</span> <span class="o">*</span> <span class="n">prop</span><span class="p">,</span>
-<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>    <span class="n">const</span> <span class="n">std</span><span class="p">::</span><span class="nb">map</span><span class="o">&lt;</span> <span class="nb">int</span> <span class="p">,</span> <span class="n">propInfo</span> <span class="o">&gt;</span> <span class="o">&amp;</span> <span class="n">update_which_props</span><span class="p">,</span>
-<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>    <span class="n">double</span> <span class="o">*</span> <span class="n">data</span>
-<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="p">)</span> 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="n">void</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">fill_prop2data</span> <span class="p">(</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>    <span class="n">cxThermal</span> <span class="o">*</span> <span class="n">pEOS</span><span class="p">,</span>
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>    <span class="n">const</span>  <span class="n">ThermodynamicProperties</span> <span class="o">*</span> <span class="n">prop</span><span class="p">,</span>
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>    <span class="n">const</span> <span class="n">std</span><span class="p">::</span><span class="nb">map</span><span class="o">&lt;</span> <span class="nb">int</span> <span class="p">,</span> <span class="n">propInfo</span> <span class="o">&gt;</span> <span class="o">&amp;</span> <span class="n">update_which_props</span><span class="p">,</span>
+<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>    <span class="n">double</span> <span class="o">*</span> <span class="n">data</span>
+<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a><span class="p">)</span> 
 </code></pre></div>
 <hr>
 
 <h3 id="function-string_split">function string_split</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="n">std</span><span class="p">::</span><span class="n">vector</span><span class="o">&lt;</span> <span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="o">&gt;</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">string_split</span> <span class="p">(</span>
-<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>    <span class="n">const</span> <span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span>
-<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>    <span class="n">const</span> <span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="o">&amp;</span> <span class="n">delimiter</span>
-<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="p">)</span> 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="n">std</span><span class="p">::</span><span class="n">vector</span><span class="o">&lt;</span> <span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="o">&gt;</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">string_split</span> <span class="p">(</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>    <span class="n">const</span> <span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span>
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>    <span class="n">const</span> <span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="o">&amp;</span> <span class="n">delimiter</span>
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="p">)</span> 
 </code></pre></div>
 <hr>
 <h2 id="public-static-functions-documentation">Public Static Functions Documentation</h2>
 <h3 id="function-evaluation_depth">function evaluation_depth</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="n">static</span> <span class="nb">int</span> <span class="o">&amp;</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">evaluation_depth</span> <span class="p">()</span> 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="n">static</span> <span class="nb">int</span> <span class="o">&amp;</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">evaluation_depth</span> <span class="p">()</span> 
+</code></pre></div>
+<hr>
+
+<h3 id="function-plain_message">function plain_message</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="n">static</span> <span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">plain_message</span> <span class="p">(</span>
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>    <span class="n">const</span>  <span class="n">char</span> <span class="o">*</span> <span class="n">what</span>
+<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="p">)</span> 
+</code></pre></div>
+<hr>
+
+<h3 id="function-set_failed_state">function set_failed_state</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="n">static</span> <span class="n">void</span> <span class="n">xThermal</span><span class="p">::</span><span class="n">set_failed_state</span> <span class="p">(</span>
+<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>    <span class="n">ThermodynamicProperties</span> <span class="o">&amp;</span> <span class="n">props</span><span class="p">,</span>
+<a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>    <span class="n">const</span> <span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="o">&amp;</span> <span class="n">fluidName</span><span class="p">,</span>
+<a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a>    <span class="nb">bool</span> <span class="n">hpx</span><span class="p">,</span>
+<a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a>    <span class="n">double</span> <span class="n">v1</span><span class="p">,</span>
+<a id="__codelineno-35-6" name="__codelineno-35-6" href="#__codelineno-35-6"></a>    <span class="n">double</span> <span class="n">p</span><span class="p">,</span>
+<a id="__codelineno-35-7" name="__codelineno-35-7" href="#__codelineno-35-7"></a>    <span class="n">double</span> <span class="n">X</span>
+<a id="__codelineno-35-8" name="__codelineno-35-8" href="#__codelineno-35-8"></a><span class="p">)</span> 
 </code></pre></div>
 <hr>
 

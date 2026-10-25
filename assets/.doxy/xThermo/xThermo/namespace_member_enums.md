@@ -21,6 +21,7 @@
 ## e
 
 * **EOS\_ENERGY** ([**LOOKUPTABLE\_FOREST**](namespaceLOOKUPTABLE__FOREST.md))
+* **EvaluationStatus** ([**xThermal**](namespacexThermal.md))
 
 
 ## i

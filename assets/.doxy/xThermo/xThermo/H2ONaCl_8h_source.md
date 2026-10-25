@@ -216,6 +216,14 @@ namespace xThermal
             // Update thermodynamic state and properties for given T,P,X
             PhaseRegion findPhaseRegion_TPX(const double& T, const double& p, const double& X);
             // - Single point mode
+        protected:
+            cxThermal* createWorker() { return new cH2ONaCl(m_backendname); }   // an independent model (internal OpenMP: one per thread)
+        public:
+#ifndef SWIG
+            // C3: keep the base-class overloads (value-returning, vector, array) callable on this class
+            using cxThermal::UpdateState_TPX;
+            using cxThermal::UpdateState_HPX;
+#endif
             void UpdateState_TPX(ThermodynamicProperties& props, const double& T, const double& p, const double& X);
             void UpdateState_HPX(ThermodynamicProperties& props, const double& H, const double& p, const double& X);
             bool UpdateState_HPX_vlh(ThermodynamicProperties& props, const double& H, const double& p, const double& X, const std::vector<double>& T1_T2);

@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="354" column="22" bodyfile="Library/H2O/IAPWS95.h" bodystart="354" bodyend="-1"/>
+        <location file="Library/H2O/IAPWS95.h" line="362" column="22" bodyfile="Library/H2O/IAPWS95.h" bodystart="362" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1IAPWS95_1_1Params__T__Sat__estimate_1aba2819e0b9987bf0d58f0d1d3bbb5d5b" prot="public" static="no" mutable="no">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="355" column="20" bodyfile="Library/H2O/IAPWS95.h" bodystart="355" bodyend="-1"/>
+        <location file="Library/H2O/IAPWS95.h" line="363" column="20" bodyfile="Library/H2O/IAPWS95.h" bodystart="363" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -62,7 +62,7 @@
         <link refid="classxThermal_1_1cxThermal"/>
       </node>
     </collaborationgraph>
-    <location file="Library/H2O/IAPWS95.h" line="352" column="9" bodyfile="Library/H2O/IAPWS95.h" bodystart="353" bodyend="356"/>
+    <location file="Library/H2O/IAPWS95.h" line="360" column="9" bodyfile="Library/H2O/IAPWS95.h" bodystart="361" bodyend="364"/>
     <listofallmembers>
       <member refid="structxThermal_1_1IAPWS95_1_1Params__T__Sat__estimate_1a8ca3b398dc7a36294a2e05de31f8f0a8" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Params_T_Sat_estimate</scope><name>iapws</name></member>
       <member refid="structxThermal_1_1IAPWS95_1_1Params__T__Sat__estimate_1aba2819e0b9987bf0d58f0d1d3bbb5d5b" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::Params_T_Sat_estimate</scope><name>p</name></member>

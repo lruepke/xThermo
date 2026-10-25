@@ -26,7 +26,7 @@ public:
     xThermalBaseError(const std::string &err, ErrCode code) throw() : m_code(code), m_err(COLOR_RED + err + COLOR_DEFAULT) {}
     ~xThermalBaseError() throw() {};
     virtual const char* what() const throw() { return m_err.c_str(); }
-    ErrCode code() { return m_code; }
+    ErrCode code() const { return m_code; }
 private:
     ErrCode m_code;
     std::string m_err;
@@ -59,6 +59,42 @@ typedef ValueErrorSpec<xThermalBaseError::eWrongFluid> WrongFluidError;
 typedef ValueErrorSpec<xThermalBaseError::eComposition> CompositionError;
 typedef ValueErrorSpec<xThermalBaseError::eInput> InputError;
 typedef ValueErrorSpec<xThermalBaseError::eNotAvailable> NotAvailableError;
+
+enum class EvaluationStatus
+{
+    Ok = 0,        
+    InvalidInput,  
+    OutOfRange,    
+    NotConverged,  
+    NotAvailable,  
+    Failed         
+};
+
+inline EvaluationStatus evaluation_status(xThermalBaseError::ErrCode code)
+{
+    switch (code)
+    {
+        case xThermalBaseError::eInput: return EvaluationStatus::InvalidInput;
+        case xThermalBaseError::eOutOfRange: return EvaluationStatus::OutOfRange;
+        case xThermalBaseError::eSolution: return EvaluationStatus::NotConverged;
+        case xThermalBaseError::eNotImplemented:
+        case xThermalBaseError::eNotAvailable: return EvaluationStatus::NotAvailable;
+        default: return EvaluationStatus::Failed;
+    }
+}
+
+inline const char* evaluation_status_name(EvaluationStatus status)
+{
+    switch (status)
+    {
+        case EvaluationStatus::Ok: return "Ok";
+        case EvaluationStatus::InvalidInput: return "InvalidInput";
+        case EvaluationStatus::OutOfRange: return "OutOfRange";
+        case EvaluationStatus::NotConverged: return "NotConverged";
+        case EvaluationStatus::NotAvailable: return "NotAvailable";
+        default: return "Failed";
+    }
+}
 
 }; /* namespace xThermal */
 #endif

@@ -158,7 +158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="109" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="139" bodyend="145"/>
+        <location file="Library/NaCl/NaCl.h" line="109" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="141" bodyend="147"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a3fb30808078313a88dc77340d837cd5a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -215,7 +215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="110" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="157" bodyend="160"/>
+        <location file="Library/NaCl/NaCl.h" line="110" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="159" bodyend="162"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a3d1f91e2a01dd96e431486a97d1d4356" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -255,7 +255,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="111" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="432" bodyend="435"/>
+        <location file="Library/NaCl/NaCl.h" line="111" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="434" bodyend="437"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a3e2d65ede4ff002a29642a9660fafc10" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -301,7 +301,7 @@ H_1(T, P) = \left(r_0 - 2r_1 T_{triple, NaCl} + 3r_2T_{triple, NaCl}^2 + \color{
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="112" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="468" bodyend="476"/>
+        <location file="Library/NaCl/NaCl.h" line="112" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="470" bodyend="478"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a314311648f089f6ee11c98038e8b94e5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -329,7 +329,7 @@ H_1(T, P) = \left(r_0 - 2r_1 T_{triple, NaCl} + 3r_2T_{triple, NaCl}^2 + \color{
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="113" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="482" bodyend="497"/>
+        <location file="Library/NaCl/NaCl.h" line="113" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="484" bodyend="499"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a7a04ef96079962d4ed067e140d8bad9d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -379,7 +379,7 @@ H_2^{**}(T, P) &amp;=  -\frac{ln\rho_h}{l^2} \frac{l_4}{l_5}e^{T/l_5} + \frac{1}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="114" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="526" bodyend="537"/>
+        <location file="Library/NaCl/NaCl.h" line="114" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="528" bodyend="539"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a50bfc5b323528d2c296b6fb93214af7c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -394,7 +394,7 @@ H_2^{**}(T, P) &amp;=  -\frac{ln\rho_h}{l^2} \frac{l_4}{l_5}e^{T/l_5} + \frac{1}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="115" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="501" bodyend="509"/>
+        <location file="Library/NaCl/NaCl.h" line="115" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="503" bodyend="511"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a355d4dceaaf4031aae60c0d5b4abdd10" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -437,7 +437,7 @@ H_2^{**}(T, P) &amp;=  -\frac{ln\rho_h}{l^2} \frac{l_4}{l_5}e^{T/l_5} + \frac{1}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="116" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="445" bodyend="456"/>
+        <location file="Library/NaCl/NaCl.h" line="116" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="447" bodyend="458"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -519,7 +519,7 @@ H_2^{**}(T, P) &amp;=  -\frac{ln\rho_h}{l^2} \frac{l_4}{l_5}e^{T/l_5} + \frac{1}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="124" column="25" bodyfile="Library/NaCl/NaCl.cpp" bodystart="696" bodyend="698"/>
+        <location file="Library/NaCl/NaCl.h" line="124" column="25" bodyfile="Library/NaCl/NaCl.cpp" bodystart="698" bodyend="700"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1af8ae4b1a94d82329eba3dd653ca0e5a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -679,21 +679,23 @@ H_2^{**}(T, P) &amp;=  -\frac{ln\rho_h}{l^2} \frac{l_4}{l_5}e^{T/l_5} + \frac{1}
         <param>
           <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
           <declname>T</declname>
+          <defname>T_in</defname>
         </param>
         <param>
           <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
           <declname>p</declname>
+          <defname>p_in</defname>
         </param>
         <param>
           <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
           <declname>X</declname>
+          <defname>X_in</defname>
           <defval>0</defval>
         </param>
         <briefdescription>
 <para>Update state by given T,p as input pair. </para>
         </briefdescription>
         <detaileddescription>
-<para>Return the molar mass in kg/mol</para>
 <para><simplesect kind="warning"><para>Here we only consider liquid/solid region, because for geological conditions, the vapor region will never be reached. The minimum valid pressure <ref refid="classxThermal_1_1NaCl_1_1cNaCl_1a3dcf5ff575f5258a5661b3889dc45079" kindref="member">pmin</ref> is limited to 1E5.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
@@ -717,7 +719,7 @@ H_2^{**}(T, P) &amp;=  -\frac{ln\rho_h}{l^2} \frac{l_4}{l_5}e^{T/l_5} + \frac{1}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="135" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="107" bodyend="127"/>
+        <location file="Library/NaCl/NaCl.h" line="143" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="107" bodyend="129"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a54a39f4e9bb8729f13b8b7c3fe755754" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -753,7 +755,7 @@ H_2^{**}(T, P) &amp;=  -\frac{ln\rho_h}{l^2} \frac{l_4}{l_5}e^{T/l_5} + \frac{1}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="138" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="172" bodyend="175"/>
+        <location file="Library/NaCl/NaCl.h" line="146" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="174" bodyend="177"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a589db1547e14b84cd272858b36ad384a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -786,7 +788,7 @@ H_2^{**}(T, P) &amp;=  -\frac{ln\rho_h}{l^2} \frac{l_4}{l_5}e^{T/l_5} + \frac{1}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="139" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="233" bodyend="236"/>
+        <location file="Library/NaCl/NaCl.h" line="147" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="235" bodyend="238"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a6815c465ca88a6ee7e52af8707fed10c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -821,7 +823,7 @@ H_2^{**}(T, P) &amp;=  -\frac{ln\rho_h}{l^2} \frac{l_4}{l_5}e^{T/l_5} + \frac{1}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="140" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="198" bodyend="201"/>
+        <location file="Library/NaCl/NaCl.h" line="148" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="200" bodyend="203"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a9dc8e1bcf6a6b2878be16645c1d22a21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -852,7 +854,7 @@ H_2^{**}(T, P) &amp;=  -\frac{ln\rho_h}{l^2} \frac{l_4}{l_5}e^{T/l_5} + \frac{1}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="141" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="209" bodyend="212"/>
+        <location file="Library/NaCl/NaCl.h" line="149" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="211" bodyend="214"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a38a06b914a6082190afbc5865901043a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -883,7 +885,7 @@ H_2^{**}(T, P) &amp;=  -\frac{ln\rho_h}{l^2} \frac{l_4}{l_5}e^{T/l_5} + \frac{1}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="142" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="220" bodyend="223"/>
+        <location file="Library/NaCl/NaCl.h" line="150" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="222" bodyend="225"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a34f46456146d5c0bb25ea31f38378752" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -915,7 +917,7 @@ H_2^{**}(T, P) &amp;=  -\frac{ln\rho_h}{l^2} \frac{l_4}{l_5}e^{T/l_5} + \frac{1}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="143" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="183" bodyend="186"/>
+        <location file="Library/NaCl/NaCl.h" line="151" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="185" bodyend="188"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1aa68985dac7d892b8d1b4b86bbf3bbc93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -946,7 +948,7 @@ H_2^{**}(T, P) &amp;=  -\frac{ln\rho_h}{l^2} \frac{l_4}{l_5}e^{T/l_5} + \frac{1}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="144" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="244" bodyend="247"/>
+        <location file="Library/NaCl/NaCl.h" line="152" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="246" bodyend="249"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1aa45d29b3ced8543dd37d516683b04e0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -979,7 +981,7 @@ H_2^{**}(T, P) &amp;=  -\frac{ln\rho_h}{l^2} \frac{l_4}{l_5}e^{T/l_5} + \frac{1}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="145" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="257" bodyend="260"/>
+        <location file="Library/NaCl/NaCl.h" line="153" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="259" bodyend="262"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a39d7835a32aec6b9940dca0a4f2e140d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1010,7 +1012,7 @@ H_2^{**}(T, P) &amp;=  -\frac{ln\rho_h}{l^2} \frac{l_4}{l_5}e^{T/l_5} + \frac{1}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="146" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="268" bodyend="271"/>
+        <location file="Library/NaCl/NaCl.h" line="154" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="270" bodyend="273"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a20a806695e46aace39ac886e69e89cfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1053,7 +1055,7 @@ H_2^{**}(T, P) &amp;=  -\frac{ln\rho_h}{l^2} \frac{l_4}{l_5}e^{T/l_5} + \frac{1}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="147" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="280" bodyend="285"/>
+        <location file="Library/NaCl/NaCl.h" line="155" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="282" bodyend="287"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a60397afe48ad24738263e24fc91a61fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1154,7 +1156,7 @@ H_2^{**}(T, P) &amp;=  -\frac{ln\rho_h}{l^2} \frac{l_4}{l_5}e^{T/l_5} + \frac{1}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="148" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="304" bodyend="315"/>
+        <location file="Library/NaCl/NaCl.h" line="156" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="306" bodyend="317"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a7b8925d093f2867c1b346abbfbfee7bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1197,7 +1199,7 @@ H_2^{**}(T, P) &amp;=  -\frac{ln\rho_h}{l^2} \frac{l_4}{l_5}e^{T/l_5} + \frac{1}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="149" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="324" bodyend="329"/>
+        <location file="Library/NaCl/NaCl.h" line="157" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="326" bodyend="331"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1acb01f5d4e4aa28f66bdfa4459af68314" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1301,7 +1303,7 @@ H_2^{**}(T, P) &amp;=  -\frac{ln\rho_h}{l^2} \frac{l_4}{l_5}e^{T/l_5} + \frac{1}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="150" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="354" bodyend="366"/>
+        <location file="Library/NaCl/NaCl.h" line="158" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="356" bodyend="368"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a87e15d6609df34c1f6532b826406305a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1344,7 +1346,7 @@ H_2^{**}(T, P) &amp;=  -\frac{ln\rho_h}{l^2} \frac{l_4}{l_5}e^{T/l_5} + \frac{1}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="151" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="375" bodyend="384"/>
+        <location file="Library/NaCl/NaCl.h" line="159" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="377" bodyend="386"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a3406ba7c0e5e2a368744f17abb7ad08b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1444,7 +1446,7 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="152" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="618" bodyend="621"/>
+        <location file="Library/NaCl/NaCl.h" line="160" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="620" bodyend="623"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a6f87be36a9c34e5040ec1c32efa8c610" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1487,7 +1489,7 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="153" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="411" bodyend="418"/>
+        <location file="Library/NaCl/NaCl.h" line="161" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="413" bodyend="420"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1abc1aee6e39a9ca4b5151908914996d06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1530,7 +1532,7 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="154" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="393" bodyend="402"/>
+        <location file="Library/NaCl/NaCl.h" line="162" column="20" bodyfile="Library/NaCl/NaCl.cpp" bodystart="395" bodyend="404"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a538ef6a3b34a3895bb2462ad3703a365" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1552,7 +1554,7 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="156" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="623" bodyend="627"/>
+        <location file="Library/NaCl/NaCl.h" line="164" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="625" bodyend="629"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a47e38967b1b1f2a31dcd3238d036e501" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1574,7 +1576,7 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="157" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="629" bodyend="633"/>
+        <location file="Library/NaCl/NaCl.h" line="165" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="631" bodyend="635"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1ad7da0cbc8b1144081e83259eca18339a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1596,7 +1598,7 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="158" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="635" bodyend="639"/>
+        <location file="Library/NaCl/NaCl.h" line="166" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="637" bodyend="641"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1aad7d3e026724f0b86f132211f66496d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1618,7 +1620,7 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="159" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="641" bodyend="645"/>
+        <location file="Library/NaCl/NaCl.h" line="167" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="643" bodyend="647"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1ae01e6069037053d25ead06c45fc6d28b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1640,7 +1642,7 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="160" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="647" bodyend="651"/>
+        <location file="Library/NaCl/NaCl.h" line="168" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="649" bodyend="653"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a85fa79fa238c601fa91b98c2495472ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1662,7 +1664,7 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="161" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="653" bodyend="657"/>
+        <location file="Library/NaCl/NaCl.h" line="169" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="655" bodyend="659"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1afe440e27c7bdfd89080cdb85bc05d7ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1684,7 +1686,7 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="162" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="659" bodyend="663"/>
+        <location file="Library/NaCl/NaCl.h" line="170" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="661" bodyend="665"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a972bb2acb09663058c9424ef5439b946" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1706,7 +1708,7 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="163" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="665" bodyend="669"/>
+        <location file="Library/NaCl/NaCl.h" line="171" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="667" bodyend="671"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1ab995392d3b7500c69fa3cd9937f53fa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1732,7 +1734,7 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="164" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="671" bodyend="675"/>
+        <location file="Library/NaCl/NaCl.h" line="172" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="673" bodyend="677"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1ab818dd31e96b2194a2c218c137345054" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1758,7 +1760,7 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="165" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="677" bodyend="682"/>
+        <location file="Library/NaCl/NaCl.h" line="173" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="679" bodyend="684"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1aa8174036cc7d1b77691fe9abf8ee28bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1784,7 +1786,7 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="166" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="683" bodyend="688"/>
+        <location file="Library/NaCl/NaCl.h" line="174" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="685" bodyend="690"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a999a957a7459825ff2cd821e194f8f7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1810,7 +1812,299 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="167" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="689" bodyend="694"/>
+        <location file="Library/NaCl/NaCl.h" line="175" column="18" bodyfile="Library/NaCl/NaCl.cpp" bodystart="691" bodyend="696"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a3d7c1b12767a6348b6d291e708ec0a5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>virtual void xThermal::cxThermal::UpdateState_TPX</definition>
+        <argsstring>(ThermodynamicProperties &amp;props, const double &amp;T, const double &amp;p, const double &amp;X=0)</argsstring>
+        <name>UpdateState_TPX</name>
+        <qualifiedname>xThermal::NaCl::cNaCl::UpdateState_TPX</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a3d7c1b12767a6348b6d291e708ec0a5e">UpdateState_TPX</reimplements>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> &amp;</type>
+          <declname>props</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>X</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Update state using T, p as independent variables. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the critical molar density in <formula id="365">$ mol/m^3 $</formula> </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[K] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[Pa] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="140" column="13" bodyfile="Library/thermo/thermo.h" bodystart="150" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1afe86ef340ece855c4aa01ed160aa5e2c" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="structxThermal_1_1ThermodynamicPropertiesVector" kindref="compound">ThermodynamicPropertiesVector</ref></type>
+        <definition>ThermodynamicPropertiesVector xThermal::cxThermal::UpdateState_TPX</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;T, const std::vector&lt; double &gt; &amp;p, const std::vector&lt; double &gt; &amp;X, bool isMeshGrid=false) final</argsstring>
+        <name>UpdateState_TPX</name>
+        <qualifiedname>xThermal::NaCl::cNaCl::UpdateState_TPX</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1afe86ef340ece855c4aa01ed160aa5e2c">UpdateState_TPX</reimplements>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+          <declname>isMeshGrid</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">false</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="140" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1426" bodyend="1456"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a929aa6a64ac637437b0a409ffa379aab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::UpdateState_TPX</definition>
+        <argsstring>(ThermodynamicPropertiesArray &amp;stateArray, const size_t &amp;N, const double *T, const double *p, const double *X=NULL)</argsstring>
+        <name>UpdateState_TPX</name>
+        <qualifiedname>xThermal::NaCl::cNaCl::UpdateState_TPX</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a929aa6a64ac637437b0a409ffa379aab">UpdateState_TPX</reimplements>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicPropertiesArray" kindref="compound">ThermodynamicPropertiesArray</ref> &amp;</type>
+          <declname>stateArray</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">size_t</ref> &amp;</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>X</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">NULL</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="140" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1662" bodyend="1672"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a89ce494a32e38aafb64abd36fdf67229" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
+        <definition>ThermodynamicProperties xThermal::cxThermal::UpdateState_TPX</definition>
+        <argsstring>(const double &amp;T, const double &amp;p, const double &amp;X=0)</argsstring>
+        <name>UpdateState_TPX</name>
+        <qualifiedname>xThermal::NaCl::cNaCl::UpdateState_TPX</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>X</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="140" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1092" bodyend="1096"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1ac1094a81aa03a8856a5299b1f588f547" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>virtual void xThermal::cxThermal::UpdateState_HPX</definition>
+        <argsstring>(ThermodynamicProperties &amp;props, const double &amp;H, const double &amp;p, const double &amp;X=0)</argsstring>
+        <name>UpdateState_HPX</name>
+        <qualifiedname>xThermal::NaCl::cNaCl::UpdateState_HPX</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1ac1094a81aa03a8856a5299b1f588f547">UpdateState_HPX</reimplements>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> &amp;</type>
+          <declname>props</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>X</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="141" column="13" bodyfile="Library/thermo/thermo.h" bodystart="151" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a5c0e0ff376db670fffd97808b39eb1a0" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="structxThermal_1_1ThermodynamicPropertiesVector" kindref="compound">ThermodynamicPropertiesVector</ref></type>
+        <definition>ThermodynamicPropertiesVector xThermal::cxThermal::UpdateState_HPX</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;H, const std::vector&lt; double &gt; &amp;p, const std::vector&lt; double &gt; &amp;X, bool isMeshGrid=false) final</argsstring>
+        <name>UpdateState_HPX</name>
+        <qualifiedname>xThermal::NaCl::cNaCl::UpdateState_HPX</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a5c0e0ff376db670fffd97808b39eb1a0">UpdateState_HPX</reimplements>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+          <declname>isMeshGrid</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">false</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="141" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1458" bodyend="1487"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a7a9db3f1c95f91044b59478cef3c5a14" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::UpdateState_HPX</definition>
+        <argsstring>(ThermodynamicPropertiesArray &amp;stateArray, const size_t &amp;N, const double *H, const double *p, const double *X=NULL)</argsstring>
+        <name>UpdateState_HPX</name>
+        <qualifiedname>xThermal::NaCl::cNaCl::UpdateState_HPX</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a7a9db3f1c95f91044b59478cef3c5a14">UpdateState_HPX</reimplements>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicPropertiesArray" kindref="compound">ThermodynamicPropertiesArray</ref> &amp;</type>
+          <declname>stateArray</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">size_t</ref> &amp;</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>X</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">NULL</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="141" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1674" bodyend="1683"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a889b6fb0deadb20dacd44338a1c4a144" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
+        <definition>ThermodynamicProperties xThermal::cxThermal::UpdateState_HPX</definition>
+        <argsstring>(const double &amp;H, const double &amp;p, const double &amp;X=0)</argsstring>
+        <name>UpdateState_HPX</name>
+        <qualifiedname>xThermal::NaCl::cNaCl::UpdateState_HPX</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>X</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="141" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1097" bodyend="1101"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a76a04d1e70fca84422aaa594acaacf5b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1cxThermal" kindref="compound">cxThermal</ref> *</type>
+        <definition>cxThermal * xThermal::NaCl::cNaCl::createWorker</definition>
+        <argsstring>()</argsstring>
+        <name>createWorker</name>
+        <qualifiedname>xThermal::NaCl::cNaCl::createWorker</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a2418e46cbd79082d3bda94bdec850cab">createWorker</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the molar mass in kg/mol </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/NaCl/NaCl.h" line="136" column="23" bodyfile="Library/NaCl/NaCl.h" bodystart="136" bodyend="136"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -1844,7 +2138,7 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
         <link refid="classxThermal_1_1cxThermal"/>
       </node>
     </collaborationgraph>
-    <location file="Library/NaCl/NaCl.h" line="96" column="9" bodyfile="Library/NaCl/NaCl.h" bodystart="97" bodyend="168"/>
+    <location file="Library/NaCl/NaCl.h" line="96" column="9" bodyfile="Library/NaCl/NaCl.h" bodystart="97" bodyend="176"/>
     <listofallmembers>
       <member refid="classxThermal_1_1NaCl_1_1cNaCl_1a314311648f089f6ee11c98038e8b94e5" prot="private" virt="non-virtual"><scope>xThermal::NaCl::cNaCl</scope><name>_calc_R_H1</name></member>
       <member refid="classxThermal_1_1NaCl_1_1cNaCl_1a3e2d65ede4ff002a29642a9660fafc10" prot="private" virt="non-virtual"><scope>xThermal::NaCl::cNaCl</scope><name>_H1</name></member>
@@ -1870,6 +2164,7 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
       <member refid="classxThermal_1_1cxThermal_1a26dd1d5506a4a837b03137fc8084dd7c" prot="public" virt="virtual"><scope>xThermal::NaCl::cNaCl</scope><name>createLUT_2D</name></member>
       <member refid="classxThermal_1_1cxThermal_1ad2d8ab7263231e60593e889815b0c46f" prot="public" virt="virtual"><scope>xThermal::NaCl::cNaCl</scope><name>createLUT_3D</name></member>
       <member refid="classxThermal_1_1cxThermal_1a35bccaf5cb9424b49117a7c288d5c510" prot="public" virt="virtual"><scope>xThermal::NaCl::cNaCl</scope><name>createLUT_3D</name></member>
+      <member refid="classxThermal_1_1NaCl_1_1cNaCl_1a76a04d1e70fca84422aaa594acaacf5b" prot="protected" virt="virtual"><scope>xThermal::NaCl::cNaCl</scope><name>createWorker</name></member>
       <member refid="classxThermal_1_1cxThermal_1a2314586579c4061048c886be74236db7" prot="public" virt="non-virtual"><scope>xThermal::NaCl::cNaCl</scope><name>cxThermal</name></member>
       <member refid="classxThermal_1_1NaCl_1_1cNaCl_1a3d1f91e2a01dd96e431486a97d1d4356" prot="private" virt="non-virtual"><scope>xThermal::NaCl::cNaCl</scope><name>DeltaH_fus</name></member>
       <member refid="classxThermal_1_1NaCl_1_1cNaCl_1ab818dd31e96b2194a2c218c137345054" prot="public" virt="non-virtual"><scope>xThermal::NaCl::cNaCl</scope><name>DeltaH_fus</name></member>
@@ -1944,16 +2239,19 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
       <member refid="classxThermal_1_1NaCl_1_1cNaCl_1a190298ad12006dc4035b8f35bb0165c7" prot="public" virt="virtual"><scope>xThermal::NaCl::cNaCl</scope><name>Tmax</name></member>
       <member refid="classxThermal_1_1NaCl_1_1cNaCl_1af8ae4b1a94d82329eba3dd653ca0e5a2" prot="public" virt="virtual"><scope>xThermal::NaCl::cNaCl</scope><name>Tmin</name></member>
       <member refid="classxThermal_1_1cxThermal_1add580814bcf501ea557a03b7eac042bd" prot="public" virt="non-virtual"><scope>xThermal::NaCl::cNaCl</scope><name>Triangulation</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ac639cc813243479c4711207e7077adb5" prot="public" virt="non-virtual"><scope>xThermal::NaCl::cNaCl</scope><name>tryUpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1acc9e6ed0d508f1a089ed55a32592b427" prot="public" virt="non-virtual"><scope>xThermal::NaCl::cNaCl</scope><name>tryUpdateState_TPX</name></member>
       <member refid="classxThermal_1_1NaCl_1_1cNaCl_1a3fb30808078313a88dc77340d837cd5a" prot="private" virt="non-virtual"><scope>xThermal::NaCl::cNaCl</scope><name>Tstar_H</name></member>
       <member refid="classxThermal_1_1NaCl_1_1cNaCl_1ab1f86648e05cdbde07c65eb1f469f6db" prot="public" virt="virtual"><scope>xThermal::NaCl::cNaCl</scope><name>Ttriple</name></member>
-      <member refid="classxThermal_1_1cxThermal_1ac1094a81aa03a8856a5299b1f588f547" prot="public" virt="virtual"><scope>xThermal::NaCl::cNaCl</scope><name>UpdateState_HPX</name></member>
-      <member refid="classxThermal_1_1cxThermal_1a5c0e0ff376db670fffd97808b39eb1a0" prot="public" virt="virtual"><scope>xThermal::NaCl::cNaCl</scope><name>UpdateState_HPX</name></member>
-      <member refid="classxThermal_1_1cxThermal_1a7a9db3f1c95f91044b59478cef3c5a14" prot="public" virt="virtual"><scope>xThermal::NaCl::cNaCl</scope><name>UpdateState_HPX</name></member>
-      <member refid="classxThermal_1_1cxThermal_1a889b6fb0deadb20dacd44338a1c4a144" prot="public" virt="non-virtual"><scope>xThermal::NaCl::cNaCl</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1NaCl_1_1cNaCl_1ac1094a81aa03a8856a5299b1f588f547" prot="public" virt="virtual"><scope>xThermal::NaCl::cNaCl</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1NaCl_1_1cNaCl_1a5c0e0ff376db670fffd97808b39eb1a0" prot="public" virt="virtual"><scope>xThermal::NaCl::cNaCl</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1NaCl_1_1cNaCl_1a7a9db3f1c95f91044b59478cef3c5a14" prot="public" virt="virtual"><scope>xThermal::NaCl::cNaCl</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1NaCl_1_1cNaCl_1a889b6fb0deadb20dacd44338a1c4a144" prot="public" virt="non-virtual"><scope>xThermal::NaCl::cNaCl</scope><name>UpdateState_HPX</name></member>
       <member refid="classxThermal_1_1NaCl_1_1cNaCl_1ab0c2dbfadcdf95080b7201c8902cd36b" prot="public" virt="virtual"><scope>xThermal::NaCl::cNaCl</scope><name>UpdateState_TPX</name></member>
-      <member refid="classxThermal_1_1cxThermal_1afe86ef340ece855c4aa01ed160aa5e2c" prot="public" virt="virtual" ambiguityscope="xThermal::cxThermal::"><scope>xThermal::NaCl::cNaCl</scope><name>UpdateState_TPX</name></member>
-      <member refid="classxThermal_1_1cxThermal_1a929aa6a64ac637437b0a409ffa379aab" prot="public" virt="virtual" ambiguityscope="xThermal::cxThermal::"><scope>xThermal::NaCl::cNaCl</scope><name>UpdateState_TPX</name></member>
-      <member refid="classxThermal_1_1cxThermal_1a89ce494a32e38aafb64abd36fdf67229" prot="public" virt="non-virtual" ambiguityscope="xThermal::cxThermal::"><scope>xThermal::NaCl::cNaCl</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1NaCl_1_1cNaCl_1a3d7c1b12767a6348b6d291e708ec0a5e" prot="public" virt="virtual"><scope>xThermal::NaCl::cNaCl</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1NaCl_1_1cNaCl_1afe86ef340ece855c4aa01ed160aa5e2c" prot="public" virt="virtual"><scope>xThermal::NaCl::cNaCl</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1NaCl_1_1cNaCl_1a929aa6a64ac637437b0a409ffa379aab" prot="public" virt="virtual"><scope>xThermal::NaCl::cNaCl</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1NaCl_1_1cNaCl_1a89ce494a32e38aafb64abd36fdf67229" prot="public" virt="non-virtual"><scope>xThermal::NaCl::cNaCl</scope><name>UpdateState_TPX</name></member>
       <member refid="classxThermal_1_1cxThermal_1a8349d4a9fd155cc40963b1cac6dcc003" prot="public" virt="non-virtual"><scope>xThermal::NaCl::cNaCl</scope><name>validateFluid</name></member>
       <member refid="classxThermal_1_1cxThermal_1a2da135b28df9f19644be7d405bbe9509" prot="public" virt="virtual"><scope>xThermal::NaCl::cNaCl</scope><name>writeLine2VTU</name></member>
       <member refid="classxThermal_1_1cxThermal_1ab803d85ba54f23bd952f2b0dddaf4771" prot="public" virt="virtual"><scope>xThermal::NaCl::cNaCl</scope><name>writeMeshGrid2VTK</name></member>

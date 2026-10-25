@@ -54,6 +54,7 @@ _Reset of a caller's result object at the outermost public evaluation entry (C7)
 | ---: | :--- |
 |   | [**OuterEvaluation**](#function-outerevaluation-12) ([**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) & props) <br> |
 |   | [**OuterEvaluation**](#function-outerevaluation-22) ([**const**](classxThermal_1_1xThermalError.md) [**OuterEvaluation**](classxThermal_1_1OuterEvaluation.md) &) = delete<br> |
+|  [**bool**](classxThermal_1_1xThermalError.md) | [**is\_outer**](#function-is_outer) () const<br> |
 |  [**OuterEvaluation**](classxThermal_1_1OuterEvaluation.md) & | [**operator=**](#function-operator) ([**const**](classxThermal_1_1xThermalError.md) [**OuterEvaluation**](classxThermal_1_1OuterEvaluation.md) &) = delete<br> |
 |   | [**~OuterEvaluation**](#function-outerevaluation) () <br> |
 
@@ -121,6 +122,23 @@ xThermal::OuterEvaluation::OuterEvaluation (
 
 
 
+
+<hr>
+
+
+
+### function is\_outer 
+
+```C++
+inline bool xThermal::OuterEvaluation::is_outer () const
+```
+
+
+
+True for the outermost evaluation on this thread, i.e. a call from outside the library 
+
+
+        
 
 <hr>
 

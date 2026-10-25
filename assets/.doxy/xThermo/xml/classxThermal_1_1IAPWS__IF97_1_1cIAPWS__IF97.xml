@@ -1631,6 +1631,7 @@ Calculate temperature in region 2a by given P and H</para>
       <member refid="classxThermal_1_1cxThermal_1a26dd1d5506a4a837b03137fc8084dd7c" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>createLUT_2D</name></member>
       <member refid="classxThermal_1_1cxThermal_1ad2d8ab7263231e60593e889815b0c46f" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>createLUT_3D</name></member>
       <member refid="classxThermal_1_1cxThermal_1a35bccaf5cb9424b49117a7c288d5c510" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>createLUT_3D</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a2418e46cbd79082d3bda94bdec850cab" prot="protected" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>createWorker</name></member>
       <member refid="classxThermal_1_1cxThermal_1a2314586579c4061048c886be74236db7" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>cxThermal</name></member>
       <member refid="classxThermal_1_1cxThermal_1a056253dca6d9635e19acc2380f7f682e" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>findPhaseRegion_TPX</name></member>
       <member refid="classxThermal_1_1cxThermal_1a1fadd87926ebe880d3273ea3b2a930f6" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>get_dim_lut</name></member>
@@ -1696,6 +1697,8 @@ Calculate temperature in region 2a by given P and H</para>
       <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1ab7c9dcd202b4e98032beb7aa1d50547b" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Tmax</name></member>
       <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1abfabafa793a0b828e4e5175e10cfec20" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Tmin</name></member>
       <member refid="classxThermal_1_1cxThermal_1add580814bcf501ea557a03b7eac042bd" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Triangulation</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ac639cc813243479c4711207e7077adb5" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>tryUpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1acc9e6ed0d508f1a089ed55a32592b427" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>tryUpdateState_TPX</name></member>
       <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a39ed22586a3055657a384587aa12d5fb" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>Ttriple</name></member>
       <member refid="classxThermal_1_1cxThermal_1ac1094a81aa03a8856a5299b1f588f547" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>UpdateState_HPX</name></member>
       <member refid="classxThermal_1_1cxThermal_1a5c0e0ff376db670fffd97808b39eb1a0" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>UpdateState_HPX</name></member>

@@ -122,10 +122,18 @@ See [xThermal::cxThermal](classxThermal_1_1cxThermal.md)
 |  [**double**](classxThermal_1_1xThermalError.md) | [**Tmin\_VLH**](#function-tmin_vlh) () <br> |
 |  [**TriMesh**](structxThermal_1_1TriMesh.md) | [**Triangulation**](#function-triangulation) ([**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & x\_poly, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & y\_poly, [**double**](classxThermal_1_1xThermalError.md) xIn, [**double**](classxThermal_1_1xThermalError.md) yIn, [**double**](classxThermal_1_1xThermalError.md) dx, [**double**](classxThermal_1_1xThermalError.md) dy) <br> |
 | virtual [**double**](classxThermal_1_1xThermalError.md) | [**Ttriple**](#function-ttriple) () <br> |
-| virtual [**void**](classxThermal_1_1xThermalError.md) | [**UpdateState\_HPX**](#function-updatestate_hpx) ([**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) & props, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & H, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & p, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & X) <br> |
+| virtual [**void**](classxThermal_1_1xThermalError.md) | [**UpdateState\_HPX**](#function-updatestate_hpx-15) ([**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) & props, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & H, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & p, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & X) <br> |
+| virtual [**void**](classxThermal_1_1xThermalError.md) | [**UpdateState\_HPX**](#function-updatestate_hpx-25) ([**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) & props, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & H, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & p, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & X=0) <br> |
+| virtual [**ThermodynamicPropertiesVector**](structxThermal_1_1ThermodynamicPropertiesVector.md) | [**UpdateState\_HPX**](#function-updatestate_hpx-35) ([**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & H, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & p, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & X, [**bool**](classxThermal_1_1xThermalError.md) isMeshGrid=[**false**](classxThermal_1_1xThermalError.md)) <br> |
+| virtual [**void**](classxThermal_1_1xThermalError.md) | [**UpdateState\_HPX**](#function-updatestate_hpx-45) ([**ThermodynamicPropertiesArray**](structxThermal_1_1ThermodynamicPropertiesArray.md) & stateArray, [**const**](classxThermal_1_1xThermalError.md) [**size\_t**](classxThermal_1_1xThermalError.md) & N, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) \* H, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) \* p, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) \* X=[**NULL**](classxThermal_1_1xThermalError.md)) <br> |
+|  [**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) | [**UpdateState\_HPX**](#function-updatestate_hpx-55) ([**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & H, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & p, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & X=0) <br> |
 |  [**bool**](classxThermal_1_1xThermalError.md) | [**UpdateState\_HPX\_vl\_lowXlowP**](#function-updatestate_hpx_vl_lowxlowp) ([**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) & props, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & H, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & p, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & X) <br> |
 |  [**bool**](classxThermal_1_1xThermalError.md) | [**UpdateState\_HPX\_vlh**](#function-updatestate_hpx_vlh) ([**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) & props, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & H, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & p, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & X, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & T1\_T2) <br> |
-| virtual [**void**](classxThermal_1_1xThermalError.md) | [**UpdateState\_TPX**](#function-updatestate_tpx) ([**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) & props, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & T, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & p, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & X) <br>_Update state using T, p as independent variables._  |
+| virtual [**void**](classxThermal_1_1xThermalError.md) | [**UpdateState\_TPX**](#function-updatestate_tpx-15) ([**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) & props, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & T, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & p, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & X) <br>_Update state using T, p as independent variables._  |
+| virtual [**void**](classxThermal_1_1xThermalError.md) | [**UpdateState\_TPX**](#function-updatestate_tpx-25) ([**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) & props, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & T, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & p, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & X=0) <br>_Update state using T, p as independent variables._  |
+| virtual [**ThermodynamicPropertiesVector**](structxThermal_1_1ThermodynamicPropertiesVector.md) | [**UpdateState\_TPX**](#function-updatestate_tpx-35) ([**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & T, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & p, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & X, [**bool**](classxThermal_1_1xThermalError.md) isMeshGrid=[**false**](classxThermal_1_1xThermalError.md)) <br> |
+| virtual [**void**](classxThermal_1_1xThermalError.md) | [**UpdateState\_TPX**](#function-updatestate_tpx-45) ([**ThermodynamicPropertiesArray**](structxThermal_1_1ThermodynamicPropertiesArray.md) & stateArray, [**const**](classxThermal_1_1xThermalError.md) [**size\_t**](classxThermal_1_1xThermalError.md) & N, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) \* T, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) \* p, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) \* X=[**NULL**](classxThermal_1_1xThermalError.md)) <br> |
+|  [**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) | [**UpdateState\_TPX**](#function-updatestate_tpx-55) ([**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & T, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & p, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & X=0) <br> |
 |  [**double**](classxThermal_1_1xThermalError.md) | [**Wt2Mol**](#function-wt2mol-13) ([**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & X\_wt) <br>_Convert mass fraction of NaCl to molar fraction._  |
 |  [**void**](classxThermal_1_1xThermalError.md) | [**Wt2Mol**](#function-wt2mol-23) ([**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & X\_wt, [**double**](classxThermal_1_1xThermalError.md) & X\_mol) <br> |
 |  std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; | [**Wt2Mol**](#function-wt2mol-33) (std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; X\_wt) <br> |
@@ -235,6 +243,8 @@ See [xThermal::cxThermal](classxThermal_1_1cxThermal.md)
 | virtual [**void**](classxThermal_1_1xThermalError.md) | [**set\_num\_threads**](classxThermal_1_1cxThermal.md#function-set_num_threads) ([**int**](classxThermal_1_1xThermalError.md) num\_threads) <br> |
 |  [**void**](classxThermal_1_1xThermalError.md) | [**showProgressBar**](classxThermal_1_1cxThermal.md#function-showprogressbar) ([**bool**](classxThermal_1_1xThermalError.md) isShow) <br> |
 |  T | [**sum\_vector**](classxThermal_1_1cxThermal.md#function-sum_vector) ([**const**](classxThermal_1_1xThermalError.md) std::vector&lt; T &gt; & x) <br> |
+|  [**EvaluationStatus**](namespacexThermal.md#enum-evaluationstatus) | [**tryUpdateState\_HPX**](classxThermal_1_1cxThermal.md#function-tryupdatestate_hpx) ([**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) & props, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & H, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & p, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & X=0, std::string \* message=[**nullptr**](classxThermal_1_1xThermalError.md)) <br>_Non-throwing H-P-X evaluation; as tryUpdateState\_TPX (on failure H, p, X are the inputs, T is NaN)_  |
+|  [**EvaluationStatus**](namespacexThermal.md#enum-evaluationstatus) | [**tryUpdateState\_TPX**](classxThermal_1_1cxThermal.md#function-tryupdatestate_tpx) ([**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) & props, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & T, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & p, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & X=0, std::string \* message=[**nullptr**](classxThermal_1_1xThermalError.md)) <br>_Non-throwing T-P-X evaluation: the same evaluation as UpdateState\_TPX, reported as a status (C1)._  |
 | virtual [**void**](classxThermal_1_1xThermalError.md) | [**writeLine2VTU**](classxThermal_1_1cxThermal.md#function-writeline2vtu) (std::string vtuFile, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & X, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & Y, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & Z, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) scale\_x=1.0, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) scale\_y=1.0, [**double**](classxThermal_1_1xThermalError.md) scale\_z=1.0) <br> |
 | virtual [**void**](classxThermal_1_1xThermalError.md) | [**writeMeshGrid2VTK**](classxThermal_1_1cxThermal.md#function-writemeshgrid2vtk) ([**const**](classxThermal_1_1xThermalError.md) std::string & vtkFile, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & x, [**const**](classxThermal_1_1xThermalError.md) std::string & xTitle, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & y, [**const**](classxThermal_1_1xThermalError.md) std::string & yTitle, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & z, [**const**](classxThermal_1_1xThermalError.md) std::string & zTitle, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; &gt; & props, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**propInfo**](structxThermal_1_1propInfo.md) &gt; & propsInfo, [**bool**](classxThermal_1_1xThermalError.md) isNormalize=[**false**](classxThermal_1_1xThermalError.md)) <br> |
 | virtual [**void**](classxThermal_1_1xThermalError.md) | [**writePhaseBoundaries2VTU**](classxThermal_1_1cxThermal.md#function-writephaseboundaries2vtu) (std::string outputPath, [**const**](classxThermal_1_1xThermalError.md) [**PhaseBoundaries**](structxThermal_1_1PhaseBoundaries.md) & phaseBoundaries, [**double**](classxThermal_1_1xThermalError.md) scale\_T=1, [**double**](classxThermal_1_1xThermalError.md) scale\_p=1, [**double**](classxThermal_1_1xThermalError.md) scale\_X=1) <br> |
@@ -294,8 +304,20 @@ See [xThermal::cxThermal](classxThermal_1_1cxThermal.md)
 
 
 
+## Protected Functions
+
+| Type | Name |
+| ---: | :--- |
+| virtual [**cxThermal**](classxThermal_1_1cxThermal.md) \* | [**createWorker**](#function-createworker) () <br>_A new, independent model that evaluates exactly as this one (same backend and settings), owned by the caller. Used for one model per thread in the internal OpenMP evaluation. The default (nullptr) means that the model cannot be replicated; its vector evaluations then run serially._  |
 
 
+## Protected Functions inherited from xThermal::cxThermal
+
+See [xThermal::cxThermal](classxThermal_1_1cxThermal.md)
+
+| Type | Name |
+| ---: | :--- |
+| virtual [**cxThermal**](classxThermal_1_1cxThermal.md) \* | [**createWorker**](classxThermal_1_1cxThermal.md#function-createworker) () <br>_A new, independent model that evaluates exactly as this one (same backend and settings), owned by the caller. Used for one model per thread in the internal OpenMP evaluation. The default (nullptr) means that the model cannot be replicated; its vector evaluations then run serially._  |
 
 
 
@@ -1441,7 +1463,7 @@ Implements [*xThermal::cxThermal::Ttriple*](classxThermal_1_1cxThermal.md#functi
 
 
 
-### function UpdateState\_HPX 
+### function UpdateState\_HPX [1/5]
 
 ```C++
 virtual void xThermal::H2ONaCl::cH2ONaCl::UpdateState_HPX (
@@ -1455,6 +1477,84 @@ virtual void xThermal::H2ONaCl::cH2ONaCl::UpdateState_HPX (
 
 
 Implements [*xThermal::cxThermal::UpdateState\_HPX*](classxThermal_1_1cxThermal.md#function-updatestate_hpx-14)
+
+
+<hr>
+
+
+
+### function UpdateState\_HPX [2/5]
+
+```C++
+inline virtual void xThermal::H2ONaCl::cH2ONaCl::UpdateState_HPX (
+    ThermodynamicProperties & props,
+    const  double & H,
+    const  double & p,
+    const  double & X=0
+) 
+```
+
+
+
+Implements [*xThermal::cxThermal::UpdateState\_HPX*](classxThermal_1_1cxThermal.md#function-updatestate_hpx-14)
+
+
+<hr>
+
+
+
+### function UpdateState\_HPX [3/5]
+
+```C++
+virtual ThermodynamicPropertiesVector xThermal::H2ONaCl::cH2ONaCl::UpdateState_HPX (
+    const std::vector< double > & H,
+    const std::vector< double > & p,
+    const std::vector< double > & X,
+    bool isMeshGrid=false
+) 
+```
+
+
+
+Implements [*xThermal::cxThermal::UpdateState\_HPX*](classxThermal_1_1cxThermal.md#function-updatestate_hpx-24)
+
+
+<hr>
+
+
+
+### function UpdateState\_HPX [4/5]
+
+```C++
+virtual void xThermal::H2ONaCl::cH2ONaCl::UpdateState_HPX (
+    ThermodynamicPropertiesArray & stateArray,
+    const  size_t & N,
+    const  double * H,
+    const  double * p,
+    const  double * X=NULL
+) 
+```
+
+
+
+Implements [*xThermal::cxThermal::UpdateState\_HPX*](classxThermal_1_1cxThermal.md#function-updatestate_hpx-34)
+
+
+<hr>
+
+
+
+### function UpdateState\_HPX [5/5]
+
+```C++
+ThermodynamicProperties xThermal::H2ONaCl::cH2ONaCl::UpdateState_HPX (
+    const  double & H,
+    const  double & p,
+    const  double & X=0
+) 
+```
+
+
 
 
 <hr>
@@ -1547,7 +1647,7 @@ Calculate thermodynamic properties and T for given H,P,X in VLH zone.
 
 
 
-### function UpdateState\_TPX 
+### function UpdateState\_TPX [1/5]
 
 _Update state using T, p as independent variables._ 
 ```C++
@@ -1577,6 +1677,100 @@ Calculate the critical molar density in \(mol/m^3\)
 
         
 Implements [*xThermal::cxThermal::UpdateState\_TPX*](classxThermal_1_1cxThermal.md#function-updatestate_tpx-14)
+
+
+<hr>
+
+
+
+### function UpdateState\_TPX [2/5]
+
+_Update state using T, p as independent variables._ 
+```C++
+inline virtual void xThermal::H2ONaCl::cH2ONaCl::UpdateState_TPX (
+    ThermodynamicProperties & props,
+    const  double & T,
+    const  double & p,
+    const  double & X=0
+) 
+```
+
+
+
+Calculate the critical molar density in \(mol/m^3\) 
+
+
+
+
+**Parameters:**
+
+
+* `T` [K] 
+* `p` [Pa] 
+
+
+
+
+        
+Implements [*xThermal::cxThermal::UpdateState\_TPX*](classxThermal_1_1cxThermal.md#function-updatestate_tpx-14)
+
+
+<hr>
+
+
+
+### function UpdateState\_TPX [3/5]
+
+```C++
+virtual ThermodynamicPropertiesVector xThermal::H2ONaCl::cH2ONaCl::UpdateState_TPX (
+    const std::vector< double > & T,
+    const std::vector< double > & p,
+    const std::vector< double > & X,
+    bool isMeshGrid=false
+) 
+```
+
+
+
+Implements [*xThermal::cxThermal::UpdateState\_TPX*](classxThermal_1_1cxThermal.md#function-updatestate_tpx-24)
+
+
+<hr>
+
+
+
+### function UpdateState\_TPX [4/5]
+
+```C++
+virtual void xThermal::H2ONaCl::cH2ONaCl::UpdateState_TPX (
+    ThermodynamicPropertiesArray & stateArray,
+    const  size_t & N,
+    const  double * T,
+    const  double * p,
+    const  double * X=NULL
+) 
+```
+
+
+
+Implements [*xThermal::cxThermal::UpdateState\_TPX*](classxThermal_1_1cxThermal.md#function-updatestate_tpx-34)
+
+
+<hr>
+
+
+
+### function UpdateState\_TPX [5/5]
+
+```C++
+ThermodynamicProperties xThermal::H2ONaCl::cH2ONaCl::UpdateState_TPX (
+    const  double & T,
+    const  double & p,
+    const  double & X=0
+) 
+```
+
+
 
 
 <hr>
@@ -2575,6 +2769,24 @@ xThermal::H2ONaCl::cH2ONaCl::~cH2ONaCl ()
 ```
 
 
+
+
+<hr>
+## Protected Functions Documentation
+
+
+
+
+### function createWorker 
+
+_A new, independent model that evaluates exactly as this one (same backend and settings), owned by the caller. Used for one model per thread in the internal OpenMP evaluation. The default (nullptr) means that the model cannot be replicated; its vector evaluations then run serially._ 
+```C++
+inline virtual cxThermal * xThermal::H2ONaCl::cH2ONaCl::createWorker () 
+```
+
+
+
+Implements [*xThermal::cxThermal::createWorker*](classxThermal_1_1cxThermal.md#function-createworker)
 
 
 <hr>

@@ -91,6 +91,14 @@ namespace xThermal
             double p_critical(){throw NotImplementedError("T_critical is not available for NaCl");};            
             double rhomass_critical(){throw NotImplementedError("T_critical is not available for NaCl");};      
             double molar_mass(){return m_constants.molar_mass;};       
+        protected:
+            cxThermal* createWorker() { return new cNaCl(m_backendname); }   // an independent model (internal OpenMP: one per thread)
+        public:
+#ifndef SWIG
+            // C3: keep the base-class overloads (value-returning, vector, array) callable on this class
+            using cxThermal::UpdateState_TPX;
+            using cxThermal::UpdateState_HPX;
+#endif
             void UpdateState_TPX(ThermodynamicProperties& props, const double& T, const double& p, const double& X=0);
 
         public:

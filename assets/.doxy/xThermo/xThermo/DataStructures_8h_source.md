@@ -192,22 +192,22 @@ namespace xThermal
     enum INPUT_PAIR{TPX, HPX};
     struct ThermodynamicProperties
     {
-        double T=0, p=0, X=0, H=0;
-        PhaseRegion phase=Unknown;
-        double S_l=0, S_v=0, S_h=0; // volume fraction for H2O-NaCl, but mass fraction for H2O. For two-phase of pure water convection modeling, need to calculate it using, e.g., Eq. 37 of Vehling et al.(2018).
-        double X_l=0, X_v=0;
-        double Rho_l=0, Rho_v=0, Rho_h=0;
-        double H_l=0, H_v=0, H_h=0;
-        double Cp_l = 0, Cp_v = 0, Cp_h = 0;       // dH/dT
-        double dHdP_l = 0, dHdP_v = 0, dHdP_h = 0; // dH/dP
-        double Mu_l = 0, Mu_v = 0;
-        double Rho=0, Cp = 0, Mu = 1;
+        double T=0, p=0, X=0, H=0;  
+        PhaseRegion phase=Unknown;   
+        double S_l=0, S_v=0, S_h=0;
+        double X_l=0, X_v=0;                    
+        double Rho_l=0, Rho_v=0, Rho_h=0;       
+        double H_l=0, H_v=0, H_h=0;             
+        double Cp_l = 0, Cp_v = 0, Cp_h = 0;    
+        double dHdP_l = 0, dHdP_v = 0, dHdP_h = 0; 
+        double Mu_l = 0, Mu_v = 0;              
+        double Rho=0, Cp = 0, Mu = 1;           
         // derivative
-        double dRhodP = 0, dRhodP_l = 0, dRhodP_v = 0;
-        double dRhodT = 0, dRhodT_l = 0, dRhodT_v = 0;
+        double dRhodP = 0, dRhodP_l = 0, dRhodP_v = 0;  
+        double dRhodT = 0, dRhodT_l = 0, dRhodT_v = 0;  
         // commonly used derivatives for hydrothermal convection simulation
-        double IsothermalCompressibility = 0, IsothermalCompressibility_l =0, IsothermalCompressibility_v =0;
-        double IsobaricExpansivity=0, IsobaricExpansivity_l =0, IsobaricExpansivity_v =0;
+        double IsothermalCompressibility = 0, IsothermalCompressibility_l =0, IsothermalCompressibility_v =0;  
+        double IsobaricExpansivity=0, IsobaricExpansivity_l =0, IsobaricExpansivity_v =0;                    
         std::string fluidName;
         // std out
         friend std::ostream& operator<<(std::ostream& os, const ThermodynamicProperties& self) {

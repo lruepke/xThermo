@@ -2051,7 +2051,7 @@ S_l + S_v + S_h = 1 \ \ \ \text{(4)}
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="200" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="4014" bodyend="4040"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="200" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="4018" bodyend="4044"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ac56d6bda2e7bf8a28ee0a9290ae97240" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -3643,7 +3643,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="247" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3601" bodyend="3699"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="247" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3603" bodyend="3701"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ac3395601a0568782216fc3e9c669ce20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -3716,7 +3716,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="249" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3708" bodyend="3774"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="249" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3710" bodyend="3776"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a59c2dd020bf0295f71efbe6280885e65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -4237,7 +4237,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="269" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3578" bodyend="3585"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="269" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3580" bodyend="3587"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a6c402e23181d652b0b394f9857262194" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -4288,7 +4288,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="271" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3416" bodyend="3576"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="279" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3416" bodyend="3578"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a5b8e67bbbf29baf382f5c6541576920d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -4319,7 +4319,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="272" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3927" bodyend="3973"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="280" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3929" bodyend="3977"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a0a0773d74a1e46421e6d6a9b220436ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
@@ -4397,7 +4397,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="273" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3785" bodyend="3842"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="281" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3787" bodyend="3844"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a0adb33c120d2aa80ac2f920dbcdb0855" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
@@ -4465,7 +4465,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="274" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3856" bodyend="3925"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="282" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3858" bodyend="3927"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ac0fd77c6276a43a0b107fbcb800b8b17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1DeformLinearMesh" kindref="compound">DeformLinearMesh</ref></type>
@@ -4530,7 +4530,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="278" column="30" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2375" bodyend="2416"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="286" column="30" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2375" bodyend="2416"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aa5a34ed03f17b9718e8c4c720b5d719c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1DeformLinearMesh" kindref="compound">DeformLinearMesh</ref></type>
@@ -4558,7 +4558,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="279" column="30" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2975" bodyend="3044"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="287" column="30" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2975" bodyend="3044"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aa9a410e462618cc222c2a6677120d8da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1DeformLinearMesh" kindref="compound">DeformLinearMesh</ref></type>
@@ -4582,7 +4582,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="280" column="30" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3046" bodyend="3083"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="288" column="30" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3046" bodyend="3083"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a381bbfc632d85549334ee1568060760c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1DeformLinearMesh" kindref="compound">DeformLinearMesh</ref></type>
@@ -4606,7 +4606,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="281" column="30" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3085" bodyend="3112"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="289" column="30" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3085" bodyend="3112"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a8b87074e453dc09ef076435163d09507" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1PhaseBoundaries" kindref="compound">PhaseBoundaries</ref></type>
@@ -4663,7 +4663,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="283" column="29" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3121" bodyend="3204"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="291" column="29" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="3121" bodyend="3204"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1afdf8c12bf55b088d2b206b1a82aa48cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1TriMesh" kindref="compound">TriMesh</ref></type>
@@ -4710,7 +4710,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="285" column="21" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2424" bodyend="2462"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="293" column="21" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2424" bodyend="2462"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a5599c22b7db512c21f1b4289f958f898" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1TriMesh" kindref="compound">TriMesh</ref></type>
@@ -4748,7 +4748,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="286" column="21" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2465" bodyend="2472"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="294" column="21" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2465" bodyend="2472"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a44adeebca5e0182f4602fb015e2568e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1PhaseRegion__Slice" kindref="compound">PhaseRegion_Slice</ref></type>
@@ -4783,7 +4783,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="287" column="31" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2479" bodyend="2816"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="295" column="31" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2479" bodyend="2816"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a66fbceaefbddb1fcae7ade406eeceaea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1PhaseRegion__Slice" kindref="compound">PhaseRegion_Slice</ref></type>
@@ -4806,7 +4806,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="288" column="31" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2818" bodyend="2946"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="296" column="31" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2818" bodyend="2946"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a7a1ef7f88f6d6be6827f7159b3883eb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
@@ -4824,7 +4824,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="290" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="188" bodyend="196"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="298" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="188" bodyend="196"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1af38e6f42c17789e0d59b9f063f3cd00e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
@@ -4842,7 +4842,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="291" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="163" bodyend="171"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="299" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="163" bodyend="171"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a50bd1d2c21caf348575af30fec81598d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -4868,7 +4868,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="292" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2258" bodyend="2266"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="300" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2258" bodyend="2266"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a094b3cf52405cc4e412f22ffa8e62e4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -4890,7 +4890,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="293" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2268" bodyend="2272"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="301" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2268" bodyend="2272"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1adf98f860b2ac09467ecab1f90e8e5787" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -4912,7 +4912,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="294" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2274" bodyend="2278"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="302" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2274" bodyend="2278"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a65ce60622423b8d5488628d69f504ee4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -4938,7 +4938,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="295" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2280" bodyend="2285"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="303" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2280" bodyend="2285"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ae8c0b9dd22c5780f02b67a2032f4530b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -4964,7 +4964,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="296" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2287" bodyend="2291"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="304" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2287" bodyend="2291"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a3a8ed4d8dc7c7491bb879a490a600f16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -4986,7 +4986,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="297" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2293" bodyend="2297"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="305" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2293" bodyend="2297"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a27dc7a85a73ca3483648513274a8b618" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -5012,7 +5012,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="298" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2299" bodyend="2303"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="306" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2299" bodyend="2303"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a5ac6382564d0d2a4b555c556c2bd66f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -5042,7 +5042,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="299" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2305" bodyend="2310"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="307" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2305" bodyend="2310"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a2d98c7e177c181be7906d741e7e01bc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -5068,7 +5068,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="300" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2319" bodyend="2323"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="308" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2319" bodyend="2323"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a5e947b1950008ebef5eb0a424e20a38a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -5094,7 +5094,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="301" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2325" bodyend="2329"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="309" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2325" bodyend="2329"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ae3d0097a66bfaacb07d1139550243a26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -5124,7 +5124,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="302" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2312" bodyend="2317"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="310" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2312" bodyend="2317"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a2d877d98a67fa1c97adbc1d0a350a92f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref> &gt;</type>
@@ -5158,7 +5158,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="303" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2331" bodyend="2344"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="311" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2331" bodyend="2344"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a7c9874b4142fef73f415b7081f11289d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
@@ -5188,7 +5188,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="304" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2346" bodyend="2355"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="312" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2346" bodyend="2355"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1af3560864ab1c41d9a9eeaeef5b6fc030" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
@@ -5218,7 +5218,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="305" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2357" bodyend="2365"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="313" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2357" bodyend="2365"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a99642b15460e9bfa2d516c2fc9d11b6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -5248,7 +5248,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="306" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="306" bodyend="306"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="314" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="314" bodyend="314"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ab2dfaaf918852e77952b141c03b0361c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -5278,7 +5278,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="307" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="307" bodyend="307"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="315" column="20" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="315" bodyend="315"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a9948d267b27b0f983124eee3aa75e1bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -5308,7 +5308,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="308" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2957" bodyend="2964"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="316" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2957" bodyend="2964"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a21891fedeffda587f55944995fe73bb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
@@ -5334,7 +5334,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="309" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2966" bodyend="2973"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="317" column="25" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2966" bodyend="2973"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ab92ef7ef854289ca84dd5089842a3bc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -5364,7 +5364,299 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2ONaCl/H2ONaCl.h" line="310" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2948" bodyend="2955"/>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="318" column="18" bodyfile="Library/H2ONaCl/H2ONaCl.cpp" bodystart="2948" bodyend="2955"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a3d7c1b12767a6348b6d291e708ec0a5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>virtual void xThermal::cxThermal::UpdateState_TPX</definition>
+        <argsstring>(ThermodynamicProperties &amp;props, const double &amp;T, const double &amp;p, const double &amp;X=0)</argsstring>
+        <name>UpdateState_TPX</name>
+        <qualifiedname>xThermal::H2ONaCl::cH2ONaCl::UpdateState_TPX</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a3d7c1b12767a6348b6d291e708ec0a5e">UpdateState_TPX</reimplements>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> &amp;</type>
+          <declname>props</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>X</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Update state using T, p as independent variables. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the critical molar density in <formula id="365">$ mol/m^3 $</formula> </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[K] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[Pa] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="276" column="13" bodyfile="Library/thermo/thermo.h" bodystart="150" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1afe86ef340ece855c4aa01ed160aa5e2c" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="structxThermal_1_1ThermodynamicPropertiesVector" kindref="compound">ThermodynamicPropertiesVector</ref></type>
+        <definition>ThermodynamicPropertiesVector xThermal::cxThermal::UpdateState_TPX</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;T, const std::vector&lt; double &gt; &amp;p, const std::vector&lt; double &gt; &amp;X, bool isMeshGrid=false) final</argsstring>
+        <name>UpdateState_TPX</name>
+        <qualifiedname>xThermal::H2ONaCl::cH2ONaCl::UpdateState_TPX</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1afe86ef340ece855c4aa01ed160aa5e2c">UpdateState_TPX</reimplements>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+          <declname>isMeshGrid</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">false</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="276" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1426" bodyend="1456"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a929aa6a64ac637437b0a409ffa379aab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::UpdateState_TPX</definition>
+        <argsstring>(ThermodynamicPropertiesArray &amp;stateArray, const size_t &amp;N, const double *T, const double *p, const double *X=NULL)</argsstring>
+        <name>UpdateState_TPX</name>
+        <qualifiedname>xThermal::H2ONaCl::cH2ONaCl::UpdateState_TPX</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a929aa6a64ac637437b0a409ffa379aab">UpdateState_TPX</reimplements>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicPropertiesArray" kindref="compound">ThermodynamicPropertiesArray</ref> &amp;</type>
+          <declname>stateArray</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">size_t</ref> &amp;</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>X</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">NULL</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="276" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1662" bodyend="1672"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a89ce494a32e38aafb64abd36fdf67229" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
+        <definition>ThermodynamicProperties xThermal::cxThermal::UpdateState_TPX</definition>
+        <argsstring>(const double &amp;T, const double &amp;p, const double &amp;X=0)</argsstring>
+        <name>UpdateState_TPX</name>
+        <qualifiedname>xThermal::H2ONaCl::cH2ONaCl::UpdateState_TPX</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>X</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="276" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1092" bodyend="1096"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ac1094a81aa03a8856a5299b1f588f547" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>virtual void xThermal::cxThermal::UpdateState_HPX</definition>
+        <argsstring>(ThermodynamicProperties &amp;props, const double &amp;H, const double &amp;p, const double &amp;X=0)</argsstring>
+        <name>UpdateState_HPX</name>
+        <qualifiedname>xThermal::H2ONaCl::cH2ONaCl::UpdateState_HPX</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1ac1094a81aa03a8856a5299b1f588f547">UpdateState_HPX</reimplements>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> &amp;</type>
+          <declname>props</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>X</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="277" column="13" bodyfile="Library/thermo/thermo.h" bodystart="151" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a5c0e0ff376db670fffd97808b39eb1a0" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="structxThermal_1_1ThermodynamicPropertiesVector" kindref="compound">ThermodynamicPropertiesVector</ref></type>
+        <definition>ThermodynamicPropertiesVector xThermal::cxThermal::UpdateState_HPX</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;H, const std::vector&lt; double &gt; &amp;p, const std::vector&lt; double &gt; &amp;X, bool isMeshGrid=false) final</argsstring>
+        <name>UpdateState_HPX</name>
+        <qualifiedname>xThermal::H2ONaCl::cH2ONaCl::UpdateState_HPX</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a5c0e0ff376db670fffd97808b39eb1a0">UpdateState_HPX</reimplements>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+          <declname>isMeshGrid</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">false</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="277" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1458" bodyend="1487"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a7a9db3f1c95f91044b59478cef3c5a14" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::UpdateState_HPX</definition>
+        <argsstring>(ThermodynamicPropertiesArray &amp;stateArray, const size_t &amp;N, const double *H, const double *p, const double *X=NULL)</argsstring>
+        <name>UpdateState_HPX</name>
+        <qualifiedname>xThermal::H2ONaCl::cH2ONaCl::UpdateState_HPX</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a7a9db3f1c95f91044b59478cef3c5a14">UpdateState_HPX</reimplements>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicPropertiesArray" kindref="compound">ThermodynamicPropertiesArray</ref> &amp;</type>
+          <declname>stateArray</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">size_t</ref> &amp;</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>X</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">NULL</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="277" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1674" bodyend="1683"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a889b6fb0deadb20dacd44338a1c4a144" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
+        <definition>ThermodynamicProperties xThermal::cxThermal::UpdateState_HPX</definition>
+        <argsstring>(const double &amp;H, const double &amp;p, const double &amp;X=0)</argsstring>
+        <name>UpdateState_HPX</name>
+        <qualifiedname>xThermal::H2ONaCl::cH2ONaCl::UpdateState_HPX</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>X</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="277" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1097" bodyend="1101"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1afb7e8f49051552247a2e56e2a790d762" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1cxThermal" kindref="compound">cxThermal</ref> *</type>
+        <definition>cxThermal * xThermal::H2ONaCl::cH2ONaCl::createWorker</definition>
+        <argsstring>()</argsstring>
+        <name>createWorker</name>
+        <qualifiedname>xThermal::H2ONaCl::cH2ONaCl::createWorker</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a2418e46cbd79082d3bda94bdec850cab">createWorker</reimplements>
+        <briefdescription>
+<para>A new, independent model that evaluates exactly as this one (same backend and settings), owned by the caller. Used for one model per thread in the internal OpenMP evaluation. The default (nullptr) means that the model cannot be replicated; its vector evaluations then run serially. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2ONaCl/H2ONaCl.h" line="272" column="23" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="272" bodyend="272"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -5398,7 +5690,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
         <link refid="classxThermal_1_1cxThermal"/>
       </node>
     </collaborationgraph>
-    <location file="Library/H2ONaCl/H2ONaCl.h" line="157" column="9" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="158" bodyend="314"/>
+    <location file="Library/H2ONaCl/H2ONaCl.h" line="157" column="9" bodyfile="Library/H2ONaCl/H2ONaCl.h" bodystart="158" bodyend="322"/>
     <listofallmembers>
       <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a9b36799717d174c99dc94ce4e68b40b9" prot="private" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>_getPhaseRegion_node_CheckTcrit_H2O</name></member>
       <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a399f073ff710615c70074a4771a2de2a" prot="private" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>_getPhaseRegion_node_HaliteLiquidus</name></member>
@@ -5427,6 +5719,7 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
       <member refid="classxThermal_1_1cxThermal_1ad2d8ab7263231e60593e889815b0c46f" prot="public" virt="virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>createLUT_3D</name></member>
       <member refid="classxThermal_1_1cxThermal_1a35bccaf5cb9424b49117a7c288d5c510" prot="public" virt="virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>createLUT_3D</name></member>
       <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1aa942e6238d4fcfa68d499c6a163cee88" prot="private" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>createTable4_Driesner2007a</name></member>
+      <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1afb7e8f49051552247a2e56e2a790d762" prot="protected" virt="virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>createWorker</name></member>
       <member refid="classxThermal_1_1cxThermal_1a2314586579c4061048c886be74236db7" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>cxThermal</name></member>
       <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a08098dca6ac4d169f181f6cf0d1322f4" prot="private" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>D_Tstar_V</name></member>
       <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a21891fedeffda587f55944995fe73bb4" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>D_Tstar_V</name></member>
@@ -5543,17 +5836,21 @@ H_{extrapol}^{highT} (T,P,X) &amp;= o_3 + o_4 ln^{P + 1000} + o_5 P,&amp; ~~ (P&
       <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a311a8d4cc2a622555b38185d320df6c2" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>Tmin_VLH</name></member>
       <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a5599c22b7db512c21f1b4289f958f898" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>Triangulation</name></member>
       <member refid="classxThermal_1_1cxThermal_1add580814bcf501ea557a03b7eac042bd" prot="public" virt="non-virtual" ambiguityscope="xThermal::cxThermal::"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>Triangulation</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ac639cc813243479c4711207e7077adb5" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>tryUpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1acc9e6ed0d508f1a089ed55a32592b427" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>tryUpdateState_TPX</name></member>
       <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a60f00452fe44cba20fe5caa4f9901ebd" prot="public" virt="virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>Ttriple</name></member>
       <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a5b8e67bbbf29baf382f5c6541576920d" prot="public" virt="virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>UpdateState_HPX</name></member>
-      <member refid="classxThermal_1_1cxThermal_1a5c0e0ff376db670fffd97808b39eb1a0" prot="public" virt="virtual" ambiguityscope="xThermal::cxThermal::"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>UpdateState_HPX</name></member>
-      <member refid="classxThermal_1_1cxThermal_1a7a9db3f1c95f91044b59478cef3c5a14" prot="public" virt="virtual" ambiguityscope="xThermal::cxThermal::"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>UpdateState_HPX</name></member>
-      <member refid="classxThermal_1_1cxThermal_1a889b6fb0deadb20dacd44338a1c4a144" prot="public" virt="non-virtual" ambiguityscope="xThermal::cxThermal::"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ac1094a81aa03a8856a5299b1f588f547" prot="public" virt="virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a5c0e0ff376db670fffd97808b39eb1a0" prot="public" virt="virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a7a9db3f1c95f91044b59478cef3c5a14" prot="public" virt="virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a889b6fb0deadb20dacd44338a1c4a144" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>UpdateState_HPX</name></member>
       <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a0adb33c120d2aa80ac2f920dbcdb0855" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>UpdateState_HPX_vl_lowXlowP</name></member>
       <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a0a0773d74a1e46421e6d6a9b220436ac" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>UpdateState_HPX_vlh</name></member>
       <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a6c402e23181d652b0b394f9857262194" prot="public" virt="virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>UpdateState_TPX</name></member>
-      <member refid="classxThermal_1_1cxThermal_1afe86ef340ece855c4aa01ed160aa5e2c" prot="public" virt="virtual" ambiguityscope="xThermal::cxThermal::"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>UpdateState_TPX</name></member>
-      <member refid="classxThermal_1_1cxThermal_1a929aa6a64ac637437b0a409ffa379aab" prot="public" virt="virtual" ambiguityscope="xThermal::cxThermal::"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>UpdateState_TPX</name></member>
-      <member refid="classxThermal_1_1cxThermal_1a89ce494a32e38aafb64abd36fdf67229" prot="public" virt="non-virtual" ambiguityscope="xThermal::cxThermal::"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a3d7c1b12767a6348b6d291e708ec0a5e" prot="public" virt="virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1afe86ef340ece855c4aa01ed160aa5e2c" prot="public" virt="virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a929aa6a64ac637437b0a409ffa379aab" prot="public" virt="virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a89ce494a32e38aafb64abd36fdf67229" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>UpdateState_TPX</name></member>
       <member refid="classxThermal_1_1cxThermal_1a8349d4a9fd155cc40963b1cac6dcc003" prot="public" virt="non-virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>validateFluid</name></member>
       <member refid="classxThermal_1_1cxThermal_1a2da135b28df9f19644be7d405bbe9509" prot="public" virt="virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>writeLine2VTU</name></member>
       <member refid="classxThermal_1_1cxThermal_1ab803d85ba54f23bd952f2b0dddaf4771" prot="public" virt="virtual"><scope>xThermal::H2ONaCl::cH2ONaCl</scope><name>writeMeshGrid2VTK</name></member>

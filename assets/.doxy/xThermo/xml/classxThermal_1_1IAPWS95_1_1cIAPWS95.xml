@@ -950,7 +950,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="274" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1829" bodyend="1834"/>
+        <location file="Library/H2O/IAPWS95.h" line="274" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1833" bodyend="1838"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1aee4a18cc975a85b246aff65fb1bf65c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -968,7 +968,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="275" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1857" bodyend="1867"/>
+        <location file="Library/H2O/IAPWS95.h" line="275" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1861" bodyend="1871"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a6bc041d41ef39f7d9ce29f8ffc1441dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>std::string</type>
@@ -1157,7 +1157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="289" column="25" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1532" bodyend="1571"/>
+        <location file="Library/H2O/IAPWS95.h" line="289" column="25" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1534" bodyend="1573"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a65e4fdc35cc70a378485842bc5350a2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1209,7 +1209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="290" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1526" bodyend="1530"/>
+        <location file="Library/H2O/IAPWS95.h" line="298" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1526" bodyend="1532"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a814a49bf32b20cb4d0b3a6c662d1bfab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
@@ -1236,7 +1236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="292" column="37" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1869" bodyend="1873"/>
+        <location file="Library/H2O/IAPWS95.h" line="300" column="37" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1873" bodyend="1877"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a502e79665cebfc1c9b124d66a29a344d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacexThermal_1aef67445524cdc6b98524a382e1ccba50" kindref="member">PhaseRegion</ref></type>
@@ -1263,7 +1263,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="293" column="25" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1671" bodyend="1719"/>
+        <location file="Library/H2O/IAPWS95.h" line="301" column="25" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1675" bodyend="1723"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ad9125fb6f05d402281af3e97e46c4c09" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1295,7 +1295,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="294" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1665" bodyend="1669"/>
+        <location file="Library/H2O/IAPWS95.h" line="302" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1667" bodyend="1673"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a8b586f9bbe66ceb02872b729ee4b34d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1326,7 +1326,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="295" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1513" bodyend="1517"/>
+        <location file="Library/H2O/IAPWS95.h" line="303" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1513" bodyend="1517"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a41c593a082880b8808e6409eb2d3dee4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1381,7 +1381,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="296" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1519" bodyend="1523"/>
+        <location file="Library/H2O/IAPWS95.h" line="304" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1519" bodyend="1523"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a4f67b665087dc6c1030dd0da51156fe9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1404,7 +1404,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="297" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1573" bodyend="1611"/>
+        <location file="Library/H2O/IAPWS95.h" line="305" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1575" bodyend="1613"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a9a28becb21cf10f16d4e78ebb8f78bea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1435,7 +1435,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="298" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1613" bodyend="1617"/>
+        <location file="Library/H2O/IAPWS95.h" line="306" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1615" bodyend="1619"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1aa6a2cf4a92cb932ab0252c2449e07433" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1490,7 +1490,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="299" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1619" bodyend="1623"/>
+        <location file="Library/H2O/IAPWS95.h" line="307" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1621" bodyend="1625"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a2f9d6f8468824fe16754895c16252001" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -1513,7 +1513,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="300" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1625" bodyend="1662"/>
+        <location file="Library/H2O/IAPWS95.h" line="308" column="20" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1627" bodyend="1664"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a2f122191527f5b5ae32b17d0eef7a127" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1539,7 +1539,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="309" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="146" bodyend="151"/>
+        <location file="Library/H2O/IAPWS95.h" line="317" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="146" bodyend="151"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a21fba1a9f330c8926e0e4bac351df2a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1565,7 +1565,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="310" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="194" bodyend="199"/>
+        <location file="Library/H2O/IAPWS95.h" line="318" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="194" bodyend="199"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a5a0040f03db58b1921822c7c7ba92905" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1591,7 +1591,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="311" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="246" bodyend="251"/>
+        <location file="Library/H2O/IAPWS95.h" line="319" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="246" bodyend="251"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ade30d24de1ab449b582bfb6c3648b32b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1617,7 +1617,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="312" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="293" bodyend="298"/>
+        <location file="Library/H2O/IAPWS95.h" line="320" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="293" bodyend="298"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1af595e78520ea6f18a9e865101818ab51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1643,7 +1643,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="313" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="342" bodyend="347"/>
+        <location file="Library/H2O/IAPWS95.h" line="321" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="342" bodyend="347"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1acf6e6dd2d998dc38a80ee788b1defe6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1669,7 +1669,281 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="314" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="394" bodyend="399"/>
+        <location file="Library/H2O/IAPWS95.h" line="322" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="394" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a3d7c1b12767a6348b6d291e708ec0a5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>virtual void xThermal::cxThermal::UpdateState_TPX</definition>
+        <argsstring>(ThermodynamicProperties &amp;props, const double &amp;T, const double &amp;p, const double &amp;X=0)</argsstring>
+        <name>UpdateState_TPX</name>
+        <qualifiedname>xThermal::IAPWS95::cIAPWS95::UpdateState_TPX</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a3d7c1b12767a6348b6d291e708ec0a5e">UpdateState_TPX</reimplements>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> &amp;</type>
+          <declname>props</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>X</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Update state using T, p as independent variables. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the critical molar density in <formula id="365">$ mol/m^3 $</formula> </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[K] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[Pa] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="295" column="13" bodyfile="Library/thermo/thermo.h" bodystart="150" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1afe86ef340ece855c4aa01ed160aa5e2c" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="structxThermal_1_1ThermodynamicPropertiesVector" kindref="compound">ThermodynamicPropertiesVector</ref></type>
+        <definition>ThermodynamicPropertiesVector xThermal::cxThermal::UpdateState_TPX</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;T, const std::vector&lt; double &gt; &amp;p, const std::vector&lt; double &gt; &amp;X, bool isMeshGrid=false) final</argsstring>
+        <name>UpdateState_TPX</name>
+        <qualifiedname>xThermal::IAPWS95::cIAPWS95::UpdateState_TPX</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1afe86ef340ece855c4aa01ed160aa5e2c">UpdateState_TPX</reimplements>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+          <declname>isMeshGrid</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">false</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="295" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1426" bodyend="1456"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a929aa6a64ac637437b0a409ffa379aab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::UpdateState_TPX</definition>
+        <argsstring>(ThermodynamicPropertiesArray &amp;stateArray, const size_t &amp;N, const double *T, const double *p, const double *X=NULL)</argsstring>
+        <name>UpdateState_TPX</name>
+        <qualifiedname>xThermal::IAPWS95::cIAPWS95::UpdateState_TPX</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a929aa6a64ac637437b0a409ffa379aab">UpdateState_TPX</reimplements>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicPropertiesArray" kindref="compound">ThermodynamicPropertiesArray</ref> &amp;</type>
+          <declname>stateArray</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">size_t</ref> &amp;</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>X</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">NULL</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="295" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1662" bodyend="1672"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a89ce494a32e38aafb64abd36fdf67229" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
+        <definition>ThermodynamicProperties xThermal::cxThermal::UpdateState_TPX</definition>
+        <argsstring>(const double &amp;T, const double &amp;p, const double &amp;X=0)</argsstring>
+        <name>UpdateState_TPX</name>
+        <qualifiedname>xThermal::IAPWS95::cIAPWS95::UpdateState_TPX</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>X</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="295" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1092" bodyend="1096"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ac1094a81aa03a8856a5299b1f588f547" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>virtual void xThermal::cxThermal::UpdateState_HPX</definition>
+        <argsstring>(ThermodynamicProperties &amp;props, const double &amp;H, const double &amp;p, const double &amp;X=0)</argsstring>
+        <name>UpdateState_HPX</name>
+        <qualifiedname>xThermal::IAPWS95::cIAPWS95::UpdateState_HPX</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1ac1094a81aa03a8856a5299b1f588f547">UpdateState_HPX</reimplements>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref> &amp;</type>
+          <declname>props</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>X</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="296" column="13" bodyfile="Library/thermo/thermo.h" bodystart="151" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a5c0e0ff376db670fffd97808b39eb1a0" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="structxThermal_1_1ThermodynamicPropertiesVector" kindref="compound">ThermodynamicPropertiesVector</ref></type>
+        <definition>ThermodynamicPropertiesVector xThermal::cxThermal::UpdateState_HPX</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;H, const std::vector&lt; double &gt; &amp;p, const std::vector&lt; double &gt; &amp;X, bool isMeshGrid=false) final</argsstring>
+        <name>UpdateState_HPX</name>
+        <qualifiedname>xThermal::IAPWS95::cIAPWS95::UpdateState_HPX</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a5c0e0ff376db670fffd97808b39eb1a0">UpdateState_HPX</reimplements>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt; &amp;</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
+          <declname>isMeshGrid</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">false</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="296" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1458" bodyend="1487"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a7a9db3f1c95f91044b59478cef3c5a14" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
+        <definition>void xThermal::cxThermal::UpdateState_HPX</definition>
+        <argsstring>(ThermodynamicPropertiesArray &amp;stateArray, const size_t &amp;N, const double *H, const double *p, const double *X=NULL)</argsstring>
+        <name>UpdateState_HPX</name>
+        <qualifiedname>xThermal::IAPWS95::cIAPWS95::UpdateState_HPX</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a7a9db3f1c95f91044b59478cef3c5a14">UpdateState_HPX</reimplements>
+        <param>
+          <type><ref refid="structxThermal_1_1ThermodynamicPropertiesArray" kindref="compound">ThermodynamicPropertiesArray</ref> &amp;</type>
+          <declname>stateArray</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">size_t</ref> &amp;</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> *</type>
+          <declname>X</declname>
+          <defval><ref refid="classxThermal_1_1xThermalError" kindref="compound">NULL</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="296" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1674" bodyend="1683"/>
+      </memberdef>
+      <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a889b6fb0deadb20dacd44338a1c4a144" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
+        <definition>ThermodynamicProperties xThermal::cxThermal::UpdateState_HPX</definition>
+        <argsstring>(const double &amp;H, const double &amp;p, const double &amp;X=0)</argsstring>
+        <name>UpdateState_HPX</name>
+        <qualifiedname>xThermal::IAPWS95::cIAPWS95::UpdateState_HPX</qualifiedname>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">const</ref> <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &amp;</type>
+          <declname>X</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="296" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1097" bodyend="1101"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -2235,7 +2509,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="249" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1813" bodyend="1816"/>
+        <location file="Library/H2O/IAPWS95.h" line="249" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1817" bodyend="1820"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ace06f7dd990dfd69f26240928de68941" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -2299,7 +2573,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="251" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1818" bodyend="1821"/>
+        <location file="Library/H2O/IAPWS95.h" line="251" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1822" bodyend="1825"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ae1302f9f7b42b0d54ede17487288bba6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -2382,7 +2656,25 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPWS95.h" line="253" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1728" bodyend="1811"/>
+        <location file="Library/H2O/IAPWS95.h" line="253" column="18" bodyfile="Library/H2O/IAPWS95.cpp" bodystart="1732" bodyend="1815"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a1dbb224186ad174306a049e660522628" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classxThermal_1_1cxThermal" kindref="compound">cxThermal</ref> *</type>
+        <definition>cxThermal * xThermal::IAPWS95::cIAPWS95::createWorker</definition>
+        <argsstring>()</argsstring>
+        <name>createWorker</name>
+        <qualifiedname>xThermal::IAPWS95::cIAPWS95::createWorker</qualifiedname>
+        <reimplements refid="classxThermal_1_1cxThermal_1a2418e46cbd79082d3bda94bdec850cab">createWorker</reimplements>
+        <briefdescription>
+<para>A new, independent model that evaluates exactly as this one (same backend and settings), owned by the caller. Used for one model per thread in the internal OpenMP evaluation. The default (nullptr) means that the model cannot be replicated; its vector evaluations then run serially. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/H2O/IAPWS95.h" line="291" column="23" bodyfile="Library/H2O/IAPWS95.h" bodystart="291" bodyend="291"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -2421,7 +2713,7 @@
         <link refid="classxThermal_1_1cxThermal"/>
       </node>
     </collaborationgraph>
-    <location file="Library/H2O/IAPWS95.h" line="222" column="9" bodyfile="Library/H2O/IAPWS95.h" bodystart="223" bodyend="320"/>
+    <location file="Library/H2O/IAPWS95.h" line="222" column="9" bodyfile="Library/H2O/IAPWS95.h" bodystart="223" bodyend="328"/>
     <listofallmembers>
       <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ab4e578d85b41fc99bd935048db4df3b0" prot="private" virt="non-virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>_dhdT_P</name></member>
       <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a82f0b7fe45af3105dab299d739b35212" prot="private" virt="non-virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>_dPdRho_T</name></member>
@@ -2444,6 +2736,7 @@
       <member refid="classxThermal_1_1cxThermal_1a26dd1d5506a4a837b03137fc8084dd7c" prot="public" virt="virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>createLUT_2D</name></member>
       <member refid="classxThermal_1_1cxThermal_1ad2d8ab7263231e60593e889815b0c46f" prot="public" virt="virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>createLUT_3D</name></member>
       <member refid="classxThermal_1_1cxThermal_1a35bccaf5cb9424b49117a7c288d5c510" prot="public" virt="virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>createLUT_3D</name></member>
+      <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a1dbb224186ad174306a049e660522628" prot="protected" virt="virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>createWorker</name></member>
       <member refid="classxThermal_1_1cxThermal_1a2314586579c4061048c886be74236db7" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>cxThermal</name></member>
       <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a76c60c2718c023e941cb59eca5c1b3ed" prot="private" virt="non-virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>dhdT_P</name></member>
       <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ace06f7dd990dfd69f26240928de68941" prot="private" virt="non-virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>dPdRho_T</name></member>
@@ -2522,17 +2815,22 @@
       <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a73096f64e5da4f805668670fce4b9457" prot="public" virt="virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>Tmax</name></member>
       <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a1fa02bdf0998291f3e88dbd554323bdd" prot="public" virt="virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>Tmin</name></member>
       <member refid="classxThermal_1_1cxThermal_1add580814bcf501ea557a03b7eac042bd" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>Triangulation</name></member>
+      <member refid="classxThermal_1_1cxThermal_1ac639cc813243479c4711207e7077adb5" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>tryUpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1acc9e6ed0d508f1a089ed55a32592b427" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>tryUpdateState_TPX</name></member>
       <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a2bf54e74807f5e3b1fb0437a074cc34e" prot="public" virt="virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>Ttriple</name></member>
       <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a9c3e31bd0c12f3fa6acaf05edaeaf1d6" prot="private" virt="non-virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>UpdateState_HP</name></member>
       <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ad9125fb6f05d402281af3e97e46c4c09" prot="public" virt="virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>UpdateState_HPX</name></member>
-      <member refid="classxThermal_1_1cxThermal_1a5c0e0ff376db670fffd97808b39eb1a0" prot="public" virt="virtual" ambiguityscope="xThermal::cxThermal::"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>UpdateState_HPX</name></member>
-      <member refid="classxThermal_1_1cxThermal_1a7a9db3f1c95f91044b59478cef3c5a14" prot="public" virt="virtual" ambiguityscope="xThermal::cxThermal::"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>UpdateState_HPX</name></member>
-      <member refid="classxThermal_1_1cxThermal_1a889b6fb0deadb20dacd44338a1c4a144" prot="public" virt="non-virtual" ambiguityscope="xThermal::cxThermal::"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ac1094a81aa03a8856a5299b1f588f547" prot="public" virt="virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a5c0e0ff376db670fffd97808b39eb1a0" prot="public" virt="virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a7a9db3f1c95f91044b59478cef3c5a14" prot="public" virt="virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>UpdateState_HPX</name></member>
+      <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a889b6fb0deadb20dacd44338a1c4a144" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>UpdateState_HPX</name></member>
       <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a7b0286673a42da75b77a1ea9e667e737" prot="private" virt="non-virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>UpdateState_TP</name></member>
       <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a65e4fdc35cc70a378485842bc5350a2f" prot="public" virt="virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>UpdateState_TPX</name></member>
       <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a814a49bf32b20cb4d0b3a6c662d1bfab" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>UpdateState_TPX</name></member>
-      <member refid="classxThermal_1_1cxThermal_1afe86ef340ece855c4aa01ed160aa5e2c" prot="public" virt="virtual" ambiguityscope="xThermal::cxThermal::"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>UpdateState_TPX</name></member>
-      <member refid="classxThermal_1_1cxThermal_1a929aa6a64ac637437b0a409ffa379aab" prot="public" virt="virtual" ambiguityscope="xThermal::cxThermal::"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a3d7c1b12767a6348b6d291e708ec0a5e" prot="public" virt="virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1afe86ef340ece855c4aa01ed160aa5e2c" prot="public" virt="virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a929aa6a64ac637437b0a409ffa379aab" prot="public" virt="virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>UpdateState_TPX</name></member>
+      <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a89ce494a32e38aafb64abd36fdf67229" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>UpdateState_TPX</name></member>
       <member refid="classxThermal_1_1cxThermal_1a8349d4a9fd155cc40963b1cac6dcc003" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>validateFluid</name></member>
       <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1aee4a18cc975a85b246aff65fb1bf65c0" prot="public" virt="non-virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>Verification_Mu</name></member>
       <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a850b902924eb79439f23a0295f3919d8" prot="private" virt="non-virtual"><scope>xThermal::IAPWS95::cIAPWS95</scope><name>Viscosity_H2O_IAPWS2008</name></member>

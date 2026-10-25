@@ -1125,6 +1125,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#protected-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Protected Functions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detailed-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detailed Description
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#public-attributes-documentation" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1847,6 +1869,28 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#function-tryupdatestate_hpx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function tryUpdateState_HPX
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-tryupdatestate_tpx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function tryUpdateState_TPX
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#function-writeline2vtu" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1945,6 +1989,34 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#protected-functions-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Protected Functions Documentation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Protected Functions Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#function-createworker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        function createWorker
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1967,7 +2039,7 @@
 
 <h1 id="class-xthermalcxthermal">Class xThermal::cxThermal</h1>
 <p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacexThermal/"><strong>xThermal</strong></a> <strong>&gt;</strong> <a href="./"><strong>cxThermal</strong></a></p>
-<p><em>Top abstract class of the thermodynamic model.</em> </p>
+<p><em>Top abstract class of the thermodynamic model.</em> <a href="#detailed-description">More...</a></p>
 <ul>
 <li><code>#include &lt;thermo.h&gt;</code></li>
 </ul>
@@ -2245,6 +2317,14 @@
 <td style="text-align: left;"><a href="#function-sum_vector"><strong>sum_vector</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; T &gt; &amp; x) <br></td>
 </tr>
 <tr>
+<td style="text-align: right;"><a href="../namespacexThermal/#enum-evaluationstatus"><strong>EvaluationStatus</strong></a></td>
+<td style="text-align: left;"><a href="#function-tryupdatestate_hpx"><strong>tryUpdateState_HPX</strong></a> (<a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a> &amp; props, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; H, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; p, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; X=0, std::string * message=<a href="../classxThermal_1_1xThermalError/"><strong>nullptr</strong></a>) <br><em>Non-throwing H-P-X evaluation; as tryUpdateState_TPX (on failure H, p, X are the inputs, T is NaN)</em></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../namespacexThermal/#enum-evaluationstatus"><strong>EvaluationStatus</strong></a></td>
+<td style="text-align: left;"><a href="#function-tryupdatestate_tpx"><strong>tryUpdateState_TPX</strong></a> (<a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a> &amp; props, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; p, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; X=0, std::string * message=<a href="../classxThermal_1_1xThermalError/"><strong>nullptr</strong></a>) <br><em>Non-throwing T-P-X evaluation: the same evaluation as UpdateState_TPX, reported as a status (C1).</em></td>
+</tr>
+<tr>
 <td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
 <td style="text-align: left;"><a href="#function-writeline2vtu"><strong>writeLine2VTU</strong></a> (std::string vtuFile, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; X, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; Y, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; Z, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> scale_x=1.0, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> scale_y=1.0, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> scale_z=1.0) <br></td>
 </tr>
@@ -2285,6 +2365,24 @@
 </tr>
 </tbody>
 </table>
+<h2 id="protected-functions">Protected Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">virtual <a href="./"><strong>cxThermal</strong></a> *</td>
+<td style="text-align: left;"><a href="#function-createworker"><strong>createWorker</strong></a> () <br><em>A new, independent model that evaluates exactly as this one (same backend and settings), owned by the caller. Used for one model per thread in the internal OpenMP evaluation. The default (nullptr) means that the model cannot be replicated; its vector evaluations then run serially.</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="detailed-description">Detailed Description</h2>
+<p>Concurrency: a model object is not thread-safe. Concurrent evaluations (threads or OpenMP of the calling code) need one model object per thread; independent objects share no state and give the same results as serial evaluation. MPI ranks have their own objects anyway. The internal OpenMP evaluation of the vector API (XTHERMO_OPENMP=ON, set_num_threads) creates such an object per thread itself.</p>
+<p>Errors: UpdateState_TPX / UpdateState_HPX throw an <a href="../classxThermal_1_1xThermalBaseError/"><strong>xThermalBaseError</strong></a> (Exception.h) when a state cannot be evaluated; tryUpdateState_TPX / tryUpdateState_HPX report the same failures as an EvaluationStatus. A single property that is not available for an evaluated state may be NaN (see <a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a>). </p>
 <h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
 <h3 id="variable-m_isshowprogressbar">variable m_isShowProgressBar</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">bool</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">cxThermal</span><span class="o">::</span><span class="n">m_isShowProgressBar</span><span class="p">;</span>
@@ -2863,6 +2961,7 @@
 <a id="__codelineno-60-2" name="__codelineno-60-2" href="#__codelineno-60-2"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">num_threads</span>
 <a id="__codelineno-60-3" name="__codelineno-60-3" href="#__codelineno-60-3"></a><span class="p">)</span><span class="w"> </span>
 </code></pre></div>
+<p>Number of threads of the internal OpenMP evaluation of the vector API (default 1; only with XTHERMO_OPENMP=ON). It is a setting of this object: the caller's OpenMP settings are not changed. </p>
 <hr>
 
 <h3 id="function-showprogressbar">function showProgressBar</h3>
@@ -2880,64 +2979,89 @@
 </code></pre></div>
 <hr>
 
+<h3 id="function-tryupdatestate_hpx">function tryUpdateState_HPX</h3>
+<p><em>Non-throwing H-P-X evaluation; as tryUpdateState_TPX (on failure H, p, X are the inputs, T is NaN)</em> 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a><span class="n">EvaluationStatus</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">cxThermal</span><span class="o">::</span><span class="n">tryUpdateState_HPX</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-63-2" name="__codelineno-63-2" href="#__codelineno-63-2"></a><span class="w">    </span><span class="n">ThermodynamicProperties</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">props</span><span class="p">,</span>
+<a id="__codelineno-63-3" name="__codelineno-63-3" href="#__codelineno-63-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">H</span><span class="p">,</span>
+<a id="__codelineno-63-4" name="__codelineno-63-4" href="#__codelineno-63-4"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p</span><span class="p">,</span>
+<a id="__codelineno-63-5" name="__codelineno-63-5" href="#__codelineno-63-5"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">X</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-63-6" name="__codelineno-63-6" href="#__codelineno-63-6"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">message</span><span class="o">=</span><span class="nb">nullptr</span>
+<a id="__codelineno-63-7" name="__codelineno-63-7" href="#__codelineno-63-7"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<hr>
+
+<h3 id="function-tryupdatestate_tpx">function tryUpdateState_TPX</h3>
+<p><em>Non-throwing T-P-X evaluation: the same evaluation as UpdateState_TPX, reported as a status (C1).</em> 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a><span class="n">EvaluationStatus</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">cxThermal</span><span class="o">::</span><span class="n">tryUpdateState_TPX</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-64-2" name="__codelineno-64-2" href="#__codelineno-64-2"></a><span class="w">    </span><span class="n">ThermodynamicProperties</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">props</span><span class="p">,</span>
+<a id="__codelineno-64-3" name="__codelineno-64-3" href="#__codelineno-64-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">T</span><span class="p">,</span>
+<a id="__codelineno-64-4" name="__codelineno-64-4" href="#__codelineno-64-4"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p</span><span class="p">,</span>
+<a id="__codelineno-64-5" name="__codelineno-64-5" href="#__codelineno-64-5"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">X</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-64-6" name="__codelineno-64-6" href="#__codelineno-64-6"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">message</span><span class="o">=</span><span class="nb">nullptr</span>
+<a id="__codelineno-64-7" name="__codelineno-64-7" href="#__codelineno-64-7"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<p>On success (EvaluationStatus::Ok), props is identical to the result of UpdateState_TPX and *message (if given) is cleared. If the evaluation fails with an <a href="../namespacexThermal/"><strong>xThermal</strong></a> error, the function returns the corresponding status instead of throwing, props holds no result (T, p, X are the inputs, every other number is NaN, phase is Unknown) and *message (if given) the error message. Other exceptions (e.g. std::bad_alloc or a programming error) are not evaluation failures and propagate. </p>
+<hr>
+
 <h3 id="function-writeline2vtu">function writeLine2VTU</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">cxThermal</span><span class="o">::</span><span class="n">writeLine2VTU</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-63-2" name="__codelineno-63-2" href="#__codelineno-63-2"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">vtuFile</span><span class="p">,</span>
-<a id="__codelineno-63-3" name="__codelineno-63-3" href="#__codelineno-63-3"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">X</span><span class="p">,</span>
-<a id="__codelineno-63-4" name="__codelineno-63-4" href="#__codelineno-63-4"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">Y</span><span class="p">,</span>
-<a id="__codelineno-63-5" name="__codelineno-63-5" href="#__codelineno-63-5"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">Z</span><span class="p">,</span>
-<a id="__codelineno-63-6" name="__codelineno-63-6" href="#__codelineno-63-6"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">scale_x</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
-<a id="__codelineno-63-7" name="__codelineno-63-7" href="#__codelineno-63-7"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">scale_y</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
-<a id="__codelineno-63-8" name="__codelineno-63-8" href="#__codelineno-63-8"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">scale_z</span><span class="o">=</span><span class="mf">1.0</span>
-<a id="__codelineno-63-9" name="__codelineno-63-9" href="#__codelineno-63-9"></a><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">cxThermal</span><span class="o">::</span><span class="n">writeLine2VTU</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-65-2" name="__codelineno-65-2" href="#__codelineno-65-2"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">vtuFile</span><span class="p">,</span>
+<a id="__codelineno-65-3" name="__codelineno-65-3" href="#__codelineno-65-3"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">X</span><span class="p">,</span>
+<a id="__codelineno-65-4" name="__codelineno-65-4" href="#__codelineno-65-4"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">Y</span><span class="p">,</span>
+<a id="__codelineno-65-5" name="__codelineno-65-5" href="#__codelineno-65-5"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">Z</span><span class="p">,</span>
+<a id="__codelineno-65-6" name="__codelineno-65-6" href="#__codelineno-65-6"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">scale_x</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+<a id="__codelineno-65-7" name="__codelineno-65-7" href="#__codelineno-65-7"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">scale_y</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+<a id="__codelineno-65-8" name="__codelineno-65-8" href="#__codelineno-65-8"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">scale_z</span><span class="o">=</span><span class="mf">1.0</span>
+<a id="__codelineno-65-9" name="__codelineno-65-9" href="#__codelineno-65-9"></a><span class="p">)</span><span class="w"> </span>
 </code></pre></div>
 <hr>
 
 <h3 id="function-writemeshgrid2vtk">function writeMeshGrid2VTK</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">cxThermal</span><span class="o">::</span><span class="n">writeMeshGrid2VTK</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-64-2" name="__codelineno-64-2" href="#__codelineno-64-2"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">vtkFile</span><span class="p">,</span>
-<a id="__codelineno-64-3" name="__codelineno-64-3" href="#__codelineno-64-3"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">x</span><span class="p">,</span>
-<a id="__codelineno-64-4" name="__codelineno-64-4" href="#__codelineno-64-4"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">xTitle</span><span class="p">,</span>
-<a id="__codelineno-64-5" name="__codelineno-64-5" href="#__codelineno-64-5"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">y</span><span class="p">,</span>
-<a id="__codelineno-64-6" name="__codelineno-64-6" href="#__codelineno-64-6"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">yTitle</span><span class="p">,</span>
-<a id="__codelineno-64-7" name="__codelineno-64-7" href="#__codelineno-64-7"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">z</span><span class="p">,</span>
-<a id="__codelineno-64-8" name="__codelineno-64-8" href="#__codelineno-64-8"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">zTitle</span><span class="p">,</span>
-<a id="__codelineno-64-9" name="__codelineno-64-9" href="#__codelineno-64-9"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">props</span><span class="p">,</span>
-<a id="__codelineno-64-10" name="__codelineno-64-10" href="#__codelineno-64-10"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">propInfo</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">propsInfo</span><span class="p">,</span>
-<a id="__codelineno-64-11" name="__codelineno-64-11" href="#__codelineno-64-11"></a><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">isNormalize</span><span class="o">=</span><span class="nb">false</span>
-<a id="__codelineno-64-12" name="__codelineno-64-12" href="#__codelineno-64-12"></a><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">cxThermal</span><span class="o">::</span><span class="n">writeMeshGrid2VTK</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-66-2" name="__codelineno-66-2" href="#__codelineno-66-2"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">vtkFile</span><span class="p">,</span>
+<a id="__codelineno-66-3" name="__codelineno-66-3" href="#__codelineno-66-3"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">x</span><span class="p">,</span>
+<a id="__codelineno-66-4" name="__codelineno-66-4" href="#__codelineno-66-4"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">xTitle</span><span class="p">,</span>
+<a id="__codelineno-66-5" name="__codelineno-66-5" href="#__codelineno-66-5"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">y</span><span class="p">,</span>
+<a id="__codelineno-66-6" name="__codelineno-66-6" href="#__codelineno-66-6"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">yTitle</span><span class="p">,</span>
+<a id="__codelineno-66-7" name="__codelineno-66-7" href="#__codelineno-66-7"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">z</span><span class="p">,</span>
+<a id="__codelineno-66-8" name="__codelineno-66-8" href="#__codelineno-66-8"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">zTitle</span><span class="p">,</span>
+<a id="__codelineno-66-9" name="__codelineno-66-9" href="#__codelineno-66-9"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">props</span><span class="p">,</span>
+<a id="__codelineno-66-10" name="__codelineno-66-10" href="#__codelineno-66-10"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">propInfo</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">propsInfo</span><span class="p">,</span>
+<a id="__codelineno-66-11" name="__codelineno-66-11" href="#__codelineno-66-11"></a><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">isNormalize</span><span class="o">=</span><span class="nb">false</span>
+<a id="__codelineno-66-12" name="__codelineno-66-12" href="#__codelineno-66-12"></a><span class="p">)</span><span class="w"> </span>
 </code></pre></div>
 <hr>
 
 <h3 id="function-writephaseboundaries2vtu">function writePhaseBoundaries2VTU</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">cxThermal</span><span class="o">::</span><span class="n">writePhaseBoundaries2VTU</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-65-2" name="__codelineno-65-2" href="#__codelineno-65-2"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">outputPath</span><span class="p">,</span>
-<a id="__codelineno-65-3" name="__codelineno-65-3" href="#__codelineno-65-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="n">PhaseBoundaries</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">phaseBoundaries</span><span class="p">,</span>
-<a id="__codelineno-65-4" name="__codelineno-65-4" href="#__codelineno-65-4"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">scale_T</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-<a id="__codelineno-65-5" name="__codelineno-65-5" href="#__codelineno-65-5"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">scale_p</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-<a id="__codelineno-65-6" name="__codelineno-65-6" href="#__codelineno-65-6"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">scale_X</span><span class="o">=</span><span class="mi">1</span>
-<a id="__codelineno-65-7" name="__codelineno-65-7" href="#__codelineno-65-7"></a><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">cxThermal</span><span class="o">::</span><span class="n">writePhaseBoundaries2VTU</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-67-2" name="__codelineno-67-2" href="#__codelineno-67-2"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">outputPath</span><span class="p">,</span>
+<a id="__codelineno-67-3" name="__codelineno-67-3" href="#__codelineno-67-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="n">PhaseBoundaries</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">phaseBoundaries</span><span class="p">,</span>
+<a id="__codelineno-67-4" name="__codelineno-67-4" href="#__codelineno-67-4"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">scale_T</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-67-5" name="__codelineno-67-5" href="#__codelineno-67-5"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">scale_p</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-67-6" name="__codelineno-67-6" href="#__codelineno-67-6"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">scale_X</span><span class="o">=</span><span class="mi">1</span>
+<a id="__codelineno-67-7" name="__codelineno-67-7" href="#__codelineno-67-7"></a><span class="p">)</span><span class="w"> </span>
 </code></pre></div>
 <hr>
 
 <h3 id="function-writetrimesh2txt">function writeTriMesh2Txt</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">cxThermal</span><span class="o">::</span><span class="n">writeTriMesh2Txt</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-66-2" name="__codelineno-66-2" href="#__codelineno-66-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="n">TriMesh</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">mesh</span><span class="p">,</span>
-<a id="__codelineno-66-3" name="__codelineno-66-3" href="#__codelineno-66-3"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">path_out</span><span class="o">=</span><span class="s">"."</span>
-<a id="__codelineno-66-4" name="__codelineno-66-4" href="#__codelineno-66-4"></a><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">cxThermal</span><span class="o">::</span><span class="n">writeTriMesh2Txt</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-68-2" name="__codelineno-68-2" href="#__codelineno-68-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="n">TriMesh</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">mesh</span><span class="p">,</span>
+<a id="__codelineno-68-3" name="__codelineno-68-3" href="#__codelineno-68-3"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">path_out</span><span class="o">=</span><span class="s">"."</span>
+<a id="__codelineno-68-4" name="__codelineno-68-4" href="#__codelineno-68-4"></a><span class="p">)</span><span class="w"> </span>
 </code></pre></div>
 <hr>
 
 <h3 id="function-writexxyyzz2vtu">function writeXXYYZZ2VTU</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">cxThermal</span><span class="o">::</span><span class="n">writeXXYYZZ2VTU</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-67-2" name="__codelineno-67-2" href="#__codelineno-67-2"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">vtuFile</span><span class="p">,</span>
-<a id="__codelineno-67-3" name="__codelineno-67-3" href="#__codelineno-67-3"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">XX</span><span class="p">,</span>
-<a id="__codelineno-67-4" name="__codelineno-67-4" href="#__codelineno-67-4"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">YY</span><span class="p">,</span>
-<a id="__codelineno-67-5" name="__codelineno-67-5" href="#__codelineno-67-5"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">ZZ</span><span class="p">,</span>
-<a id="__codelineno-67-6" name="__codelineno-67-6" href="#__codelineno-67-6"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">scale_x</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
-<a id="__codelineno-67-7" name="__codelineno-67-7" href="#__codelineno-67-7"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">scale_y</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
-<a id="__codelineno-67-8" name="__codelineno-67-8" href="#__codelineno-67-8"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">scale_z</span><span class="o">=</span><span class="mf">1.0</span>
-<a id="__codelineno-67-9" name="__codelineno-67-9" href="#__codelineno-67-9"></a><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-69-1" name="__codelineno-69-1" href="#__codelineno-69-1"></a><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">cxThermal</span><span class="o">::</span><span class="n">writeXXYYZZ2VTU</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-69-2" name="__codelineno-69-2" href="#__codelineno-69-2"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">vtuFile</span><span class="p">,</span>
+<a id="__codelineno-69-3" name="__codelineno-69-3" href="#__codelineno-69-3"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">XX</span><span class="p">,</span>
+<a id="__codelineno-69-4" name="__codelineno-69-4" href="#__codelineno-69-4"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">YY</span><span class="p">,</span>
+<a id="__codelineno-69-5" name="__codelineno-69-5" href="#__codelineno-69-5"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">ZZ</span><span class="p">,</span>
+<a id="__codelineno-69-6" name="__codelineno-69-6" href="#__codelineno-69-6"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">scale_x</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+<a id="__codelineno-69-7" name="__codelineno-69-7" href="#__codelineno-69-7"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">scale_y</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+<a id="__codelineno-69-8" name="__codelineno-69-8" href="#__codelineno-69-8"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">scale_z</span><span class="o">=</span><span class="mf">1.0</span>
+<a id="__codelineno-69-9" name="__codelineno-69-9" href="#__codelineno-69-9"></a><span class="p">)</span><span class="w"> </span>
 </code></pre></div>
 <p>Write a grid mesh to vtu file. The grid is described by three/to 2-D array. </p>
 <p><strong>Parameters:</strong></p>
@@ -2953,15 +3077,21 @@
 <hr>
 
 <h3 id="function-cxthermal_1">function ~cxThermal</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a><span class="k">virtual</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">cxThermal</span><span class="o">::~</span><span class="n">cxThermal</span><span class="w"> </span><span class="p">()</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-70-1" name="__codelineno-70-1" href="#__codelineno-70-1"></a><span class="k">virtual</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">cxThermal</span><span class="o">::~</span><span class="n">cxThermal</span><span class="w"> </span><span class="p">()</span><span class="w"> </span>
 </code></pre></div>
 <hr>
 <h2 id="public-static-functions-documentation">Public Static Functions Documentation</h2>
 <h3 id="function-validatefluid">function validateFluid</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-69-1" name="__codelineno-69-1" href="#__codelineno-69-1"></a><span class="k">static</span><span class="w"> </span><span class="n">INDEX_FLUID</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">cxThermal</span><span class="o">::</span><span class="n">validateFluid</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-69-2" name="__codelineno-69-2" href="#__codelineno-69-2"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">fluidName</span>
-<a id="__codelineno-69-3" name="__codelineno-69-3" href="#__codelineno-69-3"></a><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-71-1" name="__codelineno-71-1" href="#__codelineno-71-1"></a><span class="k">static</span><span class="w"> </span><span class="n">INDEX_FLUID</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">cxThermal</span><span class="o">::</span><span class="n">validateFluid</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-71-2" name="__codelineno-71-2" href="#__codelineno-71-2"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">fluidName</span>
+<a id="__codelineno-71-3" name="__codelineno-71-3" href="#__codelineno-71-3"></a><span class="p">)</span><span class="w"> </span>
 </code></pre></div>
+<hr>
+<h2 id="protected-functions-documentation">Protected Functions Documentation</h2>
+<h3 id="function-createworker">function createWorker</h3>
+<p><em>A new, independent model that evaluates exactly as this one (same backend and settings), owned by the caller. Used for one model per thread in the internal OpenMP evaluation. The default (nullptr) means that the model cannot be replicated; its vector evaluations then run serially.</em> 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-72-1" name="__codelineno-72-1" href="#__codelineno-72-1"></a><span class="kr">inline</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="n">cxThermal</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">cxThermal</span><span class="o">::</span><span class="n">createWorker</span><span class="w"> </span><span class="p">()</span><span class="w"> </span>
+</code></pre></div></p>
 <hr>
 
 <hr />

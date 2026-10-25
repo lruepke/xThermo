@@ -53,7 +53,7 @@ _Namespace of_ [_**xThermal**_](namespacexThermal.md) _library._[More...](#detai
 | struct | [**Point\_slice**](structxThermal_1_1Point__slice.md) <br> |
 | struct | [**Polygon\_slice**](structxThermal_1_1Polygon__slice.md) <br> |
 | struct | [**Surface**](structxThermal_1_1Surface.md) <br> |
-| struct | [**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) <br> |
+| struct | [**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) <br>_Result of a state evaluation (UpdateState\_TPX / UpdateState\_HPX)._  |
 | struct | [**ThermodynamicPropertiesArray**](structxThermal_1_1ThermodynamicPropertiesArray.md) <br> |
 | struct | [**ThermodynamicPropertiesVector**](structxThermal_1_1ThermodynamicPropertiesVector.md) <br> |
 | struct | [**ThermodynamicProperty**](structxThermal_1_1ThermodynamicProperty.md) <br>_Data struct of a thermodynamic property._  |
@@ -72,6 +72,7 @@ _Namespace of_ [_**xThermal**_](namespacexThermal.md) _library._[More...](#detai
 | typedef [**xThermalError**](classxThermal_1_1xThermalError.md)&lt; xThermalBaseError::eAttribute &gt; | [**AttributeError**](#typedef-attributeerror)  <br> |
 | typedef [**ValueErrorSpec**](classxThermal_1_1ValueErrorSpec.md)&lt; xThermalBaseError::eComposition &gt; | [**CompositionError**](#typedef-compositionerror)  <br> |
 | typedef [**xThermalError**](classxThermal_1_1xThermalError.md)&lt; xThermalBaseError::eDirectorySize &gt; | [**DirectorySizeError**](#typedef-directorysizeerror)  <br> |
+| enum  | [**EvaluationStatus**](#enum-evaluationstatus)  <br> |
 | typedef [**xThermalError**](classxThermal_1_1xThermalError.md)&lt; xThermalBaseError::eHandle &gt; | [**HandleError**](#typedef-handleerror)  <br> |
 | enum  | [**INDEX\_FLUID**](#enum-index_fluid)  <br> |
 | enum  | [**INPUT\_PAIR**](#enum-input_pair)  <br> |
@@ -126,6 +127,9 @@ _Namespace of_ [_**xThermal**_](namespacexThermal.md) _library._[More...](#detai
 | Type | Name |
 | ---: | :--- |
 |   | [**\_\_getattr\_\_**](#function-__getattr__) (name name) <br> |
+|  [**void**](classxThermal_1_1xThermalError.md) | [**check\_state\_input**](#function-check_state_input) ([**const**](classxThermal_1_1xThermalError.md) [**char**](classxThermal_1_1xThermalError.md) \* where, [**const**](classxThermal_1_1xThermalError.md) [**char**](classxThermal_1_1xThermalError.md) \* name1, [**double**](classxThermal_1_1xThermalError.md) value1, [**double**](classxThermal_1_1xThermalError.md) p, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) \* X=[**nullptr**](classxThermal_1_1xThermalError.md)) <br>_Input check at the public state-evaluation entry points (C2)._  |
+|  [**EvaluationStatus**](namespacexThermal.md#enum-evaluationstatus) | [**evaluation\_status**](#function-evaluation_status) (xThermalBaseError::ErrCode code) <br> |
+|  [**const**](classxThermal_1_1xThermalError.md) [**char**](classxThermal_1_1xThermalError.md) \* | [**evaluation\_status\_name**](#function-evaluation_status_name) ([**EvaluationStatus**](namespacexThermal.md#enum-evaluationstatus) status) <br> |
 |  std::string | [**extname\_file**](#function-extname_file) ([**const**](classxThermal_1_1xThermalError.md) std::string & filepath) <br> |
 |  std::string | [**filename\_without\_ext**](#function-filename_without_ext) ([**const**](classxThermal_1_1xThermalError.md) std::string & filepath) <br> |
 |  [**void**](classxThermal_1_1xThermalError.md) | [**fill\_prop2data**](#function-fill_prop2data) ([**cxThermal**](classxThermal_1_1cxThermal.md) \* pEOS, [**const**](classxThermal_1_1xThermalError.md) [**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) \* prop, [**const**](classxThermal_1_1xThermalError.md) std::map&lt; [**int**](classxThermal_1_1xThermalError.md), [**propInfo**](structxThermal_1_1propInfo.md) &gt; & update\_which\_props, [**double**](classxThermal_1_1xThermalError.md) \* data) <br> |
@@ -137,6 +141,8 @@ _Namespace of_ [_**xThermal**_](namespacexThermal.md) _library._[More...](#detai
 | Type | Name |
 | ---: | :--- |
 |  [**int**](classxThermal_1_1xThermalError.md) & | [**evaluation\_depth**](#function-evaluation_depth) () <br> |
+|  std::string | [**plain\_message**](#function-plain_message) ([**const**](classxThermal_1_1xThermalError.md) [**char**](classxThermal_1_1xThermalError.md) \* what) <br> |
+|  [**void**](classxThermal_1_1xThermalError.md) | [**set\_failed\_state**](#function-set_failed_state) ([**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) & props, [**const**](classxThermal_1_1xThermalError.md) std::string & fluidName, [**bool**](classxThermal_1_1xThermalError.md) hpx, [**double**](classxThermal_1_1xThermalError.md) v1, [**double**](classxThermal_1_1xThermalError.md) p, [**double**](classxThermal_1_1xThermalError.md) X) <br> |
 
 
 
@@ -209,6 +215,30 @@ typedef xThermalError< xThermalBaseError::eDirectorySize > xThermal::DirectorySi
 
 
 
+
+<hr>
+
+
+
+### enum EvaluationStatus 
+
+```Python
+enum xThermal::EvaluationStatus {
+    Ok = 0,
+    InvalidInput,
+    OutOfRange,
+    NotConverged,
+    NotAvailable,
+    Failed
+};
+```
+
+
+
+Outcome of a non-throwing state evaluation ([**cxThermal::tryUpdateState\_TPX**](classxThermal_1_1cxThermal.md#function-tryupdatestate_tpx), [**cxThermal::tryUpdateState\_HPX**](classxThermal_1_1cxThermal.md#function-tryupdatestate_hpx)). Each failure corresponds to the [**xThermal**](namespacexThermal.md) exception that the throwing call (UpdateState\_TPX / UpdateState\_HPX) raises for the same input. 
+
+
+        
 
 <hr>
 
@@ -563,6 +593,81 @@ xThermal::__getattr__ (
 
 
 
+### function check\_state\_input 
+
+_Input check at the public state-evaluation entry points (C2)._ 
+```Python
+void xThermal::check_state_input (
+    const  char * where,
+    const  char * name1,
+    double value1,
+    double p,
+    const  double * X=nullptr
+) 
+```
+
+
+
+Throws InputError if an input is not finite, if p &lt;= 0, or (when X is given) if X &lt; 0. These inputs cannot be evaluated by any model; no model-specific range is checked here (each model keeps its own range handling). Called only for the outermost evaluation ([**OuterEvaluation::is\_outer**](classxThermal_1_1OuterEvaluation.md#function-is_outer)), so internal calls are unaffected.
+
+
+
+
+**Parameters:**
+
+
+* `where` Function name for the message, e.g. "cH2ONaCl::UpdateState\_TPX" 
+* `name1` Name of the first input ("T" or "H"), value1 its value 
+* `p` Pressure [Pa] 
+* `X` Bulk salinity [kg/kg], or nullptr for models without composition (water, NaCl) 
+
+
+
+
+        
+
+<hr>
+
+
+
+### function evaluation\_status 
+
+```Python
+inline EvaluationStatus xThermal::evaluation_status (
+    xThermalBaseError::ErrCode code
+) 
+```
+
+
+
+Status corresponding to an [**xThermal**](namespacexThermal.md) error code 
+
+
+        
+
+<hr>
+
+
+
+### function evaluation\_status\_name 
+
+```Python
+inline const  char * xThermal::evaluation_status_name (
+    EvaluationStatus status
+) 
+```
+
+
+
+Name of a status, e.g. "OutOfRange" (for messages and logs) 
+
+
+        
+
+<hr>
+
+
+
 ### function extname\_file 
 
 ```Python
@@ -633,6 +738,41 @@ std::vector< std::string > xThermal::string_split (
 
 ```Python
 static int & xThermal::evaluation_depth () 
+```
+
+
+
+
+<hr>
+
+
+
+### function plain\_message 
+
+```Python
+static std::string xThermal::plain_message (
+    const  char * what
+) 
+```
+
+
+
+
+<hr>
+
+
+
+### function set\_failed\_state 
+
+```Python
+static void xThermal::set_failed_state (
+    ThermodynamicProperties & props,
+    const std::string & fluidName,
+    bool hpx,
+    double v1,
+    double p,
+    double X
+) 
 ```
 
 

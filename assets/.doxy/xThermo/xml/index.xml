@@ -198,6 +198,15 @@
     <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a9948d267b27b0f983124eee3aa75e1bd" kind="function"><name>n1n2_Tstar_V</name></member>
     <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a21891fedeffda587f55944995fe73bb4" kind="function"><name>D_Tstar_V</name></member>
     <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ab92ef7ef854289ca84dd5089842a3bc0" kind="function"><name>q1q2_Tstar_H</name></member>
+    <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a3d7c1b12767a6348b6d291e708ec0a5e" kind="function"><name>UpdateState_TPX</name></member>
+    <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1afe86ef340ece855c4aa01ed160aa5e2c" kind="function"><name>UpdateState_TPX</name></member>
+    <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a929aa6a64ac637437b0a409ffa379aab" kind="function"><name>UpdateState_TPX</name></member>
+    <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a89ce494a32e38aafb64abd36fdf67229" kind="function"><name>UpdateState_TPX</name></member>
+    <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1ac1094a81aa03a8856a5299b1f588f547" kind="function"><name>UpdateState_HPX</name></member>
+    <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a5c0e0ff376db670fffd97808b39eb1a0" kind="function"><name>UpdateState_HPX</name></member>
+    <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a7a9db3f1c95f91044b59478cef3c5a14" kind="function"><name>UpdateState_HPX</name></member>
+    <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1a889b6fb0deadb20dacd44338a1c4a144" kind="function"><name>UpdateState_HPX</name></member>
+    <member refid="classxThermal_1_1H2ONaCl_1_1cH2ONaCl_1afb7e8f49051552247a2e56e2a790d762" kind="function"><name>createWorker</name></member>
   </compound>
   <compound refid="classxThermal_1_1PROST_1_1cIAPS84" kind="class"><name>xThermal::PROST::cIAPS84</name>
     <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a3f16eee8d583274e2b4c6d1c303ff572" kind="variable"><name>m_constants</name></member>
@@ -224,8 +233,17 @@
     <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a25152e5d790881c545d7bf55a2b6378f" kind="function"><name>Boiling_T</name></member>
     <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a7750a52e70977c85ebf2794da5eea7b8" kind="function"><name>Boiling_p</name></member>
     <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a50380fa2d4de4f34adebf78e31ac3773" kind="function"><name>Boiling_T</name></member>
+    <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a3d7c1b12767a6348b6d291e708ec0a5e" kind="function"><name>UpdateState_TPX</name></member>
+    <member refid="classxThermal_1_1PROST_1_1cIAPS84_1afe86ef340ece855c4aa01ed160aa5e2c" kind="function"><name>UpdateState_TPX</name></member>
+    <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a929aa6a64ac637437b0a409ffa379aab" kind="function"><name>UpdateState_TPX</name></member>
+    <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a89ce494a32e38aafb64abd36fdf67229" kind="function"><name>UpdateState_TPX</name></member>
+    <member refid="classxThermal_1_1PROST_1_1cIAPS84_1ac1094a81aa03a8856a5299b1f588f547" kind="function"><name>UpdateState_HPX</name></member>
+    <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a5c0e0ff376db670fffd97808b39eb1a0" kind="function"><name>UpdateState_HPX</name></member>
+    <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a7a9db3f1c95f91044b59478cef3c5a14" kind="function"><name>UpdateState_HPX</name></member>
+    <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a889b6fb0deadb20dacd44338a1c4a144" kind="function"><name>UpdateState_HPX</name></member>
     <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a2929797ab83170f862c2beb5c09ed660" kind="function"><name>initialize_data</name></member>
     <member refid="classxThermal_1_1PROST_1_1cIAPS84_1a796a6ec610ee7e3788c615da5ce8c7c0" kind="function"><name>phase_PROST2xThermal</name></member>
+    <member refid="classxThermal_1_1PROST_1_1cIAPS84_1acc1e63df7c30ef8a3d73fa0704db48bf" kind="function"><name>createWorker</name></member>
   </compound>
   <compound refid="classxThermal_1_1IAPWS95_1_1cIAPWS95" kind="class"><name>xThermal::IAPWS95::cIAPWS95</name>
     <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1abbca3ba4ddf797ced86ffb4a7599b355" kind="variable"><name>m_coeff_phio</name></member>
@@ -282,6 +300,14 @@
     <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ade30d24de1ab449b582bfb6c3648b32b" kind="function"><name>phi_r_t</name></member>
     <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1af595e78520ea6f18a9e865101818ab51" kind="function"><name>phi_r_tt</name></member>
     <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1acf6e6dd2d998dc38a80ee788b1defe6d" kind="function"><name>phi_r_dt</name></member>
+    <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a3d7c1b12767a6348b6d291e708ec0a5e" kind="function"><name>UpdateState_TPX</name></member>
+    <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1afe86ef340ece855c4aa01ed160aa5e2c" kind="function"><name>UpdateState_TPX</name></member>
+    <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a929aa6a64ac637437b0a409ffa379aab" kind="function"><name>UpdateState_TPX</name></member>
+    <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a89ce494a32e38aafb64abd36fdf67229" kind="function"><name>UpdateState_TPX</name></member>
+    <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ac1094a81aa03a8856a5299b1f588f547" kind="function"><name>UpdateState_HPX</name></member>
+    <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a5c0e0ff376db670fffd97808b39eb1a0" kind="function"><name>UpdateState_HPX</name></member>
+    <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a7a9db3f1c95f91044b59478cef3c5a14" kind="function"><name>UpdateState_HPX</name></member>
+    <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a889b6fb0deadb20dacd44338a1c4a144" kind="function"><name>UpdateState_HPX</name></member>
     <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1adfbaa01dce438327324537085499b306" kind="function"><name>initialize_data</name></member>
     <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1adf845fdcfd60f87c156371fb17e31a56" kind="function"><name>Rho_Newton</name></member>
     <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ab6f1a00d30169c3dfd6cbbfa69b09c06" kind="function"><name>Rho_bisection</name></member>
@@ -298,6 +324,7 @@
     <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ad655c6036963fa301027ddb600a2cf9f" kind="function"><name>_dPdT_Rho</name></member>
     <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1ae1302f9f7b42b0d54ede17487288bba6" kind="function"><name>dPdT_Rho</name></member>
     <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a850b902924eb79439f23a0295f3919d8" kind="function"><name>Viscosity_H2O_IAPWS2008</name></member>
+    <member refid="classxThermal_1_1IAPWS95_1_1cIAPWS95_1a1dbb224186ad174306a049e660522628" kind="function"><name>createWorker</name></member>
   </compound>
   <compound refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97" kind="class"><name>xThermal::IAPWS_IF97::cIAPWS_IF97</name>
     <member refid="classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1a69aa4c5ca6dcd7f8969cb0882dbe7a67" kind="variable"><name>coeff_region1</name></member>
@@ -421,6 +448,15 @@
     <member refid="classxThermal_1_1NaCl_1_1cNaCl_1ab818dd31e96b2194a2c218c137345054" kind="function"><name>DeltaH_fus</name></member>
     <member refid="classxThermal_1_1NaCl_1_1cNaCl_1aa8174036cc7d1b77691fe9abf8ee28bf" kind="function"><name>H_Solid</name></member>
     <member refid="classxThermal_1_1NaCl_1_1cNaCl_1a999a957a7459825ff2cd821e194f8f7c" kind="function"><name>H_Liquid</name></member>
+    <member refid="classxThermal_1_1NaCl_1_1cNaCl_1a3d7c1b12767a6348b6d291e708ec0a5e" kind="function"><name>UpdateState_TPX</name></member>
+    <member refid="classxThermal_1_1NaCl_1_1cNaCl_1afe86ef340ece855c4aa01ed160aa5e2c" kind="function"><name>UpdateState_TPX</name></member>
+    <member refid="classxThermal_1_1NaCl_1_1cNaCl_1a929aa6a64ac637437b0a409ffa379aab" kind="function"><name>UpdateState_TPX</name></member>
+    <member refid="classxThermal_1_1NaCl_1_1cNaCl_1a89ce494a32e38aafb64abd36fdf67229" kind="function"><name>UpdateState_TPX</name></member>
+    <member refid="classxThermal_1_1NaCl_1_1cNaCl_1ac1094a81aa03a8856a5299b1f588f547" kind="function"><name>UpdateState_HPX</name></member>
+    <member refid="classxThermal_1_1NaCl_1_1cNaCl_1a5c0e0ff376db670fffd97808b39eb1a0" kind="function"><name>UpdateState_HPX</name></member>
+    <member refid="classxThermal_1_1NaCl_1_1cNaCl_1a7a9db3f1c95f91044b59478cef3c5a14" kind="function"><name>UpdateState_HPX</name></member>
+    <member refid="classxThermal_1_1NaCl_1_1cNaCl_1a889b6fb0deadb20dacd44338a1c4a144" kind="function"><name>UpdateState_HPX</name></member>
+    <member refid="classxThermal_1_1NaCl_1_1cNaCl_1a76a04d1e70fca84422aaa594acaacf5b" kind="function"><name>createWorker</name></member>
   </compound>
   <compound refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region1" kind="struct"><name>xThermal::IAPWS_IF97::cIAPWS_IF97::Coeff_Backward_T_PH_Region1</name>
     <member refid="structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region1_1a4da17b98fb4e8f68978fad623a190a80" kind="variable"><name>num</name></member>
@@ -622,6 +658,7 @@
     <member refid="classxThermal_1_1cxThermal_1a21d11cb2ab9144b1d2fa67b64e2551f7" kind="function"><name>init_supported_props</name></member>
     <member refid="classxThermal_1_1cxThermal_1a7b8da7ae38ad278f28736667233b632a" kind="function"><name>parse_update_which_props</name></member>
     <member refid="classxThermal_1_1cxThermal_1a48aad0df3347983ebe57dc1986728761" kind="function"><name>destroyLUT</name></member>
+    <member refid="classxThermal_1_1cxThermal_1aa8867f7e1a964384c5ddd211757a63b2" kind="function"><name>evaluate_states</name></member>
     <member refid="classxThermal_1_1cxThermal_1ada930d7a306258c0a10d7e2a2c3ae277" kind="function"><name>interp_quad_prop</name></member>
     <member refid="classxThermal_1_1cxThermal_1a9b135b6613c5319ce57ecf50c4720487" kind="function"><name>interp_quad_prop</name></member>
     <member refid="classxThermal_1_1cxThermal_1a2314586579c4061048c886be74236db7" kind="function"><name>cxThermal</name></member>
@@ -640,6 +677,8 @@
     <member refid="classxThermal_1_1cxThermal_1a3aaf46ee7758d1fd49ca0201cefdf4b2" kind="function"><name>rhomolar_critical</name></member>
     <member refid="classxThermal_1_1cxThermal_1a3d7c1b12767a6348b6d291e708ec0a5e" kind="function"><name>UpdateState_TPX</name></member>
     <member refid="classxThermal_1_1cxThermal_1ac1094a81aa03a8856a5299b1f588f547" kind="function"><name>UpdateState_HPX</name></member>
+    <member refid="classxThermal_1_1cxThermal_1acc9e6ed0d508f1a089ed55a32592b427" kind="function"><name>tryUpdateState_TPX</name></member>
+    <member refid="classxThermal_1_1cxThermal_1ac639cc813243479c4711207e7077adb5" kind="function"><name>tryUpdateState_HPX</name></member>
     <member refid="classxThermal_1_1cxThermal_1afe86ef340ece855c4aa01ed160aa5e2c" kind="function"><name>UpdateState_TPX</name></member>
     <member refid="classxThermal_1_1cxThermal_1a5c0e0ff376db670fffd97808b39eb1a0" kind="function"><name>UpdateState_HPX</name></member>
     <member refid="classxThermal_1_1cxThermal_1a929aa6a64ac637437b0a409ffa379aab" kind="function"><name>UpdateState_TPX</name></member>
@@ -693,6 +732,7 @@
     <member refid="classxThermal_1_1cxThermal_1a889b6fb0deadb20dacd44338a1c4a144" kind="function"><name>UpdateState_HPX</name></member>
     <member refid="classxThermal_1_1cxThermal_1a4be2a8d169afbe20f14b5ca6c06ab9cc" kind="function"><name>getLutInfo</name></member>
     <member refid="classxThermal_1_1cxThermal_1a8349d4a9fd155cc40963b1cac6dcc003" kind="function"><name>validateFluid</name></member>
+    <member refid="classxThermal_1_1cxThermal_1a2418e46cbd79082d3bda94bdec850cab" kind="function"><name>createWorker</name></member>
   </compound>
   <compound refid="structxThermal_1_1DeformLinearMesh" kind="struct"><name>xThermal::DeformLinearMesh</name>
     <member refid="structxThermal_1_1DeformLinearMesh_1a7287a252e3febe62aec3fe440809daa9" kind="variable"><name>T</name></member>
@@ -1024,8 +1064,10 @@
     <member refid="structotri_1a3f79d64391ce76f64acc0aec04bf8805" kind="variable"><name>orient</name></member>
   </compound>
   <compound refid="classxThermal_1_1OuterEvaluation" kind="class"><name>xThermal::OuterEvaluation</name>
+    <member refid="classxThermal_1_1OuterEvaluation_1a0061f6a51587ba7e42fb84030afdbddc" kind="variable"><name>m_outer</name></member>
     <member refid="classxThermal_1_1OuterEvaluation_1a081e1f0379b2300cb2d12bb914fccac7" kind="function"><name>OuterEvaluation</name></member>
     <member refid="classxThermal_1_1OuterEvaluation_1aace182908d21cdd8182515581b687e44" kind="function"><name>~OuterEvaluation</name></member>
+    <member refid="classxThermal_1_1OuterEvaluation_1a0c40a7393a20d37c598f659fa89d7814" kind="function"><name>is_outer</name></member>
     <member refid="classxThermal_1_1OuterEvaluation_1aa1453c45b26f8eaac1bac04239553ff6" kind="function"><name>OuterEvaluation</name></member>
     <member refid="classxThermal_1_1OuterEvaluation_1a3308fdcf71d4d4b11ffca2b8d168c1bd" kind="function"><name>operator=</name></member>
   </compound>
@@ -1511,7 +1553,7 @@
     <member refid="classxThermal_1_1xThermalBaseError_1aaa934332c42daa025227c061058572e4" kind="function"><name>xThermalBaseError</name></member>
     <member refid="classxThermal_1_1xThermalBaseError_1aee3d71c4c52ba1a81d417c48171cca2a" kind="function"><name>~xThermalBaseError</name></member>
     <member refid="classxThermal_1_1xThermalBaseError_1a81994a5080e39b59835b93067ff714e8" kind="function"><name>what</name></member>
-    <member refid="classxThermal_1_1xThermalBaseError_1af141fbaddd530708ed1fb2e256f50b6b" kind="function"><name>code</name></member>
+    <member refid="classxThermal_1_1xThermalBaseError_1a77cdaec09fdfd00530016f0ff5365f57" kind="function"><name>code</name></member>
   </compound>
   <compound refid="classxThermal_1_1xThermalError" kind="class"><name>xThermal::xThermalError</name>
     <member refid="classxThermal_1_1xThermalError_1a5eef8b6148da7bbb2fc4f5209f96af34" kind="function"><name>xThermalError</name></member>
@@ -1638,6 +1680,13 @@
     <member refid="namespacexThermal_1a9f8f5fd6daa5e46885df0b3ec7068993" kind="enum"><name>INPUT_PAIR</name></member>
     <member refid="namespacexThermal_1a9f8f5fd6daa5e46885df0b3ec7068993aa7b682f834c1ac94e98b0d6a4490e337" kind="enumvalue"><name>TPX</name></member>
     <member refid="namespacexThermal_1a9f8f5fd6daa5e46885df0b3ec7068993a1a4c445c571b38783add2daec8d8de4a" kind="enumvalue"><name>HPX</name></member>
+    <member refid="namespacexThermal_1af8b7978f2b9ac8f4b992f92082004207" kind="enum"><name>EvaluationStatus</name></member>
+    <member refid="namespacexThermal_1af8b7978f2b9ac8f4b992f92082004207aa60852f204ed8028c1c58808b746d115" kind="enumvalue"><name>Ok</name></member>
+    <member refid="namespacexThermal_1af8b7978f2b9ac8f4b992f92082004207ad8f78ca9a692a9411afbc7584b69d043" kind="enumvalue"><name>InvalidInput</name></member>
+    <member refid="namespacexThermal_1af8b7978f2b9ac8f4b992f92082004207a365b2699d38b61ef4b4c8a1066c8468f" kind="enumvalue"><name>OutOfRange</name></member>
+    <member refid="namespacexThermal_1af8b7978f2b9ac8f4b992f92082004207adbbde5ea220b09db210c62e8926a02c5" kind="enumvalue"><name>NotConverged</name></member>
+    <member refid="namespacexThermal_1af8b7978f2b9ac8f4b992f92082004207a534ceac854da4ba59c4dc41b7ab732dc" kind="enumvalue"><name>NotAvailable</name></member>
+    <member refid="namespacexThermal_1af8b7978f2b9ac8f4b992f92082004207ad7c8c85bf79bbe1b7188497c32c3b0ca" kind="enumvalue"><name>Failed</name></member>
     <member refid="namespacexThermal_1a979ba5e8ff8d4f989008f4cd9327fa54" kind="enum"><name>INDEX_FLUID</name></member>
     <member refid="namespacexThermal_1a979ba5e8ff8d4f989008f4cd9327fa54aa59a524b880c8e2f645bb6836e83efb3" kind="enumvalue"><name>Fluid_Unknown</name></member>
     <member refid="namespacexThermal_1a979ba5e8ff8d4f989008f4cd9327fa54a2dc2fcecacbba6d9abd4aa0ff1b07778" kind="enumvalue"><name>FLUID_Water</name></member>
@@ -1663,8 +1712,13 @@
     <member refid="namespacexThermal_1a84f02780c656415ebfe346041b27a7bd" kind="function"><name>string_split</name></member>
     <member refid="namespacexThermal_1ab45ef4764ac45cfedd7d4d3a1773a7e6" kind="function"><name>extname_file</name></member>
     <member refid="namespacexThermal_1a2647e9e618454e5119bf093ba777ad8c" kind="function"><name>filename_without_ext</name></member>
+    <member refid="namespacexThermal_1a8070d0d4b3f74d2a73d523d2461167f7" kind="function"><name>evaluation_status</name></member>
+    <member refid="namespacexThermal_1a60cd19be36d89be431d87d8e360732ac" kind="function"><name>evaluation_status_name</name></member>
     <member refid="namespacexThermal_1a960a8fa20e4629abf126d5ff81616c78" kind="function"><name>fill_prop2data</name></member>
     <member refid="namespacexThermal_1aab774150d676d93511cab63dde0ea981" kind="function"><name>evaluation_depth</name></member>
+    <member refid="namespacexThermal_1a56729f94bb1b1c5ae1387e1161e9fd92" kind="function"><name>check_state_input</name></member>
+    <member refid="namespacexThermal_1a0595b940303cd3dc7f64155fb91bbe62" kind="function"><name>set_failed_state</name></member>
+    <member refid="namespacexThermal_1ac190ac60feefadb2dfeb546f06ef0a72" kind="function"><name>plain_message</name></member>
   </compound>
   <compound refid="namespacexThermal_1_1gsl__guard" kind="namespace"><name>xThermal::gsl_guard</name>
     <member refid="gsl__guard_8hpp_1a835ab10480936a497116eb9ee14342f2" kind="typedef"><name>RootSolver</name></member>

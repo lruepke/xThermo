@@ -21,6 +21,7 @@ _Head file of_ [_**xThermal**_](namespacexThermal.md) _._[More...](#detailed-des
 * `#include "triangle.h"`
 * `#include "LookUpTableForest.h"`
 * `#include <string>`
+* `#include <functional>`
 * `#include "MultiProgressBar.h"`
 
 

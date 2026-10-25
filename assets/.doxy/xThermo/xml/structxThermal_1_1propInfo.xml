@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="931" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="931" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="957" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="957" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1propInfo_1ac5d0b5e4a5331307cbf1e5d3a6ab0b7d" prot="public" static="no" mutable="no">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">char</ref></type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="931" column="24" bodyfile="Library/thermo/DataStructures.h" bodystart="931" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="957" column="24" bodyfile="Library/thermo/DataStructures.h" bodystart="957" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1propInfo_1a047f8eebfde5143faa4f3ca5cbd213fc" prot="public" static="no" mutable="no">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">char</ref></type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="931" column="33" bodyfile="Library/thermo/DataStructures.h" bodystart="931" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="957" column="33" bodyfile="Library/thermo/DataStructures.h" bodystart="957" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -52,7 +52,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Library/thermo/DataStructures.h" line="927" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="928" bodyend="932"/>
+    <location file="Library/thermo/DataStructures.h" line="953" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="954" bodyend="958"/>
     <listofallmembers>
       <member refid="structxThermal_1_1propInfo_1ac5d0b5e4a5331307cbf1e5d3a6ab0b7d" prot="public" virt="non-virtual"><scope>xThermal::propInfo</scope><name>longName</name></member>
       <member refid="structxThermal_1_1propInfo_1ad88fadfaf20ef13e8e012cef829e8afe" prot="public" virt="non-virtual"><scope>xThermal::propInfo</scope><name>shortName</name></member>

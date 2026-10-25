@@ -60,7 +60,7 @@ Inherited by the following classes: [xThermal::xThermalError](classxThermal_1_1x
 | Type | Name |
 | ---: | :--- |
 |  ErrCode | [**code**](#function-code-12) () <br> |
-|  ErrCode | [**code**](#function-code-12) () <br> |
+|  ErrCode | [**code**](#function-code-22) () const<br> |
 | virtual [**const**](classxThermal_1_1xThermalError.md) [**char**](classxThermal_1_1xThermalError.md) \* | [**what**](#function-what-12) () const<br> |
 | virtual [**const**](classxThermal_1_1xThermalError.md) [**char**](classxThermal_1_1xThermalError.md) \* | [**what**](#function-what-12) () const<br> |
 |   | [**xThermalBaseError**](#function-xthermalbaseerror-12) ([**const**](classxThermal_1_1xThermalError.md) std::string & err, ErrCode code) <br> |
@@ -195,10 +195,10 @@ inline ErrCode xThermal::xThermalBaseError::code ()
 
 
 
-### function code [1/2]
+### function code [2/2]
 
 ```C++
-inline ErrCode xThermal::xThermalBaseError::code () 
+inline ErrCode xThermal::xThermalBaseError::code () const
 ```
 
 

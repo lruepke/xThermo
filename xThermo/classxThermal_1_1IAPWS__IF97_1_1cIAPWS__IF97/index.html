@@ -1136,6 +1136,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#protected-functions-inherited-from-xthermalcxthermal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Protected Functions inherited from xThermal::cxThermal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#public-functions-documentation" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2136,6 +2147,14 @@
 <td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-sum_vector"><strong>sum_vector</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; T &gt; &amp; x) <br></td>
 </tr>
 <tr>
+<td style="text-align: right;"><a href="../namespacexThermal/#enum-evaluationstatus"><strong>EvaluationStatus</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-tryupdatestate_hpx"><strong>tryUpdateState_HPX</strong></a> (<a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a> &amp; props, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; H, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; p, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; X=0, std::string * message=<a href="../classxThermal_1_1xThermalError/"><strong>nullptr</strong></a>) <br><em>Non-throwing H-P-X evaluation; as tryUpdateState_TPX (on failure H, p, X are the inputs, T is NaN)</em></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../namespacexThermal/#enum-evaluationstatus"><strong>EvaluationStatus</strong></a></td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-tryupdatestate_tpx"><strong>tryUpdateState_TPX</strong></a> (<a href="../structxThermal_1_1ThermodynamicProperties/"><strong>ThermodynamicProperties</strong></a> &amp; props, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; T, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; p, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &amp; X=0, std::string * message=<a href="../classxThermal_1_1xThermalError/"><strong>nullptr</strong></a>) <br><em>Non-throwing T-P-X evaluation: the same evaluation as UpdateState_TPX, reported as a status (C1).</em></td>
+</tr>
+<tr>
 <td style="text-align: right;">virtual <a href="../classxThermal_1_1xThermalError/"><strong>void</strong></a></td>
 <td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-writeline2vtu"><strong>writeLine2VTU</strong></a> (std::string vtuFile, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; X, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; Y, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> &gt; &amp; Z, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> scale_x=1.0, <a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> scale_y=1.0, <a href="../classxThermal_1_1xThermalError/"><strong>double</strong></a> scale_z=1.0) <br></td>
 </tr>
@@ -2174,6 +2193,22 @@
 <tr>
 <td style="text-align: right;">INDEX_FLUID</td>
 <td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-validatefluid"><strong>validateFluid</strong></a> (<a href="../classxThermal_1_1xThermalError/"><strong>const</strong></a> std::string &amp; fluidName) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-functions-inherited-from-xthermalcxthermal">Protected Functions inherited from xThermal::cxThermal</h2>
+<p>See <a href="../classxThermal_1_1cxThermal/">xThermal::cxThermal</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">virtual <a href="../classxThermal_1_1cxThermal/"><strong>cxThermal</strong></a> *</td>
+<td style="text-align: left;"><a href="../classxThermal_1_1cxThermal/#function-createworker"><strong>createWorker</strong></a> () <br><em>A new, independent model that evaluates exactly as this one (same backend and settings), owned by the caller. Used for one model per thread in the internal OpenMP evaluation. The default (nullptr) means that the model cannot be replicated; its vector evaluations then run serially.</em></td>
 </tr>
 </tbody>
 </table>

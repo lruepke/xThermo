@@ -104,7 +104,7 @@ Here are the classes, structs, unions and interfaces with brief descriptions:
     * **struct** [**Point\_slice**](structxThermal_1_1Point__slice.md)     
     * **struct** [**Polygon\_slice**](structxThermal_1_1Polygon__slice.md)     
     * **struct** [**Surface**](structxThermal_1_1Surface.md)     
-    * **struct** [**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md)     
+    * **struct** [**ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md) _Result of a state evaluation (UpdateState\_TPX / UpdateState\_HPX)._     
     * **struct** [**ThermodynamicPropertiesArray**](structxThermal_1_1ThermodynamicPropertiesArray.md)     
     * **struct** [**ThermodynamicPropertiesVector**](structxThermal_1_1ThermodynamicPropertiesVector.md)     
     * **struct** [**ThermodynamicProperty**](structxThermal_1_1ThermodynamicProperty.md) _Data struct of a thermodynamic property._     

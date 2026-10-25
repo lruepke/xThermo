@@ -95,9 +95,11 @@ namespace xThermal
             if(m_Water)delete m_Water;
         }
 
-        void cNaCl::UpdateState_TPX(ThermodynamicProperties& props, const double& T, const double& p, const double& X)
+        void cNaCl::UpdateState_TPX(ThermodynamicProperties& props, const double& T_in, const double& p_in, const double& X_in)
         {
+            const double T = T_in, p = p_in, X = X_in;  // copies: the inputs may be fields of props, which is reset next
             OuterEvaluation outer(props);  // C7: reset at the outermost entry
+            if (outer.is_outer()) check_state_input("cNaCl::UpdateState_TPX", "T", T, p);  // C2
             props.fluidName = name();
             props.T = T;
             props.p = p;

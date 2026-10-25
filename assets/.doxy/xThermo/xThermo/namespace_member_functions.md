@@ -13,6 +13,7 @@
 
 * **calculate** ([**compare\_VL**](namespacecompare__VL.md))
 * **contourf\_phase** ([**compare\_VL**](namespacecompare__VL.md))
+* **check\_state\_input** ([**xThermal**](namespacexThermal.md))
 * **createWaterAxes** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
 
 
@@ -25,6 +26,8 @@
 ## e
 
 * **evaluation\_depth** ([**xThermal**](namespacexThermal.md))
+* **evaluation\_status** ([**xThermal**](namespacexThermal.md))
+* **evaluation\_status\_name** ([**xThermal**](namespacexThermal.md))
 * **extname\_file** ([**xThermal**](namespacexThermal.md))
 * **eos\_at** ([**xThermal::PROST**](namespacexThermal_1_1PROST.md))
 
@@ -71,6 +74,7 @@
 * **plot\_err** ([**compare\_VL**](namespacecompare__VL.md))
 * **plot\_props\_VLH** ([**compare\_VL**](namespacecompare__VL.md))
 * **plot\_coloredline** ([**helpfunc**](namespacehelpfunc.md))
+* **plain\_message** ([**xThermal**](namespacexThermal.md))
 * **print\_state\_HP2RhoT** ([**xThermal::IAPWS95**](namespacexThermal_1_1IAPWS95.md))
 * **print\_state\_PhaseEquilibrium** ([**xThermal::IAPWS95**](namespacexThermal_1_1IAPWS95.md))
 * **print\_state\_TP2Rho** ([**xThermal::IAPWS95**](namespacexThermal_1_1IAPWS95.md))
@@ -81,6 +85,7 @@
 
 * **savefig** ([**compare\_VL**](namespacecompare__VL.md), [**test\_H2O**](namespacetest__H2O.md))
 * **set\_axis\_diagram\_3D** ([**helpfunc**](namespacehelpfunc.md))
+* **set\_failed\_state** ([**xThermal**](namespacexThermal.md))
 * **string\_split** ([**xThermal**](namespacexThermal.md))
 * **stable\_on\_phase\_side** ([**xThermal::PROST**](namespacexThermal_1_1PROST.md))
 

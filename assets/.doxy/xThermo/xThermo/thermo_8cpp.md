@@ -11,6 +11,11 @@
 
 
 * `#include "thermo.h"`
+* `#include <atomic>`
+* `#include <cstdio>`
+* `#include <exception>`
+* `#include <limits>`
+* `#include <memory>`
 * `#include "LookUpTableForestI.H"`
 * `#include "interpolationI.H"`
 * `#include "AMR_LUT_RefineFuncI.H"`

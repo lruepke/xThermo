@@ -24,6 +24,7 @@
 #include "triangle.h"
 #include "LookUpTableForest.h"
 #include <string>
+#include <functional>
 #include "MultiProgressBar.h"
 
 namespace xThermal
@@ -45,9 +46,14 @@ namespace xThermal
     public:
         explicit OuterEvaluation(ThermodynamicProperties& props);
         ~OuterEvaluation();
+        bool is_outer() const { return m_outer; }
         OuterEvaluation(const OuterEvaluation&) = delete;
         OuterEvaluation& operator=(const OuterEvaluation&) = delete;
+    private:
+        bool m_outer;
     };
+
+    void check_state_input(const char* where, const char* name1, double value1, double p, const double* X = nullptr);
 
     class cxThermal
     {
@@ -67,6 +73,10 @@ namespace xThermal
         void init_supported_props();
         void parse_update_which_props(int update_which_props);
         void destroyLUT(void* pLUT, int& dim_lut);
+        // evaluates n independent states, eval(model, i, props) for i = 0 .. n-1: serially with this model, or with
+        // internal OpenMP (one independent model per thread, see createWorker); a failure raises the exception of the
+        // lowest failing index, as the serial loop does
+        void evaluate_states(size_t n, const std::function<void(cxThermal&, size_t, ThermodynamicProperties&)>& eval);
         template<int dim>
         void interp_quad_prop(LOOKUPTABLE_FOREST::Quadrant<dim,LOOKUPTABLE_FOREST::FIELD_DATA<dim> > *targetLeaf, double* xyz_min_target, ThermodynamicProperties& prop, const double xyz[dim]);
 
@@ -95,6 +105,8 @@ namespace xThermal
         // Update 
         virtual void UpdateState_TPX(ThermodynamicProperties& props, const double& T, const double& p, const double& X=0) {throw NotImplementedError(name() + " does not implement UpdateState_TPX function");};
         virtual void UpdateState_HPX(ThermodynamicProperties& props, const double& H, const double& p, const double& X=0) {throw NotImplementedError(name() + " does not implement UpdateState_HPX function");};
+        EvaluationStatus tryUpdateState_TPX(ThermodynamicProperties& props, const double& T, const double& p, const double& X=0, std::string* message=nullptr);
+        EvaluationStatus tryUpdateState_HPX(ThermodynamicProperties& props, const double& H, const double& p, const double& X=0, std::string* message=nullptr);
         virtual ThermodynamicPropertiesVector UpdateState_TPX(const std::vector<double>& T, const std::vector<double>& p, const std::vector<double>& X, bool isMeshGrid=false) final;
         virtual ThermodynamicPropertiesVector UpdateState_HPX(const std::vector<double>& H, const std::vector<double>& p, const std::vector<double>& X, bool isMeshGrid=false) final;
         // for matlab API
@@ -232,6 +244,9 @@ namespace xThermal
             }
             return {nx, ny};
         }
+
+    protected:
+        virtual cxThermal* createWorker() { return nullptr; }
 
     public:  //for python wrapper
         ThermodynamicProperties Boiling_p_props(const double& T);
