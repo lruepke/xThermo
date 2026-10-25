@@ -11,7 +11,7 @@
       
       
       
-        <link rel="prev" href="../installation/">
+        <link rel="prev" href="../limitations/">
       
       
         <link rel="next" href="tpx/">
@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -29,10 +29,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -235,6 +235,25 @@
     
   
   Installation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../limitations/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Model scope and limitations
 
       </a>
     </li>
@@ -463,6 +482,33 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../limitations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model scope and limitations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -484,10 +530,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -505,8 +551,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -609,6 +655,17 @@
     <span class="md-ellipsis">
       
         ThermodynamicProperties fields
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Errors
       
     </span>
   </a>
@@ -790,10 +847,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -811,8 +868,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -961,10 +1018,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
@@ -982,8 +1039,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1169,6 +1226,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Errors
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1190,7 +1258,7 @@
 
 
 <h1 id="python-api-overview">Python API overview</h1>
-<p>The Python bindings expose the full H₂O–NaCl EOS as the <code>xThermal</code> package.</p>
+<p>The Python bindings expose the H₂O–NaCl EOS as the <code>xThermal</code> package.</p>
 <p><img alt="H2O-NaCl phase diagram" src="../assets/img/phase_diagram_PTX.png" /></p>
 <p><em>Isobaric H₂O–NaCl phase diagram at 300 bar. Generated with the code below.</em></p>
 <details class="example">
@@ -1263,6 +1331,8 @@
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">sw</span> <span class="o">=</span> <span class="n">H2ONaCl</span><span class="o">.</span><span class="n">cH2ONaCl</span><span class="p">(</span><span class="s2">"IAPS84"</span><span class="p">)</span>   <span class="c1"># water backend: "IAPS84" or "IAPWS95"</span>
 </code></pre></div>
+<p><code>"IAPS84"</code> is the reference backend of the Driesner correlations. Any other name raises <code>NotImplementedError</code>. See
+<a href="../limitations/#water-backends">Model scope and limitations</a>.</p>
 <h2 id="units">Units</h2>
 <p>All functions use SI units:</p>
 <table>
@@ -1304,7 +1374,7 @@
 </tbody>
 </table>
 <h2 id="thermodynamicproperties-fields">ThermodynamicProperties fields</h2>
-<p>The object returned by <code>UpdateState_TPX</code> and <code>UpdateState_HPX</code> has these fields:</p>
+<p><code>UpdateState_TPX</code> and <code>UpdateState_HPX</code> return an object with these fields:</p>
 <table>
 <thead>
 <tr>
@@ -1314,47 +1384,59 @@
 </thead>
 <tbody>
 <tr>
-<td><code>Rho</code></td>
-<td>Bulk density (kg/m³)</td>
-</tr>
-<tr>
-<td><code>H</code></td>
-<td>Specific enthalpy (J/kg)</td>
-</tr>
-<tr>
-<td><code>Cp</code></td>
-<td>Isobaric heat capacity (J/kg/K)</td>
-</tr>
-<tr>
-<td><code>Mu</code></td>
-<td>Bulk dynamic viscosity (Pa·s)</td>
-</tr>
-<tr>
-<td><code>Mu_l</code></td>
-<td>Liquid phase viscosity (Pa·s)</td>
-</tr>
-<tr>
-<td><code>Mu_v</code></td>
-<td>Vapour phase viscosity (Pa·s)</td>
-</tr>
-<tr>
-<td><code>Rho_l</code></td>
-<td>Liquid phase density (kg/m³)</td>
-</tr>
-<tr>
-<td><code>Rho_v</code></td>
-<td>Vapour phase density (kg/m³)</td>
-</tr>
-<tr>
-<td><code>T</code></td>
-<td>Temperature (K) — useful when returned from HPX flash</td>
+<td><code>T</code>, <code>p</code>, <code>X</code></td>
+<td>Temperature (K), pressure (Pa), bulk salinity (kg/kg); <code>T</code> is the result of an HPX flash</td>
 </tr>
 <tr>
 <td><code>phase</code></td>
-<td>Phase index (integer)</td>
+<td>Phase region index; <code>sw.phase_name(phase)</code> gives its name</td>
+</tr>
+<tr>
+<td><code>Rho</code></td>
+<td>Bulk density (kg/m³): Σ S_i ρ_i</td>
+</tr>
+<tr>
+<td><code>H</code></td>
+<td>Bulk specific enthalpy (J/kg)</td>
+</tr>
+<tr>
+<td><code>Cp</code></td>
+<td>Single phase: isobaric heat capacity (J/kg/K). Multiphase: mass-weighted phase heat capacities, <strong>without latent heat</strong>; 0 in V+L+H</td>
+</tr>
+<tr>
+<td><code>Mu</code></td>
+<td>Single phase: dynamic viscosity (Pa·s). Multiphase: <strong>not defined</strong>; usually a placeholder value of 1, so use <code>Mu_l</code> and <code>Mu_v</code></td>
+</tr>
+<tr>
+<td><code>S_l</code>, <code>S_v</code>, <code>S_h</code></td>
+<td>Phase saturations: volume fractions of liquid, vapour and halite</td>
+</tr>
+<tr>
+<td><code>X_l</code>, <code>X_v</code></td>
+<td>Liquid and vapour salinity (kg/kg)</td>
+</tr>
+<tr>
+<td><code>Rho_l</code>, <code>Rho_v</code>, <code>Rho_h</code></td>
+<td>Phase densities (kg/m³)</td>
+</tr>
+<tr>
+<td><code>H_l</code>, <code>H_v</code>, <code>H_h</code></td>
+<td>Phase enthalpies (J/kg)</td>
+</tr>
+<tr>
+<td><code>Cp_l</code>, <code>Cp_v</code>, <code>Cp_h</code></td>
+<td>Phase heat capacities (J/kg/K)</td>
+</tr>
+<tr>
+<td><code>Mu_l</code>, <code>Mu_v</code></td>
+<td>Liquid and vapour viscosity (Pa·s)</td>
 </tr>
 </tbody>
 </table>
+<p>The exact multiphase definitions are given in <a href="../limitations/#phase-properties-and-bulk-properties">Model scope and limitations</a>.</p>
+<h2 id="errors">Errors</h2>
+<p>Invalid input raises a Python exception. Out-of-range input, for example T above 1273.15 K, raises <code>ValueError</code>.
+Array calls stop at the first failing point. See <a href="../limitations/#errors">Model scope and limitations</a>.</p>
 
 
 
@@ -1404,10 +1486,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

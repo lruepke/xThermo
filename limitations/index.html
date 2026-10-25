@@ -1,0 +1,1547 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="H₂O–NaCl equation of state — C++ library with Python bindings">
+      
+      
+      
+      
+        <link rel="prev" href="../installation/">
+      
+      
+        <link rel="next" href="../python/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Model scope and limitations - xThermo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#model-scope-and-limitations" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="xThermo" class="md-header__button md-logo" aria-label="xThermo" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            xThermo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Model scope and limitations
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/lruepke/xThermo" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    lruepke/xThermo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../installation/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Installation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Model scope and limitations
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../python/" class="md-tabs__link">
+          
+  
+  
+  Python API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../cli/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Command-line tool
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../cpp/" class="md-tabs__link">
+          
+  
+  
+  C++ API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../xThermo/annotated/" class="md-tabs__link">
+          
+  
+  
+  C++ Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About & License
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../legal/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Legal notice
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="xThermo" class="md-nav__button md-logo" aria-label="xThermo" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    xThermo
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/lruepke/xThermo" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    lruepke/xThermo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model scope and limitations
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model scope and limitations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#model-domain-and-runtime-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model domain and runtime checks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Errors
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#water-backends" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Water backends
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-properties-and-bulk-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase properties and bulk properties
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#differences-from-other-implementations-of-the-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Differences from other implementations of the model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python API
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python API
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/tpx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T-p-X calculation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/hpx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    H-p-X flash
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/phase_boundaries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase boundaries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/saturation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Saturation (H₂O)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Command-line tool
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C++ API
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C++ API
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpp/tpx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T-p-X calculation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpp/phase_region/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase region
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpp/phase_boundaries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase boundaries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C++ Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C++ Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xThermo/annotated/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Classes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xThermo/files/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Files
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About & License
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legal notice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#model-domain-and-runtime-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model domain and runtime checks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Errors
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#water-backends" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Water backends
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-properties-and-bulk-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase properties and bulk properties
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#differences-from-other-implementations-of-the-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Differences from other implementations of the model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="model-scope-and-limitations">Model scope and limitations</h1>
+<p>xThermo implements the H₂O–NaCl correlations of Driesner &amp; Heinrich (2007) and Driesner (2007), combined with an
+equation of state for pure water. This page states what the implementation computes, where it differs from other
+implementations of the same model, and how it behaves outside the model domain.</p>
+<h2 id="model-domain-and-runtime-checks">Model domain and runtime checks</h2>
+<p>The correlations are published for <strong>0–1000 °C, 1–5000 bar and X_NaCl = 0–1</strong>. The H₂O–NaCl class reports this domain
+as <code>Tmin()</code> = 273.16 K, <code>Tmax()</code> = 1273.15 K, <code>pmin()</code> = 1e5 Pa and <code>pmax()</code> = 5e8 Pa.</p>
+<p>Only part of the domain is enforced at run time:</p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Behaviour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T &gt; 1273.15 K</td>
+<td>error (<code>UpdateState_TPX</code>, <code>findPhaseRegion_TPX</code>)</td>
+</tr>
+<tr>
+<td>H above the enthalpy at 1273.15 K</td>
+<td>error (<code>UpdateState_HPX</code>)</td>
+</tr>
+<tr>
+<td>p &lt; 1 bar</td>
+<td><strong>not checked</strong>: values are returned</td>
+</tr>
+<tr>
+<td>p &gt; 5000 bar</td>
+<td><code>"IAPS84"</code>: <strong>not checked</strong>, values are returned; <code>"IAPWS95"</code>: error from the water backend</td>
+</tr>
+<tr>
+<td>X &gt; 1</td>
+<td><strong>not checked</strong>: values are returned (e.g. X = 1.2 gives an "L+H" state)</td>
+</tr>
+<tr>
+<td>X &lt; 0</td>
+<td>error from the water backend</td>
+</tr>
+</tbody>
+</table>
+<p>Results outside the published domain are extrapolations of the correlations and have not been validated. Check your
+inputs before calling the library.</p>
+<h2 id="errors">Errors</h2>
+<ul>
+<li><strong>C++:</strong> errors are thrown as exceptions derived from <code>xThermal::xThermalBaseError</code> (<code>Exception.h</code>), for example
+  <code>OutOfRangeError</code>, <code>ValueError</code> and <code>NotImplementedError</code>.</li>
+<li><strong>Python:</strong> these appear as built-in exceptions:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>C++ error</th>
+<th>Python exception</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>out of range, invalid value</td>
+<td><code>ValueError</code></td>
+</tr>
+<tr>
+<td>not implemented (e.g. an unknown backend name)</td>
+<td><code>NotImplementedError</code></td>
+</tr>
+<tr>
+<td>solver failure, other errors</td>
+<td><code>RuntimeError</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Array calls:</strong> a call with NumPy arrays stops at the first point that fails and returns no partial result. To keep
+  the valid points, evaluate point by point and catch the exception.</li>
+<li><strong>Helper functions:</strong> some phase-boundary helpers do not raise outside their own temperature range. They print a
+  warning and return 0 (for example <code>X_Critical</code> for T outside the critical-curve range).</li>
+</ul>
+<h2 id="water-backends">Water backends</h2>
+<table>
+<thead>
+<tr>
+<th>Backend</th>
+<th>Formulation</th>
+<th>Range of the pure-water class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>"IAPS84"</code> (default of the command-line tool)</td>
+<td>IAPS-84 (Haar, Gallagher &amp; Kell 1984), computed with PROST 4.1</td>
+<td>260–2500 K, up to 30 000 bar</td>
+</tr>
+<tr>
+<td><code>"IAPWS95"</code></td>
+<td>IAPWS-95 (Wagner &amp; Pruß 2002)</td>
+<td>273.165–2273.15 K, up to 5000 bar</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:
+- The Driesner correlations were fitted with IAPS-84. <code>"IAPS84"</code> is therefore the reference backend.
+- Most phase-boundary correlations do not depend on the backend: for example the V+L+H pressure, and the critical
+  curve and V+L compositions above 500 °C.
+- Below 500 °C, the critical pressure with <code>"IAPWS95"</code> is up to about 0.07 % higher than with <code>"IAPS84"</code>. Its
+  critical curve has a step of about 0.03 % at 500 °C.
+- Below 500 °C, V+L vapour compositions differ between the backends by up to about 2.5 %.
+- Densities, enthalpies and heat capacities of the brine differ slightly between the backends, because they are
+  evaluated through the water equation of state.
+- Any other backend name raises <code>NotImplementedError</code>.</p>
+<h2 id="phase-properties-and-bulk-properties">Phase properties and bulk properties</h2>
+<p>Each phase has its own properties: <code>Rho_l</code>, <code>H_l</code>, <code>Cp_l</code>, <code>Mu_l</code>, <code>X_l</code> for the liquid; <code>_v</code> for the vapour; <code>_h</code>
+for halite. They are computed from the published correlations.</p>
+<p>The bulk fields are defined as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Single phase</th>
+<th>Two or three phases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>S_l</code>, <code>S_v</code>, <code>S_h</code></td>
+<td>1 for the present phase</td>
+<td><strong>volume fractions</strong> of the phases (H₂O–NaCl). The pure-water classes in <code>xThermal.H2O</code> report <strong>mass fractions</strong> instead.</td>
+</tr>
+<tr>
+<td><code>Rho</code></td>
+<td>phase density</td>
+<td>Σ S_i ρ_i</td>
+</tr>
+<tr>
+<td><code>H</code></td>
+<td>phase enthalpy</td>
+<td>mass-weighted: Σ S_i ρ_i h_i / ρ</td>
+</tr>
+<tr>
+<td><code>Cp</code></td>
+<td>(∂h/∂T)_{P,X} of the phase (Driesner 2007, Eq. 27)</td>
+<td>mass-weighted phase heat capacities, Σ S_i ρ_i c_P,i / ρ, at fixed phase amounts and compositions. Contains <strong>no latent heat</strong> and is not the derivative of the bulk enthalpy. Example: in V+L at 400 °C, 250 bar, 10 wt % it is 9.2 kJ/(kg K), whereas (∂H/∂T)_{P,X} of the bulk is 31 kJ/(kg K). In V+L+H, <code>Cp</code> is 0.</td>
+</tr>
+<tr>
+<td><code>Mu</code></td>
+<td>phase viscosity</td>
+<td><strong>not defined.</strong> <code>Mu</code> is a placeholder value of 1 in V+L, L+H and V+H. Only two H–P–X branches set S_l μ_l + S_v μ_v: V+L+H, and the low-salinity / low-pressure V+L fallback. The same V+L state can therefore report 1 or a weighted value, depending on the call. Use <code>Mu_l</code> and <code>Mu_v</code>.</td>
+</tr>
+<tr>
+<td><code>dRhodT</code>, <code>dRhodP</code>, <code>IsobaricExpansivity</code>, <code>IsothermalCompressibility</code></td>
+<td>phase derivatives</td>
+<td>not defined as bulk quantities (the first three are 0); use the phase fields <code>*_l</code>, <code>*_v</code></td>
+</tr>
+</tbody>
+</table>
+<p>How bulk heat capacity and bulk viscosity of multiphase states should be defined is an open question. The fields above
+may change when it is decided.</p>
+<h2 id="differences-from-other-implementations-of-the-model">Differences from other implementations of the model</h2>
+<p>Other implementations of the same model include the author's SoWat program, his tabulated supplementary data, ProBrine
+and earlier GEOMAR MATLAB code. Three differences between them and xThermo are known and deliberate.</p>
+<p><strong>Heat capacity.</strong>
+- xThermo: c_P = (∂h/∂T)_{P,X}, the published Eq. 27. It is consistent with the enthalpy.
+- SoWat 0.2 and ProBrine multiply Eq. 27 by 1/(1 + x), where x is the NaCl mole fraction of the phase. They do not
+  change the enthalpy.
+- This factor is not part of the published formulation, and its justification has not been documented. Applied to c_P
+  alone, it makes c_P inconsistent with the enthalpy, so xThermo does not apply it.
+- Consequence: SoWat and ProBrine heat capacities of saline phases are lower by 1/(1 + x). That is about 1 % for
+  seawater, 9 % at 26 wt % and up to 50 % for nearly pure NaCl liquid.</p>
+<p><strong>Liquid enthalpy above 600 °C and below about 390 bar.</strong>
+- This applies to the liquid phase at T ≥ 600 °C and p ≤ 390.15 bar. There, the published enthalpy correlation can
+  map the brine onto a water state in the vapour field, where it is not usable.
+- xThermo uses a smooth extrapolation adopted from earlier GEOMAR code. It has the same form as the published
+  density extrapolation, and its heat capacity is consistent with it.
+- It differs from the author's tabulated values by up to about 3 %, which corresponds to −19 to +28 K in the
+  temperature of a given enthalpy.
+- This is a difference between two implementations. The physical accuracy in this region has not been established.</p>
+<p><strong>Vapour composition in V+L above 800.7 °C.</strong>
+- Above the triple point of NaCl, the published vapour-composition equation (Driesner &amp; Heinrich 2007, Eq. 15)
+  contains a term that is not defined.
+- xThermo sets it to 1. This is consistent with the published condition that the NaCl boiling curve bounds the V+L
+  field from below.
+- The author's program uses an undocumented temperature-dependent value instead. Against it, xThermo's vapour NaCl
+  content is about 1.3 % lower at 810 °C and up to about 24 % lower at 1000 °C.
+- Below 800.7 °C, xThermo reproduces the author's tabulated compositions.
+- Available experimental data do not decide between the two treatments.</p>
+<h2 id="references">References</h2>
+<p>Driesner, T. &amp; Heinrich, C.A. (2007). <em>Geochim. Cosmochim. Acta</em> <strong>71</strong>, 4880–4901.
+<a href="https://doi.org/10.1016/j.gca.2007.05.026">doi:10.1016/j.gca.2007.05.026</a></p>
+<p>Driesner, T. (2007). <em>Geochim. Cosmochim. Acta</em> <strong>71</strong>, 4902–4919.
+<a href="https://doi.org/10.1016/j.gca.2007.05.025">doi:10.1016/j.gca.2007.05.025</a></p>
+<p>Haar, L., Gallagher, J.S. &amp; Kell, G.S. (1984). <em>NBS/NRC Steam Tables</em>. Hemisphere, Washington.</p>
+<p>Wagner, W. &amp; Pruß, A. (2002). <em>J. Phys. Chem. Ref. Data</em> <strong>31</strong>, 387–535.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>
