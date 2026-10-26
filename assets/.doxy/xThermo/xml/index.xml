@@ -1847,9 +1847,29 @@
     <member refid="namespacexthermo_1a4a67c67e750161388b8fbf5ad3c3bb26" kind="function"><name>__getattr__</name></member>
   </compound>
   <compound refid="namespacexthermo_1_1plotting" kind="namespace"><name>xthermo::plotting</name>
+    <member refid="namespacexthermo_1_1plotting_1a86a9f41b3e580b52847d718bfbc3b06a" kind="variable"><name>__all__</name></member>
+    <member refid="namespacexthermo_1_1plotting_1a44e947f557e01df3835f32dd08fc1504" kind="variable"><name>UNITS</name></member>
+    <member refid="namespacexthermo_1_1plotting_1a16e5b8ae26821e47d7c90505df61e033" kind="variable"><name>_STATE_FIELD</name></member>
+    <member refid="namespacexthermo_1_1plotting_1ac975a3a4f08304bcb45d6260936cbeac" kind="variable"><name>_FIELD_UNITS</name></member>
+    <member refid="namespacexthermo_1_1plotting_1a21dad74ad6d8d5df711a50d5546b5b35" kind="variable"><name>_PHASE_COLOURS</name></member>
+    <member refid="namespacexthermo_1_1plotting_1a5112ddb3b6c0f1b7f04b54712da017e9" kind="variable"><name>_SINGLE_PHASE_LABEL</name></member>
+    <member refid="namespacexthermo_1_1plotting_1af86db0f62016a9fef9229ea23b40bed2" kind="variable"><name>_ASSEMBLAGE_NAME</name></member>
+    <member refid="namespacexthermo_1_1plotting_1af0dedc8d41078ae75b3e6fe56c41efe5" kind="function"><name>_coords</name></member>
+    <member refid="namespacexthermo_1_1plotting_1a5e337c6384949d84bd96aa5060fa05b4" kind="function"><name>_axes_list</name></member>
+    <member refid="namespacexthermo_1_1plotting_1af980e27836350ca1191ae2fb5d435552" kind="function"><name>slice_kind</name></member>
+    <member refid="namespacexthermo_1_1plotting_1a3185d495ce284cf906a8c71bb0dfc799" kind="function"><name>_in_fixed_limits</name></member>
+    <member refid="namespacexthermo_1_1plotting_1a737abcfc48218488bdc35b09e73924f0" kind="function"><name>plot_slice</name></member>
     <member refid="namespacexthermo_1_1plotting_1a0b949f6b0b83663d65123a1fd17e7c65" kind="function"><name>makeLogLinearAxes</name></member>
     <member refid="namespacexthermo_1_1plotting_1a0ee926652a9abb1011988bdd60c2cbe5" kind="function"><name>createWaterAxes</name></member>
+    <member refid="namespacexthermo_1_1plotting_1aba9e3800fea59eaca40551a1c8085339" kind="function"><name>_water_strip</name></member>
     <member refid="namespacexthermo_1_1plotting_1a68e220e1c9ec75fae208ee3ee4a07434" kind="function"><name>plot_Pslice</name></member>
+    <member refid="namespacexthermo_1_1plotting_1a9e60aec83e32defbb52b585ef8090ae0" kind="function"><name>plot_Tslice</name></member>
+    <member refid="namespacexthermo_1_1plotting_1acf43ee6cca36287ea0712bbf78114278" kind="function"><name>_name</name></member>
+    <member refid="namespacexthermo_1_1plotting_1ac97a45535ca38628f3c8b1c7a2593836" kind="function"><name>_grid</name></member>
+    <member refid="namespacexthermo_1_1plotting_1a5c248b2cb64d66bb20492803592bd293" kind="function"><name>_edges</name></member>
+    <member refid="namespacexthermo_1_1plotting_1aa0f32079e8e506363733ed7c16d37aeb" kind="function"><name>_assemblage</name></member>
+    <member refid="namespacexthermo_1_1plotting_1ae1f83ea8021142f82a014a5a510c072e" kind="function"><name>plot_property</name></member>
+    <member refid="namespacexthermo_1_1plotting_1ad67d993546a50134d254b57b0c67ef6c" kind="function"><name>plot_phases</name></member>
   </compound>
   <compound refid="namespacexthermo_1_1states" kind="namespace"><name>xthermo::states</name>
     <member refid="namespacexthermo_1_1states_1afc9c96bb3614a97ae1c34a2af44f1a55" kind="variable"><name>__all__</name></member>

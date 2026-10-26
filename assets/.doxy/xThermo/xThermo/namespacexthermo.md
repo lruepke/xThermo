@@ -70,7 +70,7 @@
 
 | Type | Name |
 | ---: | :--- |
-|  tuple | [**\_PLOTTING**](#variable-_plotting)   = `("makeLogLinearAxes", "createWaterAxes", "plot\_Pslice")`<br> |
+|  tuple | [**\_PLOTTING**](#variable-_plotting)   = `/* multi line expression */`<br> |
 |  tuple | [**\_STATES**](#variable-_states)   = `/* multi line expression */`<br> |
 
 

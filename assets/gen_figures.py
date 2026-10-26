@@ -5,7 +5,6 @@ Requires the xThermal Python package to be installed.
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib as mpl
-import copy
 import os
 
 mpl.rcParams['font.family'] = 'Arial'
@@ -13,53 +12,21 @@ mpl.rcParams['mathtext.fontset'] = 'cm'
 OUT = os.path.join(os.path.dirname(__file__), 'img')
 
 # ---------------------------------------------------------------------------
-# 1. H2O-NaCl p-T-X phase diagram (isobaric slice, linear scale)
+# 1. H2O-NaCl p-T-X phase diagram (isobaric T-X and H-X section, log-linear salinity axis)
 # ---------------------------------------------------------------------------
 from xThermal import H2ONaCl
 
 sw = H2ONaCl.cH2ONaCl("IAPS84")
 
 def phase_diagram_isobaric(P0=300e5, out=OUT):
-    T = np.linspace(sw.Tmin(), sw.Tmax(), 300)
-    X = np.linspace(1e-4, 1.0, 300)
-    TT, XX = np.meshgrid(T, X)
-    PP = np.full_like(TT, P0)
-
-    state = sw.UpdateState_TPX(TT.ravel(), PP.ravel(), XX.ravel())
-    Phase = np.array(state.phase).reshape(TT.shape)
-
-    # colour map
-    cmap = plt.get_cmap("Dark2")
-    colors = list(copy.deepcopy(cmap.colors))
-    colors[:8] = ['#AED6F1','#A9DFBF','#F9E79F','#F5CBA7','#D7BDE2','#FDFEFE','#85C1E9','#A9CCE3']
-    cmap = mpl.colors.ListedColormap(colors)
-
-    phase_unique = np.sort(np.unique(Phase))
-    phase_names  = [sw.phase_name(int(p)) for p in phase_unique]
-    # remap to 0..N for clean colorbar
-    Phase_plot = np.zeros_like(Phase)
-    for i, p in enumerate(phase_unique):
-        Phase_plot[Phase == p] = i
-
-    fig, ax = plt.subplots(figsize=(8, 5))
-    cs = ax.contourf(TT - 273.15, XX * 100, Phase_plot,
-                     levels=np.arange(-0.5, len(phase_unique)),
-                     cmap=cmap, vmin=-0.5, vmax=len(phase_unique) - 0.5)
-    cb = fig.colorbar(cs, ax=ax, ticks=np.arange(len(phase_unique)), pad=0.02)
-    cb.ax.set_yticklabels(phase_names, fontsize=10)
-
-    ax.set_xlabel('Temperature (°C)', fontsize=12)
-    ax.set_ylabel('Salinity (wt% NaCl)', fontsize=12)
-    ax.set_title(r'H$_2$O–NaCl phase diagram  |  p = ' + f'{P0/1e5:.0f} bar', fontsize=13)
-    ax.xaxis.set_minor_locator(mpl.ticker.MultipleLocator(50))
-    ax.yaxis.set_minor_locator(mpl.ticker.MultipleLocator(5))
-    ax.tick_params(which='both', direction='in')
-
-    fig.tight_layout()
+    # isobaric T-X and H-X section from the library's phase-boundary geometry (Slice_constP), not a contour plot of
+    # phase codes (which interpolates between categories)
+    import xthermo
+    r = xthermo.plot_Pslice(P0, sw=sw)
     path = os.path.join(out, 'phase_diagram_PTX.png')
-    fig.savefig(path, dpi=150, bbox_inches='tight')
+    r['fig'].savefig(path, dpi=150, bbox_inches='tight')
     print(f'saved {path}')
-    plt.close(fig)
+    plt.close(r['fig'])
 
 # ---------------------------------------------------------------------------
 # 2. H2O boiling curve

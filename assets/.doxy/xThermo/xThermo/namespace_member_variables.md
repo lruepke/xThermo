@@ -57,6 +57,11 @@
 * **T\_list** ([**test\_H2ONaCl**](namespacetest__H2ONaCl.md))
 
 
+## u
+
+* **UNITS** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+
+
 ## x
 
 * **X\_list** ([**test\_H2ONaCl**](namespacetest__H2ONaCl.md))
@@ -66,13 +71,18 @@
 
 * **\_PLOTTING** ([**xthermo**](namespacexthermo.md))
 * **\_STATES** ([**xthermo**](namespacexthermo.md))
+* **\_ASSEMBLAGE\_NAME** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_FIELD\_UNITS** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_PHASE\_COLOURS** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_SINGLE\_PHASE\_LABEL** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_STATE\_FIELD** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_\_all\_\_** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md), [**xthermo::states**](namespacexthermo_1_1states.md))
 * **\_ERRORS** ([**xthermo::states**](namespacexthermo_1_1states.md))
 * **\_NCODES** ([**xthermo::states**](namespacexthermo_1_1states.md))
 * **\_PHASE\_FIELDS** ([**xthermo::states**](namespacexthermo_1_1states.md))
 * **\_PRESENT** ([**xthermo::states**](namespacexthermo_1_1states.md))
 * **\_PRESENT\_LUT** ([**xthermo::states**](namespacexthermo_1_1states.md))
 * **\_SLOT** ([**xthermo::states**](namespacexthermo_1_1states.md))
-* **\_\_all\_\_** ([**xthermo::states**](namespacexthermo_1_1states.md))
 
 
 

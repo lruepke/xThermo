@@ -13,7 +13,8 @@ and pure-NaCl models.
 
 Modules: xthermo.H2ONaCl (cH2ONaCl), xthermo.H2O (cIAPS84, cIAPWS95), xthermo.NaCl (cNaCl). Importing the package
 loads these compiled modules and nothing else: no model is constructed and matplotlib is not imported. The plotting
-helpers are in xthermo.plotting (requires matplotlib); xthermo.plot_Pslice etc. import it on first use.
+helpers are in xthermo.plotting (requires matplotlib); xthermo.plot_slice, xthermo.plot_Pslice etc. import it on first
+use.
 
 NumPy interface: xthermo.tpx(model, T, p, X) and xthermo.hpx(model, H, p, X) evaluate states on broadcast arrays and
 return xthermo.States (see xthermo.states); xthermo.Status and the EvaluationError classes belong to it. They are
@@ -29,7 +30,8 @@ from ._version import __version__
 from . import H2ONaCl
 from . import H2O, NaCl
 
-_PLOTTING = ("makeLogLinearAxes", "createWaterAxes", "plot_Pslice")
+_PLOTTING = ("plot_slice", "plot_Pslice", "plot_Tslice", "plot_property", "plot_phases", "makeLogLinearAxes",
+             "createWaterAxes")
 _STATES = ("tpx", "hpx", "States", "Status", "EvaluationError", "InvalidInputError", "OutOfRangeError",
            "NotConvergedError", "NotAvailableError")
 

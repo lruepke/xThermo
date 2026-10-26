@@ -84,6 +84,10 @@
 * **print\_state\_PhaseEquilibrium** ([**xThermal::IAPWS95**](namespacexThermal_1_1IAPWS95.md))
 * **print\_state\_TP2Rho** ([**xThermal::IAPWS95**](namespacexThermal_1_1IAPWS95.md))
 * **plot\_Pslice** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **plot\_Tslice** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **plot\_phases** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **plot\_property** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **plot\_slice** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
 
 
 ## s
@@ -93,6 +97,7 @@
 * **set\_failed\_state** ([**xThermal**](namespacexThermal.md))
 * **string\_split** ([**xThermal**](namespacexThermal.md))
 * **stable\_on\_phase\_side** ([**xThermal::PROST**](namespacexThermal_1_1PROST.md))
+* **slice\_kind** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
 
 
 ## t
@@ -117,6 +122,14 @@
 ## _
 
 * **\_\_getattr\_\_** ([**xThermal**](namespacexThermal.md), [**xthermo**](namespacexthermo.md))
+* **\_assemblage** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_axes\_list** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_coords** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_edges** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_grid** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_in\_fixed\_limits** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_name** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_water\_strip** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
 * **\_evaluate** ([**xthermo::states**](namespacexthermo_1_1states.md))
 
 

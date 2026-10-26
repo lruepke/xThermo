@@ -141,6 +141,10 @@
 * **print\_state\_PhaseEquilibrium** ([**xThermal::IAPWS95**](namespacexThermal_1_1IAPWS95.md))
 * **print\_state\_TP2Rho** ([**xThermal::IAPWS95**](namespacexThermal_1_1IAPWS95.md))
 * **plot\_Pslice** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **plot\_Tslice** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **plot\_phases** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **plot\_property** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **plot\_slice** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
 
 
 ## r
@@ -163,6 +167,7 @@
 * **set\_failed\_state** ([**xThermal**](namespacexThermal.md))
 * **string\_split** ([**xThermal**](namespacexThermal.md))
 * **stable\_on\_phase\_side** ([**xThermal::PROST**](namespacexThermal_1_1PROST.md))
+* **slice\_kind** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
 
 
 ## t
@@ -178,6 +183,7 @@
 ## u
 
 * **UnableToLoadError** ([**xThermal**](namespacexThermal.md))
+* **UNITS** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
 
 
 ## v
@@ -203,13 +209,26 @@
 * **\_\_getattr\_\_** ([**xThermal**](namespacexThermal.md), [**xthermo**](namespacexthermo.md))
 * **\_PLOTTING** ([**xthermo**](namespacexthermo.md))
 * **\_STATES** ([**xthermo**](namespacexthermo.md))
+* **\_ASSEMBLAGE\_NAME** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_FIELD\_UNITS** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_PHASE\_COLOURS** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_SINGLE\_PHASE\_LABEL** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_STATE\_FIELD** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_\_all\_\_** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md), [**xthermo::states**](namespacexthermo_1_1states.md))
+* **\_assemblage** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_axes\_list** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_coords** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_edges** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_grid** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_in\_fixed\_limits** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_name** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
+* **\_water\_strip** ([**xthermo::plotting**](namespacexthermo_1_1plotting.md))
 * **\_ERRORS** ([**xthermo::states**](namespacexthermo_1_1states.md))
 * **\_NCODES** ([**xthermo::states**](namespacexthermo_1_1states.md))
 * **\_PHASE\_FIELDS** ([**xthermo::states**](namespacexthermo_1_1states.md))
 * **\_PRESENT** ([**xthermo::states**](namespacexthermo_1_1states.md))
 * **\_PRESENT\_LUT** ([**xthermo::states**](namespacexthermo_1_1states.md))
 * **\_SLOT** ([**xthermo::states**](namespacexthermo_1_1states.md))
-* **\_\_all\_\_** ([**xthermo::states**](namespacexthermo_1_1states.md))
 * **\_evaluate** ([**xthermo::states**](namespacexthermo_1_1states.md))
 
 
