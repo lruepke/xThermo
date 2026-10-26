@@ -3,6 +3,7 @@
   <compounddef id="namespacexthermo" kind="namespace" language="Python">
     <compoundname>xthermo</compoundname>
     <innernamespace refid="namespacexthermo_1_1plotting">xthermo::plotting</innernamespace>
+    <innernamespace refid="namespacexthermo_1_1states">xthermo::states</innernamespace>
     <sectiondef kind="var">
       <memberdef kind="variable" id="namespacexthermo_1a724b8f1e0c8780fee18e081b0e2f1287" prot="protected" static="no" mutable="no">
         <type>tuple</type>
@@ -17,7 +18,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/API/python/xthermo/__init__.py" line="18" column="1" bodyfile="Library/API/python/xthermo/__init__.py" bodystart="18" bodyend="-1"/>
+        <location file="Library/API/python/xthermo/__init__.py" line="22" column="1" bodyfile="Library/API/python/xthermo/__init__.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacexthermo_1a95061ad2b4ad2a22152589bdce72e270" prot="protected" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple xthermo._STATES</definition>
+        <argsstring></argsstring>
+        <name>_STATES</name>
+        <qualifiedname>xthermo._STATES</qualifiedname>
+        <initializer>=  (&quot;tpx&quot;, &quot;hpx&quot;, &quot;States&quot;, &quot;Status&quot;, &quot;EvaluationError&quot;, &quot;InvalidInputError&quot;, &quot;OutOfRangeError&quot;,
+           &quot;NotConvergedError&quot;, &quot;NotAvailableError&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/__init__.py" line="23" column="1" bodyfile="Library/API/python/xthermo/__init__.py" bodystart="23" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -37,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/API/python/xthermo/__init__.py" line="21" column="1" bodyfile="Library/API/python/xthermo/__init__.py" bodystart="21" bodyend="26"/>
+        <location file="Library/API/python/xthermo/__init__.py" line="27" column="1" bodyfile="Library/API/python/xthermo/__init__.py" bodystart="27" bodyend="35"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -49,6 +66,10 @@ and pure-NaCl models.
 Modules: xthermo.H2ONaCl (cH2ONaCl), xthermo.H2O (cIAPS84, cIAPWS95), xthermo.NaCl (cNaCl). Importing the package
 loads these compiled modules and nothing else: no model is constructed and matplotlib is not imported. The plotting
 helpers are in xthermo.plotting (requires matplotlib); xthermo.plot_Pslice etc. import it on first use.
+
+NumPy interface: xthermo.tpx(model, T, p, X) and xthermo.hpx(model, H, p, X) evaluate states on broadcast arrays and
+return xthermo.States (see xthermo.states); xthermo.Status and the EvaluationError classes belong to it. They are
+imported on first use, so &quot;import xthermo&quot; does not import numpy.
 
 The former package name xThermal remains available: &quot;from xThermal import H2ONaCl&quot; gives the same modules.
 </verbatim> </para>

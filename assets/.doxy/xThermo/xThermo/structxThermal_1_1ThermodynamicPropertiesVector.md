@@ -69,9 +69,11 @@
 |  std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; | [**dRhodT**](#variable-drhodt)  <br> |
 |  std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; | [**dRhodT\_l**](#variable-drhodt_l)  <br> |
 |  std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; | [**dRhodT\_v**](#variable-drhodt_v)  <br> |
+|  std::vector&lt; std::string &gt; | [**failed\_message**](#variable-failed_message)  <br> |
 |  std::string | [**fluidName**](#variable-fluidname)  <br> |
 |  std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; | [**p**](#variable-p)  <br> |
 |  std::vector&lt; [**int**](classxThermal_1_1xThermalError.md) &gt; | [**phase**](#variable-phase)  <br> |
+|  std::vector&lt; [**int**](classxThermal_1_1xThermalError.md) &gt; | [**status**](#variable-status)  <br> |
 
 
 
@@ -573,6 +575,19 @@ std::vector<double> xThermal::ThermodynamicPropertiesVector::dRhodT_v;
 
 
 
+### variable failed\_message 
+
+```C++
+std::vector<std::string> xThermal::ThermodynamicPropertiesVector::failed_message;
+```
+
+
+
+
+<hr>
+
+
+
 ### variable fluidName 
 
 ```C++
@@ -603,6 +618,19 @@ std::vector<double> xThermal::ThermodynamicPropertiesVector::p;
 
 ```C++
 std::vector<int> xThermal::ThermodynamicPropertiesVector::phase;
+```
+
+
+
+
+<hr>
+
+
+
+### variable status 
+
+```C++
+std::vector<int> xThermal::ThermodynamicPropertiesVector::status;
 ```
 
 

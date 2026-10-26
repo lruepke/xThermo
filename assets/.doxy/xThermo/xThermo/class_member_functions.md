@@ -78,6 +78,9 @@
 * **extrapolation\_H\_highT** ([**xThermal::H2ONaCl::cH2ONaCl**](classxThermal_1_1H2ONaCl_1_1cH2ONaCl.md))
 * **extrapolation\_V\_highT** ([**xThermal::H2ONaCl::cH2ONaCl**](classxThermal_1_1H2ONaCl_1_1cH2ONaCl.md))
 * **extrapolation\_V\_lowPlowT** ([**xThermal::H2ONaCl::cH2ONaCl**](classxThermal_1_1H2ONaCl_1_1cH2ONaCl.md))
+* **evaluate\_HPX** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
+* **evaluate\_TPX** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
+* **evaluate\_batch** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
 * **evaluate\_states** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
 * **eval** ([**xThermal::gsl\_guard::GuardedFunction**](classxThermal_1_1gsl__guard_1_1GuardedFunction.md), [**xThermal::gsl\_guard::GuardedMultirootFunction**](classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction.md))
 
@@ -87,6 +90,7 @@
 * **findPhaseRegion\_TPX** ([**xThermal::H2ONaCl::cH2ONaCl**](classxThermal_1_1H2ONaCl_1_1cH2ONaCl.md), [**xThermal::IAPWS95::cIAPWS95**](classxThermal_1_1IAPWS95_1_1cIAPWS95.md), [**xThermal::PROST::cIAPS84**](classxThermal_1_1PROST_1_1cIAPS84.md), [**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
 * **findPhaseRegion\_HPX** ([**xThermal::IAPWS95::cIAPWS95**](classxThermal_1_1IAPWS95_1_1cIAPWS95.md))
 * **fill** ([**xThermal::ThermodynamicPropertiesArray**](structxThermal_1_1ThermodynamicPropertiesArray.md), [**xThermal::ThermodynamicPropertiesVector**](structxThermal_1_1ThermodynamicPropertiesVector.md))
+* **failures** ([**xthermo::states::States**](classxthermo_1_1states_1_1States.md))
 
 
 ## g
@@ -127,6 +131,7 @@
 * **H\_sat\_P** ([**xThermal::IAPWS\_IF97::cIAPWS\_IF97**](classxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97.md))
 * **H\_Liquid** ([**xThermal::NaCl::cNaCl**](classxThermal_1_1NaCl_1_1cNaCl.md))
 * **H\_Solid** ([**xThermal::NaCl::cNaCl**](classxThermal_1_1NaCl_1_1cNaCl.md))
+* **has** ([**xthermo::states::States**](classxthermo_1_1states_1_1States.md))
 
 
 ## i
@@ -144,6 +149,11 @@
 * **init\_supported\_props** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
 * **interp\_quad\_prop** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
 * **iterate** ([**xThermal::gsl\_guard::GuardedFunction**](classxThermal_1_1gsl__guard_1_1GuardedFunction.md), [**xThermal::gsl\_guard::GuardedMultirootFunction**](classxThermal_1_1gsl__guard_1_1GuardedMultirootFunction.md))
+
+
+## k
+
+* **keys** ([**xthermo::states::States**](classxthermo_1_1states_1_1States.md))
 
 
 ## l
@@ -190,6 +200,7 @@
 * **OuterEvaluation** ([**xThermal::OuterEvaluation**](classxThermal_1_1OuterEvaluation.md))
 * **operator=** ([**xThermal::OuterEvaluation**](classxThermal_1_1OuterEvaluation.md))
 * **operator()** ([**xThermal::gsl\_guard::MultirootSolverFree**](structxThermal_1_1gsl__guard_1_1MultirootSolverFree.md), [**xThermal::gsl\_guard::RootSolverFree**](structxThermal_1_1gsl__guard_1_1RootSolverFree.md), [**xThermal::gsl\_guard::VectorFree**](structxThermal_1_1gsl__guard_1_1VectorFree.md))
+* **ok** ([**xthermo::states::States**](classxthermo_1_1states_1_1States.md))
 
 
 ## p
@@ -226,7 +237,7 @@
 * **Point\_slice** ([**xThermal::Point\_slice**](structxThermal_1_1Point__slice.md))
 * **Polygon\_slice** ([**xThermal::Polygon\_slice**](structxThermal_1_1Polygon__slice.md))
 * **parse\_update\_which\_props** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
-* **phase\_name** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md))
+* **phase\_name** ([**xThermal::cxThermal**](classxThermal_1_1cxThermal.md), [**xthermo::states::States**](classxthermo_1_1states_1_1States.md))
 
 
 ## q
@@ -401,6 +412,14 @@
 * **\_H\_Solid** ([**xThermal::NaCl::cNaCl**](classxThermal_1_1NaCl_1_1cNaCl.md))
 * **\_calc\_R\_H1** ([**xThermal::NaCl::cNaCl**](classxThermal_1_1NaCl_1_1cNaCl.md))
 * **\_printCoeffs\_haliteH** ([**xThermal::NaCl::cNaCl**](classxThermal_1_1NaCl_1_1cNaCl.md))
+* **\_\_init\_\_** ([**xthermo::states::EvaluationError**](classxthermo_1_1states_1_1EvaluationError.md), [**xthermo::states::States**](classxthermo_1_1states_1_1States.md))
+* **\_\_dir\_\_** ([**xthermo::states::States**](classxthermo_1_1states_1_1States.md))
+* **\_\_getattr\_\_** ([**xthermo::states::States**](classxthermo_1_1states_1_1States.md))
+* **\_\_getitem\_\_** ([**xthermo::states::States**](classxthermo_1_1states_1_1States.md))
+* **\_\_repr\_\_** ([**xthermo::states::States**](classxthermo_1_1states_1_1States.md))
+* **\_array** ([**xthermo::states::States**](classxthermo_1_1states_1_1States.md))
+* **\_get** ([**xthermo::states::States**](classxthermo_1_1states_1_1States.md))
+* **\_present** ([**xthermo::states::States**](classxthermo_1_1states_1_1States.md))
 
 
 

@@ -28,6 +28,7 @@
 | Type | Name |
 | ---: | :--- |
 | namespace | [**plotting**](namespacexthermo_1_1plotting.md) <br> |
+| namespace | [**states**](namespacexthermo_1_1states.md) <br> |
 
 
 
@@ -70,6 +71,7 @@
 | Type | Name |
 | ---: | :--- |
 |  tuple | [**\_PLOTTING**](#variable-_plotting)   = `("makeLogLinearAxes", "createWaterAxes", "plot\_Pslice")`<br> |
+|  tuple | [**\_STATES**](#variable-_states)   = `/* multi line expression */`<br> |
 
 
 
@@ -123,6 +125,19 @@ xthermo::__getattr__ (
 
 ```Python
 tuple xthermo._PLOTTING;
+```
+
+
+
+
+<hr>
+
+
+
+### variable \_STATES 
+
+```Python
+tuple xthermo._STATES;
 ```
 
 

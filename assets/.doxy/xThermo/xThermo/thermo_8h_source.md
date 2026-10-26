@@ -77,6 +77,7 @@ namespace xThermal
         // internal OpenMP (one independent model per thread, see createWorker); a failure raises the exception of the
         // lowest failing index, as the serial loop does
         void evaluate_states(size_t n, const std::function<void(cxThermal&, size_t, ThermodynamicProperties&)>& eval);
+        ThermodynamicPropertiesVector evaluate_batch(bool hpx, const std::vector<double>& A, const std::vector<double>& p, const std::vector<double>& X);
         template<int dim>
         void interp_quad_prop(LOOKUPTABLE_FOREST::Quadrant<dim,LOOKUPTABLE_FOREST::FIELD_DATA<dim> > *targetLeaf, double* xyz_min_target, ThermodynamicProperties& prop, const double xyz[dim]);
 
@@ -106,6 +107,8 @@ namespace xThermal
         virtual void UpdateState_TPX(ThermodynamicProperties& props, const double& T, const double& p, const double& X=0) {throw NotImplementedError(name() + " does not implement UpdateState_TPX function");};
         virtual void UpdateState_HPX(ThermodynamicProperties& props, const double& H, const double& p, const double& X=0) {throw NotImplementedError(name() + " does not implement UpdateState_HPX function");};
         EvaluationStatus tryUpdateState_TPX(ThermodynamicProperties& props, const double& T, const double& p, const double& X=0, std::string* message=nullptr);
+        ThermodynamicPropertiesVector evaluate_TPX(const std::vector<double>& T, const std::vector<double>& p, const std::vector<double>& X);
+        ThermodynamicPropertiesVector evaluate_HPX(const std::vector<double>& H, const std::vector<double>& p, const std::vector<double>& X);
         EvaluationStatus tryUpdateState_HPX(ThermodynamicProperties& props, const double& H, const double& p, const double& X=0, std::string* message=nullptr);
         virtual ThermodynamicPropertiesVector UpdateState_TPX(const std::vector<double>& T, const std::vector<double>& p, const std::vector<double>& X, bool isMeshGrid=false) final;
         virtual ThermodynamicPropertiesVector UpdateState_HPX(const std::vector<double>& H, const std::vector<double>& p, const std::vector<double>& X, bool isMeshGrid=false) final;

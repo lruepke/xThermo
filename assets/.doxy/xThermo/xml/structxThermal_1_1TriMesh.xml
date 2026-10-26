@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="878" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="878" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="881" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="881" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1TriMesh_1a686655de8147a75a5e4100b03de9574c" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="878" column="22" bodyfile="Library/thermo/DataStructures.h" bodystart="878" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="881" column="22" bodyfile="Library/thermo/DataStructures.h" bodystart="881" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1TriMesh_1a4d611d36f1deb25a93e020fa39951474" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="878" column="23" bodyfile="Library/thermo/DataStructures.h" bodystart="878" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="881" column="23" bodyfile="Library/thermo/DataStructures.h" bodystart="881" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1TriMesh_1a13dc33e7affc38cbf794ecd695b83bfe" prot="public" static="no" mutable="no">
         <type>std::vector&lt; std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref> &gt; &gt;</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="879" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="879" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="882" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="882" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1TriMesh_1a2c2ee9dcec4876426ff98620d8743ddc" prot="public" static="no" mutable="no">
         <type>std::vector&lt; std::string &gt;</type>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="880" column="20" bodyfile="Library/thermo/DataStructures.h" bodystart="880" bodyend="880"/>
+        <location file="Library/thermo/DataStructures.h" line="883" column="20" bodyfile="Library/thermo/DataStructures.h" bodystart="883" bodyend="883"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="881" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="881" bodyend="894"/>
+        <location file="Library/thermo/DataStructures.h" line="884" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="884" bodyend="897"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -101,7 +101,7 @@
     <detaileddescription>
 <para>2D triangle mesh structure. Relate to matplotlib ax.tri_plot() in 2D or ax.plot_trisurf() in 3D </para>
     </detaileddescription>
-    <location file="Library/thermo/DataStructures.h" line="876" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="877" bodyend="895"/>
+    <location file="Library/thermo/DataStructures.h" line="879" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="880" bodyend="898"/>
     <listofallmembers>
       <member refid="structxThermal_1_1TriMesh_1add2017bdb9ed68c968ccbb48b1007f7e" prot="public" virt="non-virtual"><scope>xThermal::TriMesh</scope><name>append</name></member>
       <member refid="structxThermal_1_1TriMesh_1a13dc33e7affc38cbf794ecd695b83bfe" prot="public" virt="non-virtual"><scope>xThermal::TriMesh</scope><name>connection</name></member>

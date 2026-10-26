@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classxthermo_1_1states_1_1EvaluationError" kind="class" language="Python" prot="public">
+    <compoundname>xthermo::states::EvaluationError</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+    <derivedcompoundref refid="classxthermo_1_1states_1_1InvalidInputError" prot="public" virt="non-virtual">xthermo.states.InvalidInputError</derivedcompoundref>
+    <derivedcompoundref refid="classxthermo_1_1states_1_1NotAvailableError" prot="public" virt="non-virtual">xthermo.states.NotAvailableError</derivedcompoundref>
+    <derivedcompoundref refid="classxthermo_1_1states_1_1NotConvergedError" prot="public" virt="non-virtual">xthermo.states.NotConvergedError</derivedcompoundref>
+    <derivedcompoundref refid="classxthermo_1_1states_1_1OutOfRangeError" prot="public" virt="non-virtual">xthermo.states.OutOfRangeError</derivedcompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classxthermo_1_1states_1_1EvaluationError_1a153e14e10163d12e063f1613a5a85eea" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>xthermo.states.EvaluationError::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <qualifiedname>xthermo.states.EvaluationError.index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="38" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxthermo_1_1states_1_1EvaluationError_1a352257df0f2e58861c1b0d7b44bcbc1b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>xthermo.states.EvaluationError::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <qualifiedname>xthermo.states.EvaluationError.status</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="38" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxthermo_1_1states_1_1EvaluationError_1acdd7013f1eadb0d26868b4c6c4292f0c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>xthermo.states.EvaluationError::inputs</definition>
+        <argsstring></argsstring>
+        <name>inputs</name>
+        <qualifiedname>xthermo.states.EvaluationError.inputs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="38" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxthermo_1_1states_1_1EvaluationError_1a209f248a2ac4351fbae46c9ea7242a7e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>xthermo.states.EvaluationError::message</definition>
+        <argsstring></argsstring>
+        <name>message</name>
+        <qualifiedname>xthermo.states.EvaluationError.message</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="38" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxthermo_1_1states_1_1EvaluationError_1a9bae72cc9ecb1c2c15a0af29b5f5c00f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xthermo.states.EvaluationError.__init__</definition>
+        <argsstring>(self, text, index, status, inputs, message)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>xthermo.states.EvaluationError.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <param>
+          <type>index</type>
+          <defname>index</defname>
+        </param>
+        <param>
+          <type>status</type>
+          <defname>status</defname>
+        </param>
+        <param>
+          <type>inputs</type>
+          <defname>inputs</defname>
+        </param>
+        <param>
+          <type>message</type>
+          <defname>message</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="36" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="36" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A point could not be evaluated (errors=&quot;raise&quot;). Attributes: index (tuple, () for scalar inputs), status
+(Status), inputs (dict of the point&apos;s inputs), message (the library&apos;s message).</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+      <node id="1">
+        <label>xthermo.states.EvaluationError</label>
+        <link refid="classxthermo_1_1states_1_1EvaluationError"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>xthermo.states.InvalidInputError</label>
+        <link refid="classxthermo_1_1states_1_1InvalidInputError"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>xthermo.states.NotAvailableError</label>
+        <link refid="classxthermo_1_1states_1_1NotAvailableError"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>xthermo.states.NotConvergedError</label>
+        <link refid="classxthermo_1_1states_1_1NotConvergedError"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>xthermo.states.OutOfRangeError</label>
+        <link refid="classxthermo_1_1states_1_1OutOfRangeError"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+      <node id="1">
+        <label>xthermo.states.EvaluationError</label>
+        <link refid="classxthermo_1_1states_1_1EvaluationError"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Library/API/python/xthermo/states.py" line="32" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="32" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classxthermo_1_1states_1_1EvaluationError_1a9bae72cc9ecb1c2c15a0af29b5f5c00f" prot="public" virt="non-virtual"><scope>xthermo::states::EvaluationError</scope><name>__init__</name></member>
+      <member refid="classxthermo_1_1states_1_1EvaluationError_1a153e14e10163d12e063f1613a5a85eea" prot="public" virt="non-virtual"><scope>xthermo::states::EvaluationError</scope><name>index</name></member>
+      <member refid="classxthermo_1_1states_1_1EvaluationError_1acdd7013f1eadb0d26868b4c6c4292f0c" prot="public" virt="non-virtual"><scope>xthermo::states::EvaluationError</scope><name>inputs</name></member>
+      <member refid="classxthermo_1_1states_1_1EvaluationError_1a209f248a2ac4351fbae46c9ea7242a7e" prot="public" virt="non-virtual"><scope>xthermo::states::EvaluationError</scope><name>message</name></member>
+      <member refid="classxthermo_1_1states_1_1EvaluationError_1a352257df0f2e58861c1b0d7b44bcbc1b" prot="public" virt="non-virtual"><scope>xthermo::states::EvaluationError</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

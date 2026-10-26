@@ -691,7 +691,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="62" column="13" bodyfile="Library/thermo/thermo.h" bodystart="150" bodyend="150"/>
+        <location file="Library/H2O/IAPS84.h" line="62" column="13" bodyfile="Library/thermo/thermo.h" bodystart="151" bodyend="151"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1afe86ef340ece855c4aa01ed160aa5e2c" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type><ref refid="structxThermal_1_1ThermodynamicPropertiesVector" kindref="compound">ThermodynamicPropertiesVector</ref></type>
@@ -723,7 +723,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="62" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1426" bodyend="1456"/>
+        <location file="Library/H2O/IAPS84.h" line="62" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1457" bodyend="1487"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a929aa6a64ac637437b0a409ffa379aab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -759,7 +759,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="62" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1662" bodyend="1672"/>
+        <location file="Library/H2O/IAPS84.h" line="62" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1693" bodyend="1703"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a89ce494a32e38aafb64abd36fdf67229" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
@@ -818,7 +818,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="63" column="13" bodyfile="Library/thermo/thermo.h" bodystart="151" bodyend="151"/>
+        <location file="Library/H2O/IAPS84.h" line="63" column="13" bodyfile="Library/thermo/thermo.h" bodystart="152" bodyend="152"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a5c0e0ff376db670fffd97808b39eb1a0" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type><ref refid="structxThermal_1_1ThermodynamicPropertiesVector" kindref="compound">ThermodynamicPropertiesVector</ref></type>
@@ -850,7 +850,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="63" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1458" bodyend="1487"/>
+        <location file="Library/H2O/IAPS84.h" line="63" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1489" bodyend="1518"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a7a9db3f1c95f91044b59478cef3c5a14" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -886,7 +886,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/H2O/IAPS84.h" line="63" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1674" bodyend="1683"/>
+        <location file="Library/H2O/IAPS84.h" line="63" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1705" bodyend="1714"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1PROST_1_1cIAPS84_1a889b6fb0deadb20dacd44338a1c4a144" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
@@ -1026,6 +1026,8 @@
       <member refid="classxThermal_1_1cxThermal_1a35bccaf5cb9424b49117a7c288d5c510" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>createLUT_3D</name></member>
       <member refid="classxThermal_1_1PROST_1_1cIAPS84_1acc1e63df7c30ef8a3d73fa0704db48bf" prot="protected" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>createWorker</name></member>
       <member refid="classxThermal_1_1cxThermal_1a2314586579c4061048c886be74236db7" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>cxThermal</name></member>
+      <member refid="classxThermal_1_1cxThermal_1af8fbaee0734af083129be02ab5cf0abe" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>evaluate_HPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a528d87134d49df18fe96f65602c99f62" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>evaluate_TPX</name></member>
       <member refid="classxThermal_1_1PROST_1_1cIAPS84_1ae590eb6841e7d929ff02aba16b0bcfe2" prot="public" virt="virtual"><scope>xThermal::PROST::cIAPS84</scope><name>findPhaseRegion_TPX</name></member>
       <member refid="classxThermal_1_1cxThermal_1a1fadd87926ebe880d3273ea3b2a930f6" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>get_dim_lut</name></member>
       <member refid="classxThermal_1_1cxThermal_1a5004c02f781d224121fed323d2e7fdb6" prot="public" virt="non-virtual"><scope>xThermal::PROST::cIAPS84</scope><name>get_dim_lut_lookup</name></member>

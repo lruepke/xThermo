@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacexthermo_1_1states" kind="namespace" language="Python">
+    <compoundname>xthermo::states</compoundname>
+    <innerclass refid="classxthermo_1_1states_1_1EvaluationError" prot="public">xthermo::states::EvaluationError</innerclass>
+    <innerclass refid="classxthermo_1_1states_1_1InvalidInputError" prot="public">xthermo::states::InvalidInputError</innerclass>
+    <innerclass refid="classxthermo_1_1states_1_1NotAvailableError" prot="public">xthermo::states::NotAvailableError</innerclass>
+    <innerclass refid="classxthermo_1_1states_1_1NotConvergedError" prot="public">xthermo::states::NotConvergedError</innerclass>
+    <innerclass refid="classxthermo_1_1states_1_1OutOfRangeError" prot="public">xthermo::states::OutOfRangeError</innerclass>
+    <innerclass refid="classxthermo_1_1states_1_1States" prot="public">xthermo::states::States</innerclass>
+    <innerclass refid="classxthermo_1_1states_1_1Status" prot="public">xthermo::states::Status</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacexthermo_1_1states_1afc9c96bb3614a97ae1c34a2af44f1a55" prot="private" static="no" mutable="no">
+        <type>list</type>
+        <definition>list xthermo::states.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>xthermo.states.__all__</qualifiedname>
+        <initializer>=  [&quot;tpx&quot;, &quot;hpx&quot;, &quot;States&quot;, &quot;Status&quot;, &quot;EvaluationError&quot;, &quot;InvalidInputError&quot;, &quot;OutOfRangeError&quot;,
+           &quot;NotConvergedError&quot;, &quot;NotAvailableError&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="18" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacexthermo_1_1states_1a48b23099ed1d2451255eec17bab41f97" prot="protected" static="no" mutable="no">
+        <type>dict</type>
+        <definition>dict xthermo::states._ERRORS</definition>
+        <argsstring></argsstring>
+        <name>_ERRORS</name>
+        <qualifiedname>xthermo.states._ERRORS</qualifiedname>
+        <initializer>=  {Status.InvalidInput: <ref refid="classxthermo_1_1states_1_1InvalidInputError" kindref="compound">InvalidInputError</ref>, Status.OutOfRange: <ref refid="classxthermo_1_1states_1_1OutOfRangeError" kindref="compound">OutOfRangeError</ref>,
+           Status.NotConverged: <ref refid="classxthermo_1_1states_1_1NotConvergedError" kindref="compound">NotConvergedError</ref>, Status.NotAvailable: <ref refid="classxthermo_1_1states_1_1NotAvailableError" kindref="compound">NotAvailableError</ref>, Status.Failed: <ref refid="classxthermo_1_1states_1_1EvaluationError" kindref="compound">EvaluationError</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="57" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacexthermo_1_1states_1a544167aa4222a4592e9ffa6f31e39452" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple xthermo::states.FIELDS</definition>
+        <argsstring></argsstring>
+        <name>FIELDS</name>
+        <qualifiedname>xthermo.states.FIELDS</qualifiedname>
+        <initializer>=  (&quot;T&quot;, &quot;p&quot;, &quot;X&quot;, &quot;H&quot;, &quot;S_l&quot;, &quot;S_v&quot;, &quot;S_h&quot;, &quot;X_l&quot;, &quot;X_v&quot;, &quot;Rho_l&quot;, &quot;Rho_v&quot;, &quot;Rho_h&quot;, &quot;H_l&quot;, &quot;H_v&quot;, &quot;H_h&quot;, &quot;Cp_l&quot;,
+          &quot;Cp_v&quot;, &quot;Cp_h&quot;, &quot;Mu_l&quot;, &quot;Mu_v&quot;, &quot;Rho&quot;, &quot;Cp&quot;, &quot;Mu&quot;, &quot;dRhodP&quot;, &quot;dRhodP_l&quot;, &quot;dRhodP_v&quot;, &quot;dRhodT&quot;, &quot;dRhodT_l&quot;,
+          &quot;dRhodT_v&quot;, &quot;IsothermalCompressibility&quot;, &quot;IsothermalCompressibility_l&quot;, &quot;IsothermalCompressibility_v&quot;,
+          &quot;IsobaricExpansivity&quot;, &quot;IsobaricExpansivity_l&quot;, &quot;IsobaricExpansivity_v&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="60" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacexthermo_1_1states_1aabd8f77b05e359f279db5bc1ce0d4b9a" prot="protected" static="no" mutable="no">
+        <type>dict</type>
+        <definition>dict xthermo::states._PRESENT</definition>
+        <argsstring></argsstring>
+        <name>_PRESENT</name>
+        <qualifiedname>xthermo.states._PRESENT</qualifiedname>
+        <initializer>=  {0: &quot;l&quot;, 1: &quot;v&quot;, 2: &quot;h&quot;, 3: &quot;l&quot;, 4: &quot;l&quot;, 5: &quot;l&quot;, 6: &quot;l&quot;, 7: &quot;lv&quot;, 8: &quot;lh&quot;, 9: &quot;vh&quot;, 10: &quot;lv&quot;, 11: &quot;lvh&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="68" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacexthermo_1_1states_1aa7fcfb1bb029cba3bf3020db30ae4804" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xthermo::states._NCODES</definition>
+        <argsstring></argsstring>
+        <name>_NCODES</name>
+        <qualifiedname>xthermo.states._NCODES</qualifiedname>
+        <initializer>=  14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="69" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacexthermo_1_1states_1aa887c9656626ff8ad3c154c67da7e163" prot="protected" static="no" mutable="no">
+        <type>dict</type>
+        <definition>dict xthermo::states._PRESENT_LUT</definition>
+        <argsstring></argsstring>
+        <name>_PRESENT_LUT</name>
+        <qualifiedname>xthermo.states._PRESENT_LUT</qualifiedname>
+        <initializer>=  {slot: np.array([slot in _PRESENT.get(code, &quot;&quot;) for code in range(_NCODES)]) for slot in &quot;lvh&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="70" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacexthermo_1_1states_1ad34009cd18a4309c92106c9435f0a9ed" prot="protected" static="no" mutable="no">
+        <type>dict</type>
+        <definition>dict xthermo::states._SLOT</definition>
+        <argsstring></argsstring>
+        <name>_SLOT</name>
+        <qualifiedname>xthermo.states._SLOT</qualifiedname>
+        <initializer>=  {&quot;liquid&quot;: &quot;l&quot;, &quot;vapour&quot;: &quot;v&quot;, &quot;vapor&quot;: &quot;v&quot;, &quot;halite&quot;: &quot;h&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="71" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacexthermo_1_1states_1ab958bb79fe42688cbe31118f9d6284ab" prot="protected" static="no" mutable="no">
+        <type>dict</type>
+        <definition>dict xthermo::states._PHASE_FIELDS</definition>
+        <argsstring></argsstring>
+        <name>_PHASE_FIELDS</name>
+        <qualifiedname>xthermo.states._PHASE_FIELDS</qualifiedname>
+        <initializer>=  {f: f[-1] for f in FIELDS if f[-2:] in (&quot;_l&quot;, &quot;_v&quot;, &quot;_h&quot;) and not f.startswith(&quot;S_&quot;)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="73" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="73" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacexthermo_1_1states_1a9760c637323964ceabe73c3ddc1e1145" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xthermo.states._evaluate</definition>
+        <argsstring>(model, name1, batch, a, p, X, errors, absent)</argsstring>
+        <name>_evaluate</name>
+        <qualifiedname>xthermo.states._evaluate</qualifiedname>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <param>
+          <type>name1</type>
+          <defname>name1</defname>
+        </param>
+        <param>
+          <type>batch</type>
+          <defname>batch</defname>
+        </param>
+        <param>
+          <type>a</type>
+          <defname>a</defname>
+        </param>
+        <param>
+          <type>p</type>
+          <defname>p</defname>
+        </param>
+        <param>
+          <type>X</type>
+          <defname>X</defname>
+        </param>
+        <param>
+          <type>errors</type>
+          <defname>errors</defname>
+        </param>
+        <param>
+          <type>absent</type>
+          <defname>absent</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="172" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="172" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacexthermo_1_1states_1a2d6744546d07c229181f28085db0b3eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xthermo.states.tpx</definition>
+        <argsstring>(model, T, p, X=0.0, *errors=&quot;raise&quot;, absent=&quot;zero&quot;)</argsstring>
+        <name>tpx</name>
+        <qualifiedname>xthermo.states.tpx</qualifiedname>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <param>
+          <type>T</type>
+          <defname>T</defname>
+        </param>
+        <param>
+          <type>p</type>
+          <defname>p</defname>
+        </param>
+        <param>
+          <type>X</type>
+          <defname>X</defname>
+          <defval>0.0</defval>
+        </param>
+        <param>
+          <type>*</type>
+          <declname>errors</declname>
+          <defval>&quot;raise&quot;</defval>
+        </param>
+        <param>
+          <type>absent</type>
+          <defname>absent</defname>
+          <defval>&quot;zero&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>States at temperature T [K], pressure p [Pa] and bulk salinity X [kg/kg] (ignored by the water models).
+
+T, p, X: scalars or arrays that broadcast together. errors=&quot;raise&quot; (default) raises an EvaluationError subclass for
+the first point that cannot be evaluated; errors=&quot;nan&quot; returns failed points as NaN with their status.
+absent=&quot;nan&quot;: fields of absent phases are NaN in the result (default &quot;zero&quot;: the library&apos;s values).
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="195" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="195" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacexthermo_1_1states_1a0ea6df731cdefc7cf12af7be26728472" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xthermo.states.hpx</definition>
+        <argsstring>(model, H, p, X=0.0, *errors=&quot;raise&quot;, absent=&quot;zero&quot;)</argsstring>
+        <name>hpx</name>
+        <qualifiedname>xthermo.states.hpx</qualifiedname>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <param>
+          <type>H</type>
+          <defname>H</defname>
+        </param>
+        <param>
+          <type>p</type>
+          <defname>p</defname>
+        </param>
+        <param>
+          <type>X</type>
+          <defname>X</defname>
+          <defval>0.0</defval>
+        </param>
+        <param>
+          <type>*</type>
+          <declname>errors</declname>
+          <defval>&quot;raise&quot;</defval>
+        </param>
+        <param>
+          <type>absent</type>
+          <defname>absent</defname>
+          <defval>&quot;zero&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>States at specific enthalpy H [J/kg], pressure p [Pa] and bulk salinity X [kg/kg]; as tpx.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="205" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="205" bodyend="208"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>NumPy interface for state evaluations: xthermo.tpx and xthermo.hpx.
+
+    import numpy as np, xthermo
+    from xthermo import H2ONaCl
+    sw = H2ONaCl.cH2ONaCl(&quot;IAPS84&quot;)
+    s = xthermo.tpx(sw, T=np.linspace(300, 900, 200)[:, None] + 273.15, p=300e5, X=np.logspace(-4, 0, 150))
+    s.Rho.shape          # (200, 150): the broadcast shape of the inputs
+    s.phase_name, s.has(&quot;vapour&quot;), s.ok, s.status, s.failures
+
+The inputs broadcast like NumPy arrays (scalars give NumPy scalars). Each point is evaluated by the library&apos;s batch
+evaluation (cxThermal::evaluate_TPX / evaluate_HPX, i.e. tryUpdateState_* per point), so the values are those of the
+scalar and vector API. SI units throughout.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="Library/API/python/xthermo/states.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

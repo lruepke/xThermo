@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="944" column="16" bodyfile="Library/thermo/DataStructures.h" bodystart="944" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="947" column="16" bodyfile="Library/thermo/DataStructures.h" bodystart="947" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1CONSTENTS__Thermo_1a2feb348b281c7a2dcc74e491992cda35" prot="public" static="no" mutable="no">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="944" column="18" bodyfile="Library/thermo/DataStructures.h" bodystart="944" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="947" column="18" bodyfile="Library/thermo/DataStructures.h" bodystart="947" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1CONSTENTS__Thermo_1aa70e353741b50b41918ab321ea8108f8" prot="public" static="no" mutable="no">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="944" column="23" bodyfile="Library/thermo/DataStructures.h" bodystart="944" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="947" column="23" bodyfile="Library/thermo/DataStructures.h" bodystart="947" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1CONSTENTS__Thermo_1a77a3668b1d5958d16a7e874b5fc8371e" prot="public" static="no" mutable="no">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="944" column="28" bodyfile="Library/thermo/DataStructures.h" bodystart="944" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="947" column="28" bodyfile="Library/thermo/DataStructures.h" bodystart="947" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1CONSTENTS__Thermo_1ab9cffd1908d0c56c7d9f3b8bda92a25c" prot="public" static="no" mutable="no">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="944" column="33" bodyfile="Library/thermo/DataStructures.h" bodystart="944" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="947" column="33" bodyfile="Library/thermo/DataStructures.h" bodystart="947" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1CONSTENTS__Thermo_1a6122fc8ef2d1163cf3c6acfa7e679317" prot="public" static="no" mutable="no">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="944" column="38" bodyfile="Library/thermo/DataStructures.h" bodystart="944" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="947" column="38" bodyfile="Library/thermo/DataStructures.h" bodystart="947" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1CONSTENTS__Thermo_1a2d4af2837905dbd3e712bccf058fa063" prot="public" static="no" mutable="no">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="944" column="46" bodyfile="Library/thermo/DataStructures.h" bodystart="944" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="947" column="46" bodyfile="Library/thermo/DataStructures.h" bodystart="947" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1CONSTENTS__Thermo_1a5237ccd57e643502569be9c16d60bda5" prot="public" static="no" mutable="no">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="944" column="57" bodyfile="Library/thermo/DataStructures.h" bodystart="944" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="947" column="57" bodyfile="Library/thermo/DataStructures.h" bodystart="947" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1CONSTENTS__Thermo_1a0cfda982308af7e71cad3b34daaf7597" prot="public" static="no" mutable="no">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -129,7 +129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="944" column="68" bodyfile="Library/thermo/DataStructures.h" bodystart="944" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="947" column="68" bodyfile="Library/thermo/DataStructures.h" bodystart="947" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1CONSTENTS__Thermo_1a6df4f128bb632dec5d865741180a512e" prot="public" static="no" mutable="no">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -143,7 +143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="944" column="85" bodyfile="Library/thermo/DataStructures.h" bodystart="944" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="947" column="85" bodyfile="Library/thermo/DataStructures.h" bodystart="947" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1CONSTENTS__Thermo_1ae4b70c1bb019c191e6461a6ff6ccaa27" prot="public" static="no" mutable="no">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref></type>
@@ -157,7 +157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="944" column="96" bodyfile="Library/thermo/DataStructures.h" bodystart="944" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="947" column="96" bodyfile="Library/thermo/DataStructures.h" bodystart="947" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -165,7 +165,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Library/thermo/DataStructures.h" line="942" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="943" bodyend="945"/>
+    <location file="Library/thermo/DataStructures.h" line="945" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="946" bodyend="948"/>
     <listofallmembers>
       <member refid="structxThermal_1_1CONSTENTS__Thermo_1a6df4f128bb632dec5d865741180a512e" prot="public" virt="non-virtual"><scope>xThermal::CONSTENTS_Thermo</scope><name>molar_mass</name></member>
       <member refid="structxThermal_1_1CONSTENTS__Thermo_1a5237ccd57e643502569be9c16d60bda5" prot="public" virt="non-virtual"><scope>xThermal::CONSTENTS_Thermo</scope><name>p_critical</name></member>

@@ -53,6 +53,11 @@
 * **get\_dim\_from\_binary** ([**LOOKUPTABLE\_FOREST**](namespaceLOOKUPTABLE__FOREST.md))
 
 
+## h
+
+* **hpx** ([**xthermo::states**](namespacexthermo_1_1states.md))
+
+
 ## m
 
 * **makeLogLinearAxes** ([**PhaseDiagramSlice**](namespacePhaseDiagramSlice.md), [**xthermo::plotting**](namespacexthermo_1_1plotting.md))
@@ -96,6 +101,7 @@
 * **text3d** ([**helpfunc**](namespacehelpfunc.md))
 * **test\_constants** ([**test\_H2O**](namespacetest__H2O.md))
 * **test\_prop** ([**test\_H2O**](namespacetest__H2O.md))
+* **tpx** ([**xthermo::states**](namespacexthermo_1_1states.md))
 
 
 ## v
@@ -111,6 +117,7 @@
 ## _
 
 * **\_\_getattr\_\_** ([**xThermal**](namespacexThermal.md), [**xthermo**](namespacexthermo.md))
+* **\_evaluate** ([**xthermo::states**](namespacexthermo_1_1states.md))
 
 
 

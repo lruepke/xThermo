@@ -659,6 +659,7 @@
     <member refid="classxThermal_1_1cxThermal_1a7b8da7ae38ad278f28736667233b632a" kind="function"><name>parse_update_which_props</name></member>
     <member refid="classxThermal_1_1cxThermal_1a48aad0df3347983ebe57dc1986728761" kind="function"><name>destroyLUT</name></member>
     <member refid="classxThermal_1_1cxThermal_1aa8867f7e1a964384c5ddd211757a63b2" kind="function"><name>evaluate_states</name></member>
+    <member refid="classxThermal_1_1cxThermal_1a0fb3dc6f068443667a2ba79819be518e" kind="function"><name>evaluate_batch</name></member>
     <member refid="classxThermal_1_1cxThermal_1ada930d7a306258c0a10d7e2a2c3ae277" kind="function"><name>interp_quad_prop</name></member>
     <member refid="classxThermal_1_1cxThermal_1a9b135b6613c5319ce57ecf50c4720487" kind="function"><name>interp_quad_prop</name></member>
     <member refid="classxThermal_1_1cxThermal_1a2314586579c4061048c886be74236db7" kind="function"><name>cxThermal</name></member>
@@ -678,6 +679,8 @@
     <member refid="classxThermal_1_1cxThermal_1a3d7c1b12767a6348b6d291e708ec0a5e" kind="function"><name>UpdateState_TPX</name></member>
     <member refid="classxThermal_1_1cxThermal_1ac1094a81aa03a8856a5299b1f588f547" kind="function"><name>UpdateState_HPX</name></member>
     <member refid="classxThermal_1_1cxThermal_1acc9e6ed0d508f1a089ed55a32592b427" kind="function"><name>tryUpdateState_TPX</name></member>
+    <member refid="classxThermal_1_1cxThermal_1a528d87134d49df18fe96f65602c99f62" kind="function"><name>evaluate_TPX</name></member>
+    <member refid="classxThermal_1_1cxThermal_1af8fbaee0734af083129be02ab5cf0abe" kind="function"><name>evaluate_HPX</name></member>
     <member refid="classxThermal_1_1cxThermal_1ac639cc813243479c4711207e7077adb5" kind="function"><name>tryUpdateState_HPX</name></member>
     <member refid="classxThermal_1_1cxThermal_1afe86ef340ece855c4aa01ed160aa5e2c" kind="function"><name>UpdateState_TPX</name></member>
     <member refid="classxThermal_1_1cxThermal_1a5c0e0ff376db670fffd97808b39eb1a0" kind="function"><name>UpdateState_HPX</name></member>
@@ -738,6 +741,13 @@
     <member refid="structxThermal_1_1DeformLinearMesh_1a7287a252e3febe62aec3fe440809daa9" kind="variable"><name>T</name></member>
     <member refid="structxThermal_1_1DeformLinearMesh_1aa575135f2165b7c0b88d3f3398df77af" kind="variable"><name>p</name></member>
     <member refid="structxThermal_1_1DeformLinearMesh_1abafc619b74712eb82401edfc082687e5" kind="variable"><name>X</name></member>
+  </compound>
+  <compound refid="classxthermo_1_1states_1_1EvaluationError" kind="class"><name>xthermo::states::EvaluationError</name>
+    <member refid="classxthermo_1_1states_1_1EvaluationError_1a153e14e10163d12e063f1613a5a85eea" kind="variable"><name>index</name></member>
+    <member refid="classxthermo_1_1states_1_1EvaluationError_1a352257df0f2e58861c1b0d7b44bcbc1b" kind="variable"><name>status</name></member>
+    <member refid="classxthermo_1_1states_1_1EvaluationError_1acdd7013f1eadb0d26868b4c6c4292f0c" kind="variable"><name>inputs</name></member>
+    <member refid="classxthermo_1_1states_1_1EvaluationError_1a209f248a2ac4351fbae46c9ea7242a7e" kind="variable"><name>message</name></member>
+    <member refid="classxthermo_1_1states_1_1EvaluationError_1a9bae72cc9ecb1c2c15a0af29b5f5c00f" kind="function"><name>__init__</name></member>
   </compound>
   <compound refid="structevent" kind="struct"><name>event</name>
     <member refid="structevent_1a6344089925caf6f883be7f44f8f35d98" kind="variable"><name>xkey</name></member>
@@ -864,6 +874,8 @@
     <member refid="classIMPLEMENT__B_1_1implement__B_1aaa6325de6becfbd75fbdc1ca82c704d6" kind="function"><name>implement_B</name></member>
     <member refid="classIMPLEMENT__B_1_1implement__B_1ae695ff00d401d085680931b5f76b9d59" kind="function"><name>~implement_B</name></member>
     <member refid="classIMPLEMENT__B_1_1implement__B_1a4ed6fa87e571326edab308344f602963" kind="function"><name>calc_Tmax</name></member>
+  </compound>
+  <compound refid="classxthermo_1_1states_1_1InvalidInputError" kind="class"><name>xthermo::states::InvalidInputError</name>
   </compound>
   <compound refid="structLOOKUPTABLE__FOREST_1_1LeafQuad" kind="struct"><name>LOOKUPTABLE_FOREST::LeafQuad</name>
     <member refid="structLOOKUPTABLE__FOREST_1_1LeafQuad_1aa53852a2bf30f91a13738d92e046e6cd" kind="variable"><name>parent</name></member>
@@ -1055,6 +1067,10 @@
   <compound refid="structLOOKUPTABLE__FOREST_1_1NonLeafQuad" kind="struct"><name>LOOKUPTABLE_FOREST::NonLeafQuad</name>
     <member refid="structLOOKUPTABLE__FOREST_1_1NonLeafQuad_1a788d0302a0d6ffb0522d926962f5eca5" kind="variable"><name>children</name></member>
   </compound>
+  <compound refid="classxthermo_1_1states_1_1NotAvailableError" kind="class"><name>xthermo::states::NotAvailableError</name>
+  </compound>
+  <compound refid="classxthermo_1_1states_1_1NotConvergedError" kind="class"><name>xthermo::states::NotConvergedError</name>
+  </compound>
   <compound refid="structosub" kind="struct"><name>osub</name>
     <member refid="structosub_1ac8cba05ff0ad570decd4376b4916d150" kind="variable"><name>ss</name></member>
     <member refid="structosub_1aa9aac96631bf818c077048456dcf11ee" kind="variable"><name>ssorient</name></member>
@@ -1070,6 +1086,8 @@
     <member refid="classxThermal_1_1OuterEvaluation_1a0c40a7393a20d37c598f659fa89d7814" kind="function"><name>is_outer</name></member>
     <member refid="classxThermal_1_1OuterEvaluation_1aa1453c45b26f8eaac1bac04239553ff6" kind="function"><name>OuterEvaluation</name></member>
     <member refid="classxThermal_1_1OuterEvaluation_1a3308fdcf71d4d4b11ffca2b8d168c1bd" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="classxthermo_1_1states_1_1OutOfRangeError" kind="class"><name>xthermo::states::OutOfRangeError</name>
   </compound>
   <compound refid="structparams" kind="struct"><name>params</name>
     <member refid="structparams_1aa146c2aa436a2bd29d2dc2317a6ed75f" kind="variable"><name>a</name></member>
@@ -1288,6 +1306,35 @@
     <member refid="structxThermal_1_1IAPWS__IF97_1_1State__Region5_1a94568600d7eb3187577a4ffc0a37fcb5" kind="variable"><name>gammar</name></member>
     <member refid="structxThermal_1_1IAPWS__IF97_1_1State__Region5_1a97aee748c3e13ff78478dba0e4a4baa7" kind="variable"><name>gamma</name></member>
   </compound>
+  <compound refid="classxthermo_1_1states_1_1States" kind="class"><name>xthermo::states::States</name>
+    <member refid="classxthermo_1_1states_1_1States_1a727c50b68a41971fa1a3601cfbe505cc" kind="variable"><name>_raw</name></member>
+    <member refid="classxthermo_1_1states_1_1States_1ad64ffbc4a776fa790cd0771fbd57457d" kind="variable"><name>_model</name></member>
+    <member refid="classxthermo_1_1states_1_1States_1aa8bff31feb9d1f421ce8cde38a22e83b" kind="variable"><name>_absent</name></member>
+    <member refid="classxthermo_1_1states_1_1States_1a236b166f8e22653377a599fca8537639" kind="variable"><name>_cache</name></member>
+    <member refid="classxthermo_1_1states_1_1States_1ada197fdbc749786e947ac933550c6595" kind="variable"><name>shape</name></member>
+    <member refid="classxthermo_1_1states_1_1States_1a0cf11e79aab3d6ad8cb687fbd43263e8" kind="variable"><name>fluid</name></member>
+    <member refid="classxthermo_1_1states_1_1States_1aabf5aa9fae072716e51a604ebc00e4aa" kind="function"><name>__init__</name></member>
+    <member refid="classxthermo_1_1states_1_1States_1a37bbd666cf790c342ba25a053afd9e77" kind="function"><name>__getattr__</name></member>
+    <member refid="classxthermo_1_1states_1_1States_1a075f3696f8285fc3fc79b50bb289a015" kind="function"><name>__getitem__</name></member>
+    <member refid="classxthermo_1_1states_1_1States_1a55f58856835045754a20b8fb3825a53f" kind="function"><name>__dir__</name></member>
+    <member refid="classxthermo_1_1states_1_1States_1a18c47fd77d5670458bfdfc3598471445" kind="function"><name>__repr__</name></member>
+    <member refid="classxthermo_1_1states_1_1States_1a8bae7ea578e0e2f79cf2e69383bdc244" kind="function"><name>keys</name></member>
+    <member refid="classxthermo_1_1states_1_1States_1a6ab14f2e14470afc581e50acdefbd37d" kind="function"><name>ok</name></member>
+    <member refid="classxthermo_1_1states_1_1States_1a3d91e10f313a8ac34ee8d6c1160ef70d" kind="function"><name>has</name></member>
+    <member refid="classxthermo_1_1states_1_1States_1af37b0df5478bc836a647ac2522c0b0b2" kind="function"><name>phase_name</name></member>
+    <member refid="classxthermo_1_1states_1_1States_1a85b2bdcab9408303470145cc6fff6ee0" kind="function"><name>failures</name></member>
+    <member refid="classxthermo_1_1states_1_1States_1a3ababb7186fef5db336114de46b97aa5" kind="function"><name>_array</name></member>
+    <member refid="classxthermo_1_1states_1_1States_1ad2ebcd82b7ca3197cd8b0f57f221f97f" kind="function"><name>_get</name></member>
+    <member refid="classxthermo_1_1states_1_1States_1adcc5f2bb5f85a397df451a3657d57bba" kind="function"><name>_present</name></member>
+  </compound>
+  <compound refid="classxthermo_1_1states_1_1Status" kind="class"><name>xthermo::states::Status</name>
+    <member refid="classxthermo_1_1states_1_1Status_1ab829a2307d593b5c8aa4b3fdf760158d" kind="variable"><name>Ok</name></member>
+    <member refid="classxthermo_1_1states_1_1Status_1a43d0bdd34e4b2f8eac82364c22cc609d" kind="variable"><name>InvalidInput</name></member>
+    <member refid="classxthermo_1_1states_1_1Status_1a9e40d20c5f78446dc65dd39a417ab5b4" kind="variable"><name>OutOfRange</name></member>
+    <member refid="classxthermo_1_1states_1_1Status_1aea51d9bb29314a19a1b385a5bd0dba9b" kind="variable"><name>NotConverged</name></member>
+    <member refid="classxthermo_1_1states_1_1Status_1ad021ee128f102acb620be6a8032ff7f4" kind="variable"><name>NotAvailable</name></member>
+    <member refid="classxthermo_1_1states_1_1Status_1a34f859d7e369dfff15fd5b11abeb0d01" kind="variable"><name>Failed</name></member>
+  </compound>
   <compound refid="structxThermal_1_1IAPWS95_1_1STRUCT__delta__TwoPhase" kind="struct"><name>xThermal::IAPWS95::STRUCT_delta_TwoPhase</name>
     <member refid="structxThermal_1_1IAPWS95_1_1STRUCT__delta__TwoPhase_1a0d9a88d82c20029ce07f5918f213ab83" kind="variable"><name>delta_l</name></member>
     <member refid="structxThermal_1_1IAPWS95_1_1STRUCT__delta__TwoPhase_1a837055513cfcc19eef2c33e077528596" kind="variable"><name>delta_v</name></member>
@@ -1429,6 +1476,8 @@
     <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1abeb7e86cf7dcd2332b40c042b51006ce" kind="variable"><name>IsobaricExpansivity_l</name></member>
     <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a8d734a86c57daa556c592ea80796e19b" kind="variable"><name>IsobaricExpansivity_v</name></member>
     <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1ade1801996a1a3b6ab55ba7cc9f685b23" kind="variable"><name>fluidName</name></member>
+    <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1aa4f77962e960f249ab8361d87385cc6a" kind="variable"><name>status</name></member>
+    <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a700a03ed153cea6766aaf9a8aa80d280" kind="variable"><name>failed_message</name></member>
     <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a77134798cb1f9a29a7188fa76a736117" kind="friend"><name>operator&lt;&lt;</name></member>
     <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a81970e858102a5b93fa65575cdd54b57" kind="function"><name>write</name></member>
     <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a865b62e967cf76758897c862c231a616" kind="function"><name>write_vtk</name></member>
@@ -1578,6 +1627,8 @@
     <member refid="compare__VL_8py_1a648d4b88f862073f973dcccf6d6ca83c" kind="function"><name>benchmark_VL</name></member>
     <member refid="compare__VL_8py_1a6a1f78234b04a881618d6e533a54a117" kind="function"><name>calculate</name></member>
     <member refid="compare__VL_8py_1ad934b8d27486ef818dc516c6d81ca6c0" kind="function"><name>plot_diff</name></member>
+  </compound>
+  <compound refid="namespaceenum" kind="namespace"><name>enum</name>
   </compound>
   <compound refid="namespacehelpfunc" kind="namespace"><name>helpfunc</name>
     <member refid="namespacehelpfunc_1a450110f98c33d60eaedf63b99d3562c3" kind="function"><name>text3d</name></member>
@@ -1792,12 +1843,26 @@
   </compound>
   <compound refid="namespacexthermo" kind="namespace"><name>xthermo</name>
     <member refid="namespacexthermo_1a724b8f1e0c8780fee18e081b0e2f1287" kind="variable"><name>_PLOTTING</name></member>
+    <member refid="namespacexthermo_1a95061ad2b4ad2a22152589bdce72e270" kind="variable"><name>_STATES</name></member>
     <member refid="namespacexthermo_1a4a67c67e750161388b8fbf5ad3c3bb26" kind="function"><name>__getattr__</name></member>
   </compound>
   <compound refid="namespacexthermo_1_1plotting" kind="namespace"><name>xthermo::plotting</name>
     <member refid="namespacexthermo_1_1plotting_1a0b949f6b0b83663d65123a1fd17e7c65" kind="function"><name>makeLogLinearAxes</name></member>
     <member refid="namespacexthermo_1_1plotting_1a0ee926652a9abb1011988bdd60c2cbe5" kind="function"><name>createWaterAxes</name></member>
     <member refid="namespacexthermo_1_1plotting_1a68e220e1c9ec75fae208ee3ee4a07434" kind="function"><name>plot_Pslice</name></member>
+  </compound>
+  <compound refid="namespacexthermo_1_1states" kind="namespace"><name>xthermo::states</name>
+    <member refid="namespacexthermo_1_1states_1afc9c96bb3614a97ae1c34a2af44f1a55" kind="variable"><name>__all__</name></member>
+    <member refid="namespacexthermo_1_1states_1a48b23099ed1d2451255eec17bab41f97" kind="variable"><name>_ERRORS</name></member>
+    <member refid="namespacexthermo_1_1states_1a544167aa4222a4592e9ffa6f31e39452" kind="variable"><name>FIELDS</name></member>
+    <member refid="namespacexthermo_1_1states_1aabd8f77b05e359f279db5bc1ce0d4b9a" kind="variable"><name>_PRESENT</name></member>
+    <member refid="namespacexthermo_1_1states_1aa7fcfb1bb029cba3bf3020db30ae4804" kind="variable"><name>_NCODES</name></member>
+    <member refid="namespacexthermo_1_1states_1aa887c9656626ff8ad3c154c67da7e163" kind="variable"><name>_PRESENT_LUT</name></member>
+    <member refid="namespacexthermo_1_1states_1ad34009cd18a4309c92106c9435f0a9ed" kind="variable"><name>_SLOT</name></member>
+    <member refid="namespacexthermo_1_1states_1ab958bb79fe42688cbe31118f9d6284ab" kind="variable"><name>_PHASE_FIELDS</name></member>
+    <member refid="namespacexthermo_1_1states_1a9760c637323964ceabe73c3ddc1e1145" kind="function"><name>_evaluate</name></member>
+    <member refid="namespacexthermo_1_1states_1a2d6744546d07c229181f28085db0b3eb" kind="function"><name>tpx</name></member>
+    <member refid="namespacexthermo_1_1states_1a0ea6df731cdefc7cf12af7be26728472" kind="function"><name>hpx</name></member>
   </compound>
   <compound refid="LookUpTableForest_8h" kind="file"><name>LookUpTableForest.h</name>
     <member refid="LookUpTableForest_8h_1ae67018f71446d8f74d06f846eb0c46b3" kind="define"><name>MAX_FOREST_LEVEL</name></member>
@@ -1809,6 +1874,8 @@
   <compound refid="xthermo_2____init_____8py" kind="file"><name>__init__.py</name>
   </compound>
   <compound refid="plotting_8py" kind="file"><name>plotting.py</name>
+  </compound>
+  <compound refid="states_8py" kind="file"><name>states.py</name>
   </compound>
   <compound refid="compare__HPX_8m" kind="file"><name>compare_HPX.m</name>
     <member refid="compare__HPX_8m_1a67bbc066588a15ddd93c61146435246e" kind="variable"><name>Hmin</name></member>

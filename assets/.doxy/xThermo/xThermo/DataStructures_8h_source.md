@@ -406,6 +406,9 @@ namespace xThermal
         std::vector<double> IsothermalCompressibility, IsothermalCompressibility_l, IsothermalCompressibility_v;
         std::vector<double> IsobaricExpansivity, IsobaricExpansivity_l, IsobaricExpansivity_v;
         std::string fluidName;
+        // batch evaluation (cxThermal::evaluate_TPX / evaluate_HPX) only, empty otherwise
+        std::vector<int> status;                  // EvaluationStatus of each point (0 = Ok)
+        std::vector<std::string> failed_message;  // messages of the failed points (status != 0), in index order
         // std out
         friend std::ostream& operator<<(std::ostream& os, const ThermodynamicPropertiesVector& self) {
             std::stringstream sin;

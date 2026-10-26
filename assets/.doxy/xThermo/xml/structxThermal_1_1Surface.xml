@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="901" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="901" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="904" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="904" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1Surface_1ad3170b4495895edcf29ca895ac2cccbf" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="901" column="26" bodyfile="Library/thermo/DataStructures.h" bodystart="901" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="904" column="26" bodyfile="Library/thermo/DataStructures.h" bodystart="904" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1Surface_1a57e3c1a2555d847e034ba973f4ffacc3" prot="public" static="no" mutable="no">
         <type><ref refid="structxThermal_1_1DeformLinearMesh" kindref="compound">DeformLinearMesh</ref></type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="902" column="26" bodyfile="Library/thermo/DataStructures.h" bodystart="902" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="905" column="26" bodyfile="Library/thermo/DataStructures.h" bodystart="905" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1Surface_1a6625b73b3ef0ff46d43e8fdc6a62d1ea" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="903" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="903" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="906" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="906" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -79,7 +79,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Library/thermo/DataStructures.h" line="899" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="900" bodyend="904"/>
+    <location file="Library/thermo/DataStructures.h" line="902" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="903" bodyend="907"/>
     <listofallmembers>
       <member refid="structxThermal_1_1Surface_1a6625b73b3ef0ff46d43e8fdc6a62d1ea" prot="public" virt="non-virtual"><scope>xThermal::Surface</scope><name>color</name></member>
       <member refid="structxThermal_1_1Surface_1a57e3c1a2555d847e034ba973f4ffacc3" prot="public" virt="non-virtual"><scope>xThermal::Surface</scope><name>mesh</name></member>

@@ -35,6 +35,7 @@ Here are the classes, structs, unions and interfaces with brief descriptions:
 * **class** [**cExample**](classcExample.md)     
 * **class** [**cExample\_generic**](classcExample__generic.md)     
 * **namespace** [**compare\_VL**](namespacecompare__VL.md)     
+* **namespace** [**enum**](namespaceenum.md) 
 * **struct** [**event**](structevent.md)     
 * **struct** [**flipstacker**](structflipstacker.md)     
 * **namespace** [**helpfunc**](namespacehelpfunc.md)     
@@ -133,4 +134,12 @@ Here are the classes, structs, unions and interfaces with brief descriptions:
 * **struct** [**Table34**](structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Table34.md) _Table 34 of IF97 for saturation curve calculation._     
 * **namespace** [**xthermo**](namespacexthermo.md)     
     * **namespace** [**plotting**](namespacexthermo_1_1plotting.md)     
+    * **namespace** [**states**](namespacexthermo_1_1states.md)     
+        * **class** [**EvaluationError**](classxthermo_1_1states_1_1EvaluationError.md)     
+        * **class** [**InvalidInputError**](classxthermo_1_1states_1_1InvalidInputError.md) 
+        * **class** [**NotAvailableError**](classxthermo_1_1states_1_1NotAvailableError.md) 
+        * **class** [**NotConvergedError**](classxthermo_1_1states_1_1NotConvergedError.md) 
+        * **class** [**OutOfRangeError**](classxthermo_1_1states_1_1OutOfRangeError.md) 
+        * **class** [**States**](classxthermo_1_1states_1_1States.md)     
+        * **class** [**Status**](classxthermo_1_1states_1_1Status.md)     
 

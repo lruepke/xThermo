@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="1032" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1032" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="1035" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1035" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1Polygon__slice_1a8ca0e363ca255f746bfbfcec533263b4" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="1032" column="22" bodyfile="Library/thermo/DataStructures.h" bodystart="1032" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="1035" column="22" bodyfile="Library/thermo/DataStructures.h" bodystart="1035" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1Polygon__slice_1aa98a04f16f4c88eb2a05ee92c04f014b" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="1032" column="23" bodyfile="Library/thermo/DataStructures.h" bodystart="1032" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="1035" column="23" bodyfile="Library/thermo/DataStructures.h" bodystart="1035" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1Polygon__slice_1a477660befe34b2464436cd970aaac517" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="1032" column="24" bodyfile="Library/thermo/DataStructures.h" bodystart="1032" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="1035" column="24" bodyfile="Library/thermo/DataStructures.h" bodystart="1035" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1Polygon__slice_1a08ea4b1bb8931c430c29f080de95ee94" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -71,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="1033" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1033" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="1036" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1036" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1Polygon__slice_1abb61ede81e9092234dcaf2aafe6a6d6f" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
@@ -85,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="1034" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1034" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="1037" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1037" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structxThermal_1_1Polygon__slice_1a1259b3eb2f75883515115c932950c318" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">double</ref> &gt;</type>
@@ -99,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="1035" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1035" bodyend="-1"/>
+        <location file="Library/thermo/DataStructures.h" line="1038" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1038" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="1036" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="1036" bodyend="1036"/>
+        <location file="Library/thermo/DataStructures.h" line="1039" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="1039" bodyend="1039"/>
       </memberdef>
       <memberdef kind="function" id="structxThermal_1_1Polygon__slice_1a3e0aed160907df9ed9e72cc5b6dbc24a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -157,7 +157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="1037" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="1037" bodyend="1041"/>
+        <location file="Library/thermo/DataStructures.h" line="1040" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="1040" bodyend="1044"/>
       </memberdef>
       <memberdef kind="function" id="structxThermal_1_1Polygon__slice_1aa3e75a4601341bbb9c2f0660df8351f4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
@@ -175,7 +175,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="1042" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="1042" bodyend="1042"/>
+        <location file="Library/thermo/DataStructures.h" line="1045" column="9" bodyfile="Library/thermo/DataStructures.h" bodystart="1045" bodyend="1045"/>
       </memberdef>
       <memberdef kind="function" id="structxThermal_1_1Polygon__slice_1a907c58261081245f497a8b57cfa26824" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">bool</ref></type>
@@ -193,7 +193,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="1043" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="1043" bodyend="1043"/>
+        <location file="Library/thermo/DataStructures.h" line="1046" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="1046" bodyend="1046"/>
       </memberdef>
       <memberdef kind="function" id="structxThermal_1_1Polygon__slice_1afa378b4f68cea21c65336f824c9bd376" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string</type>
@@ -211,7 +211,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="1058" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1058" bodyend="1063"/>
+        <location file="Library/thermo/DataStructures.h" line="1061" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="1061" bodyend="1066"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="friend">
@@ -235,14 +235,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="1045" column="16" bodyfile="Library/thermo/DataStructures.h" bodystart="1045" bodyend="1056"/>
+        <location file="Library/thermo/DataStructures.h" line="1048" column="16" bodyfile="Library/thermo/DataStructures.h" bodystart="1048" bodyend="1059"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Library/thermo/DataStructures.h" line="1030" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="1031" bodyend="1064"/>
+    <location file="Library/thermo/DataStructures.h" line="1033" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="1034" bodyend="1067"/>
     <listofallmembers>
       <member refid="structxThermal_1_1Polygon__slice_1a1259b3eb2f75883515115c932950c318" prot="public" virt="non-virtual"><scope>xThermal::Polygon_slice</scope><name>ec</name></member>
       <member refid="structxThermal_1_1Polygon__slice_1abb61ede81e9092234dcaf2aafe6a6d6f" prot="public" virt="non-virtual"><scope>xThermal::Polygon_slice</scope><name>fc</name></member>

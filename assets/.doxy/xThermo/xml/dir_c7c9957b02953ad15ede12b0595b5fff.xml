@@ -4,6 +4,7 @@
     <compoundname>Library/API/python/xthermo</compoundname>
     <innerfile refid="xthermo_2____init_____8py">__init__.py</innerfile>
     <innerfile refid="plotting_8py">plotting.py</innerfile>
+    <innerfile refid="states_8py">states.py</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

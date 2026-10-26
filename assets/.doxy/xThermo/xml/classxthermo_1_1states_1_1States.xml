@@ -1,0 +1,415 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classxthermo_1_1states_1_1States" kind="class" language="Python" prot="public">
+    <compoundname>xthermo::states::States</compoundname>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classxthermo_1_1states_1_1States_1a727c50b68a41971fa1a3601cfbe505cc" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>xthermo.states.States::_raw</definition>
+        <argsstring></argsstring>
+        <name>_raw</name>
+        <qualifiedname>xthermo.states.States._raw</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="91" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxthermo_1_1states_1_1States_1ad64ffbc4a776fa790cd0771fbd57457d" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>xthermo.states.States::_model</definition>
+        <argsstring></argsstring>
+        <name>_model</name>
+        <qualifiedname>xthermo.states.States._model</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="91" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxthermo_1_1states_1_1States_1aa8bff31feb9d1f421ce8cde38a22e83b" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>xthermo.states.States::_absent</definition>
+        <argsstring></argsstring>
+        <name>_absent</name>
+        <qualifiedname>xthermo.states.States._absent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="91" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxthermo_1_1states_1_1States_1a236b166f8e22653377a599fca8537639" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>xthermo.states.States::_cache</definition>
+        <argsstring></argsstring>
+        <name>_cache</name>
+        <qualifiedname>xthermo.states.States._cache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="91" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="91" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classxthermo_1_1states_1_1States_1ada197fdbc749786e947ac933550c6595" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>xthermo.states.States::shape</definition>
+        <argsstring></argsstring>
+        <name>shape</name>
+        <qualifiedname>xthermo.states.States.shape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="91" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classxthermo_1_1states_1_1States_1a0cf11e79aab3d6ad8cb687fbd43263e8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>xthermo.states.States::fluid</definition>
+        <argsstring></argsstring>
+        <name>fluid</name>
+        <qualifiedname>xthermo.states.States.fluid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="92" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="92" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classxthermo_1_1states_1_1States_1aabf5aa9fae072716e51a604ebc00e4aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xthermo.states.States.__init__</definition>
+        <argsstring>(self, raw, model, shape, absent)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>xthermo.states.States.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>raw</type>
+          <defname>raw</defname>
+        </param>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <param>
+          <type>shape</type>
+          <defname>shape</defname>
+        </param>
+        <param>
+          <type>absent</type>
+          <defname>absent</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="90" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classxthermo_1_1states_1_1States_1a37bbd666cf790c342ba25a053afd9e77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xthermo.states.States.__getattr__</definition>
+        <argsstring>(self, name)</argsstring>
+        <name>__getattr__</name>
+        <qualifiedname>xthermo.states.States.__getattr__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="120" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="120" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classxthermo_1_1states_1_1States_1a075f3696f8285fc3fc79b50bb289a015" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xthermo.states.States.__getitem__</definition>
+        <argsstring>(self, name)</argsstring>
+        <name>__getitem__</name>
+        <qualifiedname>xthermo.states.States.__getitem__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="128" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="128" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classxthermo_1_1states_1_1States_1a55f58856835045754a20b8fb3825a53f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xthermo.states.States.__dir__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__dir__</name>
+        <qualifiedname>xthermo.states.States.__dir__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="131" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="131" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classxthermo_1_1states_1_1States_1a18c47fd77d5670458bfdfc3598471445" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xthermo.states.States.__repr__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__repr__</name>
+        <qualifiedname>xthermo.states.States.__repr__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="134" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="134" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classxthermo_1_1states_1_1States_1a8bae7ea578e0e2f79cf2e69383bdc244" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xthermo.states.States.keys</definition>
+        <argsstring>(self)</argsstring>
+        <name>keys</name>
+        <qualifiedname>xthermo.states.States.keys</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="137" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="137" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classxthermo_1_1states_1_1States_1a6ab14f2e14470afc581e50acdefbd37d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xthermo.states.States.ok</definition>
+        <argsstring>(self)</argsstring>
+        <name>ok</name>
+        <qualifiedname>xthermo.states.States.ok</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="141" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="141" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classxthermo_1_1states_1_1States_1a3d91e10f313a8ac34ee8d6c1160ef70d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xthermo.states.States.has</definition>
+        <argsstring>(self, phase)</argsstring>
+        <name>has</name>
+        <qualifiedname>xthermo.states.States.has</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>phase</type>
+          <defname>phase</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Mask: the phase (&quot;liquid&quot;, &quot;vapour&quot;/&quot;vapor&quot;, &quot;halite&quot;) is present at an evaluated point.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="148" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="148" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classxthermo_1_1states_1_1States_1af37b0df5478bc836a647ac2522c0b0b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xthermo.states.States.phase_name</definition>
+        <argsstring>(self)</argsstring>
+        <name>phase_name</name>
+        <qualifiedname>xthermo.states.States.phase_name</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="156" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="156" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classxthermo_1_1states_1_1States_1a85b2bdcab9408303470145cc6fff6ee0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xthermo.states.States.failures</definition>
+        <argsstring>(self)</argsstring>
+        <name>failures</name>
+        <qualifiedname>xthermo.states.States.failures</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="165" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="165" bodyend="171"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classxthermo_1_1states_1_1States_1a3ababb7186fef5db336114de46b97aa5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xthermo.states.States._array</definition>
+        <argsstring>(self, name, dtype)</argsstring>
+        <name>_array</name>
+        <qualifiedname>xthermo.states.States._array</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>dtype</type>
+          <defname>dtype</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="94" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="94" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classxthermo_1_1states_1_1States_1ad2ebcd82b7ca3197cd8b0f57f221f97f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xthermo.states.States._get</definition>
+        <argsstring>(self, name)</argsstring>
+        <name>_get</name>
+        <qualifiedname>xthermo.states.States._get</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="102" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="102" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classxthermo_1_1states_1_1States_1adcc5f2bb5f85a397df451a3657d57bba" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>xthermo.states.States._present</definition>
+        <argsstring>(self, slot)</argsstring>
+        <name>_present</name>
+        <qualifiedname>xthermo.states.States._present</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>slot</type>
+          <defname>slot</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/API/python/xthermo/states.py" line="144" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="144" bodyend="147"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>States with the shape of the broadcast inputs (attribute access s.Rho or mapping access s[&quot;Rho&quot;]).
+
+Fields: the members of ThermodynamicProperties (SI units), as NumPy arrays converted on first access, with the
+library&apos;s values and conventions (DataStructures.h). Also:
+  phase       PhaseRegion code per point; phase_name its name (model.phase_name)
+  status      Status per point (an int array; a Status for scalar inputs); ok = status == Status.Ok
+  failures    [(index, Status, message)] for the failed points
+  has(phase)  &quot;liquid&quot;, &quot;vapour&quot; or &quot;halite&quot; present at an evaluated point
+A failed point has NaN numbers (its inputs are kept) and phase Unknown. With absent=&quot;nan&quot;, the fields of a phase
+that is absent at a point (Rho_v, Mu_v, X_v, ... without vapour) are NaN instead of the library&apos;s 0; bulk fields
+and saturations are never changed. The pure NaCl model reports its properties in the bulk fields only.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="Library/API/python/xthermo/states.py" line="76" column="1" bodyfile="Library/API/python/xthermo/states.py" bodystart="76" bodyend="171"/>
+    <listofallmembers>
+      <member refid="classxthermo_1_1states_1_1States_1a55f58856835045754a20b8fb3825a53f" prot="public" virt="non-virtual"><scope>xthermo::states::States</scope><name>__dir__</name></member>
+      <member refid="classxthermo_1_1states_1_1States_1a37bbd666cf790c342ba25a053afd9e77" prot="public" virt="non-virtual"><scope>xthermo::states::States</scope><name>__getattr__</name></member>
+      <member refid="classxthermo_1_1states_1_1States_1a075f3696f8285fc3fc79b50bb289a015" prot="public" virt="non-virtual"><scope>xthermo::states::States</scope><name>__getitem__</name></member>
+      <member refid="classxthermo_1_1states_1_1States_1aabf5aa9fae072716e51a604ebc00e4aa" prot="public" virt="non-virtual"><scope>xthermo::states::States</scope><name>__init__</name></member>
+      <member refid="classxthermo_1_1states_1_1States_1a18c47fd77d5670458bfdfc3598471445" prot="public" virt="non-virtual"><scope>xthermo::states::States</scope><name>__repr__</name></member>
+      <member refid="classxthermo_1_1states_1_1States_1aa8bff31feb9d1f421ce8cde38a22e83b" prot="protected" virt="non-virtual"><scope>xthermo::states::States</scope><name>_absent</name></member>
+      <member refid="classxthermo_1_1states_1_1States_1a3ababb7186fef5db336114de46b97aa5" prot="protected" virt="non-virtual"><scope>xthermo::states::States</scope><name>_array</name></member>
+      <member refid="classxthermo_1_1states_1_1States_1a236b166f8e22653377a599fca8537639" prot="protected" virt="non-virtual"><scope>xthermo::states::States</scope><name>_cache</name></member>
+      <member refid="classxthermo_1_1states_1_1States_1ad2ebcd82b7ca3197cd8b0f57f221f97f" prot="protected" virt="non-virtual"><scope>xthermo::states::States</scope><name>_get</name></member>
+      <member refid="classxthermo_1_1states_1_1States_1ad64ffbc4a776fa790cd0771fbd57457d" prot="protected" virt="non-virtual"><scope>xthermo::states::States</scope><name>_model</name></member>
+      <member refid="classxthermo_1_1states_1_1States_1adcc5f2bb5f85a397df451a3657d57bba" prot="protected" virt="non-virtual"><scope>xthermo::states::States</scope><name>_present</name></member>
+      <member refid="classxthermo_1_1states_1_1States_1a727c50b68a41971fa1a3601cfbe505cc" prot="protected" virt="non-virtual"><scope>xthermo::states::States</scope><name>_raw</name></member>
+      <member refid="classxthermo_1_1states_1_1States_1a85b2bdcab9408303470145cc6fff6ee0" prot="public" virt="non-virtual"><scope>xthermo::states::States</scope><name>failures</name></member>
+      <member refid="classxthermo_1_1states_1_1States_1a0cf11e79aab3d6ad8cb687fbd43263e8" prot="public" virt="non-virtual"><scope>xthermo::states::States</scope><name>fluid</name></member>
+      <member refid="classxthermo_1_1states_1_1States_1a3d91e10f313a8ac34ee8d6c1160ef70d" prot="public" virt="non-virtual"><scope>xthermo::states::States</scope><name>has</name></member>
+      <member refid="classxthermo_1_1states_1_1States_1a8bae7ea578e0e2f79cf2e69383bdc244" prot="public" virt="non-virtual"><scope>xthermo::states::States</scope><name>keys</name></member>
+      <member refid="classxthermo_1_1states_1_1States_1a6ab14f2e14470afc581e50acdefbd37d" prot="public" virt="non-virtual"><scope>xthermo::states::States</scope><name>ok</name></member>
+      <member refid="classxthermo_1_1states_1_1States_1af37b0df5478bc836a647ac2522c0b0b2" prot="public" virt="non-virtual"><scope>xthermo::states::States</scope><name>phase_name</name></member>
+      <member refid="classxthermo_1_1states_1_1States_1ada197fdbc749786e947ac933550c6595" prot="public" virt="non-virtual"><scope>xthermo::states::States</scope><name>shape</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -12,6 +12,7 @@ Here is a list of all namespaces with brief descriptions:
 * **namespace** [**PhaseDiagramSlice**](namespacePhaseDiagramSlice.md)     
 * **namespace** [**TEST\_SWIG**](namespaceTEST__SWIG.md)     
 * **namespace** [**compare\_VL**](namespacecompare__VL.md)     
+* **namespace** [**enum**](namespaceenum.md) 
 * **namespace** [**helpfunc**](namespacehelpfunc.md)     
 * **namespace** [**std**](namespacestd.md) 
 * **namespace** [**test**](namespacetest.md) 
@@ -26,4 +27,5 @@ Here is a list of all namespaces with brief descriptions:
     * **namespace** [**gsl\_guard**](namespacexThermal_1_1gsl__guard.md)     
 * **namespace** [**xthermo**](namespacexthermo.md)     
     * **namespace** [**plotting**](namespacexthermo_1_1plotting.md)     
+    * **namespace** [**states**](namespacexthermo_1_1states.md)     
 

@@ -85,6 +85,8 @@ Inherited by the following classes: [xThermal::H2ONaCl::cH2ONaCl](classxThermal_
 | virtual [**void**](classxThermal_1_1xThermalError.md) | [**createLUT\_3D**](#function-createlut_3d-12) ([**double**](classxThermal_1_1xThermalError.md) xyz\_min, [**double**](classxThermal_1_1xThermalError.md) xyz\_max, LOOKUPTABLE\_FOREST::EOS\_ENERGY TorH, [**int**](classxThermal_1_1xThermalError.md) min\_level=4, [**int**](classxThermal_1_1xThermalError.md) max\_level=6, [**int**](classxThermal_1_1xThermalError.md) update\_which\_props=0) <br> |
 | virtual [**void**](classxThermal_1_1xThermalError.md) | [**createLUT\_3D**](#function-createlut_3d-22) ([**double**](classxThermal_1_1xThermalError.md) xmin, [**double**](classxThermal_1_1xThermalError.md) xmax, [**double**](classxThermal_1_1xThermalError.md) ymin, [**double**](classxThermal_1_1xThermalError.md) ymax, [**double**](classxThermal_1_1xThermalError.md) zmin, [**double**](classxThermal_1_1xThermalError.md) zmax, LOOKUPTABLE\_FOREST::EOS\_ENERGY TorH, [**int**](classxThermal_1_1xThermalError.md) min\_level=4, [**int**](classxThermal_1_1xThermalError.md) max\_level=6, [**int**](classxThermal_1_1xThermalError.md) update\_which\_props=0) <br> |
 |   | [**cxThermal**](#function-cxthermal) () <br> |
+|  [**ThermodynamicPropertiesVector**](structxThermal_1_1ThermodynamicPropertiesVector.md) | [**evaluate\_HPX**](#function-evaluate_hpx) ([**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & H, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & p, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & X) <br>_Batch H-P-X evaluation; as evaluate\_TPX, with tryUpdateState\_HPX per point._  |
+|  [**ThermodynamicPropertiesVector**](structxThermal_1_1ThermodynamicPropertiesVector.md) | [**evaluate\_TPX**](#function-evaluate_tpx) ([**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & T, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & p, [**const**](classxThermal_1_1xThermalError.md) std::vector&lt; [**double**](classxThermal_1_1xThermalError.md) &gt; & X) <br>_Batch evaluation for array interfaces: point i is (T[i], p[i], X[i]); the inputs have equal lengths._  |
 | virtual [**PhaseRegion**](namespacexThermal.md#enum-phaseregion) | [**findPhaseRegion\_TPX**](#function-findphaseregion_tpx) ([**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & T, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & p, [**const**](classxThermal_1_1xThermalError.md) [**double**](classxThermal_1_1xThermalError.md) & X=0) <br> |
 |  [**Head\_AMR\_LUT**](structxThermal_1_1Head__AMR__LUT.md) | [**getLutInfo**](#function-getlutinfo) (std::string file\_lut, [**bool**](classxThermal_1_1xThermalError.md) printSummary=[**true**](classxThermal_1_1xThermalError.md)) <br> |
 | virtual [**const**](classxThermal_1_1xThermalError.md) std::map&lt; [**int**](classxThermal_1_1xThermalError.md), [**propInfo**](structxThermal_1_1propInfo.md) &gt; & | [**get\_UpdateWhichProps**](#function-get_updatewhichprops) () <br> |
@@ -792,6 +794,46 @@ xThermal::cxThermal::cxThermal ()
 
 
 
+
+<hr>
+
+
+
+### function evaluate\_HPX 
+
+_Batch H-P-X evaluation; as evaluate\_TPX, with tryUpdateState\_HPX per point._ 
+```C++
+ThermodynamicPropertiesVector xThermal::cxThermal::evaluate_HPX (
+    const std::vector< double > & H,
+    const std::vector< double > & p,
+    const std::vector< double > & X
+) 
+```
+
+
+
+
+<hr>
+
+
+
+### function evaluate\_TPX 
+
+_Batch evaluation for array interfaces: point i is (T[i], p[i], X[i]); the inputs have equal lengths._ 
+```C++
+ThermodynamicPropertiesVector xThermal::cxThermal::evaluate_TPX (
+    const std::vector< double > & T,
+    const std::vector< double > & p,
+    const std::vector< double > & X
+) 
+```
+
+
+
+[**Point**](structxThermal_1_1Point.md) i of the result is the result of tryUpdateState\_TPX for point i: evaluation failures do not throw, status[i] is the EvaluationStatus (0 = Ok), a failed point holds no result (inputs kept, other numbers NaN, phase Unknown), and failed\_message lists the messages of the failed points in index order. Exceptions that are not evaluation failures propagate, as from tryUpdateState\_TPX. Unequal lengths: InputError. Uses the internal OpenMP evaluation when it is enabled (set\_num\_threads). 
+
+
+        
 
 <hr>
 

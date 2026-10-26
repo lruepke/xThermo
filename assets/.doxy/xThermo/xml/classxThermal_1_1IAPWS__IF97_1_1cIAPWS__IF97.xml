@@ -1633,6 +1633,8 @@ Calculate temperature in region 2a by given P and H</para>
       <member refid="classxThermal_1_1cxThermal_1a35bccaf5cb9424b49117a7c288d5c510" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>createLUT_3D</name></member>
       <member refid="classxThermal_1_1cxThermal_1a2418e46cbd79082d3bda94bdec850cab" prot="protected" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>createWorker</name></member>
       <member refid="classxThermal_1_1cxThermal_1a2314586579c4061048c886be74236db7" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>cxThermal</name></member>
+      <member refid="classxThermal_1_1cxThermal_1af8fbaee0734af083129be02ab5cf0abe" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>evaluate_HPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a528d87134d49df18fe96f65602c99f62" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>evaluate_TPX</name></member>
       <member refid="classxThermal_1_1cxThermal_1a056253dca6d9635e19acc2380f7f682e" prot="public" virt="virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>findPhaseRegion_TPX</name></member>
       <member refid="classxThermal_1_1cxThermal_1a1fadd87926ebe880d3273ea3b2a930f6" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>get_dim_lut</name></member>
       <member refid="classxThermal_1_1cxThermal_1a5004c02f781d224121fed323d2e7fdb6" prot="public" virt="non-virtual"><scope>xThermal::IAPWS_IF97::cIAPWS_IF97</scope><name>get_dim_lut_lookup</name></member>

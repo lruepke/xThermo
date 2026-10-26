@@ -15,6 +15,10 @@ Modules: xthermo.H2ONaCl (cH2ONaCl), xthermo.H2O (cIAPS84, cIAPWS95), xthermo.Na
 loads these compiled modules and nothing else: no model is constructed and matplotlib is not imported. The plotting
 helpers are in xthermo.plotting (requires matplotlib); xthermo.plot_Pslice etc. import it on first use.
 
+NumPy interface: xthermo.tpx(model, T, p, X) and xthermo.hpx(model, H, p, X) evaluate states on broadcast arrays and
+return xthermo.States (see xthermo.states); xthermo.Status and the EvaluationError classes belong to it. They are
+imported on first use, so "import xthermo" does not import numpy.
+
 The former package name xThermal remains available: "from xThermal import H2ONaCl" gives the same modules.
 """
 from ._version import __version__
@@ -26,12 +30,17 @@ from . import H2ONaCl
 from . import H2O, NaCl
 
 _PLOTTING = ("makeLogLinearAxes", "createWaterAxes", "plot_Pslice")
+_STATES = ("tpx", "hpx", "States", "Status", "EvaluationError", "InvalidInputError", "OutOfRangeError",
+           "NotConvergedError", "NotAvailableError")
 
 
-def __getattr__(name):   # plotting helpers formerly defined in the package itself, imported on first use (PEP 562)
+def __getattr__(name):   # imported on first use (PEP 562): the plotting helpers (matplotlib) and the NumPy interface
     if name in _PLOTTING:
         from . import plotting
         return getattr(plotting, name)
+    if name in _STATES:
+        from . import states
+        return getattr(states, name)
     raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
 ```
 

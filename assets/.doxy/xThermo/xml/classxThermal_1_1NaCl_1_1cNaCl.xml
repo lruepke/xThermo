@@ -1864,7 +1864,7 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="140" column="13" bodyfile="Library/thermo/thermo.h" bodystart="150" bodyend="150"/>
+        <location file="Library/NaCl/NaCl.h" line="140" column="13" bodyfile="Library/thermo/thermo.h" bodystart="151" bodyend="151"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1afe86ef340ece855c4aa01ed160aa5e2c" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type><ref refid="structxThermal_1_1ThermodynamicPropertiesVector" kindref="compound">ThermodynamicPropertiesVector</ref></type>
@@ -1896,7 +1896,7 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="140" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1426" bodyend="1456"/>
+        <location file="Library/NaCl/NaCl.h" line="140" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1457" bodyend="1487"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a929aa6a64ac637437b0a409ffa379aab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -1932,7 +1932,7 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="140" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1662" bodyend="1672"/>
+        <location file="Library/NaCl/NaCl.h" line="140" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1693" bodyend="1703"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a89ce494a32e38aafb64abd36fdf67229" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
@@ -1991,7 +1991,7 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="141" column="13" bodyfile="Library/thermo/thermo.h" bodystart="151" bodyend="151"/>
+        <location file="Library/NaCl/NaCl.h" line="141" column="13" bodyfile="Library/thermo/thermo.h" bodystart="152" bodyend="152"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a5c0e0ff376db670fffd97808b39eb1a0" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type><ref refid="structxThermal_1_1ThermodynamicPropertiesVector" kindref="compound">ThermodynamicPropertiesVector</ref></type>
@@ -2023,7 +2023,7 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="141" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1458" bodyend="1487"/>
+        <location file="Library/NaCl/NaCl.h" line="141" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1489" bodyend="1518"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a7a9db3f1c95f91044b59478cef3c5a14" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -2059,7 +2059,7 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/NaCl/NaCl.h" line="141" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1674" bodyend="1683"/>
+        <location file="Library/NaCl/NaCl.h" line="141" column="13" bodyfile="Library/thermo/thermo.cpp" bodystart="1705" bodyend="1714"/>
       </memberdef>
       <memberdef kind="function" id="classxThermal_1_1NaCl_1_1cNaCl_1a889b6fb0deadb20dacd44338a1c4a144" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structxThermal_1_1ThermodynamicProperties" kindref="compound">ThermodynamicProperties</ref></type>
@@ -2168,6 +2168,8 @@ We easily calculate the constant C(P) once get <formula id="252">$ H_h $</formul
       <member refid="classxThermal_1_1cxThermal_1a2314586579c4061048c886be74236db7" prot="public" virt="non-virtual"><scope>xThermal::NaCl::cNaCl</scope><name>cxThermal</name></member>
       <member refid="classxThermal_1_1NaCl_1_1cNaCl_1a3d1f91e2a01dd96e431486a97d1d4356" prot="private" virt="non-virtual"><scope>xThermal::NaCl::cNaCl</scope><name>DeltaH_fus</name></member>
       <member refid="classxThermal_1_1NaCl_1_1cNaCl_1ab818dd31e96b2194a2c218c137345054" prot="public" virt="non-virtual"><scope>xThermal::NaCl::cNaCl</scope><name>DeltaH_fus</name></member>
+      <member refid="classxThermal_1_1cxThermal_1af8fbaee0734af083129be02ab5cf0abe" prot="public" virt="non-virtual"><scope>xThermal::NaCl::cNaCl</scope><name>evaluate_HPX</name></member>
+      <member refid="classxThermal_1_1cxThermal_1a528d87134d49df18fe96f65602c99f62" prot="public" virt="non-virtual"><scope>xThermal::NaCl::cNaCl</scope><name>evaluate_TPX</name></member>
       <member refid="classxThermal_1_1cxThermal_1a056253dca6d9635e19acc2380f7f682e" prot="public" virt="virtual"><scope>xThermal::NaCl::cNaCl</scope><name>findPhaseRegion_TPX</name></member>
       <member refid="classxThermal_1_1cxThermal_1a1fadd87926ebe880d3273ea3b2a930f6" prot="public" virt="non-virtual"><scope>xThermal::NaCl::cNaCl</scope><name>get_dim_lut</name></member>
       <member refid="classxThermal_1_1cxThermal_1a5004c02f781d224121fed323d2e7fdb6" prot="public" virt="non-virtual"><scope>xThermal::NaCl::cNaCl</scope><name>get_dim_lut_lookup</name></member>

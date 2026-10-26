@@ -1500,6 +1500,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#variable-failed_message" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        variable failed_message
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#variable-fluidname" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1526,6 +1537,17 @@
     <span class="md-ellipsis">
       
         variable phase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        variable status
       
     </span>
   </a>
@@ -1816,6 +1838,10 @@
 <td style="text-align: left;"><a href="#variable-drhodt_v"><strong>dRhodT_v</strong></a>  <br></td>
 </tr>
 <tr>
+<td style="text-align: right;">std::vector&lt; std::string &gt;</td>
+<td style="text-align: left;"><a href="#variable-failed_message"><strong>failed_message</strong></a>  <br></td>
+</tr>
+<tr>
 <td style="text-align: right;">std::string</td>
 <td style="text-align: left;"><a href="#variable-fluidname"><strong>fluidName</strong></a>  <br></td>
 </tr>
@@ -1826,6 +1852,10 @@
 <tr>
 <td style="text-align: right;">std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>int</strong></a> &gt;</td>
 <td style="text-align: left;"><a href="#variable-phase"><strong>phase</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">std::vector&lt; <a href="../classxThermal_1_1xThermalError/"><strong>int</strong></a> &gt;</td>
+<td style="text-align: left;"><a href="#variable-status"><strong>status</strong></a>  <br></td>
 </tr>
 </tbody>
 </table>
@@ -2035,76 +2065,86 @@
 </code></pre></div>
 <hr>
 
+<h3 id="variable-failed_message">variable failed_message</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicPropertiesVector</span><span class="o">::</span><span class="n">failed_message</span><span class="p">;</span>
+</code></pre></div>
+<hr>
+
 <h3 id="variable-fluidname">variable fluidName</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicPropertiesVector</span><span class="o">::</span><span class="n">fluidName</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicPropertiesVector</span><span class="o">::</span><span class="n">fluidName</span><span class="p">;</span>
 </code></pre></div>
 <hr>
 
 <h3 id="variable-p">variable p</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicPropertiesVector</span><span class="o">::</span><span class="n">p</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicPropertiesVector</span><span class="o">::</span><span class="n">p</span><span class="p">;</span>
 </code></pre></div>
 <hr>
 
 <h3 id="variable-phase">variable phase</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicPropertiesVector</span><span class="o">::</span><span class="n">phase</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicPropertiesVector</span><span class="o">::</span><span class="n">phase</span><span class="p">;</span>
+</code></pre></div>
+<hr>
+
+<h3 id="variable-status">variable status</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicPropertiesVector</span><span class="o">::</span><span class="n">status</span><span class="p">;</span>
 </code></pre></div>
 <hr>
 <h2 id="public-functions-documentation">Public Functions Documentation</h2>
 <h3 id="function-fill">function fill</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicPropertiesVector</span><span class="o">::</span><span class="n">fill</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="n">ThermodynamicProperties</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">props</span><span class="p">,</span>
-<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">size_t</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">i</span>
-<a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicPropertiesVector</span><span class="o">::</span><span class="n">fill</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="n">ThermodynamicProperties</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">props</span><span class="p">,</span>
+<a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="kt">size_t</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">i</span>
+<a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a><span class="p">)</span><span class="w"> </span>
 </code></pre></div>
 <hr>
 
 <h3 id="function-info">function info</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicPropertiesVector</span><span class="o">::</span><span class="n">info</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="n">ThermodynamicPropertiesVector</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">self</span>
-<a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a><span class="p">)</span><span class="w"> </span>
-</code></pre></div>
-<hr>
-
-<h3 id="function-resize">function resize</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicPropertiesVector</span><span class="o">::</span><span class="n">resize</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a><span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="n">N</span>
-<a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a><span class="p">)</span><span class="w"> </span>
-</code></pre></div>
-<hr>
-
-<h3 id="function-write">function write</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicPropertiesVector</span><span class="o">::</span><span class="n">write</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">filename</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicPropertiesVector</span><span class="o">::</span><span class="n">info</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="n">ThermodynamicPropertiesVector</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">self</span>
 <a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a><span class="p">)</span><span class="w"> </span>
 </code></pre></div>
 <hr>
 
-<h3 id="function-write_csv">function write_csv</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicPropertiesVector</span><span class="o">::</span><span class="n">write_csv</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">filename</span>
+<h3 id="function-resize">function resize</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicPropertiesVector</span><span class="o">::</span><span class="n">resize</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a><span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="n">N</span>
 <a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a><span class="p">)</span><span class="w"> </span>
 </code></pre></div>
 <hr>
 
+<h3 id="function-write">function write</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicPropertiesVector</span><span class="o">::</span><span class="n">write</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">filename</span>
+<a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-write_csv">function write_csv</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicPropertiesVector</span><span class="o">::</span><span class="n">write_csv</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">filename</span>
+<a id="__codelineno-43-3" name="__codelineno-43-3" href="#__codelineno-43-3"></a><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
 <h3 id="function-write_vtk">function write_vtk</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicPropertiesVector</span><span class="o">::</span><span class="n">write_vtk</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">filename</span><span class="p">,</span>
-<a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">x</span><span class="p">,</span>
-<a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">y</span><span class="p">,</span>
-<a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">z</span><span class="p">,</span>
-<a id="__codelineno-42-6" name="__codelineno-42-6" href="#__codelineno-42-6"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">xTitle</span><span class="p">,</span>
-<a id="__codelineno-42-7" name="__codelineno-42-7" href="#__codelineno-42-7"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">yTitle</span><span class="p">,</span>
-<a id="__codelineno-42-8" name="__codelineno-42-8" href="#__codelineno-42-8"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">zTitle</span><span class="p">,</span>
-<a id="__codelineno-42-9" name="__codelineno-42-9" href="#__codelineno-42-9"></a><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">isNormalize</span><span class="o">=</span><span class="nb">false</span>
-<a id="__codelineno-42-10" name="__codelineno-42-10" href="#__codelineno-42-10"></a><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicPropertiesVector</span><span class="o">::</span><span class="n">write_vtk</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">filename</span><span class="p">,</span>
+<a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">x</span><span class="p">,</span>
+<a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">y</span><span class="p">,</span>
+<a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">z</span><span class="p">,</span>
+<a id="__codelineno-44-6" name="__codelineno-44-6" href="#__codelineno-44-6"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">xTitle</span><span class="p">,</span>
+<a id="__codelineno-44-7" name="__codelineno-44-7" href="#__codelineno-44-7"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">yTitle</span><span class="p">,</span>
+<a id="__codelineno-44-8" name="__codelineno-44-8" href="#__codelineno-44-8"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">zTitle</span><span class="p">,</span>
+<a id="__codelineno-44-9" name="__codelineno-44-9" href="#__codelineno-44-9"></a><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">isNormalize</span><span class="o">=</span><span class="nb">false</span>
+<a id="__codelineno-44-10" name="__codelineno-44-10" href="#__codelineno-44-10"></a><span class="p">)</span><span class="w"> </span>
 </code></pre></div>
 <hr>
 <h2 id="friends-documentation">Friends Documentation</h2>
 <h3 id="friend-operator">friend operator&lt;&lt;</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">ostream</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicPropertiesVector</span><span class="o">::</span><span class="k">operator</span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">ostream</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">os</span><span class="p">,</span>
-<a id="__codelineno-43-3" name="__codelineno-43-3" href="#__codelineno-43-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="n">ThermodynamicPropertiesVector</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">self</span>
-<a id="__codelineno-43-4" name="__codelineno-43-4" href="#__codelineno-43-4"></a><span class="p">)</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">ostream</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicPropertiesVector</span><span class="o">::</span><span class="k">operator</span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">ostream</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">os</span><span class="p">,</span>
+<a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a><span class="w">    </span><span class="k">const</span><span class="w">  </span><span class="n">ThermodynamicPropertiesVector</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">self</span>
+<a id="__codelineno-45-4" name="__codelineno-45-4" href="#__codelineno-45-4"></a><span class="p">)</span><span class="w"> </span>
 </code></pre></div>
 <hr>
 

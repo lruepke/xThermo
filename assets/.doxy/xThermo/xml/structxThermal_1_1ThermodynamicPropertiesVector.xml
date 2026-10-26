@@ -521,6 +521,34 @@
         </inbodydescription>
         <location file="Library/thermo/DataStructures.h" line="562" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="562" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1aa4f77962e960f249ab8361d87385cc6a" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classxThermal_1_1xThermalError" kindref="compound">int</ref> &gt;</type>
+        <definition>std::vector&lt;int&gt; xThermal::ThermodynamicPropertiesVector::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::status</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="564" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="564" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxThermal_1_1ThermodynamicPropertiesVector_1a700a03ed153cea6766aaf9a8aa80d280" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; xThermal::ThermodynamicPropertiesVector::failed_message</definition>
+        <argsstring></argsstring>
+        <name>failed_message</name>
+        <qualifiedname>xThermal::ThermodynamicPropertiesVector::failed_message</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Library/thermo/DataStructures.h" line="565" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="565" bodyend="-1"/>
+      </memberdef>
     </sectiondef>
     <sectiondef kind="friend">
       <memberdef kind="friend" id="structxThermal_1_1ThermodynamicPropertiesVector_1a77134798cb1f9a29a7188fa76a736117" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -543,7 +571,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="564" column="16" bodyfile="Library/thermo/DataStructures.h" bodystart="564" bodyend="578"/>
+        <location file="Library/thermo/DataStructures.h" line="567" column="16" bodyfile="Library/thermo/DataStructures.h" bodystart="567" bodyend="581"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -563,7 +591,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="579" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="579" bodyend="590"/>
+        <location file="Library/thermo/DataStructures.h" line="582" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="582" bodyend="593"/>
       </memberdef>
       <memberdef kind="function" id="structxThermal_1_1ThermodynamicPropertiesVector_1a865b62e967cf76758897c862c231a616" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -610,7 +638,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="591" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="591" bodyend="737"/>
+        <location file="Library/thermo/DataStructures.h" line="594" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="594" bodyend="740"/>
       </memberdef>
       <memberdef kind="function" id="structxThermal_1_1ThermodynamicPropertiesVector_1ad1891219c7991ddc48d1a30bdaa95bb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -628,7 +656,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="738" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="738" bodyend="776"/>
+        <location file="Library/thermo/DataStructures.h" line="741" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="741" bodyend="779"/>
       </memberdef>
       <memberdef kind="function" id="structxThermal_1_1ThermodynamicPropertiesVector_1a509170c140e91bf5a8af910ee966cd4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -650,7 +678,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="777" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="777" bodyend="816"/>
+        <location file="Library/thermo/DataStructures.h" line="780" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="780" bodyend="819"/>
       </memberdef>
       <memberdef kind="function" id="structxThermal_1_1ThermodynamicPropertiesVector_1a723ed9bb2947974a952ec2149f4bf150" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classxThermal_1_1xThermalError" kindref="compound">void</ref></type>
@@ -668,7 +696,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="817" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="817" bodyend="856"/>
+        <location file="Library/thermo/DataStructures.h" line="820" column="14" bodyfile="Library/thermo/DataStructures.h" bodystart="820" bodyend="859"/>
       </memberdef>
       <memberdef kind="function" id="structxThermal_1_1ThermodynamicPropertiesVector_1a39780c78fbe191605233356fc650b175" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string</type>
@@ -686,14 +714,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Library/thermo/DataStructures.h" line="858" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="858" bodyend="863"/>
+        <location file="Library/thermo/DataStructures.h" line="861" column="21" bodyfile="Library/thermo/DataStructures.h" bodystart="861" bodyend="866"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Library/thermo/DataStructures.h" line="545" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="546" bodyend="864"/>
+    <location file="Library/thermo/DataStructures.h" line="545" column="5" bodyfile="Library/thermo/DataStructures.h" bodystart="546" bodyend="867"/>
     <listofallmembers>
       <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a85bbce1cfb450a37b3815cf4a1c15a79" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>Cp</name></member>
       <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1ac6e55e5ff15e10324f21dacd3eb205e5" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>Cp_h</name></member>
@@ -705,6 +733,7 @@
       <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a444d4426488f38d39e414d6a0637da26" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>dRhodT</name></member>
       <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a74e7e3f80ac09396b1e63b6d2eee1d54" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>dRhodT_l</name></member>
       <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1aefcd1aa8e405b70d5de4c1bfb9b9b35e" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>dRhodT_v</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a700a03ed153cea6766aaf9a8aa80d280" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>failed_message</name></member>
       <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a509170c140e91bf5a8af910ee966cd4a" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>fill</name></member>
       <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1ade1801996a1a3b6ab55ba7cc9f685b23" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>fluidName</name></member>
       <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1ab1ff1b2674ea3eddf86eac56030e0e6f" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>H</name></member>
@@ -732,6 +761,7 @@
       <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1aa5b677468cdae79e542e985f2a0ef518" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>S_h</name></member>
       <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a9a82fbec2b719161ebe6dfbfc92af119" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>S_l</name></member>
       <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a6d1a6db5fef160af1fa80f8a9379a3fb" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>S_v</name></member>
+      <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1aa4f77962e960f249ab8361d87385cc6a" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>status</name></member>
       <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a8ec1239f9f44a3b8712d6709dac3bb7a" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>T</name></member>
       <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1a81970e858102a5b93fa65575cdd54b57" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>write</name></member>
       <member refid="structxThermal_1_1ThermodynamicPropertiesVector_1ad1891219c7991ddc48d1a30bdaa95bb0" prot="public" virt="non-virtual"><scope>xThermal::ThermodynamicPropertiesVector</scope><name>write_csv</name></member>

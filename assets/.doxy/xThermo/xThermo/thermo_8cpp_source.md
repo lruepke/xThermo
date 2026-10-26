@@ -1401,6 +1401,37 @@ namespace xThermal
         }
     }
 
+    ThermodynamicPropertiesVector cxThermal::evaluate_TPX(const std::vector<double>& T, const std::vector<double>& p, const std::vector<double>& X)
+    {
+        return evaluate_batch(false, T, p, X);
+    }
+
+    ThermodynamicPropertiesVector cxThermal::evaluate_HPX(const std::vector<double>& H, const std::vector<double>& p, const std::vector<double>& X)
+    {
+        return evaluate_batch(true, H, p, X);
+    }
+
+    ThermodynamicPropertiesVector cxThermal::evaluate_batch(bool hpx, const std::vector<double>& A, const std::vector<double>& p, const std::vector<double>& X)
+    {
+        if (A.size() != p.size() || A.size() != X.size())
+            throw InputError(std::string("cxThermal::evaluate_") + (hpx ? "HPX" : "TPX") + ": the input vectors have different lengths");
+        const size_t N = A.size();
+        ThermodynamicPropertiesVector v;
+        v.fluidName = name();
+        v.resize(N);
+        v.status.assign(N, (int)EvaluationStatus::Ok);
+        std::vector<std::string> message(N);
+        evaluate_states(N, [&](cxThermal& model, size_t i, ThermodynamicProperties& props) {
+            EvaluationStatus st = hpx ? model.tryUpdateState_HPX(props, A[i], p[i], X[i], &message[i])
+                                      : model.tryUpdateState_TPX(props, A[i], p[i], X[i], &message[i]);
+            v.status[i] = (int)st;
+            v.fill(props, i);
+        });
+        for (size_t i = 0; i < N; ++i)
+            if (v.status[i] != (int)EvaluationStatus::Ok) v.failed_message.push_back(message[i]);
+        return v;
+    }
+
     ThermodynamicPropertiesVector cxThermal::UpdateState_TPX(const std::vector<double>& T, const std::vector<double>& p, const std::vector<double>& X, bool isMeshGrid)
     {
         ThermodynamicPropertiesVector stateVector;

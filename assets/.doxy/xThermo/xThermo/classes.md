@@ -71,6 +71,8 @@
 
 ## e
 
+* [**EvaluationError**](classxthermo_1_1states_1_1EvaluationError.md)
+([**xthermo::states**](namespacexthermo_1_1states.md))
 * [**event**](structevent.md)
 
 
@@ -113,6 +115,8 @@
 ([**IMPLEMENT\_AB**](namespaceIMPLEMENT__AB.md))
 * [**implement\_B**](classIMPLEMENT__B_1_1implement__B.md)
 ([**IMPLEMENT\_B**](namespaceIMPLEMENT__B.md))
+* [**InvalidInputError**](classxthermo_1_1states_1_1InvalidInputError.md)
+([**xthermo::states**](namespacexthermo_1_1states.md))
 
 
 ## l
@@ -140,6 +144,10 @@
 
 * [**NonLeafQuad**](structLOOKUPTABLE__FOREST_1_1NonLeafQuad.md)
 ([**LOOKUPTABLE\_FOREST**](namespaceLOOKUPTABLE__FOREST.md))
+* [**NotAvailableError**](classxthermo_1_1states_1_1NotAvailableError.md)
+([**xthermo::states**](namespacexthermo_1_1states.md))
+* [**NotConvergedError**](classxthermo_1_1states_1_1NotConvergedError.md)
+([**xthermo::states**](namespacexthermo_1_1states.md))
 
 
 ## o
@@ -148,6 +156,8 @@
 * [**otri**](structotri.md)
 * [**OuterEvaluation**](classxThermal_1_1OuterEvaluation.md)
 ([**xThermal**](namespacexThermal.md))
+* [**OutOfRangeError**](classxthermo_1_1states_1_1OutOfRangeError.md)
+([**xthermo::states**](namespacexthermo_1_1states.md))
 
 
 ## p
@@ -215,6 +225,10 @@
 ([**xThermal::IAPWS\_IF97**](namespacexThermal_1_1IAPWS__IF97.md))
 * [**State\_Region5**](structxThermal_1_1IAPWS__IF97_1_1State__Region5.md)
 ([**xThermal::IAPWS\_IF97**](namespacexThermal_1_1IAPWS__IF97.md))
+* [**States**](classxthermo_1_1states_1_1States.md)
+([**xthermo::states**](namespacexthermo_1_1states.md))
+* [**Status**](classxthermo_1_1states_1_1Status.md)
+([**xthermo::states**](namespacexthermo_1_1states.md))
 * [**STRUCT\_delta\_TwoPhase**](structxThermal_1_1IAPWS95_1_1STRUCT__delta__TwoPhase.md)
 ([**xThermal::IAPWS95**](namespacexThermal_1_1IAPWS95.md))
 * [**Surface**](structxThermal_1_1Surface.md)

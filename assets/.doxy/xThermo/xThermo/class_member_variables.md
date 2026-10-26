@@ -124,6 +124,9 @@
 * **f** ([**xThermal::H2ONaCl::Table6\_Pressure\_VLH**](structxThermal_1_1H2ONaCl_1_1Table6__Pressure__VLH.md))
 * **fc** ([**xThermal::Polygon\_slice**](structxThermal_1_1Polygon__slice.md))
 * **fluidName** ([**xThermal::ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md), [**xThermal::ThermodynamicPropertiesArray**](structxThermal_1_1ThermodynamicPropertiesArray.md), [**xThermal::ThermodynamicPropertiesVector**](structxThermal_1_1ThermodynamicPropertiesVector.md))
+* **failed\_message** ([**xThermal::ThermodynamicPropertiesVector**](structxThermal_1_1ThermodynamicPropertiesVector.md))
+* **fluid** ([**xthermo::states::States**](classxthermo_1_1states_1_1States.md))
+* **Failed** ([**xthermo::states::Status**](classxthermo_1_1states_1_1Status.md))
 
 
 ## g
@@ -183,6 +186,9 @@
 * **IsothermalCompressibility\_v** ([**xThermal::ThermodynamicProperties**](structxThermal_1_1ThermodynamicProperties.md), [**xThermal::ThermodynamicPropertiesVector**](structxThermal_1_1ThermodynamicPropertiesVector.md))
 * **I** ([**xThermal::IAPWS\_IF97::cIAPWS\_IF97::Coeff\_Backward\_T\_PH\_Region1**](structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region1.md), [**xThermal::IAPWS\_IF97::cIAPWS\_IF97::Coeff\_Backward\_T\_PH\_Region2a**](structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region2a.md), [**xThermal::IAPWS\_IF97::cIAPWS\_IF97::Coeff\_Backward\_T\_PH\_Region2b**](structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region2b.md), [**xThermal::IAPWS\_IF97::cIAPWS\_IF97::Coeff\_Backward\_T\_PH\_Region2c**](structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region2c.md), [**xThermal::IAPWS\_IF97::cIAPWS\_IF97::Coeff\_Backward\_T\_PH\_Region3a**](structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region3a.md), [**xThermal::IAPWS\_IF97::cIAPWS\_IF97::Coeff\_Backward\_T\_PH\_Region3b**](structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Backward__T__PH__Region3b.md), [**xThermal::IAPWS\_IF97::cIAPWS\_IF97::Coeff\_Boundary3ab**](structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Boundary3ab.md), [**xThermal::IAPWS\_IF97::cIAPWS\_IF97::Coeff\_Region1**](structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region1.md))
 * **Ir** ([**xThermal::IAPWS\_IF97::cIAPWS\_IF97::Coeff\_Region2**](structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region2.md), [**xThermal::IAPWS\_IF97::cIAPWS\_IF97::Coeff\_Region5**](structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5.md))
+* **index** ([**xthermo::states::EvaluationError**](classxthermo_1_1states_1_1EvaluationError.md))
+* **inputs** ([**xthermo::states::EvaluationError**](classxthermo_1_1states_1_1EvaluationError.md))
+* **InvalidInput** ([**xthermo::states::Status**](classxthermo_1_1states_1_1Status.md))
 
 
 ## j
@@ -316,6 +322,7 @@
 * **m\_x\_failed** ([**xThermal::gsl\_guard::GuardedFunction**](classxThermal_1_1gsl__guard_1_1GuardedFunction.md))
 * **m\_code** ([**xThermal::xThermalBaseError**](classxThermal_1_1xThermalBaseError.md))
 * **m\_err** ([**xThermal::xThermalBaseError**](classxThermal_1_1xThermalBaseError.md))
+* **message** ([**xthermo::states::EvaluationError**](classxthermo_1_1states_1_1EvaluationError.md))
 
 
 ## n
@@ -376,6 +383,8 @@
 * **nr** ([**xThermal::IAPWS\_IF97::cIAPWS\_IF97::Coeff\_Region2**](structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region2.md), [**xThermal::IAPWS\_IF97::cIAPWS\_IF97::Coeff\_Region5**](structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5.md))
 * **numo** ([**xThermal::IAPWS\_IF97::cIAPWS\_IF97::Coeff\_Region2**](structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region2.md), [**xThermal::IAPWS\_IF97::cIAPWS\_IF97::Coeff\_Region5**](structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5.md))
 * **numr** ([**xThermal::IAPWS\_IF97::cIAPWS\_IF97::Coeff\_Region2**](structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region2.md), [**xThermal::IAPWS\_IF97::cIAPWS\_IF97::Coeff\_Region5**](structxThermal_1_1IAPWS__IF97_1_1cIAPWS__IF97_1_1Coeff__Region5.md))
+* **NotAvailable** ([**xthermo::states::Status**](classxthermo_1_1states_1_1Status.md))
+* **NotConverged** ([**xthermo::states::Status**](classxthermo_1_1states_1_1Status.md))
 
 
 ## o
@@ -384,6 +393,8 @@
 * **order** ([**behavior**](structbehavior.md))
 * **orient3dcount** ([**mesh**](structmesh.md))
 * **orient** ([**otri**](structotri.md))
+* **Ok** ([**xthermo::states::Status**](classxthermo_1_1states_1_1Status.md))
+* **OutOfRange** ([**xthermo::states::Status**](classxthermo_1_1states_1_1Status.md))
 
 
 ## p
@@ -488,6 +499,8 @@
 * **shortName** ([**xThermal::Line**](structxThermal_1_1Line.md), [**xThermal::Point**](structxThermal_1_1Point.md), [**xThermal::Surface**](structxThermal_1_1Surface.md), [**xThermal::propInfo**](structxThermal_1_1propInfo.md))
 * **scale\_X** ([**xThermal::PhaseBoundaries**](structxThermal_1_1PhaseBoundaries.md))
 * **surfaces** ([**xThermal::PhaseBoundaries**](structxThermal_1_1PhaseBoundaries.md))
+* **status** ([**xThermal::ThermodynamicPropertiesVector**](structxThermal_1_1ThermodynamicPropertiesVector.md), [**xthermo::states::EvaluationError**](classxthermo_1_1states_1_1EvaluationError.md))
+* **shape** ([**xthermo::states::States**](classxthermo_1_1states_1_1States.md))
 
 
 ## t
@@ -581,6 +594,14 @@
 ## z
 
 * **z** ([**xThermal::TriMesh**](structxThermal_1_1TriMesh.md))
+
+
+## _
+
+* **\_absent** ([**xthermo::states::States**](classxthermo_1_1states_1_1States.md))
+* **\_cache** ([**xthermo::states::States**](classxthermo_1_1states_1_1States.md))
+* **\_model** ([**xthermo::states::States**](classxthermo_1_1states_1_1States.md))
+* **\_raw** ([**xthermo::states::States**](classxthermo_1_1states_1_1States.md))
 
 
 
