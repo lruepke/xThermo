@@ -1,11 +1,152 @@
+/* xThermo documentation: ocean palette, homepage hero and figure cards. Material for MkDocs, no theme fork. */
+
 /* Prevent Safari from auto-scaling fonts (shifts em-based breakpoints) */
 html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
 
-/* Constrain figure images to 70% of the content column, cross-browser */
+/* ---- palette --------------------------------------------------------------------------------------------- */
+:root {
+  --xt-navy: #0b2545;
+  --xt-deep: #13315c;
+  --xt-teal: #16808a;
+  --xt-seafoam: #a8dadc;
+  --xt-coral: #e2583e;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #0b2545;
+  --md-primary-fg-color--light: #13315c;
+  --md-primary-fg-color--dark: #071a33;
+  --md-accent-fg-color: #16808a;
+  --md-accent-fg-color--transparent: rgba(22, 128, 138, 0.1);
+  --md-typeset-a-color: #1f6f9a;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-hue: 212;
+  --md-primary-fg-color: #0b2545;
+  --md-primary-fg-color--light: #13315c;
+  --md-primary-fg-color--dark: #071a33;
+  --md-accent-fg-color: #4fb3bf;
+  --md-accent-fg-color--transparent: rgba(79, 179, 191, 0.12);
+  --md-typeset-a-color: #7cc4dc;
+}
+
+/* system font stack (theme font: false) */
+:root {
+  --md-text-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --md-code-font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+/* ---- figures ----------------------------------------------------------------------------------------------- */
+/* Figures inside pages: 70 % of the column on wide screens, full width on phones */
 .md-content img {
   max-width: 70%;
   height: auto;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-content img {
+    max-width: 100%;
+  }
+}
+
+/* Figure card: white background in both colour schemes, so the plots read the same in dark mode */
+.xt-figure {
+  margin: 1.2rem 0 1.6rem;
+}
+
+.xt-figure img,
+.md-content .xt-figure img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  padding: 0.6rem;
+  box-sizing: border-box;
+  box-shadow: 0 1px 4px rgba(11, 37, 69, 0.18);
+}
+
+/* secondary figures: moderate width on wide screens, full width on phones */
+.md-typeset .xt-figure.xt-figure--narrow {
+  max-width: 40rem;
+  margin-left: 0;
+}
+
+.xt-figure figcaption {
+  max-width: none;
+  margin-top: 0.6rem;
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+  text-align: left;
+}
+
+/* ---- homepage hero ----------------------------------------------------------------------------------------- */
+.xt-hero {
+  background: linear-gradient(135deg, var(--xt-navy) 0%, var(--xt-deep) 55%, var(--xt-teal) 120%);
+  color: #fff;
+  border-radius: 10px;
+  padding: 2rem 1.8rem 1.6rem;
+  margin: 0 0 1.4rem;
+}
+
+.md-typeset .xt-hero h1 {
+  color: #fff;
+  font-weight: 700;
+  margin: 0 0 0.4rem;
+  letter-spacing: 0.01em;
+}
+
+.xt-hero .xt-tagline {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 46rem;
+  margin: 0 0 1.1rem;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.md-typeset .xt-hero .md-button {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.7);
+  margin: 0.2rem 0.4rem 0.2rem 0;
+}
+
+.md-typeset .xt-hero .md-button--primary {
+  background-color: var(--xt-coral);
+  border-color: var(--xt-coral);
+}
+
+.md-typeset .xt-hero .md-button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #fff;
+}
+
+.md-typeset .xt-hero .md-button--primary:hover {
+  background-color: #c9472f;
+  border-color: #c9472f;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .xt-hero {
+    padding: 1.4rem 1.1rem 1.2rem;
+  }
+  .xt-hero .xt-tagline {
+    font-size: 0.85rem;
+  }
+}
+
+/* ---- homepage cards and acknowledgement --------------------------------------------------------------------- */
+.md-typeset .grid.cards > ul > li {
+  border-top: 3px solid var(--xt-teal);
+}
+
+.xt-ack {
+  border-left: 3px solid var(--xt-teal);
+  padding: 0.4rem 0 0.4rem 0.9rem;
+  margin: 1.6rem 0 0.4rem;
+  font-size: 0.78rem;
+  color: var(--md-default-fg-color--light);
 }

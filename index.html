@@ -6,9 +6,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="H₂O–NaCl equation of state — C++ library with Python bindings">
+        <meta name="description" content="Thermodynamic properties and phase relations of H₂O–NaCl fluids, 0–1000 °C and 1–5000 bar. C++ library with a Python interface.">
       
       
+      
+        <link rel="canonical" href="https://lruepke.github.io/xThermo/">
       
       
       
@@ -18,7 +20,7 @@
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="assets/favicon.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
     
     
@@ -41,12 +43,6 @@
     
     
       
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-      
     
     
       <link rel="stylesheet" href="stylesheets/extra.css">
@@ -67,7 +63,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -93,7 +89,7 @@
     <a href="." title="xThermo" class="md-header__button md-logo" aria-label="xThermo" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 5c-1.11 0-2 .89-2 2v6.76c-.64.57-1 1.39-1 2.24 0 1.66 1.34 3 3 3s3-1.34 3-3c0-.85-.36-1.67-1-2.23V7c0-1.11-.89-2-2-2m0 1c.55 0 1 .45 1 1v1h-2V7c0-.55.45-1 1-1M8 20c-3.31 0-6-2.69-6-6C2 10 8 3.25 8 3.25S14 10 14 14c0 3.31-2.69 6-6 6"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -123,7 +119,21 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
     
   
 </form>
@@ -159,6 +169,8 @@
         </button>
       </nav>
       
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
@@ -174,18 +186,6 @@
 </div>
       
     
-    
-      <div class="md-header__source">
-        <a href="https://github.com/lruepke/xThermo" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
-  </div>
-  <div class="md-source__repository">
-    lruepke/xThermo
-  </div>
-</a>
-      </div>
     
   </nav>
   
@@ -368,7 +368,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -382,23 +384,11 @@
     <a href="." title="xThermo" class="md-nav__button md-logo" aria-label="xThermo" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 5c-1.11 0-2 .89-2 2v6.76c-.64.57-1 1.39-1 2.24 0 1.66 1.34 3 3 3s3-1.34 3-3c0-.85-.36-1.67-1-2.23V7c0-1.11-.89-2-2-2m0 1c.55 0 1 .45 1 1v1h-2V7c0-.55.45-1 1-1M8 20c-3.31 0-6-2.69-6-6C2 10 8 3.25 8 3.25S14 10 14 14c0 3.31-2.69 6-6 6"/></svg>
 
     </a>
     xThermo
   </label>
-  
-    <div class="md-nav__source">
-      <a href="https://github.com/lruepke/xThermo" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
-  </div>
-  <div class="md-source__repository">
-    lruepke/xThermo
-  </div>
-</a>
-    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -469,10 +459,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-it-does" class="md-nav__link">
+  <a href="#what-xthermo-computes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What it does
+        What xThermo computes
       
     </span>
   </a>
@@ -480,10 +470,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#phase-diagram" class="md-nav__link">
+  <a href="#seawater-heated-at-250-bar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Phase diagram
+        Seawater, heated at 250 bar
       
     </span>
   </a>
@@ -495,17 +485,6 @@
     <span class="md-ellipsis">
       
         Quick start
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        References
       
     </span>
   </a>
@@ -1033,7 +1012,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1052,10 +1033,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-it-does" class="md-nav__link">
+  <a href="#what-xthermo-computes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What it does
+        What xThermo computes
       
     </span>
   </a>
@@ -1063,10 +1044,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#phase-diagram" class="md-nav__link">
+  <a href="#seawater-heated-at-250-bar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Phase diagram
+        Seawater, heated at 250 bar
       
     </span>
   </a>
@@ -1078,17 +1059,6 @@
     <span class="md-ellipsis">
       
         Quick start
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        References
       
     </span>
   </a>
@@ -1109,60 +1079,227 @@
               <article class="md-content__inner md-typeset">
                 
                   
-
-
-  
   
 
 
-<h1 id="xthermo">xThermo</h1>
-<p>C++ implementation of the Driesner &amp; Heinrich (2007) equation of state for the H₂O–NaCl system, with Python bindings via SWIG.</p>
-<p>xThermo was created by Zhikui Guo and Lars Rüpke</p>
-<video autoplay loop muted playsinline style="width:100%;border-radius:6px;margin-bottom:1rem;">
-  <source src="assets/video/PhaseChanges.mp4" type="video/mp4">
-</video>
 
-<h2 id="what-it-does">What it does</h2>
-<p>xThermo calculates thermodynamic properties — density, enthalpy, heat capacity, viscosity, and phase state — for:</p>
+
+<div class="xt-hero">
+<h1 id="xthermo">xThermo<a class="headerlink" href="#xthermo" title="Permanent link">&para;</a></h1>
+<p class="xt-tagline">Phase relations and thermodynamic properties of H₂O–NaCl fluids from 0 to 1000 °C and 1 to
+5000 bar, after Driesner &amp; Heinrich (2007) and Driesner (2007). A C++ library for simulation codes, with a
+Python interface for NumPy and Matplotlib.</p>
+<p><a class="md-button md-button--primary" href="installation/">Get started</a>
+<a class="md-button" href="limitations/">Model scope and limitations</a></p>
+</div>
+<figure class="xt-figure">
+<p><picture>
+  <source media="(max-width: 600px)" srcset="assets/img/hero_mobile.png">
+  <img src="assets/img/hero_desktop.png" alt="Isobaric phase diagram of H2O-NaCl at 250 bar: temperature against bulk salinity on a logarithmic axis, with the vapour + liquid, vapour + halite and liquid + halite regions, the density of the single-phase fluid in shades of blue, and the seawater composition marked">
+</picture></p>
+<figcaption>The H₂O–NaCl system at 250 bar, about the pressure at the seafloor at 2.5 km water depth. Shaded
+regions are where the fluid splits into two phases: vapour + liquid (pink), vapour + halite (grey) and liquid +
+halite (light blue). Elsewhere the fluid is a single phase, coloured by its density, which drops sharply between 380
+and 400 °C. Seawater (dashed line) starts to separate into a vapour and a brine at about 388 °C. The phase-region geometry
+comes from <code>Slice_constP</code>, the densities from <code>xthermo.tpx</code>.</figcaption>
+</figure>
+<h2 id="what-xthermo-computes">What xThermo computes<a class="headerlink" href="#what-xthermo-computes" title="Permanent link">&para;</a></h2>
+<div class="grid cards">
 <ul>
-<li><strong>Pure water</strong> — IAPS-84 and IAPWS-95 formulations</li>
-<li><strong>Pure NaCl</strong> — solid, liquid, and vapour phases</li>
-<li><strong>H₂O–NaCl mixtures</strong> — full phase diagram covering liquid, vapour, halite, and three-phase (V+L+H) regions</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 19v1h18v2H2V2h2v15c3 0 6-2 8.1-5.6 3-5 6.3-7.4 9.9-7.4v2c-2.8 0-5.5 2.1-8.1 6.5C11.3 16.6 7.7 19 4 19"/></svg></span> <strong>Phase relations</strong></p>
+<hr />
+<p>Liquid, vapour and halite, their two- and three-phase coexistence and the critical curve of the binary, as
+functions of temperature, pressure and salinity.</p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 5c-1.11 0-2 .89-2 2v6.76c-.64.57-1 1.39-1 2.24 0 1.66 1.34 3 3 3s3-1.34 3-3c0-.85-.36-1.67-1-2.23V7c0-1.11-.89-2-2-2m0 1c.55 0 1 .45 1 1v1h-2V7c0-.55.45-1 1-1M8 20c-3.31 0-6-2.69-6-6C2 10 8 3.25 8 3.25S14 10 14 14c0 3.31-2.69 6-6 6"/></svg></span> <strong>Fluid properties</strong></p>
+<hr />
+<p>Density, specific enthalpy, heat capacity, viscosity and density derivatives of each phase and of the mixture,
+from T–p–X or H–p–X (enthalpy-based) input.</p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.14 7.5A2.86 2.86 0 0 1 22 10.36v3.78A2.86 2.86 0 0 1 19.14 17H12c0 .39.32.96.71.96H17v1.68a2.86 2.86 0 0 1-2.86 2.86H9.86A2.86 2.86 0 0 1 7 19.64v-3.75a2.85 2.85 0 0 1 2.86-2.85h5.25a2.85 2.85 0 0 0 2.85-2.86V7.5zm-4.28 11.79c-.4 0-.72.3-.72.89s.32.71.72.71a.71.71 0 0 0 .71-.71c0-.59-.32-.89-.71-.89m-10-1.79A2.86 2.86 0 0 1 2 14.64v-3.78A2.86 2.86 0 0 1 4.86 8H12c0-.39-.32-.96-.71-.96H7V5.36A2.86 2.86 0 0 1 9.86 2.5h4.28A2.86 2.86 0 0 1 17 5.36v3.75a2.85 2.85 0 0 1-2.86 2.85H8.89a2.85 2.85 0 0 0-2.85 2.86v2.68zM9.14 5.71c.4 0 .72-.3.72-.89s-.32-.71-.72-.71c-.39 0-.71.12-.71.71s.32.89.71.89"/></svg></span> <strong>Python for science</strong></p>
+<hr />
+<p><code>xthermo.tpx</code> and <code>xthermo.hpx</code> evaluate whole NumPy grids, with an explicit error policy, and plotting helpers
+draw phase diagrams and property maps.</p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10.5 15.97.41 2.44c-.26.14-.68.27-1.24.39-.57.13-1.24.2-2.01.2-2.21-.04-3.87-.7-4.98-1.96Q1 15.135 1 12.21c.05-2.31.72-4.08 2-5.32C4.32 5.64 5.96 5 7.94 5c.75 0 1.4.07 1.94.19s.94.25 1.2.4l-.58 2.49-1.06-.34c-.4-.1-.86-.15-1.39-.15-1.16-.01-2.12.36-2.87 1.1-.76.73-1.15 1.85-1.18 3.34 0 1.36.37 2.42 1.08 3.2.71.77 1.71 1.17 2.99 1.18l1.33-.12c.43-.08.79-.19 1.1-.32M11 11h2V9h2v2h2v2h-2v2h-2v-2h-2zm7 0h2V9h2v2h2v2h-2v2h-2v-2h-2z"/></svg></span> <strong>C++ for simulation codes</strong></p>
+<hr />
+<p>A CMake package (<code>find_package(xThermo)</code>), exceptions or non-throwing evaluation with status codes, and one model
+instance per thread or MPI rank.</p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a6 6 0 0 1-6-6c0-4 6-10.75 6-10.75S18 10 18 14a6 6 0 0 1-6 6"/></svg></span> <strong>Pure water and NaCl</strong></p>
+<hr />
+<p>Water from IAPS-84 (the basis of the Driesner model) or IAPWS-95; pure NaCl solid, liquid and vapour.</p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68zm-13 5-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9z"/></svg></span> <strong>Checked against the literature</strong></p>
+<hr />
+<p>Compared with the published tables of the Driesner papers and the IAPWS releases. Known differences and
+limitations are documented: <a href="limitations/">Model scope and limitations</a>.</p>
+</li>
 </ul>
-<p><strong>Model domain:</strong> 0–1000 °C, 1–5000 bar, 0–100 wt% NaCl (Driesner &amp; Heinrich 2007). Of these limits, the H₂O–NaCl model
-checks only the upper temperature at run time; see <a href="limitations/">Model scope and limitations</a>.</p>
-<h2 id="phase-diagram">Phase diagram</h2>
-<p>The isobaric H₂O–NaCl phase diagram at 300 bar computed with xThermo:</p>
-<p><img alt="H2O-NaCl phase diagram" src="assets/img/phase_diagram_PTX.png" /></p>
-<h2 id="quick-start">Quick start</h2>
+</div>
+<h2 id="seawater-heated-at-250-bar">Seawater, heated at 250 bar<a class="headerlink" href="#seawater-heated-at-250-bar" title="Permanent link">&para;</a></h2>
+<figure class="xt-figure xt-figure--narrow">
+<p><img src="assets/img/seawater_250bar.png" alt="Salinity of the liquid and vapour phases and the vapour mass fraction of seawater heated from 300 to 600 °C at 250 bar"></p>
+<figcaption>Following the dashed line of the figure above. Below about 388 °C seawater is a single liquid. Between 388 and
+449 °C it splits into a vapour of low salinity and an increasingly saline brine; the vapour soon carries most of the
+mass. Above about 449 °C the brine is gone, and halite coexists with a vapour whose salinity keeps falling. This is the
+kind of phase separation seen in hydrothermal systems at mid-ocean ridges.</figcaption>
+</figure>
+<details class="example">
+<summary>Python code for both figures</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="sd">"""Homepage figures: the H2O-NaCl phase diagram at 250 bar with the density of the single-phase fluid, and seawater</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="sd">heated at 250 bar.</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="sd">Writes hero_desktop.png, hero_mobile.png and seawater_250bar.png to docs/assets/img (or the directory given as the</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="sd">first argument or in $XTHERMO_FIGURE_DIR). Needs xthermo and matplotlib.</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="sd">"""</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s2">"Agg"</span><span class="p">)</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="kn">import</span><span class="w"> </span><span class="nn">xthermo</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xthermo</span><span class="w"> </span><span class="kn">import</span> <span class="n">H2ONaCl</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="kn">import</span><span class="w"> </span><span class="nn">_style</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">st</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="n">st</span><span class="o">.</span><span class="n">apply</span><span class="p">()</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="n">OUT</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">outdir</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)),</span> <span class="s2">".."</span><span class="p">,</span> <span class="s2">"assets"</span><span class="p">,</span> <span class="s2">"img"</span><span class="p">))</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="n">sw</span> <span class="o">=</span> <span class="n">H2ONaCl</span><span class="o">.</span><span class="n">cH2ONaCl</span><span class="p">(</span><span class="s2">"IAPS84"</span><span class="p">)</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="n">P</span> <span class="o">=</span> <span class="mf">250e5</span>                      <span class="c1"># Pa</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="n">X_SEAWATER</span> <span class="o">=</span> <span class="mf">0.032</span>             <span class="c1"># kg/kg (3.2 wt% NaCl)</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="c1"># fluid density on a T-X grid; the multiphase regions are drawn over it by plot_slice</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">999</span><span class="p">,</span> <span class="mi">400</span><span class="p">)</span> <span class="o">+</span> <span class="mf">273.15</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">400</span><span class="p">)</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="n">s</span> <span class="o">=</span> <span class="n">xthermo</span><span class="o">.</span><span class="n">tpx</span><span class="p">(</span><span class="n">sw</span><span class="p">,</span> <span class="n">T</span><span class="p">[:,</span> <span class="kc">None</span><span class="p">],</span> <span class="n">P</span><span class="p">,</span> <span class="n">X</span><span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="p">:],</span> <span class="n">errors</span><span class="o">=</span><span class="s2">"nan"</span><span class="p">)</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="n">section</span> <span class="o">=</span> <span class="n">sw</span><span class="o">.</span><span class="n">Slice_constP</span><span class="p">(</span><span class="n">P</span><span class="p">)</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="c1"># seawater heated at 250 bar: where it separates into brine and vapour, and how salty each phase is</span>
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="n">Tp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="mi">601</span><span class="p">)</span> <span class="o">+</span> <span class="mf">273.15</span>
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="n">q</span> <span class="o">=</span> <span class="n">xthermo</span><span class="o">.</span><span class="n">tpx</span><span class="p">(</span><span class="n">sw</span><span class="p">,</span> <span class="n">Tp</span><span class="p">,</span> <span class="n">P</span><span class="p">,</span> <span class="n">X_SEAWATER</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s2">"nan"</span><span class="p">)</span>
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="n">two_phase</span> <span class="o">=</span> <span class="n">q</span><span class="o">.</span><span class="n">has</span><span class="p">(</span><span class="s2">"vapour"</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">q</span><span class="o">.</span><span class="n">has</span><span class="p">(</span><span class="s2">"liquid"</span><span class="p">)</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="n">vapour_mass</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">q</span><span class="o">.</span><span class="n">ok</span><span class="p">,</span> <span class="n">q</span><span class="o">.</span><span class="n">S_v</span> <span class="o">*</span> <span class="n">q</span><span class="o">.</span><span class="n">Rho_v</span> <span class="o">/</span> <span class="n">q</span><span class="o">.</span><span class="n">Rho</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="n">tc</span> <span class="o">=</span> <span class="n">Tp</span> <span class="o">-</span> <span class="mf">273.15</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="n">T_SPLIT</span> <span class="o">=</span> <span class="n">tc</span><span class="p">[</span><span class="n">two_phase</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>       <span class="c1"># °C, where seawater starts to separate into vapour and brine</span>
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="n">T_HALITE</span> <span class="o">=</span> <span class="n">tc</span><span class="p">[</span><span class="n">two_phase</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>      <span class="c1"># °C, above it vapour + halite</span>
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>
+<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>
+<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="k">def</span><span class="w"> </span><span class="nf">phase_diagram</span><span class="p">(</span><span class="n">figsize</span><span class="p">,</span> <span class="n">fontsize</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">note</span><span class="p">,</span> <span class="n">note_xy</span><span class="p">):</span>
+<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>    <span class="k">with</span> <span class="n">plt</span><span class="o">.</span><span class="n">rc_context</span><span class="p">({</span><span class="s2">"font.size"</span><span class="p">:</span> <span class="n">fontsize</span><span class="p">}):</span>
+<a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>        <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="n">figsize</span><span class="p">)</span>
+<a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>        <span class="n">ax</span><span class="o">.</span><span class="n">set_xscale</span><span class="p">(</span><span class="s2">"log"</span><span class="p">)</span>
+<a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a>        <span class="n">field</span> <span class="o">=</span> <span class="n">xthermo</span><span class="o">.</span><span class="n">plot_property</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="s2">"Rho"</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">"X"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">"T"</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">st</span><span class="o">.</span><span class="n">OCEAN</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">1300</span><span class="p">,</span> <span class="n">colorbar</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a>        <span class="n">xthermo</span><span class="o">.</span><span class="n">plot_slice</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">section</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">"X"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">"T"</span><span class="p">,</span> <span class="n">points</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>        <span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">X_SEAWATER</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">st</span><span class="o">.</span><span class="n">CORAL</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.6</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)),</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a>        <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mf">1e-3</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a>        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a>        <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"bulk salinity (wt% NaCl)"</span><span class="p">)</span>
+<a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a>        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"temperature (°C)"</span><span class="p">)</span>
+<a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a>        <span class="n">cb</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">field</span><span class="p">[</span><span class="s2">"mesh"</span><span class="p">],</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mf">0.015</span><span class="p">,</span> <span class="n">fraction</span><span class="o">=</span><span class="mf">0.04</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+<a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a>        <span class="n">cb</span><span class="o">.</span><span class="n">set_label</span><span class="p">(</span><span class="s2">"density of the single-phase fluid (kg/m³)"</span><span class="p">)</span>
+<a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a>        <span class="n">cb</span><span class="o">.</span><span class="n">outline</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a>        <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="n">colour</span> <span class="ow">in</span> <span class="n">labels</span><span class="p">:</span>
+<a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a>            <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colour</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+<a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a>        <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">X_SEAWATER</span> <span class="o">*</span> <span class="mi">100</span> <span class="o">*</span> <span class="mf">1.12</span><span class="p">,</span> <span class="mi">965</span><span class="p">,</span> <span class="s2">"seawater"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">st</span><span class="o">.</span><span class="n">CORAL</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">"left"</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">"top"</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+<a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a>                <span class="n">fontweight</span><span class="o">=</span><span class="s2">"bold"</span><span class="p">)</span>
+<a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a>        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">X_SEAWATER</span> <span class="o">*</span> <span class="mi">100</span><span class="p">],</span> <span class="p">[</span><span class="n">T_SPLIT</span><span class="p">],</span> <span class="s2">"o"</span><span class="p">,</span> <span class="n">ms</span><span class="o">=</span><span class="n">fontsize</span> <span class="o">*</span> <span class="mf">0.7</span><span class="p">,</span> <span class="n">mfc</span><span class="o">=</span><span class="n">st</span><span class="o">.</span><span class="n">CORAL</span><span class="p">,</span> <span class="n">mec</span><span class="o">=</span><span class="s2">"white"</span><span class="p">,</span> <span class="n">mew</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+<a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a>        <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="n">note</span><span class="p">,</span> <span class="p">(</span><span class="n">X_SEAWATER</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="n">T_SPLIT</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="n">note_xy</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"white"</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">"right"</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span>
+<a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a>                    <span class="n">zorder</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">fontsize</span> <span class="o">*</span> <span class="mf">0.9</span><span class="p">,</span> <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">"-"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"white"</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+<a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a>        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"H₂O–NaCl at 250 bar"</span><span class="p">)</span>
+<a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a>    <span class="k">return</span> <span class="n">fig</span>
+<a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a>
+<a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a>
+<a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a><span class="n">desktop</span> <span class="o">=</span> <span class="n">phase_diagram</span><span class="p">((</span><span class="mi">11</span><span class="p">,</span> <span class="mf">5.2</span><span class="p">),</span> <span class="mi">11</span><span class="p">,</span> <span class="p">[</span>
+<a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a>    <span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">870</span><span class="p">,</span> <span class="s2">"vapour + liquid"</span><span class="p">,</span> <span class="n">st</span><span class="o">.</span><span class="n">NAVY</span><span class="p">),</span>
+<a id="__codelineno-0-69" name="__codelineno-0-69" href="#__codelineno-0-69"></a>    <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="s2">"vapour + halite"</span><span class="p">,</span> <span class="n">st</span><span class="o">.</span><span class="n">INK</span><span class="p">),</span>
+<a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a>    <span class="p">(</span><span class="mi">68</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="s2">"liquid</span><span class="se">\n</span><span class="s2">+ halite"</span><span class="p">,</span> <span class="n">st</span><span class="o">.</span><span class="n">NAVY</span><span class="p">),</span>
+<a id="__codelineno-0-71" name="__codelineno-0-71" href="#__codelineno-0-71"></a>    <span class="p">(</span><span class="mf">5e-3</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span> <span class="s2">"liquid-like fluid"</span><span class="p">,</span> <span class="s2">"white"</span><span class="p">),</span>
+<a id="__codelineno-0-72" name="__codelineno-0-72" href="#__codelineno-0-72"></a>    <span class="p">(</span><span class="mf">5e-3</span><span class="p">,</span> <span class="mi">620</span><span class="p">,</span> <span class="s2">"vapour-like fluid"</span><span class="p">,</span> <span class="n">st</span><span class="o">.</span><span class="n">INK</span><span class="p">),</span>
+<a id="__codelineno-0-73" name="__codelineno-0-73" href="#__codelineno-0-73"></a><span class="p">],</span> <span class="sa">f</span><span class="s2">"seawater separates into</span><span class="se">\n</span><span class="s2">vapour + brine at ≈</span><span class="si">{</span><span class="n">T_SPLIT</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2"> °C"</span><span class="p">,</span> <span class="p">(</span><span class="mf">0.9</span><span class="p">,</span> <span class="mi">250</span><span class="p">))</span>
+<a id="__codelineno-0-74" name="__codelineno-0-74" href="#__codelineno-0-74"></a><span class="n">desktop</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.02</span><span class="p">,</span> <span class="n">st</span><span class="o">.</span><span class="n">CREDIT</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">st</span><span class="o">.</span><span class="n">MUTED</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">desktop</span><span class="o">.</span><span class="n">transFigure</span><span class="p">)</span>
+<a id="__codelineno-0-75" name="__codelineno-0-75" href="#__codelineno-0-75"></a><span class="n">desktop</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">OUT</span><span class="p">,</span> <span class="s2">"hero_desktop.png"</span><span class="p">))</span>
+<a id="__codelineno-0-76" name="__codelineno-0-76" href="#__codelineno-0-76"></a>
+<a id="__codelineno-0-77" name="__codelineno-0-77" href="#__codelineno-0-77"></a><span class="n">mobile</span> <span class="o">=</span> <span class="n">phase_diagram</span><span class="p">((</span><span class="mf">6.2</span><span class="p">,</span> <span class="mf">6.4</span><span class="p">),</span> <span class="mi">14</span><span class="p">,</span> <span class="p">[</span>
+<a id="__codelineno-0-78" name="__codelineno-0-78" href="#__codelineno-0-78"></a>    <span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">870</span><span class="p">,</span> <span class="s2">"V + L"</span><span class="p">,</span> <span class="n">st</span><span class="o">.</span><span class="n">NAVY</span><span class="p">),</span>
+<a id="__codelineno-0-79" name="__codelineno-0-79" href="#__codelineno-0-79"></a>    <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="s2">"V + H"</span><span class="p">,</span> <span class="n">st</span><span class="o">.</span><span class="n">INK</span><span class="p">),</span>
+<a id="__codelineno-0-80" name="__codelineno-0-80" href="#__codelineno-0-80"></a>    <span class="p">(</span><span class="mi">52</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span> <span class="s2">"L+H"</span><span class="p">,</span> <span class="n">st</span><span class="o">.</span><span class="n">NAVY</span><span class="p">),</span>
+<a id="__codelineno-0-81" name="__codelineno-0-81" href="#__codelineno-0-81"></a>    <span class="p">(</span><span class="mf">6e-3</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="s2">"liquid-like"</span><span class="p">,</span> <span class="s2">"white"</span><span class="p">),</span>
+<a id="__codelineno-0-82" name="__codelineno-0-82" href="#__codelineno-0-82"></a><span class="p">],</span> <span class="sa">f</span><span class="s2">"splits at</span><span class="se">\n</span><span class="s2">≈</span><span class="si">{</span><span class="n">T_SPLIT</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2"> °C"</span><span class="p">,</span> <span class="p">(</span><span class="mf">0.9</span><span class="p">,</span> <span class="mi">260</span><span class="p">))</span>
+<a id="__codelineno-0-83" name="__codelineno-0-83" href="#__codelineno-0-83"></a><span class="n">mobile</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">OUT</span><span class="p">,</span> <span class="s2">"hero_mobile.png"</span><span class="p">))</span>
+<a id="__codelineno-0-84" name="__codelineno-0-84" href="#__codelineno-0-84"></a>
+<a id="__codelineno-0-85" name="__codelineno-0-85" href="#__codelineno-0-85"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">6.6</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">))</span>
+<a id="__codelineno-0-86" name="__codelineno-0-86" href="#__codelineno-0-86"></a><span class="n">ax</span><span class="o">.</span><span class="n">axvspan</span><span class="p">(</span><span class="n">T_SPLIT</span><span class="p">,</span> <span class="n">T_HALITE</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"#ddeef3"</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-0-87" name="__codelineno-0-87" href="#__codelineno-0-87"></a><span class="n">ax</span><span class="o">.</span><span class="n">axvspan</span><span class="p">(</span><span class="n">T_HALITE</span><span class="p">,</span> <span class="n">tc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s2">"#eeeeee"</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-0-88" name="__codelineno-0-88" href="#__codelineno-0-88"></a><span class="n">ax</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">tc</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">q</span><span class="o">.</span><span class="n">has</span><span class="p">(</span><span class="s2">"liquid"</span><span class="p">),</span> <span class="n">q</span><span class="o">.</span><span class="n">X_l</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="n">st</span><span class="o">.</span><span class="n">NAVY</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">2.2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">"liquid (brine)"</span><span class="p">)</span>
+<a id="__codelineno-0-89" name="__codelineno-0-89" href="#__codelineno-0-89"></a><span class="n">ax</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">tc</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">q</span><span class="o">.</span><span class="n">has</span><span class="p">(</span><span class="s2">"vapour"</span><span class="p">),</span> <span class="n">q</span><span class="o">.</span><span class="n">X_v</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="n">st</span><span class="o">.</span><span class="n">CORAL</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">2.2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">"vapour"</span><span class="p">)</span>
+<a id="__codelineno-0-90" name="__codelineno-0-90" href="#__codelineno-0-90"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"salinity of the phase (wt% NaCl)"</span><span class="p">)</span>
+<a id="__codelineno-0-91" name="__codelineno-0-91" href="#__codelineno-0-91"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"temperature (°C)"</span><span class="p">)</span>
+<a id="__codelineno-0-92" name="__codelineno-0-92" href="#__codelineno-0-92"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="n">tc</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">tc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<a id="__codelineno-0-93" name="__codelineno-0-93" href="#__codelineno-0-93"></a><span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s2">"upper right"</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.86</span><span class="p">))</span>
+<a id="__codelineno-0-94" name="__codelineno-0-94" href="#__codelineno-0-94"></a><span class="n">ax2</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">twinx</span><span class="p">()</span>
+<a id="__codelineno-0-95" name="__codelineno-0-95" href="#__codelineno-0-95"></a><span class="n">ax2</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s2">"right"</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<a id="__codelineno-0-96" name="__codelineno-0-96" href="#__codelineno-0-96"></a><span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">tc</span><span class="p">,</span> <span class="n">vapour_mass</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">st</span><span class="o">.</span><span class="n">TEAL</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">1.4</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">"--"</span><span class="p">)</span>
+<a id="__codelineno-0-97" name="__codelineno-0-97" href="#__codelineno-0-97"></a><span class="n">ax2</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<a id="__codelineno-0-98" name="__codelineno-0-98" href="#__codelineno-0-98"></a><span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"vapour mass fraction (%)"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">st</span><span class="o">.</span><span class="n">TEAL</span><span class="p">)</span>
+<a id="__codelineno-0-99" name="__codelineno-0-99" href="#__codelineno-0-99"></a><span class="n">ax2</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">"y"</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="n">st</span><span class="o">.</span><span class="n">TEAL</span><span class="p">)</span>
+<a id="__codelineno-0-100" name="__codelineno-0-100" href="#__codelineno-0-100"></a><span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">((</span><span class="n">T_SPLIT</span> <span class="o">+</span> <span class="n">T_HALITE</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="s2">"vapour</span><span class="se">\n</span><span class="s2">+ brine"</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">st</span><span class="o">.</span><span class="n">INK</span><span class="p">)</span>
+<a id="__codelineno-0-101" name="__codelineno-0-101" href="#__codelineno-0-101"></a><span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">((</span><span class="n">T_HALITE</span> <span class="o">+</span> <span class="n">tc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="s2">"vapour + halite"</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">st</span><span class="o">.</span><span class="n">INK</span><span class="p">)</span>
+<a id="__codelineno-0-102" name="__codelineno-0-102" href="#__codelineno-0-102"></a><span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">((</span><span class="n">tc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">T_SPLIT</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="s2">"liquid"</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">st</span><span class="o">.</span><span class="n">INK</span><span class="p">)</span>
+<a id="__codelineno-0-103" name="__codelineno-0-103" href="#__codelineno-0-103"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Seawater (3.2 wt% NaCl) heated at 250 bar"</span><span class="p">)</span>
+<a id="__codelineno-0-104" name="__codelineno-0-104" href="#__codelineno-0-104"></a><span class="n">fig</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.03</span><span class="p">,</span> <span class="n">st</span><span class="o">.</span><span class="n">CREDIT</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">7.5</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">st</span><span class="o">.</span><span class="n">MUTED</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">fig</span><span class="o">.</span><span class="n">transFigure</span><span class="p">)</span>
+<a id="__codelineno-0-105" name="__codelineno-0-105" href="#__codelineno-0-105"></a><span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">OUT</span><span class="p">,</span> <span class="s2">"seawater_250bar.png"</span><span class="p">))</span>
+<a id="__codelineno-0-106" name="__codelineno-0-106" href="#__codelineno-0-106"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"hero_desktop.png hero_mobile.png seawater_250bar.png written to"</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">OUT</span><span class="p">))</span>
+</code></pre></div>
+<p>The script uses a few shared style settings from
+<a href="https://github.com/lruepke/xThermo/blob/main/docs/gallery/_style.py"><code>docs/gallery/_style.py</code></a>.</p>
+</details>
+<h2 id="quick-start">Quick start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python</label><label for="__tabbed_1_2">C++</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xThermal</span><span class="w"> </span><span class="kn">import</span> <span class="n">H2ONaCl</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">sw</span> <span class="o">=</span> <span class="n">H2ONaCl</span><span class="o">.</span><span class="n">cH2ONaCl</span><span class="p">(</span><span class="s2">"IAPS84"</span><span class="p">)</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">props</span> <span class="o">=</span> <span class="n">sw</span><span class="o">.</span><span class="n">UpdateState_TPX</span><span class="p">(</span><span class="mf">573.15</span><span class="p">,</span> <span class="mf">300e5</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>  <span class="c1"># T [K], p [Pa], X [kg/kg]</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">props</span><span class="o">.</span><span class="n">Rho</span><span class="p">,</span> <span class="n">props</span><span class="o">.</span><span class="n">H</span><span class="p">,</span> <span class="n">props</span><span class="o">.</span><span class="n">phase</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">xthermo</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xthermo</span><span class="w"> </span><span class="kn">import</span> <span class="n">H2ONaCl</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">sw</span> <span class="o">=</span> <span class="n">H2ONaCl</span><span class="o">.</span><span class="n">cH2ONaCl</span><span class="p">(</span><span class="s2">"IAPS84"</span><span class="p">)</span>                     <span class="c1"># water backend: IAPS-84</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span> <span class="o">+</span> <span class="mf">273.15</span>               <span class="c1"># K</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">s</span> <span class="o">=</span> <span class="n">xthermo</span><span class="o">.</span><span class="n">tpx</span><span class="p">(</span><span class="n">sw</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="mf">250e5</span><span class="p">,</span> <span class="mf">0.032</span><span class="p">)</span>                <span class="c1"># p in Pa, salinity in kg/kg</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="k">for</span> <span class="n">t</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">rho</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">T</span> <span class="o">-</span> <span class="mf">273.15</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">phase_name</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">Rho</span><span class="p">):</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">t</span><span class="si">:</span><span class="s2">5.0f</span><span class="si">}</span><span class="s2"> °C  </span><span class="si">{</span><span class="n">name</span><span class="si">:</span><span class="s2">8s</span><span class="si">}</span><span class="s2">  </span><span class="si">{</span><span class="n">rho</span><span class="si">:</span><span class="s2">7.1f</span><span class="si">}</span><span class="s2"> kg/m³"</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">"H2ONaCl.h"</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">xThermal</span><span class="p">;</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="n">H2ONaCl</span><span class="o">::</span><span class="n">cH2ONaCl</span><span class="w"> </span><span class="n">eos</span><span class="p">(</span><span class="s">"IAPS84"</span><span class="p">);</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="n">ThermodynamicProperties</span><span class="w"> </span><span class="n">props</span><span class="p">;</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="n">eos</span><span class="p">.</span><span class="n">UpdateState_TPX</span><span class="p">(</span><span class="n">props</span><span class="p">,</span><span class="w"> </span><span class="mf">573.15</span><span class="p">,</span><span class="w"> </span><span class="mf">300e5</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">);</span><span class="w">  </span><span class="c1">// T [K], p [Pa], X [kg/kg]</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">props</span><span class="p">.</span><span class="n">Rho</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">"H2ONaCl.h"</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">xThermal</span><span class="p">;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="n">H2ONaCl</span><span class="o">::</span><span class="n">cH2ONaCl</span><span class="w"> </span><span class="n">eos</span><span class="p">(</span><span class="s">"IAPS84"</span><span class="p">);</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="n">ThermodynamicProperties</span><span class="w"> </span><span class="n">props</span><span class="p">;</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="n">eos</span><span class="p">.</span><span class="n">UpdateState_TPX</span><span class="p">(</span><span class="n">props</span><span class="p">,</span><span class="w"> </span><span class="mf">573.15</span><span class="p">,</span><span class="w"> </span><span class="mf">300e5</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">);</span><span class="w">  </span><span class="c1">// T [K], p [Pa], X [kg/kg]</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">props</span><span class="p">.</span><span class="n">Rho</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">" kg/m3, "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">eos</span><span class="p">.</span><span class="n">phase_name</span><span class="p">(</span><span class="n">props</span><span class="p">.</span><span class="n">phase</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="p">}</span>
 </code></pre></div>
 </div>
 </div>
 </div>
-<h2 id="references">References</h2>
-<p>Driesner, T. &amp; Heinrich, C.A. (2007). The system H₂O–NaCl. Part I: Correlation formulae for phase relations in temperature–pressure–composition space from 0 to 1000 °C, 0 to 5000 bar, and 0 to 1 XNaCl. <em>Geochimica et Cosmochimica Acta</em>, <strong>71</strong>, 4880–4901.</p>
-<p>Driesner, T. (2007). The system H₂O–NaCl. Part II: Correlations for molar volume, enthalpy, and isobaric heat capacity from 0 to 1000 °C, 1 to 5000 bar, and 0 to 1 XNaCl. <em>Geochimica et Cosmochimica Acta</em>, <strong>71</strong>, 4902–4919.</p>
+<p>Installation from source takes a few minutes: see <a href="installation/">Installation</a>. A package on PyPI is planned
+but not yet published.</p>
+<div class="xt-ack">
+<p>xThermo is developed at the <a href="https://www.geomar.de">GEOMAR Helmholtz Centre for Ocean Research Kiel</a> by Zhikui Guo
+and Lars Rüpke. It implements the H₂O–NaCl model of Driesner &amp; Heinrich (2007) and Driesner (2007); please cite
+these papers when you use it. Authors, citation and licences: <a href="about/">About</a>.</p>
+</div>
 
 
 
@@ -1170,8 +1307,13 @@ checks only the upper temperature at run time; see <a href="limitations/">Model 
 
 
 
+  
+  
 
 
+
+
+  
 
 
 
@@ -1180,21 +1322,73 @@ checks only the upper temperature at run time; see <a href="limitations/">Model 
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
         <footer class="md-footer">
   
+    
+      
+        
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+        
+          
+          <a href="installation/" class="md-footer__link md-footer__link--next" aria-label="Next: Installation">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Installation
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Developed at <a href="https://www.geomar.de">GEOMAR Helmholtz Centre for Ocean Research Kiel</a> · source code under the MIT licence; compiled builds include third-party components with their own licences (<a href="https://lruepke.github.io/xThermo/about/#license">details</a>) · <a href="https://lruepke.github.io/xThermo/legal/">Legal notice</a>
+
+    </div>
   
   
     Made with
     <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
       Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/lruepke/xThermo" target="_blank" rel="noopener" title="Source code on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
 </div>
@@ -1212,7 +1406,7 @@ checks only the upper temperature at run time; see <a href="limitations/">Model 
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections", "content.code.copy", "content.code.annotate"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "content.code.copy", "content.code.annotate", "content.tabs.link"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
