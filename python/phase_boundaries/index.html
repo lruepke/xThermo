@@ -13,10 +13,10 @@
         <link rel="canonical" href="https://lruepke.github.io/xThermo/python/phase_boundaries/">
       
       
-        <link rel="prev" href="../hpx/">
+        <link rel="prev" href="../property_maps/">
       
       
-        <link rel="next" href="../saturation/">
+        <link rel="next" href="../water_nacl/">
       
       
         
@@ -274,7 +274,7 @@
           
   
   
-  Python API
+  Python guide
 
         </a>
       </li>
@@ -508,7 +508,7 @@
   <span class="md-ellipsis">
     
   
-    Python API
+    Python guide
   
 
     
@@ -524,7 +524,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Python API
+    Python guide
   
 
           </label>
@@ -565,14 +565,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../tpx/" class="md-nav__link">
+      <a href="../evaluate/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    T-p-X calculation
+    Evaluating states
   
 
     
@@ -593,14 +593,70 @@
   
   
     <li class="md-nav__item">
-      <a href="../hpx/" class="md-nav__link">
+      <a href="../errors/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    H-p-X flash
+    Errors and status
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phase_diagrams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase diagrams
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../property_maps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Property maps
   
 
     
@@ -740,14 +796,42 @@
   
   
     <li class="md-nav__item">
-      <a href="../saturation/" class="md-nav__link">
+      <a href="../water_nacl/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Saturation (H₂O)
+    Pure water and NaCl
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../classic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Classic SWIG interface
   
 
     
@@ -1108,7 +1192,12 @@
 
 
 <h1 id="phase-boundaries">Phase boundaries<a class="headerlink" href="#phase-boundaries" title="Permanent link">&para;</a></h1>
-<p>xThermo provides functions to compute the key phase boundaries of the H₂O–NaCl system.</p>
+<p>The model object <code>cH2ONaCl</code> computes the phase boundaries of the H₂O–NaCl system directly: the three-phase surface
+V+L+H, the critical curve, the halite liquidus and the compositions of coexisting phases. For complete sections
+through the phase diagram use <a href="../phase_diagrams/">Phase diagrams</a>; for properties on grids, <a href="../evaluate/">Evaluating
+states</a>.</p>
+<p>These functions take and return SI units (K, Pa, kg/kg). They accept NumPy arrays, but return tuples or lists: wrap
+the results in <code>np.array(...)</code>, as in the examples below.</p>
 <h2 id="3-d-overview">3-D overview<a class="headerlink" href="#3-d-overview" title="Permanent link">&para;</a></h2>
 <p>The full phase boundary structure in T–p–X space, showing the VLH surface, VH surface,
 halite liquidus, VL two-phase surfaces, and the critical curve.</p>
@@ -1120,7 +1209,7 @@ halite liquidus, VL two-phase surfaces, and the critical curve.</p>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="kn">import</span> <span class="n">Patch</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.colors</span><span class="w"> </span><span class="kn">import</span> <span class="n">to_hex</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xThermal</span><span class="w"> </span><span class="kn">import</span> <span class="n">H2ONaCl</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xthermo</span><span class="w"> </span><span class="kn">import</span> <span class="n">H2ONaCl</span>
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
 <a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">"ignore"</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">RuntimeWarning</span><span class="p">)</span>
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">sw</span> <span class="o">=</span> <span class="n">H2ONaCl</span><span class="o">.</span><span class="n">cH2ONaCl</span><span class="p">(</span><span class="s2">"IAPS84"</span><span class="p">)</span>
@@ -1215,7 +1304,7 @@ The left panel shows the coexistence pressure; the right panel shows the saturat
 <p><img alt="VLH coexistence curves" src="../../assets/img/vlh_curve.png" /></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xThermal</span><span class="w"> </span><span class="kn">import</span> <span class="n">H2ONaCl</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xthermo</span><span class="w"> </span><span class="kn">import</span> <span class="n">H2ONaCl</span>
 <a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">sw</span> <span class="o">=</span> <span class="n">H2ONaCl</span><span class="o">.</span><span class="n">cH2ONaCl</span><span class="p">(</span><span class="s2">"IAPS84"</span><span class="p">)</span>
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
@@ -1242,7 +1331,7 @@ The left panel shows the coexistence pressure; the right panel shows the saturat
 <h2 id="critical-curve">Critical curve<a class="headerlink" href="#critical-curve" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xThermal</span><span class="w"> </span><span class="kn">import</span> <span class="n">H2ONaCl</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xthermo</span><span class="w"> </span><span class="kn">import</span> <span class="n">H2ONaCl</span>
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">sw</span> <span class="o">=</span> <span class="n">H2ONaCl</span><span class="o">.</span><span class="n">cH2ONaCl</span><span class="p">(</span><span class="s2">"IAPS84"</span><span class="p">)</span>
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
@@ -1263,7 +1352,7 @@ The left panel shows the coexistence pressure; the right panel shows the saturat
 P_VLH, vapour coexists with halite (V+H). Above T_MAX_VLH, V+L is bounded from below by the NaCl boiling curve.
 Within V+L, <code>XL_VL</code> and <code>XV_VL</code> return the compositions of the coexisting liquid and vapour:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xThermal</span><span class="w"> </span><span class="kn">import</span> <span class="n">H2ONaCl</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xthermo</span><span class="w"> </span><span class="kn">import</span> <span class="n">H2ONaCl</span>
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">sw</span> <span class="o">=</span> <span class="n">H2ONaCl</span><span class="o">.</span><span class="n">cH2ONaCl</span><span class="p">(</span><span class="s2">"IAPS84"</span><span class="p">)</span>
 <a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
@@ -1314,7 +1403,7 @@ Within V+L, <code>XL_VL</code> and <code>XV_VL</code> return the compositions of
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../hpx/" class="md-footer__link md-footer__link--prev" aria-label="Previous: H-p-X flash">
+          <a href="../property_maps/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Property maps">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1324,20 +1413,20 @@ Within V+L, <code>XL_VL</code> and <code>XV_VL</code> return the compositions of
                 Previous
               </span>
               <div class="md-ellipsis">
-                H-p-X flash
+                Property maps
               </div>
             </div>
           </a>
         
         
           
-          <a href="../saturation/" class="md-footer__link md-footer__link--next" aria-label="Next: Saturation (H₂O)">
+          <a href="../water_nacl/" class="md-footer__link md-footer__link--next" aria-label="Next: Pure water and NaCl">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Saturation (H₂O)
+                Pure water and NaCl
               </div>
             </div>
             <div class="md-footer__button md-icon">

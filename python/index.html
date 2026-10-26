@@ -16,7 +16,7 @@
         <link rel="prev" href="../limitations/">
       
       
-        <link rel="next" href="tpx/">
+        <link rel="next" href="evaluate/">
       
       
         
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#python-api-overview" class="md-skip">
+        <a href="#python-guide" class="md-skip">
           Skip to content
         </a>
       
@@ -274,7 +274,7 @@
           
   
   
-  Python API
+  Python guide
 
         </a>
       </li>
@@ -508,7 +508,7 @@
   <span class="md-ellipsis">
     
   
-    Python API
+    Python guide
   
 
     
@@ -524,7 +524,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Python API
+    Python guide
   
 
           </label>
@@ -597,10 +597,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#import-pattern" class="md-nav__link">
+  <a href="#the-models" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Import pattern
+        The models
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-to-go-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where to go next
       
     </span>
   </a>
@@ -619,21 +630,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#thermodynamicproperties-fields" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ThermodynamicProperties fields
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#errors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Errors
+        Installation
       
     </span>
   </a>
@@ -656,14 +656,14 @@
   
   
     <li class="md-nav__item">
-      <a href="tpx/" class="md-nav__link">
+      <a href="evaluate/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    T-p-X calculation
+    Evaluating states
   
 
     
@@ -684,14 +684,70 @@
   
   
     <li class="md-nav__item">
-      <a href="hpx/" class="md-nav__link">
+      <a href="errors/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    H-p-X flash
+    Errors and status
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="phase_diagrams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phase diagrams
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="property_maps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Property maps
   
 
     
@@ -740,14 +796,42 @@
   
   
     <li class="md-nav__item">
-      <a href="saturation/" class="md-nav__link">
+      <a href="water_nacl/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Saturation (H₂O)
+    Pure water and NaCl
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Classic SWIG interface
   
 
     
@@ -1047,10 +1131,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#import-pattern" class="md-nav__link">
+  <a href="#the-models" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Import pattern
+        The models
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-to-go-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where to go next
       
     </span>
   </a>
@@ -1069,21 +1164,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#thermodynamicproperties-fields" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ThermodynamicProperties fields
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#errors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Errors
+        Installation
       
     </span>
   </a>
@@ -1107,58 +1191,95 @@
 
 
 
-<h1 id="python-api-overview">Python API overview<a class="headerlink" href="#python-api-overview" title="Permanent link">&para;</a></h1>
-<p>The Python bindings expose the H₂O–NaCl EOS as the <code>xThermal</code> package.</p>
-<p><img alt="H2O-NaCl phase diagram" src="../assets/img/phase_diagram_PTX.png" /></p>
-<p><em>Isobaric H₂O–NaCl section at 300 bar: (a) temperature and (b) specific enthalpy against bulk salinity, on a salinity
-axis that is logarithmic below 1 wt% NaCl and linear above. Shaded: the multiphase regions from the library's
-phase-boundary geometry (<code>Slice_constP</code>); unshaded: single-phase fluid. Generated with the code below.</em></p>
-<details class="example">
-<summary>Code to reproduce this figure</summary>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">xthermo</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xthermo</span><span class="w"> </span><span class="kn">import</span> <span class="n">H2ONaCl</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">sw</span> <span class="o">=</span> <span class="n">H2ONaCl</span><span class="o">.</span><span class="n">cH2ONaCl</span><span class="p">(</span><span class="s2">"IAPS84"</span><span class="p">)</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">r</span> <span class="o">=</span> <span class="n">xthermo</span><span class="o">.</span><span class="n">plot_Pslice</span><span class="p">(</span><span class="mf">300e5</span><span class="p">,</span> <span class="n">sw</span><span class="o">=</span><span class="n">sw</span><span class="p">)</span>   <span class="c1"># needs matplotlib</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">r</span><span class="p">[</span><span class="s2">"fig"</span><span class="p">]</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">"phase_diagram_PTX.png"</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s2">"tight"</span><span class="p">)</span>
+<h1 id="python-guide">Python guide<a class="headerlink" href="#python-guide" title="Permanent link">&para;</a></h1>
+<p>The Python package <code>xthermo</code> gives you the H₂O–NaCl equation of state of Driesner &amp; Heinrich (2007) and Driesner
+(2007), pure water (IAPS-84, IAPWS-95) and pure NaCl. You evaluate states on NumPy arrays of any shape and draw phase
+diagrams and property maps with a few Matplotlib helpers.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">xthermo</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xthermo</span><span class="w"> </span><span class="kn">import</span> <span class="n">H2ONaCl</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">sw</span> <span class="o">=</span> <span class="n">H2ONaCl</span><span class="o">.</span><span class="n">cH2ONaCl</span><span class="p">(</span><span class="s2">"IAPS84"</span><span class="p">)</span>                         <span class="c1"># H2O-NaCl with the IAPS-84 water backend</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">300.0</span><span class="p">,</span> <span class="mf">400.0</span><span class="p">,</span> <span class="mf">500.0</span><span class="p">])</span> <span class="o">+</span> <span class="mf">273.15</span>            <span class="c1"># K</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">s</span> <span class="o">=</span> <span class="n">xthermo</span><span class="o">.</span><span class="n">tpx</span><span class="p">(</span><span class="n">sw</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="mf">250e5</span><span class="p">,</span> <span class="mf">0.032</span><span class="p">)</span>                    <span class="c1"># p = 250 bar in Pa, X = 3.2 wt% NaCl in kg/kg</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">phase_name</span><span class="p">)</span>                                     <span class="c1"># ['Liquid' 'V+L' 'V+H']</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">Rho</span><span class="p">)</span>                                            <span class="c1"># bulk density, kg/m³</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">X_v</span><span class="p">)</span>                                            <span class="c1"># salinity of the vapour phase, kg/kg (0 where absent)</span>
 </code></pre></div>
-</details>
-<p>Three sub-modules are available:</p>
+<h2 id="the-models">The models<a class="headerlink" href="#the-models" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
 <th>Module</th>
 <th>Class</th>
-<th>Description</th>
+<th>System</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>xThermal.H2O</code></td>
-<td><code>cIAPS84</code>, <code>cIAPWS95</code></td>
-<td>Pure water EOS</td>
+<td><code>xthermo.H2ONaCl</code></td>
+<td><code>cH2ONaCl("IAPS84")</code>, <code>cH2ONaCl("IAPWS95")</code></td>
+<td>H₂O–NaCl; the argument selects the water equation of state</td>
 </tr>
 <tr>
-<td><code>xThermal.NaCl</code></td>
-<td><code>cNaCl</code></td>
-<td>Pure NaCl EOS</td>
+<td><code>xthermo.H2O</code></td>
+<td><code>cIAPS84()</code>, <code>cIAPWS95()</code></td>
+<td>pure water</td>
 </tr>
 <tr>
-<td><code>xThermal.H2ONaCl</code></td>
-<td><code>cH2ONaCl</code></td>
-<td>H₂O–NaCl mixture EOS</td>
+<td><code>xthermo.NaCl</code></td>
+<td><code>cNaCl("IAPS84")</code></td>
+<td>pure NaCl (solid, liquid, vapour)</td>
 </tr>
 </tbody>
 </table>
-<h2 id="import-pattern">Import pattern<a class="headerlink" href="#import-pattern" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xThermal</span><span class="w"> </span><span class="kn">import</span> <span class="n">H2ONaCl</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">sw</span> <span class="o">=</span> <span class="n">H2ONaCl</span><span class="o">.</span><span class="n">cH2ONaCl</span><span class="p">(</span><span class="s2">"IAPS84"</span><span class="p">)</span>   <span class="c1"># water backend: "IAPS84" or "IAPWS95"</span>
-</code></pre></div>
-<p><code>"IAPS84"</code> is the reference backend of the Driesner correlations. Any other name raises <code>NotImplementedError</code>. See
+<p>The Driesner correlations were fitted with IAPS-84, so <strong><code>"IAPS84"</code> is the reference backend</strong> for H₂O–NaCl.
+<code>"IAPWS95"</code> gives slightly different brine properties; see
 <a href="../limitations/#water-backends">Model scope and limitations</a>.</p>
+<p>Create a model once and reuse it for all your evaluations. A model object is not meant to be shared between threads;
+use one per thread.</p>
+<h2 id="where-to-go-next">Where to go next<a class="headerlink" href="#where-to-go-next" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Page</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="evaluate/">Evaluating states</a></td>
+<td><code>xthermo.tpx</code> and <code>xthermo.hpx</code>, broadcasting, the <code>States</code> result, phases and the meaning of each property in multiphase states</td>
+</tr>
+<tr>
+<td><a href="errors/">Errors and status</a></td>
+<td><code>errors="raise"</code> and <code>errors="nan"</code>, <code>xthermo.Status</code>, the exception classes</td>
+</tr>
+<tr>
+<td><a href="phase_diagrams/">Phase diagrams</a></td>
+<td>isobaric and isothermal sections from the library's phase-region geometry</td>
+</tr>
+<tr>
+<td><a href="property_maps/">Property maps</a></td>
+<td>maps and contours of any property, without interpolation across phase boundaries</td>
+</tr>
+<tr>
+<td><a href="phase_boundaries/">Phase boundaries</a></td>
+<td>the V+L+H surface, the critical curve and the compositions of coexisting phases</td>
+</tr>
+<tr>
+<td><a href="water_nacl/">Pure water and NaCl</a></td>
+<td>saturation of water, the water models, pure NaCl</td>
+</tr>
+<tr>
+<td><a href="classic/">Classic SWIG interface</a></td>
+<td><code>UpdateState_TPX</code> / <code>UpdateState_HPX</code> on single points and 1-D vectors; the former name <code>xThermal</code></td>
+</tr>
+</tbody>
+</table>
 <h2 id="units">Units<a class="headerlink" href="#units" title="Permanent link">&para;</a></h2>
-<p>All functions use SI units:</p>
+<p>Inputs and outputs are in SI units everywhere:</p>
 <table>
 <thead>
 <tr>
@@ -1168,99 +1289,40 @@ phase-boundary geometry (<code>Slice_constP</code>); unshaded: single-phase flui
 </thead>
 <tbody>
 <tr>
-<td>Temperature</td>
+<td>temperature <code>T</code></td>
 <td>K</td>
 </tr>
 <tr>
-<td>Pressure</td>
-<td>Pa</td>
+<td>pressure <code>p</code></td>
+<td>Pa (1 bar = 10⁵ Pa)</td>
 </tr>
 <tr>
-<td>Composition X</td>
-<td>kg NaCl / kg total (mass fraction)</td>
+<td>salinity <code>X</code></td>
+<td>kg NaCl per kg of fluid, a mass fraction (0.032 = 3.2 wt% NaCl)</td>
 </tr>
 <tr>
-<td>Density</td>
+<td>density</td>
 <td>kg/m³</td>
 </tr>
 <tr>
-<td>Enthalpy</td>
+<td>specific enthalpy <code>H</code></td>
 <td>J/kg</td>
 </tr>
 <tr>
-<td>Heat capacity</td>
-<td>J/kg/K</td>
+<td>heat capacity</td>
+<td>J/(kg K)</td>
 </tr>
 <tr>
-<td>Viscosity</td>
-<td>Pa·s</td>
+<td>viscosity</td>
+<td>Pa s</td>
 </tr>
 </tbody>
 </table>
-<h2 id="thermodynamicproperties-fields">ThermodynamicProperties fields<a class="headerlink" href="#thermodynamicproperties-fields" title="Permanent link">&para;</a></h2>
-<p><code>UpdateState_TPX</code> and <code>UpdateState_HPX</code> return an object with these fields:</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>T</code>, <code>p</code>, <code>X</code></td>
-<td>Temperature (K), pressure (Pa), bulk salinity (kg/kg); <code>T</code> is the result of an HPX flash</td>
-</tr>
-<tr>
-<td><code>phase</code></td>
-<td>Phase region index; <code>sw.phase_name(phase)</code> gives its name</td>
-</tr>
-<tr>
-<td><code>Rho</code></td>
-<td>Bulk density (kg/m³): Σ S_i ρ_i</td>
-</tr>
-<tr>
-<td><code>H</code></td>
-<td>Bulk specific enthalpy (J/kg)</td>
-</tr>
-<tr>
-<td><code>Cp</code></td>
-<td>Single phase: isobaric heat capacity (J/kg/K). Multiphase: mass-weighted phase heat capacities, <strong>without latent heat</strong>; 0 in V+L+H</td>
-</tr>
-<tr>
-<td><code>Mu</code></td>
-<td>Single phase: dynamic viscosity (Pa·s). Multiphase: <strong>not defined</strong>; usually a placeholder value of 1, so use <code>Mu_l</code> and <code>Mu_v</code></td>
-</tr>
-<tr>
-<td><code>S_l</code>, <code>S_v</code>, <code>S_h</code></td>
-<td>Phase saturations: volume fractions of liquid, vapour and halite</td>
-</tr>
-<tr>
-<td><code>X_l</code>, <code>X_v</code></td>
-<td>Liquid and vapour salinity (kg/kg)</td>
-</tr>
-<tr>
-<td><code>Rho_l</code>, <code>Rho_v</code>, <code>Rho_h</code></td>
-<td>Phase densities (kg/m³)</td>
-</tr>
-<tr>
-<td><code>H_l</code>, <code>H_v</code>, <code>H_h</code></td>
-<td>Phase enthalpies (J/kg)</td>
-</tr>
-<tr>
-<td><code>Cp_l</code>, <code>Cp_v</code>, <code>Cp_h</code></td>
-<td>Phase heat capacities (J/kg/K)</td>
-</tr>
-<tr>
-<td><code>Mu_l</code>, <code>Mu_v</code></td>
-<td>Liquid and vapour viscosity (Pa·s)</td>
-</tr>
-</tbody>
-</table>
-<p>The exact multiphase definitions are given in <a href="../limitations/#phase-properties-and-bulk-properties">Model scope and limitations</a>.</p>
-<h2 id="errors">Errors<a class="headerlink" href="#errors" title="Permanent link">&para;</a></h2>
-<p>Invalid input raises a Python exception. Out-of-range input, for example T above 1273.15 K, raises <code>ValueError</code>.
-Array calls stop at the first failing point. See <a href="../limitations/#errors">Model scope and limitations</a>.</p>
+<p>The plotting helpers label their axes in °C, bar, wt% NaCl and MJ/kg; their inputs stay in SI.</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<p><code>pip install .</code> in a clone of the repository installs <code>xthermo</code> with NumPy; <code>pip install ".[plotting]"</code> adds
+Matplotlib. See <a href="../installation/">Installation</a>. <code>import xthermo</code> loads only the compiled modules; NumPy and
+Matplotlib are imported when you first use <code>tpx</code> / <code>hpx</code> or a plotting helper.</p>
 
 
 
@@ -1315,13 +1377,13 @@ Array calls stop at the first failing point. See <a href="../limitations/#errors
         
         
           
-          <a href="tpx/" class="md-footer__link md-footer__link--next" aria-label="Next: T-p-X calculation">
+          <a href="evaluate/" class="md-footer__link md-footer__link--next" aria-label="Next: Evaluating states">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                T-p-X calculation
+                Evaluating states
               </div>
             </div>
             <div class="md-footer__button md-icon">
