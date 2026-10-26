@@ -274,7 +274,7 @@
   
     
   
-  Model scope and limitations
+  Model and limitations
 
       </a>
     </li>
@@ -608,7 +608,7 @@
   <span class="md-ellipsis">
     
   
-    Model scope and limitations
+    Model and limitations
   
 
     
@@ -1261,7 +1261,7 @@ the phase-region colours of <code>xthermo.plot_slice</code> and a few shared sty
 <a href="https://github.com/lruepke/xThermo/blob/main/docs/gallery/_style.py"><code>docs/gallery/_style.py</code></a>.</p>
 <p>All results come from the H₂O–NaCl model of Driesner &amp; Heinrich (2007) and Driesner (2007) with the IAPS-84 water
 backend. Where a figure touches a region in which the model's formulation is uncertain, the text says so; the
-<a href="../limitations/">Model scope and limitations</a> page has the details.</p>
+<a href="../limitations/">Model and limitations</a> page has the details.</p>
 <p>More figures: the <a href="../">homepage</a> (the phase diagram at 250 bar and seawater heated at 250 bar), and the
 <a href="../python/phase_diagrams/">phase diagrams</a> and <a href="../python/property_maps/">property maps</a> of the Python guide.</p>
 <h2 id="how-the-phase-diagram-changes-with-depth">How the phase diagram changes with depth<a class="headerlink" href="#how-the-phase-diagram-changes-with-depth" title="Permanent link">&para;</a></h2>
@@ -1273,7 +1273,9 @@ of seawater. At 100 bar a liquid of seawater salinity (dashed) starts to separat
 Between 341 and 771 °C it is vapour + halite: the brine has dried out and salt precipitates. With rising pressure
 the two-phase fields move to higher temperatures (separation of seawater at 388 °C at 250 bar, 447 °C at 400 bar and
 688 °C at 1000 bar). The three-phase assemblage vapour + liquid + halite exists only up to 390 bar, so at 400 and
-1000 bar halite and vapour no longer coexist. The halite liquidus on the salt-rich side (blue) barely moves.</p>
+1000 bar halite and vapour no longer coexist. The halite liquidus on the salt-rich side (blue) barely moves. The
+regions are drawn from the library's section geometry, which has a few known inaccuracies
+(<a href="../limitations/#confirmed-numerical-defects">details</a>); none of them affects temperature–salinity sections.</p>
 <details class="example">
 <summary>Python code</summary>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
@@ -1396,8 +1398,9 @@ interrupted between 449 and 716 °C, where vapour and halite coexist instead (se
 brings the phases closer: the critical curve moves to higher temperature and the vapour holds more salt.</p>
 <p>The figure stops at 800 °C. Above the melting point of NaCl (800.7 °C) the published equation for the vapour
 composition is incomplete, and xThermo's vapour salinities differ from those of the model author's program by up to
-about 24 % at 1000 °C (<a href="../limitations/#differences-from-other-implementations-of-the-model">details</a>). Brine
-densities above 600 °C below 390 bar use the model's high-temperature density extrapolation.</p>
+about 24 % at 1000 °C (<a href="../limitations/#vapour-composition-above-the-melting-point-of-nacl">details</a>). Brine
+densities above 600 °C below 390 bar use the model's high-temperature density extrapolation
+(<a href="../limitations/#limitations-of-the-published-correlations">extrapolated regions</a>).</p>
 <details class="example">
 <summary>Python code</summary>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
@@ -1451,7 +1454,8 @@ pressure (230 bar) and broadens and shifts to higher temperatures with pressure.
 hydrothermal systems at supercritical conditions.</p>
 <p>The two water formulations available in xThermo (solid: IAPS-84, the basis of the H₂O–NaCl model; dotted:
 IAPWS-95) agree closely except near the maximum at 230 bar, where the peak heights differ by about 10 %. Close to the
-critical point both are less certain, and the published validity of IAPS-84 excludes a small region around it. The
+critical point both are less certain, and the published validity of IAPS-84 excludes a small region around it
+(<a href="../limitations/#limitations-of-the-published-correlations">details</a>). The
 peak heights shown also depend on the 0.1 K temperature spacing.</p>
 <details class="example">
 <summary>Python code</summary>
@@ -1653,13 +1657,13 @@ plane; the sections above show them on a logarithmic axis.</p>
         
         
           
-          <a href="../limitations/" class="md-footer__link md-footer__link--next" aria-label="Next: Model scope and limitations">
+          <a href="../limitations/" class="md-footer__link md-footer__link--next" aria-label="Next: Model and limitations">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Model scope and limitations
+                Model and limitations
               </div>
             </div>
             <div class="md-footer__button md-icon">
