@@ -953,10 +953,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#header" class="md-nav__link">
+  <a href="#installing-the-library" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Header
+        Installing the library
       
     </span>
   </a>
@@ -964,10 +964,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#linking-with-cmake-recommended" class="md-nav__link">
+  <a href="#using-xthermo-in-a-cmake-project" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Linking with CMake (recommended)
+        Using xThermo in a CMake project
       
     </span>
   </a>
@@ -975,21 +975,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#linking-with-g-directly" class="md-nav__link">
+  <a href="#models" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Linking with g++ directly
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key classes
+        Models
       
     </span>
   </a>
@@ -1008,10 +997,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#errors" class="md-nav__link">
+  <a href="#in-this-guide" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Errors
+        In this guide
       
     </span>
   </a>
@@ -1041,7 +1030,35 @@
   <span class="md-ellipsis">
     
   
-    T-p-X calculation
+    Evaluating states
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errors and threads
   
 
     
@@ -1199,10 +1216,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#header" class="md-nav__link">
+  <a href="#installing-the-library" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Header
+        Installing the library
       
     </span>
   </a>
@@ -1210,10 +1227,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#linking-with-cmake-recommended" class="md-nav__link">
+  <a href="#using-xthermo-in-a-cmake-project" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Linking with CMake (recommended)
+        Using xThermo in a CMake project
       
     </span>
   </a>
@@ -1221,21 +1238,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#linking-with-g-directly" class="md-nav__link">
+  <a href="#models" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Linking with g++ directly
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key classes
+        Models
       
     </span>
   </a>
@@ -1254,10 +1260,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#errors" class="md-nav__link">
+  <a href="#in-this-guide" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Errors
+        In this guide
       
     </span>
   </a>
@@ -1282,14 +1288,22 @@
 
 
 <h1 id="c-api-overview">C++ API overview<a class="headerlink" href="#c-api-overview" title="Permanent link">&para;</a></h1>
-<p>xThermo is a C++ library. The Python bindings are a thin SWIG wrapper around the same C++ classes.</p>
-<h2 id="header">Header<a class="headerlink" href="#header" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">"H2ONaCl.h"</span>
+<p>xThermo is a C++ library; the Python package and the command-line tool are built on the same classes. This guide
+covers the stable public interface: constructing a model, evaluating states, handling errors, and using the library
+from several threads. The model itself, its verification and its limitations are described on
+<a href="../limitations/">Model and limitations</a>.</p>
+<h2 id="installing-the-library">Installing the library<a class="headerlink" href="#installing-the-library" title="Permanent link">&para;</a></h2>
+<p>Build and install xThermo with CMake (details and options on <a href="../installation/">Installation</a>):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cmake<span class="w"> </span>-S<span class="w"> </span>.<span class="w"> </span>-B<span class="w"> </span>build
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>cmake<span class="w"> </span>--build<span class="w"> </span>build
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>cmake<span class="w"> </span>--install<span class="w"> </span>build<span class="w"> </span>--prefix<span class="w"> </span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/opt/xthermo"</span>
 </code></pre></div>
-<p><code>cmake --install</code> puts the headers in <code>&lt;prefix&gt;/include/xThermo/</code>, the library (<code>libxThermal.a</code>, or a shared
-library with <code>-DBUILD_SHARED_LIBS=ON</code>) in <code>&lt;prefix&gt;/lib/</code>, and a CMake package in <code>&lt;prefix&gt;/lib/cmake/xThermo/</code>.</p>
-<h2 id="linking-with-cmake-recommended">Linking with CMake (recommended)<a class="headerlink" href="#linking-with-cmake-recommended" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span><span class="w"> </span><span class="s">3.18</span><span class="p">)</span>
+<p>The installation contains the headers in <code>&lt;prefix&gt;/include/xThermo/</code>, the library <code>libxThermal</code> in <code>&lt;prefix&gt;/lib/</code>,
+the command-line tool <code>xThermal</code> in <code>&lt;prefix&gt;/bin/</code>, and a CMake package in <code>&lt;prefix&gt;/lib/cmake/xThermo/</code>.</p>
+<h2 id="using-xthermo-in-a-cmake-project">Using xThermo in a CMake project<a class="headerlink" href="#using-xthermo-in-a-cmake-project" title="Permanent link">&para;</a></h2>
+<p><code>find_package(xThermo)</code> provides the target <code>xThermo::xThermal</code>, which carries the include directory and the GSL
+dependency. A complete project has two files:</p>
+<div class="highlight"><span class="filename">CMakeLists.txt</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span><span class="w"> </span><span class="s">3.16</span><span class="p">)</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">project</span><span class="p">(</span><span class="s">my_app</span><span class="w"> </span><span class="s">LANGUAGES</span><span class="w"> </span><span class="s">CXX</span><span class="p">)</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
 <a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">find_package</span><span class="p">(</span><span class="s">xThermo</span><span class="w"> </span><span class="s">REQUIRED</span><span class="p">)</span>
@@ -1297,65 +1311,69 @@ library with <code>-DBUILD_SHARED_LIBS=ON</code>) in <code>&lt;prefix&gt;/lib/</
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nb">add_executable</span><span class="p">(</span><span class="s">my_app</span><span class="w"> </span><span class="s">main.cpp</span><span class="p">)</span>
 <a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nb">target_link_libraries</span><span class="p">(</span><span class="s">my_app</span><span class="w"> </span><span class="s">PRIVATE</span><span class="w"> </span><span class="s">xThermo::xThermal</span><span class="p">)</span>
 </code></pre></div>
-<p>Tell CMake where xThermo is installed:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>cmake<span class="w"> </span>-S<span class="w"> </span>.<span class="w"> </span>-B<span class="w"> </span>build<span class="w"> </span>-DCMAKE_PREFIX_PATH<span class="o">=</span>/path/to/xThermo/install<span class="w">    </span><span class="c1"># or: export xThermo_DIR=/path/to/xThermo/install</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>cmake<span class="w"> </span>--build<span class="w"> </span>build
+<div class="highlight"><span class="filename">main.cpp</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">"H2ONaCl.h"</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">{</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="n">xThermal</span><span class="o">::</span><span class="n">H2ONaCl</span><span class="o">::</span><span class="n">cH2ONaCl</span><span class="w"> </span><span class="n">brine</span><span class="p">(</span><span class="s">"IAPS84"</span><span class="p">);</span><span class="w">                        </span><span class="c1">// H2O-NaCl with the IAPS-84 water model</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="n">xThermal</span><span class="o">::</span><span class="n">ThermodynamicProperties</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">brine</span><span class="p">.</span><span class="n">UpdateState_TPX</span><span class="p">(</span><span class="mi">300</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">273.15</span><span class="p">,</span><span class="w"> </span><span class="mf">300e5</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">);</span><span class="w">   </span><span class="c1">// T [K], p [Pa], X [kg/kg]</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">brine</span><span class="p">.</span><span class="n">phase_name</span><span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">phase</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">", "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="n">Rho</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">" kg/m3</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span><span class="w">                   </span><span class="c1">// Liquid, 849.034 kg/m3</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p">}</span>
 </code></pre></div>
-<p>The target <code>xThermo::xThermal</code> brings its include directory and its GSL dependency with it.</p>
-<h2 id="linking-with-g-directly">Linking with g++ directly<a class="headerlink" href="#linking-with-g-directly" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">xThermo_DIR</span><span class="o">=</span>/path/to/xThermo/install
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>g++<span class="w"> </span>-std<span class="o">=</span>c++11<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span>-I<span class="si">${</span><span class="nv">xThermo_DIR</span><span class="si">}</span>/include/xThermo<span class="w"> </span><span class="k">$(</span>gsl-config<span class="w"> </span>--cflags<span class="k">)</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span>-o<span class="w"> </span>my_app<span class="w"> </span>main.cpp<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span>-L<span class="si">${</span><span class="nv">xThermo_DIR</span><span class="si">}</span>/lib<span class="w"> </span>-lxThermal<span class="w"> </span><span class="k">$(</span>gsl-config<span class="w"> </span>--libs<span class="k">)</span>
+<p>Configure with the installation prefix in <code>CMAKE_PREFIX_PATH</code>, then build and run:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>cmake<span class="w"> </span>-S<span class="w"> </span>.<span class="w"> </span>-B<span class="w"> </span>build<span class="w"> </span>-DCMAKE_PREFIX_PATH<span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/opt/xthermo"</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>cmake<span class="w"> </span>--build<span class="w"> </span>build
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>./build/my_app
 </code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">GSL</p>
-<p>xThermo uses GSL for root finding (saturation pressure, phase boundaries, the H–p–X flash), so programs link
-GSL as well. <code>gsl-config</code> comes with the system GSL. If xThermo was built with <code>-DXTHERMO_BUNDLED_GSL=ON</code>, GSL is
-installed with it: use <code>-I${xThermo_DIR}/lib/xThermo/gsl/include</code> and
-<code>-L${xThermo_DIR}/lib/xThermo/gsl/lib -lgsl -lgslcblas</code> instead of <code>gsl-config</code>.</p>
-</div>
-<h2 id="key-classes">Key classes<a class="headerlink" href="#key-classes" title="Permanent link">&para;</a></h2>
+<p>The test suite builds this project against a fresh installation.</p>
+<details class="note">
+<summary>Compiling without CMake</summary>
+<p>The library needs the GSL. With a system GSL (<code>gsl-config</code> in the PATH):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>g++<span class="w"> </span>-std<span class="o">=</span>c++11<span class="w"> </span>-I<span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/opt/xthermo/include/xThermo"</span><span class="w"> </span><span class="k">$(</span>gsl-config<span class="w"> </span>--cflags<span class="k">)</span><span class="w"> </span>-o<span class="w"> </span>my_app<span class="w"> </span>main.cpp<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span>-L<span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/opt/xthermo/lib"</span><span class="w"> </span>-lxThermal<span class="w"> </span><span class="k">$(</span>gsl-config<span class="w"> </span>--libs<span class="k">)</span>
+</code></pre></div>
+<p>If xThermo was built with <code>-DXTHERMO_BUNDLED_GSL=ON</code>, the GSL is installed with it: use
+<code>-I&lt;prefix&gt;/lib/xThermo/gsl/include</code> and <code>-L&lt;prefix&gt;/lib/xThermo/gsl/lib -lgsl -lgslcblas</code> instead of
+<code>gsl-config</code>. CMake does this for you.</p>
+</details>
+<h2 id="models">Models<a class="headerlink" href="#models" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
 <th>Class</th>
-<th>Header</th>
-<th>Description</th>
+<th>Model</th>
+<th>Construction</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>xThermal::H2ONaCl::cH2ONaCl</code></td>
-<td><code>H2ONaCl.h</code></td>
-<td>Full H₂O–NaCl EOS</td>
+<td>H₂O–NaCl (Driesner &amp; Heinrich 2007; Driesner 2007)</td>
+<td><code>cH2ONaCl brine("IAPS84")</code> or <code>("IAPWS95")</code>: the water model used inside</td>
 </tr>
 <tr>
-<td><code>xThermal::ThermodynamicProperties</code></td>
-<td><code>DataStructures.h</code> (included by <code>H2ONaCl.h</code>)</td>
-<td>Property struct filled by <code>UpdateState_*</code></td>
+<td><code>xThermal::PROST::cIAPS84</code></td>
+<td>pure water, IAPS-84</td>
+<td><code>cIAPS84 water;</code></td>
 </tr>
 <tr>
-<td><code>xThermal::H2O::cIAPS84</code></td>
-<td><code>IAPS84.h</code></td>
-<td>Pure water (IAPS-84)</td>
-</tr>
-<tr>
-<td><code>xThermal::H2O::cIAPWS95</code></td>
-<td><code>IAPWS95.h</code></td>
-<td>Pure water (IAPWS-95)</td>
+<td><code>xThermal::IAPWS95::cIAPWS95</code></td>
+<td>pure water, IAPWS-95</td>
+<td><code>cIAPWS95 water;</code></td>
 </tr>
 <tr>
 <td><code>xThermal::NaCl::cNaCl</code></td>
-<td><code>NaCl.h</code></td>
-<td>Pure NaCl EOS</td>
+<td>pure NaCl</td>
+<td><code>cNaCl salt("IAPS84");</code></td>
 </tr>
 </tbody>
 </table>
+<p>Including <code>H2ONaCl.h</code> makes all four available. All derive from <code>xThermal::cxThermal</code>, so a function can take any
+model as <code>cxThermal&amp;</code>. An unknown water-model name throws <code>NotImplementedError</code> at construction. <code>"IAPS84"</code> is the
+reference: the H₂O–NaCl correlations were fitted with it (see <a href="../limitations/#water-backends">Water backends</a>).</p>
 <h2 id="units">Units<a class="headerlink" href="#units" title="Permanent link">&para;</a></h2>
-<p>All C++ functions use SI units unless noted otherwise in the source comments:</p>
+<p>All functions use SI units, with temperature in kelvin:</p>
 <table>
 <thead>
 <tr>
@@ -1365,30 +1383,45 @@ installed with it: use <code>-I${xThermo_DIR}/lib/xThermo/gsl/include</code> and
 </thead>
 <tbody>
 <tr>
-<td>Temperature</td>
+<td>temperature T</td>
 <td>K</td>
 </tr>
 <tr>
-<td>Pressure</td>
+<td>pressure p</td>
 <td>Pa</td>
 </tr>
 <tr>
-<td>Composition X</td>
-<td>kg/kg (mass fraction)</td>
+<td>salinity X</td>
+<td>kg NaCl / kg fluid (mass fraction, 0–1)</td>
 </tr>
 <tr>
-<td>Density</td>
+<td>specific enthalpy H</td>
+<td>J/kg</td>
+</tr>
+<tr>
+<td>density</td>
 <td>kg/m³</td>
 </tr>
 <tr>
-<td>Enthalpy</td>
-<td>J/kg</td>
+<td>heat capacity</td>
+<td>J/(kg K)</td>
+</tr>
+<tr>
+<td>viscosity</td>
+<td>Pa s</td>
 </tr>
 </tbody>
 </table>
-<h2 id="errors">Errors<a class="headerlink" href="#errors" title="Permanent link">&para;</a></h2>
-<p>Errors are thrown as exceptions derived from <code>xThermal::xThermalBaseError</code> (<code>Exception.h</code>), for example
-<code>OutOfRangeError</code> for T above 1273.15 K. See <a href="../limitations/">Model and limitations</a>.</p>
+<p><code>Tmin()</code>, <code>Tmax()</code>, <code>pmin()</code> and <code>pmax()</code> give the range a model declares: for H₂O–NaCl 273.16–1273.15 K and
+1e5–5e8 Pa. Which inputs outside it are rejected is listed under
+<a href="errors/#input-checks">Errors and threads</a>.</p>
+<h2 id="in-this-guide">In this guide<a class="headerlink" href="#in-this-guide" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="tpx/">Evaluating states</a>: T–p–X and H–p–X evaluation, single points and batches, the result fields</li>
+<li><a href="errors/">Errors and threads</a>: exceptions, status codes, thread safety, OpenMP</li>
+<li><a href="phase_region/">Phase region</a>: the phase of a state without evaluating its properties</li>
+<li><a href="phase_boundaries/">Phase boundaries</a>: the critical curve, the three-phase surface, coexisting compositions</li>
+</ul>
 
 
 
@@ -1443,13 +1476,13 @@ installed with it: use <code>-I${xThermo_DIR}/lib/xThermo/gsl/include</code> and
         
         
           
-          <a href="tpx/" class="md-footer__link md-footer__link--next" aria-label="Next: T-p-X calculation">
+          <a href="tpx/" class="md-footer__link md-footer__link--next" aria-label="Next: Evaluating states">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                T-p-X calculation
+                Evaluating states
               </div>
             </div>
             <div class="md-footer__button md-icon">

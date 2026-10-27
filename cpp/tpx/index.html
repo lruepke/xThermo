@@ -16,7 +16,7 @@
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../phase_region/">
+        <link rel="next" href="../errors/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>T-p-X calculation - xThermo</title>
+        <title>Evaluating states - xThermo</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#t-p-x-calculation" class="md-skip">
+        <a href="#evaluating-states" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              T-p-X calculation
+              Evaluating states
             
           </span>
         </div>
@@ -937,7 +937,7 @@
   <span class="md-ellipsis">
     
   
-    T-p-X calculation
+    Evaluating states
   
 
     
@@ -955,7 +955,7 @@
   <span class="md-ellipsis">
     
   
-    T-p-X calculation
+    Evaluating states
   
 
     
@@ -981,10 +981,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key-fields-of-thermodynamicproperties" class="md-nav__link">
+  <a href="#one-state" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key fields of ThermodynamicProperties
+        One state
       
     </span>
   </a>
@@ -992,10 +992,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#enthalpy-flash" class="md-nav__link">
+  <a href="#without-exceptions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Enthalpy flash
+        Without exceptions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#many-states" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Many states
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#result-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Result fields
       
     </span>
   </a>
@@ -1006,6 +1028,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Errors and threads
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1155,10 +1205,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key-fields-of-thermodynamicproperties" class="md-nav__link">
+  <a href="#one-state" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key fields of ThermodynamicProperties
+        One state
       
     </span>
   </a>
@@ -1166,10 +1216,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#enthalpy-flash" class="md-nav__link">
+  <a href="#without-exceptions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Enthalpy flash
+        Without exceptions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#many-states" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Many states
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#result-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Result fields
       
     </span>
   </a>
@@ -1193,8 +1265,47 @@
 
 
 
-<h1 id="t-p-x-calculation">T-p-X calculation<a class="headerlink" href="#t-p-x-calculation" title="Permanent link">&para;</a></h1>
-<p><code>UpdateState_TPX</code> computes all thermodynamic properties for a given temperature, pressure, and salinity.</p>
+<h1 id="evaluating-states">Evaluating states<a class="headerlink" href="#evaluating-states" title="Permanent link">&para;</a></h1>
+<p>A state is given by temperature, pressure and bulk salinity (T–p–X), or by specific enthalpy, pressure and salinity
+(H–p–X). Every model offers the same functions:</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Input</th>
+<th>On failure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>UpdateState_TPX(props, T, p, X)</code>, <code>UpdateState_HPX(props, H, p, X)</code></td>
+<td>one state; fills <code>props</code></td>
+<td>throws (see <a href="../errors/">Errors and threads</a>)</td>
+</tr>
+<tr>
+<td><code>UpdateState_TPX(T, p, X)</code>, <code>UpdateState_HPX(H, p, X)</code></td>
+<td>one state; returns the properties</td>
+<td>throws</td>
+</tr>
+<tr>
+<td><code>tryUpdateState_TPX(props, T, p, X, &amp;message)</code>, <code>tryUpdateState_HPX(...)</code></td>
+<td>one state</td>
+<td>returns an <code>EvaluationStatus</code></td>
+</tr>
+<tr>
+<td><code>evaluate_TPX(T, p, X)</code>, <code>evaluate_HPX(H, p, X)</code></td>
+<td>vectors of points</td>
+<td>records a status per point</td>
+</tr>
+<tr>
+<td><code>UpdateState_TPX(T, p, X)</code>, <code>UpdateState_HPX(H, p, X)</code> with vectors</td>
+<td>vectors of points</td>
+<td>throws at the first failing point</td>
+</tr>
+</tbody>
+</table>
+<p>For pure water and pure NaCl, X is ignored (it may be omitted).</p>
+<h2 id="one-state">One state<a class="headerlink" href="#one-state" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">"H2ONaCl.h"</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
@@ -1202,91 +1313,123 @@
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">{</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="n">H2ONaCl</span><span class="o">::</span><span class="n">cH2ONaCl</span><span class="w"> </span><span class="n">eos</span><span class="p">(</span><span class="s">"IAPS84"</span><span class="p">);</span><span class="w">   </span><span class="c1">// backend: "IAPS84" or "IAPWS95"</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="n">H2ONaCl</span><span class="o">::</span><span class="n">cH2ONaCl</span><span class="w"> </span><span class="n">brine</span><span class="p">(</span><span class="s">"IAPS84"</span><span class="p">);</span>
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">300</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">273.15</span><span class="p">;</span><span class="w">   </span><span class="c1">// K</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">300e5</span><span class="p">;</span><span class="w">           </span><span class="c1">// Pa  (300 bar)</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.1</span><span class="p">;</span><span class="w">             </span><span class="c1">// kg/kg  (10 wt% NaCl)</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="n">ThermodynamicProperties</span><span class="w"> </span><span class="n">props</span><span class="p">;</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="n">eos</span><span class="p">.</span><span class="n">UpdateState_TPX</span><span class="p">(</span><span class="n">props</span><span class="p">,</span><span class="w"> </span><span class="n">T</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">X</span><span class="p">);</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"Phase:    "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">eos</span><span class="p">.</span><span class="n">phase_name</span><span class="p">(</span><span class="n">props</span><span class="p">.</span><span class="n">phase</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"</span><span class="se">\n</span><span class="s">"</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">              </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"Density:  "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">props</span><span class="p">.</span><span class="n">Rho</span><span class="w">                   </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">" kg/m³</span><span class="se">\n</span><span class="s">"</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">              </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"Enthalpy: "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">props</span><span class="p">.</span><span class="n">H</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">1e6</span><span class="w">               </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">" MJ/kg</span><span class="se">\n</span><span class="s">"</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">              </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"Cp:       "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">props</span><span class="p">.</span><span class="n">Cp</span><span class="w">                    </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">" J/kg/K</span><span class="se">\n</span><span class="s">"</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">              </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"Viscosity: "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">props</span><span class="p">.</span><span class="n">Mu</span><span class="w">                   </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">" Pa·s</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="n">ThermodynamicProperties</span><span class="w"> </span><span class="n">props</span><span class="p">;</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="n">brine</span><span class="p">.</span><span class="n">UpdateState_TPX</span><span class="p">(</span><span class="n">props</span><span class="p">,</span><span class="w"> </span><span class="mi">400</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">273.15</span><span class="p">,</span><span class="w"> </span><span class="mf">250e5</span><span class="p">,</span><span class="w"> </span><span class="mf">0.032</span><span class="p">);</span><span class="w">   </span><span class="c1">// T [K], p [Pa], X [kg/kg]: seawater at 400 °C, 250 bar</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">brine</span><span class="p">.</span><span class="n">phase_name</span><span class="p">(</span><span class="n">props</span><span class="p">.</span><span class="n">phase</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="w">          </span><span class="c1">// V+L</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">              </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"bulk density "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">props</span><span class="p">.</span><span class="n">Rho</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">" kg/m3</span><span class="se">\n</span><span class="s">"</span><span class="w">     </span><span class="c1">// 194.068</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">              </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"liquid: "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">props</span><span class="p">.</span><span class="n">Rho_l</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">" kg/m3, X_l = "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">props</span><span class="p">.</span><span class="n">X_l</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"</span><span class="se">\n</span><span class="s">"</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">              </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"vapour: "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">props</span><span class="p">.</span><span class="n">Rho_v</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">" kg/m3, X_v = "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">props</span><span class="p">.</span><span class="n">X_v</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"</span><span class="se">\n</span><span class="s">"</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">              </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"vapour volume fraction "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">props</span><span class="p">.</span><span class="n">S_v</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="c1">// the same state from its enthalpy: T is a result</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="n">ThermodynamicProperties</span><span class="w"> </span><span class="n">same</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">brine</span><span class="p">.</span><span class="n">UpdateState_HPX</span><span class="p">(</span><span class="n">props</span><span class="p">.</span><span class="n">H</span><span class="p">,</span><span class="w"> </span><span class="mf">250e5</span><span class="p">,</span><span class="w"> </span><span class="mf">0.032</span><span class="p">);</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"T = "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">same</span><span class="p">.</span><span class="n">T</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">273.15</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">" °C</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span><span class="w">          </span><span class="c1">// 400</span>
 <a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="p">}</span>
 </code></pre></div>
-<h2 id="key-fields-of-thermodynamicproperties">Key fields of ThermodynamicProperties<a class="headerlink" href="#key-fields-of-thermodynamicproperties" title="Permanent link">&para;</a></h2>
+<p>Each call resets the result object, so no value of a previous call survives in <code>props</code>.</p>
+<h2 id="without-exceptions">Without exceptions<a class="headerlink" href="#without-exceptions" title="Permanent link">&para;</a></h2>
+<p><code>tryUpdateState_TPX</code> and <code>tryUpdateState_HPX</code> evaluate the same state but return its outcome instead of throwing. On
+failure the inputs are kept, every other number is NaN, the phase is <code>Unknown</code>, and the optional message receives the
+library's explanation:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">"H2ONaCl.h"</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">xThermal</span><span class="p">;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">{</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="n">H2ONaCl</span><span class="o">::</span><span class="n">cH2ONaCl</span><span class="w"> </span><span class="n">brine</span><span class="p">(</span><span class="s">"IAPS84"</span><span class="p">);</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="n">ThermodynamicProperties</span><span class="w"> </span><span class="n">props</span><span class="p">;</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">message</span><span class="p">;</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="n">EvaluationStatus</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">brine</span><span class="p">.</span><span class="n">tryUpdateState_TPX</span><span class="p">(</span><span class="n">props</span><span class="p">,</span><span class="w"> </span><span class="mi">1100</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">273.15</span><span class="p">,</span><span class="w"> </span><span class="mf">300e5</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">message</span><span class="p">);</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">status</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">EvaluationStatus</span><span class="o">::</span><span class="n">Ok</span><span class="p">)</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">evaluation_status_name</span><span class="p">(</span><span class="n">status</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span><span class="w">   </span><span class="c1">// OutOfRange: above 1000 °C</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">props</span><span class="p">.</span><span class="n">Rho</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span><span class="w">                              </span><span class="c1">// nan</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="p">}</span>
+</code></pre></div>
+<p>The statuses are listed under <a href="../errors/#status-codes">Errors and threads</a>.</p>
+<h2 id="many-states">Many states<a class="headerlink" href="#many-states" title="Permanent link">&para;</a></h2>
+<p><code>evaluate_TPX</code> and <code>evaluate_HPX</code> take vectors of equal length (point i is <code>T[i], p[i], X[i]</code>) and never stop at a
+failing point. The result holds one vector per field, <code>status[i]</code> (0 = ok) and the messages of the failed points in
+<code>failed_message</code>, in index order:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">"H2ONaCl.h"</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">xThermal</span><span class="p">;</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p">{</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="n">H2ONaCl</span><span class="o">::</span><span class="n">cH2ONaCl</span><span class="w"> </span><span class="n">brine</span><span class="p">(</span><span class="s">"IAPS84"</span><span class="p">);</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">300</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">273.15</span><span class="p">,</span><span class="w"> </span><span class="mi">2000</span><span class="p">,</span><span class="w"> </span><span class="mi">400</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">273.15</span><span class="p">};</span><span class="w">   </span><span class="c1">// K; the second point is above the model's range</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mf">300e5</span><span class="p">,</span><span class="w"> </span><span class="mf">300e5</span><span class="p">,</span><span class="w"> </span><span class="mf">250e5</span><span class="p">};</span><span class="w">                 </span><span class="c1">// Pa</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mf">0.1</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">,</span><span class="w"> </span><span class="mf">0.032</span><span class="p">};</span><span class="w">                     </span><span class="c1">// kg/kg</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span><span class="n">ThermodynamicPropertiesVector</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">brine</span><span class="p">.</span><span class="n">evaluate_TPX</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">X</span><span class="p">);</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">size_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">T</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">": status "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">r</span><span class="p">.</span><span class="n">status</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">", Rho "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">r</span><span class="p">.</span><span class="n">Rho</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span><span class="w">   </span><span class="c1">// 0, 2 (OutOfRange, NaN), 0</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">r</span><span class="p">.</span><span class="n">failed_message</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">" failed point(s)</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="p">}</span>
+</code></pre></div>
+<p>The vector forms of <code>UpdateState_TPX</code>/<code>UpdateState_HPX</code> evaluate the same points but throw at the first failure. With
+<code>isMeshGrid = true</code> they evaluate every combination of the three vectors.</p>
+<h2 id="result-fields">Result fields<a class="headerlink" href="#result-fields" title="Permanent link">&para;</a></h2>
+<p><code>ThermodynamicProperties</code> (and the vectors of <code>ThermodynamicPropertiesVector</code>):</p>
 <table>
 <thead>
 <tr>
 <th>Field</th>
-<th>Description</th>
+<th>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>Rho</code></td>
-<td>Bulk density (kg/m³): Σ S_i ρ_i</td>
-</tr>
-<tr>
-<td><code>H</code></td>
-<td>Bulk specific enthalpy (J/kg)</td>
-</tr>
-<tr>
-<td><code>Cp</code></td>
-<td>Single phase: isobaric heat capacity (J/kg/K). Multiphase: mass-weighted phase heat capacities without latent heat; 0 in V+L+H</td>
-</tr>
-<tr>
-<td><code>Mu</code></td>
-<td>Single phase: dynamic viscosity (Pa·s). Multiphase: not defined (usually a placeholder value of 1); use <code>Mu_l</code> / <code>Mu_v</code></td>
-</tr>
-<tr>
-<td><code>S_l</code> / <code>S_v</code> / <code>S_h</code></td>
-<td>Phase volume fractions</td>
-</tr>
-<tr>
-<td><code>X_l</code> / <code>X_v</code></td>
-<td>Liquid / vapour salinity (kg/kg)</td>
-</tr>
-<tr>
-<td><code>Rho_l</code> / <code>Rho_v</code> / <code>Rho_h</code>, <code>H_l</code> / <code>H_v</code> / <code>H_h</code>, <code>Cp_l</code> / <code>Cp_v</code> / <code>Cp_h</code></td>
-<td>Phase density, enthalpy, heat capacity</td>
-</tr>
-<tr>
-<td><code>Mu_l</code> / <code>Mu_v</code></td>
-<td>Liquid / vapour viscosity (Pa·s)</td>
-</tr>
-<tr>
-<td><code>T</code></td>
-<td>Temperature (K), the result of an HPX flash</td>
+<td><code>T</code>, <code>p</code>, <code>X</code>, <code>H</code></td>
+<td>temperature [K], pressure [Pa], bulk salinity [kg/kg], bulk specific enthalpy [J/kg]; T is a result of H–p–X, H of T–p–X</td>
 </tr>
 <tr>
 <td><code>phase</code></td>
-<td>Phase region index (<code>xThermal::PhaseRegion</code>)</td>
+<td>phase region, a <code>PhaseRegion</code>; <code>phase_name(phase)</code> gives its name (<a href="../phase_region/">Phase region</a>)</td>
+</tr>
+<tr>
+<td><code>Rho</code>, <code>H</code>, <code>Cp</code>, <code>Mu</code></td>
+<td>bulk density [kg/m³], enthalpy, heat capacity [J/(kg K)], viscosity [Pa s]</td>
+</tr>
+<tr>
+<td><code>S_l</code>, <code>S_v</code>, <code>S_h</code></td>
+<td>phase fractions: <strong>volume</strong> fractions for H₂O–NaCl; the vapour <strong>mass</strong> fraction (quality) for the water models</td>
+</tr>
+<tr>
+<td><code>X_l</code>, <code>X_v</code></td>
+<td>salinity of the liquid and the vapour [kg/kg]</td>
+</tr>
+<tr>
+<td><code>Rho_l</code>, <code>Rho_v</code>, <code>Rho_h</code>; <code>H_l</code>, <code>H_v</code>, <code>H_h</code>; <code>Cp_l</code>, <code>Cp_v</code>, <code>Cp_h</code>; <code>Mu_l</code>, <code>Mu_v</code></td>
+<td>properties of the liquid, vapour and halite phases</td>
+</tr>
+<tr>
+<td><code>dRhodT</code>, <code>dRhodP</code></td>
+<td>∂ρ/∂T [kg/(m³ K)], ∂ρ/∂p [kg/(m³ Pa)]; with <code>_l</code>, <code>_v</code> for the phases</td>
+</tr>
+<tr>
+<td><code>IsothermalCompressibility</code>, <code>IsobaricExpansivity</code></td>
+<td>(1/ρ) ∂ρ/∂p [1/Pa], −(1/ρ) ∂ρ/∂T [1/K]; with <code>_l</code>, <code>_v</code> for the phases</td>
 </tr>
 </tbody>
 </table>
-<p>See <a href="../../limitations/#multiphase-properties">Model and limitations</a> for the multiphase
-definitions.</p>
-<h2 id="enthalpy-flash">Enthalpy flash<a class="headerlink" href="#enthalpy-flash" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">"H2ONaCl.h"</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">xThermal</span><span class="p">;</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">{</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="n">H2ONaCl</span><span class="o">::</span><span class="n">cH2ONaCl</span><span class="w"> </span><span class="n">eos</span><span class="p">(</span><span class="s">"IAPS84"</span><span class="p">);</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">H</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.5e6</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">300e5</span><span class="p">,</span><span class="w"> </span><span class="n">X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.05</span><span class="p">;</span><span class="w">   </span><span class="c1">// H [J/kg], p [Pa], X [kg/kg]</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="n">ThermodynamicProperties</span><span class="w"> </span><span class="n">props</span><span class="p">;</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="n">eos</span><span class="p">.</span><span class="n">UpdateState_HPX</span><span class="p">(</span><span class="n">props</span><span class="p">,</span><span class="w"> </span><span class="n">H</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">X</span><span class="p">);</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"T = "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">props</span><span class="p">.</span><span class="n">T</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">273.15</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">" °C, phase "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">eos</span><span class="p">.</span><span class="n">phase_name</span><span class="p">(</span><span class="n">props</span><span class="p">.</span><span class="n">phase</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="p">}</span>
-</code></pre></div>
+<p>In a single-phase state, the bulk fields are those of the phase; fields of an absent phase are 0.</p>
+<p><strong>Multiphase states</strong> follow the definitions on <a href="../../limitations/#multiphase-properties">Model and limitations</a>:
+<code>Rho</code> and <code>H</code> are bulk values; <code>Cp</code> is the "frozen" heat capacity without latent heat (0 in V+L+H); <code>Mu</code> is not a
+mixture viscosity (a placeholder 1 in V+L, V+H and L+H; use <code>Mu_l</code> and <code>Mu_v</code>); <code>IsothermalCompressibility</code> is the
+equilibrium derivative; <code>IsobaricExpansivity</code>, <code>dRhodT</code> and <code>dRhodP</code> are not computed (0).</p>
+<p><strong>Unavailable properties.</strong> A property that cannot be evaluated at an otherwise valid state is NaN while the others
+are valid: for example the IAPS-84 viscosity outside its validity range (above 3500 bar at more than 150 °C, among
+others), and brine viscosities that depend on it.</p>
 
 
 
@@ -1341,13 +1484,13 @@ definitions.</p>
         
         
           
-          <a href="../phase_region/" class="md-footer__link md-footer__link--next" aria-label="Next: Phase region">
+          <a href="../errors/" class="md-footer__link md-footer__link--next" aria-label="Next: Errors and threads">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Phase region
+                Errors and threads
               </div>
             </div>
             <div class="md-footer__button md-icon">
