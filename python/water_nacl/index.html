@@ -1288,12 +1288,13 @@
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">Rho</span><span class="p">,</span> <span class="s2">"kg/m³"</span><span class="p">)</span>
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">Mu</span><span class="p">,</span> <span class="s2">"Pa s"</span><span class="p">)</span>
 </code></pre></div>
-<p>At pressures above the critical pressure of water (220.5 bar with IAPS-84), the library labels a fluid below the
+<p>At pressures above the critical pressure of water (220.5 bar with IAPS-84, 220.6 bar with IAPWS-95), the library
+labels a fluid below the
 critical temperature "Sup.crit. liquid" and one above it "Supercritical".</p>
 <p>In the two-phase states of the water models, <code>S_v</code> is the vapour <strong>mass</strong> fraction (quality), not a volume fraction
 as in H₂O–NaCl. See <a href="../evaluate/#properties">Evaluating states</a>.</p>
 <h3 id="saturation">Saturation<a class="headerlink" href="#saturation" title="Permanent link">&para;</a></h3>
-<p><img alt="Boiling curve of water" src="../../assets/img/boiling_curve_H2O.png" /></p>
+<p><img alt="Saturation pressure of water against temperature, on a logarithmic pressure axis, up to the critical point" src="../../assets/img/boiling_curve_H2O.png" /></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xthermo</span><span class="w"> </span><span class="kn">import</span> <span class="n">H2O</span>

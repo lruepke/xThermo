@@ -1245,9 +1245,10 @@
 
 <h1 id="property-maps">Property maps<a class="headerlink" href="#property-maps" title="Permanent link">&para;</a></h1>
 <p>Evaluate a grid with <code>xthermo.tpx</code> or <code>xthermo.hpx</code>, then draw it with two helpers (Matplotlib required):</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>xthermo.plot_property(ax, states, field, x="X", y="T", *, cmap="viridis", norm=None, vmin=None, vmax=None,
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>                      contours=None, contour_kw=None, colorbar=True, failed="0.75", label=None)
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>xthermo.plot_phases(ax, states, x="X", y="T", *, legend=True, failed="0.75")
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>xthermo.plot_property(ax, states, field, x="X", y="T", *, cmap="viridis", norm=None,
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>                      vmin=None, vmax=None, contours=None, contour_kw=None, colorbar=True,
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>                      failed="0.75", label=None)
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>xthermo.plot_phases(ax, states, x="X", y="T", *, legend=True, failed="0.75")
 </code></pre></div>
 <ul>
 <li><code>states</code> must be a <strong>2-D</strong> result: broadcast one input along each axis, e.g. <code>T[:, None]</code> and <code>X[None, :]</code>.</li>
@@ -1289,7 +1290,9 @@ Other bulk fields have restricted meanings there; check
 <a href="../evaluate/#properties">the field table</a> before mapping <code>Cp</code>, <code>Mu</code> or the derivatives. Use phase fields such as
 <code>Rho_l</code> with <code>absent="nan"</code> to map a property of one phase only.</p>
 <h2 id="enthalpy-grids">Enthalpy grids<a class="headerlink" href="#enthalpy-grids" title="Permanent link">&para;</a></h2>
-<p>The H of an <code>hpx</code> result is the enthalpy of the returned state, which can differ slightly from the requested value.
+<p>The H of an <code>hpx</code> result is the enthalpy of the returned state, which can differ slightly from the requested value
+(and, at X = 1, pure NaCl in the H₂O–NaCl model, inside the melting range substantially:
+<a href="../../limitations/#under-investigation">Under investigation</a>).
 So give the grid's enthalpy axis as the input values, <code>y=("H", H)</code>, rather than reading it from the result:</p>
 <p><img alt="Temperature from enthalpy, pressure and salinity at 250 bar" src="../../assets/img/map_temperature_hx.png" /></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
@@ -1318,7 +1321,7 @@ lines), and temperature is constant across it.</p>
 <h2 id="phase-maps">Phase maps<a class="headerlink" href="#phase-maps" title="Permanent link">&para;</a></h2>
 <p><code>plot_phases</code> colours each point by its phase code, with a legend of phase names. Use it where no section geometry
 exists, as for pure water in temperature and pressure:</p>
-<p><img alt="Phase and density of IAPS-84 water" src="../../assets/img/map_water_tp.png" /></p>
+<p><img alt="Phase regions and density of IAPS-84 water in temperature and pressure, with density contours" src="../../assets/img/map_water_tp.png" /></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">xthermo</span>

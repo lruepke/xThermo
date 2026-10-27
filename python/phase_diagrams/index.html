@@ -1266,7 +1266,8 @@
 
 
 <h1 id="phase-diagrams">Phase diagrams<a class="headerlink" href="#phase-diagrams" title="Permanent link">&para;</a></h1>
-<p>The library computes the exact geometry of the phase regions of H₂O–NaCl along an isobar or an isotherm:</p>
+<p>The library computes the geometry of the phase regions of H₂O–NaCl along an isobar or an isotherm from its
+phase-boundary correlations:</p>
 <table>
 <thead>
 <tr>
@@ -1291,7 +1292,8 @@
 <p>Each result holds the polygons of the multiphase regions (V+L, V+H, L+H, V+L+H), their boundary lines and the
 invariant points, with names and colours. The plotting helpers draw them with Matplotlib (<code>pip install ".[plotting]"</code>).
 Unshaded areas are single-phase fluid. The axes are labelled in °C, bar, wt% NaCl and MJ/kg.</p>
-<p>Because these diagrams draw the computed boundaries, they are exact at any resolution. A grid of phase codes, by
+<p>Because these diagrams draw the computed boundaries, they do not depend on a grid resolution (a few known
+inaccuracies are noted <a href="#your-own-axes-plot_slice">below</a>). A grid of phase codes, by
 contrast, has staircase edges, and contour plots of it interpolate between categories that have no order. Use
 <code>plot_phases</code> (<a href="../property_maps/">Property maps</a>) only where no section is available, for example for pure water.</p>
 <h2 id="a-complete-isobaric-figure-plot_pslice">A complete isobaric figure: plot_Pslice<a class="headerlink" href="#a-complete-isobaric-figure-plot_pslice" title="Permanent link">&para;</a></h2>

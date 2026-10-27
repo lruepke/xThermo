@@ -1276,10 +1276,10 @@ diagrams and property maps with a few Matplotlib helpers.</p>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">sw</span> <span class="o">=</span> <span class="n">H2ONaCl</span><span class="o">.</span><span class="n">cH2ONaCl</span><span class="p">(</span><span class="s2">"IAPS84"</span><span class="p">)</span>                         <span class="c1"># H2O-NaCl with the IAPS-84 water backend</span>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">300.0</span><span class="p">,</span> <span class="mf">400.0</span><span class="p">,</span> <span class="mf">500.0</span><span class="p">])</span> <span class="o">+</span> <span class="mf">273.15</span>            <span class="c1"># K</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">s</span> <span class="o">=</span> <span class="n">xthermo</span><span class="o">.</span><span class="n">tpx</span><span class="p">(</span><span class="n">sw</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="mf">250e5</span><span class="p">,</span> <span class="mf">0.032</span><span class="p">)</span>                    <span class="c1"># p = 250 bar in Pa, X = 3.2 wt% NaCl in kg/kg</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">s</span> <span class="o">=</span> <span class="n">xthermo</span><span class="o">.</span><span class="n">tpx</span><span class="p">(</span><span class="n">sw</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="mf">250e5</span><span class="p">,</span> <span class="mf">0.032</span><span class="p">)</span>                    <span class="c1"># p = 250 bar in Pa, X = 3.2 wt% NaCl</span>
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">phase_name</span><span class="p">)</span>                                     <span class="c1"># ['Liquid' 'V+L' 'V+H']</span>
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">Rho</span><span class="p">)</span>                                            <span class="c1"># bulk density, kg/m³</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">X_v</span><span class="p">)</span>                                            <span class="c1"># salinity of the vapour phase, kg/kg (0 where absent)</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">X_v</span><span class="p">)</span>                                            <span class="c1"># vapour salinity, kg/kg (0 where absent)</span>
 </code></pre></div>
 <h2 id="the-models">The models<a class="headerlink" href="#the-models" title="Permanent link">&para;</a></h2>
 <table>
@@ -1304,7 +1304,7 @@ diagrams and property maps with a few Matplotlib helpers.</p>
 <tr>
 <td><code>xthermo.NaCl</code></td>
 <td><code>cNaCl("IAPS84")</code></td>
-<td>pure NaCl (solid, liquid, vapour)</td>
+<td>pure NaCl (halite and liquid)</td>
 </tr>
 </tbody>
 </table>

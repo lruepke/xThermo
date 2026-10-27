@@ -1284,7 +1284,7 @@
 
 <h1 id="gallery">Gallery<a class="headerlink" href="#gallery" title="Permanent link">&para;</a></h1>
 <p>A few examples of what xThermo computes for hydrothermal fluids. Every figure is made by the Python script shown
-below it, with the published version of the library; the scripts run in the documentation's test suite. They use
+below it, with the current version of the library; the scripts run in the documentation's test suite. They use
 the phase-region colours of <code>xthermo.plot_slice</code> and a few shared style settings from
 <a href="https://github.com/lruepke/xThermo/blob/main/docs/gallery/_style.py"><code>docs/gallery/_style.py</code></a>.</p>
 <p>All results come from the H₂O–NaCl model of Driesner &amp; Heinrich (2007) and Driesner (2007) with the IAPS-84 water
@@ -1475,7 +1475,7 @@ densities above 600 °C below 390 bar use the model's high-temperature density e
 <figure class="xt-figure">
 <p><img alt="Isobaric heat capacity and density of water from 330 to 480 °C at 230, 250, 300 and 400 bar, computed with IAPS-84 and IAPWS-95" src="../assets/img/water_near_critical.png" /></p>
 </figure>
-<p>Above its critical pressure (220.6 bar) water passes continuously from a dense, liquid-like state to a light,
+<p>Above its critical pressure (220.5 bar with IAPS-84, 220.6 bar with IAPWS-95) water passes continuously from a dense, liquid-like state to a light,
 vapour-like one, without boiling. Where this change is fastest, the heat capacity has a sharp maximum: water then
 absorbs a lot of heat for a small temperature change. The maximum is highest and narrowest just above the critical
 pressure (230 bar) and broadens and shifts to higher temperatures with pressure. This matters for heat transport in
@@ -1513,7 +1513,7 @@ peak heights shown also depend on the 0.1 K temperature spacing.</p>
 <a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="n">bx</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Temperature (°C)"</span><span class="p">)</span>
 <a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="n">bx</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"density (kg/m³)"</span><span class="p">)</span>
 <a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="n">bx</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Density"</span><span class="p">)</span>
-<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">"Pure water near its critical point (374 °C, 220.6 bar)"</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">"left"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">st</span><span class="o">.</span><span class="n">NAVY</span><span class="p">,</span>
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">"Pure water near its critical point (374 °C; 220.5 bar IAPS-84, 220.6 bar IAPWS-95)"</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">"left"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">st</span><span class="o">.</span><span class="n">NAVY</span><span class="p">,</span>
 <a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>             <span class="n">fontweight</span><span class="o">=</span><span class="s2">"bold"</span><span class="p">)</span>
 <a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>

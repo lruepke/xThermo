@@ -42,7 +42,7 @@ ax.legend(title="solid: IAPS-84, dotted: IAPWS-95", fontsize="small", title_font
 bx.set_xlabel("Temperature (°C)")
 bx.set_ylabel("density (kg/m³)")
 bx.set_title("Density")
-fig.suptitle("Pure water near its critical point (374 °C, 220.6 bar)", x=0.01, ha="left", color=st.NAVY,
+fig.suptitle("Pure water near its critical point (374 °C; 220.5 bar IAPS-84, 220.6 bar IAPWS-95)", x=0.01, ha="left", color=st.NAVY,
              fontweight="bold")
 plt.show()
 # --8<-- [end:critical]

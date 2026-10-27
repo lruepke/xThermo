@@ -1323,8 +1323,8 @@
 
 <h1 id="evaluating-states">Evaluating states<a class="headerlink" href="#evaluating-states" title="Permanent link">&para;</a></h1>
 <p>Two functions evaluate the equation of state on scalars or NumPy arrays:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>xthermo.tpx(model, T, p, X=0.0, *, errors="raise", absent="zero")   # temperature, pressure, salinity
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>xthermo.hpx(model, H, p, X=0.0, *, errors="raise", absent="zero")   # specific enthalpy, pressure, salinity
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>xthermo.tpx(model, T, p, X=0.0, *, errors="raise", absent="zero")   # temperature input
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>xthermo.hpx(model, H, p, X=0.0, *, errors="raise", absent="zero")   # enthalpy input
 </code></pre></div>
 <ul>
 <li><code>model</code> is any model object: <code>H2ONaCl.cH2ONaCl(...)</code>, <code>H2O.cIAPS84()</code>, <code>H2O.cIAPWS95()</code> or <code>NaCl.cNaCl(...)</code>.</li>
@@ -1346,7 +1346,7 @@ broadcast shape. A typical grid puts one input along each axis:</p>
 <a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.032</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">])</span>          <span class="c1"># 4 salinities, kg/kg</span>
 <a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
 <a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="n">s</span> <span class="o">=</span> <span class="n">xthermo</span><span class="o">.</span><span class="n">tpx</span><span class="p">(</span><span class="n">sw</span><span class="p">,</span> <span class="n">T</span><span class="p">[:,</span> <span class="kc">None</span><span class="p">],</span> <span class="mf">300e5</span><span class="p">,</span> <span class="n">X</span><span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="p">:])</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>                                  <span class="c1"># (6, 4): temperature along axis 0, salinity along axis 1</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>                                  <span class="c1"># (6, 4): temperature along axis 0, salinity along 1</span>
 <a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">Rho</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>                           <span class="c1"># bulk density, kg/m³</span>
 <a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">phase_name</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">])</span>                       <span class="c1"># phases of 3.2 wt% NaCl from 100 to 600 °C</span>
 </code></pre></div>
@@ -1490,113 +1490,79 @@ critical curve of the mixture the fluid changes continuously between the two; th
 </code></pre></div>
 <h3 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h3>
 <p>Each property comes as a bulk value and, where it applies, as phase values with the suffixes <code>_l</code> (liquid), <code>_v</code>
-(vapour) and <code>_h</code> (halite). In a single-phase state the bulk value is the value of that phase. In multiphase states
-the bulk fields have specific meanings, listed in the last column.</p>
+(vapour) and <code>_h</code> (halite). In a single-phase state the bulk value is the value of that phase.</p>
 <table>
 <thead>
 <tr>
 <th>Field</th>
 <th>Unit</th>
 <th>Meaning</th>
-<th>In multiphase states (V+L, V+H, L+H, V+L+H)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>T</code>, <code>p</code>, <code>X</code></td>
 <td>K, Pa, kg/kg</td>
-<td>temperature, pressure, bulk salinity</td>
-<td>the inputs (<code>T</code> evaluated by <code>hpx</code>)</td>
+<td>temperature, pressure, bulk salinity (<code>T</code> evaluated by <code>hpx</code>)</td>
 </tr>
 <tr>
-<td><code>H</code></td>
+<td><code>H</code>, <code>H_l</code>, <code>H_v</code>, <code>H_h</code></td>
 <td>J/kg</td>
 <td>specific enthalpy</td>
-<td>mass-weighted: Σ S<sub>i</sub> ρ<sub>i</sub> h<sub>i</sub> / ρ</td>
 </tr>
 <tr>
-<td><code>Rho</code></td>
+<td><code>Rho</code>, <code>Rho_l</code>, <code>Rho_v</code>, <code>Rho_h</code></td>
 <td>kg/m³</td>
 <td>density</td>
-<td>Σ S<sub>i</sub> ρ<sub>i</sub></td>
 </tr>
 <tr>
-<td><code>Cp</code></td>
+<td><code>Cp</code>, <code>Cp_l</code>, <code>Cp_v</code>, <code>Cp_h</code></td>
 <td>J/(kg K)</td>
-<td>isobaric heat capacity (∂h/∂T)<sub>p,X</sub></td>
-<td>"frozen" mass-weighted phase heat capacity Σ S<sub>i</sub> ρ<sub>i</sub> c<sub>p,i</sub> / ρ, which contains <strong>no latent heat</strong> and is not ∂H/∂T of the mixture; 0 in V+L+H</td>
+<td>isobaric heat capacity (∂h/∂T)<sub>p,X</sub>; phases at fixed composition</td>
 </tr>
 <tr>
-<td><code>Mu</code></td>
+<td><code>Mu</code>, <code>Mu_l</code>, <code>Mu_v</code></td>
 <td>Pa s</td>
-<td>dynamic viscosity</td>
-<td><strong>not a mixture viscosity</strong>: 1 in V+L, V+H and L+H; use <code>Mu_l</code>, <code>Mu_v</code> and the saturations</td>
+<td>dynamic viscosity; NaN where the viscosity correlation does not evaluate</td>
 </tr>
 <tr>
 <td><code>S_l</code>, <code>S_v</code>, <code>S_h</code></td>
 <td>–</td>
-<td>phase saturations</td>
-<td><strong>volume fractions</strong> of liquid, vapour and halite (H₂O–NaCl). The water models report the vapour <strong>mass fraction</strong> (quality) in their two-phase states</td>
+<td>phase saturations (below)</td>
 </tr>
 <tr>
 <td><code>X_l</code>, <code>X_v</code></td>
 <td>kg/kg</td>
-<td>salinity of the liquid and the vapour phase</td>
-<td>compositions of the coexisting phases</td>
-</tr>
-<tr>
-<td><code>Rho_l</code>, <code>Rho_v</code>, <code>Rho_h</code></td>
-<td>kg/m³</td>
-<td>phase densities</td>
-<td></td>
-</tr>
-<tr>
-<td><code>H_l</code>, <code>H_v</code>, <code>H_h</code></td>
-<td>J/kg</td>
-<td>phase specific enthalpies</td>
-<td></td>
-</tr>
-<tr>
-<td><code>Cp_l</code>, <code>Cp_v</code>, <code>Cp_h</code></td>
-<td>J/(kg K)</td>
-<td>phase heat capacities at fixed phase composition</td>
-<td></td>
-</tr>
-<tr>
-<td><code>Mu_l</code>, <code>Mu_v</code></td>
-<td>Pa s</td>
-<td>phase viscosities; NaN where the viscosity correlation does not evaluate</td>
-<td></td>
+<td>salinity of the liquid and the vapour</td>
 </tr>
 <tr>
 <td><code>dRhodT</code>, <code>dRhodT_l</code>, <code>dRhodT_v</code></td>
 <td>kg/(m³ K)</td>
-<td>∂ρ/∂T at fixed p (and composition)</td>
-<td>bulk value not computed (0)</td>
+<td>∂ρ/∂T at fixed p</td>
 </tr>
 <tr>
 <td><code>dRhodP</code>, <code>dRhodP_l</code>, <code>dRhodP_v</code></td>
 <td>kg/(m³ Pa)</td>
-<td>∂ρ/∂p at fixed T (and composition)</td>
-<td>bulk value not computed (0)</td>
+<td>∂ρ/∂p at fixed T</td>
 </tr>
 <tr>
 <td><code>IsothermalCompressibility</code>, <code>IsothermalCompressibility_l</code>, <code>IsothermalCompressibility_v</code></td>
 <td>1/Pa</td>
 <td>(1/ρ) ∂ρ/∂p at fixed T</td>
-<td>bulk: the equilibrium derivative at fixed T and bulk X (the phases re-equilibrate); 0 in V+L+H</td>
 </tr>
 <tr>
 <td><code>IsobaricExpansivity</code>, <code>IsobaricExpansivity_l</code>, <code>IsobaricExpansivity_v</code></td>
 <td>1/K</td>
 <td>−(1/ρ) ∂ρ/∂T at fixed p</td>
-<td>bulk value not computed (0)</td>
 </tr>
 </tbody>
 </table>
-<p>Convert saturations to mass fractions with w<sub>i</sub> = S<sub>i</sub> ρ<sub>i</sub> / ρ. The pure NaCl model
-reports its properties in the bulk fields only. More on these conventions and on the model's validity:
-<a href="../../limitations/#multiphase-properties">Model and limitations</a>.</p>
+<p><strong>Multiphase states</strong> (V+L, V+H, L+H, V+L+H): <code>Rho</code> and <code>H</code> are the bulk values of the phase assemblage, and the
+saturations are <strong>volume fractions</strong> (the water models report the vapour <strong>mass</strong> fraction in their two-phase
+states). The bulk <code>Cp</code> contains no latent heat, the bulk <code>Mu</code> is not a mixture viscosity (use <code>Mu_l</code> and <code>Mu_v</code>), and
+some bulk derivatives are not computed. The definitions, and what the fields hold in each case, are on
+<a href="../../limitations/#multiphase-properties">Model and limitations</a>. Convert saturations to mass fractions with
+w<sub>i</sub> = S<sub>i</sub> ρ<sub>i</sub> / ρ. The pure NaCl model reports its properties in the bulk fields only.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">xthermo</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xthermo</span><span class="w"> </span><span class="kn">import</span> <span class="n">H2ONaCl</span>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
@@ -1605,7 +1571,8 @@ reports its properties in the bulk fields only. More on these conventions and on
 <a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
 <a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="n">w_v</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">S_v</span> <span class="o">*</span> <span class="n">s</span><span class="o">.</span><span class="n">Rho_v</span> <span class="o">/</span> <span class="n">s</span><span class="o">.</span><span class="n">Rho</span>                     <span class="c1"># vapour mass fraction from the volume fraction</span>
 <a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">phase_name</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"vapour: </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">S_v</span><span class="p">)</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> of the volume, </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">w_v</span><span class="p">)</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> of the mass"</span><span class="p">)</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"liquid </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">X_l</span><span class="p">)</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2"> kg/kg, </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">Rho_l</span><span class="p">)</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> kg/m³; vapour </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">X_v</span><span class="p">)</span><span class="si">:</span><span class="s2">.2e</span><span class="si">}</span><span class="s2"> kg/kg, </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">Rho_v</span><span class="p">)</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> kg/m³"</span><span class="p">)</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"liquid </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">X_l</span><span class="p">)</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2"> kg/kg, </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">Rho_l</span><span class="p">)</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> kg/m³"</span><span class="p">)</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"vapour </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">X_v</span><span class="p">)</span><span class="si">:</span><span class="s2">.2e</span><span class="si">}</span><span class="s2"> kg/kg, </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">Rho_v</span><span class="p">)</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> kg/m³"</span><span class="p">)</span>
 </code></pre></div>
 <h2 id="absent-phases">Absent phases<a class="headerlink" href="#absent-phases" title="Permanent link">&para;</a></h2>
 <p>In the library's results the fields of a phase that is not present hold 0: <code>Rho_v</code> of a pure liquid, for example.
@@ -1640,8 +1607,9 @@ it with its temperature.</p>
 <a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">phase_name</span><span class="p">)</span>
 </code></pre></div>
 <p>The field <code>H</code> of the result is the enthalpy of the returned state. It agrees with the input to within the solver
-tolerance. For plots on an enthalpy grid, use the input values as coordinates (see
-<a href="../property_maps/#enthalpy-grids">Property maps</a>). The pure NaCl model has no enthalpy-based input (<code>hpx</code> raises
+tolerance, except at X = 1 (pure NaCl in the H₂O–NaCl model) inside the melting range, where the returned state can
+have a different enthalpy (<a href="../../limitations/#under-investigation">Under investigation</a>). For plots on an enthalpy
+grid, use the input values as coordinates (see <a href="../property_maps/#enthalpy-grids">Property maps</a>). The pure NaCl model has no enthalpy-based input (<code>hpx</code> raises
 <code>NotAvailableError</code>).</p>
 
 

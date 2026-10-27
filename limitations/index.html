@@ -1759,8 +1759,8 @@ the resulting phase diagram at four pressures and <a href="../gallery/#the-phase
 <h3 id="volumetric-and-thermal-properties">Volumetric and thermal properties<a class="headerlink" href="#volumetric-and-thermal-properties" title="Permanent link">&para;</a></h3>
 <p>Driesner (2007) gives the molar volume, specific enthalpy and isobaric heat capacity of the liquid and vapour phases
 with a <em>scaled temperature</em> (corresponding-temperature) method. A brine at temperature T, pressure p and composition
-x is given the molar volume of pure water at the same pressure and a scaled temperature T*_V(T, p, x). In the same
-way its specific enthalpy is that of pure water at a second scaled temperature T*_h, and the heat capacity is the
+x is given the molar volume of pure water at the same pressure and a scaled temperature T*<sub>V</sub>(T, p, x). In the same
+way its specific enthalpy is that of pure water at a second scaled temperature T*<sub>h</sub>, and the heat capacity is the
 temperature derivative of that enthalpy. Pure-water properties come from the water equation of state. Where the
 scaled temperature falls outside the range in which water properties can be used, the volume correlation is
 extrapolated: at low pressure near boiling, and above about 600 °C below 390 bar. Halite has its own correlations for
@@ -1805,7 +1805,7 @@ Tables correlation (as implemented in PROST) with the IAPS-84 backend.</p>
 <li>Any other backend name raises <code>NotImplementedError</code>.</li>
 </ul>
 <h3 id="model-domain">Model domain<a class="headerlink" href="#model-domain" title="Permanent link">&para;</a></h3>
-<p>The correlations are published for <strong>0–1000 °C, 1–5000 bar and X_NaCl = 0–1</strong>. The H₂O–NaCl class reports this domain
+<p>The correlations are published for <strong>0–1000 °C, 1–5000 bar and X<sub>NaCl</sub> = 0–1</strong>. The H₂O–NaCl class reports this domain
 as <code>Tmin()</code> = 273.16 K, <code>Tmax()</code> = 1273.15 K, <code>pmin()</code> = 1e5 Pa and <code>pmax()</code> = 5e8 Pa. Which inputs outside it are
 rejected is listed under <a href="#domain-input-checks-and-errors">Domain, input checks and errors</a>.</p>
 <h2 id="verification">Verification<a class="headerlink" href="#verification" title="Permanent link">&para;</a></h2>
@@ -1858,11 +1858,11 @@ scientific assessment. Questions about the author's undocumented treatments rema
 revisited if he clarifies them.</p>
 <h3 id="heat-capacity">Heat capacity<a class="headerlink" href="#heat-capacity" title="Permanent link">&para;</a></h3>
 <ul>
-<li>xThermo: c_P = (∂h/∂T)_{p,x}, the published Eq. 27 of Driesner (2007). It is consistent with the enthalpy.</li>
+<li>xThermo: c<sub>P</sub> = (∂h/∂T)<sub>p,x</sub>, the published Eq. 27 of Driesner (2007). It is consistent with the enthalpy.</li>
 <li>SoWat 0.2 and ProBrine multiply Eq. 27 by 1/(1 + x), where x is the NaCl mole fraction of the phase, and leave the
   enthalpy unchanged. SoWat describes the factor as missed in the original publication; no derivation of it has been
   published.</li>
-<li>Applied to c_P alone, the factor makes c_P inconsistent with the enthalpy. It is not a change of units or
+<li>Applied to c<sub>P</sub> alone, the factor makes c<sub>P</sub> inconsistent with the enthalpy. It is not a change of units or
   composition basis, and the authors' own comparison with experimental data does not indicate a need for a correction
   of this form. It has not been tested against experimental data here.</li>
 <li>Consequence: SoWat and ProBrine heat capacities of saline phases are lower by the factor 1/(1 + x): about 1 % for
@@ -1896,40 +1896,21 @@ revisited if he clarifies them.</p>
 <h3 id="other-modifications">Other modifications<a class="headerlink" href="#other-modifications" title="Permanent link">&para;</a></h3>
 <p>These were introduced in the GEOMAR implementations from which xThermo was ported, or in the port itself. The sizes
 are differences from the published equations or the author's tables at the tested states.</p>
-<table>
-<thead>
-<tr>
-<th>Modification</th>
-<th>Effect</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>The low-temperature correction term D(T) of the density mapping (Driesner 2007, Eq. 13) is left out, because it can push the scaled temperature below the freezing point of water</td>
-<td>brine density lower by up to 0.18 % at 10–50 °C and 500–2000 bar near halite saturation; ≤ 0.01 % above about 50 °C</td>
-</tr>
-<tr>
-<td>Molar mass of water 18.015268 g/mol instead of the paper's 18.015 g/mol</td>
-<td>≤ 1.5e-5 in density and in conversions between mass and mole fraction</td>
-</tr>
-<tr>
-<td>Low-pressure density extrapolation (Eq. 17) in a different working form; the printed equation is ambiguous</td>
-<td>brine density 0.16–0.46 % off at 1–15 bar near boiling, up to 3 % below 1 bar</td>
-</tr>
-<tr>
-<td>High-temperature, low-pressure density extrapolation (Eq. 18) with the region clarified by the author in 2018; working form not reproduced exactly</td>
-<td>≤ 0.06 % for hot, salt-rich liquids</td>
-</tr>
-<tr>
-<td>Liquid branch of the V+L surface above 800.7 °C anchored at zero pressure instead of on the NaCl boiling curve</td>
-<td>≤ 1e-5 in liquid composition</td>
-</tr>
-<tr>
-<td>The 900 °C upper bound of PROST's water viscosity is not applied</td>
-<td>above 900 °C the IAPS-84 viscosity is an extrapolation; it differs from the IAPWS 2008 formulation by −0.4 to +6.1 % at 900–1100 °C</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li><strong>The low-temperature correction term D(T) of the density mapping</strong> (Driesner 2007, Eq. 13) is left out, because it
+  can push the scaled temperature below the freezing point of water. Brine density is lower by up to 0.18 % at
+  10–50 °C and 500–2000 bar near halite saturation, and by ≤ 0.01 % above about 50 °C.</li>
+<li><strong>Molar mass of water</strong> 18.015268 g/mol instead of the paper's 18.015 g/mol: ≤ 1.5e-5 in density and in
+  conversions between mass and mole fraction.</li>
+<li><strong>Low-pressure density extrapolation</strong> (Eq. 17) in a different working form; the printed equation is ambiguous.
+  Brine density is 0.16–0.46 % off at 1–15 bar near boiling, and up to 3 % below 1 bar.</li>
+<li><strong>High-temperature, low-pressure density extrapolation</strong> (Eq. 18), with the region clarified by the author in 2018;
+  its working form is not reproduced exactly: ≤ 0.06 % for hot, salt-rich liquids.</li>
+<li><strong>Liquid branch of the V+L surface above 800.7 °C</strong> anchored at zero pressure instead of on the NaCl boiling
+  curve: ≤ 1e-5 in liquid composition.</li>
+<li><strong>The 900 °C upper bound of PROST's water viscosity</strong> is not applied. Above 900 °C the IAPS-84 viscosity is an
+  extrapolation; it differs from the IAPWS 2008 formulation by −0.4 to +6.1 % at 900–1100 °C.</li>
+</ul>
 <h2 id="multiphase-properties">Multiphase properties<a class="headerlink" href="#multiphase-properties" title="Permanent link">&para;</a></h2>
 <p>Each phase has its own (intrinsic) properties: <code>Rho_l</code>, <code>H_l</code>, <code>Cp_l</code>, <code>Mu_l</code>, <code>X_l</code> for the liquid, <code>_v</code> for the
 vapour and <code>_h</code> for halite. They are computed from the published correlations at the phase's own composition. The
@@ -1951,38 +1932,38 @@ bulk fields describe the mixture:</p>
 <tr>
 <td><code>Rho</code></td>
 <td>phase density</td>
-<td>Σ S_i ρ_i</td>
+<td>Σ S<sub>i</sub> ρ<sub>i</sub></td>
 </tr>
 <tr>
 <td><code>H</code></td>
 <td>phase enthalpy</td>
-<td>mass-weighted: Σ S_i ρ_i h_i / ρ</td>
+<td>mass-weighted: Σ S<sub>i</sub> ρ<sub>i</sub> h<sub>i</sub> / ρ</td>
 </tr>
 <tr>
 <td><code>Cp</code></td>
-<td>(∂h/∂T)_{p,x} of the phase</td>
-<td><strong>frozen</strong> heat capacity: Σ S_i ρ_i c_P,i / ρ, at fixed phase amounts and compositions; 0 in V+L+H</td>
+<td>(∂h/∂T)<sub>p,x</sub> of the phase</td>
+<td>V+L, V+H, L+H: the <strong>frozen</strong> heat capacity Σ S<sub>i</sub> ρ<sub>i</sub> c<sub>P,i</sub> / ρ, at fixed phase amounts and compositions. V+L+H: not computed (the field holds 0); at given pressure and bulk composition the temperature is fixed there, so a finite equilibrium heat capacity does not exist</td>
 </tr>
 <tr>
 <td><code>IsothermalCompressibility</code></td>
 <td>of the phase</td>
-<td><strong>equilibrium</strong> compressibility in V+L, V+H and L+H: from the bulk density at fixed T and bulk composition, with the phases re-equilibrating; 0 in V+L+H</td>
+<td>V+L, V+H, L+H: the <strong>equilibrium</strong> compressibility, from the bulk density at fixed T and bulk composition, with the phases re-equilibrating. V+L+H, and V+L of pure water from H–p–X: not computed (the field holds 0)</td>
 </tr>
 <tr>
 <td><code>IsobaricExpansivity</code>, <code>dRhodT</code>, <code>dRhodP</code></td>
 <td>of the phase</td>
-<td>not computed (0); use the phase fields <code>*_l</code>, <code>*_v</code></td>
+<td>not computed (the fields hold 0); use the phase fields <code>*_l</code>, <code>*_v</code></td>
 </tr>
 <tr>
 <td><code>Mu</code></td>
 <td>phase viscosity</td>
-<td><strong>not defined</strong>: a placeholder value of 1 in V+L, V+H and L+H. Two enthalpy-based paths set S_l μ_l + S_v μ_v instead: V+L+H, and V+L of pure water. Use <code>Mu_l</code> and <code>Mu_v</code>.</td>
+<td><strong>not a mixture viscosity.</strong> V+L, V+H, L+H: a placeholder 1. V+L+H, and V+L of pure water from H–p–X: S<sub>l</sub> μ<sub>l</sub> + S<sub>v</sub> μ<sub>v</sub>, an average weighted by the liquid and vapour volume fractions (halite left out), not a physical property. Use <code>Mu_l</code> and <code>Mu_v</code>.</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Frozen and equilibrium heat capacity.</strong> In a multiphase state the enthalpy of the mixture also changes because mass
 moves between phases of different enthalpy (latent heat) and because the coexisting compositions change with
-temperature. The equilibrium heat capacity (∂H/∂T)_{p,X} contains these terms; the bulk <code>Cp</code> does not. Near phase
+temperature. The equilibrium heat capacity (∂H/∂T)<sub>p,X</sub> contains these terms; the bulk <code>Cp</code> does not. Near phase
 boundaries the difference is large. In V+L at 400 °C, 250 bar and 10 wt% NaCl, <code>Cp</code> is 9.2 kJ/(kg K), whereas the
 temperature derivative of the bulk enthalpy is 31 kJ/(kg K):</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -2000,7 +1981,7 @@ temperature derivative of the bulk enthalpy is 31 kJ/(kg K):</p>
 effective properties of a multiphase flow (viscosity, relative permeability, storage terms) belong to the flow model.
 The fields above may change when it is decided.</p>
 <p><strong>Saturation and phase-amount conventions.</strong> The H₂O–NaCl saturations are volume fractions. The pure-water classes
-report the vapour mass fraction (quality) in <code>S_v</code>; convert with w_v = S_v ρ_v / ρ when you combine the two. The
+report the vapour mass fraction (quality) in <code>S_v</code>; convert with w<sub>v</sub> = S<sub>v</sub> ρ<sub>v</sub> / ρ when you combine the two. The
 pure-water classes leave the bulk two-phase <code>Cp</code> at 0.</p>
 <p><strong>Absent phases.</strong> Fields of a phase that is not present keep 0 in the C++ structure and the classic interface;
 <code>xthermo.tpx</code> and <code>xthermo.hpx</code> can return NaN for them instead (<code>absent="nan"</code>; see
@@ -2122,10 +2103,10 @@ NaCl (X = 1) near its melting point.</p>
 </ul>
 <h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <p>Driesner, T. &amp; Heinrich, C.A. (2007). The system H₂O–NaCl. Part I: Correlation formulae for phase relations in
-temperature–pressure–composition space from 0 to 1000 °C, 0 to 5000 bar, and 0 to 1 X_NaCl. <em>Geochim. Cosmochim.
+temperature–pressure–composition space from 0 to 1000 °C, 0 to 5000 bar, and 0 to 1 X<sub>NaCl</sub>. <em>Geochim. Cosmochim.
 Acta</em> <strong>71</strong>, 4880–4901. <a href="https://doi.org/10.1016/j.gca.2006.01.033">doi:10.1016/j.gca.2006.01.033</a></p>
 <p>Driesner, T. (2007). The system H₂O–NaCl. Part II: Correlations for molar volume, enthalpy, and isobaric heat
-capacity from 0 to 1000 °C, 1 to 5000 bar, and 0 to 1 X_NaCl. <em>Geochim. Cosmochim. Acta</em> <strong>71</strong>, 4902–4919.
+capacity from 0 to 1000 °C, 1 to 5000 bar, and 0 to 1 X<sub>NaCl</sub>. <em>Geochim. Cosmochim. Acta</em> <strong>71</strong>, 4902–4919.
 <a href="https://doi.org/10.1016/j.gca.2007.05.026">doi:10.1016/j.gca.2007.05.026</a></p>
 <p>Haar, L., Gallagher, J.S. &amp; Kell, G.S. (1984). <em>NBS/NRC Steam Tables</em>. Hemisphere, Washington.</p>
 <p>Kestin, J. &amp; Sengers, J.V. (1986). New international formulations for the thermodynamic properties of light and heavy

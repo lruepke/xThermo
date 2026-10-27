@@ -1543,18 +1543,18 @@ of the same archive.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>install/
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>├── bin/xThermal                 # command-line tool
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>├── include/xThermo/             # C++ headers
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>├── lib/libxThermal.a            # C++ library
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>├── lib/libxThermal.a            # C++ library (lib64/ on some Linux distributions)
 <a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>├── lib/cmake/xThermo/           # CMake package: find_package(xThermo)
 <a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>└── API/python/cp3.13/           # Python modules; the name follows the Python version used by CMake
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    ├── xthermo/                 # __init__.py, H2O.py, NaCl.py, H2ONaCl.py, _H2O.so, _NaCl.so, _H2ONaCl.so, ...
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    ├── xthermo/                 # __init__.py, H2O.py, NaCl.py, H2ONaCl.py, the compiled modules, ...
 <a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    └── xThermal/                # compatibility name
 </code></pre></div>
-<p>To use these Python modules without pip, set <code>PYTHONPATH=&lt;path_to_repo&gt;/install/API/python/cp3.13</code>.</p>
+<p>To use these Python modules without pip, set <code>PYTHONPATH=/path/to/xThermo/install/API/python/cp3.13</code>.</p>
 <h3 id="use-it-from-your-cmake-project">Use it from your CMake project<a class="headerlink" href="#use-it-from-your-cmake-project" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">find_package</span><span class="p">(</span><span class="s">xThermo</span><span class="w"> </span><span class="s">REQUIRED</span><span class="p">)</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nb">target_link_libraries</span><span class="p">(</span><span class="s">my_app</span><span class="w"> </span><span class="s">PRIVATE</span><span class="w"> </span><span class="s">xThermo::xThermal</span><span class="p">)</span>
 </code></pre></div>
-<p>Point CMake to the installation with <code>-DCMAKE_PREFIX_PATH=&lt;path_to_repo&gt;/install</code> (or <code>export xThermo_DIR=&lt;path_to_repo&gt;/install</code>).
+<p>Point CMake to the installation with <code>-DCMAKE_PREFIX_PATH=/path/to/xThermo/install</code> (or <code>export xThermo_DIR=/path/to/xThermo/install</code>).
 More in the <a href="../cpp/">C++ API overview</a>.</p>
 <h3 id="other-language-bindings">Other language bindings<a class="headerlink" href="#other-language-bindings" title="Permanent link">&para;</a></h3>
 <p>The Julia wrapper (<code>Library/H2O/H2O.cxx</code>, CxxWrap) and the Matlab MEX functions (<code>Library/H2ONaCl/Matlab/</code>) are kept
