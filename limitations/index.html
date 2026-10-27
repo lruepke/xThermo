@@ -1864,10 +1864,9 @@
 <p>Some differences concern regions where the published formulation requires extrapolation or leaves implementation details unspecified. The current treatment is retained pending further scientific evidence.</p>
 <h3 id="heat-capacity">Heat capacity<a class="headerlink" href="#heat-capacity" title="Permanent link">&para;</a></h3>
 <p>In xThermo, the isobaric heat capacity is calculated as the temperature derivative of the specific enthalpy at constant pressure and composition, following Eq. 27 of Driesner (2007):</p>
-<p>[
-c_P = \left(\frac{\partial h}{\partial T}\right)_{p,x}
-]</p>
-<p>SoWat 0.2 and ProBrine apply an additional factor of (1/(1+x)) to the published heat-capacity expression, where (x) denotes the NaCl mole fraction. This correction is not included in Eq. 27 of Driesner (2007), although SoWat identifies it as an omission in the original publication.</p>
+<p align="center"><i>c</i><sub>P</sub> = (∂<i>h</i>/∂<i>T</i>)<sub>p,x</sub></p>
+
+<p>SoWat 0.2 and ProBrine apply an additional factor of 1/(1 + <i>x</i>) to the published heat-capacity expression, where <i>x</i> denotes the NaCl mole fraction. This correction is not included in Eq. 27 of Driesner (2007), although SoWat identifies it as an omission in the original publication.</p>
 <p>Applying this factor to heat capacity without a corresponding modification of enthalpy changes the relationship between the two properties. xThermo therefore retains the published equation to preserve consistency between enthalpy and its temperature derivative.</p>
 <p>The resulting heat capacities differ from SoWat and ProBrine by approximately 1% at seawater salinity, 9% at 26 wt% NaCl and 23% at 58 wt% NaCl. The physical justification for the additional factor remains unresolved and would require further assessment against experimental data.</p>
 <h3 id="liquid-enthalpy-of-hot-brines-at-low-pressure">Liquid enthalpy of hot brines at low pressure<a class="headerlink" href="#liquid-enthalpy-of-hot-brines-at-low-pressure" title="Permanent link">&para;</a></h3>
@@ -1893,7 +1892,7 @@ c_P = \left(\frac{\partial h}{\partial T}\right)_{p,x}
 <tbody>
 <tr>
 <td><strong>Low-temperature density correction</strong></td>
-<td>The correction term (D(T)) in Eq. 13 of Driesner (2007) is omitted because it can shift the corresponding temperature below the freezing point of pure water. The resulting density differences are generally below 0.01% above approximately 50 °C and reach 0.18% at lower temperatures near halite saturation.</td>
+<td>The correction term <i>D</i>(<i>T</i>) in Eq. 13 of Driesner (2007) is omitted because it can shift the corresponding temperature below the freezing point of pure water. The resulting density differences are generally below 0.01% above approximately 50 °C and reach 0.18% at lower temperatures near halite saturation.</td>
 </tr>
 <tr>
 <td><strong>Molar mass of water</strong></td>
@@ -1909,7 +1908,7 @@ c_P = \left(\frac{\partial h}{\partial T}\right)_{p,x}
 </tr>
 <tr>
 <td><strong>High-temperature liquid composition</strong></td>
-<td>Above 800.7 °C, the liquid branch of the vapour–liquid coexistence surface uses a slightly different pressure reference, resulting in composition differences of approximately (10^{-5}) or less.</td>
+<td>Above 800.7 °C, the liquid branch of the vapour–liquid coexistence surface uses a slightly different pressure reference, resulting in composition differences of approximately 10<sup>−5</sup> or less.</td>
 </tr>
 <tr>
 <td><strong>Pure-water viscosity extrapolation</strong></td>
@@ -1939,16 +1938,16 @@ c_P = \left(\frac{\partial h}{\partial T}\right)_{p,x}
 <tr>
 <td><strong>Bulk density</strong> (<code>Rho</code>)</td>
 <td>Density of the phase</td>
-<td>Volume-weighted average of the phase densities: (\rho=\sum_i S_i\rho_i).</td>
+<td>Volume-weighted average of the phase densities: ρ = ∑<sub>i</sub> <i>S</i><sub>i</sub> ρ<sub>i</sub>.</td>
 </tr>
 <tr>
 <td><strong>Bulk specific enthalpy</strong> (<code>H</code>)</td>
 <td>Specific enthalpy of the phase</td>
-<td>Mass-weighted average of the phase enthalpies: (h=\sum_i S_i\rho_i h_i/\rho).</td>
+<td>Mass-weighted average of the phase enthalpies: <i>h</i> = (∑<sub>i</sub> <i>S</i><sub>i</sub> ρ<sub>i</sub> <i>h</i><sub>i</sub>)/ρ.</td>
 </tr>
 <tr>
 <td><strong>Heat capacity</strong> (<code>Cp</code>)</td>
-<td>Isobaric heat capacity of the phase, (c_P=(\partial h/\partial T)_{p,x}).</td>
+<td>Isobaric heat capacity of the phase, <i>c</i><sub>P</sub> = (∂<i>h</i>/∂<i>T</i>)<sub>p,x</sub>.</td>
 <td>In two-phase regions, the mass-weighted average of the individual phase heat capacities, evaluated at fixed phase proportions and compositions. In V+L+H, not computed (<code>0</code> is a placeholder).</td>
 </tr>
 <tr>
@@ -1976,14 +1975,12 @@ c_P = \left(\frac{\partial h}{\partial T}\right)_{p,x}
 <p><strong>Phase-fraction convention:</strong> In the H₂O–NaCl model, <code>S_l</code>, <code>S_v</code> and <code>S_h</code> represent volume fractions. The pure-water classes use a different convention: <code>S_v</code> represents vapour mass fraction (quality). These quantities must not be interchanged without conversion.</p>
 <h3 id="heat-capacity-in-multiphase-regions">Heat capacity in multiphase regions<a class="headerlink" href="#heat-capacity-in-multiphase-regions" title="Permanent link">&para;</a></h3>
 <p>In two-phase regions, xThermo reports a phase-weighted heat capacity:</p>
-<p>[
-c_{P,\mathrm{bulk}}=\frac{\sum_i S_i\rho_i c_{P,i}}{\rho}
-]</p>
+<p align="center"><i>c</i><sub>P,bulk</sub> = (∑<sub>i</sub> <i>S</i><sub>i</sub> ρ<sub>i</sub> <i>c</i><sub>P,i</sub>)/ρ</p>
+
 <p>This quantity represents the heat capacity at fixed phase proportions and compositions, often referred to as a <em>frozen</em> heat capacity. It does not include latent heat associated with phase transitions or changes in the equilibrium compositions of the coexisting phases.</p>
 <p>Consequently, it generally differs from the equilibrium temperature derivative of the bulk enthalpy,</p>
-<p>[
-\left(\frac{\partial H}{\partial T}\right)_{p,X}
-]</p>
+<p align="center">(∂<i>H</i>/∂<i>T</i>)<sub>p,X</sub></p>
+
 <p>which includes changes in phase proportions and compositions.</p>
 <p>At fixed pressure, the temperature of a V+L+H equilibrium state is constrained by the three-phase equilibrium. xThermo does not compute a bulk heat capacity for these states; the returned value of zero is a placeholder, not a physical heat capacity.</p>
 <p>For example, at 400 °C, 250 bar and 10 wt% NaCl, xThermo returns a phase-weighted <code>Cp</code> of approximately 9.2 kJ/(kg K), whereas the temperature derivative of bulk enthalpy is approximately 31 kJ/(kg K):</p>
@@ -2000,9 +1997,8 @@ c_{P,\mathrm{bulk}}=\frac{\sum_i S_i\rho_i c_{P,i}}{\rho}
 </code></pre></div>
 <h3 id="isothermal-compressibility-in-multiphase-regions">Isothermal compressibility in multiphase regions<a class="headerlink" href="#isothermal-compressibility-in-multiphase-regions" title="Permanent link">&para;</a></h3>
 <p>In two-phase regions, xThermo calculates the isothermal compressibility from the bulk density:</p>
-<p>[
-\kappa_T=-\frac{1}{\rho}\left(\frac{\partial\rho}{\partial p}\right)_{T,X}
-]</p>
+<p align="center">κ<sub>T</sub> = −(1/ρ)(∂ρ/∂<i>p</i>)<sub>T,X</sub></p>
+
 <p>The calculation accounts for changes in phase proportions and equilibrium compositions as pressure varies.</p>
 <p>For three-phase vapour–liquid–halite states, this quantity is not evaluated. A returned value of zero indicates that the property has not been computed, rather than zero physical compressibility.</p>
 <p>The pure-water classes also leave the bulk compressibility uncomputed for two-phase states obtained through enthalpy-based evaluation (H–p–X).</p>
