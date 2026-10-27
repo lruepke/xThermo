@@ -1095,10 +1095,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#authors" class="md-nav__link">
+  <a href="#development" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Authors
+        Development
       
     </span>
   </a>
@@ -1200,10 +1200,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#authors" class="md-nav__link">
+  <a href="#development" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Authors
+        Development
       
     </span>
   </a>
@@ -1261,16 +1261,13 @@
 
 
 <h1 id="about">About<a class="headerlink" href="#about" title="Permanent link">&para;</a></h1>
-<h2 id="authors">Authors<a class="headerlink" href="#authors" title="Permanent link">&para;</a></h2>
-<p>xThermo is developed at the <a href="https://www.geomar.de">GEOMAR Helmholtz Centre for Ocean Research Kiel</a>.</p>
-<p><strong>Zhikui Guo</strong>: original developer. He wrote the C++ library, the water and NaCl backends and the Python bindings,
-building on earlier GEOMAR MATLAB implementations of the Driesner model.</p>
-<p><strong>Lars Rüpke</strong>: scientific maintainer and project lead.</p>
-<p>xThermo is used in hydrothermal-system modelling at GEOMAR, for example in the OpenFOAM-based solvers of
-HydrothermalFoam.</p>
+<h2 id="development">Development<a class="headerlink" href="#development" title="Permanent link">&para;</a></h2>
+<p>xThermo is developed and maintained by the <a href="https://www.geomar.de/en/research/fb4/fb4-muhs/research-topics/modelings">Seafloor Modeling group</a> at the <a href="https://www.geomar.de">GEOMAR Helmholtz Centre for Ocean Research Kiel</a>.</p>
+<p><strong>Zhikui Guo</strong> developed the original C++ library, including the water and NaCl backends and Python bindings, building on earlier MATLAB implementations of the Driesner formulation developed at GEOMAR.</p>
+<p><strong>Lars Rüpke</strong> leads the project and maintains its scientific development.</p>
+<p>xThermo supports research on hydrothermal systems and is used, among other applications, in OpenFOAM-based hydrothermal flow simulations with HydrothermalFoam.</p>
 <h2 id="how-to-cite">How to cite<a class="headerlink" href="#how-to-cite" title="Permanent link">&para;</a></h2>
-<p>The equation of state implemented in xThermo is the work of Thomas Driesner and Christoph Heinrich. <strong>Please cite
-the two papers</strong> when you use xThermo:</p>
+<p>xThermo implements the H₂O–NaCl formulations developed by Thomas Driesner and Christoph Heinrich. When publishing results obtained with xThermo, <strong>please cite both foundational papers</strong>:</p>
 <p>Driesner, T. &amp; Heinrich, C.A. (2007). The system H₂O–NaCl. Part I: Correlation formulae for phase relations in
 temperature–pressure–composition space from 0 to 1000 °C, 0 to 5000 bar, and 0 to 1 X<sub>NaCl</sub>.
 <em>Geochimica et Cosmochimica Acta</em>, <strong>71</strong>, 4880–4901.
@@ -1278,7 +1275,7 @@ temperature–pressure–composition space from 0 to 1000 °C, 0 to 5000 bar, an
 <p>Driesner, T. (2007). The system H₂O–NaCl. Part II: Correlations for molar volume, enthalpy, and isobaric heat
 capacity from 0 to 1000 °C, 1 to 5000 bar, and 0 to 1 X<sub>NaCl</sub>. <em>Geochimica et Cosmochimica Acta</em>, <strong>71</strong>,
 4902–4919. <a href="https://doi.org/10.1016/j.gca.2007.05.026">doi:10.1016/j.gca.2007.05.026</a></p>
-<p>For the water properties, cite the formulation you use:</p>
+<p>Please also cite the pure-water formulation used in your calculations:</p>
 <ul>
 <li>IAPS-84: Haar, L., Gallagher, J.S. &amp; Kell, G.S. (1984). <em>NBS/NRC Steam Tables</em>. Hemisphere, Washington; and
   Kestin, J. &amp; Sengers, J.V. (1986). <em>J. Phys. Chem. Ref. Data</em> <strong>15</strong>, 305.
@@ -1286,13 +1283,14 @@ capacity from 0 to 1000 °C, 1 to 5000 bar, and 0 to 1 X<sub>NaCl</sub>. <em>Geo
 <li>IAPWS-95: Wagner, W. &amp; Pruß, A. (2002). <em>J. Phys. Chem. Ref. Data</em> <strong>31</strong>, 387–535.
   <a href="https://doi.org/10.1063/1.1461829">doi:10.1063/1.1461829</a></li>
 </ul>
-<p>For brine viscosities, cite Klyukin, Yu.I., Lowell, R.P. &amp; Bodnar, R.J. (2017). <em>Fluid Phase Equilib.</em> <strong>433</strong>,
+<p>For calculations involving brine viscosity, please cite Klyukin, Yu.I., Lowell, R.P. &amp; Bodnar, R.J. (2017). <em>Fluid Phase Equilib.</em> <strong>433</strong>,
 193–205. <a href="https://doi.org/10.1016/j.fluid.2016.11.002">doi:10.1016/j.fluid.2016.11.002</a>. All references are listed
 on <a href="../limitations/#references">Model and limitations</a>.</p>
-<p>To refer to the software itself, cite it as <em>xThermo, GEOMAR Helmholtz Centre for Ocean Research Kiel,
-https://github.com/lruepke/xThermo</em>, with the version you used (<code>xthermo.__version__</code>). A citable DOI for xThermo is
-planned.</p>
+<p>To cite the software itself, use <em>xThermo, GEOMAR Helmholtz Centre for Ocean Research Kiel,
+https://github.com/lruepke/xThermo</em>, and specify the version used (<code>xthermo.__version__</code>). A software DOI is planned.</p>
 <h2 id="acknowledgements">Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permanent link">&para;</a></h2>
+<p>We gratefully acknowledge <strong>Falko Vehling, Jörg Hasenclever and Karthik Iyer</strong> for their contributions to earlier MATLAB implementations of the Driesner H₂O–NaCl formulation at GEOMAR, which provided a foundation for the subsequent development of xThermo.</p>
+<p>xThermo also builds on the following third-party software:</p>
 <ul>
 <li><strong>PROST 4.1</strong> (Olaf Bauer and Ole Engel, TU Hamburg-Harburg) computes the IAPS-84 water properties.</li>
 <li><strong>The GNU Scientific Library</strong> (GSL) provides the one- and multidimensional root finders.</li>
