@@ -1,0 +1,44 @@
+PROST 4.1 in xThermo: modifications to the original distribution
+===================================================================
+
+PROST - PROperties of water and STeam, Version 4.1
+  Olaf Bauer, January 1998; changes in the implementation by Ole Engel, September 1998
+  Technische Universitaet Hamburg-Harburg, Arbeitsbereich Technische Thermodynamik
+  (see PROST4_TXT.htm and the header of each source file)
+Licence: GNU Library General Public License, version 2.0 (COPYING.LIB-2.0), as stated in every source file and in
+PROST4_TXT.htm. PROST is not covered by xThermo's MIT licence.
+
+This file is the notice required by section 2 of that licence ("You must cause the files modified to carry prominent
+notices stating that you changed the files and the date of any change"). The source files listed below carry a
+one-line reference to it. The original author, maintainer and $Id lines are kept unchanged; the $Id lines describe the
+1998 originals, not the modified files.
+
+Provenance of this copy
+-----------------------
+- Imported into the xThermo repository on 2022-01-05 by Zhikui Guo (commit 18578db). The source of the imported copy
+  is not recorded. The original distribution site (http://www.en.tu-harburg.de/PROST) and the mirror cited in the
+  xThermo bibliography are no longer available, so the copy cannot be compared with the 1998 distribution.
+- The imported copy already contained additions that are not part of an ANSI C distribution of 1998:
+    * CMakeLists.txt and .gitignore (xThermo build files);
+    * in steam4.h, a structure "struct gzk { double x; double y; }" and repeated "#ifdef __cplusplus extern "C""
+      guards around individual declarations.
+  These were presumably made for xThermo before the import (inference; not recorded in the history).
+- COPYING.LIB-2.0 was added on 2022-03-13 (7847554) and PROST4_TXT.htm on 2022-03-27 (de8ad98), both by Zhikui Guo.
+  PROST4_TXT.htm carries the 1998 $Id line of PROST4.TXT.
+
+Modifications in the xThermo repository (all by Zhikui Guo)
+-----------------------------------------------------------
+| Date       | Commit  | File       | Change |
+|------------|---------|------------|--------|
+| 2022-01-05 | db53511 | CMakeLists.txt, steam4.h | build file; header restructuring for C++ (extern "C") |
+| 2022-03-26 | 60d1b57 | steam4.h   | extern "C" restructuring; struct gzk removed |
+| 2022-04-05 | 5172fa6 | iaps.c     | water_tp(): sets prop->phase = TWO when (T, p) is saturated, before the early return |
+| 2022-04-25 | 051f410 | decl.h     | declaration of `crit` without `extern` on Windows (_WIN32) |
+| 2022-06-20 | 9583eab | iaps.c     | tp(): after IMAX iterations without convergence the last iterate is formatted and returned (error = 1 is still set) |
+| 2022-06-20 | 9583eab | iaps.h     | comment on IMAX ("set to 200"); the value is unchanged (20) |
+| 2022-07-18 | bcb5cbf | iaps.c     | viscos(): the upper temperature bound of the viscosity correlation (T > 900 C) is commented out, so PROST's viscosity is extrapolated above 900 C |
+
+Comment-only lines referring to this file were added in 2026 (xThermo review, LIC-01). No other change.
+
+How xThermo uses PROST, and the behaviour of the wrapper around these changes, is documented in
+review/PROST_PROVENANCE.md (sections 3 and 5) and review/IAPS84_ATTRIBUTION_LICENSING.md.

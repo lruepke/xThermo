@@ -1,0 +1,105 @@
+site_name: xThermo
+site_description: Thermodynamic properties and phase relations of H₂O–NaCl fluids, 0–1000 °C and 1–5000 bar. C++ library with a Python interface.
+site_url: https://lruepke.github.io/xThermo/
+copyright: >
+  Developed at <a href="https://www.geomar.de">GEOMAR Helmholtz Centre for Ocean Research Kiel</a> ·
+  source code under the MIT licence; compiled builds include third-party components with their own licences
+  (<a href="https://lruepke.github.io/xThermo/about/#license">details</a>) ·
+  <a href="https://lruepke.github.io/xThermo/legal/">Legal notice</a>
+
+# former URLs of the Python pages, kept as redirects to the guide sections that replaced them
+not_in_nav: |
+  /python/tpx.md
+  /python/hpx.md
+  /python/saturation.md
+
+extra_css:
+  - stylesheets/extra.css
+
+theme:
+  name: material
+  font: false                    # system fonts: no requests to Google Fonts
+  favicon: assets/favicon.svg
+  icon:
+    logo: material/water-thermometer
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+
+plugins:
+  - search
+
+# a plain link to the source; no repo_url, so the theme does not query the GitHub API from the reader's browser
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/lruepke/xThermo
+      name: Source code on GitHub
+
+# also check anchors of links between pages (mkdocs build --strict fails on a missing one)
+validation:
+  anchors: warn
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Gallery: gallery.md
+  - Model and limitations: limitations.md
+  - Python guide:
+    - Overview: python/index.md
+    - Evaluating states: python/evaluate.md
+    - Errors and status: python/errors.md
+    - Phase diagrams: python/phase_diagrams.md
+    - Property maps: python/property_maps.md
+    - Phase boundaries: python/phase_boundaries.md
+    - Pure water and NaCl: python/water_nacl.md
+    - Classic SWIG interface: python/classic.md
+  - Command-line tool: cli.md
+  - C++ API:
+    - Overview: cpp/index.md
+    - Evaluating states: cpp/tpx.md
+    - Errors and threads: cpp/errors.md
+    - Phase region: cpp/phase_region.md
+    - Phase boundaries: cpp/phase_boundaries.md
+  - About & License: about.md
+  - Legal notice: legal.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.snippets:           # include the figure scripts verbatim (docs/gallery/*.py)
+      check_paths: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
