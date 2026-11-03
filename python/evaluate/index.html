@@ -1607,8 +1607,9 @@ it with its temperature.</p>
 <a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">phase_name</span><span class="p">)</span>
 </code></pre></div>
 <p>The field <code>H</code> of the result is the enthalpy of the returned state. It agrees with the input to within the solver
-tolerance, except at X = 1 (pure NaCl in the H₂O–NaCl model) inside the melting range, where the returned state can
-have a different enthalpy (<a href="../../limitations/#under-investigation">Under investigation</a>). For plots on an enthalpy
+tolerance, except for nearly pure NaCl (X just below 1) inside the melting range, where the returned state can have
+a different enthalpy (<a href="../../limitations/#known-numerical-issues">Known numerical issues</a>). Exactly pure NaCl (X = 1)
+is not affected: there <code>hpx</code> returns the liquid–halite mixture at the melting temperature. For plots on an enthalpy
 grid, use the input values as coordinates (see <a href="../property_maps/#enthalpy-grids">Property maps</a>). The pure NaCl model has no enthalpy-based input (<code>hpx</code> raises
 <code>NotAvailableError</code>).</p>
 

@@ -1953,7 +1953,7 @@
 <tr>
 <td><strong>Isothermal compressibility</strong> (<code>IsothermalCompressibility</code>)</td>
 <td>Isothermal compressibility of the phase.</td>
-<td>In two-phase H₂O–NaCl regions, calculated from the pressure dependence of bulk density at constant temperature and bulk composition, allowing the phases to re-equilibrate. In V+L+H, not computed (<code>0</code> is a placeholder).</td>
+<td>In two-phase H₂O–NaCl regions, calculated from the pressure dependence of bulk density at constant temperature and bulk composition, allowing the phases to re-equilibrate. In V+L+H, and in liquid–halite states of pure NaCl from enthalpy-based input, not computed (<code>0</code> is a placeholder).</td>
 </tr>
 <tr>
 <td><strong>Thermal expansivity</strong> (<code>IsobaricExpansivity</code>)</td>
@@ -2074,18 +2074,16 @@
 <li><strong>IAPWS-95 at low temperatures and high pressures:</strong> For certain saline compositions, the corresponding-temperature transformation reaches conditions outside the supported range of the pure-water formulation. This can prevent evaluation at low temperatures or near the upper pressure boundary of 5000 bar. The IAPS-84 backend can evaluate these conditions.</li>
 <li><strong>Low-pressure density derivatives:</strong> Near boiling at approximately 1–5 bar, calculated pressure derivatives of brine density can differ significantly from numerical derivatives of the density correlation. The calculated density itself is unaffected.</li>
 <li><strong>High-temperature density with IAPWS-95:</strong> In the low-pressure extrapolation region, small numerical discontinuities may occur in density and its temperature derivative.</li>
+<li><strong>Nearly pure NaCl near its melting point:</strong> For compositions very close to, but below, pure NaCl (within about 10⁻⁵ in mass fraction), enthalpy-based evaluation (<code>hpx</code>) at enthalpies within the melting range can report success although the returned state's enthalpy differs from the requested value, by up to about 0.14 MJ/kg. Compare the returned <code>H</code> with the input in this region. Exactly pure NaCl is not affected (see below).</li>
 <li><strong>Enthalpy extrapolation below 1 bar:</strong> Because of a known extrapolation issue, calculated liquid enthalpies can be substantially incorrect at pressures below 1 bar, outside the published model domain, and when liquid properties are requested at conditions where no stable liquid phase exists.</li>
 </ul>
 <h3 id="under-investigation">Under investigation<a class="headerlink" href="#under-investigation" title="Permanent link">&para;</a></h3>
-<p>Two related questions concerning pure NaCl near its melting point remain under investigation.</p>
-<p><strong>Enthalpy-based evaluation near melting</strong></p>
-<p>For pure NaCl, enthalpies between those of solid halite and liquid NaCl at the melting temperature correspond to coexistence of the two phases. In this region, enthalpy-based evaluation (<code>hpx</code>) may return a successful result whose calculated enthalpy differs from the requested value.</p>
-<p>For example, at 250 bar, an input enthalpy of 1.031 MJ/kg produces a liquid–halite state at approximately 806.9 °C with a returned enthalpy of 0.807 MJ/kg.</p>
-<p>Until this behaviour is resolved, enthalpy-based evaluations of pure NaCl within the melting interval should be treated with caution.</p>
+<p>One question concerning the enthalpy of pure NaCl near its melting point remains under investigation.</p>
 <p><strong>Enthalpy of solid and liquid NaCl</strong></p>
-<p>The enthalpy of solid halite is calculated using a separate correlation, while the enthalpy of liquid NaCl is obtained from the Driesner (2007) fluid formulation at pure-NaCl composition.</p>
-<p>At 1 bar, the calculated enthalpy difference at melting is approximately 0.25 MJ/kg. The consistency of the reference states and the agreement of this difference with published enthalpy-of-fusion data have not yet been established.</p>
-<p>Further examination is required to determine whether the observed behaviour reflects a reference-state inconsistency, a numerical issue or another aspect of the formulation.</p>
+<p>The enthalpy of solid halite is calculated using a separate correlation, while the enthalpy of liquid NaCl is obtained from the Driesner (2007) fluid formulation at pure-NaCl composition. The halite enthalpy is consistent with independent thermochemical tables.</p>
+<p>At 1 bar, the calculated enthalpy difference between liquid NaCl and halite at melting is approximately 0.25 MJ/kg (about 15 kJ/mol). This is smaller than the experimental enthalpy of fusion of NaCl, about 28 kJ/mol (0.48 MJ/kg). The difference arises from the liquid-NaCl enthalpy given by the published correlation at pure-NaCl composition, at the limit of its composition range; xThermo implements that correlation as published. Neither the halite nor the liquid-NaCl enthalpy correlation has been modified. How the published correlation is intended to represent the enthalpy of liquid NaCl near melting is being clarified.</p>
+<p><strong>Enthalpy-based evaluation at the melting point</strong></p>
+<p>Enthalpy-based evaluation is consistent with these model enthalpies. For exactly pure NaCl, enthalpies between those of solid halite and liquid NaCl at the melting temperature correspond to a mixture of liquid and halite. Enthalpy-based evaluation (<code>hpx</code>) returns this liquid–halite state at the melting temperature, with the phase proportions determined by the requested enthalpy. For example, at 250 bar, an input enthalpy of 1.031 MJ/kg gives a liquid–halite state at approximately 806.9 °C containing about 84 % liquid by mass. At the lower end of the range the state is pure halite, and at the upper end pure liquid. The bulk compressibility and density derivatives of these states are not computed (see <a href="#multiphase-properties">Multiphase properties</a>).</p>
 <h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <p>Driesner, T. &amp; Heinrich, C.A. (2007). The system H₂O–NaCl. Part I: Correlation formulae for phase relations in
 temperature–pressure–composition space from 0 to 1000 °C, 0 to 5000 bar, and 0 to 1 X<sub>NaCl</sub>. <em>Geochim. Cosmochim.

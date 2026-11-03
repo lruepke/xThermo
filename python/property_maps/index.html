@@ -1291,8 +1291,8 @@ Other bulk fields have restricted meanings there; check
 <code>Rho_l</code> with <code>absent="nan"</code> to map a property of one phase only.</p>
 <h2 id="enthalpy-grids">Enthalpy grids<a class="headerlink" href="#enthalpy-grids" title="Permanent link">&para;</a></h2>
 <p>The H of an <code>hpx</code> result is the enthalpy of the returned state, which can differ slightly from the requested value
-(and, at X = 1, pure NaCl in the H₂O–NaCl model, inside the melting range substantially:
-<a href="../../limitations/#under-investigation">Under investigation</a>).
+(and, for nearly pure NaCl inside the melting range, substantially:
+<a href="../../limitations/#known-numerical-issues">Known numerical issues</a>).
 So give the grid's enthalpy axis as the input values, <code>y=("H", H)</code>, rather than reading it from the result:</p>
 <p><img alt="Temperature from enthalpy, pressure and salinity at 250 bar" src="../../assets/img/map_temperature_hx.png" /></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
