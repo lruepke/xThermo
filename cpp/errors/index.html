@@ -1376,7 +1376,7 @@ propagate from every function.</p>
 <p>Every evaluation rejects non-finite inputs, p ≤ 0 and X &lt; 0 (<code>InputError</code>), and H₂O–NaCl temperatures above
 1273.15 K (<code>OutOfRangeError</code>). Other inputs outside the published model domain (0–1000 °C, 1–5000 bar, X 0–1) are
 <strong>not</strong> all rejected: pressures below 1 bar, and X above 1, are evaluated as extrapolations. Check inputs against the
-domain where it matters; <a href="../../limitations/#domain-input-checks-and-errors">Domain, input checks and errors</a> has the
+domain where it matters; <a href="../../limitations/#input-validation-and-error-handling">Input validation and error handling</a> has the
 full list.</p>
 <p>A single property that cannot be evaluated at an otherwise valid state is NaN, and the other properties remain valid
 (<a href="../tpx/#result-fields">Result fields</a>).</p>

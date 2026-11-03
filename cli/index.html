@@ -1620,7 +1620,7 @@ written as <code>.vtk</code>: <code>-Ogrid.csv</code> or <code>-Ogrid</code> giv
 </code></pre></div>
 <p>The command-line tool checks T, p and X against the model's range before evaluating. Inputs outside the published
 model domain are rejected there, including pressures below 1 bar, which the library itself would evaluate (see
-<a href="../limitations/#domain-input-checks-and-errors">Domain, input checks and errors</a>).</p>
+<a href="../limitations/#input-validation-and-error-handling">Input validation and error handling</a>).</p>
 <h2 id="lookup-tables">Lookup tables<a class="headerlink" href="#lookup-tables" title="Permanent link">&para;</a></h2>
 <p><code>lutgen</code> builds an adaptive lookup table of the properties over a 2-D or 3-D region, <code>lutinfo</code> describes it, <code>lookup</code>
 evaluates points from it, and <code>lut2vtu</code> converts it for ParaView:</p>
