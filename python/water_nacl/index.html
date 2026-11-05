@@ -1328,8 +1328,9 @@ returns the saturated liquid and vapour:</p>
 <a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Vapour density:      </span><span class="si">{</span><span class="n">prop</span><span class="o">.</span><span class="n">Rho_v</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> kg/m³"</span><span class="p">)</span>
 <a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Boiling point at 1 bar: </span><span class="si">{</span><span class="n">water</span><span class="o">.</span><span class="n">Boiling_T</span><span class="p">(</span><span class="mf">1e5</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">273.15</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> °C"</span><span class="p">)</span>
 </code></pre></div>
-<p>The IAPWS-95 class has the same methods: <code>water = H2O.cIAPWS95()</code>. Exactly on the saturation curve, IAPWS-95 water
-evaluated with <code>tpx</code> raises <code>NotConvergedError</code>; evaluate slightly off it, or use the saturation functions.</p>
+<p>The IAPWS-95 class has the same methods: <code>water = H2O.cIAPWS95()</code>. Exactly at the saturation pressure, <code>tpx</code> returns
+a single-phase state whose phase label may not match its density (with IAPWS-95, the saturated-vapour density labelled
+liquid); for states on the saturation curve, use the saturation functions.</p>
 <h2 id="nacl">NaCl<a class="headerlink" href="#nacl" title="Permanent link">&para;</a></h2>
 <p><code>xthermo.NaCl.cNaCl("IAPS84")</code> is the pure NaCl model of Driesner (2007): halite (solid) and liquid NaCl, with their
 melting, sublimation and boiling curves. Its liquid properties are the Driesner brine correlations at X = 1, which
