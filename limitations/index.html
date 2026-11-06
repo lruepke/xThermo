@@ -1997,9 +1997,9 @@
 </code></pre></div>
 <h3 id="isothermal-compressibility-in-multiphase-regions">Isothermal compressibility in multiphase regions<a class="headerlink" href="#isothermal-compressibility-in-multiphase-regions" title="Permanent link">&para;</a></h3>
 <p>In two-phase regions, xThermo calculates the isothermal compressibility from the bulk density:</p>
-<p align="center">κ<sub>T</sub> = −(1/ρ)(∂ρ/∂<i>p</i>)<sub>T,X</sub></p>
+<p align="center">κ<sub>T</sub> = (1/ρ)(∂ρ/∂<i>p</i>)<sub>T,X</sub></p>
 
-<p>The calculation accounts for changes in phase proportions and equilibrium compositions as pressure varies.</p>
+<p>The calculation accounts for changes in phase proportions and equilibrium compositions as pressure varies. In vapour–liquid states the derivative is evaluated at the state itself, including states in very narrow vapour–liquid intervals of dilute brines; it becomes large there because small pressure changes convert substantial amounts of one phase into the other.</p>
 <p>For three-phase vapour–liquid–halite states, this quantity is not evaluated. A returned value of zero indicates that the property has not been computed, rather than zero physical compressibility.</p>
 <p>The pure-water classes also leave the bulk compressibility uncomputed for two-phase states obtained through enthalpy-based evaluation (H–p–X).</p>
 <h3 id="viscosity-in-multiphase-regions">Viscosity in multiphase regions<a class="headerlink" href="#viscosity-in-multiphase-regions" title="Permanent link">&para;</a></h3>
@@ -2055,7 +2055,7 @@
 <ul>
 <li><strong>Extrapolated conditions:</strong> Brine densities at low pressures near boiling, and the density and enthalpy of hot saline liquids above approximately 600 °C and below 390 bar, involve extrapolations of the published correlations. Conditions below 1 bar lie outside the published model domain.</li>
 <li><strong>Highly saline liquids at low pressure:</strong> In a restricted region near halite saturation, at pressures of approximately 1–5 bar and temperatures of 10–100 °C, the published density correlation can yield negative isothermal compressibility. Although the associated variation in calculated density is small, negative compressibility is not thermodynamically consistent with a stable homogeneous phase. xThermo retains the published density correlation and calculates derivatives consistently with it.</li>
-<li><strong>Critical region:</strong> Predictions near the critical point of water require particular care because of the limitations and increasing sensitivity of the underlying pure-water formulations. These effects can also influence dilute saline fluids through the corresponding-temperature approach.</li>
+<li><strong>Critical region:</strong> Predictions near the critical point of water require particular care because of the limitations and increasing sensitivity of the underlying pure-water formulations. These effects can also influence dilute saline fluids through the corresponding-temperature approach. In vapour–liquid states of dilute brines very close to the critical point of water, the calculated bulk density can decrease with pressure over part of the narrow vapour–liquid interval, so the two-phase isothermal compressibility is negative there (for example at 220 bar and an NaCl mass fraction of 10<sup>−4</sup>, where the interval spans less than 0.02 K).</li>
 <li><strong>High-temperature phase compositions and enthalpy:</strong> The vapour-composition treatment above 800.7 °C and the extrapolation of liquid enthalpy at high temperature and low pressure are discussed under <a href="#implementation-choices-and-formulation-differences">Implementation choices and formulation differences</a>.</li>
 </ul>
 <h3 id="known-numerical-issues">Known numerical issues<a class="headerlink" href="#known-numerical-issues" title="Permanent link">&para;</a></h3>
