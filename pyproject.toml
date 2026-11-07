@@ -1,0 +1,91 @@
+# Python package "xthermo" (import xthermo; the former name xThermal is kept as a compatibility package).
+# Built with scikit-build-core from the CMake project: "pip install ." builds the Python modules with a bundled,
+# statically linked GSL (downloaded and checksum-verified, see cmake/xThermoGSL.cmake). Needs a C/C++ compiler and
+# make; CMake and SWIG come from PyPI if they are not installed.
+#
+# The [tool.poetry] groups are the developer environment (documentation, verification tools), installed with
+# "poetry install --no-root"; they are not dependencies of the package.
+
+[build-system]
+requires = ["scikit-build-core>=0.10", "swig>=4.0"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "xthermo"
+dynamic = ["version"]
+description = "Equation of state of H2O-NaCl (Driesner & Heinrich 2007; Driesner 2007): phase relations and thermodynamic properties"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Zhikui Guo" }, { name = "Lars Rüpke" }]
+keywords = ["H2O-NaCl", "equation of state", "brine", "hydrothermal", "IAPWS", "thermodynamics"]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "Programming Language :: C++",
+    "Programming Language :: Python :: 3",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+]
+dependencies = ["numpy>=1.22"]
+
+[project.optional-dependencies]
+plotting = ["matplotlib"]
+
+[project.urls]
+Source = "https://github.com/lruepke/xThermo"
+
+[tool.scikit-build]
+minimum-version = "build-system.requires"
+cmake.version = ">=3.18"
+build.targets = ["H2O_python", "NaCl_python", "H2ONaCl_python"]
+install.components = ["python"]
+wheel.packages = []
+wheel.license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md", "ThirdParties/PROST/COPYING.LIB-2.0"]
+metadata.version.provider = "scikit_build_core.metadata.regex"
+metadata.version.input = "CMakeLists.txt"
+metadata.version.regex = 'project\(xThermo VERSION (?P<value>[0-9.]+)'
+# the source distribution contains only what the build needs (an allow-list: everything else, including untracked
+# files in a working copy, stays out)
+sdist.exclude = ["*"]
+sdist.include = [
+    "/pyproject.toml", "/README.md", "/LICENSE", "/THIRD_PARTY_NOTICES.md", "/CMakeLists.txt", "/config.h.in",
+    "/cmake/*.cmake", "/cmake/*.in", "/Application/commandline/*.cpp", "/Application/commandline/*.h",
+    "/Application/commandline/CMakeLists.txt", "/ThirdParties/PROST/*.c", "/ThirdParties/PROST/*.h",
+    "/ThirdParties/PROST/COPYING.LIB-2.0", "/ThirdParties/PROST/XTHERMO_MODIFICATIONS.txt",
+    "/Library/CMakeLists.txt", "/Library/stdfunc.h", "/Library/thermo/*.cpp", "/Library/thermo/*.h", "/Library/thermo/*.H", "/Library/thermo/*.hpp", "/Library/thermo/*.i",
+    "/Library/AMR_LUT/*.h", "/Library/AMR_LUT/*.H", "/Library/API/python/CMakeLists.txt", "/Library/API/python/*/*.py",
+    "/Library/H2O/*.cpp", "/Library/H2O/*.h", "/Library/H2O/*.i", "/Library/H2O/test.cxx",
+    "/Library/NaCl/*.cpp", "/Library/NaCl/*.h", "/Library/NaCl/*.i", "/Library/NaCl/test.cxx",
+    "/Library/H2ONaCl/*.cpp", "/Library/H2ONaCl/*.h", "/Library/H2ONaCl/*.i", "/Library/H2ONaCl/test.cxx",
+    "/Library/test/CMakeLists.txt", "/Library/test/test_*.cpp",
+]
+
+[tool.scikit-build.cmake.define]
+XTHERMO_BUNDLED_GSL = "ON"
+
+# Platform wheels (cibuildwheel): CPython 3.10-3.14 on Linux (manylinux_2_28) and macOS (11.0 or later). Each wheel
+# builds the bundled GSL and is smoke-tested after installation. No release automation is configured.
+[tool.cibuildwheel]
+build = "cp310-* cp311-* cp312-* cp313-* cp314-*"
+skip = "*-musllinux_* *-win*"
+build-verbosity = 1
+test-command = "python -c \"import xthermo; from xthermo import H2ONaCl; sw = H2ONaCl.cH2ONaCl('IAPS84'); assert abs(sw.UpdateState_TPX(573.15, 3e7, 0.1).Rho / 849.0341147203732 - 1) < 1e-12; print('xthermo', xthermo.__version__, 'OK')\""
+
+[tool.cibuildwheel.macos]
+environment = { MACOSX_DEPLOYMENT_TARGET = "11.0" }
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "3.13.*"
+
+[tool.poetry.group.docs.dependencies]
+# MkDocs Material site (docs/, mkdocs.yml) and the figures it shows; the documentation is checked in the review CI
+matplotlib = ">=3.10.7,<4.0.0"
+numpy = ">=2.3.3,<3.0.0"
+mkdocs-material = ">=9.7.5,<10.0.0"
+
+[tool.poetry.group.dev.dependencies]
+iapws = "1.5.5"
