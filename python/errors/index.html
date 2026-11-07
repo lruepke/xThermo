@@ -1325,7 +1325,7 @@ failed:</p>
 <td><code>xthermo.InvalidInputError</code></td>
 <td><code>ValueError</code></td>
 <td><code>InvalidInput</code></td>
-<td>non-finite T, H or p; p ≤ 0; X &lt; 0 or non-finite X (H₂O–NaCl)</td>
+<td>non-finite T, H or p; p ≤ 0; X &lt; 0, X &gt; 1 or non-finite X (H₂O–NaCl)</td>
 </tr>
 <tr>
 <td><code>xthermo.OutOfRangeError</code></td>
@@ -1394,7 +1394,7 @@ draw points that were not evaluated in grey.</p>
 <tr>
 <td><code>InvalidInput</code></td>
 <td>1</td>
-<td>invalid input (non-finite, p ≤ 0, X &lt; 0)</td>
+<td>invalid input (non-finite, p ≤ 0, X outside [0, 1])</td>
 </tr>
 <tr>
 <td><code>OutOfRange</code></td>
