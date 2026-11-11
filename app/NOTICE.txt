@@ -1,6 +1,6 @@
 xThermo WebAssembly module (xthermo_wasm.wasm, xthermo_wasm.js) and its JavaScript interface (xthermo.js)
 
-xThermo 1.0.0, commit afd97a7604e16d0c1f13c2b9099569dfd9a24dfd
+xThermo 1.0.0, commit 9963fe19c6edeb0546700c34bb61ccc41bd399e7
 Built with Emscripten 4.0.10 (emsdk) and GSL 2.8 by Library/API/wasm/make_wasm.sh.
 
 The module is a combined work. Because it contains the GNU Scientific Library (GPL-3.0-or-later), it is distributed
@@ -16,7 +16,7 @@ under the terms of the GNU General Public License, version 3 or (at your option)
 It does not contain Triangle, CoolProp or freesteam.
 
 Corresponding source:
-  - xThermo, including PROST and the build scripts: https://github.com/lruepke/xThermo, commit afd97a7604e16d0c1f13c2b9099569dfd9a24dfd
+  - xThermo, including PROST and the build scripts: https://github.com/lruepke/xThermo, commit 9963fe19c6edeb0546700c34bb61ccc41bd399e7
     (Library/API/wasm/make_wasm.sh, Library/API/wasm/CMakeLists.txt)
   - GSL 2.8: https://ftp.gnu.org/gnu/gsl/gsl-2.8.tar.gz, SHA-256 6a99eeed15632c6354895b1dd542ed5a855c0f15d9ad1326c6fe2b2c9e423190
     (where this module is published, a copy of that archive is provided next to it as source/gsl-2.8.tar.gz)
