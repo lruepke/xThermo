@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>xThermo Explorer</title>
+<meta name="description" content="Evaluate single states of the xThermo H2O–NaCl equation of state in the browser (WebAssembly).">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="explorer.css">
+<script src="explorer.js"></script>
+</head>
+<body>
+<header class="xt-header">
+  <h1>xThermo Explorer</h1>
+  <p>Single states of H₂O–NaCl fluids, computed in your browser by the xThermo C++ library compiled to WebAssembly.
+    Nothing is sent to a server. <a href="../explorer/">About this page</a> · <a href="../">Documentation</a></p>
+</header>
+
+<main>
+<form id="xt-form" class="xt-card" autocomplete="off" novalidate>
+  <fieldset>
+    <legend>Model</legend>
+    <label for="xt-backend">Water equation of state</label>
+    <select id="xt-backend" name="backend">
+      <option value="IAPS84" selected>IAPS-84 (default)</option>
+      <option value="IAPWS95">IAPWS-95</option>
+    </select>
+  </fieldset>
+
+  <fieldset>
+    <legend>State</legend>
+    <div class="xt-mode" role="radiogroup" aria-label="Input variables">
+      <label><input type="radio" name="mode" value="tpx" checked> T-P-X (temperature)</label>
+      <label><input type="radio" name="mode" value="hpx"> H-P-X (specific enthalpy)</label>
+    </div>
+    <div class="xt-inputs">
+      <div id="xt-row-T"><label for="xt-in-T">Temperature <span class="unit">[°C]</span></label>
+        <input id="xt-in-T" name="T" type="text" inputmode="decimal" value="350"></div>
+      <div id="xt-row-H" hidden><label for="xt-in-H">Specific enthalpy <span class="unit">[kJ/kg]</span></label>
+        <input id="xt-in-H" name="H" type="text" inputmode="decimal" value="1500"></div>
+      <div><label for="xt-in-p">Pressure <span class="unit">[bar]</span></label>
+        <input id="xt-in-p" name="p" type="text" inputmode="decimal" value="200"></div>
+      <div><label for="xt-in-X">Salinity</label>
+        <span class="xt-pair"><input id="xt-in-X" name="X" type="text" inputmode="decimal" value="3.2">
+        <select id="xt-Xunit" name="Xunit" aria-label="Salinity unit">
+          <option value="wt" selected>wt % NaCl</option>
+          <option value="frac">kg/kg (mass fraction)</option>
+        </select></span></div>
+    </div>
+  </fieldset>
+
+  <div class="xt-actions">
+    <button id="xt-evaluate" type="submit" disabled>Evaluate</button>
+    <button id="xt-cancel" type="button" disabled>Cancel</button>
+    <span id="xt-status" role="status" aria-live="polite">Loading…</span>
+  </div>
+  <noscript><p class="xt-error-box">The Explorer needs JavaScript and WebAssembly.</p></noscript>
+</form>
+
+<section id="xt-error" class="xt-card xt-error-box" hidden aria-live="polite">
+  <h2>Not evaluated: <span id="xt-error-kind"></span></h2>
+  <p>Message from the library:</p>
+  <pre id="xt-error-message"></pre>
+</section>
+
+<section id="xt-result" class="xt-card" hidden aria-live="polite">
+  <h2>Phase: <span id="xt-phase"></span></h2>
+  <p class="xt-meta"><span id="xt-mode-used"></span> with <span id="xt-backend-used"></span></p>
+  <h3>Bulk properties</h3>
+  <div class="xt-scroll"><table class="xt-table">
+    <thead><tr><th scope="col">Property</th><th scope="col">Value</th><th scope="col">Unit</th></tr></thead>
+    <tbody id="xt-bulk"></tbody>
+  </table></div>
+  <h3>Phases</h3>
+  <div class="xt-scroll"><table class="xt-table">
+    <thead><tr><th scope="col">Property</th><th scope="col">Liquid / fluid</th><th scope="col">Vapour</th><th scope="col">Halite</th><th scope="col">Unit</th></tr></thead>
+    <tbody id="xt-phases"></tbody>
+  </table></div>
+  <p class="xt-note">A dash marks a phase that is not present or a property the model does not provide. Single-phase
+    fluid states, including supercritical ones, are reported in the liquid column. Volume fractions are the library's
+    saturations; mass fractions are derived from them as volume fraction × phase density / bulk density. In
+    multiphase states the bulk heat capacity is the frozen (phase-weighted) value without latent heat, and bulk
+    viscosity and expansivity are not defined; “not computed” marks a placeholder of the library, not a physical
+    zero. See <a href="../limitations/#multiphase-properties">Multiphase properties</a>.</p>
+</section>
+
+<details id="xt-about" class="xt-card">
+  <summary>About, licences and limitations</summary>
+  <h3>Model</h3>
+  <p>The H₂O–NaCl correlations of Driesner &amp; Heinrich (2007) and Driesner (2007) with the IAPS-84 or IAPWS-95
+    water equation of state, exactly as in the native xThermo library: the same C++ code, compiled with Emscripten.
+    In the automated verification of every build, phases, statuses and errors are identical to the native Linux build
+    and the properties agree within 10⁻⁹ relative (tiny phase fractions and near-zero compressibilities within small
+    absolute round-off).</p>
+  <h3>Limitations</h3>
+  <ul>
+    <li>Domain about 0–1000 °C, 1–5000 bar, all salinities; outside it the library reports OutOfRange.</li>
+    <li>H-P-X can report NotConverged in three narrow regions (near the critical point of water, next to pure NaCl
+      in the melting range, and boiling at salinities below about 10⁻⁸) rather than return an inaccurate state.</li>
+    <li>Results can differ in the last digits between platforms, in H-P-X up to about 10⁻⁷ relative. This is
+      numerical, not a thermodynamic discontinuity.</li>
+    <li>Known issues of the published correlations apply. See <a href="../limitations/">Model and limitations</a>.</li>
+  </ul>
+  <h3>Licence</h3>
+  <p>The WebAssembly module is a combined work containing the GNU Scientific Library and is distributed under the
+    <a href="licenses/GSL-GPL-3.0.txt">GNU General Public License, version 3 or later</a>. It contains xThermo
+    (<a href="licenses/xThermo-MIT.txt">MIT</a>), GSL (<a href="licenses/GSL-GPL-3.0.txt">GPL-3.0-or-later</a>),
+    PROST 4.1, modified (<a href="licenses/PROST-LGPL-2.0.txt">LGPL-2.0</a>,
+    <a href="licenses/PROST-modifications.txt">modifications</a>), and the Emscripten runtime
+    (<a href="licenses/Emscripten-MIT-or-NCSA.txt">MIT/NCSA</a>, musl <a href="licenses/musl-MIT.txt">MIT</a>,
+    LLVM libraries <a href="licenses/LLVM-Apache-2.0-with-LLVM-exception.txt">Apache-2.0 with LLVM exception</a>).
+    Full statement: <a href="NOTICE.txt">NOTICE.txt</a>. The xThermo source code itself is MIT-licensed.</p>
+  <h3>Source code</h3>
+  <ul>
+    <li><a id="xt-source-commit" href="https://github.com/lruepke/xThermo">xThermo source</a> (includes PROST)</li>
+    <li><a id="xt-source-gsl" href="NOTICE.txt">GSL source</a></li>
+    <li>Build instructions: <a id="xt-build-script" href="https://github.com/lruepke/xThermo/blob/main/Library/API/wasm/make_wasm.sh">Library/API/wasm/make_wasm.sh</a></li>
+  </ul>
+  <p class="xt-meta">Build: <span id="xt-build">not loaded</span></p>
+</details>
+</main>
+</body>
+</html>
