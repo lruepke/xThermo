@@ -8,7 +8,17 @@
 (function (root, factory) {
   const api = factory();
   if (typeof module === 'object' && module.exports) module.exports = api;
-  else root.addEventListener('DOMContentLoaded', () => api.start(root.document));
+  else {
+    // embedded (app/index.html?embed): set the mode and the homepage's colour scheme before the page renders
+    if (/[?&]embed\b/.test(root.location.search)) {
+      root.document.documentElement.classList.add('xt-embed');
+      try {
+        const sc = root.parent.document.body.getAttribute('data-md-color-scheme');
+        if (sc) root.document.documentElement.setAttribute('data-theme', sc === 'slate' ? 'dark' : 'light');
+      } catch (e) { /* not same-origin: keep the system setting */ }
+    }
+    root.addEventListener('DOMContentLoaded', () => api.start(root.document));
+  }
 })(typeof self !== 'undefined' ? self : this, function () {
   'use strict';
   const K = 273.15;
@@ -101,6 +111,11 @@
     const $ = id => doc.getElementById(id);
     const form = $('xt-form'), statusLine = $('xt-status'), evalBtn = $('xt-evaluate'), cancelBtn = $('xt-cancel');
     let compiled = null, worker = null, busy = null, nextId = 1;
+    // embedded in the documentation homepage (app/index.html?embed): the homepage supplies the heading, links open in
+    // the top window, and the default state is evaluated once when the module is ready
+    const embed = /[?&]embed\b/.test(doc.location.search);
+    let autoEval = embed;
+    if (embed) for (const a of doc.querySelectorAll('a[href]')) a.target = '_top';
 
     function setStatus(text, kind) { statusLine.textContent = text; statusLine.dataset.kind = kind || ''; }
     function setBusy(b) { evalBtn.disabled = !!b || !worker; cancelBtn.disabled = !b; form.setAttribute('aria-busy', b ? 'true' : 'false'); }
@@ -131,6 +146,7 @@
     function onMessage(m) {
       if (m.type === 'ready') {
         showBuild(m.buildInfo); setBusy(false); setStatus('Ready.', 'ok');
+        if (autoEval) { autoEval = false; evalBtn.click(); }
       } else if (m.type === 'unavailable') {
         unavailable(m.reason);
       } else if (m.type === 'result' && busy && m.id === busy.id) {
@@ -142,6 +158,11 @@
 
     function clear(el) { while (el.firstChild) el.removeChild(el.firstChild); }
     function cell(tr, tag, text) { const c = doc.createElement(tag); c.textContent = text; tr.appendChild(c); return c; }
+    // row label with its unit (the unit shows after the label on narrow screens, in its own column otherwise)
+    function head(tr, label, unit) {
+      const c = cell(tr, 'th', label), u = doc.createElement('span');
+      u.className = 'xt-u'; u.textContent = unit; c.appendChild(u); return c;
+    }
 
     function showResult(req, m) {
       $('xt-error').hidden = true; $('xt-result').hidden = false;
@@ -150,10 +171,10 @@
       $('xt-mode-used').textContent = req.mode === 'hpx' ? 'H-P-X' : 'T-P-X';
       const r = rows(m.values, { phase: m.phase, mode: req.mode, X: req.X, S_l: m.values.S_l, S_h: m.values.S_h });
       const tb = $('xt-bulk'); clear(tb);
-      for (const [label, unit, v] of r.bulk) { const tr = doc.createElement('tr'); cell(tr, 'th', label); cell(tr, 'td', v).className = 'num'; cell(tr, 'td', unit); tb.appendChild(tr); }
+      for (const [label, unit, v] of r.bulk) { const tr = doc.createElement('tr'); head(tr, label, unit); cell(tr, 'td', v).className = 'num'; cell(tr, 'td', unit).className = 'xt-unitcol'; tb.appendChild(tr); }
       const tp = $('xt-phases'); clear(tp);
       for (const [label, unit, ...vs] of r.phases) {
-        const tr = doc.createElement('tr'); cell(tr, 'th', label); for (const v of vs) cell(tr, 'td', v).className = 'num'; cell(tr, 'td', unit); tp.appendChild(tr);
+        const tr = doc.createElement('tr'); head(tr, label, unit); for (const v of vs) cell(tr, 'td', v).className = 'num'; cell(tr, 'td', unit).className = 'xt-unitcol'; tp.appendChild(tr);
       }
     }
 

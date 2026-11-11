@@ -64,18 +64,26 @@
 </section>
 
 <section id="xt-result" class="xt-card" hidden aria-live="polite">
-  <h2>Phase: <span id="xt-phase"></span></h2>
-  <p class="xt-meta"><span id="xt-mode-used"></span> with <span id="xt-backend-used"></span></p>
+  <div class="xt-phase-banner">
+    <span class="xt-phase-label">Phase</span> <h2 id="xt-phase"></h2>
+    <span class="xt-meta"><span id="xt-mode-used"></span> with <span id="xt-backend-used"></span></span>
+  </div>
+  <div class="xt-res-grid">
+  <div>
   <h3>Bulk properties</h3>
   <div class="xt-scroll"><table class="xt-table">
-    <thead><tr><th scope="col">Property</th><th scope="col">Value</th><th scope="col">Unit</th></tr></thead>
+    <thead><tr><th scope="col">Property</th><th scope="col">Value</th><th scope="col" class="xt-unitcol">Unit</th></tr></thead>
     <tbody id="xt-bulk"></tbody>
   </table></div>
+  </div>
+  <div>
   <h3>Phases</h3>
   <div class="xt-scroll"><table class="xt-table">
-    <thead><tr><th scope="col">Property</th><th scope="col">Liquid / fluid</th><th scope="col">Vapour</th><th scope="col">Halite</th><th scope="col">Unit</th></tr></thead>
+    <thead><tr><th scope="col">Property</th><th scope="col">Liquid / fluid</th><th scope="col">Vapour</th><th scope="col">Halite</th><th scope="col" class="xt-unitcol">Unit</th></tr></thead>
     <tbody id="xt-phases"></tbody>
   </table></div>
+  </div>
+  </div>
   <p class="xt-note">A dash marks a phase that is not present or a property the model does not provide. Single-phase
     fluid states, including supercritical ones, are reported in the liquid column. Volume fractions are the library's
     saturations; mass fractions are derived from them as volume fraction × phase density / bulk density. In

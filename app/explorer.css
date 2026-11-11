@@ -6,12 +6,19 @@
   --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
   color-scheme: light dark;
 }
+/* dark: the system setting, or data-theme="dark" set by the documentation homepage (its light/dark toggle) */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #111821; --card: #18222e; --fg: #e3e8ee; --muted: #9aa7b5; --line: #2d3a49;
     --accent: #4fb3bf; --link: #7cc4dc; --head: #0b2545; --err-bg: #3a1f1a; --err-line: #e2583e;
   }
 }
+:root[data-theme="dark"] {
+  --bg: #111821; --card: #18222e; --fg: #e3e8ee; --muted: #9aa7b5; --line: #2d3a49;
+  --accent: #4fb3bf; --link: #7cc4dc; --head: #0b2545; --err-bg: #3a1f1a; --err-line: #e2583e;
+  color-scheme: dark;
+}
+:root[data-theme="light"] { color-scheme: light; }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 var(--font); }
@@ -60,3 +67,27 @@ details ul { padding-left: 1.25rem; }
   .xt-table { font-size: .82rem; }
   .xt-table th, .xt-table td { padding: .25rem .35rem; }
 }
+
+/* result: the phase first and most prominent */
+.xt-phase-banner { display: flex; flex-wrap: wrap; align-items: baseline; gap: .25rem .75rem; margin: 0 0 .5rem;
+  padding: .6rem .9rem; border-left: 5px solid var(--accent); background: var(--bg); border-radius: 6px; }
+.xt-phase-banner .xt-phase-label { color: var(--muted); font-size: .95rem; }
+.xt-phase-banner #xt-phase { margin: 0; font-size: 1.9rem; font-weight: 700; line-height: 1.2; }
+.xt-phase-banner .xt-meta { flex-basis: 100%; }
+/* units: own column on wide screens, after the label on narrow ones (tables fit without sideways scrolling) */
+.xt-table .xt-u { display: none; color: var(--muted); font-size: .85em; }
+/* wide: bulk and phase tables side by side */
+.xt-res-grid { display: grid; gap: 0 1.5rem; }
+@media (min-width: 860px) { .xt-res-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); } }
+@media (max-width: 600px), (min-width: 860px) {
+  .xt-table .xt-unitcol { display: none; }
+  .xt-table .xt-u { display: inline; margin-left: .4em; }
+  .xt-table th, .xt-table td { white-space: normal; }
+  .xt-table td.num { white-space: nowrap; }
+}
+/* embedded in the documentation homepage (app/index.html?embed): no own header, no page background */
+html.xt-embed body { background: transparent; }
+html.xt-embed { overflow: hidden; }   /* the homepage sizes the frame to the content; no scrolling inside it */
+html.xt-embed .xt-header { display: none; }
+html.xt-embed main { max-width: none; padding: 0; }
+html.xt-embed .xt-card:last-child { margin-bottom: 0; }

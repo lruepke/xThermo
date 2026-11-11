@@ -150,3 +150,44 @@ html {
   font-size: 0.78rem;
   color: var(--md-default-fg-color--light);
 }
+
+/* ---- homepage Explorer (app/index.html?embed; height set by javascripts/explorer-embed.js) ---------------- */
+.xt-explorer-embed iframe {
+  display: block;
+  width: 100%;
+  height: 42rem;              /* until the embedded page reports its height */
+  border: 0;
+  color-scheme: normal;
+}
+.md-typeset .xt-explorer-links {
+  margin: 0.5rem 0 1rem;
+  font-size: 0.75rem;
+}
+.xt-hero.xt-hero--compact {
+  padding: 1.2rem 1.6rem 1rem;
+  margin-bottom: 1rem;
+}
+.xt-hero.xt-hero--compact .xt-tagline {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 44.9375em) {
+  .xt-hero.xt-hero--compact {
+    padding: 1rem 1rem 0.9rem;
+  }
+}
+/* homepage buttons below the Explorer (outside the hero): readable in both schemes */
+.md-typeset .xt-home-buttons {
+  margin: 0 0 1.6rem;
+}
+.md-typeset .xt-home-buttons .md-button {
+  margin: 0.2rem 0.4rem 0.2rem 0;
+}
+[data-md-color-scheme="slate"] .md-typeset .xt-home-buttons .md-button:not(.md-button--primary) {
+  color: var(--md-typeset-a-color);
+  border-color: var(--md-typeset-a-color);
+}
+[data-md-color-scheme="slate"] .md-typeset .xt-home-buttons .md-button--primary {
+  background-color: var(--xt-teal);
+  border-color: var(--xt-teal);
+  color: #fff;
+}
