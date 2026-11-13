@@ -77,7 +77,9 @@ details ul { padding-left: 1.25rem; }
 /* units: own column on wide screens, after the label on narrow ones (tables fit without sideways scrolling) */
 .xt-table .xt-u { display: none; color: var(--muted); font-size: .85em; }
 /* wide: bulk and phase tables side by side */
-.xt-res-grid { display: grid; gap: 0 1.5rem; }
+/* minmax(0, ...) on every width: a grid track otherwise grows to the tables' unwrapped width (min-width: auto), pushes
+   multiphase results past the right edge on phones, and the .xt-scroll wrappers never get a narrower box to scroll in */
+.xt-res-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0 1.5rem; }
 @media (min-width: 860px) { .xt-res-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); } }
 @media (max-width: 600px), (min-width: 860px) {
   .xt-table .xt-unitcol { display: none; }
