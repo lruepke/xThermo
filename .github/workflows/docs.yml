@@ -1,0 +1,152 @@
+name: Deploy docs
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  # xThermo Explorer (W2c): build the WebAssembly module from this public revision and verify it against the native
+  # library built in the same container (Library/API/wasm/check/ci_wasm.sh, the same checks as the GitLab job
+  # explorer_wasm). Only if every check passes is the verified build packaged with its corresponding GSL source and
+  # handed to the deploy job; the module is never rebuilt after verification.
+  explorer:
+    runs-on: ubuntu-latest
+    container: emscripten/emsdk:4.0.10
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      # network step: up to 5 attempts, waiting 30, 60, 120, 240 s in between (runner DNS failures, 11 Nov)
+      - name: Native build dependencies (Python, NumPy, SWIG)
+        run: |
+          for i in 1 2 3 4 5; do
+            apt-get update -qq && apt-get install -y -qq --no-install-recommends python3-dev python3-numpy swig && exit 0
+            [ "$i" = 5 ] || { echo "::warning::package install failed (attempt $i of 5), retrying in $((30 << (i - 1))) s"; sleep $((30 << (i - 1))); }
+          done
+          exit 1
+
+      - name: Build and verify the module (native versus WebAssembly, reproducibility, licences, page interface)
+        env:
+          XTHERMO_WASM_COMMIT: ${{ github.sha }}
+          OUT: ${{ github.workspace }}/ci-wasm
+          JOBS: "4"
+        run: bash Library/API/wasm/check/ci_wasm.sh
+
+      - name: Package the verified module with its corresponding source
+        run: bash Library/API/wasm/check/package_release.sh ci-wasm explorer-release
+
+      - name: Release checks (commit, notice, licences, GSL source, public source links)
+        run: bash Library/API/wasm/check/check_release.sh explorer-release "${{ github.sha }}" --online
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: explorer-release
+          path: explorer-release/
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Verification report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: explorer-verification
+          path: |
+            ci-wasm/verification-report.txt
+            ci-wasm/explorer-tests.txt
+            ci-wasm/context-native-fma.txt
+            ci-wasm/timings.txt
+            ci-wasm/*.log
+          if-no-files-found: ignore
+          retention-days: 30
+
+  # Documentation: always deployed, also when the Explorer job failed (then with the previously deployed verified
+  # module if it can be kept intact, otherwise without a module; the page then says "Explorer not available in this
+  # build"). An Explorer failure is reported as an error and fails the workflow after the documentation has been
+  # deployed.
+  deploy:
+    needs: explorer
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # network step: up to 5 attempts, waiting 30, 60, 120, 240 s in between
+      - name: Install MkDocs dependencies
+        run: |
+          for i in 1 2 3 4 5; do
+            pip install "mkdocs-material==9.7.7" && exit 0   # the version in poetry.lock
+            [ "$i" = 5 ] || { echo "::warning::pip install failed (attempt $i of 5), retrying in $((30 << (i - 1))) s"; sleep $((30 << (i - 1))); }
+          done
+          exit 1
+
+      - name: Verified Explorer module
+        if: ${{ needs.explorer.result == 'success' }}
+        uses: actions/download-artifact@v4
+        with:
+          name: explorer-release
+          path: explorer-release
+
+      - name: Add the verified module to the site (unchanged files, checksums confirmed)
+        if: ${{ needs.explorer.result == 'success' }}
+        run: |
+          (cd explorer-release && sha256sum -c --strict --quiet SHA256SUMS)
+          cp -R explorer-release/. docs/app/
+          (cd docs/app && sha256sum -c --strict --quiet SHA256SUMS)
+          echo "Explorer module deployed: $(grep ' xthermo_wasm.wasm$' docs/app/SHA256SUMS)" >> "$GITHUB_STEP_SUMMARY"
+
+      # No new verified module: keep the release that is deployed now, as a complete set (module, interface, build
+      # information, checksums, licences, notices, GSL source) and only if it passes its own release checks and its
+      # interface matches this revision's page (Library/API/wasm/check/restore_release.sh). Otherwise the site is
+      # deployed without a module. Either way the failure is reported below.
+      - name: Keep the previously deployed verified module
+        id: previous
+        if: ${{ needs.explorer.result != 'success' }}
+        run: |
+          kept=no
+          fetched=no
+          for i in 1 2 3; do git fetch --no-tags origin gh-pages && { fetched=yes; break; }; [ "$i" = 3 ] || sleep $((30 << (i - 1))); done
+          if [ "$fetched" = yes ]; then
+            mkdir -p previous-site
+            if git archive FETCH_HEAD app | tar -x -C previous-site \
+               && bash Library/API/wasm/check/restore_release.sh previous-site/app previous-release; then
+              cp -R previous-release/. docs/app/
+              (cd docs/app && sha256sum -c --strict --quiet SHA256SUMS) && kept=yes
+            fi
+          fi
+          if [ "$kept" = yes ]; then
+            commit="$(sed -nE 's/^.*xThermo, commit ([0-9a-f]{40})$/\1/p' docs/app/NOTICE.txt | head -1)"
+            echo "commit=$commit" >> "$GITHUB_OUTPUT"
+            echo "Previous verified Explorer kept: commit $commit, $(grep ' xthermo_wasm.wasm$' docs/app/SHA256SUMS)" >> "$GITHUB_STEP_SUMMARY"
+          else
+            (cd docs/app && rm -rf SHA256SUMS NOTICE.txt licenses source xthermo_wasm.wasm xthermo_wasm.js xthermo.js)
+            echo "commit=" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build and deploy docs
+        run: mkdocs gh-deploy --force
+
+      - name: Report an Explorer release failure
+        if: ${{ needs.explorer.result != 'success' }}
+        run: |
+          if [ -n "${{ steps.previous.outputs.commit }}" ]; then
+            what="The previously verified Explorer (commit ${{ steps.previous.outputs.commit }}) was kept on the site."
+          else
+            what="No previous verified Explorer could be kept; the Explorer page shows 'not available in this build'."
+          fi
+          echo "::error title=Explorer not deployed::The Explorer job ended with '${{ needs.explorer.result }}'. The documentation was deployed. $what"
+          echo "Explorer of this revision NOT deployed (explorer job: ${{ needs.explorer.result }}). $what" >> "$GITHUB_STEP_SUMMARY"
+          exit 1
